@@ -21,6 +21,8 @@ Thursday, 27 August 2026. Twenty stories: one lead, two featured, then a three-c
 
 No bundler, no framework. Open `index.html` locally, or serve the directory with any static file server.
 
+GitHub Pages is deployed from Actions on every push to `main`. If the workflow fails with “Get Pages site failed,” enable Pages once at [Settings → Pages](https://github.com/indrayam/samachar/settings/pages) with **Source: GitHub Actions**, then re-run the workflow. The agent token cannot create the Pages site (GitHub returns 403).
+
 ## Theme
 
 The moon/sun control in the masthead switches day and night editions. The choice is stored as `theme` in `localStorage` (`light` or `dark`).
