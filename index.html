@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Daily Diff | Papers and Threads Worth Your Time</title>
+  <meta name="description" content="Anand Sharma's edition of The Daily Diff — papers and threads worth your time.">
+  <link rel="stylesheet" href="./styles.css">
+  <script>
+    (function () {
+      var saved = localStorage.getItem("theme");
+      document.documentElement.dataset.theme = saved || "light";
+    })();
+  </script>
+</head>
+<body>
+  <main class="page-container">
+    <article id="newspaper-sheet" class="newspaper-sheet">
+      <header class="masthead">
+        <div class="masthead-eyebrow">
+          <span class="masthead-eyebrow-left">Anand's Edition</span>
+          <span id="masthead-date" class="masthead-eyebrow-center">Thursday, August 27, 2026</span>
+          <div class="masthead-eyebrow-right">
+            <span id="masthead-story-count">20 Stories</span>
+            <button id="theme-toggle" type="button" aria-label="Switch to night edition">
+              <span class="theme-toggle-icon">
+                <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="4"></circle>
+                  <path d="M12 2v2"></path>
+                  <path d="M12 20v2"></path>
+                  <path d="m4.93 4.93 1.41 1.41"></path>
+                  <path d="m17.66 17.66 1.41 1.41"></path>
+                  <path d="M2 12h2"></path>
+                  <path d="M20 12h2"></path>
+                  <path d="m6.34 17.66-1.41 1.41"></path>
+                  <path d="m19.07 4.93-1.41 1.41"></path>
+                </svg>
+                <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="masthead-brand">
+          <pre class="masthead-cat masthead-cat--left" aria-hidden="true">  /\_/\
+ (=^.^=)
+ (")_(")</pre>
+          <div class="masthead-brand-copy">
+            <h1 class="masthead-name">The Daily Diff</h1>
+            <p class="masthead-tagline">Papers and Threads Worth Your Time</p>
+          </div>
+          <pre class="masthead-cat masthead-cat--right" aria-hidden="true">  /\_/\
+ (=^.^=)
+ (")_(")</pre>
+        </div>
+
+        <hr class="masthead-rule-thick">
+
+        <div class="filter-bar">
+          <div class="filter-group source-filter" id="source-filter-container">
+            <span class="filter-label">Source</span>
+            <button class="filter-mobile-trigger" type="button" aria-haspopup="listbox" aria-expanded="false" id="source-filter-trigger">
+              <span class="filter-trigger-text" id="source-filter-text">All</span>
+              <svg class="filter-chevron-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+            </button>
+            <div class="filter-options" id="source-filter-options"></div>
+          </div>
+          <div class="filter-group interest-filter" id="interest-filter-container">
+            <span class="filter-label">Interest</span>
+            <button class="filter-mobile-trigger" type="button" aria-haspopup="listbox" aria-expanded="false" id="interest-filter-trigger">
+              <span class="filter-trigger-text" id="interest-filter-text">All</span>
+              <svg class="filter-chevron-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+            </button>
+            <div class="filter-options" id="interest-filter-options"></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="no-stories-message" id="no-stories-message">
+        <p>No stories match the selected filters in today's edition.</p>
+      </div>
+
+      <section id="stories" class="newspaper-columns"></section>
+
+      <footer class="edition-colophon">
+        <div>Anand's Edition · Thursday, August 27, 2026</div>
+      </footer>
+    </article>
+  </main>
+
+  <script id="edition-fallback" type="application/json">
+{
+  "date": "2026-08-27",
+  "weekday": "Thursday",
+  "title": "The Daily Diff",
+  "stories": [
+    {
+      "id": "nvidia-hugging-face",
+      "kicker": "Top Story",
+      "headline": "Nvidia agrees to acquire Hugging Face for $13 billion",
+      "why_read": "The company that sells the GPUs is buying the library that hosts the weights — chips and open-source AI on the same term sheet.",
+      "body": [
+        "Nvidia has agreed to acquire Hugging Face for $13 billion, folding the most-used open-source model hub into the firm that already sells the accelerators underneath it. The item tore through Hacker News: 1,773 points and 828 comments, a volume usually reserved for either a chip cycle or a licensing fight, not both at once.",
+        "For anyone who watches silicon and software as one stack, this is the rare deal that sits on both desks. The cards that train the models and the repos that ship them would report to the same mothership."
+      ],
+      "authors": ["Business Insider"],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://www.businessinsider.com/nvidia-in-talks-to-buy-hugging-face-13-billion-dollars-2026-8",
+      "discuss_url": "https://news.ycombinator.com/item?id=49458161",
+      "interests": ["ai"],
+      "lead": true,
+      "featured": false
+    },
+    {
+      "id": "spacex-ship-40-starbase-louisiana",
+      "kicker": "Featured",
+      "headline": "SpaceX inspects Ship 40 off Christmas Island as Starbase Louisiana takes shape",
+      "why_read": "Hardware in the water today, and a ~$100 billion Gulf spaceport aimed at a first Starship in 2029.",
+      "body": [
+        "SpaceX is inspecting Ship 40 off Christmas Island, a recovery-and-hardware checkpoint a long way from Starbase, Texas. A second thread lays out Starbase Louisiana: a spaceport on the order of $100 billion, with a first Starship from that site targeted for 2029.",
+        "Anand retweeted both. Read together they are one map — where ships come down now, and where the next American launch coast is supposed to rise."
+      ],
+      "authors": ["SpaceX", "Sawyer Merritt"],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/SpaceX/status/2092988521376059899",
+      "discuss_url": "https://x.com/SawyerMerritt/status/2092285684333625550",
+      "interests": ["space"],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "tesla-unsupervised-robotaxi-texas",
+      "kicker": "Featured",
+      "headline": "Tesla expands unsupervised Robotaxi in Texas, Cybercab set for 3 September",
+      "why_read": "Seventy-nine more Model Ys, an RGB light bar, and a Cybercab date on the wall.",
+      "body": [
+        "Tesla is expanding unsupervised Robotaxi and Cybercab service in Texas, adding 79 more Model Ys to the fleet. The cars pick up an RGB light bar; Cybercab itself is slated to launch on 3 September.",
+        "Sawyer Merritt has been posting the fleet adds and the light-bar details as the Texas unsupervised footprint grows."
+      ],
+      "authors": ["Sawyer Merritt"],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/SawyerMerritt/status/2092996751804256530",
+      "discuss_url": "https://x.com/SawyerMerritt/status/2092810558953140247",
+      "interests": ["tesla"],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "glm-53-open-source",
+      "kicker": "",
+      "headline": "GLM-5.3 will be open-sourced tomorrow",
+      "why_read": "A calendar event, not a rumor, for anyone who mixes hosted APIs with local weights.",
+      "body": [
+        "Zixuan Li says GLM-5.3 will be open-sourced tomorrow. You track open weights the way other people track earnings, that is the date to circle."
+      ],
+      "authors": ["Zixuan Li"],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/zixuanli_",
+      "discuss_url": "",
+      "interests": ["ai"],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "small-models-have-arrived",
+      "kicker": "",
+      "headline": "Small models have arrived",
+      "why_read": "A field note on why capability is no longer a synonym for scale, and 247 HN points behind it.",
+      "body": [
+        "Calvin published \"Small Models Have Arrived,\" an essay that climbed to 247 points on Hacker News. It is the day's clearest argument that the interesting work has moved down the parameter curve."
+      ],
+      "authors": ["Calvin"],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://calv.info/small-models-have-arrived",
+      "discuss_url": "https://news.ycombinator.com/item?id=49466917",
+      "interests": ["ai"],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "amd-atom-inference",
+      "kicker": "",
+      "headline": "AMD pulls engineers from vLLM and SGLang onto internal ATOM",
+      "why_read": "Open-source inference talent is being redirected onto an in-house engine whose named customers include Meta and SpaceX.",
+      "body": [
+        "AMD engineers have been pulled off vLLM and SGLang and onto an internal inference engine called ATOM. Named customers of that engine include Meta and SpaceX.",
+        "That is a systems story as much as a model one: the open serving stack loses committers, and a vendor-owned runtime gains them."
+      ],
+      "authors": ["AMD"],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://rocm.blogs.amd.com/software-tools-optimization/atom-inference-engine/README.html",
+      "discuss_url": "",
+      "interests": ["ai", "systems"],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "claude-code-agents-md",
+      "kicker": "",
+      "headline": "Claude Code is 45% smaller; Tobi Lütke may ban it until it reads AGENTS.md",
+      "why_read": "A smaller coding agent is not useful if it will not read the house rules.",
+      "body": [
+        "Jared Kramer reports that Claude Code is now 45 percent smaller. Separately, Tobi Lütke is considering banning it at Shopify until the bot actually reads AGENTS.md.",
+        "One is a hint; the other is a governance problem. They arrived on the same day."
+      ],
+      "authors": ["Jared Kramer", "Tobi Lütke"],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/tobi",
+      "discuss_url": "",
+      "interests": ["ai", "systems"],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "nvidia-60b-quarter",
+      "kicker": "",
+      "headline": "Nvidia posts ~$60 billion net income, the richest public-company quarter on record",
+      "why_read": "The same firm buying Hugging Face just printed, one-offs aside, the most profitable public-company quarter on record.",
+      "body": [
+        "Nvidia reported roughly $60 billion in net income, the most profitable public-company quarter on record once one-offs are excluded. Pit Desi flagged the print.",
+        "Set it next to a $13 billion software acquisition and the shape of the day is obvious: the profits are large enough to buy the ecosystem they run on."
+      ],
+      "authors": ["Pit Desi"],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://nvidianews.nvidia.com/",
+      "discuss_url": "",
+      "interests": ["ai"],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "cloudflare-dns-cache",
+      "kicker": "",
+      "headline": "Cloudflare saves 100TB of memory optimizing the 1.1.1.1 DNS cache",
+      "why_read": "A hundred terabytes back from a cache is the kind of systems work that still moves the HN front page.",
+      "body": [
+        "Cloudflare says it saved 100TB of memory by optimizing the 1.1.1.1 DNS cache. The write-up drew 252 points on Hacker News.",
+        "Public DNS is a memory problem dressed up as a networking problem. This is the rare post that treats it that way, in public, with a number attached."
+      ],
+      "authors": ["Cloudflare"],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://blog.cloudflare.com/dns-cache-memory-optimization-1111/",
+      "discuss_url": "https://news.ycombinator.com/item?id=49468083",
+      "interests": ["systems"],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "bill-gates-privately-worried",
+      "kicker": "",
+      "headline": "Bill Gates: people who understand how good this AI is are privately very worried",
+      "why_read": "The people closest to the models, he says, are not the ones sounding relaxed.",
+      "body": [
+        "Bill Gates says people who understand how good this AI is are privately very worried. Peter Wildebol amplified the line; Gates develops it in a note on a turbulent AI era and the choices still open.",
+        "The Hacker News thread is running in parallel. The quote is short. The implication is not."
+      ],
+      "authors": ["Bill Gates"],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://www.gatesnotes.com/a-turbulent-ai-era-and-critical-choices-to-make",
+      "discuss_url": "https://news.ycombinator.com/item?id=49451313",
+      "interests": ["ai"],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "umich-robotics-github",
+      "kicker": "",
+      "headline": "University of Michigan puts an entire robotics degree on GitHub",
+      "why_read": "Courseware as a repo, not a portal.",
+      "body": [
+        "Juliano Gattiboni flagged that Michigan Robotics has put the degree on GitHub: lectures, notes, textbooks, homework, and exams in public repositories instead of a locked LMS.",
+        "If you want the curriculum without the tuition, this is the shortest path. Clone it."
+      ],
+      "authors": ["Juliano Gattiboni"],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://github.com/michiganrobotics",
+      "discuss_url": "",
+      "interests": ["ai", "systems"],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "pollen-microduck",
+      "kicker": "",
+      "headline": "Microduck, a small robot from Pollen Robotics",
+      "why_read": "A small robot with a large HN thread — 397 points — and a page you can actually open.",
+      "body": [
+        "Pollen Robotics introduced Microduck. The project collected 397 points on Hacker News, a showing that usually means engineers are looking at the kinematics, not just the press photos."
+      ],
+      "authors": ["Pollen Robotics"],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://pollen-robotics.com/microduck/",
+      "discuss_url": "https://news.ycombinator.com/item?id=49462763",
+      "interests": ["ai"],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "shannon-english-entropy",
+      "kicker": "",
+      "headline": "Shannon: English is ~75% redundant; modern encoders hit ~1 bit per letter",
+      "why_read": "A seventy-year-old law, and a reminder that the language was already a compressed medium.",
+      "body": [
+        "Peyman Milanfar notes Shannon's result that English is about 75 percent redundant, with entropy around 1 bit per letter. Modern encoders now hit that rate.",
+        "The tweet is a systems primer disguised as a history lesson: the information-theoretic floor was on the blackboard long before the current crop of codecs."
+      ],
+      "authors": ["Peyman Milanfar"],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/docmilanfar",
+      "discuss_url": "",
+      "interests": ["systems", "ai"],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "nepal-china-flash-floods",
+      "kicker": "",
+      "headline": "Flash floods and a mudslide at the Nepal-China border",
+      "why_read": "The mechanics of a Himalayan flash flood, on a day otherwise about chips and agents.",
+      "body": [
+        "Flash floods and a mudslide struck the Nepal-China border. The Economist walked through the terrifying mechanics; the report is on Hacker News, with a thread from Brazenissimo circulating the images.",
+        "It is the human-interest item in this edition, and it still belongs: water, slope, and timing are a systems problem too."
+      ],
+      "authors": ["The Economist"],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://www.economist.com/science-and-technology/2026/08/27/the-terrifying-mechanics-of-the-nepali-flash-flood",
+      "discuss_url": "https://news.ycombinator.com/item?id=49466188",
+      "interests": ["systems"],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "neil-movva-inference",
+      "kicker": "",
+      "headline": "Neil Movva on inference: from software to chips to power",
+      "why_read": "An ex-Nvidia walk down the inference stack, stopping at the layer that actually shows up on the power bill.",
+      "body": [
+        "Neil Movva, formerly of Nvidia, traces inference from software down through silicon and into energy. Branch by branch, the bottleneck moves: kernels, then cards, then the substation.",
+        "If you only read the model cards, you miss the part of the stack that is already a utilities problem."
+      ],
+      "authors": ["Neil Movva"],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/neilmovva",
+      "discuss_url": "",
+      "interests": ["ai", "systems"],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "dhh-weeks-where-decades",
+      "kicker": "",
+      "headline": "DHH: there are weeks where decades happen",
+      "why_read": "The Lenin line, applied without irony to the last nine months of programming.",
+      "body": [
+        "David Heinemeier Hansson reaches for the old line — decades where nothing happens, weeks where decades happen — and plants it on this stretch of agentic coding.",
+        "He is not hedging. The claim is that the last nine months compressed years of toolchain progress, and that failing to notice is the actual delusion."
+      ],
+      "authors": ["DHH"],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://world.hey.com/dhh",
+      "discuss_url": "",
+      "interests": ["ai"],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "x-chat-agents",
+      "kicker": "",
+      "headline": "X Chat is growing a bench of agents",
+      "why_read": "The messaging surface is no longer just people talking. It is becoming a place you can assign work.",
+      "body": [
+        "X is putting agents into Chat: not a demo in a lab notebook, a thread you can actually message.",
+        "If your timeline is already half bots, this is the other half getting a job description."
+      ],
+      "authors": ["X"],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/",
+      "discuss_url": "",
+      "interests": ["ai"],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "gemini-omni-11-flash",
+      "kicker": "",
+      "headline": "Gemini Omni 1.1 Flash adds scene extension, 4K, and cheaper 360p drafts",
+      "why_read": "Google’s video model is being sold as a director’s desk, not a prompt toy.",
+      "body": [
+        "Google shipped Gemini Omni 1.1 Flash for developers: extend a scene from up to ten seconds of prior context, interpolate first and last frames, draft in 360p, and upscale to 1080p or 4K.",
+        "The HN thread is the usual mix of API notes and filmmaker skepticism. The useful part is the control surface — extend, keyframe, cheap preview — not the reel."
+      ],
+      "authors": ["Anish Nangia", "Alisa Fortin"],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash/",
+      "discuss_url": "https://news.ycombinator.com/item?id=49467922",
+      "interests": ["ai"],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "anthropic-model-hardware-standard",
+      "kicker": "",
+      "headline": "Anthropic previews the Model Hardware Standard",
+      "why_read": "A shared driver for agents that need to run a lab bench, not just a terminal.",
+      "body": [
+        "Anthropic opened a research preview of the Model Hardware Standard, a spec for AI agents to operate physical devices — microscopes, liquid handlers, robotic arms — through a common driver, MCP, and a CLI.",
+        "It started with HHMI Janelia. Partners now include Genentech, QuEra, Universal Robots, and others. The pitch is hours instead of months to wire a rig, with safety evals still to come before the standard is open-sourced."
+      ],
+      "authors": ["Anthropic"],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
+      "discuss_url": "https://news.ycombinator.com/item?id=49468834",
+      "interests": ["ai", "systems"],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "agentconnect-testing",
+      "kicker": "",
+      "headline": "AgentConnect: a sandbox is not a permission model",
+      "why_read": "A multi-agent harness you can actually clone, with the argument in the README: isolation is not authorization.",
+      "body": [
+        "AgentConnect is an open-source multi-agent alternative to sitting in one vendor’s tag-in-the-doc chat. Agents get separate permissions, they can be @-mentioned where the work already happens, and you can test the handoff.",
+        "The useful claim is narrow: a sandbox tells you where code ran. It does not tell you what the agent was allowed to do. That is a systems problem, and this repo is a test fixture for it."
+      ],
+      "authors": ["agentconnect-md"],
+      "source": "github",
+      "source_label": "GitHub",
+      "source_url": "https://github.com/agentconnect-md/agentconnect",
+      "discuss_url": "https://news.ycombinator.com/item?id=49466057",
+      "interests": ["ai", "systems"],
+      "lead": false,
+      "featured": false
+    }
+  ]
+}
+  </script>
+  <script src="./app.js"></script>
+</body>
+</html>
