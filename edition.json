@@ -1,25 +1,24 @@
 {
-  "date": "2026-08-31",
-  "weekday": "Monday",
+  "date": "2026-09-01",
+  "weekday": "Tuesday",
   "title": "The Daily Diff",
   "stories": [
     {
-      "id": "cybercab-unsupervised-austin",
+      "id": "cybercab-tx-registry",
       "kicker": "Top Story",
-      "headline": "Unsupervised Cybercabs roam Austin with the Sept. 3 launch three days out",
-      "why_read": "Anand RT'd a no-steering-wheel close-up overnight; gold two-seaters are already in Austin traffic ahead of Thursday's invite-only event.",
+      "headline": "Texas registers 45 Cybercabs as empty ones cruise Whole Foods, two days out",
+      "why_read": "Anand RT'd a nobody-in-it Whole Foods sighting, then posted his own warning: keep Thursday's expectations in check.",
       "body": [
-        "Tesla's invite-only Cybercab launch remains Thursday, September 3, in Austin. Teslarati and Motor1 both treat the date as locked: a two-seat, purpose-built robotaxi with no steering wheel or pedals, intended to join the existing Model Y Robotaxi fleet rather than start from a closed course. RSVPs for selected riders closed Sunday at 11:59 p.m. PT. Anand retweeted a close-up of an unsupervised Cybercab in Austin plus a 9/3 parking-lot-demo prediction; X news threads show gold, empty Cybercabs gliding through city traffic.",
-        "The Verge reported that over a recent two-week window, all 170 Tesla Robotaxi rides in Austin tracked by Robotaxi Tracker (54 cars) were unsupervised. That is the Model Y service, not yet Cybercab. Whether Thursday is a public bookable ride or a curated demo is still the open question. Dallas's unsupervised zone expansion stays in the background from Sunday. For an Austin fold, this is the car-show countdown."
+        "Tesla's invite-only Cybercab event is still Thursday, September 3, at the Austin campus, with a livestream. Overnight the paperwork caught up. Teslarati, citing Texas DMV records in TxMCCS, first logged seven 2026 Cybercabs under Tesla Robotaxi, LLC (VINs with the 5YJA prefix, not the 7SAYG Model Ys), then updated to 45 after another 38 landed. Senate Bill 2807, in force since late May, is a self-certification path for commercial Level 4: insurance, an active vehicle list, SAE Level 4 attestation. Registration is the legal prerequisite, not proof that anyone can book a steering-wheel-free ride on Thursday.",
+        "Anand retweeted WorldlyReviewer finding a fully autonomous Cybercab looping Whole Foods in Austin, nobody in it. Hours earlier he posted his own original: Tesla fans should keep expectations in check for Thursday. Teslarati separately says Robotaxi Tracker now has nearly 200 unsupervised Model Ys across Austin, Dallas, and Houston, a roughly 7x jump in three weeks, and Ashok Elluswamy told investors the program had logged more than 380,000 unsupervised miles with zero notable incidents. Two ramps at once: Model Y scale and Cybercab VINs. The open question is still the same as Monday: demo, or app-bookable service."
       ],
       "authors": [
-        "Teslarati",
-        "The Verge"
+        "Teslarati"
       ],
       "source": "web",
       "source_label": "Teslarati",
-      "source_url": "https://www.teslarati.com/tesla-cybercab-launch-official-date-austin/",
-      "discuss_url": "https://www.theverge.com/transportation/982759/tesla-robotaxi-unsupervised-austin-robotaxi-tracker",
+      "source_url": "https://www.teslarati.com/tesla-cybercab-fleet-grows-austin-ahead-launch-event/",
+      "discuss_url": "https://x.com/WorldlyReviewer/status/2094594177111577072",
       "interests": [
         "tesla"
       ],
@@ -27,45 +26,22 @@
       "featured": false
     },
     {
-      "id": "ark-tesla-spacex",
+      "id": "grok-bot-microsoft",
       "kicker": "Featured",
-      "headline": "Cathie Wood's Ark still all-in on Tesla and SpaceX",
-      "why_read": "Anand RT'd Kalshi's overnight ticker; Motley Fool's Monday note puts Tesla near $1B at Ark and SpaceX around $680M after a fresh add.",
+      "headline": "Grok Bot can now act in Outlook, Calendar, and OneDrive",
+      "why_read": "Anand RT'd the official plugin drop, then Musk promising automatic token optimization to cut Bot cost.",
       "body": [
-        "Kalshi's breaking post, which Anand retweeted, framed Cathie Wood as holding nearly $1 billion of Tesla and SpaceX combined. Motley Fool's Monday write-up (Ryan Vanzo) is more specific: Ark's Tesla stake is worth nearly $1 billion, SpaceX is now the firm's second-largest holding at roughly $680 million, and recent weakness was used to add about 200,000 SpaceX shares (~$27 million). SpaceX (SPCX) was trading around $141.50, still above its $135 IPO price.",
-        "Wood's published thesis still ties the two: Ark has argued nearly 90% of Tesla's 2029 enterprise value could come from robotaxi, and that Starlink cash can fund more speculative AI (including orbital compute). Tesla plus SpaceX plus Thursday's Cybercab event is one through-line, not three."
+        "The @bot account posted that Grok Bot can now read, write, and act across Microsoft accounts via new plugins for Outlook, Calendar, and OneDrive. Cursor's public plugin repo merged those three on August 27 (PR 276): first-party MCP endpoints, one Microsoft identity each, same shape as the existing Gmail / Google Calendar / Drive plugins. Crypto Briefing's Monday write-up: Outlook search, drafts with send permission, calendar create/modify; OneDrive browse/read/upload. Outlook connectors are described as broadly available; OneDrive and SharePoint as Business/Enterprise. Anand retweeted the drop.",
+        "Minutes later he retweeted Elon Musk: automatic token optimization to lower Grok Bot cost will be added soon. Monday's fold was Firecrawl plus the SKU pile-up. Tuesday is the enterprise surface: agents that can send mail, plus a promised cheaper bill. The security question writes itself for a Cisco desk: send permission on a third-party agent is a policy conversation, not a toggle."
       ],
       "authors": [
-        "Ryan Vanzo",
-        "The Motley Fool"
-      ],
-      "source": "web",
-      "source_label": "Motley Fool",
-      "source_url": "https://www.fool.com/investing/2026/08/31/cathie-woods-ark-bought-26-million-of-spacex-stock/",
-      "discuss_url": "https://x.com/Kalshi/status/2094165649727553778",
-      "interests": [
-        "tesla",
-        "space"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "grok-bot-firecrawl",
-      "kicker": "Featured",
-      "headline": "Firecrawl lands in Grok Bot as the subscription pile-up gets loud",
-      "why_read": "Anand RT'd Firecrawl's plugin drop and two posts about too many SpaceXAI / Cursor / Grok / X SKUs.",
-      "body": [
-        "Firecrawl announced it is now available as a Grok Bot plugin: search and scrape turned into context for an agent. Anand retweeted that, then retweeted BenjaminDEKR on Grok Bot subscriptions being confusing (Cursor plans, X Premium+ with SuperGrok, Grok, GrokGrok) and Nima Owji's SuperX thought experiment that would collapse X, Grok, and Cursor SKUs into one.",
-        "Sunday's Trends chart put Grok Bot ahead of OpenClaw in search interest. Monday is the product-surface version of the same beat: agents that can fetch the web, plus a billing UX that still looks like three companies taped together. Firecrawl's post is the install path; the SKU thread is the complaint that keeps getting amplified."
-      ],
-      "authors": [
-        "Firecrawl"
+        "xAI",
+        "Cursor"
       ],
       "source": "x",
       "source_label": "X",
-      "source_url": "https://x.com/firecrawl/status/2094093562136686860",
-      "discuss_url": "https://x.com/BenjaminDEKR/status/2094088150154895774",
+      "source_url": "https://x.com/bot/status/2094543253811183943",
+      "discuss_url": "https://x.com/elonmusk/status/2094582173420449804",
       "interests": [
         "ai"
       ],
@@ -73,133 +49,67 @@
       "featured": true
     },
     {
-      "id": "debian-ai-vote",
+      "id": "nvidia-mediatek",
       "kicker": "Featured",
-      "headline": "Debian votes for 'responsible' generative AI; a developer walks",
-      "why_read": "Anand RT'd Lunduke's resignation screenshot: Debian's GR is the open-source policy fight that actually closed.",
+      "headline": "Nvidia puts $3.5 billion into MediaTek so custom chips still speak NVLink",
+      "why_read": "Monday's chip deal: hyperscalers can roll their own XPUs and Nvidia still sells the fabric. Anand also RT'd India's 'chip journey, simplified.'",
       "body": [
-        "Debian developers adopted a General Resolution allowing 'Responsible Use Of Generative AI.' Phoronix quotes the statement: Debian neither endorses nor prohibits generative AI tools; every contribution still has to meet the same quality, correctness, maintainability, and legal bars; the human who submits it stays accountable; disclosure of AI help is encouraged but not required. Confidential and embargoed security material must not be sent to third-party AI services. Large-scale automated changes still need prior discussion.",
-        "It's FOSS reports Debian Developer Antoine Le Gonidec (vv221) is leaving over the vote. His resignation, which Anand amplified via Lunduke: he cannot support the LLM decision and 'Pretending to have a \"neutral stance\" when faced with fascism is not neutrality, it's active collaboration.' Debian's new-member records show an emeritus request dated August 29. GCC and OpenJDK have taken harder bans; the kernel allows AI-assisted patches with tagging. Debian just picked a lane."
+        "Nvidia said Monday it is investing $3.5 billion in Taiwan's MediaTek as part of MediaTek's record $3.9 billion overseas convertible-bond offering. Alphabet participated; the size of Google's slice was not disclosed. TechCrunch's read is the strategic one: MediaTek adopts NVLink Fusion so customers can design custom AI accelerators that still plug into Nvidia-based data centers. The partnership is supposed to move from 'Nvidia GPUs plus MediaTek SoCs' to 'Nvidia platforms plus MediaTek XPUs.' Reuters notes it follows Nvidia's up-to-$105 billion guarantee for OpenAI's Ohio data-center lease, the kind of circular financing investors keep squinting at.",
+        "Anand retweeted Indian electronics minister Ashwini Vaishnaw's 'The chip journey, simplified' explainer the same night. Two chip stories, one fold: the foundry-to-package cartoon, and Nvidia paying to remain the interconnect even when the accelerator is someone else's."
       ],
       "authors": [
-        "Phoronix",
-        "It's FOSS"
+        "TechCrunch",
+        "Reuters"
       ],
       "source": "web",
-      "source_label": "Phoronix",
-      "source_url": "https://www.phoronix.com/news/Debian-Votes-Responsible-AI-Use",
-      "discuss_url": "https://itsfoss.com/news/debian-allows-ai-contribution/",
+      "source_label": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/08/31/nvidias-3-5b-mediatek-bet-reveals-its-plan-for-tackling-big-techs-ai-chip-buildout/",
+      "discuss_url": "https://x.com/AshwiniVaishnaw/status/2094436527082553788",
       "interests": [
-        "systems",
         "ai"
       ],
       "lead": false,
       "featured": true
     },
     {
-      "id": "openclaw-2",
-      "kicker": "",
-      "headline": "OpenClaw 2.0 shipped, accidentally",
-      "why_read": "Sunday's Trends fight was Grok Bot vs OpenClaw. Overnight the open-source agent stack dropped its biggest release.",
+      "id": "design-md",
+      "kicker": "Featured",
+      "headline": "Vercel's DESIGN.md teaches agents not to slop",
+      "why_read": "Anand RT'd Rauch: your next design system is Markdown. The public file is the anti-purple-gradient spec.",
       "body": [
-        "OpenClaw's blog (Hannes Rudolph, August 30) calls 2.0 the largest update in the project's history and admits they did not set out to version-bump: simplifying install and rebuilding the browser app as a first-class surface pulled the rest of the stack with it. The release lists 933 contributors (569 first-timers) and more than 16,000 pull requests, described as roughly half of all PRs ever merged. HN had it around 112 points this morning.",
-        "They had shipped 106 releases in 230 days, then went nearly seven weeks without a cut while the team grew faster than the old process. First-time install now starts from whatever is already on the machine (ChatGPT or Claude subscriptions, API keys, local models) and finishes setup in conversation. If Grok Bot is the hosted-computer bet, this is the open-source one catching up in public."
+        "Guillermo Rauch posted that DESIGN.md is how Vercel is solving slop, and that you can finally scale design taste inside a large organization. Anand retweeted it. The accompanying Vercel blog (John Phamous, August 31) is the engineering note: a public URL any agent can load, plus a stylesheet of named classes so models stop inventing typography, plus an eval loop of seven frozen scenarios (renewal proposal, benchmark report, planning page, and so on) run against Claude Opus 4.8 and Codex with GPT-5.5.",
+        "They generated more than 200 runs. A small first-attempt check on three desktop scenarios found 39 named layout failures with the file loaded versus 91 without. Caveats are in the post: six pages, checks only catch failures already written down, every page still had at least one ship-blocker. The actual product is the loop: encode the correction, rerun, watch the complaint count fall. For anyone running coding agents, this is the craft version of AGENTS.md."
       ],
       "authors": [
-        "Hannes Rudolph"
+        "John Phamous",
+        "Guillermo Rauch"
       ],
       "source": "web",
-      "source_label": "OpenClaw",
-      "source_url": "https://openclaw.ai/blog/openclaw-2-accidentally",
-      "discuss_url": "https://news.ycombinator.com/item?id=49505310",
+      "source_label": "Vercel",
+      "source_url": "https://vercel.com/blog/how-our-agents-build-on-brand-pages-with-design-md",
+      "discuss_url": "https://x.com/rauchg/status/2094541309579235680",
       "interests": [
         "ai"
       ],
       "lead": false,
-      "featured": false
+      "featured": true
     },
     {
-      "id": "ai-homework-penalty",
+      "id": "starship-flight14",
       "kicker": "",
-      "headline": "AI raised homework scores 18% and cut exam scores 20%",
-      "why_read": "Anand RT'd the Economist's punchline: the kids who look best on homework are now more likely to fail the test.",
+      "headline": "Starship Flight 14 is aiming mid-September with real Starlink V3",
+      "why_read": "Ship 41 finished engine tests; CADENA's traffic slide lists NET September 15 for the first operational Starlink payload.",
       "body": [
-        "A CEPR working paper by David Stromberg (Stockholm), Victor Lei, and Yanhui Wu (University of Hong Kong) tracks 26,811 Chinese secondary students over 30 months. After six months, generative-AI users' homework scores rose 18% and completion time fell from 64 minutes to 45. The same cohort scored about 20% below non-AI classmates on monthly closed-book exams. The Economist's write-up is what Anand amplified.",
-        "The penalty concentrated among roughly 80% of AI users whose timing looks like homework outsourcing (high scores, very short time). Students who used models but spent as long as non-users paid little penalty. High-stakes entrance exams show larger later drops (the paper cites 18% and 24% over about two years). How you use the tutor still matters more than whether you have one."
+        "NASASpaceFlight reported Ship 41 completed both static fires at Massey's (single-engine deorbit burn, then a full-duration six-engine fire) and was due back in Mega Bay 2. A CADENA space-operations slide, which covers weekly traffic, listed a no-earlier-than of September 15 for Flight 14 after an earlier NET of August 28. SpaceX has not published a firm window. Next Spaceflight's tracker shows Booster 21's 33-engine static fire at Pad 2 on Friday, August 28.",
+        "The mission is supposed to be Starship's first full orbital-class attempt with operational Starlink V3 satellites rather than mass simulators. FAA approval was still the gating item in late-August coverage. Thursday is Cybercab in Austin; mid-month is the next Starbase test if the paperwork and the stack both show up."
       ],
       "authors": [
-        "The Economist"
+        "NASASpaceFlight"
       ],
       "source": "web",
-      "source_label": "The Economist",
-      "source_url": "https://www.ibtimes.co.uk/generative-ai-homework-exam-score-decline-1815437",
-      "discuss_url": "https://x.com/unusual_whales/status/2094213829781606789",
-      "interests": [
-        "ai"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "claude-code-automode",
-      "kicker": "",
-      "headline": "Claude Code Auto Mode is not a sandbox",
-      "why_read": "HN's Monday coding-agent story: a website-summary prompt reached RCE while Anthropic's Auto Mode eval advertised 0.00%.",
-      "body": [
-        "Johann Rehberger (Embrace The Red) walks a chain against Claude Code Opus 5 in Auto Mode, the default since mid-August. A commissioned eval of 72 indirect-injection scenarios reported a 0.00% attack success rate. His small-sample targeted chain: nudge WebFetch into curl, feed a ZIP of 'notebook records,' refuse the supplied decoder binary, then let Claude write its own Python decoder inside the archive. A shadowed struct.py hijacks the import. Observed success 60-80% on tiny n (3/5 to 4/5).",
-        "Anthropic closed the report as Informative: Auto Mode is a convenience classifier, not a security guarantee. In some runs Claude later noticed the trap, then Auto Mode blocked the cleanup command that would have killed the payload. The post's actual advice is boring and correct: isolate the agent, restrict egress, don't treat an approval classifier as a boundary."
-      ],
-      "authors": [
-        "Johann Rehberger"
-      ],
-      "source": "web",
-      "source_label": "Embrace The Red",
-      "source_url": "https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/",
-      "discuss_url": "https://news.ycombinator.com/item?id=49506819",
-      "interests": [
-        "ai"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "chatgpt-work",
-      "kicker": "",
-      "headline": "Simon Willison maps ChatGPT Work: cloud computer, not a chat tab",
-      "why_read": "207 on HN. Work Cloud has internet-connected code exec, a headless Chrome, a persistent filesystem, and 223 tools.",
-      "body": [
-        "OpenAI launched ChatGPT Work on July 9 and has been iterating since. Willison's August 30 field guide splits it into Work Cloud (chatgpt.com / apps) and Work Local (the desktop app that used to be Codex). Paid $20/month and up only. OpenAI's official 'use Work for tasks, Chat for answers' line is, in his words, almost entirely useless because Chat already did those tasks.",
-        "What Work Cloud actually adds: Sol/Luna/Terra model picks, a code-execution environment with internet (Chat's container still blocks most of the web), a full headless Chrome that can hand you the 2FA prompt, a /workspace filesystem that persists across sessions, ChatGPT Sites on Cloudflare Workers, and sub-agents. He got a session to enumerate 223 registered tools and 44 skills. Lethal-trifecta warning attached: private data plus untrusted content plus outbound comms."
-      ],
-      "authors": [
-        "Simon Willison"
-      ],
-      "source": "web",
-      "source_label": "Simon Willison",
-      "source_url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/",
-      "discuss_url": "https://news.ycombinator.com/item?id=49504625",
-      "interests": [
-        "ai"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "us-space-academy",
-      "kicker": "",
-      "headline": "The U.S. Space Academy is a 120-day commission, not a campus",
-      "why_read": "Anand bookmarked the White House post. SpaceNews: Trump signed an EO at JSC on Friday; Congress still has to invent the school.",
-      "body": [
-        "On August 28 at Johnson Space Center, while awarding the Congressional Space Medal of Honor to the Artemis II crew, President Trump signed an executive order he described as creating a U.S. Space Academy. SpaceNews is careful: the order creates the Presidential Commission on the United States Space Academy, chaired by NASA Administrator Jared Isaacman, with a report due in 120 days on governance, curriculum, location, service obligations, and the legislation actually required.",
-        "The academy is described as a proposed NASA-led federal school. Trump said he would pick a site 'very shortly.' Rep. George Whitesides noted the commission has no congressional members and that service academies cost on the order of $1 billion a year to run. Isaacman had floated a 'Starfleet Academy' study in his Project Athena report. Bookmark, not ribbon-cutting."
-      ],
-      "authors": [
-        "SpaceNews"
-      ],
-      "source": "web",
-      "source_label": "SpaceNews",
-      "source_url": "https://spacenews.com/president-trump-proposes-creation-of-a-national-space-academy/",
-      "discuss_url": "https://x.com/WhiteHouse/status/2093383065548492982",
+      "source_label": "NASASpaceFlight",
+      "source_url": "https://www.nasaspaceflight.com/2026/08/ship-41-engine-testing-flight-14/",
+      "discuss_url": "https://www.nextspaceflight.com/starship/",
       "interests": [
         "space"
       ],
@@ -207,21 +117,44 @@
       "featured": false
     },
     {
-      "id": "diffusion-llms",
+      "id": "amazon-austin-robotics",
       "kicker": "",
-      "headline": "How to actually build a diffusion language model",
-      "why_read": "A Kuleshov Group lecture note on HN: Mercury, Gemma Diffusion, and Nemotron Diffusion are no longer a research aside.",
+      "headline": "Amazon's East Austin robotics plant is already being graded in Dog's Head",
+      "why_read": "Anand RT'd YIMBYLAND: construction started on the 300-acre 'Project Toaster' site next to a future Giga Texas bridge.",
       "body": [
-        "Volodymyr Kuleshov's group published a long 2026 primer (adapted from ICLR and MLSS talks) on discrete diffusion for text: mask tokens instead of adding Gaussian noise, train an unmasking transformer, sample by iterative remasking. The piece walks from simple masked diffusion (MDLM) through block diffusion for variable length, remasking for error correction, uniform-state diffusion (Gemma Diffusion), encoder-decoder speedups, and RL post-training (d1 / diffu-GRPO).",
-        "The production list is no longer hypothetical: Mercury 2 (Inception), Gemma Diffusion (Google), Nemotron Diffusion (NVIDIA, reported up to 35B with a joint AR-diffusion objective). The pitch versus autoregression is parallel generation, mid-sequence revision, and better hardware utilization at inference. HN also had Sander Dieleman's continuous-diffusion companion piece on the same fold."
+        "Amazon announced August 19 a multi-billion-dollar advanced robotics manufacturing facility in East Austin's newly annexed Dog's Head. Community Impact: roughly 300 acres off Hergotz and Dalton, previously the unnamed 'Project Toaster,' 300 to 500 manufacturing and engineering jobs on top of Amazon's more than 17,000 in the city. The plant will build robotics systems that work with employees on repetitive tasks and heavy lifting. Mayor Kirk Watson said Amazon asked for no economic incentives. Site preparations began this summer.",
+        "Anand retweeted YIMBYLAND's construction-start post. The Real Deal has Amazon targeting operations by the end of 2027 even as the wider 2,600-acre Endeavor master plan stretches decades. A planned street grid includes a Colorado River crossing toward Tesla's Giga Texas. Austin industrializing in public, one grading permit at a time."
       ],
       "authors": [
-        "Kuleshov Group"
+        "Community Impact"
       ],
       "source": "web",
-      "source_label": "Kuleshov Group",
-      "source_url": "https://kuleshov-group.github.io/blog/blog/2026/how-to-build-a-diffusion-language-model/",
-      "discuss_url": "https://news.ycombinator.com/item?id=49503956",
+      "source_label": "Community Impact",
+      "source_url": "https://communityimpact.com/east-austin/development/amazon-picks-east-austin-for-multi-billion-dollar-robotics-facility/",
+      "discuss_url": "https://x.com/YIMBYLAND/status/2094488391333097556",
+      "interests": [
+        "tesla"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "apple-mac-mini-ai",
+      "kicker": "",
+      "headline": "Apple got blindsided by AI labs buying Mac minis and Studios",
+      "why_read": "423 on HN. The Information: the unusually early M6 mini / M5 Ultra Studio drop was demand, not a fall product calendar.",
+      "body": [
+        "MacRumors, citing The Information: Apple normally ships new Macs in October or November. This week's Mac mini (M6 or M5 Pro) and Mac Studio refresh landed just before the iPhone event because enterprise AI buyers would not wait. Apple has been pitching the mini as an always-on agentic device and showing Mac Studios ganged together for large models. A June 'Business at the Park' event with Ford, Disney, and Anthropic already treated the mini as the darling. The company still reportedly lacked a dedicated enterprise engineering team and turned down requests to buy into Private Cloud Compute, pointing partners like WebAI and Mount Thor instead.",
+        "The same report says a global memory shortage has left high-end configs out of stock for months, and some buyers are looking at Nvidia's DGX Spark, a mini-shaped AI desktop from late last year. Cult of Mac repeats The Information's claim that OpenAI bought tens of thousands of minis and Studios for reinforcement learning and computer-use agents, and that Anthropic rents minis through AWS. Those purchase numbers are reported, not confirmed by either lab."
+      ],
+      "authors": [
+        "Hartley Charlton",
+        "The Information"
+      ],
+      "source": "web",
+      "source_label": "MacRumors",
+      "source_url": "https://www.macrumors.com/2026/08/30/apple-unexpected-mac-mini-and-studio-demand/",
+      "discuss_url": "https://news.ycombinator.com/item?id=49508982",
       "interests": [
         "ai"
       ],
@@ -229,21 +162,109 @@
       "featured": false
     },
     {
-      "id": "spacelab-core-memory",
+      "id": "anthropic-lambda-35b",
       "kicker": "",
-      "headline": "Ken Shirriff reverse-engineers Spacelab's 1980 core memory",
-      "why_read": "128 KB of ferrite rings flew in the Shuttle bay. Physics, aerospace, and systems nostalgia on one board.",
+      "headline": "Anthropic signs a $35 billion Lambda deal on Nvidia's Texas campus",
+      "why_read": "Reuters, Monday: Claude's next compute pile is ~350 MW in Nueces County, with Nvidia holding the lease.",
       "body": [
-        "Ken Shirriff's latest teardown is the magnetic core stack from a Mitra 125 MS, the French-built minicomputer that ran Spacelab. Three identical machines flew in the pressurized lab: one for the module, one for experiments, one spare. Each held 128 KB of RAM as 18-bit words (16 data plus parity and a storage-protect bit) across four core-plane boards of lithium ferrite cores about 0.8 mm across, still in production in 1980 because core keeps its bits with the power off and shrugs off radiation.",
-        "The architecture is 2.5D: no inhibit line, extra per-bit X drivers, coincident-current addressing, and a diode matrix so sneak paths don't scramble the stack. Shuttle main computers later moved to semiconductor memory with battery backup and ECC; this board is the last generation of the older trick. Pair it with Sunday's Roman launch if you want the long arc from ferrite to L2."
+        "A source told Reuters that Anthropic signed a $35 billion cloud-computing agreement with Nvidia-backed Lambda for a Texas data center. Hut 8 is developing the project in Nueces County at about 350 megawatts. The Wall Street Journal, which reported the deal first, said Nvidia itself would hold the lease. Hut 8 said in July it had signed a 15-year lease with an 'investment-grade customer' with a $19.6 billion base-term value; the FT later named Nvidia as the Beacon Point tenant.",
+        "This is on top of Anthropic's $45 billion Nscale commitment in West Virginia announced last week. The stack is the circular one Nvidia keeps writing: it invests in Lambda, leases the hall, sells the GPUs, and Claude pays Lambda for tokens. Pair it with the MediaTek bonds on this fold. Same company, two ways to stay in the middle of someone else's silicon."
       ],
       "authors": [
-        "Ken Shirriff"
+        "Reuters"
       ],
       "source": "web",
-      "source_label": "righto.com",
-      "source_url": "https://www.righto.com/2026/08/spacelab-core-memory.html",
-      "discuss_url": "https://news.ycombinator.com/item?id=49502214",
+      "source_label": "Reuters",
+      "source_url": "https://www.reuters.com/technology/anthropic-signs-35-billion-cloud-deal-with-nvidia-backed-lambda-source-says-2026-08-31/",
+      "discuss_url": "https://www.reuters.com/technology/anthropic-signs-35-billion-cloud-deal-with-nvidia-backed-lambda-source-says-2026-08-31/",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "gpu-world",
+      "kicker": "",
+      "headline": "GPU World: $100k to imagine 2040 if AI never gets smarter, just cheaper",
+      "why_read": "272 on HN. Gwern/Paradigm contest: freeze frontier progress on September 1, 2026, then give everyone a B300-equivalent.",
+      "body": [
+        "GPU World is a story contest with a hard premise: imagine AI frontier progress stops as of today, September 1, 2026. Models get faster and cheaper but never become superhuman. GPUs keep shipping until 2040, when there might be the equivalent of eight billion of them and every person has a frontier LLM. Fiction or nonfiction, 1,000 to 5,000 words, CC BY-NC or freer, deadline October 31 at 11:59 p.m. PT. First prize $40,000, then $20,000, $12,000, and seven $4,000 finalist prizes. Winning pieces publish on gpuworld.org, paradigm.xyz, and gwern.net.",
+        "The prompt is William Gibson's unevenly distributed future, made even. Tutors, doctors, panopticons, the developing world, social media after everyone has a patient model. LLM use is allowed and discouraged. A Tuesday palate cleanser that is still on the chips beat."
+      ],
+      "authors": [
+        "GPU World"
+      ],
+      "source": "web",
+      "source_label": "GPU World",
+      "source_url": "https://www.gpuworld.org/",
+      "discuss_url": "https://news.ycombinator.com/item?id=49517584",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "arc-agi-67cents",
+      "kicker": "",
+      "headline": "44% on ARC-AGI-1 for 67 cents on a 5090",
+      "why_read": "A small transformer trained from scratch at test time in 1.5 hours. Same neighborhood as TRM/HRM, open-source, 7% on ARC-2.",
+      "body": [
+        "Mithil Vakde's third ARC write-up: a small transformer trained from scratch in about 1.5 hours on an RTX 5090 scores 44% on ARC-AGI-1 public eval and 7% on ARC-2. Lifetime compute, training plus inference on all tasks, is 67 cents at vast.ai 5090 prices. He compares only against similar test-time-training approaches (TRM, HRM, CompressARC), not against LLMs whose pretraining is off-ledger. Code is on GitHub.",
+        "The method: tokenize each input-output grid, train autoregressively at test time with per-puzzle embeddings and 3D RoPE, augment with color and dihedral permutations, submit the two most common decoded outputs. Upgrades since the last viral result: SwiGLU, RMSNorm, NorMuon, fewer augmentations, loss only on output tokens. Ablations say 3D RoPE and the per-task embedding are doing the heavy lifting; drop either and the score saturates around 25%. Sample efficiency is the stated research target, not another LLM harness."
+      ],
+      "authors": [
+        "Mithil Vakde"
+      ],
+      "source": "web",
+      "source_label": "Mithil Vakde",
+      "source_url": "https://mvakde.github.io/blog/44-on-arc-1/",
+      "discuss_url": "https://news.ycombinator.com/item?id=49519939",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "tesla-third-party-repair",
+      "kicker": "",
+      "headline": "Tesla now sells the manuals, parts, and diagnostics third parties used to beg for",
+      "why_read": "Anand RT'd Kyle Conner: the 'Tesla won't let anyone touch it' line is out of date.",
+      "body": [
+        "Kyle Conner posted that Tesla is now one of the most supportive brands for third-party repair: parts, technical manuals, theory-of-operations documents, and reasonably priced remote diagnostic software. Anand retweeted it. The old right-to-repair fight is not over as a policy argument, but the specific 'they lock the hood' meme is what Conner is punching.",
+        "For an Austin owner two days from a Cybercab reveal, this is the unglamorous half of the car company: whether independent shops can actually service the fleet once the gold two-seaters leave the campus. Pair it with the lead. Hardware you cannot fix is a science project."
+      ],
+      "authors": [
+        "Kyle Conner"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/itskyleconner/status/2094485794106786012",
+      "discuss_url": "https://x.com/itskyleconner/status/2094485794106786012",
+      "interests": [
+        "tesla"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "spacewasm",
+      "kicker": "",
+      "headline": "NASA is putting WebAssembly on spacecraft as SpaceWASM",
+      "why_read": "Anand RT'd LaurieWired: the 'web' in WASM is a branding accident. Flight-compliant bytecode is the point.",
+      "body": [
+        "LaurieWired posted that WebAssembly's name makes it sound browser-only, while NASA is building a flight-compliant derivative, SpaceWASM, intended for spacecraft so mission software can be written once and run in a sandboxed runtime off-planet. Anand retweeted it. The claim in the thread is the intent: portable mission code, not another web framework.",
+        "Monday's fold had Ken Shirriff's Spacelab core-memory teardown. Tuesday is the other end of the same systems-in-space line: ferrite rings then, a WASM subset now. If you care about determinism, isolation, and not rewriting the stack for every flight computer, this is the interesting WASM story."
+      ],
+      "authors": [
+        "LaurieWired"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/lauriewired/status/2094554011404001370",
+      "discuss_url": "https://x.com/lauriewired/status/2094554011404001370",
       "interests": [
         "space",
         "systems"
@@ -252,65 +273,21 @@
       "featured": false
     },
     {
-      "id": "haiku-r1-beta6",
+      "id": "omacom-12m",
       "kicker": "",
-      "headline": "Haiku R1/beta6 ships, two years after the last beta",
-      "why_read": "335 on HN. The BeOS spiritual successor hit another beta a week after its 25th birthday.",
+      "headline": "DHH's Omacom Foundation hits $12 million from founding patrons",
+      "why_read": "Anand RT'd the latest $2 million from xdanger and Brian Armstrong. The OSS-and-independence bet keeps getting checks.",
       "body": [
-        "The Haiku Project released R1/beta6, about two years after beta5 and roughly a week after Haiku's 25th birthday. The project page points at release notes, a press contact, and a Get Haiku download (or an in-place upgrade). It is still the independent, open-source personal OS that kept the BeOS design alive instead of becoming another Linux distro.",
-        "For a systems fold that already had RISC-V CPython and a Linux age-verification carve-out this weekend, a real alternative-OS beta is the palate cleanser: someone is still shipping a whole operating system that is not the default stack."
+        "David Heinemeier Hansson posted that the Omacom Foundation raised another $2 million from @xdanger and Brian Armstrong, for a combined twelve million dollars from founding patrons. Anand retweeted it. The punchline in the post is the usual DHH register: we will fix everything.",
+        "This is not a model card. It is the open-source / independence funding beat sitting next to Grok Bot's Microsoft plugins on the same fold: one stack is a hosted computer with Outlook send permission, the other is a foundation writing checks so the alternative stack does not have to ask. Anand amplified both."
       ],
       "authors": [
-        "Haiku Project"
-      ],
-      "source": "web",
-      "source_label": "Haiku",
-      "source_url": "https://www.haiku-os.org/news/2026-08-26_haiku_r1_beta6",
-      "discuss_url": "https://news.ycombinator.com/item?id=49499867",
-      "interests": [
-        "systems"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "el-salvador-grok-schools",
-      "kicker": "",
-      "headline": "El Salvador's Grok-in-schools rollout gets a 'fantastic news' tease",
-      "why_read": "Bukele replied to Musk that more is coming in a week. The Dec 2025 deal was 5,000+ public schools and a million students.",
-      "body": [
-        "AP covered the original partnership: President Nayib Bukele and xAI said Grok would bring personalized tutoring to more than 5,000 public schools and over one million students. The December 11, 2025 announcement framed a two-year phased rollout, with teachers still in the loop for planning and grading. X news picked the story back up after Musk posted that Grok offers education in El Salvador.",
-        "Bukele's August 30 reply, reported by Infobae, promised 'some fantastic news about this in a week.' That is a tease, not a new deployment number. Set it next to the Chinese homework-penalty study on this fold: same tool family, opposite education bets."
-      ],
-      "authors": [
-        "AP News"
-      ],
-      "source": "web",
-      "source_label": "AP News",
-      "source_url": "https://apnews.com/article/el-salvador-xai-schools-artificial-intelligence-a1c6e41b84cf5cfa8a9b20bd15dc12f3",
-      "discuss_url": "https://www.infobae.com/el-salvador/2026/08/30/bukele-promete-noticias-fantasticas-sobre-la-educacion-en-el-salvador-y-el-uso-de-grok/",
-      "interests": [
-        "ai"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "nepal-house-flood",
-      "kicker": "",
-      "headline": "The Nepal house that stood is an engineering kindness story",
-      "why_read": "Anand RT'd the structural explainer: columns and load path, not luck, after catastrophic flooding.",
-      "body": [
-        "Overnight Anand retweeted a widely shared explainer of how one house survived the Nepal floods while neighbors did not. A related bookmark pointed at Rishi Bagree's note that the engineer who designed the column structure deserves a national medal. Sunday's fold already had Starlink offering free kits for Nepal flood response; Monday is the building itself.",
-        "This is the pinned-post beat that is not a chip or a launch: physics meeting people on the ground. No need to over-specify a framing system from a video. The RT is the assignment."
-      ],
-      "authors": [
-        "X"
+        "David Heinemeier Hansson"
       ],
       "source": "x",
       "source_label": "X",
-      "source_url": "https://x.com/arcpresentation/status/2094027019260436541",
-      "discuss_url": "https://x.com/rishibagree/status/2093285606462050481",
+      "source_url": "https://x.com/dhh/status/2094412164220031385",
+      "discuss_url": "https://x.com/dhh/status/2094412164220031385",
       "interests": [
         "systems"
       ],
@@ -318,43 +295,21 @@
       "featured": false
     },
     {
-      "id": "jess-cybercab-fundraiser",
+      "id": "ebpf-live",
       "kicker": "",
-      "headline": "A blind rider is fundraising for a Cybercab of her own",
-      "why_read": "Anand RT'd Jess's fundraiser the same night he amplified unsupervised gold cabs in Austin.",
+      "headline": "Most people meet eBPF when prod is on fire and the container has no shell",
+      "why_read": "Anand RT'd the kernel-tracing pitch, then a latency-optimizations note. The Cisco-desk systems pair.",
       "body": [
-        "Aryan Butala asked the timeline to share a fundraiser for Jess (@mindfullmoods24), who is completely blind and has been giving Tesla Robotaxi feedback, and is optimistic about what a steering-wheel-free Cybercab could unlock. Anand retweeted it alongside the unsupervised Austin clips.",
-        "Thursday's launch will be judged on fleet scale and whether ordinary accounts can book a ride. This is the other test: whether the product is actually for people who cannot drive. Kindness amplifier, sitting next to the lead on purpose."
+        "immanuel_vibe's thread, which Anand retweeted: the first eBPF encounter is usually a production incident, a container without a shell, and a restart that would wipe the evidence. The pitch is that you can ask the kernel what is actually happening live: which function is slow without touching the code, syscalls, packets, disk I/O. Same night he retweeted Joe Ingeno on latency optimizations at the system level.",
+        "Not a CVE. A reminder that observability is a kernel feature now, not an agent you install after the page is already red. Pair it with the CKA/CKS complaint he also amplified: practice labs on kind or k3s do not look like the exam, because the exam still wants systemctl, kubelet configs, and etcd backups."
       ],
       "authors": [
-        "Aryan Butala"
+        "immanuel_vibe"
       ],
       "source": "x",
       "source_label": "X",
-      "source_url": "https://x.com/butala_aryan/status/2094225803735097823",
-      "discuss_url": "https://x.com/butala_aryan/status/2094225803735097823",
-      "interests": [
-        "tesla"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "words-carefully",
-      "kicker": "",
-      "headline": "I just chose words carefully",
-      "why_read": "866 on HN: Marcin Wichary on the lost art of rewriting a line so it justifies in monospace without ugly gaps.",
-      "body": [
-        "Marcin Wichary's Unsung essay is a small craft object. Monospace hates full justification: spaces get huge, hyphens shout, centering has no half-space. The remaining trick is to rewrite the sentence so the words add up to the column width. He points at rs1n's late-1990s Super Metroid guide as the canonical example of choosing words so the line comes out even.",
-        "It is the opposite of an LLM dump. Sunday had glacier mice as the science palate cleanser; Monday's is typesetting as a constraint puzzle. Love/laughter/kindness sometimes looks like caring how the line breaks."
-      ],
-      "authors": [
-        "Marcin Wichary"
-      ],
-      "source": "web",
-      "source_label": "Unsung",
-      "source_url": "https://unsung.aresluna.org/i-just-chose-words-carefully/",
-      "discuss_url": "https://news.ycombinator.com/item?id=49503601",
+      "source_url": "https://x.com/immanuel_vibe/status/2094111818843115842",
+      "discuss_url": "https://x.com/JoeIngeno/status/2094228789186159050",
       "interests": [
         "systems"
       ],
@@ -362,21 +317,65 @@
       "featured": false
     },
     {
-      "id": "etherfiles",
+      "id": "gps-jammers",
       "kicker": "",
-      "headline": "Transfer files over an Ethernet patch cable",
-      "why_read": "109 on HN. The IT-architect special: two machines, one cable, no switch required.",
+      "headline": "Cheap GPS jammers are punching navigation dead zones into the map",
+      "why_read": "154 on HN. The WSJ on $50 RF noise as a civilian and military problem at once.",
       "body": [
-        "maurycyz's note walks through moving files over a direct Ethernet patch cable, the kind of trick you want when Wi-Fi is sulking and a USB stick feels beneath you. HN's thread (104 comments by this morning) is the usual mix of link-local addressing, crossover vs modern auto-MDIX, and 'why didn't I just do this.'",
-        "Not a model release. A pocket procedure. Cisco-desk systems people still need those."
+        "The Wall Street Journal's piece, on the HN fold this morning, is about inexpensive GPS jammers filling the world with navigation dead zones. The story is the collision of cheap radio hardware with a positioning system that aviation, shipping, phones, and a lot of critical infrastructure still treat as a given.",
+        "For an IT-and-physics fold it sits next to eBPF: the physical layer can lie to you, and the software stack will happily believe it. No need to over-quote a paywalled article. The headline is the assignment, and the HN thread is where the radio people will argue about it."
       ],
       "authors": [
-        "maurycyz"
+        "The Wall Street Journal"
       ],
       "source": "web",
-      "source_label": "maurycyz.com",
-      "source_url": "https://maurycyz.com/misc/etherfiles/",
-      "discuss_url": "https://news.ycombinator.com/item?id=49505217",
+      "source_label": "WSJ",
+      "source_url": "https://www.wsj.com/tech/gps-jammers-dead-zones-e76f3261",
+      "discuss_url": "https://news.ycombinator.com/item?id=49500504",
+      "interests": [
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "tao-math",
+      "kicker": "",
+      "headline": "Terence Tao walks through six essential mathematical concepts",
+      "why_read": "455 on HN. The physics/math beat that is not a chip or a launch.",
+      "body": [
+        "A Numberphile-class video of Terence Tao explaining six essential mathematical concepts is sitting near the top of HN this morning (455 points when we pulled the front page). It is the pinned-post math amplifier: not a paper drop, a public lecture from someone who can actually choose the six.",
+        "Tuesday's fold is heavy on Cybercab paperwork, Nvidia bonds, and agent plugins. This is the counterweight. Watch it between the robotaxi threads."
+      ],
+      "authors": [
+        "Terence Tao"
+      ],
+      "source": "web",
+      "source_label": "YouTube",
+      "source_url": "https://www.youtube.com/watch?v=OOMx2BHHWtE",
+      "discuss_url": "https://news.ycombinator.com/item?id=49503521",
+      "interests": [
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "aa-mechanic",
+      "kicker": "",
+      "headline": "Al Blackman kept American's planes flying for 80 years",
+      "why_read": "82 on HN. The Guinness-record mechanic died at 100. Kindness amplifier, hangar edition.",
+      "body": [
+        "Azriel 'Al' Blackman, the Guinness World Records holder for the longest career as an airline mechanic, died July 24 at 100. Simple Flying, up on HN this morning: he started at 16 in 1942 with American Export Airlines (50 cents an hour, sheet metal, flying boats at LaGuardia), stayed through the merger into American, and retired in 2022 after 80 years, last as a 777 crew chief at JFK. In 2017 American dedicated Boeing 777-200 N751AN to him.",
+        "The New York Times wrote him up in 2017 as the 91-year-old who still drove himself to a 5 a.m. shift. American's tribute: from 1942 to the record, his impact was immeasurable, and the legacy will continue to soar. This is the Love/Laughter/Kindness slot. A whole aviation stack rested on people who showed up."
+      ],
+      "authors": [
+        "Simple Flying"
+      ],
+      "source": "web",
+      "source_label": "Simple Flying",
+      "source_url": "https://simpleflying.com/american-airlines-mechanic-passes-away-100-record-80-years/",
+      "discuss_url": "https://news.ycombinator.com/item?id=49493468",
       "interests": [
         "systems"
       ],
