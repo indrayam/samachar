@@ -320,7 +320,7 @@
       "id": "gps-jammers",
       "kicker": "",
       "headline": "Cheap GPS jammers are punching navigation dead zones into the map",
-      "why_read": "154 on HN. The WSJ on $50 RF noise as a civilian and military problem at once.",
+      "why_read": "154 on HN. The WSJ on cheap RF noise punching holes in a system everything still trusts.",
       "body": [
         "The Wall Street Journal's piece, on the HN fold this morning, is about inexpensive GPS jammers filling the world with navigation dead zones. The story is the collision of cheap radio hardware with a positioning system that aviation, shipping, phones, and a lot of critical infrastructure still treat as a given.",
         "For an IT-and-physics fold it sits next to eBPF: the physical layer can lie to you, and the software stack will happily believe it. No need to over-quote a paywalled article. The headline is the assignment, and the HN thread is where the radio people will argue about it."
