@@ -23,8 +23,9 @@
   --font-display: "Lora", Georgia, "Times New Roman", serif;
   --font-body: "PT Serif", Georgia, "Times New Roman", serif;
   --font-mono: Courier, "Courier New", monospace;
-  --sheet-max: 1180px;
   --sheet-pad: clamp(1rem, 2.5vw, 2.25rem);
+  --blog-inset: 72pt;
+  --header-inset-right: 52pt;
   --bg-selection: rgba(231, 101, 26, 0.18);
 }
 
@@ -95,18 +96,27 @@ a:hover {
 }
 
 .page-container {
-  max-width: var(--sheet-max);
-  margin: 0 auto;
-  padding: 24pt var(--sheet-pad) 4rem;
+  width: auto;
+  max-width: none;
+  margin: 0;
+  padding: 24pt 0 4rem;
 }
 
-/* Emma chrome sits on the dash field; the newspaper is the .post panel. */
+/* Emma chrome sits on the dash field; the newspaper is the .post panel.
+   Match the live blog .post inset (72pt / 72pt). Do not copy the blog's
+   later @media (min-width: 900px) { max-width: 60% } — that would shrink
+   the sheet further. Header keeps the blog #header 52pt right inset for
+   the floated portrait. */
 .site-header {
   position: relative;
   z-index: 2;
+  width: auto;
   color: #333333;
   padding-top: 1px;
+  margin-top: 0;
   margin-bottom: 10pt;
+  margin-left: var(--blog-inset);
+  margin-right: var(--header-inset-right);
   overflow: visible;
 }
 
@@ -159,12 +169,15 @@ a:hover {
 .newspaper-sheet {
   position: relative;
   z-index: 1;
+  width: auto;
   background: var(--bg-sheet);
   border: 1px solid var(--rule);
   box-shadow: var(--shadow-sheet);
   padding: var(--sheet-pad);
   padding-bottom: 0.4rem;
   margin-top: -10pt;
+  margin-left: var(--blog-inset);
+  margin-right: var(--blog-inset);
   overflow: visible;
 }
 
@@ -576,6 +589,15 @@ a:hover {
   display: none !important;
 }
 
+/* Blog fallback below 900px: 10px side margins so 72pt does not crush phones. */
+@media (max-width: 899px) {
+  .site-header,
+  .newspaper-sheet {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
 @media (max-width: 1000px) {
   .newspaper-columns {
     column-count: 2;
@@ -596,7 +618,7 @@ a:hover {
 
 @media (max-width: 600px) {
   .page-container {
-    padding: 16pt 0.5rem 4rem;
+    padding: 16pt 0 4rem;
   }
 
   .site-header-portrait {
