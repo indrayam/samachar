@@ -1,6 +1,6 @@
-# Anand's Daily Diff
+# The Daily Diff
 
-A static newspaper of papers and threads worth Anand Sharma's time. Emma blog chrome (title, portrait, Home | Archives | About Me, copyright footer) sits on the dash field; Anand's Daily Diff — True Signals in a sea of Noise — lives inside the boxed newspaper sheet.
+A static newspaper of papers and threads worth Anand Sharma's time. Emma blog chrome (title, portrait, Home | Archives | About Me, copyright footer) sits on the dash field; The Daily Diff — True Signals in a sea of Noise — lives inside the boxed newspaper sheet.
 
 **Live:** https://www.anandsharma.me
 

@@ -13,7 +13,7 @@
     { id: "systems", label: "Systems" },
   ];
 
-  const MASTHEAD_TITLE = "Anand's Daily Diff";
+  const MASTHEAD_TITLE = "The Daily Diff";
   const MASTHEAD_TAGLINE = "True Signals in a sea of Noise";
 
   const state = {
