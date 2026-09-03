@@ -29,8 +29,8 @@
 }
 
 [data-theme="dark"] {
-  --bg-page: #1a1614;
-  --bg-page-image: none;
+  --bg-page: #f4f7f8;
+  --bg-page-image: url("./images/blue-dash.gif");
   --bg-sheet: #241f1c;
   --bg-sheet-alt: #2e2824;
   --bg-well: #1c1916;
@@ -97,14 +97,78 @@ a:hover {
 .page-container {
   max-width: var(--sheet-max);
   margin: 0 auto;
-  padding: 1.25rem var(--sheet-pad) 4rem;
+  padding: 24pt var(--sheet-pad) 4rem;
 }
 
+/* Emma chrome sits on the dash field; the newspaper is the .post panel. */
+.site-header {
+  position: relative;
+  z-index: 2;
+  color: #333333;
+  padding-top: 1px;
+  margin-bottom: 10pt;
+  overflow: visible;
+}
+
+.site-header-portrait {
+  float: left;
+  padding-right: 12px;
+  margin-left: 12pt;
+}
+
+.site-header-portrait img {
+  display: block;
+  width: 120px;
+  height: 148px;
+  border: 1px solid #000000;
+}
+
+.site-header-title {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 2em;
+  line-height: 1.15;
+  color: #333333;
+  margin: 0;
+  padding-top: 1pt;
+}
+
+.site-header-tagline {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 1.05rem;
+  color: #808080;
+  margin: 0;
+  padding-top: 0;
+}
+
+.site-header-nav {
+  font-family: var(--font-body);
+  font-size: 90%;
+  color: #990000;
+  margin: 0.15rem 0 0;
+}
+
+.site-header-nav a {
+  color: #990000;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+/* Portrait hangs over the newspaper’s top hairline — that line is the sheet border. */
 .newspaper-sheet {
+  position: relative;
+  z-index: 1;
   background: var(--bg-sheet);
   border: 1px solid var(--rule);
   box-shadow: var(--shadow-sheet);
   padding: var(--sheet-pad);
+  margin-top: -10pt;
+  overflow: visible;
+}
+
+.newspaper-sheet .masthead {
+  clear: both;
 }
 
 .masthead {
@@ -535,7 +599,11 @@ a:hover {
 
 @media (max-width: 600px) {
   .page-container {
-    padding: 0.5rem 0.5rem 4rem;
+    padding: 16pt 0.5rem 4rem;
+  }
+
+  .site-header-portrait {
+    margin-left: 0;
   }
 
   .newspaper-sheet {
@@ -657,9 +725,14 @@ a:hover {
     display: none !important;
   }
 
+  .site-header {
+    margin-bottom: 0.5rem;
+  }
+
   .newspaper-sheet {
     box-shadow: none !important;
     border: none !important;
+    margin-top: 0;
   }
 
   .newspaper-columns {

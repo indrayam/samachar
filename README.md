@@ -1,6 +1,6 @@
 # The Daily Diff — Anand's Edition
 
-A static newspaper of papers and threads worth Anand Sharma's time. Layout follows the Daily Diff sheet (masthead, lead, featured, three-column well); the paint is Emma — Anand's old blog theme: orange top bar, blue-dash field, boxed white panel, oxblood links.
+A static newspaper of papers and threads worth Anand Sharma's time. Emma blog chrome (title, portrait, Home | Archives | About Me) sits on the dash field; the Daily Diff masthead, filters, lead, and three-column well live inside the boxed newspaper sheet.
 
 **Live:** https://www.anandsharma.me
 
@@ -17,6 +17,7 @@ Thursday, 27 August 2026. Twenty stories: one lead, two featured, then a three-c
 | `app.js` | Theme toggle (`localStorage` key `theme`), filters, and story render. |
 | `edition.json` | This edition's copy. |
 | `images/blue-dash.gif` | Emma page-background tile (in-repo; do not hotlink). |
+| `images/me.gif` | Emma header portrait (in-repo). |
 
 No bundler, no framework. Open `index.html` locally, or serve the directory with any static file server.
 
@@ -24,4 +25,4 @@ Canonical host is Vercel (Git-connected). GitHub Pages is off.
 
 ## Theme
 
-The moon/sun control in the masthead switches day and night editions. Day borrows Emma (orange top bar, dash-tiled field, white sheet, `#900` links). Night keeps the orange accent on a dark ink field. The choice is stored as `theme` in `localStorage` (`light` or `dark`).
+The moon/sun control in the newspaper masthead switches day and night editions of the sheet. Blog chrome stays Emma either way (orange bar, dash field, `#900` nav). Night inverts only the newspaper panel. The choice is stored as `theme` in `localStorage` (`light` or `dark`).
