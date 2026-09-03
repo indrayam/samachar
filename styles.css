@@ -260,10 +260,7 @@ a:hover {
 }
 
 .masthead-brand {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  gap: 0.75rem 1.25rem;
+  display: block;
   margin: 0.15rem 0 0.15rem;
 }
 
@@ -288,16 +285,6 @@ a:hover {
   letter-spacing: 0.02em;
   color: var(--ink-faint);
   margin: 0.15rem 0 0;
-}
-
-.masthead-cat {
-  margin: 0;
-  font-family: var(--font-mono);
-  font-size: 0.65rem;
-  line-height: 1.1;
-  color: var(--ink-faint);
-  white-space: pre;
-  display: block;
 }
 
 .masthead-rule-thick {
@@ -601,14 +588,6 @@ a:hover {
 @media (max-width: 640px) {
   .newspaper-columns {
     column-count: 1;
-  }
-
-  .masthead-cat {
-    display: none;
-  }
-
-  .masthead-brand {
-    grid-template-columns: 1fr;
   }
 }
 

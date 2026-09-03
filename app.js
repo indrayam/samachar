@@ -13,7 +13,8 @@
     { id: "systems", label: "Systems" },
   ];
 
-  const CAT = "  /\\_/\\\n (=^.^=)\n (\")_(\")";
+  const MASTHEAD_TITLE = "Anand's Daily Diff";
+  const MASTHEAD_TAGLINE = "True Signals in a sea of Noise";
 
   const state = {
     edition: null,
@@ -87,10 +88,9 @@
 
     document.getElementById("masthead-date").textContent = dateLabel;
     document.getElementById("masthead-story-count").textContent = countLabel;
-    document.title = edition.title + " | Papers and Threads Worth Your Time";
-    document.querySelectorAll(".masthead-cat").forEach(function (el) {
-      el.textContent = CAT;
-    });
+    document.title = MASTHEAD_TITLE + " | " + MASTHEAD_TAGLINE;
+    const colophon = document.getElementById("edition-colophon-date");
+    if (colophon) colophon.textContent = dateLabel;
   }
 
   function renderFilters() {
