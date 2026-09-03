@@ -420,7 +420,7 @@ a:hover {
   font-weight: 700;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: #e7651a;
 }
 
 .story.is-lead::before {
@@ -481,14 +481,14 @@ a:hover {
 }
 
 .story-source-link {
-  color: var(--link);
+  color: #e7651a;
   text-decoration: underline;
   text-underline-offset: 0.12em;
   border-bottom: none;
 }
 
 .story-source-link:hover {
-  color: var(--link);
+  color: #e7651a;
   border-bottom: none;
 }
 
@@ -547,7 +547,7 @@ a:hover {
   font-size: 2.6em;
   line-height: 0.82;
   padding: 0.03em 0.08em 0 0;
-  color: var(--link);
+  color: #e7651a;
 }
 
 .edition-colophon {
