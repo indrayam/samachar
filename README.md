@@ -1,6 +1,6 @@
 # The Daily Diff — Anand's Edition
 
-A static newspaper of papers and threads worth Anand Sharma's time. Emma blog chrome (title, portrait, Home | Archives | About Me) sits on the dash field; the Daily Diff masthead, filters, lead, and three-column well live inside the boxed newspaper sheet.
+A static newspaper of papers and threads worth Anand Sharma's time. Emma blog chrome (title, portrait, Home | Archives | About Me, copyright footer) sits on the dash field; the Daily Diff masthead, filters, lead, and three-column well live inside the boxed newspaper sheet.
 
 **Live:** https://www.anandsharma.me
 

@@ -171,6 +171,21 @@ a:hover {
   clear: both;
 }
 
+.copyright {
+  clear: both;
+  font-family: "PT Serif", Georgia, "Times New Roman", serif;
+  font-size: 11px;
+  margin-top: 5px;
+  text-align: center;
+  color: #999999;
+}
+
+.copyright a {
+  color: #990000;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
 .masthead {
   position: relative;
   text-align: center;
