@@ -163,6 +163,7 @@ a:hover {
   border: 1px solid var(--rule);
   box-shadow: var(--shadow-sheet);
   padding: var(--sheet-pad);
+  padding-bottom: 0.4rem;
   margin-top: -10pt;
   overflow: visible;
 }
@@ -175,7 +176,7 @@ a:hover {
   clear: both;
   font-family: "PT Serif", Georgia, "Times New Roman", serif;
   font-size: 11px;
-  margin-top: 5px;
+  margin-top: 1.35rem;
   text-align: center;
   color: #999999;
 }
@@ -601,7 +602,7 @@ a:hover {
   }
 
   .newspaper-sheet {
-    padding: 1.25rem 0.75rem;
+    padding: 1.25rem 0.75rem 0.4rem;
   }
 
   .filter-bar {
