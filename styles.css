@@ -367,10 +367,12 @@ a:hover {
   border-color: var(--accent);
 }
 
-.filter-btn.active {
-  color: var(--ink-invert);
-  background-color: var(--link);
-  border-color: var(--link);
+.filter-btn.active,
+.filter-btn.active:hover,
+.filter-btn.active:focus {
+  color: #ffffff;
+  background-color: var(--accent);
+  border-color: var(--accent);
 }
 
 .no-stories-message {
@@ -670,9 +672,11 @@ a:hover {
     background: transparent;
   }
 
-  .filter-options .filter-btn.active {
-    background-color: var(--link);
-    color: var(--ink-invert);
+  .filter-options .filter-btn.active,
+  .filter-options .filter-btn.active:hover,
+  .filter-options .filter-btn.active:focus {
+    background-color: var(--accent);
+    color: #ffffff;
   }
 }
 
