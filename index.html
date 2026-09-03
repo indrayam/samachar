@@ -1,1 +1,512 @@
-__PLACEHOLDER2__
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Daily Diff | Papers and Threads Worth Your Time</title>
+  <meta name="description" content="Anand Sharma's edition of The Daily Diff — papers and threads worth your time.">
+  <link rel="icon" href="./favicon.ico" sizes="any">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png">
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+  <meta name="theme-color" content="#e7e1d1">
+  <link rel="stylesheet" href="./styles.css">
+  <script>
+    (function () {
+      var saved = localStorage.getItem("theme");
+      document.documentElement.dataset.theme = saved || "light";
+    })();
+  </script>
+</head>
+<body>
+  <main class="page-container">
+    <article id="newspaper-sheet" class="newspaper-sheet">
+      <header class="masthead">
+        <div class="masthead-eyebrow">
+          <span class="masthead-eyebrow-left">Anand's Edition</span>
+          <span id="masthead-date" class="masthead-eyebrow-center">Thursday, September 3, 2026</span>
+          <div class="masthead-eyebrow-right">
+            <span id="masthead-story-count">18 Stories</span>
+            <button id="theme-toggle" type="button" aria-label="Switch to night edition">
+              <span class="theme-toggle-icon">
+                <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="4"></circle>
+                  <path d="M12 2v2"></path>
+                  <path d="M12 20v2"></path>
+                  <path d="m4.93 4.93 1.41 1.41"></path>
+                  <path d="m17.66 17.66 1.41 1.41"></path>
+                  <path d="M2 12h2"></path>
+                  <path d="M20 12h2"></path>
+                  <path d="m6.34 17.66-1.41 1.41"></path>
+                  <path d="m19.07 4.93-1.41 1.41"></path>
+                </svg>
+                <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="masthead-brand">
+          <pre class="masthead-cat masthead-cat--left" aria-hidden="true">  /\_/\
+ (=^.^=)
+ (")_(")</pre>
+          <div class="masthead-brand-copy">
+            <h1 class="masthead-name">The Daily Diff</h1>
+            <p class="masthead-tagline">Papers and Threads Worth Your Time</p>
+          </div>
+          <pre class="masthead-cat masthead-cat--right" aria-hidden="true">  /\_/\
+ (=^.^=)
+ (")_(")</pre>
+        </div>
+
+        <hr class="masthead-rule-thick">
+
+        <div class="filter-bar">
+          <div class="filter-group source-filter" id="source-filter-container">
+            <span class="filter-label">Source</span>
+            <button class="filter-mobile-trigger" type="button" aria-haspopup="listbox" aria-expanded="false" id="source-filter-trigger">
+              <span class="filter-trigger-text" id="source-filter-text">All</span>
+              <svg class="filter-chevron-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+            </button>
+            <div class="filter-options" id="source-filter-options"></div>
+          </div>
+          <div class="filter-group interest-filter" id="interest-filter-container">
+            <span class="filter-label">Interest</span>
+            <button class="filter-mobile-trigger" type="button" aria-haspopup="listbox" aria-expanded="false" id="interest-filter-trigger">
+              <span class="filter-trigger-text" id="interest-filter-text">All</span>
+              <svg class="filter-chevron-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+            </button>
+            <div class="filter-options" id="interest-filter-options"></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="no-stories-message" id="no-stories-message">
+        <p>No stories match the selected filters in today's edition.</p>
+      </div>
+
+      <section id="stories" class="newspaper-columns"></section>
+
+      <footer class="edition-colophon">
+        <div>Anand's Edition · Thursday, September 3, 2026</div>
+      </footer>
+    </article>
+  </main>
+
+          <script type="application/json" id="edition-fallback">
+{
+  "date": "2026-09-03",
+  "weekday": "Thursday",
+  "title": "The Daily Diff",
+  "stories": [
+    {
+      "id": "cybercab-launch-day",
+      "kicker": "Top Story",
+      "headline": "Cybercab launch day in Austin \u2014 Musk posts 'A Storm of Cybercabs' as Texas roster hits 420",
+      "why_read": "Anand RT'd Musk overnight; Sawyer says downtown Austin is flooded with wheel-less gold Cybercabs; TxMCCS now shows 375 Model Ys + 45 Cybercabs.",
+      "body": [
+        "It is September 3 in Austin: Tesla's invite-only Cybercab launch day. Overnight Elon Musk posted simply 'A Storm of Cybercabs,' and Anand retweeted it. Sawyer Merritt, filming downtown before the event, said Cybercabs were everywhere with no steering wheels or pedals. Tesla North's September 3 pull of the Texas Motor Carrier Credentialing System now lists 420 vehicles under Tesla Robotaxi, LLC \u2014 375 Model Ys and 45 purpose-built Cybercabs with 5YJA VINs \u2014 up from roughly 300 after the August 31 Cybercab batch.",
+        "Reuters still cautions that Tesla has not announced a start time or officially confirmed a livestream, and has not said whether Cybercabs enter paid Robotaxi service today or after a short employee-ride window. Registration is the legal ceiling, not a dispatch total. For someone who lives in Austin and RT'd the storm, the question today is how much of the gold fleet becomes bookable versus staged for the invite-only show."
+      ],
+      "authors": [
+        "Elon Musk",
+        "Tesla North",
+        "Reuters"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/elonmusk/status/2095364595326263447",
+      "discuss_url": "https://teslanorth.com/2026/09/02/tesla-robotaxi-texas-420/",
+      "interests": [
+        "tesla"
+      ],
+      "lead": true,
+      "featured": false
+    },
+    {
+      "id": "muse-spark-13",
+      "kicker": "Featured",
+      "headline": "Meta ships Muse Spark 1.3 \u2014 Anand RT'd Zuck's 'almost too cheap to meter' post",
+      "why_read": "Fourth Muse Spark in five months; Artificial Analysis puts xhigh at 61 (ties Grok 4.6 high) and max preview at 62; $1.25/$4.25 unchanged.",
+      "body": [
+        "Mark Zuckerberg posted that Muse Spark 1.3 is rolling out with 'frontier performance almost too cheap to meter,' calling it Meta's biggest jump yet on coding and agentic work, with open-weight Muse Spark releases 'coming soon' after a watermelon tease. Anand retweeted it Wednesday evening. Artificial Analysis scores the publicly available xhigh variant at 61 on its Intelligence Index \u2014 up from 57 for 1.2 \u2014 tying GPT-5.6 Sol (max) and Grok 4.6 (high), with the limited-preview max variant at 62 behind only Claude Fable 5.1 and Opus 5.",
+        "Pricing stays $1.25 / $4.25 per million input/output tokens ($0.15 cached input). AA puts xhigh at about $0.55 per Intelligence Index task, cheaper than peers at the same score band. It is closed-weight and available through Muse Code and Meta's Model API with a 1M-token context and text/image/video input \u2014 not a Llama-style open drop, despite the open-weights promise for an earlier Muse Spark."
+      ],
+      "authors": [
+        "Mark Zuckerberg",
+        "Artificial Analysis"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/finkd/status/2095232032896946311",
+      "discuss_url": "https://artificialanalysis.ai/articles/muse-spark-1-3",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "starship-flight14-orbit",
+      "kicker": "Featured",
+      "headline": "SpaceX's FCC filing for Starship Flight 14 describes the program's first orbital insertion",
+      "why_read": "Every prior flight was suborbital; Flight 14 paperwork aims for orbit with ~20 Starlink V3s; NET window still floating around mid-September.",
+      "body": [
+        "SpaceX asked the FCC for communications authority on Starship Flight 14 that describes a genuine orbital insertion \u2014 something the program has never attempted across thirteen prior flights. Teslarati and Tesla North both read the filing the same way: if the burn holds, roughly 20 Starlink V3 satellites would separate into an operational orbit instead of reentering with the ship, as they did on Flight 13's July 24 Indian Ocean splashdown.",
+        "Musk flagged the orbital attempt on SpaceX's August 4 earnings call and later walked back a same-flight tower catch to 'a few months,' so Flight 14 is expected to target a splashdown. Airspace planning has floated a September 15 no-earlier-than marker; SpaceX has not confirmed a launch date, and the FCC STA is radio authority, not an FAA flight license. For a desk that tracks Starship and Starlink together, the filing is the first regulatory document that treats orbit as the mission, not a demo arc."
+      ],
+      "authors": [
+        "Teslarati",
+        "Tesla North"
+      ],
+      "source": "web",
+      "source_label": "Teslarati",
+      "source_url": "https://www.teslarati.com/spacex-tells-the-fcc-that-starship-flight-14-is-going-to-orbit/",
+      "discuss_url": "https://teslanorth.com/2026/09/01/spacex-starship-flight-14-first-orbit/",
+      "interests": [
+        "spacex"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "gemini-38-flash",
+      "kicker": "Featured",
+      "headline": "Gemini 3.8 Flash still owns the HN fold \u2014 #1 overnight with the Fairwind Cyber twin",
+      "why_read": "Holdover that thickened: ~1,051 points this morning; third Flash in six weeks at the same intro price.",
+      "body": [
+        "Google's Gemini 3.8 Flash and Fairwind-only Flash Cyber post is still the top story on Hacker News Thursday morning, around 1,051 points when we pulled the front page. Google calls this its third Flash release in six weeks, priced at the same introductory $0.75 / $3.75 per million tokens as 3.7 Flash through December 31, 2026. Treat Google's HLE-Verified and DeepSWE claims as the company's numbers.",
+        "Flash Cyber remains the trusted-defenders SKU through Fairwind, not a general API product. Next to Muse Spark 1.3 and the Grok 4.7 clock, the cheap Flash tier is the workhorse half of today's model stack \u2014 the one that still has the loudest comment thread."
+      ],
+      "authors": [
+        "Google DeepMind"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+      "discuss_url": "https://news.ycombinator.com/item?id=49537553",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "grok-47-ten-days",
+      "kicker": "Featured",
+      "headline": "Grok 4.7 still aims at ~September 12 \u2014 nine days left on Musk's clock",
+      "why_read": "Holdover that still matters on Cybercab day; X news keeps clustering 4.7 next to Muse Spark and Gemini drops.",
+      "body": [
+        "On September 2 Elon Musk said Grok 4.7 is about ten days out \u2014 roughly September 12. Press coverage, including NextBigFuture, attributes to Musk a description of roughly 2.1 trillion parameters versus about 1.5 trillion for 4.6, slightly slower to serve, better token efficiency, and SpaceX data in the training mix. Treat those as Musk's and the press's claims, not independent benchmarks.",
+        "An X news cluster updated overnight is already selling the September model calendar as crowded: Muse Spark 1.3 shipped, Gemini 3.8 Flash is live, and 4.7 is the next Grok Bot desk event. For someone running these agents nightly, the question is still whether 4.7 changes cost and quality on the same workflows."
+      ],
+      "authors": [
+        "Elon Musk",
+        "NextBigFuture"
+      ],
+      "source": "web",
+      "source_label": "NextBigFuture",
+      "source_url": "https://www.nextbigfuture.com/2026/09/spacexai-grok-4-7-releases-september-12.html",
+      "discuss_url": "https://x.com/i/trending/2095274079603605925",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "stanford-ai-agents",
+      "kicker": "Featured",
+      "headline": "Stanford is teaching a brand-new fall course on building AI agents from scratch",
+      "why_read": "Anand RT'd Michael Ryan's announcement overnight \u2014 Diyi Yang and co-instructors; syllabus for people who already live in agent land.",
+      "body": [
+        "Michael Ryan posted that he, Diyi Yang, and co-instructor @jyangballin are teaching a brand-new Stanford course this fall on how to build AI agents from scratch. Anand retweeted the thread early Thursday. The pitch is practical: millions of users already talk to agents every day, so the class is about building them, not surveying the hype.",
+        "For a Cisco architect who already runs Grok Bots and retweets agent tooling, this is the academic mirror of the same desk \u2014 a structured syllabus next to the Friday Hiten workshop and the Muse Code / Claude Code / Codex stack already on the fold."
+      ],
+      "authors": [
+        "Michael Ryan"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/michaelryan207/status/2095224415567167978",
+      "discuss_url": "https://x.com/indrayam/status/2095366765907767492",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "manufactured-sources",
+      "kicker": "AI Search",
+      "headline": "Three sites made 215,128 'best software' pages for AI \u2014 and Perplexity cites them",
+      "why_read": "HN ~443; Trellner audit of 7,534 Perplexity citations across 380 software categories.",
+      "body": [
+        "Trellner asked two Perplexity Sonar models for the best products in 380 software categories and kept every retrieved URL. Of 7,534 citations, 59.8% pointed at domains ranked worse than #100,000 in Tranco, and 23.4% at domains outside the top million. Three sites that did not exist before December 2023 \u2014 including two whose homepages are titled 'Facts & Grounding Page' \u2014 published 215,128 machine-generated 'best \u2026 software' pages between them.",
+        "Yesterday's fold already had Haus on Perplexity numeric citations that do not contain the number. Today's Trellner thread is the supply-side half: not just wrong numbers, but an industrial farm of grounding pages built to match retrieval. If you use Perplexity for software picks, the citation graph is part of the product now."
+      ],
+      "authors": [
+        "Trellner Research"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://trellner.com/reports/manufactured-sources-behind-ai-recommendations/",
+      "discuss_url": "https://news.ycombinator.com/item?id=49536375",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "sawyer-robotaxi-uber",
+      "kicker": "Robotaxi",
+      "headline": "Sawyer's Austin tally: four unsupervised Model Y rides for $27.25 vs one $33 Uber",
+      "why_read": "Anand RT'd it on launch eve \u2014 50 minutes, 8 miles, tip-free, and the Uber 'smelled.'",
+      "body": [
+        "Sawyer Merritt posted that he took four unsupervised Model Y Robotaxi rides in Austin totaling 50 minutes and 8 miles for a combined $27.25, against one 20-minute Uber ride the same day for $33 including tip. Anand retweeted it Wednesday night as Cybercab launch day approached.",
+        "X news clusters are already using that fare math as the consumer half of the Cybercab story. The fleet is still Model Y for paid unsupervised rides; Cybercab is the hardware Tesla is putting on stage today. The comparison is local, tip-free, and timed for the day Austin is supposed to care."
+      ],
+      "authors": [
+        "Sawyer Merritt"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/SawyerMerritt/status/2095347583191322822",
+      "discuss_url": "https://x.com/indrayam/status/2095358105441714659",
+      "interests": [
+        "tesla"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "starlink-mobile-4ig",
+      "kicker": "Starlink",
+      "headline": "Shotwell: Starlink Mobile partners with 4iG for Europe's first direct-to-device deal",
+      "why_read": "Anand RT'd Gwynne Shotwell; Hungary and Albania first, then Montenegro and North Macedonia on 2 GHz rights.",
+      "body": [
+        "Gwynne Shotwell posted that SpaceX is working with Hungary's 4iG Group to bring Starlink Mobile's direct-to-device connectivity to Europe, starting with resilient apps and messaging and then next-gen V2 high-speed broadband to phones using SpaceX's global 2 GHz priority rights. Anand retweeted it. Tesla North's write-up names Hungary and Albania first, with Montenegro and North Macedonia next on the same spectrum path.",
+        "This is the phone-side Starlink story next to Flight 14's orbital V3 payload: constellation capacity upstairs, carrier partnerships downstairs. For someone who RTs both Shotwell and Cybercab the same night, it is the same SpaceX stack showing up in two places."
+      ],
+      "authors": [
+        "Gwynne Shotwell",
+        "Tesla North"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/Gwynne_Shotwell/status/2095172141100511325",
+      "discuss_url": "https://teslanorth.com/",
+      "interests": [
+        "spacex"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "polars-2-rc",
+      "kicker": "Systems",
+      "headline": "Polars 2.0 RC1: streaming engine becomes the default for LazyFrame",
+      "why_read": "HN ~205; Ritchie Vink's 'boring' major bump \u2014 better defaults, not a feature dump. pip install polars==2.0rc1.",
+      "body": [
+        "Polars shipped the first release candidate for 2.0 on September 2. Ritchie Vink's post says the major bump is deliberate boredom: clear old design decisions and change defaults so casual users get better memory use and performance. The headline default is that LazyFrame collect now runs on the streaming engine; the team expects roughly 5x faster aggregates in that mode.",
+        "A migration guide covers removals and stricter typing. Install the candidate with pip install polars==2.0rc1. For an IT architect who lives in data pipelines as much as LLM agents, this is the systems half of Thursday's fold \u2014 the quiet engine change that will show up in nightly jobs before the flashy model drops do."
+      ],
+      "authors": [
+        "Ritchie Vink"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://pola.rs/posts/announcing-polars-2/",
+      "discuss_url": "https://news.ycombinator.com/item?id=49546753",
+      "interests": [
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "uber-wayve-london",
+      "kicker": "Robotaxi",
+      "headline": "Uber and Wayve launch supervised robotaxi rides in London",
+      "why_read": "X news cluster this morning; UK's first public robotaxi service on ~15\u201320 Mach-Es with a safety driver always aboard.",
+      "body": [
+        "British AI company Wayve partnered with Uber to roll out what X news clusters are calling the UK's first public robotaxi service on Thursday, using a small fleet of about 15 to 20 electric Ford Mustang Mach-E vehicles with camera- and radar-based AI. Riders booking UberX, Comfort, or Electric across the city \u2014 excluding airports \u2014 may get matched at no extra cost, with a trained safety driver always on hand.",
+        "It is supervised, not unsupervised, and that is the point next to Austin's Cybercab day: different regulatory stacks, different sensor bets, same week. Waymo's three-city paid expansion still sits on yesterday's fold; London is the Atlantic counterpart with a human still in the loop."
+      ],
+      "authors": [
+        "Wayve",
+        "Uber"
+      ],
+      "source": "x",
+      "source_label": "X News",
+      "source_url": "https://x.com/i/trending/2095321455819178318",
+      "discuss_url": "https://x.com/i/trending/2095321455819178318",
+      "interests": [
+        "tesla"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "grok-bot-101",
+      "kicker": "Grok Bot",
+      "headline": "Hiten Shah's Grok Bot 101 is tomorrow \u2014 Friday 10 a.m. PT",
+      "why_read": "Holdover with a clock: live workshop on turning a recurring job into a Bot, then making it shareable.",
+      "body": [
+        "Hiten Shah's Grok Bot 101 lands Friday, September 4 at 10:00 a.m. PT. The page promises a mental model for how Grok Bot works, then a live build: take a real recurring job, give it context and tools, test it, and make it shareable. Anand already RT'd the announcement earlier in the week.",
+        "For someone whose nightly paper is itself a Grok Bot job, tomorrow is the meta session \u2014 how to productize the same pattern instead of rebuilding it every morning."
+      ],
+      "authors": [
+        "Hiten Shah"
+      ],
+      "source": "web",
+      "source_label": "hiten.com",
+      "source_url": "https://www.hiten.com/grok-bot-101",
+      "discuss_url": "https://www.hiten.com/grok-bot-101",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "mistral-train-default",
+      "kicker": "Privacy",
+      "headline": "Mistral's Vibe default is still train-on-your-chats unless you opt out",
+      "why_read": "Holdover still climbing HN (~458); the help article is the whole story.",
+      "body": [
+        "Mistral's help article answering whether you can opt out of training on input or output is still near the top of Hacker News Thursday morning, around 458 points. The default for Vibe remains train-on-your-chats unless you flip the switch.",
+        "Next to Muse Spark's closed weights and Gemini's Fairwind Cyber SKU, this is the consumer-default half of the week: who owns the transcript when the product is cheap and chatty."
+      ],
+      "authors": [
+        "Mistral"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://help.mistral.ai/en/articles/455207-can-i-opt-out-of-my-input-or-output-data-being-used-for-training",
+      "discuss_url": "https://news.ycombinator.com/item?id=49535284",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "waymo-three-cities",
+      "kicker": "Robotaxi",
+      "headline": "Waymo's paid Denver / San Diego / Tampa rides are still the other robotaxi story",
+      "why_read": "Holdover on Cybercab day \u2014 14 cities, rolling app invites, Ojai minivans.",
+      "body": [
+        "Waymo opened paid robotaxi rides to the general public in Denver, San Diego, and Tampa on Tuesday, expanding to 14 U.S. cities. Riders are signing up through the app on a rolling basis, with initial coverage including about 60 square miles in Denver and similar footprints in the other two cities using newer Ojai minivans.",
+        "On Cybercab launch day the contrast is the fold: Waymo's lidar-heavy paid expansion versus Tesla's vision-only purpose-built two-seater and a Texas authorization list that just hit 420. Both are real; they are not the same product."
+      ],
+      "authors": [
+        "Waymo"
+      ],
+      "source": "web",
+      "source_label": "X News",
+      "source_url": "https://x.com/i/trending/2094796875928940906",
+      "discuss_url": "https://x.com/i/trending/2094796875928940906",
+      "interests": [
+        "tesla"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "lz-dark-matter",
+      "kicker": "Physics",
+      "headline": "LZ still has one weird particle \u2014 2.6 sigma, not a discovery",
+      "why_read": "Holdover physics amplifier still on HN (~309); the kindness-of-science slot for a Cybercab morning.",
+      "body": [
+        "Science magazine's write-up of the LUX-ZEPLIN dark-matter detector spotting a single unusual particle remains on the Hacker News fold at around 309 points. The collaboration is careful: 2.6 sigma is interesting, not a discovery claim.",
+        "Pinned-post physics for a day otherwise owned by gold two-seaters \u2014 the reminder that the same curiosity stack covers robotaxis and rare events in a tank of xenon."
+      ],
+      "authors": [
+        "Science"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://www.science.org/content/article/world-s-biggest-dark-matter-detector-spots-single-weird-particle",
+      "discuss_url": "https://news.ycombinator.com/item?id=49536079",
+      "interests": [
+        "science"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "fable-51-worlds",
+      "kicker": "Open Source",
+      "headline": "Fable 5.1 World Modeling lands on GitHub \u2014 HN's open agent playground",
+      "why_read": "HN ~276; PhiloLabs repo next to the closed Muse Spark / Gemini / Grok race.",
+      "body": [
+        "PhiloLabs posted Fable 5.1 World Modeling on GitHub, and the thread is sitting around 276 points on Hacker News. It is the open-weight / open-tooling counterweight to this week's closed frontier drops \u2014 a place to poke at world-modeling ideas without waiting for API access.",
+        "Treat the name carefully: Anthropic's Claude Fable 5.1 is the closed commercial model; this repo is a separate world-modeling project riding the same news cycle. For LocalLLaMA-adjacent taste, it is the thing you can actually clone."
+      ],
+      "authors": [
+        "PhiloLabs"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://github.com/PhiloLabs/fable51-worlds",
+      "discuss_url": "https://news.ycombinator.com/item?id=49541458",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "google-adtech-no-breakup",
+      "kicker": "Antitrust",
+      "headline": "Google avoids a breakup of its ad tech business",
+      "why_read": "HN ~410; NYT on the remedy decision \u2014 structural threat cools for now.",
+      "body": [
+        "The New York Times reported that Google avoids a breakup of its ad tech business in the latest remedies phase, a story sitting around 410 points on Hacker News. After years of antitrust pressure on the ad stack, the structural worst case is not the near-term outcome.",
+        "IT and platform readers get the systems read: the same company shipping Gemini 3.8 Flash is also navigating how much of its advertising machine regulators will leave intact. Remedies matter for how the next decade of ad-funded AI gets paid for."
+      ],
+      "authors": [
+        "The New York Times"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://www.nytimes.com/2026/09/02/technology/google-ad-tech-remedies.html",
+      "discuss_url": "https://news.ycombinator.com/item?id=49537131",
+      "interests": [
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "petergyang-cloud-auth",
+      "kicker": "Agents",
+      "headline": "Peter Yang: personal agents want a cloud computer \u2014 password-into-browser still feels wrong",
+      "why_read": "Anand RT'd it; the Grok Bot desk's open question about auth into a persistent cloud browser.",
+      "body": [
+        "Peter Yang posted that he is a big fan of Grok Bot and that other personal agents are moving toward a persistent cloud computer, but that entering a password and authentication code into a cloud browser still feels wrong. Anand retweeted it Wednesday evening.",
+        "It is the product-design half of living inside Grok Bot: the computer is the point, and the auth boundary is the friction. Official connectors and sanctioned login paths are the difference between a teammate and a session you do not trust."
+      ],
+      "authors": [
+        "Peter Yang"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/petergyang/status/2095217706647851168",
+      "discuss_url": "https://x.com/indrayam/status/2095294395616485573",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    }
+  ]
+}
+  </script>
+  <script src="./app.js"></script>
+</body>
+</html>
