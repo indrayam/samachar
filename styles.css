@@ -587,7 +587,7 @@ a:hover {
 }
 
 /* Live blog width: 60% column on desktop, 10px insets on phones.
-   Matches #header / .post in https://indrayam-v1.vercel.app/style.css */
+   Matches #header / .post in https://indrayam.com/style.css */
 @media screen and (min-width: 900px) {
   .site-header {
     margin-left: auto;
