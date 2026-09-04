@@ -2,11 +2,7 @@
 
 A static newspaper of papers and threads worth Anand Sharma's time. Emma blog chrome (title, portrait, Home | Archives | About Me, copyright footer) sits on the dash field; The Daily Diff — True Signals in a sea of Noise — lives inside the boxed newspaper sheet.
 
-**Live:** https://www.anandsharma.me
-
-## Edition
-
-Thursday, 27 August 2026. Twenty stories: one lead, two featured, then a three-column well. Source chips (All / X / HN / GitHub) and interest chips (All / AI / Tesla / Space / Systems) hide unmatched cards.
+**Live:** https://dailydiff.indrayam.com
 
 ## Files
 
@@ -23,6 +19,3 @@ No bundler, no framework. Open `index.html` locally, or serve the directory with
 
 Canonical host is Vercel (Git-connected). GitHub Pages is off.
 
-## Theme
-
-The moon/sun control in the newspaper masthead switches day and night editions of the sheet. Blog chrome stays Emma either way (orange bar, dash field, `#900` nav). Night inverts only the newspaper panel. The choice is stored as `theme` in `localStorage` (`light` or `dark`).
