@@ -1,17 +1,18 @@
 (function () {
-  const SOURCE_CHIPS = [
-    { id: "all", label: "All" },
-    { id: "x", label: "X" },
-    { id: "hn", label: "HN" },
-    { id: "github", label: "GitHub" },
-  ];
-  const INTEREST_CHIPS = [
-    { id: "all", label: "All" },
-    { id: "ai", label: "AI" },
-    { id: "tesla", label: "Tesla" },
-    { id: "space", label: "Space" },
-    { id: "systems", label: "Systems" },
-  ];
+  const SOURCE_LABELS = {
+    x: "X",
+    hn: "HN",
+    web: "Web",
+    github: "GitHub",
+  };
+  const INTEREST_LABELS = {
+    ai: "AI",
+    tesla: "Tesla",
+    space: "Space",
+    spacex: "Space",
+    systems: "Systems",
+    science: "Science",
+  };
 
   const MASTHEAD_TITLE = "The Daily Diff";
   const MASTHEAD_TAGLINE = "True Signals in a sea of Noise";
@@ -38,17 +39,9 @@
   }
 
   async function loadEdition() {
-    try {
-      const response = await fetch("./edition.json", { cache: "no-store" });
-      if (!response.ok) throw new Error(String(response.status));
-      return await response.json();
-    } catch (err) {
-      const fallback = document.getElementById("edition-fallback");
-      if (!fallback || !fallback.textContent.trim()) {
-        throw err;
-      }
-      return JSON.parse(fallback.textContent);
-    }
+    const response = await fetch("./edition.json", { cache: "no-store" });
+    if (!response.ok) throw new Error(String(response.status));
+    return await response.json();
   }
 
   function applyTheme(theme) {
@@ -93,28 +86,54 @@
     if (colophon) colophon.textContent = dateLabel;
   }
 
+  function filterLabel(id, labels) {
+    if (labels[id]) return labels[id];
+    return id
+      .replace(/[-_]+/g, " ")
+      .replace(/\b\w/g, function (letter) {
+        return letter.toUpperCase();
+      });
+  }
+
+  function editionFilterChips(edition, field, labels) {
+    const ids = [];
+    (edition.stories || []).forEach(function (story) {
+      const values = field === "interests" ? story.interests || [] : [story[field]];
+      values.forEach(function (value) {
+        if (value && ids.indexOf(value) === -1) ids.push(value);
+      });
+    });
+    return [{ id: "all", label: "All" }].concat(
+      ids.map(function (id) {
+        return { id: id, label: filterLabel(id, labels) };
+      })
+    );
+  }
+
   function renderFilters() {
+    const sourceChips = editionFilterChips(state.edition, "source", SOURCE_LABELS);
+    const interestChips = editionFilterChips(state.edition, "interests", INTEREST_LABELS);
     const sourceMount = document.getElementById("source-filter-options");
     const interestMount = document.getElementById("interest-filter-options");
-    sourceMount.innerHTML = SOURCE_CHIPS.map(function (chip) {
+    sourceMount.innerHTML = sourceChips.map(function (chip) {
       return (
         '<button type="button" class="filter-btn' +
         (chip.id === state.source ? " active" : "") +
         '" data-filter="' +
-        chip.id +
+        escapeHtml(chip.id) +
         '">' +
-        chip.label +
+        escapeHtml(chip.label) +
         "</button>"
       );
     }).join("");
-    interestMount.innerHTML = INTEREST_CHIPS.map(function (chip) {
+    interestMount.innerHTML = interestChips.map(function (chip) {
       return (
         '<button type="button" class="filter-btn' +
         (chip.id === state.interest ? " active" : "") +
         '" data-filter="' +
-        chip.id +
+        escapeHtml(chip.id) +
         '">' +
-        chip.label +
+        escapeHtml(chip.label) +
         "</button>"
       );
     }).join("");
@@ -136,12 +155,12 @@
 
     const sourceText = document.getElementById("source-filter-text");
     const interestText = document.getElementById("interest-filter-text");
-    const sourceChip = SOURCE_CHIPS.find(function (c) {
+    const sourceChip = sourceChips.find(function (c) {
       return c.id === state.source;
-    });
-    const interestChip = INTEREST_CHIPS.find(function (c) {
+    }) || sourceChips[0];
+    const interestChip = interestChips.find(function (c) {
       return c.id === state.interest;
-    });
+    }) || interestChips[0];
     if (sourceText) sourceText.textContent = sourceChip.label;
     if (interestText) interestText.textContent = interestChip.label;
   }
