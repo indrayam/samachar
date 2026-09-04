@@ -114,6 +114,8 @@ a:hover {
   overflow: visible;
   font-size: 17px;
   line-height: normal;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
 }
 
 .site-header-portrait {
