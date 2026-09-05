@@ -224,8 +224,9 @@ a:hover {
 
 .masthead-eyebrow-center {
   text-align: center;
+  font-size: 0.84rem;
   font-style: normal;
-  color: var(--link);
+  color: var(--accent);
   letter-spacing: 0.04em;
 }
 
@@ -293,10 +294,9 @@ a:hover {
 
 .masthead-tagline {
   font-family: var(--font-body);
-  font-style: italic;
   font-size: 0.92rem;
   letter-spacing: 0.02em;
-  color: var(--ink-faint);
+  color: var(--ink-soft);
   margin: 0.15rem 0 0;
 }
 
