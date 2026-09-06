@@ -27,29 +27,6 @@
   --bg-selection: rgba(231, 101, 26, 0.18);
 }
 
-[data-theme="dark"] {
-  --bg-page: #ffffff;
-  --bg-page-image: url("./images/blue-dash.gif");
-  --bg-sheet: #241f1c;
-  --bg-sheet-alt: #2e2824;
-  --bg-well: #1c1916;
-  --bg-quote: #3a2c26;
-  --ink: #e8e4df;
-  --ink-soft: #c4bdb4;
-  --ink-faint: #8a8278;
-  --ink-invert: #1a1614;
-  --rule: #6a635c;
-  --rule-soft: rgba(232, 228, 223, 0.22);
-  --rule-hair: rgba(232, 228, 223, 0.14);
-  --accent: #e7651a;
-  --accent-soft: rgba(231, 101, 26, 0.16);
-  --accent-ink: #e8a0a0;
-  --link: #e8a0a0;
-  --quote-border: #6b4a3a;
-  --shadow-sheet: none;
-  --bg-selection: rgba(231, 101, 26, 0.28);
-}
-
 *,
 *::before,
 *::after {
@@ -78,7 +55,6 @@ body {
   color: var(--ink);
   font-family: var(--font-body);
   line-height: 1.6;
-  transition: background-color 0.25s ease, color 0.25s ease;
   overflow-x: hidden;
   max-width: 100%;
 }
@@ -240,40 +216,6 @@ a:hover {
   gap: 0.75rem;
   text-align: right;
   justify-self: end;
-}
-
-#theme-toggle {
-  width: auto;
-  height: auto;
-  padding: 0.2rem;
-  color: var(--ink-faint);
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: color 0.15s ease;
-}
-
-#theme-toggle:hover {
-  color: var(--accent);
-}
-
-.theme-toggle-icon .sun {
-  display: none;
-}
-
-.theme-toggle-icon .moon {
-  display: inline-block;
-}
-
-[data-theme="dark"] .theme-toggle-icon .sun {
-  display: inline-block;
-}
-
-[data-theme="dark"] .theme-toggle-icon .moon {
-  display: none;
 }
 
 .masthead-brand {
@@ -626,7 +568,7 @@ a:hover {
 }
 
 /* Live blog width: 60% column on desktop, 10px insets on phones.
-   Matches #header / .post in https://indrayam.com/style.css */
+   Match the live blog header flow in https://indrayam.com/style.css. */
 @media screen and (min-width: 900px) {
   .site-header {
     margin-left: auto;
@@ -648,6 +590,20 @@ a:hover {
     margin-left: 10px;
     margin-right: 10px;
     max-width: none;
+  }
+
+  .site-header-portrait {
+    margin-left: 0;
+  }
+
+  .site-header-portrait img {
+    box-sizing: border-box;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .site-header-nav {
+    margin: 1em 0;
   }
 }
 
@@ -671,6 +627,16 @@ a:hover {
 }
 
 @media (max-width: 600px) {
+  .site-header {
+    font-size: 16px;
+    margin-top: 16pt;
+    text-align: left;
+  }
+
+  .site-header-nav {
+    line-height: 1.7;
+  }
+
   .newspaper-sheet {
     padding: 1.25rem 0.75rem 0.4rem;
   }
@@ -786,7 +752,6 @@ a:hover {
     border-top: none !important;
   }
 
-  #theme-toggle,
   .filter-bar,
   .no-stories-message {
     display: none !important;

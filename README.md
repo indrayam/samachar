@@ -10,7 +10,7 @@ A static newspaper of papers and threads worth Anand Sharma's time. Emma blog ch
 | --- | --- |
 | `index.html` | Newspaper shell. Fetches `./edition.json` and provides loading placeholders for the dynamic edition metadata. |
 | `styles.css` | Newspaper layout with Emma tokens: Lora display, PT Serif body, orange bars, `#900` links, dash-tiled page, white sheet. |
-| `app.js` | Theme toggle (`localStorage` key `theme`), filters, and story render. |
+| `app.js` | Filters and story render. |
 | `edition.json` | This edition's copy. |
 | `images/blue-dash.gif` | Emma page-background tile (in-repo; do not hotlink). |
 | `images/me.gif` | Emma header portrait (in-repo). |

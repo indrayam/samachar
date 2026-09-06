@@ -44,30 +44,6 @@
     return await response.json();
   }
 
-  function applyTheme(theme) {
-    const next = theme === "dark" ? "dark" : "light";
-    document.documentElement.dataset.theme = next;
-    localStorage.setItem("theme", next);
-    const toggle = document.getElementById("theme-toggle");
-    if (toggle) {
-      toggle.setAttribute(
-        "aria-label",
-        next === "dark" ? "Switch to day edition" : "Switch to night edition"
-      );
-    }
-  }
-
-  function initTheme() {
-    const saved = localStorage.getItem("theme");
-    applyTheme(saved || "light");
-    const toggle = document.getElementById("theme-toggle");
-    if (!toggle) return;
-    toggle.addEventListener("click", function () {
-      const current = document.documentElement.dataset.theme || "light";
-      applyTheme(current === "dark" ? "light" : "dark");
-    });
-  }
-
   function renderMasthead(edition, visibleCount) {
     const date = new Date(edition.date + "T00:00:00");
     const dateLabel = date.toLocaleDateString("en-US", {
@@ -292,7 +268,6 @@
     });
   }
 
-  initTheme();
   initMobileFilters();
 
   loadEdition()
