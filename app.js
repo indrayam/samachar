@@ -165,58 +165,83 @@
     if (interestText) interestText.textContent = interestChip.label;
   }
 
-    function renderStories(edition) {
-    const mount = document.getElementById("stories");
-    mount.innerHTML = edition.stories
-      .map(function (story) {
-        const classes = ["story"];
-        if (story.lead) classes.push("is-lead");
-        if (story.featured) classes.push("is-feature");
-        classes.push("no-image");
-        const authors = bylineAuthors(story.authors);
-        const sourceHref = story.source_url || "#";
-        const sourceLabel = story.source_label || String(story.source || "").toUpperCase();
-        const discuss = story.discuss_url
-          ? '<span class="story-source-sep">·</span><a class="story-source-link" href="' +
-            escapeHtml(story.discuss_url) +
-            '" target="_blank" rel="noopener noreferrer">Discuss</a>'
-          : "";
-        const byline =
-          (authors ? "By " + escapeHtml(authors) + '<span class="story-source-sep">·</span>' : "") +
-          '<a class="story-source-link" href="' +
-          escapeHtml(sourceHref) +
-          '" target="_blank" rel="noopener noreferrer">' +
-          escapeHtml(sourceLabel) +
-          "</a>" +
-          discuss;
-        const body = (story.body || [])
-          .map(function (p) {
-            return "<p>" + escapeHtml(p) + "</p>";
-          })
-          .join("");
-        return (
-          '<article class="' +
-          classes.join(" ") +
-          '" data-source="' +
-          escapeHtml(story.source) +
-          '" data-interests="' +
-          escapeHtml((story.interests || []).join(" ")) +
-          '">' +
-          '<h2 class="story-headline"><a href="' +
-          escapeHtml(sourceHref) +
-          '" target="_blank" rel="noopener noreferrer">' +
-          escapeHtml(story.headline) +
-          "</a></h2>" +
-          '<div class="story-byline">' +
-          byline +
-          "</div>" +
-          (story.why_read ? '<p class="story-deck">' + escapeHtml(story.why_read) + "</p>" : "") +
-          '<div class="story-body">' +
-          body +
-          "</div></article>"
-        );
+  function renderStory(story, type) {
+    const classes = ["story", "is-" + type, "no-image"];
+    const authors = bylineAuthors(story.authors);
+    const sourceHref = story.source_url || "#";
+    const sourceLabel = story.source_label || String(story.source || "").toUpperCase();
+    const discuss = story.discuss_url
+      ? '<span class="story-source-sep">·</span><a class="story-source-link" href="' +
+        escapeHtml(story.discuss_url) +
+        '" target="_blank" rel="noopener noreferrer">Discuss</a>'
+      : "";
+    const byline =
+      (authors ? "By " + escapeHtml(authors) + '<span class="story-source-sep">·</span>' : "") +
+      '<a class="story-source-link" href="' +
+      escapeHtml(sourceHref) +
+      '" target="_blank" rel="noopener noreferrer">' +
+      escapeHtml(sourceLabel) +
+      "</a>" +
+      discuss;
+    const body = (story.body || [])
+      .map(function (p) {
+        return "<p>" + escapeHtml(p) + "</p>";
       })
       .join("");
+    const label =
+      type === "lead"
+        ? "Top Story"
+        : type === "feature"
+          ? "Featured"
+          : story.kicker || (story.interests || [])[0] || "";
+    const kicker = label ? '<div class="story-kicker">' + escapeHtml(label) + "</div>" : "";
+
+    return (
+      '<article class="' +
+      classes.join(" ") +
+      '" data-source="' +
+      escapeHtml(story.source) +
+      '" data-interests="' +
+      escapeHtml((story.interests || []).join(" ")) +
+      '">' +
+      kicker +
+      '<h2 class="story-headline"><a href="' +
+      escapeHtml(sourceHref) +
+      '" target="_blank" rel="noopener noreferrer">' +
+      escapeHtml(story.headline) +
+      "</a></h2>" +
+      '<div class="story-byline">' +
+      byline +
+      "</div>" +
+      (story.why_read ? '<p class="story-deck">' + escapeHtml(story.why_read) + "</p>" : "") +
+      '<div class="story-body">' +
+      body +
+      "</div></article>"
+    );
+  }
+
+  function renderStories(edition) {
+    const mount = document.getElementById("stories");
+    const topStories = edition.stories.filter(function (story) {
+      return story.lead;
+    });
+    const featuredStories = edition.stories.filter(function (story) {
+      return !story.lead && story.featured;
+    });
+    const standardStories = edition.stories.filter(function (story) {
+      return !story.lead && !story.featured;
+    });
+
+    mount.innerHTML =
+      '<section class="story-group top-stories" aria-label="Top Stories">' +
+      topStories.map(function (story) { return renderStory(story, "lead"); }).join("") +
+      "</section>" +
+      '<section class="story-group featured-stories" aria-label="Featured Stories">' +
+      featuredStories.map(function (story) { return renderStory(story, "feature"); }).join("") +
+      "</section>" +
+      '<section class="story-group standard-stories" aria-label="More Stories">' +
+      standardStories.map(function (story) { return renderStory(story, "standard"); }).join("") +
+      "</section>";
   }
 
   function applyFilters() {
