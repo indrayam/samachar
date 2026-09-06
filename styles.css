@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700;6..72,800;6..72,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:wght@400;600;700;900&display=swap");
 
 :root {
   --bg-page: #ffffff;
@@ -171,6 +171,9 @@ a:hover {
   position: relative;
   z-index: 1;
   width: auto;
+  --font-display: "Source Sans Pro", Arial, sans-serif;
+  --font-body: "Newsreader", Georgia, "Times New Roman", serif;
+  font-family: var(--font-body);
   background: var(--bg-sheet);
   border: 1px solid var(--rule);
   box-shadow: var(--shadow-sheet);
@@ -307,6 +310,8 @@ a:hover {
 }
 
 .filter-bar {
+  --font-display: "Lora", Georgia, "Times New Roman", serif;
+  --font-body: "PT Serif", Georgia, "Times New Roman", serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -530,12 +535,12 @@ a:hover {
 }
 
 .story:not(.is-lead):not(.is-feature) .story-body {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .story.is-lead .story-body,
 .story.is-feature .story-body {
-  font-size: 0.98rem;
+  font-size: 1.1rem;
 }
 
 .story.is-lead .story-body {
