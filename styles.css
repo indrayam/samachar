@@ -77,8 +77,8 @@ a:hover {
 }
 
 /* Emma chrome sits on the dash field; the newspaper is the .post panel.
-   Wide screens use the live blog override: max-width 60%, auto side
-   margins. Do not restore the old 1180px sheet cap. */
+   Shared site chrome and content use the same 760px desktop cap. The
+   newspaper may expand on genuinely wide screens for its three-column layout. */
 .site-header {
   position: relative;
   z-index: 2;
@@ -579,7 +579,12 @@ a:hover {
   .newspaper-sheet {
     margin-left: auto;
     margin-right: auto;
-    /* v1's 60% .post width excludes its 15px padding and 1px borders. */
+    max-width: 760px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .newspaper-sheet {
     max-width: calc(60% + 32px);
   }
 }
