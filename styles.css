@@ -362,12 +362,16 @@ a:hover {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   column-rule: 1px solid var(--rule-hair);
   column-gap: 1.6rem;
+  align-items: stretch;
+  row-gap: 1.25rem;
 }
 
 .standard-stories {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   column-rule: 1px solid var(--rule-hair);
   column-gap: 1.6rem;
+  align-items: stretch;
+  row-gap: 1.25rem;
 }
 
 .story-group + .story-group {
@@ -383,6 +387,13 @@ a:hover {
 }
 
 .story:last-child {
+  border-bottom: none;
+}
+
+.featured-stories > .story,
+.standard-stories > .story {
+  margin-bottom: 0;
+  padding-bottom: 0.5rem;
   border-bottom: none;
 }
 
@@ -447,7 +458,7 @@ a:hover {
 }
 
 .story.is-standard .story-headline {
-  font-size: 1rem;
+  font-size: clamp(0.96rem, 1.92vw, 1.28rem);
   line-height: 1.22;
 }
 
