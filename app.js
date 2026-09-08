@@ -55,8 +55,24 @@
     const count = visibleCount == null ? edition.stories.length : visibleCount;
     const countLabel = count + (count === 1 ? " Story" : " Stories");
 
-    document.getElementById("masthead-date").textContent = dateLabel;
+    const mastheadDate = document.getElementById("masthead-date");
+    mastheadDate.textContent = dateLabel;
+    mastheadDate.dateTime = edition.date;
     document.getElementById("masthead-story-count").textContent = countLabel;
+
+    const updated = document.getElementById("masthead-updated");
+    if (updated) {
+      const updatedAt = new Date();
+      updated.textContent =
+        "Updated " +
+        updatedAt.toLocaleTimeString("en-US", {
+          hour: "numeric",
+          minute: "2-digit",
+          timeZoneName: "short",
+        });
+      updated.dateTime = updatedAt.toISOString();
+    }
+
     document.title = MASTHEAD_TITLE + " | " + MASTHEAD_TAGLINE;
     const colophon = document.getElementById("edition-colophon-date");
     if (colophon) colophon.textContent = dateLabel;

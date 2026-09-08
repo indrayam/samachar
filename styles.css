@@ -205,8 +205,39 @@ a:hover {
   text-align: center;
   font-size: 0.84rem;
   font-style: normal;
-  color: var(--accent);
+  color: var(--ink);
+  letter-spacing: 0.035em;
+  font-weight: 700;
+}
+
+.masthead-date-group {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1rem;
+  min-width: 0;
+}
+
+.masthead-date-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  padding: 0.28rem 0.7rem 0.3rem;
+  border: 1px solid rgba(231, 101, 26, 0.4);
+  border-radius: 999px;
+  background: var(--accent-soft);
+  box-shadow: inset 0 -1px 0 rgba(231, 101, 26, 0.12);
+}
+
+.masthead-date-updated {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  color: var(--ink-soft);
   letter-spacing: 0.04em;
+  text-align: center;
 }
 
 .masthead-eyebrow-right {
@@ -635,6 +666,43 @@ a:hover {
   }
 }
 
+@media (max-width: 899px) {
+  .masthead-eyebrow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem 0;
+  }
+
+  .masthead-eyebrow-left {
+    display: none;
+  }
+
+  .masthead-date-group {
+    order: 2;
+    width: 100%;
+    gap: 0.05rem;
+  }
+
+  .masthead-eyebrow-center {
+    font-size: clamp(0.7rem, 1.6vw, 0.8rem);
+    letter-spacing: 0.02em;
+  }
+
+  .masthead-date-updated {
+    font-size: 0.55rem;
+    letter-spacing: 0.03em;
+  }
+
+  .masthead-eyebrow-right {
+    order: 1;
+    width: 100%;
+    justify-content: flex-end;
+    text-align: right;
+  }
+}
+
 @media (max-width: 640px) {
   .featured-stories,
   .standard-stories {
@@ -731,23 +799,12 @@ a:hover {
 }
 
 @media (max-width: 480px) {
-  .masthead-eyebrow {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.5rem 0;
-  }
-
-  .masthead-eyebrow-center {
-    order: 3;
-    width: 100%;
-    padding-top: 0.25rem;
-  }
-
-  .masthead-eyebrow-left,
-  .masthead-eyebrow-right {
-    flex: 1 0 auto;
+  .masthead-date-wrap {
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
   }
 }
 
