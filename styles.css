@@ -4,19 +4,15 @@
   --bg-page: #ffffff;
   --bg-page-image: url("./images/blue-dash.gif");
   --bg-sheet: #ffffff;
-  --bg-sheet-alt: #fafaf0;
   --bg-well: #ffffff;
   --bg-quote: #fcf7f4;
   --ink: #333333;
   --ink-soft: #555555;
   --ink-faint: #999999;
-  --ink-invert: #ffffff;
   --rule: #808080;
-  --rule-soft: #cccccc;
-  --rule-hair: #cccccc;
+  --rule-subtle: #cccccc;
   --accent: #e7651a;
   --accent-soft: rgba(231, 101, 26, 0.1);
-  --accent-ink: #990000;
   --link: #990000;
   --quote-border: #ebd4c8;
   --shadow-sheet: none;
@@ -47,7 +43,7 @@ html {
 }
 
 body {
-  margin: 0 0 5px 0;
+  margin: 0 0 5px;
   background-color: var(--bg-page);
   background-image: var(--bg-page-image);
   background-repeat: repeat;
@@ -65,10 +61,6 @@ a {
   text-underline-offset: 0.12em;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 .page-container {
   width: auto;
   max-width: none;
@@ -83,7 +75,7 @@ a:hover {
   position: relative;
   z-index: 2;
   width: auto;
-  color: #333333;
+  color: var(--ink);
   padding-top: 1px;
   margin-top: 24pt;
   margin-bottom: 10pt;
@@ -113,7 +105,7 @@ a:hover {
   font-weight: 900;
   font-size: 2em;
   line-height: normal;
-  color: #333333;
+  color: var(--ink);
   margin: 0;
   padding-top: 1pt;
 }
@@ -122,7 +114,7 @@ a:hover {
   font-family: var(--font-body);
   font-weight: 400;
   font-size: 1.17em;
-  color: #808080;
+  color: var(--rule);
   line-height: normal;
   margin: 0 0 1em;
   padding-top: 0;
@@ -131,13 +123,13 @@ a:hover {
 .site-header-nav {
   font-family: var(--font-body);
   font-size: 90%;
-  color: #990000;
+  color: var(--link);
   line-height: normal;
   margin: 0 0 1em;
 }
 
 .site-header-nav a {
-  color: #990000;
+  color: var(--link);
   text-decoration: underline;
   text-underline-offset: auto;
 }
@@ -165,15 +157,15 @@ a:hover {
 
 .copyright {
   clear: both;
-  font-family: "PT Serif", Georgia, "Times New Roman", serif;
+  font-family: var(--font-body);
   font-size: 11px;
   margin-top: 5px;
   text-align: center;
-  color: #999999;
+  color: var(--ink-faint);
 }
 
 .copyright a {
-  color: #990000;
+  color: var(--link);
   text-decoration: underline;
   text-underline-offset: 0.12em;
 }
@@ -290,7 +282,7 @@ a:hover {
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  border-bottom: 1px dashed var(--rule-soft);
+  border-bottom: 1px dashed var(--rule-subtle);
   padding: 0.5rem 0;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -347,7 +339,7 @@ a:hover {
   letter-spacing: 0.05em;
   padding: 0.25rem 0.75rem;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
   border-radius: 0;
 }
 
@@ -360,7 +352,7 @@ a:hover {
 .filter-btn.active,
 .filter-btn.active:hover,
 .filter-btn.active:focus {
-  color: #ffffff;
+  color: var(--bg-sheet);
   background-color: var(--accent);
   border-color: var(--accent);
 }
@@ -372,7 +364,7 @@ a:hover {
   font-family: var(--font-body);
   font-style: italic;
   color: var(--ink-soft);
-  border-bottom: 1px dashed var(--rule-hair);
+  border-bottom: 1px dashed var(--rule-subtle);
 }
 
 .newspaper-columns {
@@ -391,7 +383,7 @@ a:hover {
 
 .featured-stories {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-rule: 1px solid var(--rule-hair);
+  column-rule: 1px solid var(--rule-subtle);
   column-gap: 1.6rem;
   align-items: stretch;
   row-gap: 1.25rem;
@@ -399,7 +391,7 @@ a:hover {
 
 .standard-stories {
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  column-rule: 1px solid var(--rule-hair);
+  column-rule: 1px solid var(--rule-subtle);
   column-gap: 1.6rem;
   align-items: stretch;
   row-gap: 1.25rem;
@@ -408,13 +400,13 @@ a:hover {
 .story-group + .story-group {
   margin-top: 1.5rem;
   padding-top: 0.25rem;
-  border-top: 1px solid var(--rule-soft);
+  border-top: 1px solid var(--rule-subtle);
 }
 
 .story {
   margin: 0 0 1.1rem;
   padding-bottom: 1rem;
-  border-bottom: 1px dashed var(--rule-hair);
+  border-bottom: 1px dashed var(--rule-subtle);
 }
 
 .story:last-child {
@@ -444,7 +436,7 @@ a:hover {
   font-weight: 700;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: #e7651a;
+  color: var(--accent);
 }
 
 .story.is-lead .story-kicker {
@@ -459,7 +451,7 @@ a:hover {
   letter-spacing: 0.005em;
   margin: 0 0 0.4rem;
   padding-bottom: 0.28rem;
-  border-bottom: 1px dashed var(--rule-soft);
+  border-bottom: 1px dashed var(--rule-subtle);
 }
 
 .story-headline a {
@@ -506,14 +498,9 @@ a:hover {
 }
 
 .story-source-link {
-  color: #e7651a;
+  color: var(--accent);
   text-decoration: underline;
   text-underline-offset: 0.12em;
-  border-bottom: none;
-}
-
-.story-source-link:hover {
-  color: #e7651a;
   border-bottom: none;
 }
 
@@ -551,15 +538,12 @@ a:hover {
   font-size: 1rem;
 }
 
-.story.is-lead .story-body {
-  font-size: 1.18rem;
-}
-
 .story.is-feature .story-body {
   font-size: 1.1rem;
 }
 
 .story.is-lead .story-body {
+  font-size: 1.18rem;
   column-count: 2;
   column-gap: 1.75rem;
 }
@@ -580,7 +564,7 @@ a:hover {
   font-size: 2.6em;
   line-height: 0.82;
   padding: 0.03em 0.08em 0 0;
-  color: #e7651a;
+  color: var(--accent);
 }
 
 .edition-colophon {
@@ -599,10 +583,6 @@ a:hover {
   color: var(--link);
   text-decoration: underline;
   text-underline-offset: 0.15em;
-}
-
-.edition-colophon a:hover {
-  color: var(--link);
 }
 
 [data-hidden="true"] {
@@ -794,7 +774,7 @@ a:hover {
   .filter-options .filter-btn.active:hover,
   .filter-options .filter-btn.active:focus {
     background-color: var(--accent);
-    color: #ffffff;
+    color: var(--bg-sheet);
   }
 }
 
