@@ -1,1 +1,680 @@
-PLACEHOLDER_LOAD_FROM_FILE
+{
+  "date": "2026-09-09",
+  "weekday": "Wednesday",
+  "title": "The Daily Diff",
+  "stories": [
+    {
+      "id": "anthropic-coxon-resigns",
+      "kicker": "Top Story",
+      "headline": "Anthropic pretraining researcher resigns: 'racing straight to self-improving superintelligence'",
+      "why_read": "Anand RT'd and bookmarked Jacob Coxon's exit note — ~76k reposts overnight, the AI-safety flare of the morning.",
+      "body": [
+        "Jacob Coxon (@hilbertspaess) posted that he resigned from Anthropic after three years of pretraining research at OpenAI and Anthropic. The line that lit up X: neither company is acting responsibly, and both are 'racing straight to self-improving superintelligence and gambling with our lives.' Anand both retweeted and bookmarked it; metrics sat around 400k likes and 76k reposts by Wednesday morning.",
+        "Treat it as one researcher's exit letter, not a corporate filing. It pairs with this week's frontier-lab M&A and fundraising noise as the conscience beat on the same desk."
+      ],
+      "authors": [
+        "Jacob Coxon"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/hilbertspaess/status/2097476196791709843",
+      "discuss_url": "https://x.com/hilbertspaess/status/2097476196791709843",
+      "interests": [
+        "ai"
+      ],
+      "lead": true,
+      "featured": false
+    },
+    {
+      "id": "cybercab-unboxed-starlink",
+      "kicker": "Top Story",
+      "headline": "Cybercab unboxed manufacturing + Starlink on the line — Austin fleet keeps swelling",
+      "why_read": "Anand's overnight RTs: Robotaxi's unboxed process video, Sawyer on Starlink-equipped builds, and X news putting the Texas fleet near 49.",
+      "body": [
+        "Tesla's @robotaxi account posted the unboxed manufacturing process for Cybercab: modules assemble in parallel and the car is framed in one end step, claiming line size cut roughly in half. Sawyer Merritt added that new Cybercabs are coming off the line with Starlink on the back — a fix for Austin cell dead zones he wished for on early rides. Anand retweeted both.",
+        "X news summaries Wednesday morning put the Texas robotaxi fleet around 49 vehicles after fresh Cybercab additions and keep hammering cost-per-mile vs Uber. Treat fleet counts as state-record / news summaries, not audited Tesla IR."
+      ],
+      "authors": [
+        "Robotaxi",
+        "Sawyer Merritt",
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/robotaxi/status/2097422261624193106",
+      "discuss_url": "https://x.com/SawyerMerritt/status/2097357502069235716",
+      "interests": [
+        "tesla",
+        "spacex"
+      ],
+      "lead": true,
+      "featured": false
+    },
+    {
+      "id": "meta-muse-agent",
+      "kicker": "Featured",
+      "headline": "Meta launches Muse — personal AI agent on a Secure VM, via app and WhatsApp",
+      "why_read": "HN ~537 and Meta's own post: consumer agents that send email, book travel, and pay — with Sentinel watching the sandbox.",
+      "body": [
+        "Meta introduced Muse on September 8 as a personal AI agent that does work, not just answers questions: email, travel, purchases, and longer projects that keep running after you close the app. It runs inside Muse Secure VM; Meta says a companion Sentinel agent enforces safety boundaries and asks for human OK on sensitive actions. Rollout is US-first on iOS, Android, muse.ai, and WhatsApp, free for most use with paid Power/Maximum tiers.",
+        "Reuters and TechCrunch note trust is the product: Muse needs app connections and a payment card, days after Meta's large social-media settlement. HN's thread is the systems crowd stress-testing the sandbox story."
+      ],
+      "authors": [
+        "Meta"
+      ],
+      "source": "hn",
+      "source_label": "Meta",
+      "source_url": "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
+      "discuss_url": "https://news.ycombinator.com/item?id=49615537",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "openai-navier-stokes",
+      "kicker": "Featured",
+      "headline": "OpenAI agents claim Navier–Stokes blowup — Lean-checked, Clay not calling it solved",
+      "why_read": "OpenAI's 10k-agent proof + HN/Science controversy with Buckmaster; math amplifier meets agent swarm.",
+      "body": [
+        "OpenAI says an internal model (stronger than GPT-6 Astra) plus ~10,000 agents produced a Lean-formalized proof that forced 3D Navier–Stokes can develop a finite-time singularity, arriving in ~88 hours with another ~17 hours of Astra formalization. The company page shares the writeup and Lean artifact and says it will not claim the Clay Millennium Prize.",
+        "Clay has not accepted the result; coverage notes the forced vs unforced distinction and a provenance dispute with Tristan Buckmaster and Levent Alpöge. HN still carries Buckmaster's statement PDF near the top (~1750). Treat OpenAI's claim as company-published math pending community verification."
+      ],
+      "authors": [
+        "OpenAI"
+      ],
+      "source": "hn",
+      "source_label": "OpenAI",
+      "source_url": "https://openai.com/index/navier-stokes-solution/",
+      "discuss_url": "https://news.ycombinator.com/item?id=49613262",
+      "interests": [
+        "ai",
+        "science"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "davelee-tesla-vs-uber",
+      "kicker": "Featured",
+      "headline": "Dave Lee: Tesla vs Uber misses what changes when the driver disappears",
+      "why_read": "Anand RT'd Lee's video — manufacturing-scale robotaxi economics vs aggregator comfort.",
+      "body": [
+        "Dave Lee argues both camps miss the point: 'Tesla kills Uber' vs 'Uber owns the customer and aggregates fleets' both underrate what happens when the scarce resource is no longer human drivers. His cut is that manufacturing scale and cost-per-mile rewrite the stack Uber built around labor scarcity.",
+        "Anand retweeted it Tuesday night. It sits next to X news arguing Cybercab fares already undercut Uber on short Austin routes — product thesis meeting street pricing."
+      ],
+      "authors": [
+        "Dave Lee"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/davelee/status/2097401699795083657",
+      "discuss_url": "https://x.com/indrayam/status/2097500695943434614",
+      "interests": [
+        "tesla"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "grok-bot-forms-logins",
+      "kicker": "Featured",
+      "headline": "Grok Bot: fill forms and logins in chat — any password manager",
+      "why_read": "Anand RT'd @bot — the agent UX beat he lives in daily.",
+      "body": [
+        "Grok Bot announced you can fill out forms and logins for your Bot without leaving chat, with support for any password manager. Anand retweeted the @bot post; it sits alongside his RT of Michael Fenech's five post-task questions that improve the next agent run.",
+        "For a desk that already runs Grok Bot teammates, this is the plumbing upgrade next to Muse's consumer-agent launch — same agent decade, different trust boundary."
+      ],
+      "authors": [
+        "Grok Bot"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/bot/status/2097383980748382239",
+      "discuss_url": "https://x.com/indrayam/status/2097491807365910820",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "alphagenome-atlas",
+      "kicker": "Featured",
+      "headline": "AlphaGenome Atlas: DeepMind's high-resolution map of human DNA",
+      "why_read": "HN ~569 — genomics AI on the physics/math/science half of the pinned post.",
+      "body": [
+        "Google DeepMind published AlphaGenome Atlas, pitching a high-resolution map of human DNA. HN put it near the top Wednesday morning with hundreds of points; the DeepMind/Google blog post is the feature and evaluation source.",
+        "Science amplifier without another chatbot bakeoff — useful foil to the Navier–Stokes agent-swarm story on the same fold."
+      ],
+      "authors": [
+        "Google DeepMind"
+      ],
+      "source": "hn",
+      "source_label": "DeepMind",
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/alphagenome-atlas/",
+      "discuss_url": "https://news.ycombinator.com/item?id=49611251",
+      "interests": [
+        "science",
+        "ai"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "nsa-china-ai-distill",
+      "kicker": "Featured",
+      "headline": "NSA/FBI/CISA: Chinese firms distilled Claude, GPT, and Grok at industrial scale",
+      "why_read": "X news: joint advisory on DeepSeek, Moonshot, Alibaba and others pulling tokens since late 2024.",
+      "body": [
+        "X news summarizes a joint NSA, FBI, and CISA advisory accusing Chinese AI companies — including DeepSeek, Moonshot AI, Alibaba, MiniMax, StepFun, and Z.AI — of industrial-scale distillation against U.S. frontier models such as Claude, GPT, and Grok since late 2024, with evasion via multiple pathways and metadata sanitization.",
+        "Agencies warn of military/cyber spillover and urge U.S. AI firms to monitor usage patterns. Treat named firms and techniques as the advisory's claims; verify against the published alert text before citing in security reviews."
+      ],
+      "authors": [
+        "X News",
+        "NSA",
+        "FBI",
+        "CISA"
+      ],
+      "source": "x",
+      "source_label": "X News",
+      "source_url": "https://x.com/i/trending/2097425497189728514",
+      "discuss_url": "https://x.com/i/trending/2097425497189728514",
+      "interests": [
+        "ai",
+        "systems"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "cybercab-efficiency-specs",
+      "kicker": "Tesla",
+      "headline": "Sawyer: Cybercab is the most efficient production Tesla — 47.6 kWh, 6.1+ mi/kWh",
+      "why_read": "Anand RT'd the specs thread — narrowest Tesla, most legroom, largest screen.",
+      "body": [
+        "Sawyer Merritt posted Cybercab specs he says make it the most efficient production vehicle Tesla has shipped: 47.6 kWh battery, over 6.1 miles/kWh, curb weight around 3,113 lb, while claiming the most legroom (43.4\") and largest screen of any Tesla despite being the narrowest/smallest.",
+        "Anand retweeted it. Treat numbers as influencer-reported until Tesla publishes an official sheet — still the efficiency thesis behind the cost-per-mile Uber debate."
+      ],
+      "authors": [
+        "Sawyer Merritt"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/SawyerMerritt/status/2097427109916577831",
+      "discuss_url": "https://x.com/indrayam/status/2097457602036711538",
+      "interests": [
+        "tesla"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "astra-robot-paint",
+      "kicker": "AI",
+      "headline": "Astra paints the Golden Gate with a real robot, brush, and camera",
+      "why_read": "Anand RT'd cdngdev's timelapse — agent + robot closed loop that got better each attempt.",
+      "body": [
+        "Stanford/OpenAI robotics tinkerer @cdngdev gave Astra a robot, a paint brush, and a camera and asked it to paint the Golden Gate Bridge in real life. The post says it figured out robot control and improved across attempts; the timelapse is the artifact.",
+        "Anand retweeted it. Embodied agent demo next to Muse's software-only personal agent — same week, different body."
+      ],
+      "authors": [
+        "thijs"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/cdngdev/status/2097339677128982873",
+      "discuss_url": "https://x.com/indrayam/status/2097455992921313640",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "gpt56-sol-quantum",
+      "kicker": "AI",
+      "headline": "How GPT‑5.6 Sol helps run quantum computing experiments",
+      "why_read": "OpenAI + HN — Codex/agents in the lab, not only the IDE.",
+      "body": [
+        "OpenAI published a note on GPT‑5.6 Sol helping run quantum computing experiments. HN carried it Wednesday; the OpenAI page is the primary source for what the model actually did in the workflow.",
+        "Science/IT crossover on the pinned-post union: agents touching experimental control loops."
+      ],
+      "authors": [
+        "OpenAI"
+      ],
+      "source": "hn",
+      "source_label": "OpenAI",
+      "source_url": "https://openai.com/index/codex-quantum-computing-experiments/",
+      "discuss_url": "https://news.ycombinator.com/item?id=49622561",
+      "interests": [
+        "ai",
+        "science"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "mercury-2-5",
+      "kicker": "AI",
+      "headline": "Mercury 2.5 from Inception Labs",
+      "why_read": "HN ~213 — diffusion LLM line keeps shipping while transformers dominate the discourse.",
+      "body": [
+        "Inception Labs introduced Mercury 2.5. HN discussion sits in the low hundreds; the company blog is the feature sheet.",
+        "Open-model / alt-architecture taste for anyone tracking inference speed bets beyond the usual dense transformer releases."
+      ],
+      "authors": [
+        "Inception Labs"
+      ],
+      "source": "hn",
+      "source_label": "Inception Labs",
+      "source_url": "https://www.inceptionlabs.ai/blog/introducing-mercury-2-5",
+      "discuss_url": "https://news.ycombinator.com/item?id=49616354",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "qwen38-quant-bench",
+      "kicker": "AI",
+      "headline": "Qwen3.8 27B quantizations: 4-bit holds up, 1-bit collapses",
+      "why_read": "HN ~258 — LocalLLaMA-adjacent measurement, not vibes.",
+      "body": [
+        "Quesma's blog benchmarks Qwen3.8 27B across quantization levels and reports 4-bit remaining usable while 1-bit collapses. HN discussion is active; the post has the tables.",
+        "If you run local models, this is the practical card next to DeepSeek flash chatter."
+      ],
+      "authors": [
+        "Quesma"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://quesma.com/blog/qwen38-27b-quantizations-benchmarked/",
+      "discuss_url": "https://news.ycombinator.com/item?id=49611128",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "i-have-adhd-skill",
+      "kicker": "AI",
+      "headline": "I-have-ADHD: a skill to stop coding agents from burying the answer",
+      "why_read": "HN ~471 — agent UX hygiene Anand will feel in Grok Bot land.",
+      "body": [
+        "GitHub project ayghri/i-have-adhd packages a skill aimed at stopping coding agents from burying the answer under walls of process narration. HN put it near 470 points with a huge comment thread.",
+        "Tiny prompt/skill craft with outsized daily-driver value if you already run agent teams."
+      ],
+      "authors": [
+        "ayghri"
+      ],
+      "source": "github",
+      "source_label": "GitHub",
+      "source_url": "https://github.com/ayghri/i-have-adhd",
+      "discuss_url": "https://news.ycombinator.com/item?id=49610631",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "tao-math-mined",
+      "kicker": "Science",
+      "headline": "Tao: open math problems are being non-renewably mined by AI",
+      "why_read": "HN ~387 — Terence Tao on the commons problem next to OpenAI's Navier–Stokes claim.",
+      "body": [
+        "Terence Tao's Mathstodon note argues open math problems are being non-renewably mined by AI systems. HN discussion is large; the toot is the primary text.",
+        "Read it beside OpenAI's agent-swarm announcement: capability flex vs commons depletion."
+      ],
+      "authors": [
+        "Terence Tao"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://mathstodon.xyz/@tao/117237320796901560",
+      "discuss_url": "https://news.ycombinator.com/item?id=49616968",
+      "interests": [
+        "science",
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "chatgpt-images-25",
+      "kicker": "AI",
+      "headline": "ChatGPT Images 2.5",
+      "why_read": "OpenAI product drop on HN ~353 — image stack keeps iterating.",
+      "body": [
+        "OpenAI introduced ChatGPT Images 2.5. The company page is the feature source; HN discussion covers quality and rate-limit gripes.",
+        "Consumer multimodal beat next to Muse and Astra robot demos."
+      ],
+      "authors": [
+        "OpenAI"
+      ],
+      "source": "hn",
+      "source_label": "OpenAI",
+      "source_url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+      "discuss_url": "https://news.ycombinator.com/item?id=49614720",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "copperhead-pcb",
+      "kicker": "AI",
+      "headline": "Show HN: Copperhead — Cursor for circuit boards",
+      "why_read": "HN ~230 — AI coding tools jumping into EDA.",
+      "body": [
+        "Copperhead.sh pitches itself as Cursor for circuit boards. The Show HN thread debates scope and trust for generative PCB workflows.",
+        "AI coding tools expanding into hardware design — systems taste with copper pours."
+      ],
+      "authors": [
+        "Copperhead"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://copperhead.sh/",
+      "discuss_url": "https://news.ycombinator.com/item?id=49610059",
+      "interests": [
+        "ai",
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "kimi-k3-macbook",
+      "kicker": "AI",
+      "headline": "Kimi K3 (2.8T) at 1 token/s on a MacBook Pro from four SSDs",
+      "why_read": "HN ~269 — extreme local inference theater that LocalLLaMA will love.",
+      "body": [
+        "argonautlabsai/deltafin shows streaming Kimi K3 (2.8T) at about 1 token/s on a MacBook Pro off four SSDs. HN thread is half admiration, half 'why would you'.",
+        "Edge inference stunt that still teaches storage bandwidth lessons."
+      ],
+      "authors": [
+        "argonautlabsai"
+      ],
+      "source": "github",
+      "source_label": "GitHub",
+      "source_url": "https://github.com/argonautlabsai/deltafin",
+      "discuss_url": "https://news.ycombinator.com/item?id=49616257",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "pstack-015",
+      "kicker": "AI",
+      "headline": "pstack 0.15.0: 3–11% token savings and fewer em-dashes",
+      "why_read": "Anand RT'd poteto — Grok Bot skill craft that literally shapes agent manners.",
+      "body": [
+        "Lauren (@poteto) shipped pstack 0.15.0 with token usage improvements of roughly 3–11% depending on loaded skills, plus cleanup of stray semicolons and em dashes so skills are not a bad influence. Anand retweeted it.",
+        "Micro-release, macro culture: the agent harness is becoming a product surface."
+      ],
+      "authors": [
+        "lauren"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/poteto/status/2097380152703615396",
+      "discuss_url": "https://x.com/indrayam/status/2097454415095513218",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "mitchellh-superlogical",
+      "kicker": "Systems",
+      "headline": "Mitchell Hashimoto: Superlogical as full SSH replacement",
+      "why_read": "Anand RT'd — remote persistent sessions from the HashiCorp co-founder.",
+      "body": [
+        "Mitchell Hashimoto posted a look at remote persistent sessions with Superlogical, including remote directory lists, and says he no longer runs SSH on his servers. Anand retweeted the demo.",
+        "Systems comfort food from someone who defined a generation of infrastructure tooling."
+      ],
+      "authors": [
+        "Mitchell Hashimoto"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/mitchellh/status/2097424868203758046",
+      "discuss_url": "https://x.com/indrayam/status/2097455827065917447",
+      "interests": [
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "herdr-firstmate",
+      "kicker": "AI",
+      "headline": "herdr / firstmate — Robby Russell's acclimation notes",
+      "why_read": "Anand RT'd Oh My Zsh creator's herdr tips and a companion walkthrough video.",
+      "body": [
+        "Robby Russell shared notes on getting acclimated to @herdrdev / firstmate by @kunchenguid. Anand also RT'd EachWayAI's pointer to @_halshin's comprehensive walkthrough video.",
+        "Agent-harness shopping for people who already live in terminal workflows."
+      ],
+      "authors": [
+        "Robby Russell"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/robbyrussell/status/2097249034578825239",
+      "discuss_url": "https://x.com/indrayam/status/2097525673204088941",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "grok-bot-five-questions",
+      "kicker": "AI",
+      "headline": "Five questions that make the next Grok Bot run better",
+      "why_read": "Anand RT'd Michael Fenech's post-task review prompts for agent teams.",
+      "body": [
+        "Michael Fenech lists five questions to ask a Grok Bot team after important tasks: review what could be better, what slowed the run, what info was missing, and related retros. Anand retweeted it.",
+        "Operational craft for someone who already runs multiple bots — pairs with the in-chat forms launch."
+      ],
+      "authors": [
+        "Michael Fenech"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/Michael_Fenech_/status/2097360060947341452",
+      "discuss_url": "https://x.com/indrayam/status/2097500793305719075",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "zelle-upi-bridge",
+      "kicker": "Systems",
+      "headline": "Bank of America works on Zelle–UPI cross-border bridge",
+      "why_read": "Anand RT'd India Embassy US — payments plumbing between US Zelle and India UPI.",
+      "body": [
+        "The Embassy of India in the US relayed that Bank of America is working on a Zelle–UPI bridge for cross-border payments. Anand retweeted the embassy post.",
+        "Kindness/IT amplifier with real diaspora utility — not a model release."
+      ],
+      "authors": [
+        "India in USA"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/IndianEmbassyUS/status/2097447866692485398",
+      "discuss_url": "https://x.com/indrayam/status/2097490497073754525",
+      "interests": [
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "sequoia-x-ai-hype",
+      "kicker": "AI",
+      "headline": "Sequoia: X hype finally aligning with AI winners",
+      "why_read": "X news on Sequoia partners comparing 15 years of X topics to valuable startups.",
+      "body": [
+        "X news summarizes Sequoia partners Konstantine Buhler and Oliver Cho comparing 15 years of hottest X topics to the most valuable companies founded each year. Crypto dominated chatter for years while winners like OpenAI and Anthropic often came from quieter lanes; recent AI hype around LLMs, chips, and robotics finally coincides with high-value startups including SpaceXAI.",
+        "Meta-signal for a desk that treats X as the primary news wire."
+      ],
+      "authors": [
+        "X News",
+        "Sequoia"
+      ],
+      "source": "x",
+      "source_label": "X News",
+      "source_url": "https://x.com/i/trending/2097401340637175877",
+      "discuss_url": "https://x.com/i/trending/2097401340637175877",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "flock-surveillance",
+      "kicker": "Systems",
+      "headline": "Flock wants a closely surveilled world with no exit",
+      "why_read": "New Yorker on HN — ALPR/surveillance systems beat.",
+      "body": [
+        "The New Yorker's Infinite Scroll piece on Flock Safety argues for a closely surveilled world with no exit. HN discussion is active; the magazine piece is the source.",
+        "Privacy/systems card for an IT Architect who already tracks IoT trust failures."
+      ],
+      "authors": [
+        "The New Yorker"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://www.newyorker.com/culture/infinite-scroll/flock-wants-a-closely-surveilled-world-with-no-exit",
+      "discuss_url": "https://news.ycombinator.com/item?id=49624394",
+      "interests": [
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "build-a-printer",
+      "kicker": "Systems",
+      "headline": "How to build a printer",
+      "why_read": "HN ~363 — joyful systems essay with real hardware scars.",
+      "body": [
+        "nishantjosh's blog walks building a printer from scratch. HN loved it (~360+); the post is the build log.",
+        "Love/laughter amplifier with solder fumes — pinned-post energy."
+      ],
+      "authors": [
+        "nishantjosh"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://nishantjosh.dev/blogs/how-to-build-a-fking-printer/",
+      "discuss_url": "https://news.ycombinator.com/item?id=49617255",
+      "interests": [
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "tension-wood",
+      "kicker": "Science",
+      "headline": "Tension wood: a plant 'muscle' that bends and straightens",
+      "why_read": "phys.org + HN ~130 — biology with physics metaphors.",
+      "body": [
+        "phys.org covers research on tension wood acting like a muscle that can both bend and straighten plants. HN discussion is modest; the article summarizes the paper.",
+        "Science card that is not another AI math proof."
+      ],
+      "authors": [
+        "phys.org"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://phys.org/news/2026-09-trees-muscle-posture-newly-role.html",
+      "discuss_url": "https://news.ycombinator.com/item?id=49546964",
+      "interests": [
+        "science"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "llm-social-biases",
+      "kicker": "AI",
+      "headline": "LLMs develop novel social biases through adaptive exploration",
+      "why_read": "OpenReview + HN ~176 — safety research beyond distillation theft headlines.",
+      "body": [
+        "An OpenReview paper argues large language models can develop novel social biases through adaptive exploration. HN discussion sits around 176; the paper page is the source.",
+        "Research foil to the Coxon resignation letter and the NSA distillation advisory."
+      ],
+      "authors": [
+        "OpenReview"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://openreview.net/forum?id=pc7fqaOcAH",
+      "discuss_url": "https://news.ycombinator.com/item?id=49617581",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "moss-banana-hotdog",
+      "kicker": "Tesla",
+      "headline": "David Moss: will Cybercab doors close on a banana and a hot dog?",
+      "why_read": "Anand RT'd the pinch-test video — safety theater that still teaches door logic.",
+      "body": [
+        "David Moss filmed whether Cybercab doors and trunk will close on a banana and a hot dog. Anand retweeted the clip; it joins the week's door blind-spot and boarding-countdown field notes.",
+        "Silly object lesson with a real pinch-protection question for a wheel-less cabin."
+      ],
+      "authors": [
+        "David Moss"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/DavidMoss/status/2097427127234641943",
+      "discuss_url": "https://x.com/indrayam/status/2097457212251623724",
+      "interests": [
+        "tesla"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "cybercab-rider-wishlist",
+      "kicker": "Tesla",
+      "headline": "Cybercab rider wishlist: USB lighting, denser pins, night UX",
+      "why_read": "Anand RT'd Spencer's multi-day Austin field notes for the Tesla team.",
+      "body": [
+        "Spencer (@scotsrule08) posted multi-day Cybercab feedback: recessed 90W USB ports need lighting at night, plus other UX asks. Anand retweeted it alongside POV boarding clips.",
+        "Ground-truth product feedback next to manufacturing demos and cost-per-mile charts."
+      ],
+      "authors": [
+        "Spencer"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/scotsrule08/status/2097322561680097717",
+      "discuss_url": "https://x.com/indrayam/status/2097458198391177517",
+      "interests": [
+        "tesla"
+      ],
+      "lead": false,
+      "featured": false
+    }
+  ]
+}
