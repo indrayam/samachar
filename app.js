@@ -236,6 +236,42 @@
       "</section>";
   }
 
+  function announce(message) {
+    const status = document.getElementById("edition-status");
+    if (status) status.textContent = message;
+  }
+
+  function setEditionBusy(isBusy) {
+    const sheet = document.getElementById("newspaper-sheet");
+    if (sheet) sheet.setAttribute("aria-busy", String(isBusy));
+  }
+
+  function clearNoStoriesMessage() {
+    const empty = document.getElementById("no-stories-message");
+    const retry = document.getElementById("retry-edition");
+    if (empty) {
+      empty.hidden = true;
+      empty.style.display = "none";
+    }
+    if (retry) {
+      retry.hidden = true;
+      retry.disabled = false;
+    }
+  }
+
+  function showNoStoriesMessage(message, canRetry) {
+    const empty = document.getElementById("no-stories-message");
+    const copy = document.getElementById("no-stories-copy");
+    const retry = document.getElementById("retry-edition");
+    if (copy) copy.textContent = message;
+    if (empty) {
+      empty.hidden = false;
+      empty.style.display = "block";
+      empty.dataset.state = canRetry ? "error" : "empty";
+    }
+    if (retry) retry.hidden = !canRetry;
+  }
+
   function applyFilters() {
     const cards = document.querySelectorAll("#stories .story");
     let visible = 0;
@@ -251,8 +287,13 @@
         card.setAttribute("data-hidden", "true");
       }
     });
-    const empty = document.getElementById("no-stories-message");
-    empty.style.display = visible === 0 ? "block" : "none";
+    if (visible === 0) {
+      showNoStoriesMessage("No stories match the selected filters in today's edition.", false);
+      announce("No stories match the selected filters in today's edition.");
+    } else {
+      clearNoStoriesMessage();
+      announce(visible + (visible === 1 ? " story" : " stories") + " shown.");
+    }
     if (state.edition) renderMasthead(state.edition, visible);
   }
 
@@ -286,18 +327,43 @@
 
   initMobileFilters();
 
-  loadEdition()
-    .then(function (edition) {
-      state.edition = edition;
-      renderMasthead(edition);
-      renderFilters();
-      renderStories(edition);
-      applyFilters();
-    })
-    .catch(function (err) {
-      console.error(err);
-      document.getElementById("no-stories-message").style.display = "block";
-      document.getElementById("no-stories-message").querySelector("p").textContent =
-        "Today's edition could not be loaded.";
-    });
+  const retryButton = document.getElementById("retry-edition");
+
+  function initializeEdition() {
+    if (retryButton) {
+      retryButton.disabled = true;
+      retryButton.textContent = "Retrying…";
+    }
+    state.edition = null;
+    clearNoStoriesMessage();
+    setEditionBusy(true);
+    announce("Loading today's edition.");
+
+    loadEdition()
+      .then(function (edition) {
+        state.edition = edition;
+        renderMasthead(edition);
+        renderFilters();
+        renderStories(edition);
+        applyFilters();
+      })
+      .catch(function (err) {
+        console.error(err);
+        showNoStoriesMessage(
+          "Today's edition could not be loaded. Check your connection and try again.",
+          true
+        );
+        announce("Today's edition could not be loaded. Try again.");
+      })
+      .finally(function () {
+        setEditionBusy(false);
+        if (retryButton) {
+          retryButton.disabled = false;
+          retryButton.textContent = "Try again";
+        }
+      });
+  }
+
+  if (retryButton) retryButton.addEventListener("click", initializeEdition);
+  initializeEdition();
 })();

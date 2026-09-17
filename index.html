@@ -84,9 +84,12 @@
         </div>
       </header>
 
-      <div class="no-stories-message" id="no-stories-message">
-        <p>No stories match the selected filters in today's edition.</p>
+      <div class="no-stories-message" id="no-stories-message" role="status" aria-live="polite" aria-atomic="true">
+        <p id="no-stories-copy">No stories match the selected filters in today's edition.</p>
+        <button id="retry-edition" class="retry-edition" type="button" hidden>Try again</button>
       </div>
+
+      <p id="edition-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
 
       <section id="stories" class="newspaper-columns"></section>
 
