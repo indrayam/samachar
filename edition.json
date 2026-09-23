@@ -1,50 +1,50 @@
 {
-  "date": "2026-09-22",
-  "weekday": "Tuesday",
+  "date": "2026-09-23",
+  "weekday": "Wednesday",
   "title": "The Daily Diff",
   "stories": [
     {
-      "id": "grok-47-launch",
+      "id": "opus-55-launch",
       "lead": true,
-      "headline": "Grok 4.7 drops — same price as 4.6, stronger agent coding and self-checks",
-      "why_read": "Anand RTd day-1 takes all night; HN ~581; Next.js evals put it top-three for the first Grok.",
+      "headline": "Claude Opus 5.5 drops — Fable-class work at ~40% less cost, CursorBench crown",
+      "why_read": "Anand RTd Matthew Berman, CursorBench, Claude playbook, and Next.js evals overnight; HN ~1,586.",
       "body": [
-        "SpaceXAI shipped Grok 4.7 on September 21 as a same-price, same-speed upgrade over 4.6 ($2/$6 per million under 200k prompts): larger base, longer RL on multi-hour tasks, tighter self-verification, native Grok Bot harness training, and a new safeguard stack. Launch scores put CursorBench 4.0 at 46.3% (xhigh) and EEBench at 64.0%, with day-one availability in Cursor, Grok Build, the Grok API, and a GitHub Copilot rollout.",
-        "Anand's overnight RTs tracked the human read: @kunchenguid's Firstmate day-1 (prompt-faithful, stable, conservative — ignore the loud public-bench hot takes), @theo noting Artificial Analysis task cost vs Astra, and @nextjs celebrating the first Grok in the Next.js evals top three. The story is not another leaderboard spike — it is whether agent harnesses actually feel different on Tuesday morning."
+        "Anthropic shipped Claude Opus 5.5 on September 22 as the first Claude 5.5 model: Fable 5.1–level performance on most work, ~40% lower cost than Opus 5 on typical default workloads, and API pricing at $4/$20 per million input/output tokens (cache reads $0.20). Official benches put CursorBench 4.0 at 57.8% and Terminal-Bench 4.0 at 66.4% (xhigh), with availability across Anthropic, AWS, Google Cloud, and Microsoft Foundry as `claude-opus-5-5`.",
+        "Anand's overnight RTs tracked the human read: @MatthewBerman calling it best-on-planet and cheaper than Astra/Fable, @mattyp noting Opus 5.5 taking the top four CursorBench slots, @ClaudeDevs posting the first-session playbook, and @rauchg's fresh Next.js evals with Opus at 97%. The story is whether agent harnesses feel different Wednesday morning — not another leaderboard spike."
       ],
       "authors": [
-        "SpaceXAI",
-        "xAI"
+        "Anthropic",
+        "Claude"
       ],
       "source": "web",
-      "source_label": "x.ai / Hacker News",
-      "source_url": "https://x.ai/news/grok-4-7",
-      "discuss_url": "https://news.ycombinator.com/item?id=49788838",
+      "source_label": "Anthropic / Hacker News",
+      "source_url": "https://www.anthropic.com/claude-opus-5-5",
+      "discuss_url": "https://news.ycombinator.com/item?id=49803892",
       "interests": [
         "ai",
         "agents",
-        "grok"
+        "coding"
       ],
       "featured": false,
       "kicker": "Top Story"
     },
     {
-      "id": "cybercab-67-austin-fleet",
+      "id": "cybercab-efficiency-40",
       "lead": true,
-      "headline": "Cybercab #67 joins the Austin Robotaxi fleet — dedicated two-seaters hit 67",
-      "why_read": "Anand RTd @robotaxi's video; Texas DMV tally shows nine more Cybercabs and a 476-vehicle Austin fleet.",
+      "headline": "Tesla: Cybercab is 40% more efficient than Model Y — drive-unit video + fleet still climbing",
+      "why_read": "Anand RTd and bookmarked Sawyer Merritt's Tesla Recruiting clip; X News tallies dedicated Cybercabs toward 69.",
       "body": [
-        "Tesla's purpose-built Cybercab count in Austin climbed again: @robotaxi posted Cybercab #67 joining the fleet overnight, and X News tallied nine new Cybercab registrations that push dedicated two-seaters to 67 alongside 409 Model Ys (476 autonomous vehicles total in Austin). Early paid robotaxi rides in the geofenced zone remain the live testbed while gold showroom units tour Sydney and China.",
-        "The timing matters with NHTSA's Special Order still on the clock for wheel-less Cybercab legality. Fleet growth plus Anand's RT of DHH's \"What a time to be alive\" clip keeps Austin's lounge-cabin robotaxi beat ahead of the regulatory paperwork — and ahead of Monday's China/Australia showroom thrills."
+        "Tesla Recruiting posted a drive-unit video claiming Cybercab is the most efficient EV Tesla has certified and ~40% more efficient than Model Y, with a Cybercab drive unit rolling off the line every 10 seconds. Independent reads circulating with the clip put Cybercab near ~165 Wh/mi versus ~240 Wh/mi for Model Y RWD — the same efficiency beat Anand amplified via @SawyerMerritt.",
+        "X News clusters put Texas dedicated Cybercab registrations around 67–69 alongside hundreds of Model Y robotaxis, while NHTSA's Special Order still clocks toward a September 29 oath deadline on wheel-less Cybercab legality. Registrations and efficiency claims are the bull case; Austin active-ride trackers remain the bear case — both belong in the same Wednesday fold."
       ],
       "authors": [
         "Tesla",
-        "@robotaxi"
+        "@SawyerMerritt"
       ],
       "source": "x",
-      "source_label": "X / @robotaxi",
-      "source_url": "https://x.com/robotaxi/status/2102222880553787723",
-      "discuss_url": "https://x.com/indrayam/status/2102230286708752723",
+      "source_label": "X / Sawyer Merritt",
+      "source_url": "https://x.com/SawyerMerritt/status/2102535754148900969",
+      "discuss_url": "https://x.com/indrayam/status/2102570753879408946",
       "interests": [
         "tesla",
         "robotaxi",
@@ -54,51 +54,26 @@
       "kicker": "Top Story"
     },
     {
-      "id": "nvidia-dsx-megapack",
+      "id": "gpt6-sol-luna",
       "featured": true,
-      "headline": "Nvidia DSX Ready: Tesla Megapacks qualified for AI factory power stacks",
-      "why_read": "Anand RTd Sawyer Merritt — Megapack is now on Nvidia's BESS shortlist for DSX AI factories.",
+      "headline": "OpenAI answers in ~90 minutes: GPT-6 Sol and Luna — 50% cheaper than 5.6, Astra-class reliability pitch",
+      "why_read": "Anand bookmarked Dan Shipper's Codex take; HN ~1,581; Theo's 'all in a day' post sat in bookmarks too.",
       "body": [
-        "Nvidia launched DSX Ready, a partner qualification for battery energy storage and cooling gear that matches its DSX AI factory reference designs. Tesla Megapacks are in the first BESS cohort — Nvidia's framing is blunt: power, cooling, water, and grid constraints now decide how much compute you can actually turn on.",
-        "@Tesla_Megapack amplified the same beat Anand RTd: Megapacks buffering data-center load and helping interconnection compliance. It is the physical-AI crossover — chips need watts as much as FLOPs — landing the same week Samsung/SK Hynix HBM shares ripped higher on memory demand."
+        "Ninety minutes after Opus 5.5, OpenAI expanded the GPT-6 family with Sol (complex coding/agentic work) and Luna (high-volume focused tasks), claiming ~50% lower API prices versus GPT-5.6 Sol/Luna promotional pricing plus fewer factual mistakes — Sol pitched at Astra-level reliability on OpenAI's internal flagged-mistake eval. Both landed in ChatGPT Work and Codex for paid tiers and in the API as `gpt-6-sol` / `gpt-6-luna`.",
+        "@danshipper called Sol his new Codex daily driver — not quite Astra, but close enough, faster, and half the 5.6 Sol price — and Anand bookmarked it. @petergostev's efficiency note (half the tokens, ~1/5 the time vs 5.6 Sol) and @theo's same-day Opus/Sol/Luna stack complete the overnight RT/bookmark trail."
       ],
       "authors": [
-        "Nvidia",
-        "Tesla",
-        "Sawyer Merritt"
+        "OpenAI",
+        "Dan Shipper"
       ],
-      "source": "x",
-      "source_label": "X / Sawyer Merritt",
-      "source_url": "https://x.com/SawyerMerritt/status/2102133450694123761",
-      "discuss_url": "https://x.com/indrayam/status/2102166220774494628",
+      "source": "web",
+      "source_label": "OpenAI / TechCrunch / HN",
+      "source_url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+      "discuss_url": "https://news.ycombinator.com/item?id=49805509",
       "interests": [
-        "nvidia",
-        "tesla",
         "ai",
-        "energy"
-      ],
-      "lead": false,
-      "kicker": "Featured"
-    },
-    {
-      "id": "tesla-us-soldout-2026",
-      "featured": true,
-      "headline": "U.S. Tesla new orders: Model 3 RWD and Model Y L Launch Series sold out for 2026",
-      "why_read": "Anand double-RTd Sawyer Merritt — Y L Launch now quoting Jan–Feb 2027; demand > supply.",
-      "body": [
-        "Sawyer Merritt's inventory snapshot Anand amplified twice: Model 3 RWD and Model Y L Launch Series are sold out for new U.S. 2026 orders, with Model Y RWD/AWD nearly gone. New Y L Launch configs are already showing estimated delivery into January–February 2027.",
-        "Used Performance Y prices spiking and @bscholl's HW4/FSD \"table stakes\" quote RT'd by Anand rhyme with the same demand signal. Whatever the narrative on deliveries, the order book is telling a tighter story than Monday's China wait-time note alone."
-      ],
-      "authors": [
-        "Sawyer Merritt",
-        "Tesla"
-      ],
-      "source": "x",
-      "source_label": "X / Sawyer Merritt",
-      "source_url": "https://x.com/SawyerMerritt/status/2102152351515611445",
-      "discuss_url": "https://x.com/indrayam/status/2102152421367533818",
-      "interests": [
-        "tesla"
+        "openai",
+        "coding"
       ],
       "lead": false,
       "kicker": "Featured"
@@ -106,438 +81,163 @@
     {
       "id": "starship-flight14-sep28",
       "featured": true,
-      "headline": "Starship Flight 14 slips to NET Sep 28 — first orbital shot with 26 Starlink V3s",
-      "why_read": "Monday's ~Sep 22 pad window moved; trackers now hold Monday Sep 28 7:15am CT for B21/S41.",
+      "headline": "Starship Flight 14: Ship 41 stacked on Booster 21 — NET Sep 28 orbital debut with 26 Starlink V3s",
+      "why_read": "Holdover from Tuesday with fresh stack signal; first Starship orbital shot still the countdown.",
       "body": [
-        "SpaceX's first true Starship orbital attempt is now No Earlier Than Monday, September 28, 2026 at 7:15am CT (12:15 UTC) from Starbase Pad 2 — a 75-minute window pending regulatory clearance. Booster 21 and Ship 41 still target ~275 km orbit, ~six orbits over ~10 hours, deployment of 26 Starlink V3 satellites (1 Tbps-class each), Gulf booster splashdown, and Pacific ship splashdown west of Chile.",
-        "Monday's edition had the pad-roll and an earlier ~Sep 22 framing; Tuesday's beat is the calendar slip plus the payload stakes. First operational Starlink on Starship remains the milestone even if the clock moved a week."
+        "SpaceX has Ship 41 atop Super Heavy Booster 21 at Starbase Pad 2 ahead of Flight 14, still targeting no earlier than Monday September 28 (pending regulatory approval) for Starship's first orbital attempt. The mission profile circulating with trackers: ~275 km insertion, 26 operational Starlink V3 satellites after multiple orbits, booster splashdown in the Gulf, ship splashdown in the Pacific — plus two reused heat-shield tiles from Ship 40 as a reusability experiment.",
+        "Tuesday's fold already flagged the Sep 22 → Sep 28 slip; Wednesday's news is the full stack under the stars and wet-dress rehearsal next. If Flight 14 sticks the orbital insertion and V3 deploy, Starship stops being a suborbital test article and starts looking like a revenue launcher."
       ],
       "authors": [
         "SpaceX"
       ],
       "source": "web",
-      "source_label": "Next Spaceflight / SpaceX",
-      "source_url": "https://nextspaceflight.com/launches/details/8346/",
-      "discuss_url": "https://x.com/i/trending/2101895470821908943",
+      "source_label": "SpaceX / Next Spaceflight",
+      "source_url": "https://www.spacex.com/launches/starship-flight-14",
+      "discuss_url": "https://x.com/i/trending/2102607947750855106",
       "interests": [
         "spacex",
-        "space",
         "starship"
       ],
       "lead": false,
       "kicker": "Featured"
     },
     {
-      "id": "mimo-v26",
+      "id": "grok-bot-desktop-perf",
       "featured": true,
-      "headline": "MiMo v2.6 — Xiaomi's open model tops HN; Pro price/perf analysis follows",
-      "why_read": "HN #1 at ~938 pts; Artificial Analysis already has a Pro intelligence/price card.",
+      "headline": "Grok Bot: cleaner Bot UI from @bot + 53 desktop perf fixes from @poteto",
+      "why_read": "Anand RTd both the official QoL post and Lauren's reconnect/wake/switch timings overnight.",
       "body": [
-        "Xiaomi's MiMo v2.6 announcement led Hacker News (~938 points) with a companion Artificial Analysis write-up on MiMo-v2.6-Pro intelligence, performance, and price. It is another open-weight week entry after Qwen-Image-2.1 — labs outside the usual U.S. frontier set keep shipping runable models.",
-        "For Anand's shelf (LocalLLaMA taste, open LLMs, agent stacks), MiMo is the \"can I actually try it\" story next to Grok 4.7's closed API bump — open vs harness, both moving on the same Tuesday."
+        "@bot posted a cleaner interface for working with Bots — quality-of-life polish on the same product Anand runs as Sam Samachar. Hours earlier @poteto detailed 53 desktop performance fixes: reconnect after a flaky connection 60s → 0.7s, waking a laptop 23s → 1s, switching back to a bot's Computer view 868ms → 27ms.",
+        "Together the posts are the mid-week product beat after Monday's Grok 4.7 model drop: same agents, less friction. For a fleet that lives in the desktop app, reconnect and wake times matter more than another public bench."
       ],
       "authors": [
-        "Xiaomi"
-      ],
-      "source": "hn",
-      "source_label": "Hacker News",
-      "source_url": "https://mimo.xiaomi.com/mimo-v2-6",
-      "discuss_url": "https://news.ycombinator.com/item?id=49792730",
-      "interests": [
-        "ai",
-        "open-source"
-      ],
-      "lead": false,
-      "kicker": "Featured"
-    },
-    {
-      "id": "three-labs-vs-45y-ipos",
-      "featured": true,
-      "headline": "OpenAI + Anthropic + SpaceX paper value tops every U.S. tech IPO, 1980–2025",
-      "why_read": "Anand RTd Jason's chart — three private names vs 45 years of public tech debuts.",
-      "body": [
-        "A Wall Street chart making the rounds (Jason Calacanis RTd it; Anand amplified) stacks OpenAI, Anthropic, and SpaceX private marks against the combined first-day value of every U.S. tech IPO from 1980–2025 — and the three private names win. X News framed the totals around multi-trillion private marks versus ~$4.1T of historical IPO day-one value.",
-        "It is a power-law postcard for Anand's IT/ET union: AI labs and launch companies concentrating value off-exchange while Flight 14 and Grok 4.7 ship in public. Treat the precise marks as chart-of-the-day, not audited books — the shape of the concentration is the news."
-      ],
-      "authors": [
-        "Jason Calacanis"
+        "@bot",
+        "@poteto",
+        "xAI"
       ],
       "source": "x",
-      "source_label": "X / @Jason",
-      "source_url": "https://x.com/Jason/status/2102220833410416966",
-      "discuss_url": "https://x.com/indrayam/status/2102232721720312169",
-      "interests": [
-        "ai",
-        "spacex",
-        "markets"
-      ],
-      "lead": false,
-      "kicker": "Featured"
-    },
-    {
-      "id": "attention-is-all-you-have",
-      "featured": true,
-      "headline": "Attention is all you have — a sharp critique of the transformer monoculture",
-      "why_read": "HN ~844 pts; pairs with Visual Transformer Explainer still climbing the same front page.",
-      "body": [
-        "alicegg.tech's \"Attention is all you have\" essay hit ~844 on HN, arguing the field's attention monoculture hard enough to sit next to the ever-green Transformer Explainer visualizer (~446). It is systems-taste reading: not another benchmark dump, but a provocation about what we stopped trying.",
-        "Tuesday's AI fold already has Grok 4.7 and MiMo shipping product; this is the counter-melody — why the architecture shelf got so thin — for readers who still care about the math under the agents."
-      ],
-      "authors": [
-        "alicegg"
-      ],
-      "source": "hn",
-      "source_label": "Hacker News",
-      "source_url": "https://alicegg.tech/2026/09/21/attention",
-      "discuss_url": "https://news.ycombinator.com/item?id=49787726",
-      "interests": [
-        "ai",
-        "science"
-      ],
-      "lead": false,
-      "kicker": "Featured"
-    },
-    {
-      "id": "linear-ci-bottleneck",
-      "kicker": "DevOps",
-      "headline": "Linear: AI coding made CI the bottleneck — so they reworked the pipeline",
-      "why_read": "HN ~256 — agent PRs outrun classic CI; the company rebuilt to keep up.",
-      "body": [
-        "Linear's engineering post argues AI coding shifted the constraint from \"write the change\" to \"wait for CI,\" then walks the redesign that lets agent-heavy PR volume keep moving. It is a practitioner note Anand's DevOps/DORA background will clock immediately.",
-        "Sits beside Plugin4Shell and Grok Bot agent fleets: when agents ship faster than gates, the gates become the product."
-      ],
-      "authors": [
-        "Linear"
-      ],
-      "source": "hn",
-      "source_label": "Hacker News / Linear",
-      "source_url": "https://linear.app/now/ci-bottleneck-reworked",
-      "discuss_url": "https://news.ycombinator.com/item?id=49792067",
-      "interests": [
-        "ai",
-        "systems",
-        "devops"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "cloudflare-python-workers-ga",
-      "kicker": "Cloud",
-      "headline": "Cloudflare Python Workers hit general availability",
-      "why_read": "HN ~236 — Python joins JS/TS on the Workers edge runtime for real.",
-      "body": [
-        "Cloudflare announced Python Workers generally available — Python workloads on the same edge Workers platform that already hosts JS/TS isolates. HN (~236) treated it as the missing language for edge glue and AI sidecar patterns.",
-        "For systems readers: fewer \"ship a container for a 50-line handler\" excuses, more cold-start and package-size craft at the rim of the network."
-      ],
-      "authors": [
-        "Cloudflare"
-      ],
-      "source": "hn",
-      "source_label": "Hacker News / Cloudflare",
-      "source_url": "https://blog.cloudflare.com/python-workers-ga/",
-      "discuss_url": "https://news.ycombinator.com/item?id=49787142",
-      "interests": [
-        "systems",
-        "cloud"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "nasa-mars-sample-return-dead",
-      "kicker": "Space",
-      "headline": "NASA's Mars Sample Return mission is dead",
-      "why_read": "Science.org + HN ~402 — flagship MSR canceled; Mars architecture reset.",
-      "body": [
-        "Science magazine reports NASA's Mars Sample Return effort is effectively dead after cost and schedule blowouts, ending a flagship architecture that was supposed to bring Perseverance's cached cores home. HN (~402) framed it as a planetary-science gut punch next to private launch cadence.",
-        "Contrast with Starship Flight 14's Starlink-first orbital try: public Mars sample logistics stall while commercial heavy lift practices orbital ops with broadband birds."
-      ],
-      "authors": [
-        "Science / AAAS"
-      ],
-      "source": "hn",
-      "source_label": "Hacker News / Science",
-      "source_url": "https://www.science.org/content/article/nasa-s-mars-sample-return-mission-dead",
-      "discuss_url": "https://news.ycombinator.com/item?id=49791939",
-      "interests": [
-        "space",
-        "science"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "tao-math-ai-advisory",
-      "kicker": "Math × AI",
-      "headline": "Terry Tao: Advisory Group on Mathematics and Artificial Intelligence",
-      "why_read": "Fresh Tao blog post (~146 HN) — formalizing how math and AI should talk.",
-      "body": [
-        "Terence Tao posted on the Advisory Group on Mathematics and Artificial Intelligence, continuing his streak of public calibration on where humans still matter in proof and discovery (Monday already carried his \"why human mathematicians\" note).",
-        "Pinned-taste fit: Physics/Chem/Math meeting AI without the hype layer — a committee with a blog trail beats another model card."
-      ],
-      "authors": [
-        "Terence Tao"
-      ],
-      "source": "hn",
-      "source_label": "Hacker News / Tao blog",
-      "source_url": "https://terrytao.wordpress.com/2026/09/21/advisory-group-on-mathematics-and-artificial-intelligence/",
-      "discuss_url": "https://news.ycombinator.com/item?id=49791997",
-      "interests": [
-        "ai",
-        "science",
-        "math"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "dettmers-frontier-own-hardware",
-      "kicker": "Local AI",
-      "headline": "Tim Dettmers: Frontier AI on Your Own Hardware — open-source week notes",
-      "why_read": "HN ~167 — Dettmers on running frontier-class work locally; LocalLLaMA energy.",
-      "body": [
-        "Tim Dettmers published \"Frontier AI on Your Own Hardware\" as part of an open-source week series — practical framing for serious local training/inference rather than toy demos. HN (~167) put it next to MiMo and open-weight chatter.",
-        "Reddit LocalLLaMA/MachineLearning hot.json returned challenge HTML this morning (blocked); Dettmers + MiMo + Laya/Kev cover the open/local shelf from HN and X instead."
-      ],
-      "authors": [
-        "Tim Dettmers"
-      ],
-      "source": "hn",
-      "source_label": "Hacker News",
-      "source_url": "https://timdettmers.com/2026/09/21/dlab-open-source-week/",
-      "discuss_url": "https://news.ycombinator.com/item?id=49791647",
-      "interests": [
-        "ai",
-        "open-source",
-        "nvidia"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "nextjs-evals-grok47",
-      "kicker": "Evals",
-      "headline": "Next.js evals: Grok 4.7 is the first Grok in the top three",
-      "why_read": "Anand RTd @nextjs — harness leaderboard signal beyond the launch blog.",
-      "body": [
-        "Vercel's Next.js evals board shows Grok 4.7 as the first Grok model to crack the top three — a concrete harness result Anand RTd alongside the x.ai launch post. It complements CursorBench numbers with a framework-shaped coding eval developers already watch.",
-        "Useful counterweight to Artificial Analysis cost charts: capability on a known app scaffold, not only synthetic agent indices."
-      ],
-      "authors": [
-        "Vercel",
-        "Next.js"
-      ],
-      "source": "x",
-      "source_label": "X / @nextjs",
-      "source_url": "https://nextjs.org/evals",
-      "discuss_url": "https://x.com/indrayam/status/2102231930066686310",
-      "interests": [
-        "ai",
-        "agents"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "amd-lisa-su-trillion",
-      "kicker": "Chips",
-      "headline": "Lisa Su's AMD: from ~$2B market cap in 2014 to ~$1T",
-      "why_read": "Anand RTd Jon Erlichman's retrospective clip — the long arc of the AI GPU challenger.",
-      "body": [
-        "Jon Erlichman's clip Anand RTd restates the Lisa Su era in one punchline: AMD roughly $2 billion when she became CEO in 2014, about $1 trillion today. It is anniversary-style finance content, but it maps onto the HBM/Nvidia-competitor narrative still driving Samsung and SK Hynix moves.",
-        "For the edition's chip beat: DSX Megapacks and HBM4 expansion are the near-term watts/memory story; Su's decade is the institutional memory."
-      ],
-      "authors": [
-        "Jon Erlichman"
-      ],
-      "source": "x",
-      "source_label": "X / Jon Erlichman",
-      "source_url": "https://x.com/JonErlichman/status/2102096189449449774",
-      "discuss_url": "https://x.com/indrayam/status/2102232880936108300",
-      "interests": [
-        "nvidia",
-        "chips",
-        "markets"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "laya-hf-trending",
-      "kicker": "System-1",
-      "headline": "HF #1: open multilingual System-1 decision model — Laya vs Jev wave continues",
-      "why_read": "Anand RTd Clement Delangue + Laya's builder thread; open classifiers still climbing.",
-      "body": [
-        "Hugging Face's #1 trending model slot flipped to an open-source multilingual System-1 decision model days after TypeSafe Jev went viral — Clement Delangue's post Anand amplified. Laya's builder (@Nandakishorm1) is still in Anand's timeline and bookmarks explaining the Kerala-to-HF path and the 33ms decision-engine pitch.",
-        "Monday already carried Kev, Laya-on-M4, and Jev-as-Judge; Tuesday's update is the HF chart itself — open decision heads are a category now, not a one-off."
-      ],
-      "authors": [
-        "Clement Delangue",
-        "Nandakishor M"
-      ],
-      "source": "x",
-      "source_label": "X / Clement Delangue",
-      "source_url": "https://laya.convaiinnovations.com/",
-      "discuss_url": "https://x.com/indrayam/status/2102232038237757951",
+      "source_label": "X / @bot / @poteto",
+      "source_url": "https://x.com/bot/status/2102532697960956074",
+      "discuss_url": "https://x.com/indrayam/status/2102602439769874657",
       "interests": [
         "ai",
         "agents",
-        "open-source"
+        "grok"
       ],
       "lead": false,
-      "featured": false
+      "kicker": "Featured"
     },
     {
-      "id": "cantrill-sun-wrong",
-      "kicker": "Systems",
-      "headline": "Bryan Cantrill: What Sun got wrong",
-      "why_read": "HN ~602 — Joyent/Oxide lens on Sun's missed futures; terminal-first comfort reading.",
+      "id": "x-numbers-rollout",
+      "featured": true,
+      "headline": "X Numbers begins rollout — contact anyone on X without a follow or accept",
+      "why_read": "Anand RTd @benjitaylor's launch post; new contact rail on the network he actually uses.",
       "body": [
-        "Bryan Cantrill's \"What Sun got wrong\" essay landed ~602 on HN — a systems-history autopsy from someone who lived adjacent to the wreckage and the surviving ideas. It is the kind of long-view systems writing Anand's Unix/IRIX taste still rewards.",
-        "No product launch, just institutional memory about platforms, culture, and timing — useful ballast on a Grok-and-Cybercab morning."
+        "Benji Taylor announced the start of an X Numbers rollout: a new way for anyone to contact you on X without needing to follow each other or accept requests. The design video frames it as a phone-number-like handle for DMs and reachability on the same graph.",
+        "For Anand — terminal-first, X-native, low on other social — a contact primitive that skips the follow/accept dance is infrastructure, not chrome. Watch whether Numbers stays opt-in, spam-resistant, and actually useful for bots and humans sharing a timeline."
       ],
       "authors": [
-        "Bryan Cantrill"
-      ],
-      "source": "hn",
-      "source_label": "Hacker News",
-      "source_url": "https://bcantrill.dtrace.org/2026/09/20/what-sun-got-wrong/",
-      "discuss_url": "https://news.ycombinator.com/item?id=49787436",
-      "interests": [
-        "systems"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "colin-breck-didnt-write",
-      "kicker": "Writing",
-      "headline": "I don't want to read what you didn't write — AI prose fatigue",
-      "why_read": "HN ~740 — a practitioner essay against outsourcing your sentences to models.",
-      "body": [
-        "Colin Breck's \"I don't want to read what you didn't write\" (~740 on HN) is the cultural twin of the agent boom: if models draft everything, readers start craving receipts of human attention. It is not anti-AI so much as anti-slop.",
-        "Paired with Linear's CI bottleneck and Grok 4.7 day-1 notes, Tuesday's meta-theme is trust — of code gates, of model behavior, and of the prose in between."
-      ],
-      "authors": [
-        "Colin Breck"
-      ],
-      "source": "hn",
-      "source_label": "Hacker News",
-      "source_url": "https://blog.colinbreck.com/i-dont-want-to-read-what-you-didnt-write/",
-      "discuss_url": "https://news.ycombinator.com/item?id=49794330",
-      "interests": [
-        "ai",
-        "culture"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "apple-intelligence-restrict",
-      "kicker": "Apple",
-      "headline": "Apple documents how to turn off and restrict Apple Intelligence on Mac",
-      "why_read": "HN ~324 + companion essay (~276) — control surfaces finally showing up.",
-      "body": [
-        "Apple's Mac Help docs for turning off and restricting Apple Intelligence features climbed HN (~324), with a same-day personal essay \"I said no and Apple said yes\" (~276) about consent and defaults. The pair reads as users reclaiming the off switch after a year of on-by-default AI chrome.",
-        "Useful systems note next to Monday's fm CLI story: Apple is shipping both the model surface and the admin knobs — enterprise-adjacent readers will care about the knobs."
-      ],
-      "authors": [
-        "Apple"
-      ],
-      "source": "hn",
-      "source_label": "Hacker News / Apple",
-      "source_url": "https://support.apple.com/guide/mac-help/turn-restrict-access-apple-intelligence-mchl7d3312b2/mac",
-      "discuss_url": "https://news.ycombinator.com/item?id=49790409",
-      "interests": [
-        "ai",
-        "apple",
-        "systems"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "jetbrains-air",
-      "kicker": "Agents",
-      "headline": "JetBrains Air — a system of products for agentic software development",
-      "why_read": "Fresh JetBrains blog — IDE vendor packages an agent stack, not a single chat.",
-      "body": [
-        "JetBrains introduced Air, framed as a system of products for agentic software development rather than a lone assistant pane. It is the incumbent-IDE answer to Cursor/Grok Build/Copilot cloud agents — packaging review, generation, and project context as a product line.",
-        "On a Grok 4.7 morning, every major tooling house is choosing a harness story; JetBrains just published theirs."
-      ],
-      "authors": [
-        "JetBrains"
-      ],
-      "source": "hn",
-      "source_label": "Hacker News / JetBrains",
-      "source_url": "https://blog.jetbrains.com/blog/2026/09/22/introducing-jetbrains-air/",
-      "discuss_url": "https://news.ycombinator.com/item?id=49799287",
-      "interests": [
-        "ai",
-        "agents"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "transformers-explained-visually",
-      "kicker": "Explainers",
-      "headline": "Transformers Explained Visually — Polo Club interactive still climbing",
-      "why_read": "HN ~446 — the visual explainer wave returns next to \"Attention is all you have.\"",
-      "body": [
-        "Georgia Tech Polo Club's Transformer Explainer interactive (~446 on HN) is back near the top of the front page beside the monoculture critique essay. It remains one of the cleanest ways to see attention heads, not just cite them.",
-        "Pedagogical ballast for a release-heavy Tuesday — especially useful if you are onboarding someone past the Grok 4.7 press release into the actual architecture."
-      ],
-      "authors": [
-        "Polo Club / Georgia Tech"
-      ],
-      "source": "hn",
-      "source_label": "Hacker News",
-      "source_url": "https://poloclub.github.io/transformer-explainer/",
-      "discuss_url": "https://news.ycombinator.com/item?id=49792342",
-      "interests": [
-        "ai",
-        "science"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "spacex-refuge-land-swap",
-      "kicker": "SpaceX",
-      "headline": "Judge clears SpaceX land swap from Texas wildlife refuge near Starbase",
-      "why_read": "X News — injunction denied Sep 21; ~715 refuge acres for testing expansion path.",
-      "body": [
-        "A South Texas federal judge denied a preliminary injunction on September 21, clearing SpaceX to proceed with a land exchange of roughly 715 acres from the Lower Rio Grande Valley National Wildlife Refuge for SpaceX acreage near the Massey Test Site. Environmental groups signaled they will keep litigating the broader case.",
-        "Infrastructure beat next to Flight 14: pad and test footprint politics move even when the launch NET slips a week."
-      ],
-      "authors": [
-        "X News"
+        "Benji Taylor",
+        "X"
       ],
       "source": "x",
-      "source_label": "X News",
-      "source_url": "https://x.com/i/trending/2102216657305510338",
-      "discuss_url": "https://x.com/i/trending/2102216657305510338",
+      "source_label": "X / Benji Taylor",
+      "source_url": "https://x.com/benjitaylor/status/2102443951898992825",
+      "discuss_url": "https://x.com/indrayam/status/2102602324652827061",
       "interests": [
-        "spacex",
-        "space"
+        "x",
+        "product"
       ],
       "lead": false,
-      "featured": false
+      "kicker": "Featured"
+    },
+    {
+      "id": "tesla-semi-zet-2500",
+      "featured": true,
+      "headline": "ZET SCALE: 2,500 electric Class 8 trucks — Tesla named primary OEM (largest U.S. e-truck order)",
+      "why_read": "Anand RTd @TSLAFanMtl's '~1% of the U.S. market in one order' take; Electrek + alliance releases confirm the RFP.",
+      "body": [
+        "Shipper alliance ZET SCALE (Catalyst Mobility / Smart Freight Centre) announced the largest U.S. electric Class 8 order to date: 2,500 battery-electric trucks, with Tesla named primary OEM after a competitive RFP and Kenworth, RIDE, and Volvo as secondary options. Founding shippers include Microsoft and PepsiCo; the alliance targets 10,000+ over time and says the first tranche nearly doubles today's U.S. electric Class 8 fleet.",
+        "Caveat that belongs in the body: the alliance number covers four OEMs, so treat '2,500 Semis' as Tesla's framing, not a published split. Timing still matters — Tesla's Nevada Semi factory inauguration is this week — and Anand's RT of the 'one order ≈ 1% U.S. market' reaction is the taste signal."
+      ],
+      "authors": [
+        "Tesla",
+        "ZET SCALE",
+        "Electrek"
+      ],
+      "source": "web",
+      "source_label": "Electrek / ZET SCALE",
+      "source_url": "https://electrek.co/2026/09/22/tesla-semi-2500-truck-order-zet-scale-largest-us/",
+      "discuss_url": "https://x.com/indrayam/status/2102536011108475245",
+      "interests": [
+        "tesla",
+        "energy",
+        "ev"
+      ],
+      "lead": false,
+      "kicker": "Featured"
+    },
+    {
+      "id": "grokipedia-v02",
+      "featured": true,
+      "headline": "Grokipedia v0.2 preview — Benji Taylor: 'will be better than ever'",
+      "why_read": "Anand RTd the design video; X News cluster shows book-style redesign with eagle art.",
+      "body": [
+        "X/SpaceXAI design lead Benji Taylor posted a Grokipedia v0.2 preview: a sleeker, book-style redesign (bald eagle on a starry field for the United States entry) and a promise that v0.2 'will be better than ever.' The AI encyclopedia launched in late 2025 as a Grok-authored rival to Wikipedia; updates had gone quiet earlier in 2026.",
+        "Anand's RT puts it next to X Numbers in the same Benji drop — product surface area expanding on the X/Grok stack he already lives in. Design is the teaser; the open question is whether v0.2 also unblocks the stalled edit/contribution pipeline."
+      ],
+      "authors": [
+        "Benji Taylor",
+        "xAI"
+      ],
+      "source": "x",
+      "source_label": "X / Benji Taylor",
+      "source_url": "https://x.com/benjitaylor/status/2102493946052325840",
+      "discuss_url": "https://x.com/indrayam/status/2102597291022733693",
+      "interests": [
+        "ai",
+        "grok",
+        "x"
+      ],
+      "lead": false,
+      "kicker": "Featured"
+    },
+    {
+      "id": "nextjs-evals-wed",
+      "headline": "Fresh Next.js evals: Opus 5.5 / GPT-6 Sol / Fable 5.1 tied at 97%; Grok 4.7 at 94% and far cheaper",
+      "why_read": "Anand RTd @rauchg; continues Tuesday's 'first Grok in top three' story with Opus on top.",
+      "body": [
+        "Guillermo Rauch posted fresh Next.js evals: Opus 5.5, GPT-6 Sol, and Fable 5.1 all at 97%, with Grok 4.7 at 94% — and a note that Grok is 2x–7x cheaper. That reshuffles Tuesday's 'first Grok in the top three' headline into a four-way cost/quality conversation on the same harness Anand watches.",
+        "Tied scores at the top are the point: when three labs clear the same bar, token price and agent latency decide the daily driver. Wednesday's RTs already show people picking Opus for peak quality and keeping Grok in the mix for cost."
+      ],
+      "authors": [
+        "Guillermo Rauch",
+        "Vercel"
+      ],
+      "source": "x",
+      "source_label": "X / @rauchg",
+      "source_url": "https://x.com/rauchg/status/2102519097770885231",
+      "discuss_url": "https://x.com/indrayam/status/2102535798524412025",
+      "interests": [
+        "ai",
+        "coding",
+        "nextjs"
+      ],
+      "lead": false,
+      "featured": false,
+      "kicker": "Signal"
     },
     {
       "id": "nhtsa-cybercab-oath",
-      "kicker": "Regulatory",
-      "headline": "NHTSA Special Order: Tesla must prove Cybercab legal to sell — under oath by Sep 29",
-      "why_read": "Holdover — deadline still ahead; sharper now that Austin Cybercab count hit 67.",
+      "headline": "NHTSA Special Order still on the clock — Tesla must prove Cybercab legal to sell, under oath by Sep 29",
+      "why_read": "Holdover: efficiency claims and fleet registrations do not pause the federal paperwork.",
       "body": [
-        "NHTSA's Special Order still requires Tesla to answer, under oath, whether Cybercab can legally be sold without traditional controls — with the late-September response clock from Electrek's reporting still the live regulatory stake. Monday carried the order; Tuesday's fleet expansion makes the paperwork less abstract.",
-        "Keep this next to the #67 fleet lead: product is scaling in Austin while federal counsel drafts the sworn reply."
+        "NHTSA's Special Order still requires Tesla to answer, under oath, whether a wheel-less Cybercab can legally be sold — deadline September 29. Tuesday's fold already tracked it; Wednesday's efficiency video and registration tallies do not change the legal question.",
+        "Austin rides and DMV VINs are the product story. The Special Order is the regulatory story. Both stay in the paper until one of them resolves."
       ],
       "authors": [
-        "Electrek",
-        "NHTSA"
+        "NHTSA",
+        "Electrek"
       ],
       "source": "web",
       "source_label": "Electrek",
@@ -545,177 +245,489 @@
       "discuss_url": "https://electrek.co/2026/09/15/nhtsa-tesla-cybercab-special-order/",
       "interests": [
         "tesla",
-        "cybercab",
-        "regulatory"
+        "robotaxi",
+        "regulation"
       ],
       "lead": false,
-      "featured": false
+      "featured": false,
+      "kicker": "Signal"
     },
     {
-      "id": "samsung-hbm4-double",
-      "kicker": "Memory",
-      "headline": "Samsung expected to more than double HBM4 / HBM4E DRAM output",
-      "why_read": "Holdover — still hot as Samsung/SK Hynix shares surge on AI memory demand.",
+      "id": "unreal-agent-oss",
+      "headline": "Unreal Agent open-sources async tool-call harness — claimed ~39% cost cut on benches",
+      "why_read": "HN ~203; fits the open agent-harness wave beside Jev and Opus playbooks.",
       "body": [
-        "Monday's Samsung HBM4/HBM4E capacity-doubling report remains the memory-supply spine under Nvidia DSX and AI factory buildouts. X News on Tuesday added the equity tape: Samsung and SK Hynix ripped higher on the same AI-DRAM thesis, with analysts still calling HBM tight into 2027.",
-        "Keep it while Megapack-for-DSX and Grok/agent demand keep arguing that watts and HBM, not just FLOPs, gate the boom."
+        "Unreal Labs published Unreal Agent, an open-source harness aimed at efficient asynchronous tool calls, claiming roughly 39% cost reductions on its benchmarks versus chatty sequential agents. The post sits in the same Wednesday HN cluster as 'Jev in 25 lines' — builders shrinking agent overhead, not chasing bigger base models.",
+        "For Anand's taste (Grok Bot, Cursor, open tooling), harness efficiency is the durable story of the week: Opus and Sol raised the ceiling; Unreal and Jev are attacking the floor on cost per decision."
       ],
       "authors": [
-        "Korea Economic Daily"
+        "Unreal Labs"
       ],
-      "source": "web",
-      "source_label": "Korea Economic Daily",
-      "source_url": "https://en.sedaily.com/finance/2026/09/20/samsung-to-double-hbm4-output",
-      "discuss_url": "https://x.com/i/trending/2101950527777202503",
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://unreallabs.ai/blog/unreal-agent/",
+      "discuss_url": "https://news.ycombinator.com/item?id=49805748",
       "interests": [
-        "nvidia",
-        "chips",
-        "ai"
+        "ai",
+        "agents",
+        "open-source"
       ],
       "lead": false,
-      "featured": false
+      "featured": false,
+      "kicker": "Signal"
     },
     {
-      "id": "kev-jev-qwen",
-      "kicker": "Open weights",
-      "headline": "Kev scales up — 0.6B/4B/8B Jev-like decision models on Qwen3",
-      "why_read": "Bookmark still hot — Jared Palmer's TypeSafe-compatible open decision family grew.",
+      "id": "jev-25-lines",
+      "headline": "Jev in 25 lines of Python — tiny decision models keep eating 'LLM-as-judge' jobs",
+      "why_read": "HN ~231; bookmarks still full of Jev/Kev/Laya takes from the past week.",
       "body": [
-        "Jared Palmer's Kev update (bookmarked by Anand) ships 0.6B, 4B, and 8B Jev-like decision models on Qwen3 with LoRA + pointer-head technique, Apache-2.0 weights, and a TypeSafe-compatible API via base_url swap. Reported out-of-domain scores put Kev-8B near Jev with Mac-friendly latency claims on the 4B.",
-        "Together with Laya's HF chart climb, the System-1 open bench is no longer a single viral model — it is a small competitive field."
+        "NobodyWho's 'Jev in 25 lines of Python' hit the HN front page with a minimal reimplementation of the TypeSafe-style decision model pattern — machine-readable yes/no or scores without a chatty completion. It is the pedagogy post for a wave Anand has been bookmarking: Jev for agent routing, Kev's Qwen3-scaled family, Laya on HF.",
+        "The durable claim is not that 25 lines beats Opus. It is that a huge slice of agent stacks only needed a calibrated classifier — and paying frontier tokens for that slice was the bug."
       ],
       "authors": [
-        "Jared Palmer"
+        "NobodyWho"
       ],
-      "source": "github",
-      "source_label": "GitHub / Jared Palmer",
-      "source_url": "https://github.com/jaredpalmer/kev",
-      "discuss_url": "https://x.com/jaredpalmer/status/2101715352258232539",
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://www.nobodywho.ai/posts/jev-in-25-lines/",
+      "discuss_url": "https://news.ycombinator.com/item?id=49812769",
       "interests": [
         "ai",
         "open-source",
         "agents"
       ],
       "lead": false,
-      "featured": false
+      "featured": false,
+      "kicker": "Signal"
     },
     {
-      "id": "jpmorgan-robotaxi-320b",
-      "kicker": "Robotaxi $",
-      "headline": "JPMorgan: Tesla robotaxi revenue ~$320B annually by 2035",
-      "why_read": "Holdover — still circulating; vertical-fleet thesis next to live Austin Cybercab growth.",
+      "id": "openai-astra-enigma",
+      "headline": "OpenAI: GPT-6 Astra breaks an Enigma message that resisted solution since 2005",
+      "why_read": "HN ~675; classic crypto-history crossover with frontier model claims.",
       "body": [
-        "JPMorgan's Rajat Gupta note projecting ~$320B annual Tesla robotaxi revenue by 2035 (mostly owned fleet, thin peer-to-peer share) is still on the X News carousel. Bulls call it conservative versus ARK-scale TAM slides; the capital intensity of owning the fleet is the quiet half of the pitch.",
-        "Read it against Cybercab #67 and the NHTSA clock: spreadsheet futures meet Texas DMV registrations."
+        "A Crypto Cellar write-up claims GPT-6 Astra recovered a plaintext for an Enigma message (Mvueh) that had resisted published solutions since 2005. HN's front page treated it as both a history flex and a methods debate — what counts as 'breaking' when the model may have seen related cryptanalytic literature.",
+        "Even with the caveats, it is the kind of concrete, checkable claim that travels farther than another LMSYS delta — and it keeps Astra in the Wednesday conversation beside Sol/Luna's price cut."
       ],
       "authors": [
+        "Crypto Cellar",
+        "OpenAI"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://www.cryptocellar.org/bgac/the-mvueh-break.html",
+      "discuss_url": "https://news.ycombinator.com/item?id=49801324",
+      "interests": [
+        "ai",
+        "science",
+        "crypto"
+      ],
+      "lead": false,
+      "featured": false,
+      "kicker": "Signal"
+    },
+    {
+      "id": "amd-ryzen-50pct",
+      "headline": "How did AMD Ryzen get ~50% faster in two years? — Lemire digs into the microarch",
+      "why_read": "HN ~360; systems/IT beat Anand has followed since the SGI days.",
+      "body": [
+        "Daniel Lemire's post asks a concrete performance question: how AMD's Ryzen line posted roughly 50% gains across two years, and which microarchitectural changes actually moved the needle. It is the kind of careful, measurement-first systems writing that survives the AI news cycle.",
+        "For a Daily Diff reader who still likes being close to the metal, this is the palate cleanser between Opus/Sol launches and robotaxi VINs."
+      ],
+      "authors": [
+        "Daniel Lemire"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://lemire.me/blog/2026/09/18/how-did-amd-ryzen-get-50-faster-in-two-years/",
+      "discuss_url": "https://news.ycombinator.com/item?id=49758709",
+      "interests": [
+        "systems",
+        "chips",
+        "amd"
+      ],
+      "lead": false,
+      "featured": false,
+      "kicker": "Signal"
+    },
+    {
+      "id": "california-canal-solar",
+      "headline": "California's canal-top solar: what early projects are teaching about water, dust, and yield",
+      "why_read": "HN ~234; IT × energy tech crossover on Anand's pinned theme.",
+      "body": [
+        "KQED's report on solar panels built over irrigation canals digs into measured gains and operational headaches: reduced evaporation, land-use avoidance, and the dust/maintenance realities of putting PV where the water already is. It is early-infrastructure journalism, not a vapor slide deck.",
+        "Pinned-theme fit: energy technology meeting civil systems. Worth reading beside Nvidia's megapack-for-AI-factories beat from earlier this week."
+      ],
+      "authors": [
+        "KQED"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News / KQED",
+      "source_url": "https://www.kqed.org/science/2002033/heres-what-california-is-learning-from-solar-panels-built-over-irrigation-canals",
+      "discuss_url": "https://news.ycombinator.com/item?id=49796379",
+      "interests": [
+        "energy",
+        "science"
+      ],
+      "lead": false,
+      "featured": false,
+      "kicker": "Signal"
+    },
+    {
+      "id": "saml-fractal-bad-design",
+      "headline": "Trail of Bits: 'SAML: A fractal of bad design' — still the enterprise auth scar tissue",
+      "why_read": "HN ~259; DevOps/platform engineers know this paper in their bones.",
+      "body": [
+        "Trail of Bits published a sharp takedown of SAML as a fractal of bad design — nested complexity, brittle XML signatures, and failure modes that keep showing up in enterprise SSO incidents. HN's comment thread is half war stories, half 'why are we still here.'",
+        "For someone who has spent a career in enterprise DevOps platforms, this is not nostalgia. It is a reminder that the auth layer still eats weekends while the model layer gets the headlines."
+      ],
+      "authors": [
+        "Trail of Bits"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://blog.trailofbits.com/2026/09/21/saml-a-fractal-of-bad-design/",
+      "discuss_url": "https://news.ycombinator.com/item?id=49806335",
+      "interests": [
+        "security",
+        "systems",
+        "enterprise"
+      ],
+      "lead": false,
+      "featured": false,
+      "kicker": "Signal"
+    },
+    {
+      "id": "waymo-transit-rewards",
+      "headline": "Waymo Transit Rewards — robotaxi miles that feed public transit, not just replace it",
+      "why_read": "HN ~154; autonomy × cities beat beside Tesla's Austin robotaxi story.",
+      "body": [
+        "Waymo's Transit Rewards post frames a partnership model where robotaxi usage can earn rewards tied to public transit — an explicit attempt to position AVs as complementary to buses and trains rather than pure substitutes. HN's discussion split between 'clever urbanism' and 'fig leaf for mode shift.'",
+        "Useful contrast for Wednesday's Tesla Cybercab coverage: different OEM, different city politics, same question of how unsupervised miles interact with the existing transit stack."
+      ],
+      "authors": [
+        "Waymo"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News / Waymo",
+      "source_url": "https://waymo.com/blog/2026/09/transit-rewards/",
+      "discuss_url": "https://news.ycombinator.com/item?id=49811065",
+      "interests": [
+        "robotaxi",
+        "cities"
+      ],
+      "lead": false,
+      "featured": false,
+      "kicker": "Signal"
+    },
+    {
+      "id": "open-models-balance",
+      "headline": "Interconnects: the current balance of power in open models",
+      "why_read": "HN ~96; Nathan Lambert's map of who is actually shipping open weights right now.",
+      "body": [
+        "Nathan Lambert's Interconnects post surveys the open-model landscape after a busy September — who leads on weights, who leads on post-training recipes, and where the closed labs still pull away. It is a field guide, not a dunk thread.",
+        "Paired with Alibaba's Qwen4/Zhenwu noise and the Jev/Kev decision-model wave, it is the Wednesday open-source orientation layer for readers who still self-host."
+      ],
+      "authors": [
+        "Nathan Lambert"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News / Interconnects",
+      "source_url": "https://www.interconnects.ai/p/the-current-balance-of-power-in-open",
+      "discuss_url": "https://news.ycombinator.com/item?id=49808816",
+      "interests": [
+        "ai",
+        "open-source"
+      ],
+      "lead": false,
+      "featured": false,
+      "kicker": "Signal"
+    },
+    {
+      "id": "klabnik-named-params",
+      "headline": "Steve Klabnik revisits a decade-old Rust opinion — named parameters, because of AI coding agents",
+      "why_read": "Anand RTd the summary; Rust-core voice changing stance for agent readability.",
+      "body": [
+        "Steve Klabnik (Rust Book author, former core team) said he is now okay with named parameters in Rust — not optional/default arguments, just named params — and the reason is AI coding agents. The argument: call sites that agents generate and humans review are clearer when argument names travel with the values.",
+        "Anand's RT is the signal. Language-design taste shifting because the reader of the code is increasingly a model-plus-human pair is a small story with a long shadow."
+      ],
+      "authors": [
+        "Steve Klabnik"
+      ],
+      "source": "x",
+      "source_label": "X / @ayushagarwal027",
+      "source_url": "https://x.com/ayushagarwal027/status/2102473007318864213",
+      "discuss_url": "https://x.com/indrayam/status/2102536278399185396",
+      "interests": [
+        "systems",
+        "rust",
+        "ai",
+        "coding"
+      ],
+      "lead": false,
+      "featured": false,
+      "kicker": "Signal"
+    },
+    {
+      "id": "shl-100x-engineer",
+      "headline": "@shl: 'A software engineer is now a 100x engineer / A non-engineer is now a 1x engineer'",
+      "why_read": "Anand RTd; compresses the agent-leverage debate into two lines.",
+      "body": [
+        "Sahil Lavingia's two-line post — engineers become 100x with agents, non-engineers become 1x — racked up thousands of likes and Anand's RT. It is less a measurement than a framing: leverage accrues to people who can already specify, verify, and ship.",
+        "Read it beside Opus 5.5's overnight migration demos and Grok Bot's fleet. The tools are real; the bottleneck migrates to taste, specs, and review."
+      ],
+      "authors": [
+        "Sahil Lavingia"
+      ],
+      "source": "x",
+      "source_label": "X / @shl",
+      "source_url": "https://x.com/shl/status/2102353509333049686",
+      "discuss_url": "https://x.com/indrayam/status/2102603579366502715",
+      "interests": [
+        "ai",
+        "agents",
+        "coding"
+      ],
+      "lead": false,
+      "featured": false,
+      "kicker": "Signal"
+    },
+    {
+      "id": "dimon-india-3x",
+      "headline": "Jamie Dimon: India's economy could be 3× larger in 10 years",
+      "why_read": "Anand RTd the clip; personal India↔Austin arc meets macro.",
+      "body": [
+        "JPMorgan CEO Jamie Dimon said he guesses India's economy will be three times its current size if they meet again in a decade — a clip Anand amplified. It is CEO-forecast optimism, not a model forecast, but it lands next to Carl Pei's bookmarked 'India Is Inevitable' article in the same taste cluster.",
+        "For a Hindmotor-born American citizen reading the Daily Diff in Austin, this is the human-interest macro beat: long-horizon India growth talk that keeps showing up in the RT stream."
+      ],
+      "authors": [
+        "Jamie Dimon",
         "JPMorgan"
       ],
       "source": "x",
-      "source_label": "X News",
-      "source_url": "https://x.com/i/trending/2101893162323066987",
-      "discuss_url": "https://x.com/i/trending/2101893162323066987",
+      "source_label": "X / @MattooShashank",
+      "source_url": "https://x.com/MattooShashank/status/2102398327979405717",
+      "discuss_url": "https://x.com/indrayam/status/2102536634633707913",
       "interests": [
-        "tesla",
-        "robotaxi",
+        "india",
         "markets"
       ],
       "lead": false,
-      "featured": false
+      "featured": false,
+      "kicker": "Signal"
     },
     {
-      "id": "cybertruck-steer-ota",
-      "kicker": "Cybertruck",
-      "headline": "Cybertruck: steer-by-wire OTA cut the turning circle by nearly two feet",
-      "why_read": "Holdover — @cybertruck + Wes Morrill still in Anand's bookmark stack.",
+      "id": "adhd-circadian-paper",
+      "headline": "Researchers reconceptualize ADHD as a circadian rhythm disorder",
+      "why_read": "Anand RTd @NTFabiano; science/human-interest that cleared his overnight filter.",
       "body": [
-        "Cybertruck's steer-by-wire / rear-steer stack still earns ink: an early post-SOP OTA shaved nearly two feet off the turning circle after Elon asked for more \"magic,\" and @cybertruck's amplification remains in Anand's bookmarks. Long wheelbase, software-tightened curb-to-curb — the truck that improves geometry after delivery.",
-        "A clean software-defined-vehicle postcard while Cybercab's wheel-less design faces NHTSA questions of a different kind."
+        "A paper circulating via @NTFabiano reconceptualizes ADHD through a circadian-rhythm lens — shifting emphasis toward sleep-timing and biological-clock mechanisms rather than purely attention-deficit framing. The X thread attached figures and a quote-tweet of related clinical discussion.",
+        "Not medical advice, and not a settled consensus overnight — but it is the kind of science story Anand actually boosts, so it earns a standard slot beside the model launches."
       ],
       "authors": [
-        "Wes Morrill",
-        "@cybertruck"
+        "@NTFabiano"
       ],
       "source": "x",
-      "source_label": "X / @cybertruck",
-      "source_url": "https://x.com/cybertruck/status/2101719150322426177",
-      "discuss_url": "https://x.com/cybertruck/status/2101719150322426177",
+      "source_label": "X / @NTFabiano",
+      "source_url": "https://x.com/NTFabiano/status/2102420573381161100",
+      "discuss_url": "https://x.com/indrayam/status/2102604670988595359",
       "interests": [
-        "tesla"
+        "science",
+        "health"
       ],
       "lead": false,
-      "featured": false
+      "featured": false,
+      "kicker": "Signal"
     },
     {
-      "id": "roadster-mcgregor-tfr",
-      "kicker": "Roadster",
-      "headline": "TFR over SpaceX McGregor — Roadster launch event still eyed for October 1",
-      "why_read": "Holdover — Joe Tegtmeyer TFR read still the best public breadcrumb for the reveal.",
+      "id": "kev-jev-qwen",
+      "headline": "Kev scales up — 0.6B/4B/8B Jev-like decision models on Qwen3 (still in bookmarks)",
+      "why_read": "Holdover: Jared Palmer's family still sitting in Anand's bookmark stack beside fresh Jev posts.",
       "body": [
-        "The Temporary Flight Restriction over SpaceX's McGregor site near Waco — cited by Joe Tegtmeyer as Roadster-launch-event choreography through early October — remains the cleanest public signal for a ~October 1 unveil. Low-altitude drone and aircraft limits in a 1.5-mile radius are not subtle.",
-        "Keep it on the board while Flight 14's NET slips: Starbase practices orbit; McGregor may practice theater."
+        "Jared Palmer's Kev family (0.6B/4B/8B) — Jev-like decision models on Qwen3 with LoRA plus a small pointer head — remains in Anand's bookmarks while HN rediscovers the pattern via 'Jev in 25 lines.' Out-of-domain claims from the original thread still need independent replication, but the product niche is clearly sticky.",
+        "Keeping one holdover slot ties Tuesday's open decision-model beat to Wednesday's pedagogy posts instead of pretending the wave started today."
       ],
       "authors": [
-        "Joe Tegtmeyer"
+        "Jared Palmer"
       ],
       "source": "x",
-      "source_label": "X / Joe Tegtmeyer",
-      "source_url": "https://x.com/JoeTegtmeyer/status/2101067667377664011",
-      "discuss_url": "https://x.com/JoeTegtmeyer/status/2101067667377664011",
-      "interests": [
-        "tesla",
-        "spacex"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "plugin4shell-agents",
-      "kicker": "Security",
-      "headline": "Plugin4Shell: zero-click RCE across Claude Code, Codex, Copilot, Gemini CLI",
-      "why_read": "Holdover — agent-tooling RCE class still relevant as every IDE ships an agent stack.",
-      "body": [
-        "Air Security's Plugin4Shell write-up on zero-click RCE patterns across Claude Code, Codex, Copilot, and Gemini CLI remains the security holdover while JetBrains Air and Grok 4.7 expand agent surface area. Tool plugins are the new supply chain.",
-        "If your CI is the bottleneck (Linear) and your agents write the PRs, this is why the trust boundary moved into the harness."
-      ],
-      "authors": [
-        "Air Security"
-      ],
-      "source": "web",
-      "source_label": "Air Security",
-      "source_url": "https://www.air.security/blog-posts/plugin4shell",
-      "discuss_url": "https://www.air.security/blog-posts/plugin4shell",
+      "source_label": "X / Jared Palmer",
+      "source_url": "https://x.com/jaredpalmer/status/2101715352258232539",
+      "discuss_url": "https://github.com/jaredpalmer/kev",
       "interests": [
         "ai",
-        "security",
+        "open-source",
         "agents"
       ],
       "lead": false,
-      "featured": false
+      "featured": false,
+      "kicker": "Signal"
     },
     {
-      "id": "halvar-bluehat-slides",
-      "kicker": "Security",
-      "headline": "Halvar Flake: BlueHat Asia 2026 slides — an age of experimentation",
-      "why_read": "Anand RTd @halvarflake — first BlueHat talk since the Vista days, slides public.",
+      "id": "plugin4shell-agents",
+      "headline": "Plugin4Shell: zero-click RCE across Claude Code, Codex, Copilot, Gemini CLI",
+      "why_read": "Holdover security story — more urgent the week every lab ships a new coding agent.",
       "body": [
-        "Thomas Dullien (Halvar Flake) posted slides from his Microsoft BlueHat Asia 2026 talk — \"An age of experimentation\" — noting it as his first BlueHat since the Vista era. Anand RTd the PDF drop; it is rare primary-source security keynote material from someone who shaped binary analysis culture.",
-        "Worth the download next to Plugin4Shell: strategic security framing, not just another CVE thread."
+        "AIR Security's Plugin4Shell write-up still matters: a zero-click RCE pattern landing across Claude Code, Codex, Copilot, and Gemini CLI via malicious plugin/tool surfaces. New model drops do not patch old agent supply chains.",
+        "With Opus 5.5 and GPT-6 Sol landing into the same IDEs and CLIs, treat this as the security sticky note on the week's coding-agent celebration."
       ],
       "authors": [
-        "Thomas Dullien",
-        "Halvar Flake"
+        "AIR Security"
       ],
-      "source": "x",
-      "source_label": "X / @halvarflake",
-      "source_url": "https://thomasdullien.github.io/about/slides/An-age-of-experimentation-BlueHat-Asia-2026.pdf",
-      "discuss_url": "https://x.com/indrayam/status/2102165231325622381",
+      "source": "web",
+      "source_label": "AIR Security",
+      "source_url": "https://www.air.security/blog-posts/plugin4shell",
+      "discuss_url": "https://www.air.security/blog-posts/plugin4shell",
       "interests": [
         "security",
-        "systems"
+        "ai",
+        "agents"
       ],
       "lead": false,
-      "featured": false
+      "featured": false,
+      "kicker": "Signal"
+    },
+    {
+      "id": "nebius-gpu-price-hike",
+      "headline": "Nebius raises AI GPU prices again — H100/H200/B200/B300 PAYG up ~16–20% Oct 1",
+      "why_read": "X News cluster; inference/cloud cost beat beside the model price cuts.",
+      "body": [
+        "Amsterdam AI cloud Nebius notified customers of another Token Factory PAYG Dedicated Endpoint hike effective October 1: examples circulating include H100 $4.05→$4.70, H200 $4.70→$5.60, B200 $7.40→$8.70, B300 $8.10→$9.70 per GPU-hour (~16–20%). Demand still outrunning supply is the company's framing.",
+        "Ironic Wednesday pairing: frontier APIs cut token prices while rented Blackwell/Hopper hours climb. The middle of the stack is where the bill still grows."
+      ],
+      "authors": [
+        "Nebius"
+      ],
+      "source": "x",
+      "source_label": "X News",
+      "source_url": "https://x.com/i/trending/2102573363151663362",
+      "discuss_url": "https://x.com/i/trending/2102573363151663362",
+      "interests": [
+        "nvidia",
+        "ai",
+        "chips"
+      ],
+      "lead": false,
+      "featured": false,
+      "kicker": "Signal"
+    },
+    {
+      "id": "qwen4-zhenwu-apsara",
+      "headline": "Alibaba at Apsara: Qwen4 family teased + Zhenwu V900 accelerator roadmap",
+      "why_read": "X News; open-weight China stack Anand tracks via LocalLLaMA-adjacent taste.",
+      "body": [
+        "At Alibaba's Apsara Conference, Qwen lead Liu Dayiheng teased a Qwen4 family (Max/Flash/Plus/27B variants) with larger future targets, alongside the Zhenwu V900 AI accelerator claiming a large jump over prior Alibaba silicon and a path to very large clusters, with mass production talked for early 2027. Separately, Qwen-Image-2.1 open weights continue to lead open image arenas.",
+        "Treat keynotes as roadmaps, not GA. Still, the full-stack China signal — models plus chips plus open image weights — belongs beside Interconnects' open-model balance piece."
+      ],
+      "authors": [
+        "Alibaba",
+        "Qwen"
+      ],
+      "source": "x",
+      "source_label": "X News",
+      "source_url": "https://x.com/i/trending/2102242325019742337",
+      "discuss_url": "https://x.com/i/trending/2102242325019742337",
+      "interests": [
+        "ai",
+        "open-source",
+        "chips"
+      ],
+      "lead": false,
+      "featured": false,
+      "kicker": "Signal"
+    },
+    {
+      "id": "rails-world-austin",
+      "headline": "DHH in Austin for Rails World — opening keynote streaming; morning-glow city pride",
+      "why_read": "Anand RTd @dhh; local Austin week meets the agent-coding boom.",
+      "body": [
+        "David Heinemeier Hansson posted from Austin ahead of Rails World, promising a streamed opening keynote and calling the morning light beautiful. Anand's RT is hometown signal as much as framework signal.",
+        "Rails World landing the same week as Opus/Sol agent demos is accidental poetry: a community that prized developer happiness now watching agents write the tickets. Watch the keynote for how DHH frames that tension."
+      ],
+      "authors": [
+        "DHH"
+      ],
+      "source": "x",
+      "source_label": "X / @dhh",
+      "source_url": "https://x.com/dhh/status/2102385161660743759",
+      "discuss_url": "https://x.com/indrayam/status/2102536564219970043",
+      "interests": [
+        "coding",
+        "austin"
+      ],
+      "lead": false,
+      "featured": false,
+      "kicker": "Signal"
+    },
+    {
+      "id": "spacex-refuge-land-swap",
+      "headline": "Judge clears SpaceX land swap from Texas wildlife refuge near Starbase",
+      "why_read": "Holdover still relevant with Flight 14 stacked five days out.",
+      "body": [
+        "U.S. District Judge Fernando Rodriguez Jr. denied a preliminary injunction that would have blocked a U.S. Fish and Wildlife Service land swap: roughly 715 acres of Lower Rio Grande Valley National Wildlife Refuge land for about 683 acres of SpaceX property near the Massey Test Site. Conservation groups plan to continue the full case; SpaceX argued delays would hit launch cadence and related contracts.",
+        "With Ship 41 on Booster 21 for a NET Sep 28 orbital attempt, the Starbase footprint fight stays in the paper even if it is no longer the lead."
+      ],
+      "authors": [
+        "SpaceX"
+      ],
+      "source": "x",
+      "source_label": "X News",
+      "source_url": "https://x.com/i/trending/2102216657305510338",
+      "discuss_url": "https://x.com/i/trending/2102216657305510338",
+      "interests": [
+        "spacex",
+        "starship"
+      ],
+      "lead": false,
+      "featured": false,
+      "kicker": "Signal"
+    },
+    {
+      "id": "opus-55-playbook",
+      "headline": "Anthropic's Opus 5.5 playbook: hand over whole tasks, skip 'think carefully,' check after long runs",
+      "why_read": "Anand RTd @ClaudeDevs linking claude.dev; practical how-to beside the launch lead.",
+      "body": [
+        "Anthropic's 'Getting the most out of Opus 5.5' guidance — amplified by @ClaudeDevs — tells users to hand over whole tasks with a clear definition of done, drop 'think carefully' (the model thinks first anyway), and check what the agent needs after long runs. Cache-read pricing at $0.20/MTok is the economic reason long agent loops got cheaper overnight.",
+        "Launch posts announce capability; playbooks change muscle memory. This is the operator's companion to the Top Story."
+      ],
+      "authors": [
+        "Anthropic",
+        "Claude"
+      ],
+      "source": "web",
+      "source_label": "claude.dev / X",
+      "source_url": "https://claude.dev/blog/getting-the-most-out-of-opus-5-5/",
+      "discuss_url": "https://x.com/indrayam/status/2102535932888912283",
+      "interests": [
+        "ai",
+        "agents",
+        "coding"
+      ],
+      "lead": false,
+      "featured": false,
+      "kicker": "Signal"
+    },
+    {
+      "id": "sqlite-one-file",
+      "headline": "The eternal reminder: sqlite is a database in one file — stop burning 2GB RAM for a shopping list",
+      "why_read": "Anand RTd @TrisH0x2A; lightness as taste.",
+      "body": [
+        "A blunt sqlite PSA — one file, no Postgres container, no 2GB RAM for a shopping list — got Anand's RT and tens of thousands of impressions. It is not a new engine release; it is a values check.",
+        "Running the same day as agent-swarm hype and frontier model launches, it is the kindness amplifier of the fold: complexity is optional, and most apps still are not Google."
+      ],
+      "authors": [
+        "@TrisH0x2A"
+      ],
+      "source": "x",
+      "source_label": "X / @TrisH0x2A",
+      "source_url": "https://x.com/TrisH0x2A/status/2102297834032923090",
+      "discuss_url": "https://x.com/indrayam/status/2102605767459143910",
+      "interests": [
+        "systems",
+        "databases"
+      ],
+      "lead": false,
+      "featured": false,
+      "kicker": "Signal"
     }
   ]
 }
