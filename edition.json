@@ -1,17 +1,148 @@
 {
- "date": "2026-09-30",
- "weekday": "Wednesday",
+ "date": "2026-10-01",
+ "weekday": "Thursday",
  "title": "The Daily Diff",
  "stories": [
   {
-   "id": "openai-dots-sol-devday",
+   "id": "gemini-4-argon",
    "lead": true,
    "featured": false,
-   "headline": "OpenAI DevDay aftermath — Dots always-on agents + GPT-6.1 Sol at 1/5 Astra price",
-   "why_read": "AI Top Story: Anand’s overnight RTs are Sol efficiency and Cursor tooling; HN’s top two AI posts are the same shipment.",
+   "headline": "Gemini 4 Argon — DeepMind’s frontier model lands first for Fairwind cyber defenders",
+   "why_read": "AI Top Story: Anand RT’d Google DeepMind’s unveil and Artificial Analysis’s cost chart; HN’s #1 overnight (~1433).",
    "body": [
-    "OpenAI’s DevDay at Fort Mason shipped the personal-agent product Anand’s feed had been priming for: Dots — always-on agents powered by GPT-6 Astra with their own cloud computer and browser, plugin access to 4,000+ apps, and rollouts starting for ChatGPT Pro and Business Premium (primary Dot included). They work across ChatGPT, Slack, and Teams; proactive research stays read-only on connected apps; Custom Rules plus auto-review gate consequential actions. Specialist Dots for enterprise are in early pilots, including a Microsoft Agent 365 path.",
-    "Beside Dots, GPT-6.1 Sol replaces GPT-6 Sol after roughly a week: near-Astra intelligence on agentic coding, computer use, and professional work at one-fifth of Astra’s standard token prices, with cached input at $0.10 per million tokens. OpenAI cites DeepSWE parity with Astra at ~1/5 cost and gains over Opus 5.5 on GDP.pdf / AutomationBench. Siqi Chen (@blader) and Theo both amplified Sol crushing internal/Codex evals — Anand RT’d both. GPT-6.1 Astra itself stayed shelved after safety concerns; DevDay’s package is Dots + cheaper Sol + Decisions API / Ultrafast tooling around the edges."
+    "Google DeepMind announced Gemini 4 Argon on September 30 — a frontier model aimed at long-horizon software engineering, enterprise knowledge work (legal/finance), and cybersecurity defense. Initial access is phased through the Fairwind Program for trusted cyber defenders (and Google’s own internal teams), with the company citing U.S. voluntary pre-release processes while it hardens safeguards before a broader developer/enterprise/consumer rollout. Introductory API pricing is listed at $2 / $10 per million input/output tokens (cached input 95% off), rising to $4 / $20 after the intro window.",
+    "Anand amplified both DeepMind’s launch post and Artificial Analysis’s note that Argon matches GPT-6 Astra on their Intelligence Index at about 60% of Astra’s cost-per-task on discounted prices. Google’s blog highlights DeepSWE v1.1 SOTA (77.9%), a #1 Vals Index / AutomationBench showing, a 1M output-token limit, and internal uses from C→Rust migrations to fleet memory optimizations. For Fairwind partners, Argon ships without cyber guardrails so defenders can use full vulnerability-find/validate/patch capability — the safety story is as much the news as the benchmarks."
+   ],
+   "authors": [
+    "Google DeepMind",
+    "Koray Kavukcuoglu"
+   ],
+   "source": "web",
+   "source_label": "Google / DeepMind",
+   "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+   "discuss_url": "https://news.ycombinator.com/item?id=49913571",
+   "interests": [
+    "ai",
+    "google",
+    "gemini",
+    "agents"
+   ],
+   "kicker": "Top Story"
+  },
+  {
+   "id": "crew-13-launch",
+   "lead": true,
+   "featured": false,
+   "headline": "Crew-13 launch day — NASA/SpaceX Dragon Grace targeted 11:10 a.m. ET",
+   "why_read": "Non-AI Top Story: Thursday’s Commercial Crew liftoff window is the calendar event after Starship’s orbital week.",
+   "body": [
+    "NASA and SpaceX cleared Crew-13 for Thursday, October 1 liftoff no earlier than 11:10 a.m. ET from Cape Canaveral SLC-40 aboard Falcon 9 and Dragon Grace. The crew is NASA commander Jessica Watkins (first NASA astronaut to fly Dragon twice), NASA pilot Luke Delaney, CSA’s Joshua Kutryk, and Roscosmos cosmonaut Sergey Teteryatnikov, headed to the ISS for a roughly six-month Expedition stay. A Friday, October 2 backup window at 10:47 a.m. ET remains if weather or scrub intervenes.",
+    "Mission notes from SpaceX/NASA coverage: booster B1101’s third flight with an LZ-40 landing attempt; docking targeted about eight hours after launch — among the shortest Dragon transit times. Yesterday’s holdover was the dress rehearsal; today’s fold is launch day. Pair with Transporter-18 / Project Suncatcher later this afternoon from Vandenberg for a double SpaceX calendar."
+   ],
+   "authors": [
+    "NASA",
+    "SpaceX"
+   ],
+   "source": "web",
+   "source_label": "NASA / SpaceX",
+   "source_url": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/launch-day-for-nasas-spacex-crew-13-mission/",
+   "discuss_url": "https://www.spacex.com/launches/crew13",
+   "interests": [
+    "space",
+    "nasa",
+    "spacex-crew"
+   ],
+   "kicker": "Top Story"
+  },
+  {
+   "id": "coreweave-vera-rubin",
+   "lead": false,
+   "featured": true,
+   "headline": "CoreWeave puts Vera Rubin NVL72 in production — Cognition’s Devin sees up to 4.8× token throughput",
+   "why_read": "Nvidia/agent infra Featured: first customer workloads on Rubin racks at Fully Connected.",
+   "body": [
+    "At Fully Connected (Sep 30), CoreWeave announced limited availability of NVIDIA Vera Rubin NVL72 on CoreWeave Cloud, with Cognition — the lab behind Devin — as the first customer running production agentic workloads. Cognition’s own SWE-2 inference benchmarks against a GB200 NVL72 baseline reported up to 4.8× total token throughput and about 3.8× output-token throughput on reinforcement-learning loops, framed as more concurrent Devin sessions per GPU without sacrificing generation speed.",
+    "The same event stack also pushed CoreWeave Forge (train/eval/agent loop tooling) and Vera CPU capacity for agent sandboxes — continuing the Vera/Rubin hardware wave that already appeared as board unboxings earlier this week. For Anand’s Nvidia + coding-agent beat, this is the production proof point, not a GTC slide."
+   ],
+   "authors": [
+    "CoreWeave",
+    "Cognition",
+    "NVIDIA"
+   ],
+   "source": "web",
+   "source_label": "CoreWeave",
+   "source_url": "https://www.coreweave.com/news/coreweave-delivers-nvidia-vera-rubin-nvl72-performance-at-production-scale-starting-with-cognition",
+   "discuss_url": "https://www.coreweave.com/blog/cognition-becomes-first-customer-for-nvidia-vera-rubin-nvl72-on-coreweave-cloud",
+   "interests": [
+    "ai",
+    "nvidia",
+    "chips",
+    "agents"
+   ],
+   "kicker": "Featured"
+  },
+  {
+   "id": "google-suncatcher",
+   "lead": false,
+   "featured": true,
+   "headline": "Project Suncatcher launch day — Google’s TPU test sat on SpaceX Transporter-18",
+   "why_read": "Holdover upgraded: the orbital AI demo rides Falcon 9 from Vandenberg this afternoon (~11:18 a.m. PT window).",
+   "body": [
+    "Google’s Project Suncatcher prototype — a Planet Labs-built MVP satellite carrying four Google TPUs — is scheduled on SpaceX’s Transporter-18 rideshare from Vandenberg on Thursday, October 1 (about 11:18 a.m. PT / 1:18 p.m. CT, with an Oct 2 backup). The fridge-sized craft is an early radiation/thermal/ops test for orbital ML infrastructure, not a full data-center node: solar power is roughly a kilowatt, and TPU runs are expected in short ~15-minute bursts so radiators can catch up.",
+    "Google’s own research write-up and Ars coverage both stress years-to-product timelines even if the 2027 follow-on sats stay on the books. Featured beside Crew-13: two SpaceX clocks on the same Thursday, one human, one silicon."
+   ],
+   "authors": [
+    "Google",
+    "SpaceX",
+    "Planet Labs"
+   ],
+   "source": "web",
+   "source_label": "Google Research / Space.com",
+   "source_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/google-project-suncatcher-facts/",
+   "discuss_url": "https://www.space.com/space-exploration/satellites/spacex-google-project-suncatcher-ai-satellite-transporter-18-mission",
+   "interests": [
+    "space",
+    "ai",
+    "google",
+    "energy"
+   ],
+   "kicker": "Featured"
+  },
+  {
+   "id": "tsmc-texas-hub",
+   "lead": false,
+   "featured": true,
+   "headline": "TSMC eyes Texas for a second U.S. chip hub — Reuters sources; Dallas in Taiwanese reports",
+   "why_read": "Anand RT’d Polymarket + openlabx and bookmarked the Texas campus chatter — hometown semiconductor Signal.",
+   "body": [
+    "Reuters reported September 30 that TSMC is evaluating a potential Texas investment to expand U.S. chip production on top of its already-committed $265 billion Arizona buildout — plans not finalized, company not immediately commenting. Taiwanese coverage (UDN via Taiwan News) has pointed at Dallas as a leading candidate for a multi-fab campus, citing customer demand from Nvidia, AMD, Intel, and Apple plus Texas workforce/power/tax arguments versus Arizona constraints.",
+    "Treat it as sourcing-stage Featured, not a signed groundbreaking: Bloomberg-style follow-ons also describe a multibillion-dollar campus under consideration. For an Austin-metro reader watching Cybercab density and AI fab narratives collide in Texas, this is the overnight chip-geography beat."
+   ],
+   "authors": [
+    "Reuters",
+    "TSMC"
+   ],
+   "source": "x",
+   "source_label": "X / Reuters via RTs",
+   "source_url": "https://95kqds.com/2026/09/30/tsmc-evaluates-potential-texas-investment-sources-say/",
+   "discuss_url": "https://x.com/indrayam/status/2105461990546444379",
+   "interests": [
+    "chips",
+    "texas",
+    "semiconductors",
+    "ai"
+   ],
+   "kicker": "Featured"
+  },
+  {
+   "id": "openai-dots-sol-devday",
+   "lead": false,
+   "featured": true,
+   "headline": "OpenAI DevDay aftermath — Dots + GPT-6.1 Sol still the agent/pricing baseline",
+   "why_read": "Demoted from Wednesday lead: DevDay package remains the comparison set under Argon’s Fairwind tease.",
+   "body": [
+    "OpenAI’s Tuesday DevDay shipment — always-on Dots agents on GPT-6 Astra with cloud computer/browser and 4,000+ app plugins, plus GPT-6.1 Sol at roughly one-fifth Astra token prices — is still the agent product baseline every other lab is being scored against. HN’s Sol and Dots threads remain among the week’s best lists even as Argon steals the overnight tab.",
+    "Keep Featured for continuity: Anand’s midweek RTs were Sol efficiency and Cursor tooling; Thursday’s Argon charts explicitly use Astra as the peer. The race framing is now three-way price/capability positioning, not a one-day splash."
    ],
    "authors": [
     "OpenAI",
@@ -27,42 +158,42 @@
     "agents",
     "devday"
    ],
-   "kicker": "Top Story"
+   "kicker": "Featured"
   },
   {
-   "id": "america-gov-launch",
-   "lead": true,
-   "featured": false,
-   "headline": "America.gov launches — White House redesign; Anand RT’d the unveil",
-   "why_read": "Overnight RT plus HN’s civic runaway (~595): the new online home for the United States is the non-AI Top Story.",
+   "id": "a16z-agents-tokens",
+   "lead": false,
+   "featured": true,
+   "headline": "a16z: humans are the minority AI user — agents burn ~5× the tokens",
+   "why_read": "Anand RT’d the State of Markets chart drop: agent token demand up ~14× since February.",
    "body": [
-    "Chief Design Officer Jack Gebbia unveiled America.gov on Tuesday as the new online home for the United States — a redesign that dominated Anand’s late-day RT stack (Rapid Response 47) and jumped onto HN with hundreds of points and comments. Companion chatter highlighted Secretary Rubio presenting a new passport design in a Jobs-style keynote framing.",
-    "X News also tied the portal launch to a broader federal language push around “Super Intelligence,” with Nvidia’s Jensen Huang and others appearing in the day’s civic-tech narrative. Treat branding rhetoric as separate from the site itself: click america.gov, then decide what the redesign actually ships."
+    "Andreessen Horowitz’s State of Markets update argues that agents now dominate AI consumption: humans are the minority user, with agents burning nearly 5× the tokens people do and agent token use up roughly 14× since February. Anand amplified the chart post overnight alongside Gemini/Argon chatter — the demand-side twin to model launches.",
+    "Featured for Anand’s agent-ops taste: if most tokens are already non-human, routing, evals, and cost controls stop being ‘nice-to-have’ and become the product. Pair with Cloudflare’s agent-traffic notes elsewhere on the fold."
    ],
    "authors": [
-    "White House",
-    "Jack Gebbia"
+    "a16z"
    ],
    "source": "x",
-   "source_label": "X / America.gov",
-   "source_url": "https://america.gov/",
-   "discuss_url": "https://news.ycombinator.com/item?id=49893509",
+   "source_label": "X / a16z",
+   "source_url": "https://a16z.com/state-of-markets/",
+   "discuss_url": "https://x.com/indrayam/status/2105492902403256646",
    "interests": [
-    "govtech",
-    "design",
-    "policy"
+    "ai",
+    "agents",
+    "markets",
+    "infra"
    ],
-   "kicker": "Top Story"
+   "kicker": "Featured"
   },
   {
    "id": "starship-flight14-sep28",
    "lead": false,
    "featured": true,
-   "headline": "Starship Flight 14 — orbital success still dominates; bookmarks stay full of V3 math",
-   "why_read": "Demoted from Tuesday lead but not done: Anand’s bookmarks are still Ship 41, Booster 21, and payload charts.",
+   "headline": "Starship Flight 14 — orbital first still the space Featured three days later",
+   "why_read": "Holdover: bookmarks and X News remain full of Ship 41, Booster 21, and payload charts.",
    "body": [
-    "SpaceX’s Monday orbital first remains the space Featured: Flight 14 inserted, deployed 26 Starlink V3 satellites (all contacted), and completed a planned Pacific splashdown after a shortened on-orbit window. Bookmarks overnight still include Andrew McCarthy’s pad-close Raptor shot, NSF’s Booster 21 landing clip, ApoStructura’s 2026 payload-to-orbit summary, Kal Spriggs’s ISS-volume comparison, and Philip Johnston’s ~10× Falcon 9 Starlink tbps napkin math.",
-    "Operational footnotes unchanged: Ship 41 shed heat tiles at liftoff (RGV Aerial found one on the beach); Musk and feed analysts keep pointing at weekly cadence next. Hold the countdown framing — Featured is the success plus the capacity charts still circulating."
+    "SpaceX’s Monday orbital first is still the space Featured under Thursday’s crewed and rideshare clocks: Flight 14 reached orbit, deployed 26 Starlink V3 satellites (all contacted), and completed a Pacific splashdown after a shortened on-orbit window. Bookmarks overnight still include Andrew McCarthy’s pad-close Raptor shot, NSF’s Booster 21 landing clip, and ApoStructura/Philip Johnston capacity math.",
+    "Operational footnotes unchanged — tile shed at liftoff, weekly-cadence ambition from Musk and feed analysts. Featured is the success plus the charts still circulating while Crew-13 and Transporter-18 take the day."
    ],
    "authors": [
     "SpaceX",
@@ -80,174 +211,126 @@
    "kicker": "Featured"
   },
   {
-   "id": "nhtsa-cybercab-oath",
-   "lead": false,
-   "featured": true,
-   "headline": "NHTSA Special Order — Tesla Cybercab sworn answers due today (Sep 30)",
-   "why_read": "Deadline day: AQ26002 Special Order still points at September 30; no public filing confirm yet in overnight feeds.",
+   "id": "grokipedia-v03",
+   "headline": "Grokipedia v0.3 — SpaceXAI refreshes visuals; Anand RT’d the unveil",
+   "why_read": "Overnight RT stack: Sawyer Merritt + benjitaylor on the redesigned AI encyclopedia.",
    "body": [
-    "NHTSA’s Special Order under Audit Query AQ26002 still requires Tesla to deliver sworn, under-oath answers on Cybercab FMVSS certification to the Office of the Chief Counsel by September 30 — today. The order (dated September 10) asks how a vehicle without permanently attached steering wheel, pedals, or mirrors was self-certified without a Part 555 exemption, across roughly two dozen detailed requests. Failure to answer fully can escalate to DOJ compulsion and large civil penalties.",
-    "Overnight X/news searches did not surface a confirmed public Tesla filing yet — keep this Featured as the calendar risk, not as “answers landed.” Pair with Austin street density and the fresh $30B credit Featured: product miles and capital are moving while federal paperwork hits its hard date."
+    "SpaceXAI shipped Grokipedia v0.3 with improved visuals — new logo/homepage treatment, featured and most-read surfaces, and a cleaner live-edits view after a pause in processing user edit suggestions. Anand RT’d both Sawyer Merritt’s announcement and benjitaylor’s refresh post in the same window as Gemini Argon.",
+    "Signal, not a Wikipedia replacement claim: it’s the Grok/X knowledge product getting a design pass while model news dominates. Click grokipedia.com and judge the UI yourself."
    ],
    "authors": [
-    "NHTSA",
-    "Tesla"
-   ],
-   "source": "web",
-   "source_label": "NHTSA / Electrek",
-   "source_url": "https://electrek.co/2026/09/15/nhtsa-tesla-cybercab-special-order-fmvss-certification/",
-   "discuss_url": "https://teslanorth.com/2026/09/16/nhtsa-cybercab-special-order-september-30/",
-   "interests": [
-    "tesla",
-    "cybercab",
-    "regulation",
-    "nhtsa"
-   ],
-   "kicker": "Featured"
-  },
-  {
-   "id": "cursor-visualize",
-   "lead": false,
-   "featured": true,
-   "headline": "Cursor /visualize — charts and diagrams inline in the Agents Window",
-   "why_read": "Anand RT’d Cursor’s ship post plus fredrika’s step-by-step agent explain — agent UX that matches his daily stack.",
-   "body": [
-    "Cursor shipped /visualize: agents can build charts and diagrams directly in chat, available now in the Agents Window. Anand amplified the company post overnight and RT’d @fredrikalindh’s demo of an agent explaining code changes step by step with the new surface.",
-    "Same RT window also carried Cursor’s Sonnet 5.5 availability note (on par with Opus on many tasks). For a reader living in Cursor + Claude/OpenAI model switching, this is the tooling Featured beside DevDay’s model news."
-   ],
-   "authors": [
-    "Cursor"
+    "SpaceXAI",
+    "xAI"
    ],
    "source": "x",
-   "source_label": "X / Cursor",
-   "source_url": "https://x.com/cursor_ai/status/2105012114200887434",
-   "discuss_url": "https://x.com/indrayam/status/2105142223259976035",
+   "source_label": "X / Grokipedia",
+   "source_url": "https://grokipedia.com/",
+   "discuss_url": "https://x.com/indrayam/status/2105420462444720257",
    "interests": [
     "ai",
-    "devtools",
-    "coding",
-    "agents"
-   ],
-   "kicker": "Featured"
-  },
-  {
-   "id": "tesla-30b-credit",
-   "lead": false,
-   "featured": true,
-   "headline": "Tesla locks ~$30B credit package — AI compute, chip fab, Cybercab, Optimus runway",
-   "why_read": "Sep 29 SEC-linked financing story: Citibank term loan + Wells Fargo revolvers while NHTSA’s clock hits today.",
-   "body": [
-    "X News summarized a September 29 financing package around Tesla: roughly a $20 billion Citibank term loan plus Wells Fargo revolving facilities totaling about $10 billion, framed as senior unsecured capacity for general corporate purposes. Coverage ties the dry powder to 2026 spend plans spanning AI compute, a new chip fab, solar, Optimus, and Cybercab production — against a cash pile already reported in the tens of billions.",
-    "Treat social summaries as directional until the 8-K is your source of truth. Still Featured beside today’s NHTSA oath deadline: balance-sheet flexibility and federal certification pressure landing in the same 24 hours."
-   ],
-   "authors": [
-    "Tesla"
-   ],
-   "source": "web",
-   "source_label": "X News / Tesla financing",
-   "source_url": "https://x.com/i/trending/2105042841189904475",
-   "discuss_url": "https://x.com/i/trending/2105042841189904475",
-   "interests": [
-    "tesla",
-    "finance",
-    "ai",
-    "cybercab"
-   ],
-   "kicker": "Featured"
-  },
-  {
-   "id": "cmu-ai-agents-course",
-   "lead": false,
-   "featured": true,
-   "headline": "CMU 11-768 AI Agents course — free on YouTube (Neubig & Fried)",
-   "why_read": "Anand RT’d techNmak’s note: harness-to-training coverage, not just prompt theater.",
-   "body": [
-    "Carnegie Mellon’s new AI Agents course (11-768), taught this fall by Graham Neubig and Daniel Fried, is being posted to YouTube for free. The pitch Anand amplified: one of the first agent courses that goes from building the harness through training the model behind it, not stopping at chat demos.",
-    "Signal-quality Featured for Anand’s agent-ops taste — syllabus depth over launch hype, free to audit while DevDay floods the timeline."
-   ],
-   "authors": [
-    "CMU",
-    "Graham Neubig",
-    "Daniel Fried"
-   ],
-   "source": "x",
-   "source_label": "X / @techNmak",
-   "source_url": "https://x.com/techNmak/status/2104635196910030894",
-   "discuss_url": "https://x.com/indrayam/status/2105067877783261432",
-   "interests": [
-    "ai",
-    "agents",
-    "education"
-   ],
-   "kicker": "Featured"
-  },
-  {
-   "id": "openai-decisions-api",
-   "lead": false,
-   "featured": true,
-   "headline": "OpenAI Decisions API — ~150 ms constrained choices on GPT-6 Luna",
-   "why_read": "DevDay developer Feature: classify/route with predefined answers + confidence, ~10× faster than standard Luna calls.",
-   "body": [
-    "Also from DevDay: OpenAI’s Decisions API lets apps make fast constrained choices — content classification, routing, moderation-style forks — with text or image inputs limited to predefined answers plus confidence scores. X News pegs responses around 150 milliseconds, roughly 10× faster than standard Luna calls.",
-    "The framing sits next to mid-September’s Jev-style decision models: specialized low-latency decision heads for agent loops, not another general chat completion. Useful Featured for anyone wiring tool routers and policy gates."
-   ],
-   "authors": [
-    "OpenAI"
-   ],
-   "source": "web",
-   "source_label": "X News / DevDay",
-   "source_url": "https://x.com/i/trending/2105174942665023531",
-   "discuss_url": "https://x.com/i/trending/2105174942665023531",
-   "interests": [
-    "ai",
-    "openai",
-    "agents",
-    "devtools"
-   ],
-   "kicker": "Featured"
-  },
-  {
-   "id": "gpt61-sol-hn",
-   "headline": "HN #1 — GPT-6.1 Sol post hits ~972 points / 849 comments",
-   "why_read": "The community thread under OpenAI’s Sol blog is the morning’s loudest HN tab.",
-   "body": [
-    "OpenAI’s “Introducing GPT-6.1 Sol” post is the top Hacker News story this morning (~972 points, ~849 comments), with the companion Dots announcement also in the top three (~644). Thread energy tracks the overnight X eval chatter Anand amplified.",
-    "Use the HN discussion as the skeptic layer under the Top Story: pricing claims, Codex vs mini-SWE discrepancies, and whether Sol actually displaces Astra-class spend for everyday agents."
-   ],
-   "authors": [
-    "OpenAI"
-   ],
-   "source": "hn",
-   "source_label": "Hacker News",
-   "source_url": "https://openai.com/index/introducing-gpt-6-1-sol/",
-   "discuss_url": "https://news.ycombinator.com/item?id=49896586",
-   "interests": [
-    "ai",
-    "openai",
-    "hn"
+    "grok",
+    "xai",
+    "knowledge"
    ],
    "lead": false,
    "featured": false,
    "kicker": "Signal"
   },
   {
-   "id": "livenerf-opus-nerf",
-   "headline": "Livenerf — “Has Opus 5.5 been nerfed yet?” (~674 on HN)",
-   "why_read": "Second-hottest HN post overnight: community instrumentation for silent model quality drift.",
+   "id": "ag-ui-1-0",
+   "headline": "AG-UI 1.0 — CopilotKit’s stable open protocol linking any agent to any app",
+   "why_read": "Anand RT’d the 1.0 ship: Google/Microsoft/Amazon/Anthropic/LangChain named among adopters.",
    "body": [
-    "The Livenerf GitHub project — framed as a continuous check on whether Claude Opus 5.5 has been quietly nerfed — is #2 on HN (~674 points). It’s the post-release trust ritual: public evals, screenshots, and regression arguments whenever a frontier lab ships a point release.",
-    "Pair with Sonnet/Opus 5.5 still landing in Cursor and Anand’s Sol-efficiency RTs: model shopping now includes “did they change it under me?” as a first-class question."
+    "CopilotKit declared AG-UI 1.0 a stable Agent–User Interaction Protocol — a bidirectional event-stream contract (JSON Schema–validated) for connecting agents to user-facing apps, with generated TypeScript/Python/.NET SDKs and 1.0 additions around subagents, metadata, multimodal tool results, and human-in-the-loop interrupts.",
+    "The company pitch lists broad ecosystem support (Google, Microsoft, Amazon, Oracle, Anthropic, LangChain, Mastra, and more). Practical Signal for anyone wiring agent UIs instead of reinventing chat chrome per framework."
    ],
    "authors": [
-    "ninjahawk"
+    "CopilotKit"
    ],
-   "source": "hn",
-   "source_label": "Hacker News",
-   "source_url": "https://github.com/ninjahawk/livenerf",
-   "discuss_url": "https://news.ycombinator.com/item?id=49901736",
+   "source": "x",
+   "source_label": "X / CopilotKit",
+   "source_url": "https://www.copilotkit.ai/blog/ag-ui-1.0",
+   "discuss_url": "https://x.com/indrayam/status/2105494356463419785",
+   "interests": [
+    "ai",
+    "agents",
+    "devtools",
+    "protocols"
+   ],
+   "lead": false,
+   "featured": false,
+   "kicker": "Signal"
+  },
+  {
+   "id": "claude-dev-site",
+   "headline": "claude.dev — Anthropic’s new home for developers building with Claude",
+   "why_read": "Anand RT’d @ClaudeDevs: engineering deep dives, Claude Code/API guides, team tips.",
+   "body": [
+    "Anthropic’s Claude developer surface launched (or rehomed) at claude.dev — pitched as the place for engineering deep dives, Claude Code and API guides, tips from the teams building Claude, and a few easter eggs. Anand amplified the @ClaudeDevs post in the same late-night RT burst as Argon and AG-UI.",
+    "Small but on-taste Signal: documentation/product homes matter when you’re living in multi-model Cursor days. Bookmark the URL next to the model cards."
+   ],
+   "authors": [
+    "Anthropic"
+   ],
+   "source": "x",
+   "source_label": "X / ClaudeDevs",
+   "source_url": "https://claude.dev/",
+   "discuss_url": "https://x.com/indrayam/status/2105494454362681663",
    "interests": [
     "ai",
     "claude",
+    "anthropic",
+    "devtools"
+   ],
+   "lead": false,
+   "featured": false,
+   "kicker": "Signal"
+  },
+  {
+   "id": "fcc-starlink-spectrum",
+   "headline": "FCC opens 12.7 GHz + 42 GHz bands — more satellite broadband spectrum (Starlink path)",
+   "why_read": "Anand RT’d Sawyer Merritt: vote expands FSS capacity Starlink could eventually seek.",
+   "body": [
+    "On September 30 the FCC adopted an order opening more than 1,000 MHz for fixed-satellite service uses — notably 12.7–13.25 GHz (including NGSO downlinks to blanket-licensed terminals/ESIMs) and 42–42.5 GHz for gateway/feeder downlinks. Coverage framed it as spectrum abundance for satellite broadband; Sawyer Merritt’s post Anand RT’d explicitly tied the vote to Starlink speed/capacity upside.",
+    "Caveat that matters: the order opens bands; it does not instantly authorize Starlink use. SpaceX still needs modification approvals and compatible birds/terminals. Signal is regulatory runway, not overnight Mbps."
+   ],
+   "authors": [
+    "FCC",
+    "Sawyer Merritt"
+   ],
+   "source": "x",
+   "source_label": "X / FCC via Sawyer",
+   "source_url": "https://convergedigest.com/fcc-satellite-spectrum-12-7-42-ghz-abundance/",
+   "discuss_url": "https://x.com/indrayam/status/2105420574369673394",
+   "interests": [
+    "space",
+    "starlink",
+    "policy",
+    "spectrum"
+   ],
+   "lead": false,
+   "featured": false,
+   "kicker": "Signal"
+  },
+  {
+   "id": "principal-ai-engineering",
+   "headline": "Principal AI engineering — “Can this be one LLM call and a SQL query?”",
+   "why_read": "Anand both RT’d and bookmarked Puneet Patwari’s ladder from junior agents to principal restraint.",
+   "body": [
+    "@system_monarch’s viral post sketches the AI-engineering maturity ladder: junior wants an agent, mid wants LangGraph + vector DB + three MCP servers, senior wants evals/guardrails/router, principal asks whether the job is one LLM call and a SQL query. Punchline: the hardest skill is knowing when you don’t need more AI.",
+    "Bookmark-grade Signal for Anand’s agent-fleet taste — the same anti-complexity instinct that shows up in his Unix/DevOps career narrative. Pair with Anthropic’s eval-driven-development discourse still circulating in bookmarks."
+   ],
+   "authors": [
+    "Puneet Patwari"
+   ],
+   "source": "x",
+   "source_label": "X / @system_monarch",
+   "source_url": "https://x.com/system_monarch/status/2105257348428083640",
+   "discuss_url": "https://x.com/indrayam/status/2105493967622091042",
+   "interests": [
+    "ai",
+    "agents",
+    "engineering",
     "evals"
    ],
    "lead": false,
@@ -255,148 +338,25 @@
    "kicker": "Signal"
   },
   {
-   "id": "claude-sonnet-5-5",
-   "headline": "Claude Sonnet 5.5 — still the everyday workhorse; now in Cursor",
-   "why_read": "Holdover demoted from Featured: ship is days old, but Anand RT’d Cursor’s availability note Tuesday night.",
+   "id": "poteto-grok-bot-agents",
+   "headline": "poteto: Grok bots + cloud agents — Slack @-mention coding that spawns Projects",
+   "why_read": "Anand RT’d lauren’s workflow: team engineer bot in Slack → coding work → new Projects.",
    "body": [
-    "Anthropic’s Claude Sonnet 5.5 (Sep 28) remains the fast/cheap complement to Opus 5.5 — 30%+ faster generation, up to 30% lower task cost at the same list price, 70.6% on Terminal-Bench 4.0. Cursor announced Sonnet 5.5 availability with “on par with Opus in many tasks,” and Anand RT’d that post.",
-    "A brief Claude outage also hit during OpenAI DevDay hours Tuesday (mitigated within ~an hour per X News). Signal, not crisis: the model is in the daily rotation while Sol tries to undercut on price."
+    "@poteto’s overnight write-up calls combining Grok bots with cloud agents a “magical experience”: create a team engineer bot in Slack, @ it for coding work, and even tell it to create Projects that group related runs. The same thread window carried xAI bot’s note that engineering-team bots are shared as installable templates with skills, routines, and connectors — which Anand also RT’d.",
+    "On-taste Signal for a reader living in multi-agent Slack/fleet workflows: the product surface is shifting from chat tabs to team bots that already know your connectors."
    ],
    "authors": [
-    "Anthropic",
-    "Cursor"
+    "lauren (@poteto)",
+    "xAI"
    ],
    "source": "x",
-   "source_label": "X / Cursor",
-   "source_url": "https://www.anthropic.com/claude-sonnet-5-5",
-   "discuss_url": "https://x.com/cursor_ai/status/2104666044220821594",
+   "source_label": "X / @poteto",
+   "source_url": "https://x.com/poteto/status/2105377066942349794",
+   "discuss_url": "https://x.com/indrayam/status/2105461241108115925",
    "interests": [
     "ai",
-    "claude",
-    "coding",
-    "anthropic"
-   ],
-   "lead": false,
-   "featured": false,
-   "kicker": "Signal"
-  },
-  {
-   "id": "drawio-github-mcp",
-   "headline": "draw.io hits the GitHub MCP Registry — live interactive diagrams in chat",
-   "why_read": "Anand RT’d the install path: ask your AI for a diagram, render 10k+ shapes in-session.",
-   "body": [
-    "draw.io announced it’s on the GitHub MCP Registry: agents can request diagrams that render live and interactive in chat, with 10,000+ searchable shapes spanning AWS, Azure, GCP, Kubernetes, BPMN, and more. Install is straight from GitHub’s MCP surface.",
-    "Same overnight window as Cursor /visualize — the diagram layer for agent coding is suddenly a product category, not a paste-from-Excalidraw chore."
-   ],
-   "authors": [
-    "draw.io"
-   ],
-   "source": "x",
-   "source_label": "X / draw.io",
-   "source_url": "https://x.com/drawio/status/2104994617678823433",
-   "discuss_url": "https://x.com/indrayam/status/2105152643241021870",
-   "interests": [
-    "ai",
-    "devtools",
-    "diagrams",
-    "mcp"
-   ],
-   "lead": false,
-   "featured": false,
-   "kicker": "Signal"
-  },
-  {
-   "id": "mr-boxington-cargo",
-   "headline": "mr-boxington — Cargo build cache that prunes agent worktree disk bloat",
-   "why_read": "Anand RT’d jdx: target/ dirs are eating disks when coding agents spawn git worktrees.",
-   "body": [
-    "@jdxcode’s mr-boxington (mbx) is a Cargo build cache aimed at the agent-era disk problem: multiple git worktrees each growing target/ trees. jdx reports 3.9 TiB pruned on one dev box in three weeks; v1.21 adds cargo clippy + cargo build side by side with zero config.",
-    "Small systems Signal with Anand’s Unix/agent-fleet taste — infrastructure hygiene for when agents multiply checkouts faster than humans clean them."
-   ],
-   "authors": [
-    "jdx"
-   ],
-   "source": "x",
-   "source_label": "X / @jdxcode",
-   "source_url": "https://x.com/jdxcode/status/2104999632715517953",
-   "discuss_url": "https://x.com/indrayam/status/2105153485323010461",
-   "interests": [
-    "rust",
-    "devtools",
     "agents",
-    "systems"
-   ],
-   "lead": false,
-   "featured": false,
-   "kicker": "Signal"
-  },
-  {
-   "id": "austin-jobs-engine",
-   "headline": "Austin as a top-tier U.S. job engine — growth rate × absolute adds",
-   "why_read": "Anand RT’d and bookmarked Jason Scharf’s chart post — hometown labor-market Signal.",
-   "body": [
-    "Jason Scharf’s Tuesday post (RT’d and bookmarked by Anand) argues Austin is becoming one of the country’s most important job engines: not yet NYC/DFW/Houston scale, but the combination of growth rate and absolute jobs added is “next level,” with an accompanying chart.",
-    "Local Signal for an Austin-metro reader watching Cybercab density, Tesla Giga events, and AI hiring collide in the same metro narrative."
-   ],
-   "authors": [
-    "Jason Scharf"
-   ],
-   "source": "x",
-   "source_label": "X / @Jason_A_Scharf",
-   "source_url": "https://x.com/Jason_A_Scharf/status/2104937490700185966",
-   "discuss_url": "https://x.com/indrayam/status/2105143248951939126",
-   "interests": [
-    "austin",
-    "economy",
-    "jobs"
-   ],
-   "lead": false,
-   "featured": false,
-   "kicker": "Signal"
-  },
-  {
-   "id": "long-lake-amex-gbt",
-   "headline": "Long Lake closes $6.3B Amex GBT acquisition — AI rollup meets corporate travel",
-   "why_read": "Anand RT’d Alexander Taubman’s close note: services businesses remade with AI.",
-   "body": [
-    "Long Lake completed a $6.3 billion acquisition of Amex Global Business Travel. Taubman’s post (RT’d by Anand) frames Long Lake as acquiring generational American services businesses and transforming them with AI; Amex GBT is pitched as the travel partner for 17,500 businesses across 140 countries with tens of millions of bookings last year.",
-    "Same thematic lane as the AI-rollup / “service as software” bookmarks still in Anand’s list — private capital buying ops-heavy incumbents to automate the middle."
-   ],
-   "authors": [
-    "Alexander Taubman",
-    "Long Lake"
-   ],
-   "source": "x",
-   "source_label": "X / @alextaubman",
-   "source_url": "https://x.com/alextaubman/status/2104918943865479589",
-   "discuss_url": "https://x.com/indrayam/status/2105066998308704745",
-   "interests": [
-    "ai",
-    "finance",
-    "rollup"
-   ],
-   "lead": false,
-   "featured": false,
-   "kicker": "Signal"
-  },
-  {
-   "id": "rust-deser-mitsuhiko",
-   "headline": "Armin Ronacher ships Deser — a Serde alternative from a long bucket list",
-   "why_read": "Anand RT’d mitsuhiko’s “finally did something about it” post on Rust serialization.",
-   "body": [
-    "Armin Ronacher (@mitsuhiko) published Deser after years of collecting gripes with Serde as Rust’s one dominant serialization library. The post walks why/what/how for a new approach aimed at the parts of Serde he does not enjoy.",
-    "Paired in Anand’s RT pile with Japanese-language praise for “100 Exercises To Learn Rust” — a quiet Rust systems cluster beside the AI noise."
-   ],
-   "authors": [
-    "Armin Ronacher"
-   ],
-   "source": "x",
-   "source_label": "X / @mitsuhiko",
-   "source_url": "https://x.com/mitsuhiko/status/2105049828992655715",
-   "discuss_url": "https://x.com/indrayam/status/2105141974680604901",
-   "interests": [
-    "rust",
-    "systems",
+    "grok",
     "devtools"
    ],
    "lead": false,
@@ -404,346 +364,404 @@
    "kicker": "Signal"
   },
   {
-   "id": "uiuc-cs341-coursebook",
-   "headline": "UIUC CS 341 systems programming coursebook — free, 2200+ GitHub stars",
-   "why_read": "Anand RT’d the Chinese-language pointer at Illinois’s C/Linux coursebook.",
+   "id": "visual-explainer-10k",
+   "headline": "Visual Explainer skill hits 10k GitHub stars — agents that plan in HTML",
+   "why_read": "Anand RT’d nicopreme’s milestone: HTML planning beats markdown for agent explainers.",
    "body": [
-    "A widely shared post (RT’d by Anand) points at the University of Illinois Urbana-Champaign CS 341 systems programming coursebook — free to read, 2200+ GitHub stars and hundreds of forks, used as the actual course text for C and Linux systems programming.",
-    "Classic Anand Signal: metal-close systems material cutting through the model-release firehose."
+    "nicopreme’s Visual Explainer skill crossed 10,000 GitHub stars. Origin story in the RT: a February hunch that agents should plan in HTML instead of markdown for richer visual explainers — the same diagram/explain product category as last week’s Cursor /visualize and draw.io MCP chatter.",
+    "Small tools Signal with outsized star count: when agent UX is the competitive edge, skills that change the planning medium travel fast."
    ],
    "authors": [
-    "UIUC CS 341"
+    "nicopreme"
    ],
    "source": "x",
-   "source_label": "X / @Ryrenz",
-   "source_url": "https://x.com/Ryrenz/status/2104723220423143930",
-   "discuss_url": "https://x.com/indrayam/status/2105145157746074050",
+   "source_label": "X / @nicopreme",
+   "source_url": "https://x.com/nicopreme/status/2105444189584666788",
+   "discuss_url": "https://x.com/indrayam/status/2105491327748059516",
    "interests": [
-    "systems",
-    "education",
-    "linux"
+    "ai",
+    "agents",
+    "devtools",
+    "visualization"
    ],
    "lead": false,
    "featured": false,
    "kicker": "Signal"
   },
   {
-   "id": "delhi-electricity-loss",
-   "headline": "How Delhi cut electricity loss from 50% to 5% — IEEE Spectrum (~534 on HN)",
-   "why_read": "HN’s non-AI runaway: grid theft, metering, and institutional persistence.",
+   "id": "nhtsa-cybercab-oath",
+   "headline": "NHTSA Cybercab Special Order — Sep 30 oath deadline passed; no public Tesla filing yet",
+   "why_read": "Holdover updated: deadline day came and went; answers may stay CBI-dark for a while.",
    "body": [
-    "IEEE Spectrum’s piece on how Delhi drove electricity distribution losses from roughly 50% down to about 5% is a top HN story (~534 points). It’s an infrastructure turnaround story — metering, enforcement, and utility reform — that fits Anand’s energy-tech interest lane.",
-    "Good Signal palate cleanser beside DevDay and Starship: atoms-and-electrons progress without a model card."
+    "NHTSA’s Special Order under Audit Query AQ26002 required Tesla to deliver sworn answers on Cybercab FMVSS certification by September 30. As of deadline-day coverage (The Auto Wire / Yahoo Autos), neither Tesla nor NHTSA had publicly confirmed a filing or extension — and the order itself contemplates confidential-business-information treatment, so little may surface soon even if Tesla responded.",
+    "Keep as regulatory Signal, not a resolved story: failure to answer fully can escalate to DOJ compulsion and large civil penalties, while Zoox’s earlier exemption path shows these audits can run for years. Pair with Austin deployment context still in the background."
+   ],
+   "authors": [
+    "NHTSA",
+    "Tesla"
+   ],
+   "source": "web",
+   "source_label": "NHTSA / The Auto Wire",
+   "source_url": "https://theautowire.com/2026/09/30/tesla-cybercab-nhtsa-special-order-september-30-zoox-exemption/",
+   "discuss_url": "https://www.nhtsa.gov/press-releases/investigation-tesla-cybercab-self-certification",
+   "interests": [
+    "tesla",
+    "cybercab",
+    "regulation",
+    "nhtsa"
+   ],
+   "lead": false,
+   "featured": false,
+   "kicker": "Signal"
+  },
+  {
+   "id": "magnitude-agents-hn",
+   "headline": "Launch HN: Magnitude — self-optimizing inference engine for agents (YC S25)",
+   "why_read": "HN Launch (~167): agent inference that tunes itself — on Anand’s open-tools beat.",
+   "body": [
+    "Magnitude (YC S25) launched on Hacker News as a self-optimizing inference engine aimed at agent workloads — the class of long-context, high-concurrency loops that CoreWeave/Cognition were benchmarking on Vera Rubin the same week. GitHub is at magnitudedev/magnitude.",
+    "Use the HN thread as the skeptic layer: what “self-optimizing” means in practice, and whether it’s a router, a cache, or a full serving stack. Fits the agent-infra Signal stack beside a16z’s token charts."
+   ],
+   "authors": [
+    "Magnitude"
+   ],
+   "source": "hn",
+   "source_label": "Hacker News",
+   "source_url": "https://github.com/magnitudedev/magnitude",
+   "discuss_url": "https://news.ycombinator.com/item?id=49911995",
+   "interests": [
+    "ai",
+    "agents",
+    "inference",
+    "hn"
+   ],
+   "lead": false,
+   "featured": false,
+   "kicker": "Signal"
+  },
+  {
+   "id": "opendlss-hn",
+   "headline": "OpenDLSS — Vulkan reimplementation of Nvidia’s DLSS 5 neural rendering",
+   "why_read": "HN (~110): open reverse-engineering energy on Nvidia’s upscaling stack.",
+   "body": [
+    "OpenDLSS landed on HN as a Vulkan reimplementation of Nvidia’s DLSS 5 neural rendering network (maanHimself/OpenDLSS-NR on GitHub). It’s the classic open-graphics story: community tooling chasing proprietary upscaling/frame-gen pipelines that dominate gaming and creative GPUs.",
+    "Niche but on-taste for Anand’s Nvidia/systems curiosity — treat claims carefully until you read the repo’s scope and legal posture yourself."
+   ],
+   "authors": [
+    "maanHimself"
+   ],
+   "source": "hn",
+   "source_label": "Hacker News",
+   "source_url": "https://github.com/maanHimself/OpenDLSS-NR",
+   "discuss_url": "https://news.ycombinator.com/item?id=49906100",
+   "interests": [
+    "nvidia",
+    "graphics",
+    "open-source",
+    "hn"
+   ],
+   "lead": false,
+   "featured": false,
+   "kicker": "Signal"
+  },
+  {
+   "id": "netlify-firecracker",
+   "headline": "Netlify: 5× faster Edge Functions — V8 isolates → Firecracker MicroVMs",
+   "why_read": "HN (~184): edge runtime rewrite with concrete isolation/performance tradeoffs.",
+   "body": [
+    "Netlify’s engineering post explains moving Edge Functions from V8 isolates toward Firecracker MicroVMs and claims roughly 5× faster performance in the new path. The HN thread (~184 points) is the systems discussion: cold starts, isolation boundaries, and whether MicroVMs beat isolates for real multi-tenant edge work.",
+    "Classic Unix-taste Signal — runtime plumbing that developers feel even when the marketing says ‘faster edge.’"
+   ],
+   "authors": [
+    "Netlify"
+   ],
+   "source": "hn",
+   "source_label": "Hacker News",
+   "source_url": "https://www.netlify.com/blog/edge-functions-firecracker-microvms/",
+   "discuss_url": "https://news.ycombinator.com/item?id=49912444",
+   "interests": [
+    "systems",
+    "edge",
+    "cloud",
+    "hn"
+   ],
+   "lead": false,
+   "featured": false,
+   "kicker": "Signal"
+  },
+  {
+   "id": "bloomberg-terminal-hn",
+   "headline": "IEEE Spectrum: a brief history of the Bloomberg terminal (~304 on HN)",
+   "why_read": "HN systems/history staple — the UI that still defines “serious finance software.”",
+   "body": [
+    "IEEE Spectrum’s brief history of the Bloomberg terminal is a top HN tab (~304 points / ~129 comments): how a keyboard-first, denser-than-web UI became the durable standard for market data and workflows decades after GUI fashion moved on.",
+    "Human-interest systems Signal — useful contrast when AI agents promise to “replace the terminal” every launch cycle."
    ],
    "authors": [
     "IEEE Spectrum"
    ],
    "source": "hn",
    "source_label": "Hacker News",
-   "source_url": "https://spectrum.ieee.org/delhi-electricity-loss",
-   "discuss_url": "https://news.ycombinator.com/item?id=49892245",
-   "interests": [
-    "energy",
-    "infrastructure",
-    "india"
-   ],
-   "lead": false,
-   "featured": false,
-   "kicker": "Signal"
-  },
-  {
-   "id": "inventing-work-staff-eng",
-   "headline": "A Staff Engineer’s Guide to Inventing Work (~283 on HN)",
-   "why_read": "Career-systems essay landing on HN the same week Anand’s DevOps/platform identity is in focus.",
-   "body": [
-    "Sujith Jay’s “A Staff Engineer’s Guide to Inventing Work” is climbing HN (~283 points): how senior ICs find, frame, and ship work that wasn’t on a roadmap — the soft power half of staff-plus roles.",
-    "Direct Signal for a Sr. Staff reader who builds platforms for tens of thousands of engineers: inventing the right problem is often the job."
-   ],
-   "authors": [
-    "Sujith Jay"
-   ],
-   "source": "hn",
-   "source_label": "Hacker News",
-   "source_url": "https://sujithjay.com/inventing-work",
-   "discuss_url": "https://news.ycombinator.com/item?id=49878857",
-   "interests": [
-    "engineering",
-    "career",
-    "leadership"
-   ],
-   "lead": false,
-   "featured": false,
-   "kicker": "Signal"
-  },
-  {
-   "id": "solar-system-526k",
-   "headline": "Show HN: real-time Solar System with 526k asteroids + tracked satellites",
-   "why_read": "Pretty space-systems demo (~273 on HN) the morning after Starship’s orbital first.",
-   "body": [
-    "A Show HN project renders a real-time Solar System including about 526,000 asteroids and all tracked satellites — sitting comfortably in the HN top tier (~273 points) while Starship aftermath still owns the space timeline.",
-    "Light Signal: visualization craft meeting orbital-mechanics nerd sniping."
-   ],
-   "authors": [
-    "bl2"
-   ],
-   "source": "hn",
-   "source_label": "Hacker News",
-   "source_url": "https://space.bl2.net/",
-   "discuss_url": "https://news.ycombinator.com/item?id=49898778",
-   "interests": [
-    "space",
-    "visualization",
-    "show-hn"
-   ],
-   "lead": false,
-   "featured": false,
-   "kicker": "Signal"
-  },
-  {
-   "id": "vermont-home-batteries",
-   "headline": "Vermont replacing power plants with home batteries — BBC Future (~226 on HN)",
-   "why_read": "Virtual power plant / distributed storage story on the energy beat.",
-   "body": [
-    "BBC Future’s piece on Vermont using home batteries as a virtual power plant — displacing traditional generation — is on HN (~226). It’s the consumer-storage-as-grid-resource narrative in concrete utility form.",
-    "Energy-tech Signal beside Delhi’s loss-reduction story: two different grids, same distributed-intelligence theme."
-   ],
-   "authors": [
-    "BBC Future"
-   ],
-   "source": "hn",
-   "source_label": "Hacker News",
-   "source_url": "https://www.bbc.com/future/article/20260928-a-virtual-power-plant-hidd",
-   "discuss_url": "https://news.ycombinator.com/item?id=49897993",
-   "interests": [
-    "energy",
-    "batteries",
-    "climate"
-   ],
-   "lead": false,
-   "featured": false,
-   "kicker": "Signal"
-  },
-  {
-   "id": "backblaze-q2-2026",
-   "headline": "Backblaze drive stats for Q2 2026 (~214 on HN)",
-   "why_read": "The quarterly reliability ritual for anyone who still cares about spinning rust and fleet AFR.",
-   "body": [
-    "Backblaze published its Q2 2026 hard-drive stats — the long-running public AFR dataset that HN treats as a seasonal holiday (~214 points). Model-level failure rates, cohort ages, and the usual vendor scorekeeping.",
-    "Systems Signal: empirical storage reliability in a week otherwise owned by agents and rockets."
-   ],
-   "authors": [
-    "Backblaze"
-   ],
-   "source": "hn",
-   "source_label": "Hacker News",
-   "source_url": "https://www.backblaze.com/blog/backblaze-drive-stats-for-q2-2026/",
-   "discuss_url": "https://news.ycombinator.com/item?id=49893002",
+   "source_url": "https://spectrum.ieee.org/bloomberg-terminal",
+   "discuss_url": "https://news.ycombinator.com/item?id=49909583",
    "interests": [
     "systems",
-    "storage",
-    "reliability"
+    "finance",
+    "history",
+    "hn"
    ],
    "lead": false,
    "featured": false,
    "kicker": "Signal"
   },
   {
-   "id": "raschka-jev-classifiers",
-   "headline": "Raschka: language models for text classification — bag-of-words to Jev",
-   "why_read": "Sebastian Raschka’s classifier history lands beside OpenAI’s Decisions API and the Jev wave.",
+   "id": "brain-waves-quanta",
+   "headline": "Quanta: surprisingly complex waves reveal the brain’s inner workings",
+   "why_read": "HN science (~198): traveling-wave complexity beyond tidy oscillation metaphors.",
    "body": [
-    "Sebastian Raschka’s magazine piece tracing text classification from classic bag-of-words through modern LLM classifiers to Jev-style decision models is on HN (~136). It’s the didactic bridge between old ML stacks and the new low-latency decision APIs.",
-    "Useful Signal the same morning Decisions API news hits: constrained classification is suddenly a product surface again."
+    "Quanta Magazine’s September 30 feature on complex brain waves — and what they imply about inner workings — is sitting on HN with solid points (~198). It’s the physics/neuro overlap Anand’s pinned taste explicitly includes.",
+    "Science Signal for the fold: no product launch, just a careful popular-science piece worth the tab when model launches crowd everything else."
    ],
    "authors": [
-    "Sebastian Raschka"
+    "Quanta Magazine"
    ],
    "source": "hn",
    "source_label": "Hacker News",
-   "source_url": "https://magazine.sebastianraschka.com/p/classifier-history-and-jev",
-   "discuss_url": "https://news.ycombinator.com/item?id=49891203",
+   "source_url": "https://www.quantamagazine.org/surprisingly-complex-waves-reveal-the-brains-inner-workings-20260930/",
+   "discuss_url": "https://news.ycombinator.com/item?id=49912955",
    "interests": [
-    "ai",
-    "ml",
-    "classification"
+    "science",
+    "neuroscience",
+    "physics",
+    "hn"
    ],
    "lead": false,
    "featured": false,
    "kicker": "Signal"
   },
   {
-   "id": "pi-dev-no-mcp",
-   "headline": "Pi.dev: You Said No MCP (~120 on HN)",
-   "why_read": "Fresh HN essay pushing back on MCP-as-default while draw.io just joined the registry.",
+   "id": "edg-cpp-public",
+   "headline": "EDG C++ front-end goes public (~225 on HN)",
+   "why_read": "Compiler-lore Signal: a long-private C++ frontend opens up.",
    "body": [
-    "“You Said No MCP” on Pi.dev/earendil is a new HN entrant (~120) arguing against treating MCP as the inevitable agent-tool bus. It lands the same morning draw.io celebrates GitHub MCP Registry listing — useful tension, not a verdict.",
-    "Agent-architecture Signal: protocol fashion cycles as fast as model point releases."
+    "The Edison Design Group C++ front-end — long a behind-the-scenes piece of commercial C++ tooling — has a public transition story at edgcpp.org that’s drawing HN attention (~225 points). For systems/compiler readers it’s a rare peek at infrastructure most developers never see directly.",
+    "Pair with the week’s Rust/C++ migration chatter under Gemini Argon’s Google-internal claims: frontends and correctness tooling remain the quiet bottleneck."
    ],
    "authors": [
-    "earendil"
+    "EDG"
    ],
    "source": "hn",
    "source_label": "Hacker News",
-   "source_url": "https://earendil.com/posts/you-said-no-mcp/",
-   "discuss_url": "https://news.ycombinator.com/item?id=49906637",
+   "source_url": "https://edgcpp.org/#transition",
+   "discuss_url": "https://news.ycombinator.com/item?id=49913192",
    "interests": [
-    "ai",
-    "agents",
-    "mcp",
-    "devtools"
+    "systems",
+    "compilers",
+    "cpp",
+    "hn"
    ],
    "lead": false,
    "featured": false,
    "kicker": "Signal"
   },
   {
-   "id": "google-suncatcher",
-   "headline": "Google Project Suncatcher — TPU satellite still ~Oct 1 on SpaceX Transporter",
-   "why_read": "Holdover: AI compute leaving the atmosphere is T-1 day-ish after Starship’s orbital proof.",
+   "id": "singapore-gale-shapley",
+   "headline": "Singapore gov dating app uses Gale-Shapley stable marriage (~406 on HN)",
+   "why_read": "HN runaway: algorithms class meets civic product design.",
    "body": [
-    "Google’s Project Suncatcher — a TPU-in-orbit experiment riding a SpaceX Transporter mission — remains targeted around October 1 per prior reporting. With Starship Flight 14 now an orbital success, keep Suncatcher as the near-term AI×space follow-on on the board.",
-    "Same interest intersection Anand’s pinned post sketches: IT, energy tech, and space hardware sharing a calendar week."
+    "A thread about Singapore’s government-linked dating app using the Gale-Shapley stable-marriage algorithm is one of HN’s loudest non-AI tabs (~406 points / ~363 comments). It’s half CS nostalgia, half debate about state involvement in matching markets.",
+    "Human-interest Signal with real algorithm meat — the kind of “math in the wild” story that fits Anand’s pinned Physics/Chem/Math amplifier taste."
    ],
    "authors": [
-    "Google",
-    "SpaceX"
+    "HN / tuakdotsol"
    ],
-   "source": "web",
-   "source_label": "Google / Project Suncatcher",
-   "source_url": "https://blog.google/",
-   "discuss_url": "https://news.ycombinator.com/",
+   "source": "hn",
+   "source_label": "Hacker News",
+   "source_url": "https://twitter.com/tuakdotsol/status/2105105417760391258",
+   "discuss_url": "https://news.ycombinator.com/item?id=49906432",
    "interests": [
-    "ai",
-    "space",
-    "google",
-    "chips"
+    "algorithms",
+    "society",
+    "hn",
+    "math"
    ],
    "lead": false,
    "featured": false,
    "kicker": "Signal"
   },
   {
-   "id": "nvidia-vera-cpu",
-   "headline": "NVIDIA Vera CPU boards arriving — 88 Olympus cores for agent sandboxes",
-   "why_read": "Prime Intellect and Daytona unboxings: Vera pitched as the CPU for concurrent agent workloads.",
+   "id": "family-replaced-tech",
+   "headline": "“The last time my family was replaced by technology” (~257 / 534 comments)",
+   "why_read": "HN comment magnet: personal essay on automation’s family-scale consequences.",
    "body": [
-    "X News says AI infra firms including Prime Intellect and Daytona have received NVIDIA Vera CPU hardware — about 88 custom Olympus cores and up to ~1.2 TB/s memory bandwidth — positioned for agentic workloads like code sandboxes and orchestration. Early quotes lean on dynamic memory latency and sandbox density.",
-    "Silicon Signal beside Monday’s Open Agent Safety Platform: NVIDIA selling both the containment story and the CPU that runs the agents being contained."
+    "Manuel d’Arcemont’s essay on the last time his family was replaced by technology is drawing an outsized HN comment thread (~257 points, ~534 comments). It’s the human-interest counterweight to a fold full of agents, chips, and launch clocks.",
+    "Kindness/amplifier Signal per Anand’s pinned post — read the piece, then the thread, and notice which automation stories people actually fear."
    ],
    "authors": [
-    "NVIDIA",
-    "Prime Intellect"
+    "Manuel d'Arcemont"
    ],
-   "source": "web",
-   "source_label": "X News / NVIDIA Vera",
-   "source_url": "https://x.com/i/trending/2105121277614633046",
-   "discuss_url": "https://x.com/i/trending/2105121277614633046",
+   "source": "hn",
+   "source_label": "Hacker News",
+   "source_url": "https://manuel.darcemont.fr/posts/the-last-time-my-family-was-replaced-by-technology/",
+   "discuss_url": "https://news.ycombinator.com/item?id=49908394",
    "interests": [
-    "ai",
-    "chips",
-    "nvidia",
-    "agents"
+    "society",
+    "automation",
+    "human-interest",
+    "hn"
    ],
    "lead": false,
    "featured": false,
    "kicker": "Signal"
   },
   {
-   "id": "crew-13-rehearsal",
-   "headline": "NASA/SpaceX Crew-13 dress rehearsal done — targeted Oct 1 liftoff",
-   "why_read": "Falcon 9 + Dragon Grace vertical after Tuesday rehearsal; Watkins would be first NASA astronaut with two Dragon launches.",
+   "id": "fsd-speed-profiles",
+   "headline": "Tesla FSD speed profiles — drivers push back on Sloth/Standard after v14 swap",
+   "why_read": "X News overnight: fixed profiles replaced custom offsets; ticket/traffic complaints follow.",
    "body": [
-    "NASA and SpaceX completed a Crew-13 launch rehearsal Tuesday at Cape Canaveral SLC-40. The crew includes NASA commander Jessica Watkins (poised to be the first NASA astronaut to launch twice on Dragon), pilot Luke Delaney, CSA’s Joshua Kutryk, and Roscosmos’ Sergey Teteryatnikov. Target remains about 11:10 a.m. EDT October 1, with NASA streaming coverage.",
-    "Spaceflight Signal in the Starship afterglow: operational crew rotation continues on Falcon 9 while Starship just opened its orbital chapter."
+    "X News summarized pushback after FSD v14 replaced custom speed offsets with fixed profiles (Sloth, Chill, Standard, Hurry, Mad Max). Drivers report Sloth creeping too slowly and backing up traffic, while Standard can exceed posted limits enough to raise ticket risk — and many want granular controls back even as Tesla argues the car should learn habits.",
+    "Supervised-FSD Signal, not Robotaxi: the same stack Anand follows for Cybercab readiness still has everyday UX fights on personal cars. Pair with parking-lot/hazard praise clips that circulated the same day."
    ],
    "authors": [
-    "NASA",
-    "SpaceX"
+    "Tesla owners",
+    "X News"
    ],
-   "source": "web",
-   "source_label": "X News / NASA Crew-13",
-   "source_url": "https://x.com/i/trending/2105019378282721483",
-   "discuss_url": "https://x.com/i/trending/2105019378282721483",
-   "interests": [
-    "space",
-    "nasa",
-    "crew"
-   ],
-   "lead": false,
-   "featured": false,
-   "kicker": "Signal"
-  },
-  {
-   "id": "fsd-collision-evasion",
-   "headline": "Tesla FSD Automatic Collision Evasion — guardian angel, now a paywall ethics fight",
-   "why_read": "Holdover updated: feature praise continues while X debates FSD-subscription gating of crash avoidance.",
-   "body": [
-    "Tesla’s Automatic Collision Evasion (FSD v14.x on HW4) still draws owner videos of curb dodges and sudden lead-car braking saves; Ashok Elluswamy’s “guardian angel” framing remains the company line. X News overnight added the ethics layer: critics argue crash-avoidance that re-engages FSD should not sit behind a $99 subscription.",
-    "Signal, not settled policy: capability demos and access arguments are running in parallel while Cybercab’s federal oath is due today."
-   ],
-   "authors": [
-    "Tesla",
-    "Ashok Elluswamy"
-   ],
-   "source": "web",
-   "source_label": "X News / Tesla FSD",
-   "source_url": "https://x.com/i/trending/2104625907587527081",
-   "discuss_url": "https://x.com/i/trending/2105083105681833990",
+   "source": "x",
+   "source_label": "X News / FSD",
+   "source_url": "https://x.com/i/trending/2105395852043075944",
+   "discuss_url": "https://x.com/i/trending/2105395852043075944",
    "interests": [
     "tesla",
     "fsd",
-    "autonomy",
-    "safety"
+    "robotaxi",
+    "autos"
    ],
    "lead": false,
    "featured": false,
    "kicker": "Signal"
   },
   {
-   "id": "matt-pocock-skill-makers",
-   "headline": "Matt Pocock’s top skill makers — poteto, dexhorthy, emilkowalski",
-   "why_read": "Bookmarked: the skills meta-layer Anand’s feed keeps treating as the real prompt engineering.",
+   "id": "spacex-starmind",
+   "headline": "SpaceX Starmind — orbital AI satellites with Nvidia silicon on the roadmap",
+   "why_read": "X News: orbital data-center concept with Rubin/Vera-class racks; launches targeted later.",
    "body": [
-    "Matt Pocock listed his top three “skill makers” — @poteto, @dexhorthy, and @emilkowalski — as people whose skills he always learns from. The post is in Anand’s bookmarks with thousands of engagements; Emil separately posted a /product-thinking skill for validating ideas via interview notes (also RT’d).",
-    "Agent-ops Signal: reusable skills over one-off prompts, same theme as poteto’s restate-goals hygiene from earlier this week."
+    "X News and trade coverage describe SpaceX’s Starmind effort as orbital AI data-center satellites built around optimized Nvidia Vera Rubin–class compute, with early launch targets discussed toward late 2027 and larger scale into 2028. Framing contrasts terrestrial permit/power/water constraints with solar-powered, radiatively cooled birds linked over laser/Starlink paths.",
+    "Treat as roadmap Signal beside Google’s Suncatcher flight test today: two orbital-compute narratives, very different maturity. Radiation, thermal rejection, and FCC constellation approvals remain the hard parts."
    ],
    "authors": [
-    "Matt Pocock",
-    "Emil Kowalski"
+    "SpaceX",
+    "NVIDIA"
+   ],
+   "source": "web",
+   "source_label": "X News / SpaceXAI",
+   "source_url": "https://x.com/i/trending/2105560643545804961",
+   "discuss_url": "https://www.spacex.com/spacexai/starmind",
+   "interests": [
+    "space",
+    "ai",
+    "nvidia",
+    "energy"
+   ],
+   "lead": false,
+   "featured": false,
+   "kicker": "Signal"
+  },
+  {
+   "id": "cloudflare-agent-traffic",
+   "headline": "Cloudflare traffic flip — AI agent requests +1,700%; humans minority in hot categories",
+   "why_read": "Anand RT’d lucataco’s summary: more than half of Cloudflare traffic isn’t human.",
+   "body": [
+    "A Cloudflare-derived chart making the rounds (amplified in Anand’s RT of @lucataco) claims more than half of Cloudflare traffic is non-human, with AI agent requests up ~1,700% year-over-year, human traffic down sharply in the most-crawled categories, and platform peaks above 150M requests/sec. The punchline in the RT: your next customer is probably software.",
+    "Infra Signal that rhymes with a16z’s agent-token charts — demand is shifting to machines calling machines. Verify specifics against Cloudflare’s own published reports before treating percentages as gospel."
+   ],
+   "authors": [
+    "Cloudflare",
+    "lucataco"
    ],
    "source": "x",
-   "source_label": "X / @mattpocockuk",
-   "source_url": "https://x.com/mattpocockuk/status/2105022638368403658",
-   "discuss_url": "https://x.com/emilkowalski/status/2105006505284235662",
+   "source_label": "X / @lucataco",
+   "source_url": "https://x.com/lucataco/status/2105293103028457611",
+   "discuss_url": "https://x.com/indrayam/status/2105294987025883589",
    "interests": [
     "ai",
     "agents",
-    "devtools",
-    "skills"
+    "infra",
+    "web"
    ],
    "lead": false,
    "featured": false,
    "kicker": "Signal"
   },
   {
-   "id": "spacex-terafab",
-   "headline": "SemiAnalysis: SpaceX Terafab pouring concrete — equipment ordered by April",
-   "why_read": "Bookmarked thread: Starship company building fab capacity at full speed.",
+   "id": "bot-templates-xai",
+   "headline": "xAI bot templates — engineering-team bots with skills, routines, connectors",
+   "why_read": "Anand RT’d @bot: installable team bots as starting points for fleet workflows.",
    "body": [
-    "SemiAnalysis’s thread (in Anand’s bookmarks) says SpaceX is building Terafab at full speed: program launched in March, equipment orders by April, and concrete already pouring on site. It’s the chips-meets-rockets industrial subplot beside Flight 14’s orbital success.",
-    "Space×semiconductor Signal — treat as analyst reporting, not a SpaceX IR filing."
+    "xAI’s @bot account said the engineering team’s bots are being shared as templates you can install — each bundled with skills, routines, and connectors to get started. Anand RT’d that note in the same window as poteto’s Slack+cloud-agent walkthrough.",
+    "Fleet-ops Signal for the reader who already runs a personal bot army: templates lower the cost of spinning the next specialist instead of hand-rolling every skill from scratch."
    ],
    "authors": [
-    "SemiAnalysis"
+    "xAI"
    ],
    "source": "x",
-   "source_label": "X / @SemiAnalysis_",
-   "source_url": "https://x.com/SemiAnalysis_/status/2104647659273228375",
-   "discuss_url": "https://x.com/SemiAnalysis_/status/2104647659273228375",
+   "source_label": "X / @bot",
+   "source_url": "https://x.com/bot/status/2105373769531523200",
+   "discuss_url": "https://x.com/indrayam/status/2105430117816172601",
+   "interests": [
+    "ai",
+    "agents",
+    "grok",
+    "xai"
+   ],
+   "lead": false,
+   "featured": false,
+   "kicker": "Signal"
+  },
+  {
+   "id": "ursala-satellites-hn",
+   "headline": "The Space Review: URSALA, RAQUEL, and FARRAH — top-secret sats unpacked (~236)",
+   "why_read": "HN space history (~236): classified reconnaissance naming lore.",
+   "body": [
+    "The Space Review’s deep dive on the top-secret URSALA, RAQUEL, and FARRAH satellites (2025 article still circulating) is a solid HN space tab (~236 points). It’s archival reconnaissance history rather than today’s countdown clocks — good palate cleanser beside Crew-13 and Starship.",
+    "Space Signal for readers who like the classified-program archaeology that never shows up in launch webcasts."
+   ],
+   "authors": [
+    "The Space Review"
+   ],
+   "source": "hn",
+   "source_label": "Hacker News",
+   "source_url": "https://www.thespacereview.com/article/4951/1",
+   "discuss_url": "https://news.ycombinator.com/item?id=49915082",
    "interests": [
     "space",
-    "chips",
-    "manufacturing"
+    "history",
+    "defense",
+    "hn"
+   ],
+   "lead": false,
+   "featured": false,
+   "kicker": "Signal"
+  },
+  {
+   "id": "dialup-56k-rip",
+   "headline": "56k.rip — the 1996 dial-up internet experience (~193 on HN)",
+   "why_read": "Show-HN nostalgia: feel the modem handshake again.",
+   "body": [
+    "56k.rip recreates the 1996 dial-up internet experience and is drawing HN love (~193 points). It’s pure nostalgia engineering — handshake sounds, waiting, and the texture of a slower web — landing beside a fold obsessed with agent tokens and orbital TPUs.",
+    "Kindness/human-interest Signal: sometimes the best Thursday link is a reminder of how far the pipes have come."
+   ],
+   "authors": [
+    "56k.rip"
+   ],
+   "source": "hn",
+   "source_label": "Hacker News",
+   "source_url": "https://56k.rip/",
+   "discuss_url": "https://news.ycombinator.com/item?id=49915126",
+   "interests": [
+    "nostalgia",
+    "web",
+    "history",
+    "hn"
    ],
    "lead": false,
    "featured": false,
