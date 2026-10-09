@@ -1,725 +1,711 @@
 {
-  "date": "2026-10-08",
-  "weekday": "Thursday",
+  "date": "2026-10-09",
+  "weekday": "Friday",
   "title": "The Daily Diff",
   "stories": [
     {
-      "id": "claude-haiku-5-5",
-      "lead": true,
-      "featured": false,
+      "id": "deepseek-4-1-flash",
       "kicker": "Top Story",
-      "headline": "Claude Haiku 5.5 lands at about 75% cheaper than Haiku 4.5, with tiered pricing that drops to $0.10 per million input tokens for prompts under 100K",
-      "why_read": "AI Top Story: the biggest AI thread on HN (~910 points / ~440 comments), and it's all over your timeline too. You retweeted Theo and Token Gremlin on it, and two of last night's bookmarks were about it.",
+      "headline": "Why isn't the industry freaking out about DeepSeek 4.1 Flash? A month of heavy use says it's frontier-grade at a fraction of the price",
+      "why_read": "AI Top Story: the biggest thread on HN this morning (~820 points, ~730 comments), and it's the open-weights-vs-frontier pricing argument you keep retweeting.",
       "body": [
-        "Anthropic released Claude Haiku 5.5 on 7 October, calling it its cheapest, fastest and most capable small model. It's aimed at high-volume work like summaries, compaction, database queries and classification, and at running as a coding subagent under Opus 5.5 or Sonnet 5.5. It's also the first Haiku-class model with an adjustable effort setting. Pricing is split at 100K tokens of prompt: $0.10 input and $0.50 output per million below that line, $0.50 and $2.50 above it, against $1 and $5 for Haiku 4.5. Anthropic says prompts under 100K made up around 90% of requests to the previous Haiku.",
-        "Anthropic's own table shows the jump. Haiku 5.5 scores 1620 on GDPval-AA v2.1 against 735 for Haiku 4.5, 72.4% on the OSWorld 2.1 offline subset against 15.7%, and 39.2% on Terminal-Bench 4.0 where Haiku 4.5 scored 0%. Sonnet 5.5 still leads on all of those. In the same post Anthropic halved Sonnet 5.5 cache-read prices, which it says makes Sonnet about 20% cheaper on most agentic work. Max 5x, Max 20x and Team subscribers also get $100, $200 and up to $500 a month in API credits."
+        "Writing on dgt.is, the author says they've used DeepSeek 4.1 Flash heavily for about a month across a dozen projects. Mid-session, if they don't look at the model name, they say they couldn't tell whether they're using DeepSeek or Opus. They don't care that there's no 4.1 'Pro', and they treat it as a frontier model because it behaves like one. Their prediction: Chinese labs may be a month or two behind Anthropic and OpenAI, but these distilled models handle the same workloads.",
+        "The practical argument is about 'good enough'. Today's models can already do high-quality unattended work, they write, and on a $10/month OpenCode Go subscription DeepSeek is effectively unlimited. That makes them comfortable spinning up mindless or exploratory tasks they'd never spend frontier tokens on. A day after Anthropic's Haiku 5.5 price cut, HN is arguing hard about whether cheap and capable beats the best."
       ],
       "authors": [
-        "Anthropic",
-        "@theo",
-        "@Layton_Gott"
+        "dgt.is"
       ],
       "source": "hn",
-      "source_label": "Anthropic / HN",
-      "source_url": "https://www.anthropic.com/claude-haiku-5-5",
-      "discuss_url": "https://news.ycombinator.com/item?id=49996437",
-      "interests": [
-        "ai",
-        "coding-tools",
-        "pricing"
-      ]
-    },
-    {
-      "id": "margaret-hamilton-dies",
-      "lead": true,
-      "featured": false,
-      "kicker": "Top Story",
-      "headline": "Margaret Hamilton, who led the software teams that took Apollo to the Moon and helped name software engineering, has died at 90",
-      "why_read": "The top story on all of HN this morning (~1,640 points). Her team's priority-driven software is why Apollo 11 could land through the 1202 alarm. For anyone who ships systems for a living, she's the origin story.",
-      "body": [
-        "MIT News reports that Margaret Hamilton died on 30 September at 90. She led the software engineering team at MIT's Instrumentation Lab during Apollo, heading both the Lunar Module and Command Module on-board flight software teams, which together had more than 400 people. Born in Paoli, Indiana, in 1936, she studied mathematics at Earlham College, came to MIT in 1959 to work on weather-prediction software with Edward Lorenz, and later became an entrepreneur and CEO. She wrote more than 130 publications and received the Presidential Medal of Freedom in 2016.",
-        "Her best-known moment came minutes before the Eagle landed in July 1969, when the guidance computer raised a 1202 overload alarm. Because her team had built priority-driven software that could shed background tasks and keep mission-critical ones running, Houston trusted it and let the landing go ahead. MIT notes that she pushed early for what we'd now call defensive programming, and that she helped establish software engineering as a discipline of its own. \"Looking back, we were the luckiest people in the world,\" she said of the Apollo years."
-      ],
-      "authors": [
-        "Janine Liberty",
-        "MIT News"
-      ],
-      "source": "hn",
-      "source_label": "MIT News / HN",
-      "source_url": "https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007",
-      "discuss_url": "https://news.ycombinator.com/item?id=49998895",
-      "interests": [
-        "systems",
-        "space",
-        "history"
-      ]
-    },
-    {
-      "id": "gpt-6-intelligent-ui",
-      "lead": false,
-      "featured": true,
-      "kicker": "Featured",
-      "headline": "OpenAI announces GPT-6 alongside an \"Intelligent UI\" push it says is for everyone",
-      "why_read": "HN (~660 points / ~370 comments) in the same news cycle as Anthropic's Haiku 5.5. It's a straight head-to-head week, and Anthropic's own Haiku chart already benchmarks against a GPT-6 variant.",
-      "body": [
-        "OpenAI posted \"GPT-6 and Intelligent UI for everyone\". The page blocked our reader, so we're working from the headline and the discussion rather than the full post. The framing is the interesting part: the pitch centers on interface, and on availability to everyone, not on a single benchmark.",
-        "The context makes it a crowded day. Anthropic's Haiku 5.5 launch compares directly against \"GPT-6 Luna\", and X chatter this week has developers pairing Claude Opus 5.5 for planning with GPT-6.1 Sol for fast execution. Read the HN thread for hands-on reports before trusting any one leaderboard."
-      ],
-      "authors": [
-        "OpenAI"
-      ],
-      "source": "hn",
-      "source_label": "OpenAI / HN",
-      "source_url": "https://openai.com/index/gpt-6-for-everyone/",
-      "discuss_url": "https://news.ycombinator.com/item?id=49996425",
-      "interests": [
-        "ai",
-        "llms"
-      ]
-    },
-    {
-      "id": "openai-math-withdrawals",
-      "lead": false,
-      "featured": true,
-      "kicker": "Featured",
-      "headline": "A day after its big math release, OpenAI withdraws three papers over a sign error and patches 14 more",
-      "why_read": "Follow-up to yesterday's OpenAI math story. A single sign error took down three Hodge-conjecture-adjacent papers, which is exactly the verification problem everyone was arguing about.",
-      "body": [
-        "OpenAI's openai/math repository now has a history file. Its 7 October entry says a sign error in \"Algebraicity of Weil classes on split abelian eightfolds\" invalidates a stabilization-trace cancellation argument and the construction used by two dependent papers. All three are withdrawn, including \"The rational Hodge conjecture for products of K3 surfaces\". The withdrawn papers now carry notices explaining the gap, with links to the archived manuscripts.",
-        "Fourteen more manuscripts were revised with proof repairs, corrected statements and clearer hypotheses. Those include four on Lipschitz heights and Ashkin–Teller currents, six on Kähler minimal model programs and abundance, and fixes to the taming and hypersymplectic papers. The original release came with Lean formalizations of many proofs, so the useful question in the HN thread is which of the broken arguments had been formalized and which had not."
-      ],
-      "authors": [
-        "OpenAI"
-      ],
-      "source": "github",
-      "source_label": "GitHub / HN",
-      "source_url": "https://github.com/openai/math/blob/main/history.md",
-      "discuss_url": "https://news.ycombinator.com/item?id=50003107",
-      "interests": [
-        "ai",
-        "math",
-        "science"
-      ]
-    },
-    {
-      "id": "starlink-india-blocked",
-      "lead": false,
-      "featured": true,
-      "kicker": "Featured",
-      "headline": "Musk says Starlink is being blocked in India by \"certain oligarchs\", and that its beams over India are switched off",
-      "why_read": "You retweeted three Musk posts on this last night. It's the sharpest public fight yet over Starlink's India launch, and his \"beams are off\" reply is a direct denial of a usage claim.",
-      "body": [
-        "In a post with more than 60 million impressions, Musk wrote that SpaceX is \"being blocked by certain oligarchs in order to maintain their monopolistic chokehold on the Indian people\" and called it \"a crime against the people of India.\" In another, he argued Starlink would bring high-speed, affordable internet to people who can't afford current prices or have no connection at all.",
-        "Later he answered a claim that Starlink had been used inside India: \"Starlink beams are turned off over India, so the claim that they were used by anyone for any reason is absolutely false.\" He didn't name anyone, and the posts don't say what is holding up the service. Treat this as one side of a regulatory and commercial fight that is still playing out."
-      ],
-      "authors": [
-        "@elonmusk"
-      ],
-      "source": "x",
-      "source_label": "X / @elonmusk",
-      "source_url": "https://x.com/elonmusk/status/2107854307077034294",
-      "discuss_url": "https://x.com/elonmusk/status/2107961709717807149",
-      "interests": [
-        "space",
-        "starlink",
-        "india"
-      ]
-    },
-    {
-      "id": "ts-rust-opus-port",
-      "lead": false,
-      "featured": true,
-      "kicker": "Featured",
-      "headline": "An LLM-written Rust port of the TypeScript compiler, checker and LSP: $400K of OpenAI tokens stalled at 84%, then Opus 5.5 restarted from scratch for about $24K",
-      "why_read": "HN (~110 comments): the most concrete agent-vs-agent cost story of the week, with real token bills and a big caveat from the author, who says he has never read a line of the code.",
-      "body": [
-        "pingdotgg's ts-rust (published as tsc-rs) is an attempt to see whether LLMs can port the TypeScript compiler, type checker and language server to Rust. The README says the first pass used more than $400,000 in API-priced tokens with GPT-5.6 Sol and GPT-6 Astra. Over months of loops, those models wrote more than 1.3 million lines of Rust and never got past about 84% compatibility.",
-        "Then Opus 5.5 was given the job and started over. It had a working v0 in 10 hours, and total spend came to about $24,047 over two weeks, run through Claude subscriptions. The author claims 100% compatibility on every real-world project tested so far, but calls it an early release with known problems. Everything past the README's \"slop line\" was written by the models, so read it as a capability demo and benchmark carefully before you depend on it."
-      ],
-      "authors": [
-        "pingdotgg"
-      ],
-      "source": "github",
-      "source_label": "GitHub / HN",
-      "source_url": "https://github.com/pingdotgg/ts-rust",
-      "discuss_url": "https://news.ycombinator.com/item?id=50000676",
-      "interests": [
-        "ai",
-        "coding-tools",
-        "rust"
-      ]
-    },
-    {
-      "id": "terafab-full-control",
-      "lead": false,
-      "featured": true,
-      "kicker": "Featured",
-      "headline": "Musk says there's \"ZERO doubt\" Tesla and SpaceX will build and run the Terafab chip plants in Austin; TSMC could only sublease",
-      "why_read": "Chips plus your home turf: two Austin fabs aimed at more than a terawatt of AI compute, with Intel's 14A process still in the picture.",
-      "body": [
-        "According to X News summaries, Musk said Tesla and SpaceX will fully own and operate two Terafab factories in Austin. One would serve Tesla vehicles and Optimus robots, and the other AI data centers and SpaceX. The stated target is more than one terawatt of AI compute capacity. Earlier comments about talks with TSMC had pushed TSMC shares to records and knocked Intel down.",
-        "His clarification is that TSMC might sublease space at most, with no operating role, while Intel stays on as a development partner using its 14A process. Intel shares reportedly rebounded on that. Nothing here is a signed deal yet, so watch for filings and site work rather than posts."
-      ],
-      "authors": [
-        "X News",
-        "@elonmusk"
-      ],
-      "source": "x",
-      "source_label": "X News",
-      "source_url": "https://x.com/i/trending/2107803459642941804",
-      "discuss_url": "https://x.com/i/trending/2107079541848178947",
-      "interests": [
-        "chips",
-        "tesla",
-        "ai-infra"
-      ]
-    },
-    {
-      "id": "state-of-ai-2026",
-      "lead": false,
-      "featured": true,
-      "kicker": "Featured",
-      "headline": "The 9th State of AI Report is out: Claude led 26% of Anthropic's measured model R&D work in August, up from under 1% in February",
-      "why_read": "Nathan Benaich's annual deck is the best single map of the year in AI research, industry and policy. This year's theme is AI that helps build AI, and the world-model work matters for robotaxis.",
-      "body": [
-        "Air Street Capital's Nathan Benaich published the 2026 State of AI Report, a 244-slide deck covering research, industry, safety and politics. Its opening argument is that AI is already speeding up AI development. It cites Anthropic's internal index showing Claude led 26% of measured model R&D work in August, with researchers setting and supervising the tasks, up from under 1% in February.",
-        "It also covers world models as a training route for physical AI, including Wayve's GAIA-4, which turns recorded driving scenes into simulations where an AI driver's steering and braking change what it sees next. The report grades its past predictions too. It cites its call that an open-source model would pass OpenAI's o1, which DeepSeek-R1 then did."
-      ],
-      "authors": [
-        "Nathan Benaich",
-        "Air Street Capital"
-      ],
-      "source": "web",
-      "source_label": "State of AI / X News",
-      "source_url": "https://www.stateof.ai/",
-      "discuss_url": "https://x.com/i/trending/2108151414782320728",
-      "interests": [
-        "ai",
-        "research"
-      ]
-    },
-    {
-      "id": "docker-agent",
-      "lead": false,
-      "featured": false,
-      "kicker": "Signal",
-      "headline": "Docker ships docker-agent, a CLI plugin for declarative multi-agent teams in YAML with MCP tools and OCI packaging",
-      "why_read": "HN (~250 points): agents defined as versionable YAML and shipped through any OCI registry. That's very much your enterprise DevOps world.",
-      "body": [
-        "docker-agent runs as `docker agent` and lets you define agents, their models and toolsets in a YAML file, then run them with one command. It supports multi-agent teams that delegate to each other, built-in think, todo and memory tools, and any MCP server, whether local, remote or Docker-based. Retrieval is pluggable, with BM25, embeddings, hybrid search and reranking.",
-        "It's provider-agnostic, covering OpenAI, Anthropic, Gemini, Bedrock, Mistral, xAI and Docker Model Runner. Agents can be pushed to and pulled from OCI registries like container images. It ships preinstalled in Docker Desktop 4.63 and later, and is also on Homebrew."
-      ],
-      "authors": [
-        "Docker"
-      ],
-      "source": "github",
-      "source_label": "GitHub / HN",
-      "source_url": "https://github.com/docker/docker-agent",
-      "discuss_url": "https://news.ycombinator.com/item?id=49996259",
-      "interests": [
-        "ai",
-        "agents",
-        "devops"
-      ]
-    },
-    {
-      "id": "chrome-jpeg-xl",
-      "lead": false,
-      "featured": false,
-      "kicker": "Signal",
-      "headline": "Chrome 155 ships JPEG XL decoding, through a new memory-safe decoder written in Rust",
-      "why_read": "HN (~550 points): a long-running web standards saga ends, and the security story (a Rust decoder in the renderer) is the systems angle.",
-      "body": [
-        "Google's Chrome team says JPEG XL decoding ships starting in Chrome 155. The format offers 30–50% better compression than JPEG, lossless compression, built-in HDR, and lossless transcoding of existing JPEGs. Google suggests trying both AVIF and JPEG XL, and expects JPEG XL to help most with high-fidelity or lossless photos and fine-grained progressive decoding.",
-        "The notable engineering choice is jxl-rs, a Rust reimplementation of the decoder. The post argues that image decoders handle untrusted binary data from the network inside the renderer, which makes them prime attack surface, and that memory safety had to come first. It also covers the performance work it took to make the Rust decoder fast."
-      ],
-      "authors": [
-        "Luca Versari",
-        "Moritz Firsching",
-        "Philip Jägenstedt"
-      ],
-      "source": "hn",
-      "source_label": "Chrome for Developers / HN",
-      "source_url": "https://developer.chrome.com/blog/jpeg-xl-in-chrome",
-      "discuss_url": "https://news.ycombinator.com/item?id=49991227",
-      "interests": [
-        "systems",
-        "web",
-        "rust"
-      ]
-    },
-    {
-      "id": "thorium-nuclear-clocks",
-      "lead": false,
-      "featured": false,
-      "kicker": "Signal",
-      "headline": "The first thorium-229 nuclear clocks begin ticking in Vienna and Beijing",
-      "why_read": "Physics for your pinned-post list: clocks that tick on a nuclear transition rather than an electron's could beat today's atomic clocks.",
-      "body": [
-        "The New York Times reports that labs in Vienna and Beijing have the first nuclear clocks running, based on the thorium-229 nucleus. Our reader couldn't get past the paywall, so we're working from the headline and the HN thread rather than the article.",
-        "The idea behind these clocks is that a transition inside an atomic nucleus is much better shielded from outside noise than the electron transitions today's atomic clocks use. That could mean more stable timekeeping and new tests of whether fundamental constants drift."
-      ],
-      "authors": [
-        "The New York Times"
-      ],
-      "source": "hn",
-      "source_label": "NYT / HN",
-      "source_url": "https://www.nytimes.com/2026/10/07/science/first-nuclear-clocks-thorium-229.html",
-      "discuss_url": "https://news.ycombinator.com/item?id=49996406",
-      "interests": [
-        "science",
-        "physics"
-      ]
-    },
-    {
-      "id": "jonathan-tortoise-genome",
-      "lead": false,
-      "featured": false,
-      "kicker": "Signal",
-      "headline": "Scientists sequence the genome of Jonathan, the 194-year-old tortoise who is the oldest land animal alive",
-      "why_read": "Science and human interest in one. He hatched around 1832, before Darwin's Origin of Species, and his genome is now a longevity dataset.",
-      "body": [
-        "404 Media's Becky Ferreira reports on a study published Wednesday in Science Advances. It sequenced, for the first time, the genome of Jonathan, an Aldabra giant tortoise on Saint Helena. He hatched around 1832 in the Seychelles and was taken to Saint Helena in the 1880s as a gift to the British governor. He has lived there ever since.",
-        "Aldabra tortoises often pass 100, but Jonathan is an outlier even for his species. The researchers are looking at his genome for clues to extreme longevity that might eventually inform human aging research."
-      ],
-      "authors": [
-        "Becky Ferreira",
-        "404 Media"
-      ],
-      "source": "hn",
-      "source_label": "404 Media / HN",
-      "source_url": "https://www.404media.co/oldest-living-land-animal-jonathan-the-tortoise/",
-      "discuss_url": "https://news.ycombinator.com/item?id=49998066",
-      "interests": [
-        "science",
-        "biology"
-      ]
-    },
-    {
-      "id": "nana-patekar-rip",
-      "lead": false,
-      "featured": false,
-      "kicker": "Signal",
-      "headline": "Remembering Nana Patekar, who won three National Film Awards and served in the Territorial Army through Kargil",
-      "why_read": "You retweeted this tribute last night. It's a reminder of an actor whose public life went well beyond the screen.",
-      "body": [
-        "A widely shared tribute marking Nana Patekar's death notes that he won three National Film Awards and four Filmfare Awards and received the Padma Shri in 2013. It also notes that he served in the Indian Territorial Army from 1990 to 2013, retiring as an Honorary Lieutenant Colonel, and took part in the 1999 Kargil War.",
-        "This comes from a fan tribute post rather than an official obituary, so check a news report for the full details."
-      ],
-      "authors": [
-        "@Rockstar82vansh"
-      ],
-      "source": "x",
-      "source_label": "X / @Rockstar82vansh",
-      "source_url": "https://x.com/Rockstar82vansh/status/2108020798095237497",
-      "discuss_url": "https://x.com/Rockstar82vansh/status/2108020798095237497",
-      "interests": [
-        "india",
-        "culture"
-      ]
-    },
-    {
-      "id": "cybercab-better-than-remembered",
-      "lead": false,
-      "featured": false,
-      "kicker": "Signal",
-      "headline": "Dirty Tesla on a fresh Cybercab ride: \"even better than I remember\"",
-      "why_read": "One of your retweets last night, posted with ride video. Pair it with Phil Duan's line that manual driving is now like hand-coding Perl, which you also retweeted.",
-      "body": [
-        "Dirty Tesla posted a new Cybercab ride video with the line \"Cybercab is even better than I remember. What an amazing product.\" It comes as X News summaries describe roughly 200 steering-wheel-free Cybercabs gathering at a Houston fleet lot ahead of an expansion beyond Austin.",
-        "You also retweeted Phil Duan: \"Manual driving is like riding a horse or hand-coding in Perl and PHP. You can still do it. You just don't have to.\" A Dirty Tesla post in last night's bookmarks made a similar point about letting FSD do its thing."
-      ],
-      "authors": [
-        "@DirtyTesLa",
-        "@pduan"
-      ],
-      "source": "x",
-      "source_label": "X / @DirtyTesLa",
-      "source_url": "https://x.com/DirtyTesLa/status/2108037546328694870",
-      "discuss_url": "https://x.com/pduan/status/2107875970929865183",
-      "interests": [
-        "tesla",
-        "cybercab",
-        "robotaxi"
-      ]
-    },
-    {
-      "id": "starship-40-brownsville",
-      "lead": false,
-      "featured": false,
-      "kicker": "Signal",
-      "headline": "Starship 40 arrives at the Port of Brownsville after its trip home",
-      "why_read": "From your Starship retweets: a photo of a flown ship coming back to Texas by sea.",
-      "body": [
-        "Starship Gazer posted photos on 7 October of Starship 40 arriving at the Port of Brownsville \"after completing an epic journey.\" The post got about 2,800 likes.",
-        "It lands next to this week's Gigabay chatter about building and refurbishing up to 1,000 Starships a year at Starbase. Watching hardware come home is a reminder that reuse is the whole plan."
-      ],
-      "authors": [
-        "@StarshipGazer"
-      ],
-      "source": "x",
-      "source_label": "X / @StarshipGazer",
-      "source_url": "https://x.com/StarshipGazer/status/2107831608988643829",
-      "discuss_url": "https://x.com/StarshipGazer/status/2107831608988643829",
-      "interests": [
-        "space",
-        "starship"
-      ]
-    },
-    {
-      "id": "grok-bot-whats-new",
-      "lead": false,
-      "featured": false,
-      "kicker": "Signal",
-      "headline": "What's new in Grok Bot: engineering updates, Google connectors, Team Bots in Slack and voice calls",
-      "why_read": "From your bookmarks and retweets: the release walkthrough, plus a user saying Grok Bot caught legal-file gaps that Claude and ChatGPT missed.",
-      "body": [
-        "@mattyp's walkthrough video, which you bookmarked, covers the main bot, engineering updates, knowledge work and Google connectors, Team Bots in Slack, Team Bot voice calls and status lines, and plugin search with Command K. @mikepat711's bookmarked X article explains how he uses Grok Bot as the one front door that drives his Claude and Grok Build subscriptions.",
-        "You also retweeted @iruletheworldmo, who says he gave Grok Bot access to six months of legal files he'd been working through with Claude and ChatGPT. He says it immediately spotted gaps and misfiled errors his team and earlier AI checks had missed. That's one user's account, but it's a striking one."
-      ],
-      "authors": [
-        "@mattyp",
-        "@mikepat711",
-        "@iruletheworldmo"
-      ],
-      "source": "x",
-      "source_label": "X bookmarks",
-      "source_url": "https://x.com/mattyp/status/2107886668892057614",
-      "discuss_url": "https://x.com/iruletheworldmo/status/2107937603571838985",
-      "interests": [
-        "ai",
-        "grok",
-        "agents"
-      ]
-    },
-    {
-      "id": "good-css-agents",
-      "lead": false,
-      "featured": false,
-      "kicker": "Signal",
-      "headline": "good-css: 47 modern CSS techniques your coding agent will reach for first",
-      "why_read": "You retweeted it, and about 1,600 people bookmarked it. It's a neat fix for agents that know :has(), subgrid and anchor positioning but never use them.",
-      "body": [
-        "Vojta Holik's point is that coding agents know modern CSS like :has(), subgrid and anchor positioning, but rarely reach for them. good-css packages 47 modern CSS techniques so the agent tries them first.",
-        "It's part of a growing pattern of small, opinionated skill packs that steer an agent's defaults rather than trying to change the model."
-      ],
-      "authors": [
-        "@vojta_holik"
-      ],
-      "source": "x",
-      "source_label": "X / @vojta_holik",
-      "source_url": "https://x.com/vojta_holik/status/2107848426784428100",
-      "discuss_url": "https://x.com/vojta_holik/status/2107848426784428100",
-      "interests": [
-        "ai",
-        "coding-tools",
-        "web"
-      ]
-    },
-    {
-      "id": "iso-glow-skill",
-      "lead": false,
-      "featured": false,
-      "kicker": "Signal",
-      "headline": "ISO-GLOW: a Claude skill that turns a description into a glowing, clickable isometric drawing in one HTML file",
-      "why_read": "A fun retweet from last night. Describe a device or building, and you get back a single interactive HTML file.",
-      "body": [
-        "April packaged her isometric-drawing workflow as a Claude skill. Describe an object, device or building, and ISO-GLOW returns one HTML file with a fine-line isometric drawing where whatever is switched on glows and each part you press does something.",
-        "The site has a one-line install into ~/.claude/skills and a gallery of examples, each made from a single request. The post has about 2,200 bookmarks."
-      ],
-      "authors": [
-        "@Aprilzz423"
-      ],
-      "source": "x",
-      "source_label": "X / @Aprilzz423",
-      "source_url": "https://isoglow.dev",
-      "discuss_url": "https://x.com/Aprilzz423/status/2107794465457139988",
-      "interests": [
-        "ai",
-        "design"
-      ]
-    },
-    {
-      "id": "nvidia-figure-1b",
-      "lead": false,
-      "featured": false,
-      "kicker": "Signal",
-      "headline": "Nvidia is reportedly in talks to put another $1 billion into humanoid-robot maker Figure",
-      "why_read": "Nvidia and physical AI: a planned cluster of up to 100,000 Vera Rubin GPUs in Barstow, Texas, is part of the story.",
-      "body": [
-        "According to X News summaries of reports, Nvidia is in talks to invest about $1 billion more in Figure AI, building on its stake from Figure's Series C and its role supplying hardware for Figure's Helix models.",
-        "Figure plans a compute cluster of up to 100,000 Nvidia Vera Rubin GPUs in Barstow, Texas, starting in 2027, with an initial $3.5 billion commitment that could top $6 billion. Jensen Huang frames it as a \"robotics flywheel\" for training, simulating and deploying robots."
-      ],
-      "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X News",
-      "source_url": "https://x.com/i/trending/2107884462684221746",
-      "discuss_url": "https://x.com/i/trending/2107884462684221746",
-      "interests": [
-        "nvidia",
-        "robotics",
-        "ai-infra"
-      ]
-    },
-    {
-      "id": "medal-of-science-musk-huang",
-      "lead": false,
-      "featured": false,
-      "kicker": "Signal",
-      "headline": "White House to award the National Medal of Science to Musk, Huang, Brin and Lisa Su today",
-      "why_read": "Today's ceremony puts the people behind rockets, EVs and AI chips on the same stage.",
-      "body": [
-        "X News summaries say the White House will present the National Medal of Science on Thursday to Elon Musk, Sergey Brin, Jensen Huang and Lisa Su at a summit titled \"Science: A New Golden Age.\" Michael Dell and Satya Nadella are set to receive the National Medal of Technology and Innovation.",
-        "A White House spokesperson credited the recipients with driving U.S. innovation in rockets, EVs and AI."
-      ],
-      "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X News",
-      "source_url": "https://x.com/i/trending/2107926668572815644",
-      "discuss_url": "https://x.com/i/trending/2107926668572815644",
-      "interests": [
-        "science",
-        "policy"
-      ]
-    },
-    {
-      "id": "ionq-darpa-stage-c",
-      "lead": false,
-      "featured": false,
-      "kicker": "Signal",
-      "headline": "IonQ reaches Stage C of DARPA's Quantum Benchmarking Initiative",
-      "why_read": "Physics with a deadline: independent testing through 2029 of whether trapped-ion machines can scale to fault tolerance.",
-      "body": [
-        "Per X News summaries, IonQ has advanced to Stage C, the final testing phase of DARPA's Quantum Benchmarking Initiative, under a potential agreement worth up to $300 million. Independent evaluators will check whether its trapped-ion Superion systems can deliver large-scale, fault-tolerant quantum computing and be manufactured reliably.",
-        "IonQ joins IBM, Atom Computing and Diraq at this stage. The company is aiming for utility-scale quantum computing by 2033."
-      ],
-      "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X News",
-      "source_url": "https://x.com/i/trending/2107965615432683918",
-      "discuss_url": "https://x.com/i/trending/2107965615432683918",
-      "interests": [
-        "quantum",
-        "physics"
-      ]
-    },
-    {
-      "id": "virtual-biology-1-8b",
-      "lead": false,
-      "featured": false,
-      "kicker": "Signal",
-      "headline": "A $1.8 billion Virtual Biology Initiative aims to build open, AI-ready datasets of how cells respond",
-      "why_read": "Science plus AI: the DOE, NIH, DeepMind, Meta and Isomorphic Labs are pooling effort on data, not models.",
-      "body": [
-        "X News summaries say the Chan Zuckerberg Biohub, U.S. agencies including the Department of Energy and NIH, Google DeepMind, Meta and Isomorphic Labs have launched an expanded $1.8 billion Virtual Biology Initiative. It will use tools such as cryo-electron tomography to build standardized datasets for modeling how cells respond to drugs and disease.",
-        "The data is to be released openly after a short embargo, with a first release expected in about a year."
-      ],
-      "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X News",
-      "source_url": "https://x.com/i/trending/2107840620651798779",
-      "discuss_url": "https://x.com/i/trending/2107840620651798779",
-      "interests": [
-        "science",
-        "ai",
-        "biology"
-      ]
-    },
-    {
-      "id": "deepseek-openrouter-surge",
-      "lead": false,
-      "featured": false,
-      "kicker": "Signal",
-      "headline": "Chinese open models led OpenRouter traffic in late September, with DeepSeek alone at 36.8 trillion tokens",
-      "why_read": "Open-source LLM signal: on at least one big router, price-performance is beating brand names.",
-      "body": [
-        "X News summaries report that Chinese models dominated OpenRouter, the API router that fronts hundreds of model providers, in late September. DeepSeek alone processed 36.8 trillion tokens in a week, more than OpenAI, Google, Anthropic and SpaceXAI models combined on that platform.",
-        "The caveat is that OpenRouter is a slice of total AI traffic, not all of it. Still, it's a real-world read on what cost-conscious developers pick for coding and bulk work."
-      ],
-      "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X News",
-      "source_url": "https://x.com/i/trending/2108032037831815499",
-      "discuss_url": "https://x.com/i/trending/2108032037831815499",
+      "source_label": "dgt.is / HN",
+      "source_url": "https://www.dgt.is/blog/2026-10-07-deepseek-freek-out/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50000488",
       "interests": [
         "ai",
         "open-source",
         "llms"
-      ]
+      ],
+      "lead": true,
+      "featured": false
     },
     {
-      "id": "how-machines-learned-precision",
-      "lead": false,
-      "featured": false,
-      "kicker": "Signal",
-      "headline": "How machines learned precision: from Maudslay's screw-cutting lathe to straight rails and even threads",
-      "why_read": "HN (~180 points): an illustrated history for a mechanical engineer. Machines had to get accurate before they could make anything else accurate.",
+      "id": "cybercab-austin-normal",
+      "kicker": "Top Story",
+      "headline": "Riding Cybercab around Austin, surrounded by other robotaxis, now 'feels like the future and totally normal at the same time'",
+      "why_read": "Your hometown is the robotaxi testbed. You retweeted three Cybercab posts last night, including reports of waits under 10 minutes.",
       "body": [
-        "This interactive essay starts with the kind of screw-cutting lathe Henry Maudslay built in London around 1800, a carriage moved by a lead screw along straight iron rails. The catch is that the lathe's own parts have to be accurate first. A bent rail or an unevenly pitched screw copies its error into everything it makes, which is how you get leaking pistons, wobbling shafts and jammed nuts.",
-        "It walks through how 18th- and 19th-century workshops bootstrapped flatness, straightness and even threads. That bootstrapping is the base layer under every machine tool, and so under every chip fab."
+        "@nerdalert posted that it's 'absolutely wild' to ride a Cybercab in Austin while other robotaxis drive past on the same roads. It feels like the future, they wrote, and also completely normal.",
+        "@DirtyTesLa added that waits have stayed at 10 minutes or less even as more Tesla fans come to Austin. After leaving a spot packed with Tesla people all using Cybercab, they waited 3 minutes. In a separate clip they noticed a Cybercab opening its door less than usual to avoid hitting a fence. Small details like that are what make robotaxis feel ordinary."
       ],
       "authors": [
-        "glinscott"
+        "@nerdalert",
+        "@DirtyTesLa"
+      ],
+      "source": "x",
+      "source_label": "X / @nerdalert",
+      "source_url": "https://x.com/nerdalert/status/2108298076775432453",
+      "discuss_url": "https://x.com/DirtyTesLa/status/2108387558665187795",
+      "interests": [
+        "tesla",
+        "robotaxi",
+        "cybercab"
+      ],
+      "lead": true,
+      "featured": false
+    },
+    {
+      "id": "openai-safety-firings",
+      "kicker": "Featured",
+      "headline": "Three fired OpenAI safety researchers dispute misconduct claims and warn of a chilling effect",
+      "why_read": "An AI-governance story with names attached, and it's climbing HN next to the OpenAI math-retraction fallout.",
+      "body": [
+        "TechCrunch reports that Jasmine Wang, Tomek Korbak and Mikita Balesni, the three safety researchers OpenAI fired last week, published an open letter denying OpenAI's claim that they mishandled sensitive information outside company procedures. OpenAI says they violated policy by 'accessing and handling sensitive company information'. They were reportedly dismissed after allegedly sharing confidential information with a third-party AI safety organization.",
+        "The letter went to OpenAI's Safety and Security Committee, Safety Advisory Group and Mission Advisory Council. It says the way the firings were communicated has left former colleagues afraid to work as they did until last week. 'AI is not a normal technology, and OpenAI is not a normal company,' they wrote. Safety staff rely on outside experts to work through risks they see first."
+      ],
+      "authors": [
+        "Rebecca Bellan"
       ],
       "source": "hn",
-      "source_label": "glinscott.github.io / HN",
-      "source_url": "https://glinscott.github.io/how-machines-learned-precision/",
-      "discuss_url": "https://news.ycombinator.com/item?id=49980626",
+      "source_label": "TechCrunch / HN",
+      "source_url": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50018350",
       "interests": [
-        "engineering",
+        "ai",
+        "safety",
+        "policy"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "nobel-peace-navi-pillay",
+      "kicker": "Featured",
+      "headline": "Nobel Peace Prize 2026 goes to Navi Pillay, the South African jurist of Indian Tamil origin who helped make war crimes prosecutable",
+      "why_read": "A Love/Laughter/Kindness story with an Indian-diaspora thread, announced this morning.",
+      "body": [
+        "The Norwegian Nobel Committee awarded the 2026 Peace Prize to Navanethem 'Navi' Pillay 'for her efforts to promote peace and international law'. The committee credits her with being instrumental in ensuring that war crimes, crimes against humanity and genocide are prosecuted.",
+        "Pillay was born into a family of Indian Tamil origin in Durban under apartheid. She defended Nelson Mandela and other anti-apartheid activists, then served as a judge on South Africa's High Court, the International Criminal Tribunal for Rwanda and the International Criminal Court. She was also UN High Commissioner for Human Rights."
+      ],
+      "authors": [
+        "Norwegian Nobel Committee"
+      ],
+      "source": "hn",
+      "source_label": "NobelPrize.org / HN",
+      "source_url": "https://www.nobelprize.org/prizes/peace/2026/press-release/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50018420",
+      "interests": [
+        "human-interest",
+        "india",
         "history"
-      ]
+      ],
+      "lead": false,
+      "featured": true
     },
     {
-      "id": "push-ifs-up-fors-down",
-      "lead": false,
-      "featured": false,
-      "kicker": "Signal",
-      "headline": "Push ifs up and fors down: the TigerBeetle idiom, its algebra, and where it breaks",
-      "why_read": "HN (~155 points): a practical refactoring rule from TigerBeetle's Tiger Style, worked through carefully.",
+      "id": "whistle-speech-16mb",
+      "kicker": "Featured",
+      "headline": "Whistle: an open speech-to-text model in a single 16.9 MB file, with first token in 11 ms on CPU",
+      "why_read": "Edge inference done close to the metal. It's #4 on HN (~790 points) and runs right in your browser tab.",
       "body": [
-        "The post starts from TigerBeetle's Tiger Style advice: centralize control flow by keeping switch and if statements in the parent function, and move non-branching logic into helpers. Batch work goes down into loops that process many items at once.",
-        "He then formalizes why this works and maps out where the idiom stops helping. It's useful for anyone reviewing agent-written code that scatters branching everywhere."
+        "Cactus released Whistle, a speech recognition model for phones, wearables, robots, smart homes, cars and microcontrollers. It's one 16.9 MB file that runs on the CPU with no dependencies and loads into the same C++ engine as their Needle model, so one binary can turn an audio clip straight into tool calls.",
+        "It transcribes up to 30 seconds of 16 kHz audio in one pass in English, German, French, Spanish, Italian, Dutch and Polish, and detects the language automatically. It also returns word timestamps and speech embeddings. The blog post has a sandbox where the model downloads once and audio never leaves your device."
       ],
       "authors": [
-        "debasishg"
+        "Jakub Mroz",
+        "Henry Ndubuaku"
       ],
       "source": "hn",
-      "source_label": "debasishg.github.io / HN",
-      "source_url": "https://debasishg.github.io/blog/push-ifs-up-fors-down/",
-      "discuss_url": "https://news.ycombinator.com/item?id=49997073",
+      "source_label": "Cactus / HN",
+      "source_url": "https://cactuscompute.com/blog/whistle",
+      "discuss_url": "https://news.ycombinator.com/item?id=50008427",
+      "interests": [
+        "ai",
+        "edge-inference",
+        "open-source"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "osc-7501-program-status",
+      "kicker": "Featured",
+      "headline": "Mitchell Hashimoto proposes OSC 7501, a terminal escape sequence that lets programs and coding agents report idle, working, blocked or done",
+      "why_read": "A terminal-native standard for the agent era from the Ghostty creator. Made for a terminal-first engineer.",
+      "body": [
+        "Hashimoto wrote a spec for the Program Status Protocol. It lets any program tell the terminal what it's doing (idle, working, waiting on the user, finished or failed) and why. His example is Terraform reporting that it's blocked on a permission prompt, with a base64-encoded message the terminal can show as a notification, inbox item or status icon.",
+        "He says the existing workarounds fall short, especially for coding agents that switch between working on their own and needing a human. The spec grew out of his work on Superlogical and Ghostty, but it's deliberately generic, with no product-specific parts."
+      ],
+      "authors": [
+        "Mitchell Hashimoto"
+      ],
+      "source": "hn",
+      "source_label": "mitchellh.com / HN",
+      "source_url": "https://mitchellh.com/writing/program-status-osc7501",
+      "discuss_url": "https://news.ycombinator.com/item?id=49984159",
       "interests": [
         "systems",
-        "programming"
-      ]
+        "terminal",
+        "agents"
+      ],
+      "lead": false,
+      "featured": true
     },
     {
-      "id": "swift-kernel-qemu",
-      "lead": false,
-      "featured": false,
-      "kicker": "Signal",
-      "headline": "A minimal kernel written in Swift, booting in QEMU",
-      "why_read": "HN: close-to-the-metal fun. Swift can now get close enough to the metal for a toy kernel.",
+      "id": "tao-what-tell-students",
+      "kicker": "Featured",
+      "headline": "On Terence Tao's blog: 'What should we tell our students?' Keep calm and carry on studying math",
+      "why_read": "Math, AI and kindness in one post. It speaks directly to students rethinking academic careers as AI reshapes mathematics.",
       "body": [
-        "The author writes up a small experiment in writing a very basic kernel in Swift and running it on QEMU. The goal isn't to replace anything, just to see how far Swift can go at that level.",
-        "A September update switched to Swift's new @c attribute, which formalizes @_cdecl for exposing Swift functions as C, after a tip from Max Desiatov."
+        "In a guest post on Tao's blog, Álvaro Lozano-Robledo writes to undergraduate and graduate students who, a few months ago, dreamed of academic careers in mathematics and now fear those careers are out of reach. He quotes, with permission, an urgent message from a pure-math undergraduate who is 'at an utter loss' about what to do next.",
+        "His TL;DR is to keep calm and keep studying math. He stresses that students are making these decisions right now. HN has ~160 comments, many arguing over what AI-assisted mathematics means for training the next generation."
       ],
       "authors": [
-        "carette.xyz"
+        "Álvaro Lozano-Robledo"
       ],
       "source": "hn",
-      "source_label": "carette.xyz / HN",
-      "source_url": "https://carette.xyz/posts/minimal_swift_kernel_on_qemu/",
-      "discuss_url": "https://news.ycombinator.com/item?id=49977351",
-      "interests": [
-        "systems",
-        "programming"
-      ]
-    },
-    {
-      "id": "tao-math-2-0",
-      "lead": false,
-      "featured": false,
-      "kicker": "Signal",
-      "headline": "Terence Tao: \"Math 2.0\" will have to value progress beyond being first to solve a problem",
-      "why_read": "HN (~345 points): the most thoughtful response to this week's flood of AI-produced proofs, from the mathematician people listen to most.",
-      "body": [
-        "Ending a four-part Mathstodon thread, Tao argues that \"Math 1.0\" placed a premium on being first to solve an open problem, and that this goal has now been optimized \"to the point of unsustainability.\" Math 2.0, he says, will need to value exposition, community building and opening new directions, not just raw problem solving.",
-        "He thinks AI can help with all of those, but only with more imagination than pointing an agent at a list of open problems. He also says the field will need to rethink its criteria for education, publication and career advancement."
-      ],
-      "authors": [
-        "Terence Tao"
-      ],
-      "source": "hn",
-      "source_label": "Mathstodon / HN",
-      "source_url": "https://mathstodon.xyz/@tao/117395269325940185",
-      "discuss_url": "https://news.ycombinator.com/item?id=50002008",
-      "interests": [
-        "math",
-        "ai"
-      ]
-    },
-    {
-      "id": "aaronson-mathocalypse",
-      "lead": false,
-      "featured": false,
-      "kicker": "Signal",
-      "headline": "Scott Aaronson on the \"Mathocalypse\": 372 AI-produced results, including a claimed proof of the Unique Games Conjecture",
-      "why_read": "HN (~270 points / ~290 comments): a UT Austin professor's very human reaction, since his wife's career problem was on the list.",
-      "body": [
-        "Aaronson calls the OpenAI release \"surely one of the biggest days in mathematical history.\" He writes that its 372 results include a proof of Subhash Khot's Unique Games Conjecture, which his wife, complexity theorist Dana Moshkovitz, has worked toward for years. He opens with his 9-year-old taunting her that a robot solved her problem.",
-        "Read it alongside today's withdrawals of three OpenAI papers and Tao's thread. Together they show the field moving between awe and verification in real time."
-      ],
-      "authors": [
-        "Scott Aaronson"
-      ],
-      "source": "hn",
-      "source_label": "Shtetl-Optimized / HN",
-      "source_url": "https://scottaaronson.blog/?p=10169",
-      "discuss_url": "https://news.ycombinator.com/item?id=49997718",
-      "interests": [
-        "math",
-        "ai"
-      ]
-    },
-    {
-      "id": "navier-stokes-lean",
-      "lead": false,
-      "featured": false,
-      "kicker": "Signal",
-      "headline": "\"Navier–Stokes lost in translation\": why Lean-checking an AI's autoformalization doesn't certify the original proof",
-      "why_read": "HN (~315 points): a sharp argument that a green Lean check can certify the wrong statement.",
-      "body": [
-        "Alexander Bastounis, Fabian Circelli and Anders C. Hansen take aim at autoformalization, where an AI translates a natural-language proof into Lean and the Lean version is checked mechanically. They cite OpenAI's announced Navier–Stokes blow-up proof and argue the translation step can give no confidence in the original argument.",
-        "Their claim is that resolving ambiguity in mathematical prose, which a faithful translation requires, sits arbitrarily high in the Solvability Complexity Index hierarchy. Informally, they say faithful autoformalization is harder than any computational problem, including the halting problem."
-      ],
-      "authors": [
-        "Alexander Bastounis",
-        "Fabian Circelli",
-        "Anders C. Hansen"
-      ],
-      "source": "hn",
-      "source_label": "arXiv / HN",
-      "source_url": "https://arxiv.org/abs/2610.08144",
-      "discuss_url": "https://news.ycombinator.com/item?id=49994145",
+      "source_label": "Terence Tao / HN",
+      "source_url": "https://terrytao.wordpress.com/2026/10/08/what-should-we-tell-our-students/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50015236",
       "interests": [
         "math",
         "ai",
-        "formal-methods"
-      ]
+        "education"
+      ],
+      "lead": false,
+      "featured": true
     },
     {
-      "id": "generators-1920s-scale",
-      "lead": false,
-      "featured": false,
-      "kicker": "Signal",
-      "headline": "1920s photos of workers dwarfed by giant generators spark a thread on building the electrical age",
-      "why_read": "Energy history for your pinned post: the grid build-out was the AI data-center race of its day.",
+      "id": "pakistan-solar-boom",
+      "kicker": "Featured",
+      "headline": "Pakistan's grassroots solar boom: from 3% of power in 2020 to 20–25% today, on cheap panels and TikTok tutorials",
+      "why_read": "Energy tech from your pinned post, straight from last night's bookmarks, and you retweeted Noahpinion cheering it.",
       "body": [
-        "X News summaries say David Holz shared black-and-white photos of 1920s crews on scaffolding inside towering generator stator assemblies lined with thousands of coils. Engineers replied with modern shots from atop 200-megawatt hydro units.",
-        "Commenters pointed to milestones like General Electric's record 208,000-kilowatt turbo-generator for Chicago's State Line plant in 1929. They drew the obvious parallel to today's compute and power build-outs, which are still built at human scale."
+        "Assaad Razzouk, citing a Bloomberg feature, says solar went from 3% of Pakistan's power in 2020 to 20–25% today. Generation rose from 7.7 to 36.6 TWh between 2022 and 2025, about $12B in fossil-fuel imports were avoided, and 34% of rural Balochistan homes rely on solar for light.",
+        "His point is that no grand plan was needed. Cheap Chinese panels plus TikTok tutorials brought power where the grid never reached and kept dollars at home. Bloomberg frames it as China's clean-energy exports competing with coal investments."
+      ],
+      "authors": [
+        "Assaad Razzouk"
+      ],
+      "source": "x",
+      "source_label": "X bookmarks",
+      "source_url": "https://x.com/AssaadRazzouk/status/2108078413831668014",
+      "discuss_url": "https://www.bloomberg.com/news/features/2026-09-30/pakistan-s-solar-boom-pits-china-s-clean-energy-exports-against-coal-investments",
+      "interests": [
+        "energy",
+        "solar"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "karagila-partition-principle",
+      "kicker": "Signal",
+      "headline": "Set theorist Asaf Karagila explains why mathematicians should be angry about OpenAI's Partition Principle announcement",
+      "why_read": "The expert view on OpenAI's math claims, from the person whose open problem it was.",
+      "body": [
+        "Karagila is known for his interest in whether the Partition Principle implies the Axiom of Choice. He says people kept asking whether he'd send Sam Altman the bottle of whisky promised on his Problems page after OpenAI's announcement. His answer is no, and the post explains why.",
+        "He says he isn't against AI as a tool, but the community hasn't settled how to judge authors' contributions, for example whether chat logs should go to reviewers. The post comes as OpenAI withdraws three mathematical results, a separate HN thread with ~580 comments."
+      ],
+      "authors": [
+        "Asaf Karagila"
+      ],
+      "source": "hn",
+      "source_label": "karagila.org / HN",
+      "source_url": "https://karagila.org/2026/openai-pp/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50013902",
+      "interests": [
+        "math",
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "step-5-preview",
+      "kicker": "Signal",
+      "headline": "StepFun's Step 5 Preview, a 1M-context mixture-of-experts model, shows up on OpenRouter",
+      "why_read": "Another Chinese open-model contender for your LLM watchlist, landing the same day as the DeepSeek debate.",
+      "body": [
+        "According to the HN submission, StepFun's Step 5 Preview is a mixture-of-experts model with a 1-million-token context window, now listed on OpenRouter. The listing page shows pricing, throughput, latency and uptime across providers.",
+        "Paired with the DeepSeek 4.1 Flash thread, it's another sign of how quickly cheap long-context models from Chinese labs are reaching developer routers."
+      ],
+      "authors": [
+        "StepFun"
+      ],
+      "source": "hn",
+      "source_label": "OpenRouter / HN",
+      "source_url": "https://openrouter.ai/stepfun/step-5-preview",
+      "discuss_url": "https://news.ycombinator.com/item?id=50007764",
+      "interests": [
+        "ai",
+        "llms"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "microsoft-mxc",
+      "kicker": "Signal",
+      "headline": "Microsoft open-sources MXC, a sandboxed code execution system with policy-driven, layered isolation",
+      "why_read": "Sandboxing for agent-run code is a DevOps problem now. Here's Microsoft's take.",
+      "body": [
+        "MXC's GitHub repo describes it as 'policy-driven, layered isolation and containment' for running code. It already has hundreds of commits.",
+        "With agents executing more untrusted code, isolation layers like this are becoming standard infrastructure. HN commenters are comparing it to existing container and microVM sandboxes."
+      ],
+      "authors": [
+        "Microsoft"
+      ],
+      "source": "github",
+      "source_label": "GitHub / HN",
+      "source_url": "https://github.com/microsoft/mxc",
+      "discuss_url": "https://news.ycombinator.com/item?id=50016489",
+      "interests": [
+        "systems",
+        "security",
+        "agents"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "superlogical-rex-alpha",
+      "kicker": "Signal",
+      "headline": "Steve Yegge on Superlogical's Rex: one fast terminal that replaces ssh/mosh, Ghostty and tmux for his 20+ agents",
+      "why_read": "You retweeted this. It's a firsthand terminal-stack review from someone who pushes agents harder than almost anyone.",
+      "body": [
+        "Yegge says he got into the Rex alpha and predicts it will 'take the world by storm next year'. It fixes something he didn't know could be fixed: agents working through five or six layers of terminals and shells. For him, Rex replaces ssh/mosh, Ghostty and tmux with one fast, modern terminal emulator.",
+        "He runs Emacs with 20+ agents, which drives terminals about as hard as anything can. He says Rex feels almost local even from a hotel across the US, with 'all the hallmarks' of HashiCorp-era quality."
+      ],
+      "authors": [
+        "Steve Yegge"
+      ],
+      "source": "x",
+      "source_label": "X / @Steve_Yegge",
+      "source_url": "https://x.com/Steve_Yegge/status/2108393181196722238",
+      "discuss_url": "https://x.com/Steve_Yegge/status/2108393181196722238",
+      "interests": [
+        "systems",
+        "terminal",
+        "coding-tools"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "ducklake",
+      "kicker": "Signal",
+      "headline": "DuckDB's DuckLake: an open lakehouse format built on SQL and Parquet, with metadata in a catalog database",
+      "why_read": "A simpler lakehouse for data-platform engineers, trending on HN.",
+      "body": [
+        "DuckLake stores metadata in a catalog database and data in Parquet files. The DuckDB extension can read and write it directly. You install it with INSTALL ducklake and attach a lake with standard ATTACH syntax.",
+        "It's a SQL-first alternative to the Iceberg/Delta-style metadata stacks that has been gaining fans, with a MinIO demo server in the repo."
+      ],
+      "authors": [
+        "DuckDB"
+      ],
+      "source": "github",
+      "source_label": "GitHub / HN",
+      "source_url": "https://github.com/duckdb/ducklake",
+      "discuss_url": "https://news.ycombinator.com/item?id=49996149",
+      "interests": [
+        "systems",
+        "data"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "otel-native-by-design",
+      "kicker": "Signal",
+      "headline": "OpenTelemetry blog: build products that let users export logs, traces and metrics to any observability stack",
+      "why_read": "Practical platform-engineering guidance, written by people at SigNoz and New Relic.",
+      "body": [
+        "The post argues that self-hosted and SaaS products should support export to any OTel-compatible backend instead of locking users into built-in dashboards. Users want that for compliance, cost control and centralization.",
+        "It covers OpenTelemetry's signal types (logs, traces, metrics and more) carried over OTLP, and how to design export from day one."
+      ],
+      "authors": [
+        "Nityananda Gohain",
+        "Dhruv Ahuja"
+      ],
+      "source": "hn",
+      "source_label": "OpenTelemetry / HN",
+      "source_url": "https://opentelemetry.io/blog/2026/otel-native-by-design/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50016974",
+      "interests": [
+        "devops",
+        "observability"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "whale-necropolis",
+      "kicker": "Signal",
+      "headline": "Nature: a 1,200 km deep-sea 'whale necropolis' in the Indian Ocean, with 476 fossil cetaceans and falls going back 5.3 million years",
+      "why_read": "Pure science wonder from the seafloor.",
+      "body": [
+        "Researchers report a huge accumulation of whale falls in the Diamantina Zone at depths of 4,616 to 7,001 m, stretching about 1,200 km across the southeastern Indian Ocean floor. It includes five modern whale-fall communities and 476 recorded fossil cetaceans.",
+        "The carcasses host communities dominated by brittle stars, bone-boring worms and chemosynthetic bivalves. Isotopic dating shows whale falls there go back at least 5.3 million years, making some deep seafloors a fossil archive of whale evolution."
+      ],
+      "authors": [
+        "Nature"
+      ],
+      "source": "hn",
+      "source_label": "Nature / HN",
+      "source_url": "https://www.nature.com/articles/s41586-026-10546-z",
+      "discuss_url": "https://news.ycombinator.com/item?id=49996639",
+      "interests": [
+        "science",
+        "biology"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "blue-origin-hutto",
+      "kicker": "Signal",
+      "headline": "Blue Origin opens Constellation Park in Hutto, TX: 1.3M sq ft and 2,000 jobs for satellite hardware",
+      "why_read": "Space manufacturing just up the road from Austin, from your bookmarks.",
+      "body": [
+        "Blue Origin says its new 1.3-million-square-foot complex in Hutto will support its TeraWave and Quartz programs. It will build key satellite subsystems including solar arrays, avionics and telecommunications hardware.",
+        "That's 2,000 jobs in the Austin metro, adding to the space and EV manufacturing cluster around Tesla and SpaceX in Central Texas."
+      ],
+      "authors": [
+        "Blue Origin"
+      ],
+      "source": "x",
+      "source_label": "X bookmarks",
+      "source_url": "https://x.com/blueorigin/status/2108205277921042675",
+      "discuss_url": "https://x.com/blueorigin/status/2108205277921042675",
+      "interests": [
+        "space",
+        "texas"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "moon-permanent-presence",
+      "kicker": "Signal",
+      "headline": "White House: 'America will establish a permanent presence on the moon'",
+      "why_read": "A short but big space-policy statement you bookmarked.",
+      "body": [
+        "The White House account posted a one-line statement that America will establish a permanent presence on the moon.",
+        "The post gave no timeline or program details, but it's a strong policy signal while Starship and Blue Origin's lunar hardware race ahead."
+      ],
+      "authors": [
+        "The White House"
+      ],
+      "source": "x",
+      "source_label": "X bookmarks",
+      "source_url": "https://x.com/WhiteHouse/status/2108254023443009943",
+      "discuss_url": "https://x.com/WhiteHouse/status/2108254023443009943",
+      "interests": [
+        "space",
+        "policy"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "cisco-jeetu-patel-yc",
+      "kicker": "Signal",
+      "headline": "YC sits down with Jeetu Patel on turning Cisco into 'the world's largest startup', with AI infrastructure orders at $9.3B in two years",
+      "why_read": "Your employer's AI strategy, told on YC's channel. You bookmarked it.",
+      "body": [
+        "Y Combinator profiles Cisco President and Chief Product Officer Jeetu Patel, who describes making Cisco 'the world's largest startup'. YC says Cisco is positioning itself as the picks-and-shovels company of the AI era across networking, security, silicon and infrastructure.",
+        "The headline number: Cisco's AI infrastructure business went from zero to $9.3B in orders in two years."
+      ],
+      "authors": [
+        "Y Combinator"
+      ],
+      "source": "x",
+      "source_label": "X bookmarks",
+      "source_url": "https://x.com/ycombinator/status/2108203880555414002",
+      "discuss_url": "https://x.com/ycombinator/status/2108203880555414002",
+      "interests": [
+        "ai-infra",
+        "cisco"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "ai-big-10-market-cap",
+      "kicker": "Signal",
+      "headline": "The 'AI Big 10' now make up a record 42% of US stock market cap, above the dot-com TMT peak",
+      "why_read": "A bubble-or-not datapoint on the chip and AI names you follow.",
+      "body": [
+        "The Kobeissi Letter says the Magnificent 7 plus Broadcom, AMD and Micron now account for 42% of US market cap, more than double their share at the 2022 bear-market low.",
+        "For comparison, the TMT sector peaked at 41% in the 2000 dot-com bubble and the Nifty Fifty peaked at 40% in the 1970s."
+      ],
+      "authors": [
+        "The Kobeissi Letter"
+      ],
+      "source": "x",
+      "source_label": "X bookmarks",
+      "source_url": "https://x.com/KobeissiLetter/status/2108025486907461837",
+      "discuss_url": "https://x.com/KobeissiLetter/status/2108025486907461837",
+      "interests": [
+        "markets",
+        "chips"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "founders-pick-anthropic",
+      "kicker": "Signal",
+      "headline": "Asked to pick 1,000 free shares, two-thirds of 30 Bay Area founders chose Anthropic, one-third SpaceX, and none OpenAI",
+      "why_read": "A quick insider sentiment check you retweeted.",
+      "body": [
+        "Axios's Dan Primack asked a room of 30 Bay Area tech founders whether they'd take 1,000 free shares of Anthropic, OpenAI or SpaceX. Two-thirds picked Anthropic, one-third SpaceX, and nobody picked OpenAI.",
+        "X News summaries of the replies weighed per-share prices and valuations, and compared Claude's product momentum with OpenAI's recent updates."
+      ],
+      "authors": [
+        "Dan Primack"
+      ],
+      "source": "x",
+      "source_label": "X / @danprimack",
+      "source_url": "https://x.com/danprimack/status/2108347946500751566",
+      "discuss_url": "https://x.com/i/trending/2108395049717522642",
+      "interests": [
+        "ai",
+        "markets"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "grok-bot-native-x",
+      "kicker": "Signal",
+      "headline": "Grok Bot gains native X tools to search, read and monitor posts, and users are already automating digests with them",
+      "why_read": "That's how this paper gets made. X News says native X access rolled out around October 7.",
+      "body": [
+        "According to X News summaries, SpaceXAI rolled out native Grok Bot tools for searching, reading and monitoring X posts around October 7. Users are building daily digests, brand tracking and even full device setups with them.",
+        "One user called it the top AI release of 2026, citing speed and access to models like Opus 5.5. Elon Musk asked for ideas on what to fix."
       ],
       "authors": [
         "X News"
       ],
       "source": "x",
       "source_label": "X News",
-      "source_url": "https://x.com/i/trending/2107753040539422897",
-      "discuss_url": "https://x.com/i/trending/2107753040539422897",
+      "source_url": "https://x.com/i/trending/2108305887828070548",
+      "discuss_url": "https://x.com/i/trending/2108305887828070548",
       "interests": [
-        "energy",
-        "history"
-      ]
+        "ai",
+        "grok",
+        "agents"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "omarchy-spacexai-patron",
+      "kicker": "Signal",
+      "headline": "SpaceXAI donates $1.5M in Grok tokens to DHH's Omarchy Linux project",
+      "why_read": "Open source, Linux and AI agents in one story.",
+      "body": [
+        "X News summaries say SpaceXAI became a Founding Corporate Patron of the Omacom Foundation with a $1.5M donation in Grok tokens, bringing Omarchy's total funding to $23.2M since its August launch.",
+        "The tokens will pay for AI-driven code reviews, bug fixes, themes and hardware ports. Some in open source criticize the project's 'benevolent dictatorship' model."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X News",
+      "source_url": "https://x.com/i/trending/2108184281608749167",
+      "discuss_url": "https://x.com/i/trending/2108184281608749167",
+      "interests": [
+        "open-source",
+        "linux",
+        "grok"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "gemini-polymarket-odds",
+      "kicker": "Signal",
+      "headline": "Polymarket traders now favor Google over Anthropic for the best AI model at year end, 43% to 41%",
+      "why_read": "Frontier-race scoreboard after Gemini 4 Argon.",
+      "body": [
+        "X News says Polymarket traders give Google 43%, Anthropic 41% and OpenAI 7% for the top model at the end of 2026, with $2.36M traded. Google took the lead after Gemini 4 Argon debuted on September 30.",
+        "The odds have flipped since October 1, when Anthropic led at 52%. The market resolves on year-end leaderboard rankings."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X News",
+      "source_url": "https://x.com/i/trending/2108265223333237010",
+      "discuss_url": "https://x.com/i/trending/2108265223333237010",
+      "interests": [
+        "ai",
+        "llms"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "agent-compute-buildout",
+      "kicker": "Signal",
+      "headline": "Aaron Levie: we're only at the start of the compute build-out for always-on AI agents",
+      "why_read": "Inference demand from fleets of agents, which describes your own bot army.",
+      "body": [
+        "X News summaries say Box CEO Aaron Levie described huge inference demand from personal agents, network defenders, code reviewers and data processors running around the clock. Power users already burn billions of tokens a week.",
+        "Others in the thread pointed to hyperscalers' data-center spending, and to SpaceX's satellite-compute ideas as a way to add capacity."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X News",
+      "source_url": "https://x.com/i/trending/2108261997142036576",
+      "discuss_url": "https://x.com/i/trending/2108261997142036576",
+      "interests": [
+        "ai-infra",
+        "agents"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "fsd-14-3-11",
+      "kicker": "Signal",
+      "headline": "First impressions of Tesla FSD 14.3.11: no regressions and no leaps, just 'consistently great'",
+      "why_read": "An FSD release check from your bookmarks, with an honest list of what still needs work.",
+      "body": [
+        "Black Tesla says FSD 14.3.11 is largely uneventful, which is a good thing: no major regressions or advances from 14.3.10, so the old issues remain too.",
+        "Still on their wishlist: tollbooth lane handling (with a toll-tag setting), pothole detection, parking-spot preferences, and choosing a working Supercharger stall when others are offline."
+      ],
+      "authors": [
+        "Black Tesla"
+      ],
+      "source": "x",
+      "source_label": "X bookmarks",
+      "source_url": "https://x.com/blktsla/status/2108185085627207789",
+      "discuss_url": "https://youtu.be/GJKeQOxmVvU",
+      "interests": [
+        "tesla",
+        "fsd"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "smit-machchhar-honored",
+      "kicker": "Signal",
+      "headline": "Indian pilot Captain Smit Machchhar honored by Israel's President and lit up on the Burj Khalifa",
+      "why_read": "A human-interest story you both bookmarked and retweeted.",
+      "body": [
+        "Aditya Raj Kaul reports that Israeli President Isaac Herzog announced Israel's Presidential Award for Civilian Heroism will go to Indian pilot Captain Smit Machchhar.",
+        "A post you retweeted says the UAE honored him by displaying his image on the Burj Khalifa."
+      ],
+      "authors": [
+        "Aditya Raj Kaul"
+      ],
+      "source": "x",
+      "source_label": "X bookmarks",
+      "source_url": "https://x.com/AdityaRajKaul/status/2108288429088022969",
+      "discuss_url": "https://x.com/Chopsyturvey/status/2108301980326314102",
+      "interests": [
+        "india",
+        "human-interest"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "industrial-pradesh",
+      "kicker": "Signal",
+      "headline": "The Economist's 'Industrial Pradesh': Indian states with a quarter of the population produce half of India's manufacturing value",
+      "why_read": "India's manufacturing map, which you retweeted.",
+      "body": [
+        "Milan Vaishnav highlights The Economist's analysis of a group of Indian states it calls 'Industrial Pradesh'. They're home to about 350m people, a quarter of the population.",
+        "Together they add $240bn of manufacturing value a year, half of India's total."
+      ],
+      "authors": [
+        "Milan Vaishnav"
+      ],
+      "source": "x",
+      "source_label": "X / @MilanV",
+      "source_url": "https://x.com/MilanV/status/2108187298231648325",
+      "discuss_url": "https://x.com/MilanV/status/2108187298231648325",
+      "interests": [
+        "india",
+        "economy"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "adhd-circadian",
+      "kicker": "Signal",
+      "headline": "ADHD as a circadian rhythm disorder: a review on chronotherapy trends on HN, alongside two ADHD posts you bookmarked",
+      "why_read": "Two ADHD bookmarks last night, and now a paper on HN.",
+      "body": [
+        "A 2025 Frontiers in Psychiatry review on HN (~320 points) looks at evidence linking ADHD to circadian rhythm disruption and what that could mean for chronotherapy.",
+        "Your bookmarks came from the motivation side. One described an 'interest-based nervous system' that won't engage without interest, urgency, novelty or challenge. Another explained why 'just do it' never works for ADHD brains."
+      ],
+      "authors": [
+        "Frontiers in Psychiatry"
+      ],
+      "source": "hn",
+      "source_label": "Frontiers / HN",
+      "source_url": "https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2025.1697900/full",
+      "discuss_url": "https://news.ycombinator.com/item?id=50011928",
+      "interests": [
+        "science",
+        "health"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "dollar-a-month-rent",
+      "kicker": "Signal",
+      "headline": "'One dollar a month. For my old bedroom.' A father's strange rent rule, paid for 11 years",
+      "why_read": "A story about a father and his kid that you retweeted. Read it to the end.",
+      "body": [
+        "The author moved out at 19, and their dad said they owed him $1 a month in rent for their old bedroom. They paid it on Venmo every month through college and lean years, and he always replied with a thumbs-up. Eleven years later they found a house they loved and were $18,000 short on the down payment.",
+        "The thread goes on from there and has been widely shared. We won't spoil the ending."
+      ],
+      "authors": [
+        "@EkpoIruoghene8"
+      ],
+      "source": "x",
+      "source_label": "X / @EkpoIruoghene8",
+      "source_url": "https://x.com/EkpoIruoghene8/status/2108141230378901582",
+      "discuss_url": "https://x.com/EkpoIruoghene8/status/2108141230378901582",
+      "interests": [
+        "human-interest",
+        "family"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "lecun-boat-analogy",
+      "kicker": "Signal",
+      "headline": "LeCun on AI and science: 'The invention of the boat reduced the importance of swimming, but enabled the discovery of new lands'",
+      "why_read": "A hopeful analogy from your bookmarks, a nice counterweight to the math-AI anxiety in today's edition.",
+      "body": [
+        "Kevin Weil shared Yann LeCun's analogy about how AI will change mathematics and science.",
+        "It fits today's other threads, Tao's guest post and the fight over OpenAI's math claims: tools change which skills matter, and they also open new territory."
+      ],
+      "authors": [
+        "Kevin Weil"
+      ],
+      "source": "x",
+      "source_label": "X bookmarks",
+      "source_url": "https://x.com/kevinweil/status/2108303667229319346",
+      "discuss_url": "https://x.com/kevinweil/status/2108303667229319346",
+      "interests": [
+        "ai",
+        "science"
+      ],
+      "lead": false,
+      "featured": false
     }
   ]
 }
