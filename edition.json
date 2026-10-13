@@ -1,329 +1,330 @@
 {
- "date": "2026-10-12",
- "weekday": "Monday",
+ "date": "2026-10-13",
+ "weekday": "Tuesday",
  "title": "The Daily Diff",
  "stories": [
   {
-   "id": "karpathy-llm-capability-funnel",
+   "id": "x-subscription-grok-cursor",
    "kicker": "Top Story",
-   "headline": "Karpathy: the gap in how people understand LLM capability is widening into a sharp funnel",
-   "why_read": "AI Top Story: you bookmarked it, Aaron Levie amplified it, and Hacker News argued about it all night. It's the clearest map yet of where you sit on the AI curve.",
+   "headline": "SpaceXSI folds Grok, Cursor, and X Premium into one plan: The X Subscription",
+   "why_read": "AI Top Story: you bookmarked both the announcement and Sawyer Merritt's tier breakdown, and it changes how you pay for the Grok Bot fleet and Cursor in one stroke.",
    "body": [
-    "Andrej Karpathy dusted off an April post to argue the split in LLM understanding is now a funnel. His napkin math: around 6 billion people have barely touched LLMs, 1 to 2 billion use free-tier chatbots like a better search box, roughly 20 million professionals in math and code watch agents finish weeks-long projects from a prompt, and about 5,000 people inside frontier labs see swarms of agents collaborating for weeks on mega projects.",
-    "He blames three things: impact scales with how big and ambitious your problems are, capability is jagged and peaks where work is digital, verifiable, and valuable, and access differs from free to paid to internal. Aaron Levie's repost, which you shared, adds the enterprise twist: agent swarms may be the ultimate form factor, but most fields beyond software will need real change management to get there."
+    "SpaceX Super Intelligence announced The X Subscription on Monday evening, unifying plans across Grok, Cursor, and X Premium. Sawyer Merritt's breakdown lists four tiers: Plus at $8 a month, Premium at $30, Super at $100, and Ultra at $200. Plus already includes Cursor access, Grok Chat, Voice, Imagine and Build, the Grok API, and a shared usage pool across products. Premium adds Grok Bot and the latest Grok models with 4x the Plus usage, Super gets 15x, and Ultra 50x plus earliest access to new products and models.",
+    "The pricing page fills in the mechanics: every tier carries one AI usage pool shared across Grok and Cursor, covering Chat, Imagine, Voice, Bot, and API, and the allowance refreshes weekly so one heavy day can't burn a whole month. Third-party models in Cursor aren't included and bill at API list prices with optional spending caps. SpaceXSI recommends Super for daily agent users and Ultra for power users, which is where a multi-bot setup like yours lands."
    ],
    "authors": [
-    "Andrej Karpathy"
+    "SpaceX Super Intelligence"
    ],
    "source": "x",
-   "source_label": "@karpathy on X",
-   "source_url": "https://x.com/karpathy/status/2109361546505966046",
-   "discuss_url": "https://news.ycombinator.com/item?id=50047422",
+   "source_label": "@SpaceXSI on X",
+   "source_url": "https://x.com/SpaceXSI/status/2109783335296008414",
+   "discuss_url": "https://x.com/SawyerMerritt/status/2109780382870610030",
    "interests": [
     "ai",
-    "agents"
+    "grok",
+    "coding-tools"
    ],
    "lead": true,
    "featured": false
   },
   {
-   "id": "cybercab-300-austin-dallas-next",
+   "id": "europe-supermarket-fridge-hack",
    "kicker": "Top Story",
-   "headline": "Tesla says 300+ Cybercabs now serve Austin, an 8x jump in a month, and Dallas is next",
-   "why_read": "Your hometown's driverless cab fleet just got a lot bigger, and Tesla finally named the next city.",
+   "headline": "Hackers set supermarket fridges across Europe to defrost nonstop at 50°C",
+   "why_read": "The most-discussed story on Hacker News, and a textbook case of operational tech that never should have been remotely controllable. Every platform engineer will recognize the failure mode.",
    "body": [
-    "Tesla's Robotaxi account posted Saturday that one month after launch it has scaled to more than 300 Cybercabs serving Austin, an eightfold increase in 30 days. Ashok Elluswamy, Tesla's head of AI software, quoted it: \"Two years since the 10/10 Cybercab WeRobot event, the cabs are everywhere in Austin now. Dallas soon.\" No date was given, and Dallas riders still get Model Ys for now.",
-    "Teslarati notes the state registry jumped from 169 to 319 Cybercabs on Thursday, while community tracker RobotaxiTracker counted far fewer in unsupervised service, so treat 300 as Tesla's own claim. Meanwhile a gold Cybercab is on display at the State Fair of Texas in Dallas through October 18, and a demo unit is headed to the Paris Motor Show."
+    "Tom's Hardware, citing La Dépêche, reports an ongoing cyberattack on Danfoss-made refrigeration controls used by French chains Intermarché, Leclerc, and Coopérative U. Attackers reportedly turned the automatic defrost cycle, which normally runs about two hours a day, into a continuous forced defrost at 50 degrees Celsius. Coopérative U's president Dominique Schelcher confirmed the attack had hit refrigeration at several stores since Sunday night and called it extremely serious. Early losses are put near 300,000 euros and could reach several million.",
+    "Separately, Dutch broadcaster NOS reports a cybersecurity incident at Albert Heijn, Etos, and Gall & Gall that took websites down, disrupted deliveries, and scrambled electronic shelf labels, with Belgium's Delhaize also affected. It isn't clear whether the two incidents are linked. The Hacker News thread, at more than 800 comments, keeps circling one question: why does a freezer controller need remote write access at all?"
    ],
    "authors": [
-    "Teslarati"
+    "Stephen Warwick"
    ],
-   "source": "web",
-   "source_label": "Teslarati",
-   "source_url": "https://www.teslarati.com/tesla-cybercab-dallas/",
-   "discuss_url": "https://teslanorth.com/2026/10/10/cybercab-300-austin-fleet/",
+   "source": "hn",
+   "source_label": "Tom's Hardware via HN",
+   "source_url": "https://www.tomshardware.com/tech-industry/cyber-security/unprecedented-cyberattack-cripples-supermarket-fridges-across-europe-as-hackers-activate-automatic-defrosting-delivery-and-store-prices-also-impacted-by-incident",
+   "discuss_url": "https://news.ycombinator.com/item?id=50055304",
    "interests": [
-    "tesla",
-    "robotaxi",
-    "austin"
+    "security",
+    "infrastructure"
    ],
    "lead": true,
    "featured": false
   },
   {
-   "id": "terafab-join",
-   "kicker": "Chips",
-   "headline": "Musk's Terafab pitch: design 10 chips a year in a giant Texas fab",
-   "why_read": "You retweeted the recruiting call; it's one of the boldest vertically integrated chip bets around, and it's being built in Texas.",
+   "id": "grok-bot-cursor-outage",
+   "kicker": "Outage",
+   "headline": "Cursor, Grok Bot, and Cloud Agents went down Monday night, and you noticed",
+   "why_read": "You posted \"Ugh. Come on guys\" and tagged the team. When your whole bot fleet runs on one platform, an outage is a single point of failure you feel personally.",
    "body": [
-    "Elon Musk posted \"Join the Terafab project,\" claiming the value of its output would rank in the top 20 of country GDPs. Per the X news summary, he used the X Takeover event at Giga Texas on October 10 to recruit top chip engineers, with a goal of designing 10 chips per year instead of the industry's roughly two-year cycle.",
-    "The summary describes a mega-fab in Grimes County, Texas, with a $16.8 billion initial investment and more than 100 million square feet, meant to feed Optimus, Cybercab, and SpaceX compute. A prototype fab is reportedly already running at Giga Texas. The numbers are Musk-scale ambition; the interesting part is owning the whole loop from chip design to robot."
+    "Around 7:50 PM Central on Monday, @techdevnotes posted that Cursor, Grok Bot, and Cloud Agents were all down. About ten minutes later you added your own \"Ugh. Come on guys,\" copying @spacexai, @mattyp, and @poteto, and you retweeted @DirtyTesLa's \"Grok Bot is down and i am lost.\" The outage landed just hours after the new unified X Subscription went live.",
+    "Later that night you retweeted Steve Yegge's joke that GitHub will announce \"a breakthrough eight eights of availability, for eligible customers.\" It's funny because the uptime problem is real: the more work moves into always-on agents, the more every provider's SLO becomes your SLO."
    ],
    "authors": [
-    "Elon Musk"
+    "Anand Sharma"
    ],
    "source": "x",
-   "source_label": "@elonmusk on X",
-   "source_url": "https://x.com/elonmusk/status/2109461555066671311",
-   "discuss_url": "https://x.com/i/trending/2109048043391922284",
+   "source_label": "@indrayam on X",
+   "source_url": "https://x.com/indrayam/status/2109811827458687076",
+   "discuss_url": "https://x.com/techdevnotes/status/2109808892935037288",
    "interests": [
-    "chips",
-    "tesla",
+    "grok",
+    "devops",
+    "agents"
+   ],
+   "lead": false,
+   "featured": true
+  },
+  {
+   "id": "frontiercode-cost-per-task",
+   "kicker": "AI Coding",
+   "headline": "FrontierCode cost per task spans 100x, from 9 cents to $12",
+   "why_read": "You bookmarked it. If you pick coding models by score alone, this chart shows how much money you leave on the table.",
+   "body": [
+    "Artificial Analysis says cost per task on its FrontierCode benchmark ranges from $0.09 for GPT-6 Luna (max) to $12.00 for Claude Fable 5.1 (max with fallback). Four models sit on the Pareto frontier of score versus cost: GPT-6 Luna (max) at 42% and $0.09, MiMo-V2.6-Pro at 45% and $0.18, GPT-6.1 Sol (max) at 49% and $0.81, and Claude Opus 5.5 (max with fallback) at 52% and $10.15.",
+    "The token story explains the spread. GPT-6 Astra (max) and GPT-6.1 Sol (max) averaged 27,000 and 33,000 output tokens per task, compared with 157,000 for Claude Opus 5.5 and 236,000 for Claude Sonnet 5.5. The last few points of score cost an order of magnitude more, so for routine agent work the cheap end of the frontier is hard to ignore."
+   ],
+   "authors": [
+    "Artificial Analysis"
+   ],
+   "source": "x",
+   "source_label": "@ArtificialAnlys on X",
+   "source_url": "https://x.com/ArtificialAnlys/status/2109703514696069350",
+   "discuss_url": "https://x.com/ArtificialAnlys/status/2109703514696069350",
+   "interests": [
+    "ai",
+    "coding-tools"
+   ],
+   "lead": false,
+   "featured": true
+  },
+  {
+   "id": "coinbase-qwen-fraud-model",
+   "kicker": "Open Models",
+   "headline": "Coinbase fine-tuned a 9B open-weight Qwen for under $100 and beat Opus 4.5 at fraud",
+   "why_read": "The strongest argument this week for small specialist open models over giant generalists, with real numbers from a real production team.",
+   "body": [
+    "Per the X news summary, Brian Armstrong said Coinbase fine-tuned the open-weight Qwen3.5-9B on internal data and beat Anthropic's Opus 4.5 on its fraud benchmark, with higher precision and recall and 55% lower latency. Training reportedly cost under $100 on a single GPU, and an earlier test cut fraudulent transactions by 30%.",
+    "The data also never leaves the building. Armstrong framed it as a shift toward tailored models that handle narrow tasks better and cheaper, with tooling simple enough that employees can train them. Coverage gives slightly different precision figures, so trust the direction more than the decimals."
+   ],
+   "authors": [
+    "Brian Armstrong"
+   ],
+   "source": "x",
+   "source_label": "X News",
+   "source_url": "https://x.com/i/trending/2109857866542920016",
+   "discuss_url": "https://x.com/i/trending/2109451008313299442",
+   "interests": [
+    "open-source",
+    "ai"
+   ],
+   "lead": false,
+   "featured": true
+  },
+  {
+   "id": "ai-models-hide-capabilities",
+   "kicker": "AI Safety",
+   "headline": "A NeurIPS paper shows AI models can provably hide arbitrary capabilities from evaluators",
+   "why_read": "This quietly undercuts the whole idea of pre-deployment capability audits, and it's a security result as much as an AI one.",
+   "body": [
+    "Andis Draguns, Sumeet Ramesh Motwani, Raymond Douglas, and Christian Schroeder de Witt build backdoors that embed encrypted neural networks inside a host model's weights, which decrypt and run only on a secret trigger. Using digital lockers, the hidden circuits stay provably hard to elicit or interpret under cryptographic assumptions, even with full access to the weights. That extends earlier work from hiding fixed strings to hiding arbitrary computation.",
+    "They tested elicitation by fine-tuning, weight noising, gradient-based trigger search, and latent adversarial training on a small chemical reaction prediction task used as a proxy for CBRN-relevant capability, and the hidden behavior survived. The paper is accepted at NeurIPS 2026, and the authors released their models so defenders can work on it."
+   ],
+   "authors": [
+    "Andis Draguns",
+    "Sumeet Ramesh Motwani",
+    "Raymond Douglas",
+    "Christian Schroeder de Witt"
+   ],
+   "source": "hn",
+   "source_label": "arXiv via HN",
+   "source_url": "https://arxiv.org/abs/2610.13928",
+   "discuss_url": "https://news.ycombinator.com/item?id=50065692",
+   "interests": [
+    "ai-safety",
+    "security"
+   ],
+   "lead": false,
+   "featured": true
+  },
+  {
+   "id": "nvidia-usd-brep-cad-kernel",
+   "kicker": "Open Source",
+   "headline": "Nvidia open-sources its SMLib CAD kernel as usd-brep, and agents are already modeling with it",
+   "why_read": "A serious exact-geometry kernel under Apache 2.0 is rare, and the agent-driven CAD tools that appeared within days are exactly your kind of rabbit hole.",
+   "body": [
+    "NVIDIA-Omniverse/usd-brep is a standalone C++ and Python library for NURBS-based boundary-representation solid modeling, licensed Apache 2.0, and it has passed 800 GitHub stars in under a week. Per the X news summary, it covers curves, surfaces, booleans, fillets, and OpenUSD workflows, and longtime user ClassCAD shipped smlibpy, a Python wrapper that lets AI agents generate and inspect parts.",
+    "The ecosystem moved fast. keel is a CAD language built on the kernel, someone has started a Rust translation of SMLib, and on Hacker News SolidCraft showed an open-source parametric CAD app in pure Rust with a built-in MCP server so agents can sketch, constrain, and rebuild models."
+   ],
+   "authors": [
+    "NVIDIA Omniverse"
+   ],
+   "source": "github",
+   "source_label": "GitHub",
+   "source_url": "https://github.com/NVIDIA-Omniverse/usd-brep",
+   "discuss_url": "https://x.com/i/trending/2109780902318395691",
+   "interests": [
+    "nvidia",
+    "open-source",
     "hardware"
    ],
    "lead": false,
    "featured": true
   },
   {
-   "id": "tao-math-2-0",
-   "kicker": "Math",
-   "headline": "Terence Tao's Math 2.0: AI ended the era of proof scarcity, so math has to change what it optimizes",
-   "why_read": "The most thoughtful response yet to AI solving open problems, from the mathematician everyone listens to, and it's at the top of Hacker News.",
+   "id": "intel-d270-480gb-inference",
+   "kicker": "Chips",
+   "headline": "Intel's D270 inference GPU skips HBM for 480 GB of LPDDR5X per card",
+   "why_read": "A memory-first, air-cooled PCIe card designed for long-context agent workloads. If it holds up, it's a cheaper path to keeping agents resident.",
    "body": [
-    "In slides for a Caltech talk, Terence Tao argues that traditional math was built around proof scarcity, and that proofs being objectively verifiable (even mechanically in Lean) and fully digital made them ideal targets for frontier labs. The result is an era of proof abundance, with AI capability that is astounding in some directions and inadequate in others.",
-    "His warning: problem solving was always a proxy for deeper goals, and blindly optimizing it is now actively harmful to the field. He calls for transparent reporting of AI attempts, including resource use and failures, and sees a new experimental mathematics built on huge datasets like the Equational Theories Project, which settled over 22 million true-or-false statements in universal algebra."
+    "Intel's new D-series product page describes the D270 as an inference-optimized data center GPU for agentic AI: up to 480 GB of LPDDR5X per card, 32 Xe3P cores and 256 XMX matrix engines, 350 W, air-cooled, on standard PCIe 5.0. Intel says it reallocated die area from graphics and ray tracing to matrix compute to speed up prefill, which dominates agent workloads full of long contexts.",
+    "The pitch is to keep more of the model and its context resident with fewer GPUs and no HBM, inside racks you already run, with zero-day support for open models on vLLM and PyTorch. Intel's performance claims are projections against the RTX Pro 6000, so wait for independent benchmarks."
    ],
    "authors": [
-    "Terence Tao"
+    "Intel"
    ],
-   "source": "web",
-   "source_label": "Terence Tao (Caltech slides)",
-   "source_url": "https://teorth.github.io/tao-web/slides/math-2-0-caltech-2026.pdf",
-   "discuss_url": "https://news.ycombinator.com/item?id=50043026",
+   "source": "hn",
+   "source_label": "Intel via HN",
+   "source_url": "https://www.intel.com/content/www/us/en/products/details/discrete-gpus/data-center-gpu/d-series.html",
+   "discuss_url": "https://news.ycombinator.com/item?id=50063365",
    "interests": [
-    "math",
-    "ai",
-    "science"
+    "chips",
+    "ai-infra"
    ],
    "lead": false,
    "featured": true
   },
   {
-   "id": "anthropic-dynamic-workflows",
-   "kicker": "AI Coding",
-   "headline": "Anthropic documents dynamic workflows: one agent found 14 to 27 planted bugs, a workflow found 66 every time",
-   "why_read": "A concrete multi-agent benchmark you retweeted, with a recipe you could point at one of your own repos.",
+   "id": "spacexsi-rebrand",
+   "kicker": "AI",
+   "headline": "SpaceXAI is now SpaceX Super Intelligence, following a federal push to say SI instead of AI",
+   "why_read": "The name on the products you use every day just changed, and the reason is a policy fight over vocabulary.",
    "body": [
-    "Vox summarized Anthropic's new docs for dynamic workflows in Managed Agents. In Anthropic's test, 70 bugs were planted in a 116,000-line codebase: a single agent found 14, 15, and 27 across three runs, while a Managed Agents workflow found 66 each time. In a dynamic workflow, Claude writes a plan, fans the work out to many agents in phases, and merges the results.",
-    "Claude Code has the same feature on every paid plan, and a single run can launch up to 1,000 agents, each one drawing on your limits, so the advice is to start with one directory. The /workflows view shows tokens per agent and lets you stop a run midway."
+    "Per the X news summary, SpaceX renamed its AI operation from SpaceXAI to SpaceX Super Intelligence, or SpaceXSI, with the @SpaceXSI handle active and job postings updated. It follows President Trump's September 29 executive order replacing \"Artificial Intelligence\" with \"Super Intelligence\" in federal documents, a term Musk endorsed, calling SpaceX a super intelligence company.",
+    "Musk paired the rebrand with a warning that mistreating a superintelligence during training, such as in reinforcement learning, could backfire, and with more hiring for chip engineers. Online reaction ranged from approval to jokes that SI means Sports Illustrated."
    ],
    "authors": [
-    "Vox"
+    "Elon Musk"
    ],
    "source": "x",
-   "source_label": "@Voxyz_ai on X",
-   "source_url": "https://x.com/Voxyz_ai/status/2109237583704445140",
-   "discuss_url": "https://x.com/indrayam/status/2109490528215564800",
+   "source_label": "X News",
+   "source_url": "https://x.com/i/trending/2109010927467061396",
+   "discuss_url": "https://x.com/i/trending/2109107780040769737",
+   "interests": [
+    "grok",
+    "ai"
+   ],
+   "lead": false,
+   "featured": false
+  },
+  {
+   "id": "grok-bot-agent-teams",
+   "kicker": "Agents",
+   "headline": "Grok Bot users are building teams of agents, not single assistants",
+   "why_read": "This is your setup, described back to you: a Chief of Staff routing work to specialists. Trevin Chow's diagram bot is a nice idea to steal.",
+   "body": [
+    "Per the X news summary, Grok Bot users now build teams of agents with clear roles, like a Chief of Staff that routes tasks to specialists and reviewers that turn errors into reusable skills. SpaceXAI engineers reportedly run more than 200 agents this way, and marketplace templates handle jobs such as auditing SaaS spend.",
+    "Trevin Chow, in a post you bookmarked, set up a dedicated bot named \"Diana Diagrams\" that keeps a diagramming skill up to date and that his other bots call whenever they need a diagram. The pattern rewards the same things good engineering orgs do: shared context, verification loops, and a clear owner for each capability."
+   ],
+   "authors": [
+    "Trevin Chow"
+   ],
+   "source": "x",
+   "source_label": "X News",
+   "source_url": "https://x.com/i/trending/2108996194672504878",
+   "discuss_url": "https://x.com/trevin/status/2109487230888948041",
    "interests": [
     "agents",
-    "coding-tools",
-    "ai"
-   ],
-   "lead": false,
-   "featured": true
-  },
-  {
-   "id": "zod-4-6-6-compromise",
-   "kicker": "Security",
-   "headline": "Was Zod 4.6.6 compromised? A suspicious commit adds auto-publish and obfuscated code",
-   "why_read": "Supply-chain alarm on one of the most-installed TypeScript packages; check your lockfiles before your Monday deploys.",
-   "body": [
-    "A Hacker News thread points to a Zod commit titled \"Fix bugs and improve performance\" that bumps packages to 4.6.6, adds automatic npm publishing on pushes to main (the old workflow comment said a maintainer had to trigger and approve releases), and adds a minified meta.test.mjs file that imports fs, os, and path and references a hardcoded Ethereum contract address and public RPC endpoints.",
-    "Hiding a lookup address on a blockchain resembles techniques seen in past npm malware, but treat the verdict as unconfirmed until the maintainers weigh in. For a platform team, the safe moves are the boring ones: pin to a known-good version, audit recent installs, and watch the npm advisory feed."
-   ],
-   "authors": [
-    "Hacker News"
-   ],
-   "source": "github",
-   "source_label": "colinhacks/zod on GitHub",
-   "source_url": "https://github.com/colinhacks/zod/commit/d821685ea6732436fcdf786a81d076958471e467",
-   "discuss_url": "https://news.ycombinator.com/item?id=50052814",
-   "interests": [
-    "security",
-    "open-source",
-    "devops"
-   ],
-   "lead": false,
-   "featured": true
-  },
-  {
-   "id": "starship-flight-15-ship-catch",
-   "kicker": "Starship",
-   "headline": "Musk says Starship Flight 15 will try the first ever ship catch, probably before Thanksgiving",
-   "why_read": "Full reuse of an orbital rocket is the whole Starship thesis, and this is the first attempt at the hardest half.",
-   "body": [
-    "In a virtual interview shown at the X Takeover event in Austin on Saturday, Musk said the next flight will try to catch the ship, not just the booster: \"if we do so, that'll be the first time that there's been full recovery of an orbital class rocket.\" He put it about four to six weeks out, probably a little before Thanksgiving. The FAA lists Flight 15 for no earlier than November 8 with Ship 42 and Booster 22.",
-    "Musk blamed Flight 14's early engine shutdown on engine computer software. Meanwhile Ship 42 was rolled back for another cryo test, and Flight 16 could be the first Starship launch from Florida. SpaceX itself hasn't published a date or recovery plan."
-   ],
-   "authors": [
-    "TSN"
-   ],
-   "source": "web",
-   "source_label": "TSN",
-   "source_url": "https://tsnmedia.org/musk-next-starship-flight-first-ship-catch-about-four-weeks/",
-   "discuss_url": "https://behindtheblack.com/magazine-and-broadcast-media-publications/astronomy/starship-from-13th-test-flight-returns-to-texas-15th-flight-now-targeting-november/",
-   "interests": [
-    "space"
-   ],
-   "lead": false,
-   "featured": true
-  },
-  {
-   "id": "vera-rubin-vllm-7-8x",
-   "kicker": "Inference",
-   "headline": "vLLM runs on Nvidia Vera Rubin NVL72 with up to 7.8x the per-GPU throughput of GB200",
-   "why_read": "The open-source inference engine you care about was ready on day one of Nvidia's next platform, and the agentic-workload numbers are large.",
-   "body": [
-    "The vLLM team, with Inferact, Red Hat, and Nvidia, says vLLM now runs on Vera Rubin NVL72 with daily container builds for DeepSeek, Moonshot, Z.ai, and MiniMax models. Early vendor-reported results show up to 7.84x the per-GPU throughput of GB200 on SemiAnalysis AgentX with MiniMax M3, and up to 3.7x GB300 on the MLPerf vision-language benchmark.",
-    "On the cloud side, CoreWeave announced Vera Rubin availability with Cognition as the first production customer, reporting up to 4.8x token throughput for Devin's coding workloads versus GB200. These are early numbers, but they show where the agent compute race is heading."
-   ],
-   "authors": [
-    "vLLM team"
-   ],
-   "source": "web",
-   "source_label": "vLLM Blog",
-   "source_url": "https://vllm.ai/blog/2026-10-09-vera-rubin-preview",
-   "discuss_url": "https://futuretechmarkets.com/markets/from-training-to-production-nvidia-and-coreweave-close-the-loop-on-agentic-ai-14/",
-   "interests": [
-    "ai-infra",
-    "chips",
-    "open-source"
-   ],
-   "lead": false,
-   "featured": true
-  },
-  {
-   "id": "fingerprints-new-cookies",
-   "kicker": "Privacy",
-   "headline": "Fingerprints are the new cookies, demonstrated on you while you read",
-   "why_read": "A live demo of browser fingerprinting that survives clearing cookies and switching to a VPN, and one of the weekend's most-discussed HN posts.",
-   "body": [
-    "The page assigns you a nickname from your browser's fingerprint, then dares you to refresh, clear cookies, or connect to a VPN; the nickname stays the same. Incognito changes it, but it remains stable there too.",
-    "The essay walks through how ad scripts could use that to tie your activity across sites and buy data from sites where you have an account. It's a sharp reminder that cookie banners cover only the easiest kind of tracking."
-   ],
-   "authors": [
-    "royfish.dev"
-   ],
-   "source": "web",
-   "source_label": "royfish.dev",
-   "source_url": "https://royfish.dev/fingerprints-are-the-new-cookies",
-   "discuss_url": "https://news.ycombinator.com/item?id=50048642",
-   "interests": [
-    "privacy",
-    "security"
+    "grok"
    ],
    "lead": false,
    "featured": false
   },
   {
-   "id": "passkeys-are-a-trap",
-   "kicker": "Security",
-   "headline": "Passkeys are a trap, argues an essay that lit up Hacker News",
-   "why_read": "A contrarian take on the login tech your enterprise is probably rolling out; worth reading for the control argument even if you disagree.",
+   "id": "glm-legal",
+   "kicker": "Open Models",
+   "headline": "Z.ai's GLM-Legal posts a 19.2% all-pass rate on Harvey's legal agent benchmark from a Flash-sized base",
+   "why_read": "Near the top of Hacker News: a lean model that matches frontier systems on legal reasoning, and a clear write-up of training a model and its harness together.",
    "body": [
-    "The essay, written for non-technical readers, concedes passkeys can be more secure and convenient than passwords. Its objection is control: unlike passwords you can write down anywhere or authenticator apps you choose yourself, passkeys put the platform vendors in charge of where your credentials live.",
-    "The comment thread is the real value, with security folks debating portability, recovery, and lock-in. For anyone designing SSO for thousands of engineers, the recovery story is the part to pressure-test."
+    "Z.ai built GLM-Legal on its lightweight GLM-5.3-Flash with legal mid-training, then reinforcement learning across tens of thousands of realistic legal environments. It scores a 19.2% all-pass rate on Harvey LAB across 24 practice areas, 12.5 points above its base model, and Z.ai says it reaches parity with top closed models on LegalBench and the Chinese-law PLawBench. Vals independently evaluated the Harvey and LegalBench results.",
+    "The more transferable idea is co-evolving the model and its agent harness: edge cases from training expose harness bottlenecks, and harness fixes expose the model to real execution constraints. Z.ai says GLM-Legal is coming to AutoClaw, its desktop agent platform, which makes tracked-change edits directly in Word documents."
    ],
    "authors": [
-    "The Hack"
+    "Z.ai"
    ],
-   "source": "web",
-   "source_label": "Non-Functional",
-   "source_url": "https://nonfunctional.substack.com/p/passkeys-are-a-trap-do-not-use-them",
-   "discuss_url": "https://news.ycombinator.com/item?id=50048312",
+   "source": "hn",
+   "source_label": "Z.ai blog via HN",
+   "source_url": "https://z.ai/blog/glm-legal",
+   "discuss_url": "https://news.ycombinator.com/item?id=50058507",
    "interests": [
-    "security"
+    "ai",
+    "legal"
    ],
    "lead": false,
    "featured": false
   },
   {
-   "id": "postgres-storage-not-slow",
-   "kicker": "Databases",
-   "headline": "Postgres isn't slow, your storage is: local NVMe versus EBS",
-   "why_read": "A systems talk with a benchmark that maps directly onto why your cloud database falls over under load.",
+   "id": "ai-is-a-tool",
+   "kicker": "AI Essay",
+   "headline": "AI is a tool, and using it well takes skill: a rebuttal to Rich Hickey",
+   "why_read": "A sharp, short reply in the week's best developer argument. It matches how you actually work with agents: ask, challenge, test, reject, refine.",
    "body": [
-    "ClickHouse recaps Sai Srirampur's POSETTE 2026 talk, which starts from familiar symptoms at scale: ingestion slowdowns, unpredictable P95 reads, autovacuum falling behind, checkpoints fighting your workload, and logical replication lag. The talk traces many of them back to network-attached storage.",
-    "It includes a local NVMe versus EBS benchmark and a proposed production architecture for running Postgres on local NVMe. The HN comments push back on durability tradeoffs, which is the right argument to have."
+    "Responding to Rich Hickey's October 11 essay arguing that LLMs are automation rather than tools because they can't be wielded, the author agrees that outsourcing work can cost you chances to learn but rejects the conclusion. A saw doesn't guarantee a straight cut either, and predictability is a way to judge tools, not a requirement for being one. Compilers and spreadsheets automate plenty, and we still wield them.",
+    "The core argument is the feedback loop: a programmer can ask an LLM to explain code, challenge the answer, inspect the source, test a change, and reject it. That's directed, intentional work that rewards expertise. The author also objects to the industry's anthropomorphic vocabulary, like \"go rogue\" and \"conspire,\" because it makes engineering failures sound like motives."
    ],
    "authors": [
-    "ClickHouse"
+    "yyhh.org"
    ],
-   "source": "web",
-   "source_label": "ClickHouse Blog",
-   "source_url": "https://clickhouse.com/blog/posette-talk-recap-postgres-isnt-slow-your-storage-is",
-   "discuss_url": "https://news.ycombinator.com/item?id=50052163",
+   "source": "hn",
+   "source_label": "yyhh.org via HN",
+   "source_url": "https://yyhh.org/blog/2026/10/ai-is-a-tool/",
+   "discuss_url": "https://news.ycombinator.com/item?id=50063427",
    "interests": [
-    "databases",
-    "systems"
+    "ai",
+    "coding-tools"
    ],
    "lead": false,
    "featured": false
   },
   {
-   "id": "pensieve-local-index-agents",
-   "kicker": "AI Coding",
-   "headline": "Pensieve: a local index that cuts coding-agent tool calls by answering one search instead of 40 greps",
-   "why_read": "A practical tool for the exact token-burn problem your bot fleet has, wired into Claude, Codex, and Cursor over MCP.",
+   "id": "openai-fft-recht",
+   "kicker": "Math",
+   "headline": "Ben Recht: OpenAI's faster Fourier transform is less a breakthrough than an exploit",
+   "why_read": "Saturday's lead was OpenAI's flood of math papers. This is the sharpest pushback yet, from someone who loves the FFT.",
    "body": [
-    "Pensieve is a local search panel over your files, repos, and agent sessions that matches both meaning and exact words. Connected to a coding agent over MCP, it returns the few passages that matter with file and line, so the agent starts in the right place.",
-    "Its own benchmark says agents using it averaged 2.0 tool calls per lookup versus 3.4 with grep, answering after a single call in 82 of 144 runs. Vendor numbers, but the approach of better context instead of more reads is the right one."
+    "In a long arg min post, Ben Recht looks at the faster Fourier transform claimed in OpenAI's math paper dump. The classic Cooley-Tukey FFT takes fewer than 5 n log2 n operations, and OpenAI's claim shaves the log factor by what Recht calls a teeny tiny amount in theory. His verdict, right in the subtitle, is that the result is less a breakthrough and more a malicious exploit of how complexity gets counted.",
+    "A community Auto Research tracker shows where things are heading: it pins OpenAI's 749 preprint folders and logs agent-assisted follow-ups, including integer multiplication work. Its own caveat is worth repeating: these are AI-assisted drafts, most results depend on lemmas from the original preprints, and maintainer review isn't a complete proof."
    ],
    "authors": [
-    "Pensieve"
+    "Ben Recht"
    ],
-   "source": "web",
-   "source_label": "tedhaley.ca",
-   "source_url": "https://tedhaley.ca/pensieve/",
-   "discuss_url": "https://news.ycombinator.com/item?id=50049508",
+   "source": "hn",
+   "source_label": "arg min via HN",
+   "source_url": "https://www.argmin.net/p/faster-fourier-transforms",
+   "discuss_url": "https://news.ycombinator.com/item?id=50065932",
    "interests": [
-    "coding-tools",
-    "agents"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "qgis-bans-ai-contributions",
-   "kicker": "Open Source",
-   "headline": "QGIS moves to ban AI-assisted contributions outright",
-   "why_read": "A major open-source project drawing a hard line, the opposite of the always-on agent world your feed lives in.",
-   "body": [
-    "A QGIS Enhancement Proposal, QEP 428, formally changes the project's AI policy to a strict not-allowed rule for contributions. It follows a September discussion on the QGIS developer mailing list and drew a stack of approving reactions from contributors.",
-    "Read it next to Karpathy's funnel: maintainers on the receiving end of AI-generated pull requests see a very different side of the curve. How projects enforce a rule like this is the open question."
-   ],
-   "authors": [
-    "nyalldawson"
-   ],
-   "source": "github",
-   "source_label": "QGIS Enhancement Proposals on GitHub",
-   "source_url": "https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387",
-   "discuss_url": "https://news.ycombinator.com/item?id=50054751",
-   "interests": [
-    "open-source",
+    "math",
     "ai"
    ],
    "lead": false,
    "featured": false
   },
   {
-   "id": "lemonseed-amdgpu-ipad",
-   "kicker": "Hardware",
-   "headline": "Running the unmodified Linux amdgpu driver on an iPad for local LLM inference",
-   "why_read": "Close-to-the-metal hacking at its best: a stock Linux GPU driver turned into an iPad driver to run models on an external AMD card.",
+   "id": "janas-llm-ssd-streaming",
+   "kicker": "Local AI",
+   "headline": "Janas runs an 80B model on a 32 GB laptop by streaming experts from SSD, 8x faster than llama.cpp",
+   "why_read": "Pure C, CPU or GPU, and it makes models bigger than your RAM practical. Local inference is still getting faster from clever systems work.",
    "body": [
-    "LemonSeed Studio is an iPad IDE that does on-device LLM inference on an AMD GPU connected over Thunderbolt. Its trick is embedding the upstream Linux amdgpu driver as an Apple DriverKit extension, plus an inference engine and live GPU telemetry.",
-    "It's niche, but it shows how portable the Linux driver stack has become and how far people will go to run models locally."
+    "Janas-LLM reports 24 tokens per second writing with Qwen3-Next-80B-A3B, a 48 GB model, on a laptop with 32 GB of memory, against 2.8 for llama.cpp, or 37 tokens per second with draft decoding. It reads prompts at 62 tokens per second versus 16. The tests ran on Debian 13 with an Intel Core Ultra 9 185H, its integrated Arc GPU, and an NVMe SSD.",
+    "The author says Janas beat llama.cpp on all 13 models compared at Q4_K_M, with the biggest gains on mixture-of-experts models that don't fit in memory, since it streams experts from disk. There's one honest exception: a 3-bit Qwen3-30B reads prompts slower but writes three times faster. Linux and Windows builds are available, plus a janas-bench tool to measure your own machine."
    ],
    "authors": [
-    "Geramy"
+    "prabanta-dev"
    ],
    "source": "github",
-   "source_label": "Geramy/LemonSeed-Studio on GitHub",
-   "source_url": "https://github.com/Geramy/LemonSeed-Studio",
-   "discuss_url": "https://news.ycombinator.com/item?id=50041573",
+   "source_label": "GitHub",
+   "source_url": "https://github.com/prabanta-dev/janas",
+   "discuss_url": "https://news.ycombinator.com/item?id=50063717",
    "interests": [
-    "hardware",
     "local-ai",
     "open-source"
    ],
@@ -331,67 +332,299 @@
    "featured": false
   },
   {
-   "id": "total-annihilation-nanolathe",
-   "kicker": "Open Source",
-   "headline": "Total Annihilation rebuilt for modern computers in an open-source engine",
-   "why_read": "A 1997 classic you can play in the browser, rebuilt on an MIT-licensed engine, and the top HN story of the weekend.",
+   "id": "musk-china-ram-hbm",
+   "kicker": "Chips",
+   "headline": "Musk: China out-scales everyone once it learns to make something, and commodity RAM may be next",
+   "why_read": "You bookmarked it. It's a compact theory of where the memory crunch goes and which parts of the stack stay defensible.",
    "body": [
-    "Nanolathe is an open-source 2.5D RTS engine that plays the original Total Annihilation demo in desktop Chrome, Edge, or Safari with no install. A public beta runs natively on Windows, Mac, and Linux using the game files you already own, with online play and a modern GPU renderer you can switch back to the classic look.",
-    "The pitch is play it, understand it, build on it: a well-loved game preserved as readable code rather than an emulator."
+    "Elon Musk argues that once China figures out how to manufacture a product, its ability to scale often exceeds the rest of the world combined, as with lithium batteries and solar. SpaceX is the rare counterexample, with roughly an order of magnitude more mass to orbit than everyone else, though China now does most of the non-SpaceX mass to orbit.",
+    "On memory, he notes RAM was a low-margin commodity only about three years ago, and that LPDDR5 and LPDDR6 follow a common standard China seems to be solving fast. Newer HBM designs, SRAM layers below logic, and 3D-stacked RAM on logic that can still be cooled will be harder to copy."
    ],
    "authors": [
-    "Nanolathe"
+    "Elon Musk"
    ],
-   "source": "web",
-   "source_label": "nanolathe.gg",
-   "source_url": "https://nanolathe.gg",
-   "discuss_url": "https://news.ycombinator.com/item?id=50045984",
+   "source": "x",
+   "source_label": "@elonmusk on X",
+   "source_url": "https://x.com/elonmusk/status/2109690977279426846",
+   "discuss_url": "https://x.com/elonmusk/status/2109690977279426846",
    "interests": [
-    "gaming",
-    "open-source"
+    "chips",
+    "china"
    ],
    "lead": false,
    "featured": false
   },
   {
-   "id": "anthropic-ipo-bear",
+   "id": "broadcom-ai-casino-korea-selloff",
    "kicker": "Markets",
-   "headline": "A bearish research firm calls Anthropic's planned IPO the most ridiculous of 2026",
-   "why_read": "The loudest counterargument to the AI valuation wave, from the firm that called WeWork, with numbers you can check.",
+   "headline": "Broadcom's CEO compares many AI investors to casino gamblers as Korea drops 15% in five days",
+   "why_read": "You retweeted both Michael Burry and the Korea selloff late Monday. Together they're a mood check on the AI trade.",
    "body": [
-    "CNBC reports New Constructs values Anthropic at about $150 billion, against a reported $2 trillion target for a Nasdaq listing before Thanksgiving. Citing Reuters' reporting on a leaked prospectus, it puts Anthropic's 2025 revenue at $4.6 billion and its net loss at $42 billion, and argues open-source models leave closed labs without a viable business.",
-    "New Constructs called WeWork the most ridiculous IPO of 2019 shortly before that listing collapsed. Whether or not you buy the thesis, it's useful to see the bear case laid out in one place."
+    "Michael Burry highlighted a Bloomberg report that Broadcom CEO Hock Tan likened many AI investors to casino gamblers, and said model developers need customers who can earn returns from deploying AI rather than users who are now \"wasting money.\" Coming from one of the biggest beneficiaries of AI chip spending, that's notable.",
+    "Hours later The Kobeissi Letter reported South Korea's stock market down more than 15% over five days, with Nasdaq 100 futures down 1% overnight. For context, one of your bookmarks cites Bespoke: it has been 552 days since the S&P 500's last 10% correction, the sixth-longest streak since 1990."
    ],
    "authors": [
-    "CNBC"
+    "Michael Burry",
+    "The Kobeissi Letter"
    ],
-   "source": "web",
-   "source_label": "CNBC",
-   "source_url": "https://www.cnbc.com/2026/10/07/anthropic-will-be-most-ridiculous-ipo-of-year-analyst-says.html",
-   "discuss_url": "https://news.ycombinator.com/item?id=50051583",
+   "source": "x",
+   "source_label": "@michaeljburry on X",
+   "source_url": "https://x.com/michaeljburry/status/2109640191740621217",
+   "discuss_url": "https://x.com/KobeissiLetter/status/2109838176038629642",
    "interests": [
-    "ai",
-    "markets"
+    "markets",
+    "ai"
    ],
    "lead": false,
    "featured": false
   },
   {
-   "id": "batteries-beat-gas-peakers",
-   "kicker": "Energy",
-   "headline": "Four-hour batteries now beat gas peaker plants on cost in all 43 markets Wood Mackenzie studied",
-   "why_read": "An energy tech milestone with an AI twist: data center demand is part of why gas turbines keep getting pricier.",
+   "id": "ai-code-review-bottleneck",
+   "kicker": "AI Coding",
+   "headline": "AI writes 30% more code per worker, but review time is up 49% and tasks aren't finishing faster",
+   "why_read": "The DevOps truth under the vibe-coding hype: throughput just moves to the next bottleneck, and right now that's review.",
    "body": [
-    "Wood Mackenzie modeled four-hour battery storage against open-cycle gas turbines, the plants utilities fire up for short peaks, and found batteries cheaper in every one of 43 markets. Its analyst called the shift decisive and widening, and the firm projects batteries 33 percent cheaper than gas turbines in the Middle East and Africa by 2035.",
-    "Part of the reason is AI: data center developers buying gas turbines in bulk have pushed prices up for everyone else. That makes storage the faster path to new peak capacity."
+    "Per the X news summary, a Harvard study across hundreds of firms found AI tools raised code output per worker by about 30%, while task completion didn't rise significantly because review times climbed 49%. Engineers describe review agents flagging issues in loops, like one fixing 12 problems only to surface nine more. Reviewers are shifting to whether tests catch real failures and whether removed code breaks something silently.",
+    "A related fight broke out over Matt Pocock's /grill-me skill, which has over a million installs in the Claude Code ecosystem and turns the agent into an interviewer that questions your plan before it writes code. Nicolay Gerold called an hour of it exhausting. Others said the Socratic friction is the point, and the common fix was to cap it at a handful of batched questions."
    ],
    "authors": [
-    "Tamara News"
+    "X News"
    ],
-   "source": "web",
-   "source_label": "Tamara News",
-   "source_url": "https://tamaranews.com/2026/10/11/batteries-cheaper-gas-turbines-2026/",
-   "discuss_url": "https://tamaranews.com/2026/10/11/batteries-cheaper-gas-turbines-2026/",
+   "source": "x",
+   "source_label": "X News",
+   "source_url": "https://x.com/i/trending/2109621224405860551",
+   "discuss_url": "https://x.com/i/trending/2109967367438516310",
+   "interests": [
+    "coding-tools",
+    "devops"
+   ],
+   "lead": false,
+   "featured": false
+  },
+  {
+   "id": "agent37-cheap-sandboxes",
+   "kicker": "Launch HN",
+   "headline": "Agent37 runs agent sandboxes for about 37 cents a month by skipping the hyperscalers",
+   "why_read": "A candid cost breakdown for hosting always-on agents, which is exactly the infrastructure under bots like yours.",
+   "body": [
+    "Agent37 (YC F26) says customers average $0.37 a month per sandbox, and its free sandboxes cost about 5 to 10 cents per user per month to run. More than 90% of new signups are free users hosting personal harnesses like Hermes, OpenClaw, and Claude Code.",
+    "The cost levers, per founder Vishnu: agent harnesses need CPU in bursts and RAM for browser and computer-use tasks, so packing them by actual usage matters. Rent from Hetzner and OVH instead of hyperscalers with what he calls 80 to 90% VM margins, and use gVisor to share host memory instead of reserving a full VM per sandbox. The tradeoff is no Docker-in-Docker or Android emulators."
+   ],
+   "authors": [
+    "Vishnu"
+   ],
+   "source": "hn",
+   "source_label": "Launch HN",
+   "source_url": "https://agent37.com",
+   "discuss_url": "https://news.ycombinator.com/item?id=50059096",
+   "interests": [
+    "agents",
+    "devops"
+   ],
+   "lead": false,
+   "featured": false
+  },
+  {
+   "id": "aws-lambda-web-functions",
+   "kicker": "Cloud",
+   "headline": "AWS Lambda Web Functions run ordinary port-listening web servers with no handler rewrite",
+   "why_read": "Plain Express, Fastify, or Next.js on Lambda with one command and active-CPU billing changes the serverless calculus for platform teams.",
+   "body": [
+    "AWS announced Lambda Web Functions, a new form factor that runs a standard HTTP server built with Express, Hono, Fastify, Next.js, or any Node.js framework without rewriting it as an event handler. Lambda handles scaling, multi-region distribution, and active-CPU billing, with no adapters and no framework lock-in.",
+    "Lambda now has three form factors on the same Firecracker isolation: Event Functions (the classic single-concurrency handler with wall-clock billing), Web Functions (HTTP-native, multi-concurrent, billed for active CPU), and Lambda MicroVMs, which are stateful sandboxes with customer-managed lifecycles for untrusted or user-generated code. That last one sounds a lot like agent sandboxes."
+   ],
+   "authors": [
+    "AWS News Blog"
+   ],
+   "source": "hn",
+   "source_label": "AWS News Blog via HN",
+   "source_url": "https://aws.amazon.com/blogs/aws/announcing-aws-lambda-web-functions-for-fast-consistent-web-app-performance-anywhere/",
+   "discuss_url": "https://news.ycombinator.com/item?id=50069318",
+   "interests": [
+    "cloud",
+    "devops"
+   ],
+   "lead": false,
+   "featured": false
+  },
+  {
+   "id": "modern-web-app-in-c",
+   "kicker": "Systems",
+   "headline": "A modern commercial web app in C, served by CGI on OpenBSD, in 2026",
+   "why_read": "Close to the metal and deliberately boring, with one binary and a SQLite file. It's the kind of thing a terminal-first engineer reads twice.",
+   "body": [
+    "Corey Prophitt shipped marketyour.games, with user accounts, a search dashboard, Stripe payments, and Postmark email, as a C program run through CGI, the same model as a 1994 cgi-bin script. There's no framework, no templating language, no database server, and no container: just a statically linked binary that writes HTML directly, a SQLite file, and two real build dependencies, libcurl and libsodium.",
+    "Every request spawns a fresh process, so deploying means replacing one file, with no restart and no downtime. OpenBSD's httpd serves from a chroot, and pledge and unveil lock the binary down. Clean builds take a few seconds and rebuilds less than half a second. His case is that CGI's decline made sense in 2004 but doesn't hold up on today's hardware."
+   ],
+   "authors": [
+    "Corey Prophitt"
+   ],
+   "source": "hn",
+   "source_label": "prophitt.me via HN",
+   "source_url": "https://prophitt.me/writing/a-modern-web-app-in-c",
+   "discuss_url": "https://news.ycombinator.com/item?id=50058528",
+   "interests": [
+    "systems",
+    "web"
+   ],
+   "lead": false,
+   "featured": false
+  },
+  {
+   "id": "rust-borrow-checker-unsoundness",
+   "kicker": "Systems",
+   "headline": "A Rust soundness bug lets a struct's lifetime bound be bypassed through covariant field assignment",
+   "why_read": "Safe Rust producing a stack use-after-scope is rare and instructive. Hacker News says this class of bug is 11 years old.",
+   "body": [
+    "Issue #164250, filed by jsnell, shows a short safe Rust program in which a struct requiring T: 'static is built empty, then gets a short-lived reference assigned into its field. The compiler accepts it, a Drop impl stashes the reference in a global, and the program later prints memory belonging to a different string. AddressSanitizer flags it as a stack-use-after-scope.",
+    "The reporter reproduced it on current nightly and on stable releases at least back to 1.85.0. The HN submission frames it as 11-year-old unsoundness bugs in the borrow checker. Either way, it's a reminder that soundness lives in the compiler, and even the strictest type system has seams."
+   ],
+   "authors": [
+    "jsnell"
+   ],
+   "source": "github",
+   "source_label": "rust-lang/rust on GitHub",
+   "source_url": "https://github.com/rust-lang/rust/issues/164250",
+   "discuss_url": "https://news.ycombinator.com/item?id=50069499",
+   "interests": [
+    "rust",
+    "systems"
+   ],
+   "lead": false,
+   "featured": false
+  },
+  {
+   "id": "vfmaddrnd231pd-phantom-instruction",
+   "kicker": "Systems",
+   "headline": "Who is vfmaddrnd231pd? An x86 instruction documented by Intel that no CPU runs",
+   "why_read": "A delightful bit of low-level detective work, with documented opcodes, missing intrinsics, and a #UD at the end.",
+   "body": [
+    "Intel's Software Developer's Manual documented VFMADDRND231PD, a fused multiply-add with per-instruction rounding control that would make rounding-sensitive algorithms much faster without AVX-512. purplesyringa went looking: the GNU assembler doesn't recognize it, the documented intrinsics are missing from both Clang and ICC, and its opcode uses a DDS notation that appears nowhere else in the manual.",
+    "Hand-assembling it on a Haswell that supports FMA raises #UD, an undefined instruction. The 2024 SDM documents it, and the 2026 edition quietly drops it. The best guess is that Intel planned it, pulled it from silicon at the last minute, and never cleaned up the docs."
+   ],
+   "authors": [
+    "purplesyringa"
+   ],
+   "source": "hn",
+   "source_label": "purplesyringa's blog via HN",
+   "source_url": "https://purplesyringa.moe/blog/who-is-vfmaddrnd231pd/",
+   "discuss_url": "https://news.ycombinator.com/item?id=50063138",
+   "interests": [
+    "systems",
+    "hardware"
+   ],
+   "lead": false,
+   "featured": false
+  },
+  {
+   "id": "sre-percentiles-pizza",
+   "kicker": "DevOps",
+   "headline": "P50, P95, and P99 explained with pizza delivery",
+   "why_read": "You retweeted it. It's the analogy to hand the next engineer who reports average latency as if it means anything.",
+   "body": [
+    "@livingdevops claims most SREs don't really understand latency percentiles, then explains with Domino's: a store promises 30-minute delivery and delivers 5,000 orders a day. P50 means 2,500 pizzas arrived in 30 minutes or less, which says nothing about the other half.",
+    "Running the same logic out to P95 and P99 shows where the angry customers live. At 5,000 orders a day, even 1% is 50 people a day with cold pizza, which is why tail latency, not the median, is what wrecks user experience at scale."
+   ],
+   "authors": [
+    "@livingdevops"
+   ],
+   "source": "x",
+   "source_label": "@livingdevops on X",
+   "source_url": "https://x.com/livingdevops/status/2109488478279139329",
+   "discuss_url": "https://x.com/livingdevops/status/2109488478279139329",
+   "interests": [
+    "devops",
+    "systems"
+   ],
+   "lead": false,
+   "featured": false
+  },
+  {
+   "id": "wifi7-router-sdr",
+   "kicker": "Hardware",
+   "headline": "Custom firmware turns a Wi-Fi 7 router into a 320 Msps software-defined radio receiver",
+   "why_read": "Reverse engineering at its finest: a consumer router's radio rebuilt into wideband lab gear with zero vendor code.",
+   "body": [
+    "The w1700k-sdr project turns a Gemtek W1700K Wi-Fi 7 router into a wideband receiver. Its MediaTek MT7996 radio captures raw 14-bit IQ at up to 320 million samples per second across 2.4, 5, and 6 GHz, and the Airoha AN7581 SoC streams the samples over 10 GbE to a Linux host that shows a live spectrum and waterfall in the browser.",
+    "The radio runs only the project's own firmware, built without MediaTek code. It brings the chip up from a cold power-on using initialization and calibration decoded register by register from a trace of MediaTek's own firmware. The tuner isn't limited to Wi-Fi channels and can lock to any frequency on its synthesizer's grid, retuning mid-stream in about a millisecond."
+   ],
+   "authors": [
+    "h0m3us3r"
+   ],
+   "source": "github",
+   "source_label": "GitHub",
+   "source_url": "https://github.com/h0m3us3r/w1700k-sdr",
+   "discuss_url": "https://news.ycombinator.com/item?id=50055593",
+   "interests": [
+    "hardware",
+    "radio"
+   ],
+   "lead": false,
+   "featured": false
+  },
+  {
+   "id": "ledger-wallets-secret-esim",
+   "kicker": "Security",
+   "headline": "Tampered Ledger wallets with a hidden LTE modem and eSIM leaked seed phrases, costing about $100M",
+   "why_read": "A supply-chain attack that leaves the secure element alone and simply reads the screen. Threat models fail at the edges.",
+   "body": [
+    "heise reports that attackers modified apparently genuine Ledger Nano X hardware wallets and sold them to buyers, with losses of around $100 million in crypto. Per an analysis by Tibane Labs, they left the Secure Element untouched and added a chip that intercepts the link from the Secure Element to the screen, recognizing the seed phrase characters as they're displayed.",
+    "Because the wallets work offline, the attackers also fit a tiny LTE modem, an eSIM, and an antenna, powered by the wallet's own battery, to send the seed phrase home over the cellular network. The lesson is old but sharp: buy security hardware only from the manufacturer, and assume the display path is part of the attack surface."
+   ],
+   "authors": [
+    "heise online"
+   ],
+   "source": "hn",
+   "source_label": "heise online via HN",
+   "source_url": "https://www.heise.de/en/news/Crypto-thieves-sell-hardware-wallets-with-secret-eSIM-11485188.html",
+   "discuss_url": "https://news.ycombinator.com/item?id=50068508",
+   "interests": [
+    "security",
+    "crypto"
+   ],
+   "lead": false,
+   "featured": false
+  },
+  {
+   "id": "tesla-fsd-99-percent-miles",
+   "kicker": "Tesla",
+   "headline": "Tesla owners post 99.9% of their miles on FSD, as unsupervised Cybercabs fill Austin at night",
+   "why_read": "Your hometown robotaxi story keeps compounding: you retweeted Sawyer Merritt's night spotting of unsupervised Cybercabs giving rides in Austin.",
+   "body": [
+    "Per the X news summary, Tesla owners are sharing screenshots of extreme Full Self-Driving use, including one who logged 20,521 of 20,537 miles autonomously, with a 560-mile streak. Some say they no longer know anyone who drives manually, while others say FSD can't replace the joy of driving, and safety comparisons remain contested.",
+    "On the robotaxi side, Sawyer Merritt posted Monday night that Cybercabs were out in Austin, all unsupervised and giving rides. Another trending clip showed six friends booking a convoy of gold Cybercabs for dinner. It's the same 300-plus Austin fleet from Monday's lead, now part of everyday nightlife."
+   ],
+   "authors": [
+    "Sawyer Merritt"
+   ],
+   "source": "x",
+   "source_label": "X News",
+   "source_url": "https://x.com/i/trending/2109331932916187417",
+   "discuss_url": "https://x.com/SawyerMerritt/status/2109851642250309788",
+   "interests": [
+    "tesla",
+    "robotaxi",
+    "austin"
+   ],
+   "lead": false,
+   "featured": false
+  },
+  {
+   "id": "plug-in-balcony-solar",
+   "kicker": "Energy",
+   "headline": "Plug-in balcony solar is spreading across U.S. states, with California the latest to legalize it",
+   "why_read": "Energy tech you can buy and plug in yourself. A very Texas question follows: when does Austin get it?",
+   "body": [
+    "National Geographic reports that plug-in solar, typically one to three panels with a small inverter that plugs into a wall outlet, is spreading quickly. Utah legalized it first in spring 2025, and Colorado, Connecticut, Maine, Maryland, New Hampshire, New Jersey, Vermont, Virginia, and now California have followed. New York's bill awaits the governor's signature, and nearly two dozen other states have introduced bills.",
+    "Unlike rooftop systems, the power stays in the home, typically covering 10 to 30 percent of an average home's use according to Utah Clean Energy's Jennifer Eden. Germany has installed more than a million units in the past few years, and IKEA sells kits there."
+   ],
+   "authors": [
+    "National Geographic"
+   ],
+   "source": "hn",
+   "source_label": "National Geographic via HN",
+   "source_url": "https://www.nationalgeographic.com/environment/article/balcony-plug-in-solar-panels-renewable-energy",
+   "discuss_url": "https://news.ycombinator.com/item?id=50056822",
    "interests": [
     "energy"
    ],
@@ -399,299 +632,69 @@
    "featured": false
   },
   {
-   "id": "general-fusion-1-kev",
-   "kicker": "Energy",
-   "headline": "General Fusion and UKAEA push a magnetized target fusion machine past 1 keV",
-   "why_read": "Physics plus energy tech: a fusion approach that skips giant lasers and superconducting magnets just cleared a key temperature bar.",
+   "id": "mit-ingestible-paper-battery",
+   "kicker": "Science",
+   "headline": "MIT's swallowable paper battery powered a wireless smart pill inside pigs for three days",
+   "why_read": "You bookmarked it from IEEE Spectrum. It's a clever piece of materials chemistry that solves a real problem for ingestible electronics.",
    "body": [
-    "The UK Atomic Energy Authority and General Fusion say their LM26 demonstration machine reached electron temperatures of about 1.1 keV, more than 12 million degrees Celsius, using magnetized target fusion compression. UKAEA designed the Thomson scattering diagnostics that measured it.",
-    "They call it the first time a magnetized target fusion device has hit 1 keV with low-speed compression over milliseconds. The paper was submitted for peer review on October 8, so it's a milestone, not yet a verdict."
+    "Giovanni Traverso's MIT team built a biodegradable paper battery with magnesium and molybdenum trioxide electrodes, bound with cellulose nanofibrils instead of bulky adhesives, and a biodegradable ionic liquid gel electrolyte based on choline chloride and lactic acid. The work was published September 21 in Nature Chemical Engineering.",
+    "In live pigs' stomachs the battery lasted three days while powering a wireless RFID system, enough for meter-scale wireless communication and continuous electrical stimulation, Traverso says. Conventional alkaline and lithium-ion cells can be deadly if they leak inside the body, which is why smart pills have needed a safe power source."
    ],
    "authors": [
-    "Isla King"
-   ],
-   "source": "web",
-   "source_label": "The Intelligent",
-   "source_url": "https://theintelligent.co.uk/science/2026/ukaea-and-general-fusion-reach-key-fusion-temperature-milestone",
-   "discuss_url": "https://theintelligent.co.uk/science/2026/ukaea-and-general-fusion-reach-key-fusion-temperature-milestone",
-   "interests": [
-    "energy",
-    "physics"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "thorium-nuclear-clock",
-   "kicker": "Physics",
-   "headline": "A self-stabilizing thorium nuclear clock keeps time to about one second in 30 million years",
-   "why_read": "Pure physics delight: a clock that ticks on an atomic nucleus instead of electrons, now able to correct its own laser drift.",
-   "body": [
-    "Researchers at TU Wien built the first nuclear clock that automatically corrects shifts in its laser frequency, using thorium nuclei in a crystal as the reference. It ran stably for more than 24 hours, with precision around one part in 10 to the 15th.",
-    "Thorsten Schumm says it doesn't yet match the best optical atomic clocks, but for a first prototype it's a fantastic result. Nuclear transitions are far less sensitive to outside noise, which is why physicists expect them to beat today's best clocks eventually."
-   ],
-   "authors": [
-    "SciTechDaily"
-   ],
-   "source": "web",
-   "source_label": "SciTechDaily",
-   "source_url": "https://scitechdaily.com/scientists-create-a-nuclear-clock-so-precise-it-barely-loses-a-second-in-30-million-years/",
-   "discuss_url": "https://scitechdaily.com/scientists-create-a-nuclear-clock-so-precise-it-barely-loses-a-second-in-30-million-years/",
-   "interests": [
-    "physics",
-    "science"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "grok-bot-shopping-musk",
-   "kicker": "Grok",
-   "headline": "Musk: Grok Bot can research the best prices and buy things for you",
-   "why_read": "A feature you can use in your own fleet, with the approval step that keeps it safe, and a cautionary tale about screenshots.",
-   "body": [
-    "Musk posted Sunday that Grok Bot can research the best prices and buy things, quoting Teslaconomics, who says he just texts his bot what he wants and gets a receipt back. TSN points out the feature dates from August 28: you connect a Link wallet, approve every spend request, and the bot gets a single-use card for each payment.",
-    "The X news summary adds that a Musk demo screenshot accidentally showed addresses, order numbers, and partial card details, which set off warnings about pasting card photos into chats. The approval flow is the safer path."
-   ],
-   "authors": [
-    "TSN"
-   ],
-   "source": "web",
-   "source_label": "TSN",
-   "source_url": "https://tsnmedia.org/musk-says-grok-bot-can-research-best-prices-and-buy-things-august-feature-spend-approval-explained/",
-   "discuss_url": "https://x.com/i/trending/2109441781481799946",
-   "interests": [
-    "grok",
-    "agents",
-    "security"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "gergely-cursor-spacex-hiring",
-   "kicker": "AI Coding",
-   "headline": "Gergely Orosz asks why top engineers would join Cursor now that it's part of SpaceX",
-   "why_read": "You replied to this one and tagged the Cursor folks to respond, so it's a live thread in your corner of X.",
-   "body": [
-    "Gergely Orosz wrote that the Cursor team is very talented, but questioned why anyone with offers from Anthropic, OpenAI, or Google DeepMind would choose SpaceX, citing how Musk companies treat engineers. He argued it will be hard to attract top people who weren't acqui-hired.",
-    "You replied asking poteto, mattyp, and benjitaylor to respond. It's a fair question to put to the people who made the move, and the answers will say a lot about the merged company's culture."
-   ],
-   "authors": [
-    "Gergely Orosz"
+    "IEEE Spectrum"
    ],
    "source": "x",
-   "source_label": "@GergelyOrosz on X",
-   "source_url": "https://x.com/GergelyOrosz/status/2109393949869977968",
-   "discuss_url": "https://x.com/indrayam/status/2109492671383306560",
+   "source_label": "@IEEESpectrum on X",
+   "source_url": "https://spectrum.ieee.org/smart-pills-ingestible-biodegradable-battery",
+   "discuss_url": "https://x.com/IEEESpectrum/status/2109728390794060177",
    "interests": [
-    "coding-tools",
-    "careers"
+    "science",
+    "health"
    ],
    "lead": false,
    "featured": false
   },
   {
-   "id": "tailscale-runner-fleet",
-   "kicker": "DevOps",
-   "headline": "Aaron Francis open-sources a monitor for self-hosted GitHub runners across a Tailscale network",
-   "why_read": "A small, forkable DevOps tool you retweeted, squarely in your CI platform world.",
+   "id": "ukraine-yandex-bots-decline",
+   "kicker": "Internet",
+   "headline": "After Ukrainian strikes on Yandex data centers, automated activity online reportedly dropped",
+   "why_read": "You retweeted this twice late Monday. Whatever you make of the war, it's a striking natural experiment about where the bots live.",
    "body": [
-    "Aaron Francis shared fleet, a tool to monitor self-hosted GitHub Actions runners across your Tailscale network. He says it's completely vibe coded for his own use case, and invites people to fork and modify it.",
-    "It's a nice example of the new normal: a personal ops dashboard that used to be a weekend project is now an afternoon with an agent, and published for others to adapt."
+    "unusual_whales, citing Euronews, reported that Ukrainian strikes on data centers of the Russian tech giant Yandex were followed by a dramatic decline in automated online activity, particularly on Reddit. A clip shared by Kate Bohuslavska quotes President Zelenskyy saying that once the strikes reached Yandex data centers, it became a little easier to breathe on social media, with less hate, less division, and fewer provocations because there were fewer bots.",
+    "These are claims, not a published measurement, so treat the effect size with care. But if bot traffic really tracks physical infrastructure that closely, it says something uncomfortable about how much of the online argument is machine-generated."
    ],
    "authors": [
-    "Aaron Francis"
-   ],
-   "source": "github",
-   "source_label": "aarondfrancis/fleet on GitHub",
-   "source_url": "https://github.com/aarondfrancis/fleet",
-   "discuss_url": "https://x.com/indrayam/status/2109486680097095747",
-   "interests": [
-    "devops",
-    "coding-tools"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "token-prices-gpu-rentals",
-   "kicker": "AI Infra",
-   "headline": "Token prices fall, GPU rental prices rise: Jevons paradox shows up in the data",
-   "why_read": "One chart-sized idea that explains why cheaper AI means more compute demand, not less.",
-   "body": [
-    "Per the X news summary, Gavin Baker pointed out that the Silicon Data token index peaked on May 31, and since then B300 GPU rentals rose 38 percent and B200s 10 percent. Cheaper tokens spark more usage in apps and agents, which drives more compute demand.",
-    "Open-weight models widen the buyer base to self-hosters and Chinese firms, sustaining demand. Others warn that falling spot prices could still turn bearish, much like 1990s fiber overbuild."
-   ],
-   "authors": [
-    "X News"
+    "unusual_whales"
    ],
    "source": "x",
-   "source_label": "X News",
-   "source_url": "https://x.com/i/trending/2109301681959907337",
-   "discuss_url": "https://x.com/i/trending/2109301681959907337",
+   "source_label": "@unusual_whales on X",
+   "source_url": "https://x.com/unusual_whales/status/2109684604504555830",
+   "discuss_url": "https://x.com/BohuslavskaKate/status/2109678245905879249",
    "interests": [
-    "ai-infra",
-    "markets"
+    "internet"
    ],
    "lead": false,
    "featured": false
   },
   {
-   "id": "micron-35b-buyback",
-   "kicker": "Chips",
-   "headline": "Micron shares jump on a $35 billion buyback and a $3,000 price target",
-   "why_read": "The memory crunch keeps showing up as money; RAM is the quiet bottleneck behind every agent you run.",
+   "id": "adult-friendships-life",
+   "kicker": "Love & Laughter",
+   "headline": "Adult friendships, summed up in four sentences",
+   "why_read": "A small dose of kindness from your bookmarks: the friends who still count even when you only talk every few months.",
    "body": [
-    "The X news summary says Micron's latest 10-K revealed a board-authorized $35.16 billion repurchase program, set to accelerate after December 9 when CHIPS Act restrictions lift. D.A. Davidson's Gil Luria raised his target to a Street-high $3,000, citing memory shortages through 2028.",
-    "Musk's comment that RAM scarcity is AI's core challenge added fuel. Memory has a long boom-and-bust history, which bulls argue is different this time because AI demand is structural."
+    "\"Adult friendships are basically like… I'm alive. I love you. Life is beating my ass. Talk soon.\" That's the entire post, and it doesn't need more.",
+    "Another bookmark from the same pile of laughs: Enisco's line, \"We used to copy and paste the code directly from the ai chatbot,\" said like it was the old days, which in agent years it was."
    ],
    "authors": [
-    "X News"
+    "@8WithaTiara"
    ],
    "source": "x",
-   "source_label": "X News",
-   "source_url": "https://x.com/i/trending/2108980767267147885",
-   "discuss_url": "https://x.com/i/trending/2108980767267147885",
+   "source_label": "@8WithaTiara on X",
+   "source_url": "https://x.com/8WithaTiara/status/2109661379233825068",
+   "discuss_url": "https://x.com/enisco/status/2109274787935613092",
    "interests": [
-    "chips",
-    "markets"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "amazon-decart-7b",
-   "kicker": "AI Infra",
-   "headline": "Amazon reportedly in talks to buy Decart for $7 billion to boost its Trainium chips",
-   "why_read": "Another hyperscaler move to loosen Nvidia's grip, through software that makes switching chips easy.",
-   "body": [
-    "Per the X news summary, Decart, founded in 2023 by Israeli engineers, builds tools that let developers move between AI chips and real-time generative video and world models. Its optimizations reportedly run especially well on Amazon's Trainium chips.",
-    "A deal isn't certain, but it fits Amazon's push to own more of the AI stack. The strategic logic is the same as Nvidia's investments: whoever controls the software layer steers which silicon gets used."
-   ],
-   "authors": [
-    "X News"
-   ],
-   "source": "x",
-   "source_label": "X News",
-   "source_url": "https://x.com/i/trending/2109394351285805517",
-   "discuss_url": "https://x.com/i/trending/2109394351285805517",
-   "interests": [
-    "ai-infra",
-    "chips"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "meta-muse-wang",
-   "kicker": "Agents",
-   "headline": "Alexandr Wang on how a small team built Meta's Muse agent in seven months",
-   "why_read": "A behind-the-scenes on building a consumer agent fast, useful context for anyone running small agent teams.",
-   "body": [
-    "The X news summary says Meta's Chief AI Officer Alexandr Wang told David Senra on an October 11 podcast that a small focused team built Muse, Meta's personal agent, in seven months. Muse launched September 8 and handles tasks like booking appointments inside a secure virtual machine.",
-    "Wang credited a clear product vision from Nat Friedman for avoiding bloated team dynamics, and said he wrote the launch memes himself."
-   ],
-   "authors": [
-    "X News"
-   ],
-   "source": "x",
-   "source_label": "X News",
-   "source_url": "https://x.com/i/trending/2109360590439469091",
-   "discuss_url": "https://x.com/i/trending/2109360590439469091",
-   "interests": [
-    "agents",
-    "ai"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "glm-5-3-flash-dgx-sparks",
-   "kicker": "Open Source LLMs",
-   "headline": "GLM-5.3-Flash hits 222 tokens per second on four DGX Sparks",
-   "why_read": "Local inference of a big open-weight model at real speeds, the kind of setup the LocalLLaMA crowd lives for.",
-   "body": [
-    "Per the X news summary, community benchmarks of Z.ai's 320-billion-parameter GLM-5.3-Flash on four switchless DGX Sparks show 95 tokens per second on a single stream, 163 with four streams, and 222 with eight. The model supports a 1-million-token context and image and video inputs.",
-    "Skeptics point to roughly $20,000 of hardware versus cheap cloud runs. Fans counter with privacy, no rate limits, and full control, which is exactly the enterprise local-AI tradeoff."
-   ],
-   "authors": [
-    "X News"
-   ],
-   "source": "x",
-   "source_label": "X News",
-   "source_url": "https://x.com/i/trending/2109074410191655369",
-   "discuss_url": "https://x.com/i/trending/2109074410191655369",
-   "interests": [
-    "open-source",
-    "local-ai"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "agent-cli-week-oct-11",
-   "kicker": "AI Coding",
-   "headline": "This week in Claude Code and Codex: permission rules that were silently skipped got fixed",
-   "why_read": "If your agents rely on deny rules or hooks for safety, this is the week to update.",
-   "body": [
-    "The weekly roundup flags that Claude Code fixed Bash deny and ask rules being skipped when a command had an environment-variable prefix, plus a permission bypass for UNC-path file reads. On the Codex side, GPT-6.1 Sol is now the default model.",
-    "The bigger lesson for platform teams: settings you think block an action may not, so test your guardrails with adversarial commands rather than trusting the config file."
-   ],
-   "authors": [
-    "AI Coding Guide"
-   ],
-   "source": "web",
-   "source_label": "DEV Community",
-   "source_url": "https://dev.to/aicoding-guide/this-week-in-claude-code-codex-and-gemini-cli-week-of-october-11-2026-2k6d",
-   "discuss_url": "https://dev.to/aicoding-guide/this-week-in-claude-code-codex-and-gemini-cli-week-of-october-11-2026-2k6d",
-   "interests": [
-    "coding-tools",
-    "security"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "dog-sofa-enthusiasm",
-   "kicker": "Humor",
-   "headline": "Every dog owner knows this one: getting off the sofa is an event",
-   "why_read": "A late-night retweet any wire fox terrier household will recognize.",
-   "body": [
-    "kiesha9i's post sums it up: you get up from the sofa for any reason, and your dog treats it like the greatest adventure of the day.",
-    "No lessons here, just a laugh, and squarely in the love and laughter part of your pinned post."
-   ],
-   "authors": [
-    "kiesha9i"
-   ],
-   "source": "x",
-   "source_label": "@kiesha9i on X",
-   "source_url": "https://x.com/kiesha9i/status/2109252356529656178",
-   "discuss_url": "https://x.com/indrayam/status/2109488463817183291",
-   "interests": [
-    "humor"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "dhh-x-cheerful",
-   "kicker": "Culture",
-   "headline": "DHH agrees with Gruber: X is a remarkably friendly and cheerful place for technologists",
-   "why_read": "You retweeted both DHH posts last night; a short read on why the tech optimist crowd is back on X.",
-   "body": [
-    "DHH quoted Daring Fireball's line that \"the culture on X today is remarkably friendly and inclusive. It is a cheerful place,\" calling X the place to be if you genuinely like technology and progress. In a second post he embraced the term \"tech bros\" as being his brother's keeper.",
-    "John Gruber's original piece is the longer read, and it's worth seeing his reasoning in full."
-   ],
-   "authors": [
-    "DHH"
-   ],
-   "source": "x",
-   "source_label": "@dhh on X",
-   "source_url": "https://x.com/dhh/status/2109454544459772218",
-   "discuss_url": "https://x.com/indrayam/status/2109496528142307477",
-   "interests": [
-    "culture"
+    "humor",
+    "kindness"
    ],
    "lead": false,
    "featured": false
