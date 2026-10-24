@@ -1,710 +1,695 @@
 {
- "date": "2026-10-23",
- "weekday": "Friday",
- "title": "The Daily Diff",
- "stories": [
-  {
-   "id": "anthropic-formal-verification-at-scale",
-   "kicker": "Top Story",
-   "headline": "Claude proved memory-safety properties at the RISC-V assembly level for 123 open-source libraries",
-   "why_read": "AI Top Story: after a month of AI finding bugs faster than anyone can patch them, this is the other half of the story, using models to prove code has no bugs of a given kind.",
-   "body": [
-    "Anthropic and its collaborator Theorem report that Claude produced formal proofs, fully autonomously, that programs from 123 real open-source libraries always exit normally without memory-safety errors or failed assertions, for every input under 64 MB and every modeled Linux OS response and memory layout. The proofs are about compiled RISC-V binaries, under stated assumptions such as a single-threaded static binary with a fixed memory budget. The trick for getting a spec was turning each project's existing fuzz and test harnesses into the rule that the test suite always passes.",
-    "For scale, the post recalls that the seL4 kernel took two person-years to write and 20 person-years to verify. While writing these proofs Claude also turned up bugs that had survived years of testing. Anthropic is publishing a subset of the proofs plus its RISC-V and OS semantics, Theorem is offering to run the pipeline on other open-source projects and has a Claude skill to get started, and the post covers side experiments on zlib and on proving a Rust-written Python interpreter equivalent to the original. It is on the HN front page with more than 200 comments."
-   ],
-   "authors": [
-    "Anthropic",
-    "Theorem"
-   ],
-   "source": "web",
-   "source_label": "anthropic.com",
-   "source_url": "https://www.anthropic.com/research/formal-verification",
-   "discuss_url": "https://news.ycombinator.com/item?id=50202217",
-   "interests": [
-    "ai",
-    "security",
-    "math"
-   ],
-   "lead": true,
-   "featured": false
-  },
-  {
-   "id": "tesla-fsd-attach-cybercab-deliveries",
-   "kicker": "Top Story",
-   "headline": "Three in four new Teslas in North America now ship with paid FSD, and Cybercab customer deliveries are targeted for December",
-   "why_read": "The software is now what people buy, and your Austin Robotaxi is apparently pricing above Uber and still filling up.",
-   "body": [
-    "Per X News summaries of Tesla's Q3 materials, more than 75 percent of new North American deliveries in Q3 included paid FSD, up from 55 percent the quarter before. Active FSD users reached 1.74 million, with an average of about 2,800 paid subscribers added per day and roughly $92 million a month in revenue. Elon Musk's line was that people are now buying FSD with a car attached.",
-    "On the call, VP Lars Moravy said Tesla aims to hand the first steering-wheel-free Cybercabs to customers by December 2026, starting small; Musk said most Cybercabs will be Tesla-owned for ride service, with customer-owned cars joining the fleet by mid-2027 and Dallas next after Austin. James Cat's post, which you reposted, argues Austin Robotaxi demand and supply are settling at a price above Uber, meaning riders choose to pay more. Chuck Cook, also in your reposts, says FSD v15 brings a huge jump in parameter count, new capabilities for extra operating hours, high-speed roads and marginal weather, and new mapping and navigation that drops the third-party map dependency."
-   ],
-   "authors": [
-    "X News",
-    "James Cat"
-   ],
-   "source": "x",
-   "source_label": "X News",
-   "source_url": "https://x.com/i/trending/2113457765092069578",
-   "discuss_url": "https://x.com/TSLAFanMtl/status/2113459614062727503",
-   "interests": [
-    "tesla",
-    "autonomy"
-   ],
-   "lead": true,
-   "featured": false
-  },
-  {
-   "id": "quad9-exits-france",
-   "kicker": "Internet",
-   "headline": "Quad9 will stop serving France on November 24 rather than block DNS answers for beIN",
-   "why_read": "The top story on HN, and a clean test case for whether a public resolver can stay neutral under copyright blocking orders.",
-   "body": [
-    "Quad9, the Swiss nonprofit public DNS resolver, says a French court ruled in favor of beIN and ordered it to block recursive resolution of domains the broadcaster says infringe its sports rights. The court cut the penalty from €580,000 to €1,000 a day, but Quad9 says it cannot comply long term without altering DNS answers, which it calls a neutral, passive service it refuses to lie about.",
-    "So it is withdrawing its free service for users located in France as of Tuesday, November 24. Quad9 notes it has no connection to the domains or their operators and argues the courts misunderstood how DNS works. The HN thread, past 1,200 points, is debating whether resolvers should be treated like ISPs or like phone books."
-   ],
-   "authors": [
-    "Quad9"
-   ],
-   "source": "web",
-   "source_label": "quad9.net",
-   "source_url": "https://quad9.net/news/blog/au-revoir-france/",
-   "discuss_url": "https://news.ycombinator.com/item?id=50195959",
-   "interests": [
-    "networking",
-    "privacy"
-   ],
-   "lead": false,
-   "featured": true
-  },
-  {
-   "id": "emudhra-exits-tls-certs",
-   "kicker": "PKI",
-   "headline": "eMudhra is leaving the public SSL/TLS certificate business after its CA incident",
-   "why_read": "You reposted the list of October incidents that included eMudhra. This is how that one ends.",
-   "body": [
-    "eMudhra's board voted to voluntarily withdraw from the global SSL/TLS certificate business. The chairman says the company revoked the affected CAs within 14 hours of discovery, that no end-entity certificates were issued from them, and that its infrastructure was not compromised. He says SSL/TLS is about 1 percent of revenue, rising compliance costs and free certificates have eroded the return, and the social media scrutiny was out of proportion to the business.",
-    "Its G1 RSA roots will keep serving customers through a transition worked out with browser root programs, affected customers will get free replacement certificates from partners, and revocation and status services will run until every issued certificate expires or is replaced. The HN thread, near 700 comments, is largely about how the browser root programs handled it."
-   ],
-   "authors": [
-    "eMudhra"
-   ],
-   "source": "web",
-   "source_label": "emudhra.com",
-   "source_url": "https://emudhra.com/en/press-release/emudhra-to-exit-global-ssl-tls-certificate-business",
-   "discuss_url": "https://news.ycombinator.com/item?id=50195110",
-   "interests": [
-    "security",
-    "networking"
-   ],
-   "lead": false,
-   "featured": true
-  },
-  {
-   "id": "google-agent-compute-engine",
-   "kicker": "Agent Infra",
-   "headline": "Google Cloud's Agent Compute Engine gives every agent its own hardware-isolated microVM",
-   "why_read": "You reposted it. It's the hyperscaler version of the box your own bots run on, and the design notes are worth a systems person's time.",
-   "body": [
-    "Richard Seroter announced Agent Compute Engine, a coming Google Cloud service that gives each AI agent its own hardware-isolated microVM with container-like speed and no credentials held inside the sandbox. Google says it already uses it internally. The engineering deep dive by distinguished engineers Ramanathan Venkatapathy and Rohit Jnagal frames it as the next shift after Borg containers, TPUs and the Titanium offload chips.",
-    "The motivating case was the Gemini goal of a personal cloud agent for every user, each needing a real computer with a filesystem, runtimes, a browser and network access. They split agents into a harness (the brain that calls the model) and a sandbox (the hands), and argue VMs are too slow to start and pause, containers don't isolate enough for coding agents that need root, and always-on VMs waste resources while agents wait between model steps. Target workloads include consumer agent surfaces, long-lived coding workspaces, large-scale RL and evals, and sandbox backends for Google services."
-   ],
-   "authors": [
-    "Richard Seroter",
-    "Google Cloud"
-   ],
-   "source": "web",
-   "source_label": "cloud.google.com",
-   "source_url": "https://cloud.google.com/blog/topics/ai-infrastructure/agent-compute-engine-deep-dive/",
-   "discuss_url": "https://x.com/rseroter/status/2113331802647449803",
-   "interests": [
-    "ai",
-    "agents",
-    "systems"
-   ],
-   "lead": false,
-   "featured": true
-  },
-  {
-   "id": "nvidia-openshell-agent-runtime",
-   "kicker": "Open Source",
-   "headline": "NVIDIA's OpenShell: a policy-enforced runtime for fleets of autonomous agents",
-   "why_read": "Same problem as Google's microVMs, but open source and something you could run yourself today.",
-   "body": [
-    "OpenShell describes itself as a safe, private runtime for fleets of autonomous AI agents. The idea is that agents are most useful when they can read files, install packages, call APIs and use credentials, so OpenShell lets you declare in a policy what each agent may touch and then enforces that, including instrumenting at the kernel level, instead of handing agents unrestricted access to data, secrets or the network.",
-    "The repository has about 1,850 commits and just moved to a 0.1.x line with a stable release cadence, new isolation primitives, a larger extension surface and new APIs, with an upgrade guide. It is mostly Rust with Python SDK pieces and ships as a snap and via an install script. It reached the HN front page with more than 400 points."
-   ],
-   "authors": [
-    "NVIDIA"
-   ],
-   "source": "github",
-   "source_label": "github.com/NVIDIA",
-   "source_url": "https://github.com/NVIDIA/OpenShell",
-   "discuss_url": "https://news.ycombinator.com/item?id=50198675",
-   "interests": [
-    "ai",
-    "agents",
-    "open-source"
-   ],
-   "lead": false,
-   "featured": true
-  },
-  {
-   "id": "grok-for-startups-partner-network",
-   "kicker": "Grok",
-   "headline": "SpaceXSI launches Grok for Startups and a 130-company Super Intelligence Partner Network",
-   "why_read": "It's the commercial push behind the Grok Bot and Grok Build tools you use daily.",
-   "body": [
-    "Per X News, SpaceXSI rolled out Grok for Startups on October 22: a shared credit balance across Grok, Grok Build, Grok Bot and the Grok API, sized for six to twelve months of real use, with 20 percent available right away and dollar-for-dollar matching for up to six months. Early users cited automating sales follow-ups, recruiting and reports, and turning feature requests into code with cloud agents.",
-    "Alongside it, the SpaceX Super Intelligence Partner Network launched with more than 130 companies including NVIDIA, Bain & Company and Databricks, plus a deal with Tech Mahindra to modernize software in banking, healthcare and other regulated industries. It follows the Q3 report in which the Super Intelligence segment brought in $7.56 billion."
-   ],
-   "authors": [
-    "X News"
-   ],
-   "source": "x",
-   "source_label": "X News",
-   "source_url": "https://x.com/i/trending/2113322636885303671",
-   "discuss_url": "https://x.com/i/trending/2113322636885303671",
-   "interests": [
-    "grok",
-    "ai"
-   ],
-   "lead": false,
-   "featured": true
-  },
-  {
-   "id": "ai-cve-surge-php-embargo",
-   "kicker": "Security",
-   "headline": "AI scanning has pushed new vulnerability reports past 10,000 a month, and the PHP embargo story shows the strain",
-   "why_read": "It ties together your October security reposts: disclosure processes built for human-speed bug finding are buckling.",
-   "body": [
-    "Per X News, newly reported vulnerabilities have climbed from 1,000 to 2,000 a month in prior years to more than 10,000 recently as AI systems scan legacy codebases at scale, with CVE counts roughly doubling year over year while exploited flaws grow more slowly. Researchers like Omar Khattab say they still haven't seen superhuman feats in the most prized areas, and many point out that good results depend on the person prompting and iterating.",
-    "On HN, petecooper posted an apology for breaking the embargo on this week's PHP RCEs, CVE-2026-109618 and CVE-2026-109619, saying his contacts had told him there was no embargo and he only meant to warn others who compile PHP from source. Commenters were kind, and one pointed to an AWS threat intelligence post saying the bugs were already leaked and being exploited before his post."
-   ],
-   "authors": [
-    "X News",
-    "petecooper"
-   ],
-   "source": "x",
-   "source_label": "X News",
-   "source_url": "https://x.com/i/trending/2113502090513269023",
-   "discuss_url": "https://news.ycombinator.com/item?id=50193416",
-   "interests": [
-    "security",
-    "ai"
-   ],
-   "lead": false,
-   "featured": true
-  },
-  {
-   "id": "cleanup-agents-tech-debt",
-   "kicker": "AI Coding",
-   "headline": "Run a few agents whose only job is deleting tech debt",
-   "why_read": "You reposted it, and it's a practical pattern to try on your own repos this week.",
-   "body": [
-    "Arpit Bhayani's tip: agents write code fast, so they also produce clutter fast, including dead code, near-duplicate helpers, unused imports, stale feature flags and comments that no longer match. Cleanup is work people rarely prioritize, so give it to dedicated cleanup agents.",
-    "His rules are to keep each agent narrow (one removes dead code, one merges duplicates, one fixes stale docs), keep each change to one small reviewable pull request, and let the test suite judge, since a cleanup is valid only if behavior is unchanged. A single make-it-better agent, he warns, will rewrite things it should leave alone. Deleting code is risky, but agents calling dead code because they think it's live is riskier."
-   ],
-   "authors": [
-    "Arpit Bhayani"
-   ],
-   "source": "x",
-   "source_label": "@arpit_bhayani on X",
-   "source_url": "https://x.com/arpit_bhayani/status/2113248748549947536",
-   "discuss_url": "https://x.com/arpit_bhayani/status/2113248748549947536",
-   "interests": [
-    "ai",
-    "agents"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "agent-harness-debate",
-   "kicker": "AI Coding",
-   "headline": "What is a harness, and does it still matter? Developers argue it out",
-   "why_read": "You reposted Theo and the opencode AGENTS.md rule; this is the conversation they belong to.",
-   "body": [
-    "X News sums up two days of debate: a harness is the layer that gives a model tools such as file edits and command execution, plus parsers and feedback loops, turning it into an agent. Theo explained it as the essential context-and-capabilities layer, Ramp described its in-house Laminar harness, and the trend is toward building your own for flexibility and observability. Skeptics say harness focus signals doubt in model progress; others cite tests where the same model costs and performs very differently, including 50 percent token savings.",
-    "One concrete harness rule you reposted via Dave Kiss, from opencode's AGENTS.md: before adding complexity for a speculative or very unlikely race or security edge case, explain the concrete failure mode, likelihood and complexity cost to the user and get their buy-in, and do not silently expand scope for theoretical robustness."
-   ],
-   "authors": [
-    "X News",
-    "Dave Kiss"
-   ],
-   "source": "x",
-   "source_label": "X News",
-   "source_url": "https://x.com/i/trending/2113341163344384328",
-   "discuss_url": "https://x.com/davekiss/status/2113363042247512161",
-   "interests": [
-    "ai",
-    "agents"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "verification-bottleneck-warp",
-   "kicker": "AI Coding",
-   "headline": "Verification is the bottleneck for coding agents, so Warp gives each one a computer and a highlight reel",
-   "why_read": "Two reposts from Warp engineers on a problem you hit with every bot you run: proving the agent's work actually works.",
-   "body": [
-    "Varoon Kodithala, citing Addy Osmani's view that verification is the biggest bottleneck for coding agents, says Warp built a computer-use tool for Warp Factories: every agent gets a computer to navigate the apps it built, take screenshots and recordings, and post them for human review. Three to four minutes of activity get edited down to about 15 stitched clips with cursor clicks and key presses, which he says has sharply cut time to merge.",
-    "Sathvik's companion post argues software factories should be configured as code: in Warp, the factory lives in a repo as markdown and YAML, so agents, automations, runners, benchmarks and custom model routers sit in one place and can be improved like any other code. Ryan Snodgrass, also in your reposts, describes the CI side: checks under two minutes in the PR, longer tests in the merge queue, and the deepest tests after merge to main."
-   ],
-   "authors": [
-    "Varoon Kodithala",
-    "sathvik"
-   ],
-   "source": "x",
-   "source_label": "@varoonkodithala on X",
-   "source_url": "https://x.com/varoonkodithala/status/2113386434086207875",
-   "discuss_url": "https://x.com/vikvang1/status/2113342891435208900",
-   "interests": [
-    "ai",
-    "agents",
-    "devops"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "skills-over-mcp-pstack",
-   "kicker": "Agent Skills",
-   "headline": "Skills over MCP can be personalized per user, and pstack shows what a skills methodology looks like",
-   "why_read": "Your bot fleet runs on skills; both posts you reposted are about where that layer is heading.",
-   "body": [
-    "Pamela Fox highlighted a point from David Soria Parra: when an authenticated MCP server ships skills, it can send down skills specific to the logged-in user, maybe even personalized to them, a benefit of skills-over-MCP she hadn't considered.",
-    "Chen Cheng's long notes on poteto's pstack, which you also reposted, read it as a methodology rather than 56 separate skills: first build a verification skill and feature map so agents can run and drive the app themselves, then route work through fixed flows, and only then add parallelism and auto-merge. He highlights making apps drivable via JSON-output CLIs with dry-run flags, preferring switchable prototypes over adversarial review of abstract plans, and a four-level order for fixing repeated mistakes: architecture first, then lint or tests, then skills or rules, with human review last."
-   ],
-   "authors": [
-    "Pamela Fox",
-    "Chen Cheng"
-   ],
-   "source": "x",
-   "source_label": "@pamelafox on X",
-   "source_url": "https://x.com/pamelafox/status/2113312927369626039",
-   "discuss_url": "https://x.com/chenchengpro/status/2113243170788278767",
-   "interests": [
-    "ai",
-    "agents"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "openai-forward-deployed-engineering",
-   "kicker": "AI at Work",
-   "headline": "OpenAI on forward deployed engineering: the job is making yourself obsolete every few months",
-   "why_read": "You reposted it. It's useful framing for anyone doing customer-facing AI engineering inside a large company.",
-   "body": [
-    "Tanay Jaipuria shared an OpenAI essay on what forward deployed engineering means there, summarizing it as a role that now involves making yourself obsolete every few months as the models absorb the work you were doing for customers.",
-    "The piece is on OpenAI's site. It lands in the same week OpenAI made its Decisions API generally available and expanded enterprise distribution through Google Cloud, so the FDE team is the human layer in that go-to-market."
-   ],
-   "authors": [
-    "Tanay Jaipuria",
-    "OpenAI"
-   ],
-   "source": "web",
-   "source_label": "openai.com",
-   "source_url": "https://openai.com/index/forward-deployed-engineering-means/",
-   "discuss_url": "https://x.com/tanayj/status/2113347908703760555",
-   "interests": [
-    "ai"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "ai-infra-stocks-selloff",
-   "kicker": "Markets",
-   "headline": "AI infrastructure stocks have been crushed for a month, and Jensen Huang says neocloud funding will sort itself out",
-   "why_read": "You reposted the damage list; here's the bull case being made at the same time.",
-   "body": [
-    "Shay Boloor's tally of the past month: Cipher down 57 percent, IREN down 48, Aehr down 47, Hut 8 down 39, CoreWeave down 38, Nebius down 36, Credo down 36, Arm down 36, Astera Labs down 33, Penguin down 32, TeraWulf down 32, Amkor down 31 and Intel down 31.",
-    "Per X News, Nvidia's Jensen Huang told investors that customer demand for neoclouds like Nebius will solve their capital shortages, and dismissed fears of a memory chip glut by 2029. Nebius just secured a $3.5 billion credit facility from Citi, backed by more than $40 billion in contracts from Microsoft and Meta."
-   ],
-   "authors": [
-    "Shay Boloor",
-    "X News"
-   ],
-   "source": "x",
-   "source_label": "@StockSavvyShay on X",
-   "source_url": "https://x.com/StockSavvyShay/status/2113289263676801195",
-   "discuss_url": "https://x.com/i/trending/2113227867316167161",
-   "interests": [
-    "markets",
-    "chips"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "ai-token-spend-vc-loop",
-   "kicker": "Markets",
-   "headline": "Most AI token spending traces back to venture money, per Apollo and Ramp data",
-   "why_read": "It's the sharpest number yet on who is actually paying for inference, and why a funding slowdown would hit the labs.",
-   "body": [
-    "Per X News, Apollo and Ramp data show the top 1 percent of AI token spenders, who make up most of the volume, are 80.4 percent VC-backed versus a 13.1 percent median, with Anthropic and OpenAI leading among US businesses. Chamath Palihapitiya estimates 70 to 75 cents of every token dollar traces back to venture funds.",
-    "Separately, the IMF warned of high valuations and about $1.4 trillion in circular financing, projecting a possible 1.1 percent drop in global GDP by 2028 if AI investment crashes, while many on X argue the constant warnings are themselves a sign there's no bubble."
-   ],
-   "authors": [
-    "X News"
-   ],
-   "source": "x",
-   "source_label": "X News",
-   "source_url": "https://x.com/i/trending/2113292880953438249",
-   "discuss_url": "https://x.com/i/trending/2113331934700978271",
-   "interests": [
-    "markets",
-    "ai"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "dwarkesh-semis-flashcards",
-   "kicker": "Chips",
-   "headline": "Dwarkesh Patel's semiconductor manufacturing flashcards",
-   "why_read": "You reposted it. An easy way to retain the fab details from his Intel episode.",
-   "body": [
-    "Dwarkesh Patel and his semiconductor tutor Will Michaels made a set of flashcards on chip manufacturing to go with the new Intel episode of his podcast, plus a further-reading list at the bottom of the page.",
-    "The site also has flashcard sets for his other technical episodes, including the one with Reiner Pope on LLM inference and Eric Jang on building AlphaGo from scratch."
-   ],
-   "authors": [
-    "Dwarkesh Patel"
-   ],
-   "source": "x",
-   "source_label": "@dwarkesh_sp on X",
-   "source_url": "https://x.com/dwarkesh_sp/status/2113340290631365026",
-   "discuss_url": "https://x.com/dwarkesh_sp/status/2113340290631365026",
-   "interests": [
-    "chips",
-    "learning"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "awesome-selfhosted",
-   "kicker": "Self-Hosting",
-   "headline": "Awesome Self-Hosted: a map for replacing SaaS with software you run yourself",
-   "why_read": "You reposted it, and it's the kind of list worth bookmarking for home lab weekends.",
-   "body": [
-    "Bilgin Ibryam pointed to awesome-selfhosted, a curated list of free software network services and web apps you can host on your own servers, spanning communication, media, storage, developer tools, analytics, automation and much more.",
-    "The GitHub repo has about 329,500 stars and 7,100 commits, with a browsable version at awesome-selfhosted.net and a separate list for non-free software."
-   ],
-   "authors": [
-    "Bilgin Ibryam"
-   ],
-   "source": "github",
-   "source_label": "github.com/awesome-selfhosted",
-   "source_url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
-   "discuss_url": "https://x.com/bibryam/status/2113201443813589460",
-   "interests": [
-    "open-source",
-    "systems"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "minimax-m3-1-flash-open",
-   "kicker": "Open Models",
-   "headline": "MiniMax opens the weights of M3.1 Flash, a 1M-context multimodal MoE",
-   "why_read": "A new open-weight model aimed at fast, cheap serving, with NVIDIA integrations day one.",
-   "body": [
-    "Per X News, MiniMax released open weights for M3.1 Flash, a mixture-of-experts model that handles text, images and video with a 1-million-token context window. It reports 76.2 on BankerToolBench and 82.2 on CyberGym, runs three times faster than M3 at a third of the cost, and is priced at $0.15 per million input tokens via API.",
-    "Early community tests show it building interactive 3D scenes from single prompts, and integrations from NVIDIA and others enable serving above 1,000 tokens per second."
-   ],
-   "authors": [
-    "X News"
-   ],
-   "source": "x",
-   "source_label": "X News",
-   "source_url": "https://x.com/i/trending/2113123833632694605",
-   "discuss_url": "https://x.com/i/trending/2113123833632694605",
-   "interests": [
-    "ai",
-    "open-source"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "oxr-document-parsing-model",
-   "kicker": "Open Models",
-   "headline": "OXR, a 1.3B open model, tops three document-parsing benchmarks",
-   "why_read": "Small, fast and useful for RAG pipelines: PDFs with tables and formulas into clean Markdown or JSON.",
-   "body": [
-    "Per X News, the SoMark team released OXR, a 1.3-billion-parameter open-source model that leads olmOCR-Bench (87.84), OmniDocBench (97.18) and DocParsingBench (87.76), processing about one page per second on a single NVIDIA RTX PRO 6000. It recognizes 13 element types including tables, formulas, code blocks, chemical structures and handwriting, and outputs Markdown or JSON with bounding boxes.",
-    "It was trained with a recursive self-improvement loop instead of manual labeling. Code, weights and a demo are on GitHub and Hugging Face, and a companion release, OvisOCR3, adds compact multimodal features."
-   ],
-   "authors": [
-    "X News"
-   ],
-   "source": "x",
-   "source_label": "X News",
-   "source_url": "https://x.com/i/trending/2113591099759776018",
-   "discuss_url": "https://x.com/i/trending/2112672207843541453",
-   "interests": [
-    "ai",
-    "open-source"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "deepseek-v4-1-flash-1017",
-   "kicker": "Open Models",
-   "headline": "DeepSeek V4.1 Flash 1017: an MIT-licensed model that runs locally and scores 78.1% on ARC-AGI-2",
-   "why_read": "Frontier-ish results on a 3090 or a Mac is exactly the open-model story you track.",
-   "body": [
-    "Per X News, DeepSeek's mid-October open-weight release runs on everyday hardware like RTX 3090s and Macs at dozens to hundreds of tokens per second. Reported results include 78.1 percent on ARC-AGI-2 at $0.16 per task and rediscovering 87.5 percent of a set of cybersecurity CVEs at $2.40 each.",
-    "It is MIT-licensed and available on Hugging Face and hosts including NEAR AI Cloud, with claims that it matches top models on quality at far lower cost and about 12 times the speed."
-   ],
-   "authors": [
-    "X News"
-   ],
-   "source": "x",
-   "source_label": "X News",
-   "source_url": "https://x.com/i/trending/2113232868709122324",
-   "discuss_url": "https://x.com/i/trending/2113232868709122324",
-   "interests": [
-    "ai",
-    "open-source"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "decision-models-api-jev-hype",
-   "kicker": "AI Platforms",
-   "headline": "OpenAI's Decisions API goes GA as one engineer dissects the Jev decision-model hype",
-   "why_read": "Decision models were all over your feed this week. Here's the product and the skeptic side by side.",
-   "body": [
-    "Per X News, OpenAI made its Decisions API generally available. Powered by GPT-6 Luna, it answers quick questions about text, images or data with probabilities, choices or scores, handles up to 400 questions per request, and starts at $0.10 per million input tokens. OpenAI also moved OpenResponses to the Linux Foundation, and Uber expanded Codex and ChatGPT Work to 30,000 employees.",
-    "Alex Ewerlöf's essay on the Jev hype cycle, which hit the HN front page, argues Jev is basically a general-purpose classifier that needs little training data, that calling it a decision model is a stretch since it can't see or reason, and that the idea of non-autoregressive decision models goes back more than a year. He says Jev isn't dead but its hype is, while decision models as a category are rising."
-   ],
-   "authors": [
-    "X News",
-    "Alex Ewerlöf"
-   ],
-   "source": "x",
-   "source_label": "X News",
-   "source_url": "https://x.com/i/trending/2113381901587411361",
-   "discuss_url": "https://news.ycombinator.com/item?id=50206361",
-   "interests": [
-    "ai"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "fusion-power-semis-chips-act",
-   "kicker": "Energy",
-   "headline": "Commerce offers up to $389M in CHIPS funding for power semiconductors for fusion and AI data centers",
-   "why_read": "Fusion and chips in one story, and Helion and Commonwealth Fusion are both on the list.",
-   "body": [
-    "Per X News, the Commerce Department issued letters of intent for up to $389 million in CHIPS Act funding for advanced power semiconductors. Helion would get up to $175 million for high-voltage chips for its pulsed fusion systems in Washington and Vermont, alongside $50 million in private investment and more than 100 jobs. Commonwealth Fusion Systems would get up to $85 million for plasma heating and radiation-hardened components.",
-    "Vertical Semiconductor and Sibelco round it out with awards for AI-efficient power chips and high-purity quartz. The goal is to onshore critical components and ease fusion bottlenecks as data center electricity demand climbs."
-   ],
-   "authors": [
-    "X News"
-   ],
-   "source": "x",
-   "source_label": "X News",
-   "source_url": "https://x.com/i/trending/2113325561112105410",
-   "discuss_url": "https://x.com/i/trending/2113325561112105410",
-   "interests": [
-    "energy",
-    "chips"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "schrodinger-lost-manuscript",
-   "kicker": "Physics",
-   "headline": "A lost Schrödinger manuscript shows he backed indeterminism, and before quantum mechanics existed",
-   "why_read": "A short history-of-physics find that flips the usual story about Schrödinger and randomness.",
-   "body": [
-    "ScienceAlert reports that physics historian Flavio Del Santo of the University of Geneva found a three-page Schrödinger manuscript that sat unpublished in an Austrian library for more than 80 years. It is a contribution to the long debate over whether the universe is fundamentally random or governed by hidden variables.",
-    "Rather than the discomfort with quantum randomness he is often portrayed as having, Schrödinger argued that some aspects of the universe cannot be predicted, a view he held even before quantum theory emerged in the 1920s. \"The strongest plea in favor of indeterminism is older than quantum mechanics,\" he wrote."
-   ],
-   "authors": [
-    "Michelle Starr"
-   ],
-   "source": "web",
-   "source_label": "sciencealert.com",
-   "source_url": "https://www.sciencealert.com/a-lost-schrdinger-manuscript-reveals-a-surprising-twist-in-quantum-physics",
-   "discuss_url": "https://news.ycombinator.com/item?id=50192396",
-   "interests": [
-    "physics",
-    "science"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "alien-space-of-science",
-   "kicker": "Research",
-   "headline": "Sampling the alien space of science: AI ideas no existing research community would think of",
-   "why_read": "A clever way to use AI for ideas that complement researchers instead of recombining what's already crowded.",
-   "body": [
-    "A paper from Artiles, Schölkopf, Larochelle, Goyal, Rahaman and others argues that discovery is limited not just by what's true but by what's cognitively available to researchers, and that LLMs inherit that bias by recombining dense areas of the literature. Their method breaks papers into idea atoms, scores combinations for scientific coherence, and separately scores whether any existing author community is positioned to produce them, then picks coherent but unlikely combinations.",
-    "On 16,068 peer-reviewed LLM papers, the sampler produced more diverse research portfolios than frontier LLM baselines while matching or beating per-idea quality in blind evaluations. Using only pre-2025 data, picking under 1 percent of candidates recovered 2025 combinations at 35.9 times chance."
-   ],
-   "authors": [
-    "Alejandro H. Artiles",
-    "Nasim Rahaman"
-   ],
-   "source": "web",
-   "source_label": "arxiv.org",
-   "source_url": "https://arxiv.org/abs/2603.01092",
-   "discuss_url": "https://news.ycombinator.com/item?id=50195002",
-   "interests": [
-    "ai",
-    "science"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "dijkstra-natural-language-programming",
-   "kicker": "Classic",
-   "headline": "Dijkstra in 1978: On the foolishness of \"natural language programming\"",
-   "why_read": "Half the AI-coding debate on your timeline is relitigating this essay, so it's worth reading the original.",
-   "body": [
-    "EWD 667 argues that the care and accuracy of formal symbolism is not an obstacle to programming but the point. Dijkstra recounts how high-level languages improved things by turning many silly mistakes into error messages instead of wrong answers, and questions the hope that machines instructed in our native tongues would make life easier.",
-    "His argument is that choosing an interface is not just dividing a fixed amount of labor between person and machine; natural language's ambiguity moves the burden rather than removing it. It resurfaced on the HN front page with more than 100 comments in the middle of this week's arguments about AI writing production code."
-   ],
-   "authors": [
-    "Edsger W. Dijkstra"
-   ],
-   "source": "web",
-   "source_label": "cs.utexas.edu",
-   "source_url": "https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html",
-   "discuss_url": "https://news.ycombinator.com/item?id=50203161",
-   "interests": [
-    "programming",
-    "ai"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "docker-is-weird",
-   "kicker": "Containers",
-   "headline": "Docker is weird: notes from someone writing their own container runtime",
-   "why_read": "A friendly refresher on what containers really are, from your Unix and DevOps home turf.",
-   "body": [
-    "The author is building a container runtime for fun and lists what surprised them: containers are just processes with restrictions you can find in /proc, made from several kernel features (namespaces, cgroups and networking pieces) rather than one container feature, and images are folders that get chroot or pivot_root applied.",
-    "The best section is on why Go is awkward for runc: Go's runtime is multi-threaded and has no real fork, so runc runs a C module before Go initializes to make single-threaded syscalls, and re-execs /proc/self/exe with a special argument to approximate fork. It also notes how easy it is to forget that the Docker daemon traditionally runs as root."
-   ],
-   "authors": [
-    "Code and Cake"
-   ],
-   "source": "web",
-   "source_label": "codeandcake.dev",
-   "source_url": "https://codeandcake.dev/posts/2026-10-22-docker-is-weird",
-   "discuss_url": "https://news.ycombinator.com/item?id=50202681",
-   "interests": [
-    "systems",
-    "devops"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "ask-hn-openai-100-companies",
-   "kicker": "Discussion",
-   "headline": "Ask HN: if the models are so good, why don't the labs just start 100 companies?",
-   "why_read": "A good thread on lab strategy that pairs with this week's VC token-spend data.",
-   "body": [
-    "The question: if frontier models are so capable, why sell tokens as the main business instead of building companies that use them, especially as token prices fall?",
-    "Top answers: the labs are moving into the app layer and even consulting; during a gold rush you sell shovels, which is why they're investing in custom silicon; and selling tokens through long-running agents is the only thing provably growing revenue right now, at a time when capital is pricier than in the 2010s. The thread has nearly 200 comments."
-   ],
-   "authors": [
-    "ex-aws-dude"
-   ],
-   "source": "hn",
-   "source_label": "Hacker News",
-   "source_url": "https://news.ycombinator.com/item?id=50200997",
-   "discuss_url": "https://news.ycombinator.com/item?id=50200997",
-   "interests": [
-    "ai",
-    "markets"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "ai-models-same-take-on-humans",
-   "kicker": "AI",
-   "headline": "Ask any frontier model for a controversial take on humans and you get the same one",
-   "why_read": "A fun, slightly unnerving experiment: twelve models, ten labs, one answer.",
-   "body": [
-    "ModelCompare asked 12 models from ten labs in three countries for their most controversial take on humans, three times each, with no hedging. Every model gave the same take at least once, that people pick what their group believes and then invent reasons, and 7 of the 12 gave it every time.",
-    "Examples: GPT-6.1 Sol said humans are more loyal to belonging than to truth, Grok 4.7 said humans would rather be wrong together than right alone, and Gemini 4 Argon called consciousness a PR department. The irony that the models converged on a take about conformity is the HN thread's favorite point, at more than 450 comments."
-   ],
-   "authors": [
-    "ModelCompare"
-   ],
-   "source": "web",
-   "source_label": "modelcompare.ai",
-   "source_url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
-   "discuss_url": "https://news.ycombinator.com/item?id=50197313",
-   "interests": [
-    "ai"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "fable-hides-messages-in-images",
-   "kicker": "AI Research",
-   "headline": "How a frontier model hides secret messages in the SVG images it draws, and whether it can read them back",
-   "why_read": "A neat, concrete look at steganography by LLMs, which matters for agent monitoring.",
-   "body": [
-    "Researchers on LessWrong asked Claude Fable 5.1, at maximum reasoning, to hide each of 50 short messages in an SVG image, then gave screenshots to a fresh Fable instance with no source code and no agreed scheme. Fable converged on a few styles that encode each letter as a visual element, and 33 of the 50 images used heights, such as a row of stars or buildings whose height marks a letter's place in the alphabet.",
-    "Many of the images were decoded by the second instance; the authors also briefly compare GPT-6 Astra on the same task. The open question for safety teams is how easily models could pass messages that humans skim right past."
-   ],
-   "authors": [
-    "Nikita Kezin",
-    "James Chua"
-   ],
-   "source": "web",
-   "source_label": "lesswrong.com",
-   "source_url": "https://www.lesswrong.com/posts/WHEQps5PK8LrrcTAb/how-does-fable-5-1-hide-messages-in-images",
-   "discuss_url": "https://news.ycombinator.com/item?id=50201445",
-   "interests": [
-    "ai",
-    "security"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "ashlee-vance-india-hard-tech",
-   "kicker": "Hard Tech",
-   "headline": "Ashlee Vance on India's hard-tech wave, and why VCs should actually visit the factories",
-   "why_read": "You bookmarked his India story and reposted this follow-up, so here they are together.",
-   "body": [
-    "Ashlee Vance says Sriram Rajagopalan and Lachy Groom have managed to fund a hard-tech revolution in India that most people have missed, and that he is very bullish on Indian commercial space: it will take a decade, but India is the only country with a real chance of competing alongside the US and China.",
-    "In the follow-up you reposted, he says he was surprised to learn VCs often don't fly out to see the hardware companies they invest in. Having walked through many factories, he says he can usually tell within five minutes what's real, and that his tour of Airbound in India showed touches of an early Rocket Lab in organization and attention to detail."
-   ],
-   "authors": [
-    "Ashlee Vance"
-   ],
-   "source": "x",
-   "source_label": "@ashleevance on X",
-   "source_url": "https://x.com/ashleevance/status/2113361073760038948",
-   "discuss_url": "https://x.com/ashleevance/status/2113080943514951990",
-   "interests": [
-    "space",
-    "india"
-   ],
-   "lead": false,
-   "featured": false
-  }
- ]
+  "date": "2026-10-24",
+  "weekday": "Saturday",
+  "title": "The Daily Diff",
+  "stories": [
+    {
+      "id": "kimi-k3-1-pro-open-weights",
+      "kicker": "Top Story",
+      "headline": "Kimi K3.1 Pro lands as a 3T-class open-weight model with a 1M-token context, weights due by Nov 4",
+      "why_read": "AI Top Story: an open-weight model now sits within a point of Claude Opus 5.5 on Terminal-Bench 4.0, which is exactly the open-source-LLM race you track.",
+      "body": [
+        "Moonshot's Kimi team released K3.1 Pro, the first model in its K3.1 series, describing it as its most capable 3T-class open-weight model with a 1-million-token context window. A Highspeed variant runs 2 to 3 times faster. Both are live today on Kimi.ai, Kimi Work, Kimi Code, and the Kimi API, and the full weights are promised by November 4.",
+        "The headline number is coding: the blog reports 65.7% on Terminal-Bench 4.0, ahead of GPT-6 Astra at 58.2% and just behind Claude Opus 5.5 at 66.4%. The team credits much larger post-training compute and an RL stack rebuilt end to end, from long-context inference to sandbox infrastructure and rollout scheduling. It was the top AI story on Hacker News overnight with more than 900 points and over 550 comments."
+      ],
+      "authors": [
+        "Kimi team"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+      "discuss_url": "https://news.ycombinator.com/item?id=50212065",
+      "interests": [
+        "ai",
+        "open-source"
+      ],
+      "lead": true,
+      "featured": false
+    },
+    {
+      "id": "nasa-spacex-artemis-milestones",
+      "kicker": "Top Story",
+      "headline": "NASA publishes a SpaceX milestone calendar for Artemis: prop transfer in Q1 2027, uncrewed lunar landing by Q4",
+      "why_read": "The Starship-to-the-Moon plan finally has dated checkpoints, and the first one, orbital propellant transfer, gates everything after it.",
+      "body": [
+        "Per Sawyer Merritt's summary of a new NASA page, SpaceX's development milestones run quarter by quarter: a propellant-transfer demo and cabin operations testing in Q1 2027; a landing-leg demo, airlock demo, and barge to the Cape in Q2; the Artemis III mission plus uncrewed demo tanker flights and an uncrewed demo lander launch in Q3; and an uncrewed lunar landing in Q4, with more listed for 2028. NASA also shared a Starship lander concept of operations for Artemis IV.",
+        "The reply you reposted puts it plainly: prop transfer in Q1 is the one to watch, because everything after it depends on that demo working. If it slips, the whole ladder slips with it."
+      ],
+      "authors": [
+        "Sawyer Merritt"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/SawyerMerritt/status/2113712928440434763",
+      "discuss_url": "https://x.com/SawyerMerritt/status/2113711563907453247",
+      "interests": [
+        "space"
+      ],
+      "lead": true,
+      "featured": false
+    },
+    {
+      "id": "calif-iphone-hack-hexacon",
+      "kicker": "Security",
+      "headline": "Calif shows a string of iPhone exploit demos at Hexacon: 'Today, we hacked what we'd set out to hack'",
+      "why_read": "One of the biggest HN threads of the day, and it lands in the same week as a pile of critical AI-assisted bug finds.",
+      "body": [
+        "Security firm Calif posted a series of demos it revealed at the Hexacon conference in Paris, including attacks that move past third-party apps to iMessage, and says everything will be released in due time. The post is short on technical detail for now; the demos are the point.",
+        "The thread drew about 900 points and nearly 600 comments. Calif is also one of the teams working on AI-assisted vulnerability hunting through OpenAI's Patch the Planet program, which is why this one is getting read alongside this week's PHP and Brotli disclosures. Apple, for its part, is taking applications for its Security Research Device program through October 30."
+      ],
+      "authors": [
+        "Calif"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://blog.calif.io/p/iphone",
+      "discuss_url": "https://news.ycombinator.com/item?id=50211474",
+      "interests": [
+        "security"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "dessa-full-duplex-speech",
+      "kicker": "Voice AI",
+      "headline": "Block's Dessa is a full-duplex speech model trained only on human conversation, no text at all",
+      "why_read": "You reposted Jack on this: a voice model that never turns speech into text, so it can hear tone, laugh mid-sentence, and talk over you like a person.",
+      "body": [
+        "Block released a research preview of Dessa, which it calls the most authentic full-duplex speech model built so far. It was trained from scratch on human conversation audio alone, with no text and no pretrained models, and learned to hold a live conversation just by listening.",
+        "Block's argument is that today's voice assistants transcribe you and throw away everything text can't carry, like how you feel. Its demo clips show Dessa laughing the moment something is funny and getting louder when asked to speak up, behaviors nobody explicitly trained. There is a waitlist, and the HN thread is near 400 points."
+      ],
+      "authors": [
+        "jack"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/jack/status/2113697902916751661",
+      "discuss_url": "https://news.ycombinator.com/item?id=50213925",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "cursor-computer-control",
+      "kicker": "AI Coding",
+      "headline": "Cursor agents can now drive your desktop, including the iOS Simulator, to test what they build",
+      "why_read": "A coding agent that can click through the app it just wrote closes the loop between writing code and checking it.",
+      "body": [
+        "Cursor announced that its agents can now control your computer, driving desktop apps such as the iOS Simulator so they can exercise the features they build instead of stopping at a passing compile.",
+        "It fits the week's theme in what you've been reposting: the bottleneck is shifting from writing code to verifying it. An agent that can run the real app is one more way to close that gap without a human tapping through every screen."
+      ],
+      "authors": [
+        "Cursor"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/cursor_ai/status/2113661506634305834",
+      "discuss_url": "https://x.com/cursor_ai/status/2113661506634305834",
+      "interests": [
+        "ai",
+        "agents"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "tesla-cybercab-420-texas",
+      "kicker": "Robotaxi",
+      "headline": "Tesla registers 69 more Cybercabs in Texas, bringing the count to 420 in a 927-vehicle Robotaxi fleet",
+      "why_read": "Cybercabs are now more than 45% of Tesla's Texas Robotaxi fleet, a concrete sign the steering-wheel-free car is past the demo stage.",
+      "body": [
+        "According to the X news summary, Tesla's latest Texas DMV filings add 69 Cybercabs, for 420 registered out of a Robotaxi fleet of 927 vehicles; the rest are 507 Model Ys. The fleet runs in Austin, Dallas, and Houston, with more cities planned.",
+        "On the Q3 call, Tesla said it aims to deliver the first Cybercabs to customers by December 2026, with customer-owned cars joining the network by mid-2027. Watching the registration count climb is the easiest way to check that ramp from Austin."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2113742172746928326",
+      "discuss_url": "https://x.com/i/trending/2113742172746928326",
+      "interests": [
+        "tesla",
+        "autonomy"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "dagger-1-0-beta-ci-shift-left",
+      "kicker": "DevOps",
+      "headline": "Dagger 1.0 enters beta after five years, as builders say CI can't keep up with agents",
+      "why_read": "Two posts you reposted back to back make the same case: if an agent has to push and wait for CI, the pipeline is the slowest part of the loop.",
+      "body": [
+        "Solomon Hykes, Docker's co-founder, says Dagger is finally leaving v0 after five years, with 1.0 now in beta and a call for testers, noting a lot has changed for anyone who tried it before. Dagger's pitch is pipelines as code that run the same way locally as in CI.",
+        "Darren Shepherd framed why that matters now: CI needs to shift left, and if you have to push to execute CI you are wasting your agent's time, because traditional CI can't run at agent speed. For anyone running fleets of coding agents, local, reproducible pipelines stop being a nice-to-have."
+      ],
+      "authors": [
+        "Solomon Hykes",
+        "Darren Shepherd"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/solomonstre/status/2113670735478809006",
+      "discuss_url": "https://x.com/ibuildthecloud/status/2113814758046699755",
+      "interests": [
+        "devops",
+        "agents"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "brotli-node2shell-cve",
+      "kicker": "Patch Now",
+      "headline": "Brotli decoder bug behind Node2Shell (CVE-2026-111497, CVSS 9.2) also hits Python HTTP clients",
+      "why_read": "This one sits under almost every HTTP stack, and Python apps can pull it in without anyone noticing.",
+      "body": [
+        "Aikido explains that CVE-2026-111497 is an out-of-bounds write in Google's Brotli decoder, versions 1.0.3 through 1.2.0, that lets a remote, unauthenticated attacker corrupt memory and potentially run code with a crafted compressed stream. Node.js is affected through its bundled Brotli, which is the Node2Shell disclosure from earlier this week.",
+        "The post says OpenAI found it in February and that it works in both directions: a malicious client can take over an unpatched server, and a malicious server can take over an unpatched client. The fix landed in source back then but wasn't treated as a security issue until now. Because requests, httpx, and aiohttp load Brotli automatically when it's installed, the advice is to upgrade to Brotli 1.2.1 or the patched brotlicffi."
+      ],
+      "authors": [
+        "Aikido"
+      ],
+      "source": "web",
+      "source_label": "Aikido",
+      "source_url": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497",
+      "discuss_url": "https://news.ycombinator.com/item?id=50219177",
+      "interests": [
+        "security"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "oracle-java-jsse-cve",
+      "kicker": "Patch Now",
+      "headline": "Oracle ships an emergency Java fix: a JSSE flaw lets forged TLS certificates pass as trusted",
+      "why_read": "Every JDK from 8 through 27 is listed, so this touches most Java you run.",
+      "body": [
+        "Dan Vega flags CVE-2026-91403, rated CVSS 9.1: a flaw in JSSE, Java's TLS implementation, that lets a network attacker present forged certificates that get accepted as trusted. Java 8 through 27 are listed as affected, and Oracle shipped an out-of-band fix.",
+        "You reposted and bookmarked this one, and the advice is short: patch your JDKs now, including the ones baked into container images and build agents."
+      ],
+      "authors": [
+        "Dan Vega"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/therealdanvega/status/2113624092863549896",
+      "discuss_url": "https://x.com/therealdanvega/status/2113624092863549896",
+      "interests": [
+        "security",
+        "programming"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "new-cyber-normal",
+      "kicker": "Analysis",
+      "headline": "Is this the new cyber normal? A week of AI-found critical bugs, explained",
+      "why_read": "The best single read for making sense of the PHP, Brotli, and iPhone news, written by someone who says plainly he isn't a security expert.",
+      "body": [
+        "Drew Silcock walks through the week's run of severe vulnerabilities, including two PHP remote-code-execution bugs found separately by Calif and Wiz, both using frontier models to find the bugs and build the exploits. One of them had surfaced in a 2024 PHP Foundation audit but was set aside because nobody could agree on a fix or show a working exploit; the post argues that turning a theoretical bug into a real exploit is exactly what LLMs are now good at.",
+        "Nick Dobos, in a post you reposted, put a number on the mood: by his count, 3% of all critical software bugs ever recorded were found in the last month. Silcock's essay is about what defenders should do when that becomes the normal week. For a live view, a new CVE tracker charts the daily count of published CVEs since 1999."
+      ],
+      "authors": [
+        "Drew Silcock"
+      ],
+      "source": "web",
+      "source_label": "drew.silcock.dev",
+      "source_url": "https://drew.silcock.dev/blog/is-this-the-new-cyber-normal/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50207115",
+      "interests": [
+        "security",
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "deepmind-softmax-collapse",
+      "kicker": "Research",
+      "headline": "Google DeepMind researchers find 'Softmax Collapse' bugs in standard JAX and PyTorch implementations",
+      "why_read": "A floating-point flaw in one of the most-used functions in deep learning, with a small code fix.",
+      "body": [
+        "Per the X news summary, Jon Barron and colleagues describe two failure modes they call Softmax Collapse and Softmax Cancellation, present in standard implementations across JAX, PyTorch, and textbooks, where floating-point limits distort gradients.",
+        "Their fixes are reported to remove loss spikes, speed convergence, and stabilize distillation without moving to higher precision. It's the kind of quiet numerical bug that shows up as mysterious training instability, so it's worth a look if you train anything."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2113764882625478865",
+      "discuss_url": "https://x.com/i/trending/2113764882625478865",
+      "interests": [
+        "ai",
+        "math"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "worldtui-360m-terminal",
+      "kicker": "Show HN",
+      "headline": "WorldTUI: a 360M-parameter model that pretends to be a terminal, and mostly remembers what you did",
+      "why_read": "A fun, hands-on world-model experiment you can run in your browser, and a neat lesson in what small models can hold in their heads.",
+      "body": [
+        "Simon Edwardsson fine-tuned a 360M-parameter language model to act as a terminal. There is no shell or filesystem behind it: each keypress goes in and the model predicts how the screen changes. It can create files, run vim and tmux, and play snake, and it usually remembers what you wrote a few commands later.",
+        "The biggest wins came from teaching it to repair its own mistakes and decoding screen rows in parallel. The demo is a 208 MB download that runs with WebGPU, and typing a typo like pythoon gives away that it isn't a real shell. Over 600 points on HN."
+      ],
+      "authors": [
+        "Simon Edwardsson"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://simedw.com/2026/10/21/world-model-terminal/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50190363",
+      "interests": [
+        "ai",
+        "open-source"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "uv-ty-integration",
+      "kicker": "Tooling",
+      "headline": "Astral wires uv and ty together: first-class Python script support and a single 'uv check'",
+      "why_read": "The fastest Python toolchain is turning into one integrated tool, which matters for both humans and coding agents.",
+      "body": [
+        "Astral announced an experimental integration between uv, its package manager, and ty, its type checker and language server. Because uv understands your environment and dependencies and ty understands your code, together they give first-class support for standalone Python scripts on the command line and in the editor, plus a unified uv check command.",
+        "Astral frames it as the first step toward a toolchain where each tool still works alone but does more when combined. It's available in preview now."
+      ],
+      "authors": [
+        "Astral"
+      ],
+      "source": "web",
+      "source_label": "Astral",
+      "source_url": "https://astral.sh/blog/uv-ty-integration",
+      "discuss_url": "https://news.ycombinator.com/item?id=50172962",
+      "interests": [
+        "programming",
+        "open-source"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "distributed-sqlite-12-years",
+      "kicker": "Systems",
+      "headline": "Twelve years of distributed SQLite, from the person who started rqlite in 2014",
+      "why_read": "A first-hand history of a whole database category, and a clear explanation of why rqlite chose consistency over availability.",
+      "body": [
+        "Philip O'Toole announced rqlite in September 2014: put a Raft log in front of SQLite and replicate every write across a cluster. As far as he can tell, it was the first open-source system to combine the two, and for years nobody else tried. Today distributed SQLite is a category with a dozen projects, some venture-funded and two acquired.",
+        "He writes down the version of the story that starts in 2014, including the move from goraft to HashiCorp's Raft in 2016 and the decision that never changed: rqlite is a CP system, so writes go through the leader and need a majority to acknowledge."
+      ],
+      "authors": [
+        "Philip O'Toole"
+      ],
+      "source": "web",
+      "source_label": "philipotoole.com",
+      "source_url": "https://philipotoole.com/twelve-years-of-distributed-sqlite/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50217500",
+      "interests": [
+        "systems",
+        "open-source"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "brooker-animations-system-builders",
+      "kicker": "Systems",
+      "headline": "Marc Brooker: use LLMs to build animations that show how real systems fail",
+      "why_read": "One of the best systems writers shows metastable failures in real Postgres and etcd, and a Raft cluster losing writes over a lying fsync.",
+      "body": [
+        "Marc Brooker describes a technique he's enjoying: having LLMs help build animations that make system behavior visible. One shows that a Raft cluster can lose writes if even one member's storage lies about fsync.",
+        "Others come from traces of real software. Postgres 16 in a microVM handles its load easily until a spike pushes the working set out of the page cache and it never recovers, and etcd falls into a storm of application resends after a write spike. His point is that production experience doesn't reliably shake these behaviors out, even in simple, non-distributed systems."
+      ],
+      "authors": [
+        "Marc Brooker"
+      ],
+      "source": "web",
+      "source_label": "brooker.co.za",
+      "source_url": "https://brooker.co.za/blog/2026/10/23/animations.html",
+      "discuss_url": "https://news.ycombinator.com/item?id=50212124",
+      "interests": [
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "uuidv7-is-weird",
+      "kicker": "Systems",
+      "headline": "UUIDv7 timestamps aren't guaranteed to be time-ordered, or even close to the real time",
+      "why_read": "If you picked UUIDv7 to get creation-time ordering for free, read the RFC fine print this post quotes.",
+      "body": [
+        "The post argues that the only property UUIDv7 strictly provides is uniqueness. RFC 9562 lets implementations alter the timestamp field and makes no promise about how close it is to the actual time, and the Postgres docs warn that an extracted timestamp may not match when the ID was generated.",
+        "So using the embedded time as your created-at column, or relying on IDs sorting in creation order, can bite you depending on which library made the ID. Lively HN thread with over 120 comments."
+      ],
+      "authors": [
+        "alexsci"
+      ],
+      "source": "web",
+      "source_label": "alexsci.com",
+      "source_url": "https://alexsci.com/blog/uuidv7-is-weird/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50211746",
+      "interests": [
+        "systems",
+        "programming"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "spacex-800-mhz-fourth-carrier",
+      "kicker": "Telecom",
+      "headline": "The 800 MHz story: from Nextel push-to-talk to SpaceX as a would-be fourth US carrier",
+      "why_read": "A great short history of one spectrum band that you reposted and bookmarked, with SpaceX at the end of it.",
+      "body": [
+        "The Cybertruck Guy traces the 800 MHz band: Nextel owned it and used it for push-to-talk, Nextel merged into Sprint, Sprint merged into T-Mobile, and T-Mobile was supposed to sell it to Dish to rebuild a fourth US carrier.",
+        "In his telling, SpaceX bought it instead, which leads him to list the new big four as AT&T, Verizon, T-Mobile, and SpaceX. That's his framing rather than an official one, but it shows how far Starlink's direct-to-phone ambitions now reach."
+      ],
+      "authors": [
+        "The Cybertruck Guy"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/cybrtrkguy/status/2113455857480475096",
+      "discuss_url": "https://x.com/cybrtrkguy/status/2113455857480475096",
+      "interests": [
+        "space",
+        "networking"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "tesla-spacex-merger-committees",
+      "kicker": "Markets",
+      "headline": "Tesla and SpaceX boards form independent committees to study a possible combination",
+      "why_read": "The biggest structural question hanging over both of Musk's companies now has a formal process.",
+      "body": [
+        "Per the X news summary, both boards created special committees of independent directors to study closer ties, including a possible business combination that could value the combined company at $3.7 trillion. Musk supports the idea for synergies in AI, chips, robotics, and connectivity but is recused, and any deal needs committee, board, and shareholder approval.",
+        "Separately, SpaceX reported a $561 million unrealized gain on its Boring Company stake and $151 million of Megapack purchases from Tesla, a reminder of how intertwined the companies already are."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2113298169291272288",
+      "discuss_url": "https://x.com/i/trending/2113298169291272288",
+      "interests": [
+        "tesla",
+        "space",
+        "markets"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "tesla-ai-maps-fsd-v15",
+      "kicker": "FSD",
+      "headline": "Tesla is building its own AI maps and navigation, rolling out with FSD v15",
+      "why_read": "Bad routing is one of the most common reasons drivers take over from FSD, and Tesla says it's replacing the whole stack.",
+      "body": [
+        "On the Q3 call, Tesla VP of AI Ashok Elluswamy described a new AI-based mapping and navigation architecture built from fleet data with voice controls, dropping external map providers, according to the X news summary.",
+        "Features arrive with FSD v15 later this year or early next, starting with trip endpoints and growing to full routing, parking, and destinations."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2113431239780962741",
+      "discuss_url": "https://x.com/i/trending/2113431239780962741",
+      "interests": [
+        "tesla",
+        "autonomy"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "tesla-financing-rates-q4",
+      "kicker": "Tesla",
+      "headline": "Tesla raises financing rates early in Q4, which one investor reads as volume plus margin",
+      "why_read": "A small pricing signal you reposted, plus a pay-per-mile FSD idea that's worth a thought.",
+      "body": [
+        "James Cat notes Tesla is raising financing rates, effectively a price increase, early in the quarter, and argues Q4 could be a double win of high volume and high margin.",
+        "In the same stream, Roland Pircher suggested Tesla charge for FSD per mile with a $99 monthly cap, on the theory that the drivers who use the car least are the ones who would benefit most from FSD but balk at a flat subscription."
+      ],
+      "authors": [
+        "James Cat",
+        "Roland Pircher"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/TSLAFanMtl/status/2113743635405574569",
+      "discuss_url": "https://x.com/piloly/status/2113609134666899549",
+      "interests": [
+        "tesla",
+        "markets"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "grok-imagine-music",
+      "kicker": "Grok",
+      "headline": "Grok Imagine adds music generation for AI videos and images",
+      "why_read": "Grok's creative tools keep filling in the gaps, and soundtracks were a big one.",
+      "body": [
+        "Per the X news summary, Grok Imagine now lets you generate full music tracks by describing genre, mood, instruments, and tempo, then trim and apply them to videos or images and save them for reuse.",
+        "It lands the same week Grok Imagine released the first seven-minute episode of its Odyssey series with Wonder Studios. Elon Musk agreed with praise for how fast the tool is improving."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2113927722418479264",
+      "discuss_url": "https://x.com/i/trending/2113927722418479264",
+      "interests": [
+        "grok",
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "grok-bot-specialist-teams",
+      "kicker": "Grok Bot",
+      "headline": "Grok Bot users are building teams of specialized agents, and asking for dashboards and drag-to-context",
+      "why_read": "You're running exactly this kind of bot fleet, and several of the feature requests you reposted are in here.",
+      "body": [
+        "The X news summary describes users building squads of persistent Grok Bot agents, each with its own cloud computer, browser, files, and terminal, for jobs from Japanese lessons to inbox cleanup to company workflows, with hundreds of thousands of weekly users.",
+        "Posts you reposted add the wish list: Mike P wants a shortcut to pull up a bot's dashboard directly, and praised the team for fixing mid-message voice dictation on iOS a day after he reported it. Alex mocked up dragging a bot out of the app onto a chart or an email so the context travels with it."
+      ],
+      "authors": [
+        "X News",
+        "Mike P",
+        "Alex"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2113838505290031384",
+      "discuss_url": "https://x.com/alexmichaelio/status/2113742426917454079",
+      "interests": [
+        "grok",
+        "agents"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "warp-sciences-ai-labs",
+      "kicker": "Biotech",
+      "headline": "Kevin Weil's Warp Sciences raises $215M to build AI-run robotic chemistry labs",
+      "why_read": "AI for science moving from models to physical labs, with a former OpenAI exec and DJ Patil behind it.",
+      "body": [
+        "Per the X news summary, Warp Sciences launched on October 22 with a $215 million Series A led by Lightspeed at an $865 million valuation. It builds AI-powered robotic labs in the US so biotech firms can test molecules faster, bringing chemistry work back from overseas with round-the-clock automation.",
+        "Co-founders include DJ Patil, Manohar Paluri, and Solomon Reisberg, and the pitch is that the labs also generate the data to train better models."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2113301040993042607",
+      "discuss_url": "https://x.com/i/trending/2113301040993042607",
+      "interests": [
+        "ai",
+        "science"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "antimatter-positron-trap",
+      "kicker": "Physics",
+      "headline": "Physicists trap a single positron for months and measure its quantum states",
+      "why_read": "A clean physics result that could help answer why the universe is made of matter at all.",
+      "body": [
+        "Scientific American reports that a team overseen by Gerald Gabrielse at Northwestern trapped one positron, the antimatter twin of the electron, for months at a time in a way that lets them study its quantum states. The positrons come from decaying sodium-22, and the hard part was slowing them down enough to capture.",
+        "The work appeared in Physical Review Letters. Precise comparisons between electrons and positrons are one of the ways physicists hunt for the asymmetry that left the world full of matter rather than antimatter."
+      ],
+      "authors": [
+        "Scientific American"
+      ],
+      "source": "web",
+      "source_label": "Scientific American",
+      "source_url": "https://www.scientificamerican.com/article/physicists-trap-a-single-antimatter-particle-for-a-month/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50186450",
+      "interests": [
+        "physics",
+        "science"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "collagen-microbes-fossils",
+      "kicker": "Science",
+      "headline": "Collagen-eating microbes may explain why the earliest soft animals fossilized and later ones vanished",
+      "why_read": "A neat evolutionary detective story about a gap in the fossil record.",
+      "body": [
+        "Cambridge-led researchers looked at why Ediacaran fossils, from 579 to 539 million years ago, preserve soft-bodied animals in extraordinary detail when later soft creatures mostly disappear from the record.",
+        "Their proposed answer is the later evolution of microbes able to break down collagen, the structural protein in animal tissue. Before such microbes were common, soft bodies had a better chance of surviving long enough to fossilize."
+      ],
+      "authors": [
+        "University of Cambridge"
+      ],
+      "source": "web",
+      "source_label": "University of Cambridge",
+      "source_url": "https://www.cam.ac.uk/research/news/rise-of-collagen-eating-microbes-may-help-explain-gaps-in-the-fossil-record",
+      "discuss_url": "https://news.ycombinator.com/item?id=50168075",
+      "interests": [
+        "science"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "corgi-agent-multiplexer",
+      "kicker": "Show HN",
+      "headline": "Corgi is a tmux-style multiplexer that knows when your coding agents need you",
+      "why_read": "If you juggle several terminal agents, this is a practical tool for seeing which one is waiting on you.",
+      "body": [
+        "Corgi keeps agents and processes running in the background like tmux, but marks each pane as working, needing you, or unread, with a key to catch up. It's built to work over SSH, supports image paste, and can be driven from any terminal.",
+        "It also ships a skill that teaches your agents how to use it."
+      ],
+      "authors": [
+        "Corgi"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://corgi.computer/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50214373",
+      "interests": [
+        "agents",
+        "devops"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "amdahls-law-ai-coding",
+      "kicker": "Engineering",
+      "headline": "Amdahl's Law explains why 10x faster coding gives teams only modest gains",
+      "why_read": "Useful math for any engineering leader being promised huge AI productivity numbers.",
+      "body": [
+        "Arpit Bhayani's framing, per the X news summary: if coding is 30% of the work and AI makes it 10 times faster, the whole process speeds up only about 1.37 times, and faster code can clog review queues. Requirements, review, and debugging don't shrink on their own.",
+        "Optimists such as John Crickett counter that AI will raise demand for skilled engineers. It pairs well with the Dagger and CI posts above: speed up the rest of the pipeline or the gains stall."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2113698625293537421",
+      "discuss_url": "https://x.com/i/trending/2113698625293537421",
+      "interests": [
+        "ai",
+        "programming"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "tim-bray-ai-temptation",
+      "kicker": "Essay",
+      "headline": "Tim Bray on the little voice saying 'this would be a great job for Claude'",
+      "why_read": "A thoughtful, skeptical take from a veteran engineer that's worth reading even if you disagree.",
+      "body": [
+        "Tim Bray, doing low-intensity work on his Quamina project, describes his running argument with himself about handing pieces to an AI. He's candid that he hasn't relied on it for substantial work, and that his biggest objections are ethical and economic rather than about capability.",
+        "He also guesses that once the bubble settles, many developers may end up on beefy desktops or cloud machines running open-weight models, which ties nicely to today's Kimi news."
+      ],
+      "authors": [
+        "Tim Bray"
+      ],
+      "source": "web",
+      "source_label": "ongoing",
+      "source_url": "https://www.tbray.org/ongoing/When/202x/2026/10/19/The-AI-Temptation",
+      "discuss_url": "https://news.ycombinator.com/item?id=50218743",
+      "interests": [
+        "ai",
+        "programming"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "local-wikipedia",
+      "kicker": "Fun",
+      "headline": "Local Wikipedia shows only the articles about things within a half-hour walk of you",
+      "why_read": "A charming little tool and the day's most upvoted HN post; try it in Austin.",
+      "body": [
+        "Ed Jefferson's site pulls geocoded Wikipedia pages near you. If there are fewer than 25 nearby, it takes the closest 25 within about six miles, and it caps at 500. Your location stays in the browser and isn't included in shared links.",
+        "It was the highest-scoring HN story in the batch, with about 1,400 points."
+      ],
+      "authors": [
+        "Ed Jefferson"
+      ],
+      "source": "web",
+      "source_label": "edjefferson.com",
+      "source_url": "https://edjefferson.com/localwiki/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50202285",
+      "interests": [
+        "human-interest"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "how-is-music-possible",
+      "kicker": "Essay",
+      "headline": "How is music possible? Henrik Karlsson on why tones in ratios can change how the world looks",
+      "why_read": "A gentle weekend read about math, feeling, and a car ride through a beech forest.",
+      "body": [
+        "Henrik Karlsson starts with his nine-year-old closing her eyes during a Sámi joik on the radio, and asks why sounds arranged in mathematical relationships can make familiar trees feel otherworldly, the same way funny music makes a horror scene hilarious.",
+        "It's an essay rather than a news story, and it sits right in the physics-and-kindness corner of your pinned post."
+      ],
+      "authors": [
+        "Henrik Karlsson"
+      ],
+      "source": "web",
+      "source_label": "Escaping Flatland",
+      "source_url": "https://www.henrikkarlsson.xyz/p/music",
+      "discuss_url": "https://news.ycombinator.com/item?id=50211719",
+      "interests": [
+        "human-interest",
+        "math"
+      ],
+      "lead": false,
+      "featured": false
+    }
+  ]
 }
