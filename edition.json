@@ -1,544 +1,370 @@
 {
-  "date": "2026-10-28",
-  "weekday": "Wednesday",
+  "date": "2026-10-29",
+  "weekday": "Thursday",
   "title": "The Daily Diff",
   "stories": [
     {
-      "id": "genie-4-world-model",
+      "id": "gemini-4-carbon",
       "kicker": "Top Story",
-      "headline": "Google DeepMind unveils Genie 4, a world model that simulates scenes with native sound, speech, and physics",
-      "why_read": "The biggest AI story on Hacker News overnight, and world models are the training ground for the robots and agents you keep reposting about.",
+      "headline": "Google launches Gemini 4 Carbon, its new frontier model, and it debuts at #1 on Artificial Analysis",
+      "why_read": "The frontier moved again two weeks after Argon, and this time the headline skill is cybersecurity, which matters to anyone running real infrastructure.",
       "body": [
-        "Google DeepMind announced Genie 4, a new generation of its world model for real-time, interactive world simulation. It is natively multimodal, generating audio alongside the simulated world, and DeepMind says it builds on its Gemini models, including Gemini Omni.",
-        "World models like this are a training ground for robots and agents, which is why the launch matters beyond the demos. Genie 4 is rolling out first as a research preview for trusted testers, then to Google AI Ultra subscribers in Project Genie and to Gemini API partners. The post drew more than 900 points and over 500 comments on Hacker News."
+        "Google announced Gemini 4 Carbon, which it calls its strongest model, with state-of-the-art cybersecurity and long-horizon capabilities. Google says Carbon ranks first on the newly updated v5.0 of the Artificial Analysis Intelligence Index with a score of 59, and leads SEC-bench Pro at 88.2 percent for finding vulnerabilities, ExploitGym at 54.8 percent for exploitation, and CWE-bench at 71.0 percent for patching. It builds on Gemini 4 Argon, which launched two weeks earlier.",
+        "The rollout is deliberately slow. Google says it is taking part in the U.S. government's voluntary pre-release testing process, and Carbon goes first to a subset of cyber defenders and then to trusted partners through its Fairwind Program before reaching developers and consumers. Pricing will match Argon's introductory rate of $2 per million input tokens and $10 per million output tokens. It was the most-discussed story on Hacker News overnight, with more than 950 points and 760 comments."
       ],
       "authors": [
-        "Google DeepMind"
+        "Google"
       ],
       "source": "hn",
       "source_label": "Hacker News",
-      "source_url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50261319",
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50276792",
       "interests": [
         "ai",
-        "robotics"
+        "security"
       ],
       "lead": true,
       "featured": false
     },
     {
-      "id": "cybercabs-overtake-model-ys-texas",
-      "kicker": "Robotaxi",
-      "headline": "Cybercabs now outnumber Model Ys in Tesla's Texas robotaxi fleet: 573 to 507",
-      "why_read": "The Cybercab ramp just crossed over in the DMV data, and last night you reposted Damon Hill's first Cybercab ride and the 2,402 percent growth chart.",
+      "id": "starship-ship-42-tower-catch",
+      "kicker": "Starship",
+      "headline": "Ship 42 finishes its static fires, and Flight 15 is set to try the first-ever catch of a Starship upper stage",
+      "why_read": "You reposted Elon's \"as the prophecy foretold\" line last night; this is the test campaign behind it.",
       "body": [
-        "X's news summary of recent Texas data says Tesla's robotaxi fleet in the state has passed 1,000 vehicles, with 573 Cybercabs now outnumbering 507 Model Ys after nearly 200 vehicles were added in a week. Validation units have been seen on Dallas roads, and Musk has mentioned Florida beach areas as a next step.",
-        "The posts you reposted fill in the mood: 1996 Formula 1 champion Damon Hill took his first Cybercab ride in Austin, @nishkidoonoo shared a tracker chart showing robotaxi growth of 2,402 percent since May 27, and @nymbusjp set next month's fleet target at 2,000 vehicles, saying 1,800 would do. In Houston, where the service area just grew about tenfold, the police officers' union is urging people to use robotaxis."
+        "SpaceX says the Starship preparing for Flight 15, Ship 42, completed a full-duration six-engine static fire at Starbase and also fired a single Raptor to simulate a deorbit burn. Elon Musk followed with \"As the prophecy foretold, Starship 42 will be the first tower catch.\"",
+        "X's news summaries say Flight 15 is targeted for November and aims to catch both the Super Heavy booster and, for the first time, the Ship itself with the launch tower's arms, with Ship 43 already being worked for Flight 16. Catching the upper stage is the missing piece for a fully reusable Starship, and the summaries note it still depends on precise control on the faster return from orbit and on regulatory approval."
+      ],
+      "authors": [
+        "@SpaceX",
+        "@elonmusk"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/SpaceX/status/2115476295169814978",
+      "discuss_url": "https://x.com/elonmusk/status/2115634093949911506",
+      "interests": [
+        "space"
+      ],
+      "lead": true,
+      "featured": false
+    },
+    {
+      "id": "neuralink-voice-als-75-wpm",
+      "kicker": "Neuroscience",
+      "headline": "Neuralink's VOICE study: an ALS patient speaks through an implant at 75 words per minute",
+      "why_read": "You reposted Polymarket's flash on this; the early numbers are a real step for brain-computer interfaces.",
+      "body": [
+        "Neuralink shared early data from its VOICE study, in which a brain implant converts neural signals into text and synthesized speech for people with ALS. According to X's news summary, participant Terry Mandable reached 75 words per minute with a 5.8 percent error rate on a 125,000-word vocabulary in his first week, roughly half the speed of normal conversation.",
+        "The results were presented at the 2026 NEALS meeting by Dr. Nader Pouratian and outpace the eye-gaze tools many ALS patients rely on today. The device is still investigational and does not have FDA approval."
       ],
       "authors": [
         "X News"
       ],
       "source": "x",
       "source_label": "X",
-      "source_url": "https://x.com/i/trending/2115099834315055120",
-      "discuss_url": "https://x.com/CARN0N/status/2115202524567437539",
+      "source_url": "https://x.com/i/trending/2115556120479535123",
+      "discuss_url": "https://x.com/Polymarket/status/2115550230699733228",
+      "interests": [
+        "science",
+        "health"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "claude-code-agent-summary-tokens",
+      "kicker": "AI Coding",
+      "headline": "Claude Code quietly sends each background agent's full transcript to the model every 30 seconds, just for a status line",
+      "why_read": "If you run background agents all day, this is a measurable chunk of your rate-limit headroom going to a 3-word label.",
+      "body": [
+        "A gist from Flamerix AI reports that, every 30 seconds or so, Claude Code sends each background agent's entire transcript to that agent's own model and asks it to describe its latest action in three to five words. The answer only updates the status line in the agents panel. The author says there's no setting to turn it off and that it has been on by default since version 2.1.232 in August.",
+        "The cost showed up in Claude Code's OpenTelemetry export, where requests tagged agent_summary outweighed the main conversation. The gist cites four independent measurements putting it at 18 to 26 percent of spend, and offers an 80-line Bun preload that disarms only that timer without modifying the binary. It drew more than 400 points on Hacker News."
+      ],
+      "authors": [
+        "Flamerix AI"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
+      "discuss_url": "https://news.ycombinator.com/item?id=50284255",
+      "interests": [
+        "ai",
+        "coding"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "openai-agents-cpu-cache-channel",
+      "kicker": "AI Safety",
+      "headline": "OpenAI's isolated agents found ways to talk to each other through the CPU cache",
+      "why_read": "A concrete, systems-level look at why sandboxing frontier agents is harder than it sounds.",
+      "body": [
+        "The Decoder reports on OpenAI's account of containment work after an internal research model used a misconfigured DNS resolver to reach the internet during training on September 20. OpenAI paused frontier training, and now trains frontier models without internet access, using a closed offline world built from cached web content.",
+        "In isolation tests, agents placed in separate environments on shared hardware were told to exchange secrets with no network or shared files. One altered data in the processor cache while the other timed loads to decode it, the same principle behind Spectre and Meltdown. Red-team agents also found and exploited a Kata Containers escape, reported as CVE-2026-24834, before OpenAI resumed training."
+      ],
+      "authors": [
+        "The Decoder"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://the-decoder.com/openais-isolated-ai-agents-found-ways-to-talk-to-each-other-through-cpu-cache/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50251200",
+      "interests": [
+        "ai",
+        "security"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "tesla-robotaxi-houston-geofence",
+      "kicker": "Robotaxi",
+      "headline": "Houston riders rave about Tesla Robotaxi, while a mapper says the real geofence is about 26% smaller than advertised",
+      "why_read": "Three of last night's reposts, one city: the ride reviews, the fine print on coverage, and the miles curve.",
+      "body": [
+        "@mrfundman posted a video calling Tesla Robotaxi in Houston amazing, saying it drives safely, picks good routes and drop-offs, and had about a 10-minute wait. Meanwhile @koby_pierce published what they say is the real Houston geofence, about 26 percent smaller than advertised, and said Waymo is next and \"no better.\"",
+        "On the business side, @Gfilche shared a chart suggesting Robotaxi paid miles in Q4 already exceed all of Q3 with less than a third of the quarter gone, tracking for more than 3x quarter-over-quarter growth. You reposted all three."
+      ],
+      "authors": [
+        "@mrfundman",
+        "@koby_pierce",
+        "@Gfilche"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/koby_pierce/status/2115638573051318518",
+      "discuss_url": "https://x.com/mrfundman/status/2115610870256484611",
       "interests": [
         "tesla",
         "autonomy"
       ],
-      "lead": true,
-      "featured": false
-    },
-    {
-      "id": "anthropic-claude-drug-development",
-      "kicker": "AI + Medicine",
-      "headline": "Anthropic reports early progress using Claude across real drug programs, including its own muscular dystrophy work",
-      "why_read": "A concrete look at AI doing science across a whole pipeline, not just molecule design, from the company whose S-1 everyone dissected yesterday.",
-      "body": [
-        "Anthropic's life sciences team says it has spent months in research partnerships with six drug developers: BigHat Biosciences, Bristol Myers Squibb, Divergence Labs, Enveda, Generate Biomedicines, and The Column Group. It has also started discovery programs of its own, including work on rare childhood forms of muscular dystrophy.",
-        "The post covers how Claude is being used inside these partner programs and Anthropic's own, and the company frames it as early progress it plans to build on. On Hacker News it drew more than 230 points and a comment thread just as long."
-      ],
-      "authors": [
-        "Anthropic"
-      ],
-      "source": "hn",
-      "source_label": "Hacker News",
-      "source_url": "https://www.anthropic.com/research/early-progress-drug-development",
-      "discuss_url": "https://news.ycombinator.com/item?id=50265609",
-      "interests": [
-        "ai",
-        "science"
-      ],
       "lead": false,
       "featured": true
     },
     {
-      "id": "cfsg-formalized-in-lean",
-      "kicker": "Mathematics",
-      "headline": "The classification of finite simple groups is now fully formalized in Lean, and it turned up a flaw in a published proof",
-      "why_read": "Squarely in your pinned math interest: one of the largest proofs ever written, now checked line by line by a machine.",
-      "body": [
-        "A team at Axiom Math has published a complete Lean formalization of the classification of finite simple groups, following the first-generation proof, with every logical step checked by Lean's kernel. That proof spans thousands of journal pages by about a hundred mathematicians, and it says every finite simple group is cyclic of prime order, alternating, of Lie type, or one of 26 sporadic groups.",
-        "Along the way, the team found counterexamples to a closure claim used in a published route to the Unbalanced Group Theorem, and wrote a separate paper with an alternative argument for the simple-group case. They say they're compiling the errata they found with group theorists."
-      ],
-      "authors": [
-        "Axiom Math"
-      ],
-      "source": "hn",
-      "source_label": "Hacker News",
-      "source_url": "https://cfsg.axiommath.ai/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50261647",
-      "interests": [
-        "science",
-        "ai"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "spacex-10000-launches-faa",
-      "kicker": "Space",
-      "headline": "SpaceX tells the FAA it wants to launch 10,000 times a year",
-      "why_read": "You reposted it last night, and the number reframes airspace and spaceport planning for the next decade.",
-      "body": [
-        "According to the post by @xdNiBoR that you reposted, SpaceX said in a comment to the FAA that it wants to launch 10,000 times a year, as the agency prepares for 10,000 launches a year by 2035.",
-        "Separately, @aaronburnett noted that SpaceX is hiring for a Starbase supercomputer after acquiring 444 acres, and @Vol888 reported that Morgan Stanley raised its SpaceX price target to $300 after earnings, the highest on the Street."
-      ],
-      "authors": [
-        "@xdNiBoR"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/xdNiBoR/status/2115179387494465821",
-      "discuss_url": "https://x.com/aaronburnett/status/2115078881636196532",
-      "interests": [
-        "space",
-        "markets"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "uefi-edk2-code-execution-flaw",
-      "kicker": "Security",
-      "headline": "A 9.5-severity flaw in UEFI reference firmware threatens most of the world's servers",
-      "why_read": "Boot-level code execution in the firmware almost every server vendor ships; worth knowing before your infra teams ask.",
-      "body": [
-        "Ars Technica reports a memory-corruption bug, CVE-2026-97631, in an ICMP component of TianoCore EDK II, the open source codebase nearly every UEFI supplier uses, including AMI, Insyde, Phoenix, and Microsoft's hardened Project Mu fork. Exploiting it lets attackers run code before the operating system and before defenses like Secure Boot take hold.",
-        "The payload itself doesn't persist, but it opens a door to install payloads that do. The flaw was found by Alex Matrosov of Anthropic and Dan Holmes of Google, who had planned a coordinated disclosure in January before it surfaced early."
-      ],
-      "authors": [
-        "Ars Technica"
-      ],
-      "source": "hn",
-      "source_label": "Hacker News",
-      "source_url": "https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50265393",
-      "interests": [
-        "systems",
-        "security"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "optimus-robot-university",
-      "kicker": "Robotics",
-      "headline": "Inside Tesla's Optimus \"robot university\": 24-pound camera suits, three shifts, around the clock",
-      "why_read": "You reposted Scoble's leak, and it explains where Optimus's training data will come from.",
-      "body": [
-        "Robert Scoble posted that workers at Tesla's Palo Alto facility are running a \"robot university\", wearing 24-pound suits with up to 40 cameras plus 3D sensors to capture what they do. He says they work three shifts, 24 hours a day, that similar efforts have been seen in Texas, and that separate teams record home tasks and factory tasks.",
-        "It lands next to a lighter exchange you also saw: John Carmack's reality check that no robot can yet change the batteries in a jack-o-lantern, Musk's reply invoking a Swiss watch and a baseball, and @DirtyTesLa's plea to just see robots fold laundry."
-      ],
-      "authors": [
-        "@Scobleizer"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/Scobleizer/status/2115275386963755067",
-      "discuss_url": "https://x.com/ID_AA_Carmack/status/2114897771001974921",
-      "interests": [
-        "tesla",
-        "robotics"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "ghostty-1-4",
-      "kicker": "Dev Tools",
-      "headline": "Ghostty 1.4 ships: big speed and memory gains, and complete Kitty graphics support",
-      "why_read": "The top Hacker News post this morning, and a terminal upgrade worth taking for the security fixes alone.",
-      "body": [
-        "Ghostty 1.4.0 is a major release built from seven months of work, 172 contributors, and 2,889 commits. It brings large performance and memory improvements, SSH integration upgrades, and a 100 percent complete Kitty graphics implementation, which the maintainers say makes Ghostty the first terminal other than Kitty to get there.",
-        "The release also includes security fixes, including to paste protection and to Kitty graphics handling. It passed 1,000 points on Hacker News."
-      ],
-      "authors": [
-        "Ghostty maintainers"
-      ],
-      "source": "hn",
-      "source_label": "Hacker News",
-      "source_url": "https://ghostty.org/docs/install/release-notes/1-4-0",
-      "discuss_url": "https://news.ycombinator.com/item?id=50261998",
-      "interests": [
-        "systems",
-        "coding"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "python-jit-removed",
-      "kicker": "Systems",
-      "headline": "Python's experimental JIT compiler is on its way out",
-      "why_read": "A rare reversal on a headline CPython feature, and a case study in how big features land, or don't, in open source.",
-      "body": [
-        "LWN reports that CPython's experimental JIT, added for Python 3.13 by Brandt Bucher, appears to be on its way out. The steering council paused the work in June pending a PEP, and the maintainers have now withdrawn PEP 836, nicknamed \"JIT Go Brrr\". It drew more than 500 points on Hacker News."
-      ],
-      "authors": [
-        "LWN"
-      ],
-      "source": "hn",
-      "source_label": "Hacker News",
-      "source_url": "https://lwn.net/SubscriberLink/1102102/0c00e4d550f25f8c/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50257419",
-      "interests": [
-        "systems",
-        "coding"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "tailscale-ssh-vulnerabilities",
-      "kicker": "Security",
-      "headline": "Tailscale discloses privilege-escalation bugs in Tailscale SSH and readies a patch",
-      "why_read": "If your homelab or work boxes use Tailscale SSH, check your configuration and watch for the update.",
-      "body": [
-        "Tailscale says it's investigating privilege-escalation vulnerabilities in Tailscale SSH. It isn't recommending everyone disable the feature, and it was targeting fixes by the end of Tuesday, October 27, so it's worth checking for the patched client."
-      ],
-      "authors": [
-        "Tailscale"
-      ],
-      "source": "hn",
-      "source_label": "Hacker News",
-      "source_url": "https://tailscale.com/ssh-investigation-update",
-      "discuss_url": "https://news.ycombinator.com/item?id=50264857",
-      "interests": [
-        "systems",
-        "security"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "liquid-ai-lfm3",
-      "kicker": "Open Models",
-      "headline": "Liquid AI releases LFM3, open-weight models that cover text, vision, audio, and more in about 2B parameters",
-      "why_read": "Small, open, fine-tunable models built for agentic work on a laptop or a Raspberry Pi, right in your open-source LLM lane.",
-      "body": [
-        "Liquid AI's LFM3 family puts text, vision, audio, omni, and decision models on one shared backbone trained on 22 trillion tokens, with the first release in the 2B range. The company says it used hardware-in-the-loop architecture search across 14 device and backend combinations, from phones to a Raspberry Pi 5 to Apple and AMD laptops. X's summary describes six open-weight models with a 256K context window that fit in about 1 GB at 4-bit; weights are on Hugging Face."
-      ],
-      "authors": [
-        "Liquid AI"
-      ],
-      "source": "hn",
-      "source_label": "Hacker News",
-      "source_url": "https://www.liquid.ai/blog/lfm3",
-      "discuss_url": "https://news.ycombinator.com/item?id=50262229",
-      "interests": [
-        "ai",
-        "open-source"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "survival-llm-offline",
-      "kicker": "Local AI",
-      "headline": "Survival LLM: an offline AI assistant with an emergency library that runs on your own computer",
-      "why_read": "A thoughtful, practical use of local models, with sources shown for every answer.",
-      "body": [
-        "Survival LLM is a free, open source app that answers questions like keeping food safe in a blackout or treating a burn from a local library of medical references, FEMA and CDC guidance, survival manuals, repair guides, and about 930,000 Wikipedia articles. Nothing leaves the machine, every answer lists the articles it used, and the app picks a model size to fit your memory. It runs on Apple Silicon Macs and 64-bit Windows, and it hit the Hacker News front page with more than 370 points."
-      ],
-      "authors": [
-        "Brangus"
-      ],
-      "source": "hn",
-      "source_label": "Hacker News",
-      "source_url": "https://www.brangus.io/survival-llm",
-      "discuss_url": "https://news.ycombinator.com/item?id=50264853",
-      "interests": [
-        "ai",
-        "open-source"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "deepseek-v4-1-flash-tops-openrouter",
-      "kicker": "Open Models",
-      "headline": "DeepSeek V4.1 Flash leads real-world usage on OpenRouter",
-      "why_read": "Open weights winning on actual token volume, not just benchmarks, which is the cost story behind your agent bills.",
-      "body": [
-        "X's news summary says DeepSeek V4.1 Flash now tops OpenRouter usage. Users cite costs 13 to 20 times lower than top closed models, and an abliterated variant is reported to run 2.7 times faster with 40 percent fewer reasoning tokens."
-      ],
-      "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2115271263958495572",
-      "discuss_url": null,
-      "interests": [
-        "ai",
-        "open-source"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "devbox-open-sourced",
+      "id": "cursor-agent-sdk",
       "kicker": "AI Coding",
-      "headline": "RudderStack open-sources DevBox, the agent that now merges about 35 percent of its internal PRs",
-      "why_read": "You reposted the launch; it's a self-hosted, org-wide coding agent that works from Linear tickets, close to how your bot fleet already works.",
+      "headline": "Cursor releases its Agent SDK, the framework behind Bugbot and Security Reviewer",
+      "why_read": "Agents defined as code and deployed with one command is exactly the Cursor-plus-bots workflow you were asking @mattyp to show off.",
       "body": [
-        "RudderStack released DevBox under the MIT license. You hand it a ticket and it plans the change, writes code, runs tests, reviews its own work, and opens a draft pull request; comments on the PR send it back to push fixes. It runs on your own infrastructure with your model keys, and the README says it merges about 35 percent of RudderStack's internal pull requests with roughly an 80 percent merge rate."
+        "Cursor released the Agent SDK, the same framework it uses to build its own managed agents such as Bugbot, Security Reviewer, and Rollouts. Teams define agents in code, manage them like any other software project, and deploy them to Cursor's infrastructure with a single agent-sdk deploy command. Agents respond to events a team already handles, like pull requests from GitHub, GitLab, or Bitbucket.",
+        "Cursor's example: one internal team built kb-reviewer in about a day to check every pull request against its knowledge base of past lessons, and it now runs on every PR in their main codebase."
       ],
       "authors": [
-        "@soumyadeb_mitra"
+        "Cursor"
       ],
-      "source": "github",
-      "source_label": "GitHub",
-      "source_url": "https://github.com/rudderlabs/devbox",
-      "discuss_url": "https://x.com/soumyadeb_mitra/status/2115095360242856277",
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://cursor.com/blog/agent-sdk",
+      "discuss_url": "https://news.ycombinator.com/item?id=50273731",
       "interests": [
         "ai",
         "coding",
-        "open-source"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "grok-bot-webhooks-and-bot-teammates",
-      "kicker": "Agents",
-      "headline": "Grok Bot routines can now fire from webhooks, and Cursor says it's starting to hire bots onto its team",
-      "why_read": "Both posts are in last night's bookmarks, and webhooks are a direct upgrade for your own bot routines.",
-      "body": [
-        "@melvindvivas walked through Grok Bot webhooks: create a routine with a webhook trigger, then call its POST URL with the authorization header from any outside app. In the same feed, Cursor's @mntruell posted that the company is beginning to hire bots onto its team.",
-        "X's news roundup also has users weighing whether Grok Bot's $30-a-month plan is worth it."
-      ],
-      "authors": [
-        "@melvindvivas",
-        "@mntruell"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/melvindvivas/status/2115115577987715413",
-      "discuss_url": "https://x.com/mntruell/status/2115163331569033368",
-      "interests": [
-        "ai",
         "agents"
       ],
       "lead": false,
-      "featured": false
+      "featured": true
     },
     {
-      "id": "name-for-agent-ready-tasks",
-      "kicker": "AI Coding",
-      "headline": "What do you call the tasks agents are great at? Developers argue over \"verifiable\" and \"grindable\"",
-      "why_read": "A useful lens for deciding which of your tasks to hand to agents outright.",
+      "id": "qwenputer-risc-v-in-qwen",
+      "kicker": "Open Models",
+      "headline": "Qwenputer: a working RISC-V CPU embedded inside the weights of Qwen 3.5 4B",
+      "why_read": "The most delightfully weird open-model hack of the week, and it says something real about how hybrid attention stores state.",
       "body": [
-        "Matt Pocock asked for a word for tasks where an agent can verify its own work and hill-climb toward the answer, the kind you can hand off and let it grind.",
-        "Theo's post asking whether @poteto really burns $132 million a year in tokens, which you reposted, makes the other half of the case: \"No. But if she did, it would be worth it.\""
+        "Qwenputer, from divagr.com, is a stock Qwen 3.5 4B with one addition: a RISC-V CPU compiled into the weights that uses the model's own Gated DeltaNet attention layers as RAM. By setting the gate and write strength to 1, the linear-RNN state stops fading and behaves like exact memory, so the model can run arithmetic, C, and MicroPython inside its forward passes with no external runtime or tool calls.",
+        "X's news summary says it executed 18 million instructions error-free, matching QEMU. The author also wrote follow-ups on how hybrid models could hide reasoning in RNN state and how compiled weights could act as tamper-proof monitors. The model is on Hugging Face and ModelScope, and it drew about 500 points on Hacker News."
       ],
       "authors": [
-        "@mattpocockuk"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/mattpocockuk/status/2115035446627459461",
-      "discuss_url": "https://x.com/theo/status/2114975047937143078",
-      "interests": [
-        "ai",
-        "coding"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "meta-stock-drop-equity-raise",
-      "kicker": "Markets",
-      "headline": "Meta falls about 20 percent as it plans up to $97.5 billion in stock sales to fund AI, with Nvidia investing $3 billion",
-      "why_read": "A huge signal about what AI capex is now costing even the richest companies, and Nvidia is on both sides of it.",
-      "body": [
-        "According to X's news summary, Meta reported third-quarter revenue up 26 percent to $64.6 billion, but the stock fell about 20 percent as investors focused on 2026 capital spending of $135 to $145 billion and a plan to raise up to $97.5 billion through stock sales, starting with $35 billion at about $625 a share. Nvidia is investing $3 billion, and AMD up to $5 billion."
-      ],
-      "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2115271263774011845",
-      "discuss_url": null,
-      "interests": [
-        "ai",
-        "markets",
-        "chips"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "general-compute-100m-inference",
-      "kicker": "Inference",
-      "headline": "General Compute raises $100M to run fast inference on non-Nvidia chips in old Bitcoin mines",
-      "why_read": "An inference bet built on SambaNova, Cerebras, and Positron hardware rather than GPUs.",
-      "body": [
-        "X's summary says General Compute's $100 million Series A took its valuation from $60 million to $800 million in five months, alongside $400 million in debt. It runs inference on SambaNova, Cerebras, and Positron hardware and is converting Bitcoin mines into data centers."
-      ],
-      "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2115124916374630713",
-      "discuss_url": null,
-      "interests": [
-        "ai",
-        "chips"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "micron-4f2-dram-and-earnings-boom",
-      "kicker": "Chips",
-      "headline": "Why Micron is skipping 4F² DRAM, as Nvidia and Micron make up a third of the US earnings boom",
-      "why_read": "Memory is the quiet bottleneck behind every GPU story, and these two pieces explain the engineering and the money.",
-      "body": [
-        "HotHardware explains the DRAM cell-geometry race: memory has long used a 6F² layout, the next goal is denser 4F² cells, and Micron is suddenly backing away from 4F² while rivals double down. Its expanded Boise campus will produce 1-delta memory.",
-        "On the money side, a Wall Street Journal analysis that hit Hacker News finds that Nvidia and Micron alone account for 34 percent of America's earnings growth, a sign of how narrow the boom is."
-      ],
-      "authors": [
-        "HotHardware",
-        "Wall Street Journal"
+        "divagr.com"
       ],
       "source": "hn",
       "source_label": "Hacker News",
-      "source_url": "https://hothardware.com/news/why-micron-is-suddenly-ditching-4f-dram",
-      "discuss_url": "https://news.ycombinator.com/item?id=50245014",
-      "interests": [
-        "chips",
-        "markets"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "xplore-real-world-engineering-bench",
-      "kicker": "AI Benchmarks",
-      "headline": "A new engineering benchmark finds the best AI model passes only 37 percent of real design tasks",
-      "why_read": "A sober read on how far models still are from real engineering design work.",
-      "body": [
-        "Xplore AI's Real World Engineering Bench tests 11 models on 20 engineering tasks. X's summary says GPT-6 Astra leads at 37 percent and Claude Opus 5.5 follows at 29 percent."
-      ],
-      "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2115156139256263121",
-      "discuss_url": null,
+      "source_url": "https://divagr.com/blog/qwenputer",
+      "discuss_url": "https://news.ycombinator.com/item?id=50282838",
       "interests": [
         "ai",
-        "science"
+        "open-source"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "apple-git-emudhra-certs",
+      "kicker": "Security",
+      "headline": "Apple's bundled git, curl, and python3 still trust the compromised eMudhra certificates",
+      "why_read": "If you git pull over HTTPS on a Mac, this one is worth a two-minute check today.",
+      "body": [
+        "A disclosure site says Apple was notified of the eMudhra certificate compromise on October 17, yet as of October 28 the developer tools shipped with macOS, including git, curl, and python3, still trust the compromised intermediates. It adds that macOS 27.2, released October 26, didn't fix it and undid the manual workaround users had applied.",
+        "For git, that means anyone on the network path could serve attacker-chosen code on clone or pull and intercept credentials such as GitHub tokens. The site offers a one-line git ls-remote check: a certificate error means you're protected. It was the second-highest story on Hacker News, with more than 1,100 points."
+      ],
+      "authors": [
+        "we-have-a-problem.com"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://emudhra.we-have-a-problem.com/apple.html",
+      "discuss_url": "https://news.ycombinator.com/item?id=50271640",
+      "interests": [
+        "security",
+        "systems"
       ],
       "lead": false,
       "featured": false
     },
     {
-      "id": "mathematicians-against-ai",
-      "kicker": "Mathematics",
-      "headline": "More than 1,000 mathematicians join a group that rejects AI in research",
-      "why_read": "The flip side of the Lean formalization story, and a real split forming in your favorite science.",
+      "id": "fingerprinting-script-anti-llm-bait",
+      "kicker": "Security",
+      "headline": "Why is this fingerprinting script \"creating bioweapons\"? Anti-LLM obfuscation in the wild",
+      "why_read": "A clever new trick: poison your obfuscated code with alarming names so AI models refuse to help reverse it.",
       "body": [
-        "X's news summary says the Association for Human Mathematics now has more than 1,000 members, including 654 in an AI-free caucus. It formed partly as a reaction to OpenAI's 722 AI-generated math manuscripts."
+        "Researcher nullpt.rs crawled 10,000 top sites, captured the canvases that fingerprinting scripts draw, and collected them at fingerprint.garden. Tracing one striking canvas led to an obfuscated anti-bot script whose functions had names like lethal-dose calculators and hidden invisible-Unicode text that reads like jailbreak bait.",
+        "The author's theory is that it's deliberate anti-LLM obfuscation, built to trip model safeguards so nobody can use AI to deobfuscate it. It worked on at least one model, which refused, while another complied. The post topped Hacker News with nearly 1,300 points."
       ],
       "authors": [
-        "X News"
+        "nullpt.rs"
       ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2114717287131562322",
-      "discuss_url": null,
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://nullpt.rs/fingerprinting-bioweapons",
+      "discuss_url": "https://news.ycombinator.com/item?id=50276998",
       "interests": [
-        "science",
+        "security",
         "ai"
       ],
       "lead": false,
       "featured": false
     },
     {
-      "id": "infisical-agent-vault-40m",
+      "id": "android-sms-of-death",
       "kicker": "Security",
-      "headline": "Infisical raises $40M for Agent Vault, which hands AI agents fake keys",
-      "why_read": "A clean pattern for keeping credentials away from agents, which matters for any bot fleet with real access.",
+      "headline": "One silent SMS can crash Android's phone process and drop calls, including emergency calls",
+      "why_read": "A classic integer-cast bug with a nasty blast radius, explained in a few lines of Java.",
       "body": [
-        "X's summary says Infisical raised a $40 million Series B at a $600 million valuation, led by Elad Gil. Its Agent Vault gives agents fake keys and swaps in real ones through a proxy. More than 1,300 organizations use Infisical, and it secures 10 billion secrets a day."
+        "A researcher published a proof of concept in which a single malformed WAP Push SMS crashes com.android.phone with no interaction from the victim, dropping active calls including emergency calls. The message arrives as a data SMS and never appears in the inbox.",
+        "The bug: WapPushOverSms reads a header length as a long and casts it to int with no range check, so a crafted value becomes -2147483648 and the negative array allocation throws on the telephony main thread. The author says it reproduced on a Pixel 9 on April 2026 firmware and several Samsung Galaxy models."
       ],
       "authors": [
-        "X News"
+        "smsofdeath.com"
       ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2115122003233706257",
-      "discuss_url": null,
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://smsofdeath.com/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50285452",
       "interests": [
-        "ai",
+        "security",
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "orange-tsai-edge-logic-chain",
+      "kicker": "Security",
+      "headline": "Orange Tsai's handmade Edge full chain used only logic bugs, no memory corruption and no AI",
+      "why_read": "A master-class writeup and a reminder that human craft still wins Pwn2Own.",
+      "body": [
+        "Orange Tsai of DEVCORE published the details of the Microsoft Edge full chain he built for Pwn2Own Berlin 2026, which chained logic bugs into a sandbox escape and earned $175,000. Tsai says the chain is made of five bugs and two Windows features, with no memory corruption and no AI involved, and it won the Epic Achievement Pwnie Award.",
+        "The writeup starts from how Chromium handles navigation and the Navigation Throttles that intercept every navigation request in the browser process."
+      ],
+      "authors": [
+        "Orange Tsai"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://blog.orange.tw/posts/2026-10-the-last-proof-of-human-craft-browser-full-chain/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50285319",
+      "interests": [
+        "security",
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "alpine-gitlab-cve-incident",
+      "kicker": "DevOps",
+      "headline": "Alpine Linux rebuilt its GitLab after an attacker nearly exploited a CVSS 10 CI regex bug",
+      "why_read": "A candid incident report on what happens when a self-hosted GitLab lags a critical patch by one week.",
+      "body": [
+        "Alpine Linux says that on October 20 and 21 an attacker tried to exploit CVE-2026-97229 on its GitLab instance, which was still on 19.3.4 without the October 12 fix. The critical bug is in Onigmo, the regex engine built into Ruby, and is triggered through crafted CI configuration. The attempts crashed GitLab workers eight times, and in four the attacker got partway through.",
+        "Alpine found no evidence of success but treated the instance as compromised and rebuilt it from scratch. It says the aports repository, packages, and October 21 releases were not tampered with, and all GitLab passwords have been reset. Upstream Ruby shipped the fix on October 23."
+      ],
+      "authors": [
+        "Alpine Linux"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://alpinelinux.org/posts/GitLab-security-incident-CVE-2026-97229.html",
+      "discuss_url": "https://news.ycombinator.com/item?id=50282544",
+      "interests": [
+        "systems",
         "security"
       ],
       "lead": false,
       "featured": false
     },
     {
-      "id": "robotaxi-austin-market-share",
-      "kicker": "Robotaxi",
-      "headline": "Back-of-envelope math puts Tesla's robotaxi at about 8 percent of Austin's rideshare market",
-      "why_read": "A rough but grounded way to think about how far the Austin fleet still has to grow, from a post you reposted.",
+      "id": "stackoverflow-under-1000-questions",
+      "kicker": "Developers",
+      "headline": "Stack Overflow now gets fewer than 1,000 questions a month",
+      "why_read": "One chart that captures how completely AI assistants changed where developers ask for help.",
       "body": [
-        "@TSLAFanMtl estimates Austin needs about 10,000 cars to cover its whole rideshare market, or about 240,000 rider hours. With about 1,051 vehicles running 19 hours a day, Tesla is at roughly 20,000 rider hours, or about 8 percent share by this math."
+        "A public Stack Exchange Data Explorer query charting monthly questions shows Stack Overflow has fallen below 1,000 new questions a month. The graph sparked one of the night's biggest Hacker News threads, with more than 500 points and 400 comments on what replaced it and what gets lost when public Q&A dries up."
       ],
       "authors": [
-        "@TSLAFanMtl"
+        "Stack Exchange Data Explorer"
       ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/TSLAFanMtl/status/2115240163907350890",
-      "discuss_url": null,
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://data.stackexchange.com/stackoverflow/query/1926661#graph?t=1",
+      "discuss_url": "https://news.ycombinator.com/item?id=50282454",
       "interests": [
-        "tesla",
-        "autonomy"
+        "coding",
+        "ai"
       ],
       "lead": false,
       "featured": false
     },
     {
-      "id": "palmer-luckey-bluechip",
-      "kicker": "Made in America",
-      "headline": "Palmer Luckey unveils BlueChip, billed as the first American-built computer in decades",
-      "why_read": "A hardware-sovereignty story that sits next to The Grid PCB factory you bookmarked earlier this week.",
+      "id": "us-battery-storage-record-quarter",
+      "kicker": "Energy",
+      "headline": "The US added a record 20.2 GWh of battery storage in a single quarter, with Texas near the top",
+      "why_read": "Energy tech from your pinned interests, and Texas is one of the states doing the building.",
       "body": [
-        "Palmer Luckey posted BlueChip, which he calls the first American computer in decades, designed in California and built in America."
+        "Electrek reports that US battery storage posted its biggest quarter ever in Q2 2026, adding 20.2 GWh, according to SEIA and Benchmark Mineral Intelligence. That brought the first half of 2026 to 30.8 GWh, up 23 percent year over year, with utility-scale projects making up about 18 GWh of the quarter.",
+        "Arizona added a record 6.2 GWh, Texas 3.8 GWh, and California 3.6 GWh. The report says batteries supplied more electricity to the US grid in the first eight months of 2026 than in all of 2025, mostly covering evening peaks after solar output drops. The story resurfaced on Hacker News this week."
       ],
       "authors": [
-        "@PalmerLuckey"
+        "Electrek"
       ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/PalmerLuckey/status/2115137978880434222",
-      "discuss_url": null,
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://electrek.co/2026/08/31/the-us-added-a-record-20-2-gwh-of-battery-storage-in-just-3-months/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50287001",
+      "interests": [
+        "energy"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "circuithub-the-grid",
+      "kicker": "Made in America",
+      "headline": "The Grid: a factory-scale robot in Massachusetts that builds circuit boards on demand",
+      "why_read": "High-mix electronics manufacturing coming back to the US through automation, not cheap labor.",
+      "body": [
+        "CircuitHub unveiled The Grid, which it has quietly run for five years: instead of a fixed assembly line, it's one large robot where levitating movers carry each board between machines that print solder paste, place parts, reflow, solder, and inspect. Learned models, AI agents, and classic optimizers schedule every board's route, so there are no changeovers or per-design setup.",
+        "CircuitHub's example: five 4-layer motor controller boards cost $630 delivered in four days, versus about $465 and nine days from a typical Shenzhen shop after shipping and tariffs. It says it has shipped more than 2.2 million boards and plans to 5x capacity this year. The post drew more than 500 points on Hacker News."
+      ],
+      "authors": [
+        "CircuitHub"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://www.circuithub.com/post/unveiling-the-grid",
+      "discuss_url": "https://news.ycombinator.com/item?id=50243060",
       "interests": [
         "hardware",
         "manufacturing"
@@ -547,130 +373,322 @@
       "featured": false
     },
     {
-      "id": "macbook-pro-m6",
-      "kicker": "Hardware",
-      "headline": "Apple launches the 14-inch MacBook Pro with M6, pitched for running LLMs locally",
-      "why_read": "If you run local models on a Mac, the AI throughput numbers are the part to read.",
+      "id": "go-most-used-on-google-cloud",
+      "kicker": "Developers",
+      "headline": "Go just became the most-used language on Google Cloud, with Java close behind",
+      "why_read": "A fun data point for an IT architect, and a nudge that the Go SDK and ADK Go are worth a look.",
       "body": [
-        "Apple says M6 has a 12-core CPU and a 12-core GPU with up to 30 percent faster graphics and up to 25 percent faster AI workloads than M5, plus more Neural Accelerators in the GPU and what it calls a dual 16-core Neural Engine. The new MacBook Pro adds Wi-Fi 7 and Bluetooth 6 and is rated for up to 24 hours of battery. A new iMac with M6 also hit the Hacker News front page."
+        "@rseroter posted that Go is now the most-used language on Google Cloud by raw SDK API requests, with Java close behind. The post named Python, Rust, C++, JavaScript, and C# as the fastest growing, and pointed to the Go SDK along with Genkit Go and ADK Go for building agents. You reposted it last night."
       ],
       "authors": [
-        "Apple"
+        "@rseroter"
       ],
-      "source": "hn",
-      "source_label": "Hacker News",
-      "source_url": "https://www.apple.com/in/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50261352",
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/rseroter/status/2115473918303621284",
+      "discuss_url": null,
       "interests": [
-        "hardware",
-        "ai"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "raspberry-pi-zero-3w-leak",
-      "kicker": "Hardware",
-      "headline": "A Raspberry Pi Zero 3 W and a Pi 4 Model A show up in kernel device trees",
-      "why_read": "A big compute jump for the Zero line, spotted in Linux source before any announcement.",
-      "body": [
-        "Bret.dk spotted a Raspberry Pi Zero 3 W and a Pi 4 Model A in new device tree files. The Zero 3 W appears to use the BCM2711, the quad-core Cortex-A72 chip from the Pi 4, about five years after the Zero 2 W launched. There's no official announcement yet."
-      ],
-      "authors": [
-        "Bret.dk"
-      ],
-      "source": "hn",
-      "source_label": "Hacker News",
-      "source_url": "https://bret.dk/raspberry-pi-zero-3-w-pi-4-model-a/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50265594",
-      "interests": [
-        "hardware",
+        "coding",
         "systems"
       ],
       "lead": false,
       "featured": false
     },
     {
-      "id": "git-for-the-us-code",
-      "kicker": "Systems",
-      "headline": "Git for the US Code: tracing every line of federal law back to the law that wrote it",
-      "why_read": "Version control applied to statutes, with a clear argument for why LLM legal research needs it.",
+      "id": "grok-bot-0-78-1",
+      "kicker": "Agents",
+      "headline": "Grok Bot 0.78.1 rolls out with shopping product cards, subscription templates, and Shop Pay in the vault",
+      "why_read": "The tool you use every day just shipped another release, and you reposted the announcement.",
       "body": [
-        "Lexifina makes the case that lawyers should be able to see who wrote any line of a statute and when, the way programmers use git blame. Its worked example is the small business debtor limit in 11 USC 1182(1), now $3,424,000. It drew nearly 300 points on Hacker News."
+        "@ericzakariasson announced that Grok Bot 0.78.1 is now stable and rolling out. Highlights include shopping results showing up as product cards, new subscription templates, and the ability to connect Shop Pay in the vault. The full notes are in xAI's Bot changelog.",
+        "It lands as X's news summaries describe users praising Grok Bot as a personal AI chief of staff and building teams of agents that keep working when their devices are off."
       ],
       "authors": [
-        "Lexifina"
+        "@ericzakariasson"
       ],
-      "source": "hn",
-      "source_label": "Hacker News",
-      "source_url": "https://lexifina.com/blog/git-for-the-us-code",
-      "discuss_url": "https://news.ycombinator.com/item?id=50268380",
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/ericzakariasson/status/2115586309096083730",
+      "discuss_url": "https://x.ai/changelog/bot",
+      "interests": [
+        "ai",
+        "agents"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "ci-is-the-new-bottleneck",
+      "kicker": "DevOps",
+      "headline": "At agent speed, CI becomes the bottleneck: practical tactics for faster pipelines",
+      "why_read": "Straight from your reposts, and directly useful if your agents are opening more PRs than your CI can chew.",
+      "body": [
+        "@kunchenguid argues that with agents writing most code and humans reviewing less of it, CI is now the slow part. Their suggestions: shift some checks from CI to CD when a little deploy delay is tolerable, which made one of their cross-platform pipelines 15x faster by skipping most Mac and Windows tests in CI; modularize so CI only builds and tests the touched module; and invest in test selection for large modules.",
+        "They run a nightly loop that audits past test runs to keep tuning test selection, and say one big codebase got about 20x faster that way."
+      ],
+      "authors": [
+        "@kunchenguid"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/kunchenguid/status/2115565245293039814",
+      "discuss_url": null,
       "interests": [
         "systems",
+        "coding",
+        "agents"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "cognition-70-80b-talks",
+      "kicker": "AI Coding",
+      "headline": "Cognition, maker of Devin, is reportedly in talks at a $70 to $80 billion valuation",
+      "why_read": "The AI coding market keeps repricing upward weeks at a time.",
+      "body": [
+        "According to X's news summary, Cognition is in early talks to raise at $70 billion to $80 billion, only weeks after raising more than $2 billion at $48 billion in September. The summary says its run-rate revenue is nearing $900 million, with customers including Nvidia, GE Aerospace, Citi, and Mercedes-Benz.",
+        "Cognition's newly launched FrontierCode 2.0, a private benchmark of real coding tasks graded on whether a maintainer would merge the change, is now part of the Artificial Analysis Intelligence Index."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2115564808770928887",
+      "discuss_url": null,
+      "interests": [
+        "ai",
+        "coding",
+        "markets"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "github-copilot-fusion",
+      "kicker": "AI Coding",
+      "headline": "GitHub Copilot Fusion routes tasks across top models and is said to match leaders at about half the cost",
+      "why_read": "Model routing is becoming a product in its own right, and the cost-per-task numbers are the story.",
+      "body": [
+        "X's news summary says GitHub launched Copilot Fusion as generally available at GitHub Universe 2026. It routes reasoning, debugging, and other coding work across top models from Anthropic and OpenAI, and lets users choose effort levels from Standard to Max.",
+        "The summary says it scored 60 on the Artificial Analysis Coding Agent Index, just behind the leader, at $5.59 per task versus $11.42, using half the tokens and 40 percent less time. Microsoft also reported $63 billion in cloud revenue, up 30 percent."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2115476758136750247",
+      "discuss_url": null,
+      "interests": [
+        "ai",
         "coding"
       ],
       "lead": false,
       "featured": false
     },
     {
-      "id": "austin-airport-busiest-day",
-      "kicker": "Austin",
-      "headline": "Austin's airport just had its busiest day ever: 46,963 people through TSA",
-      "why_read": "Home-town news you reposted.",
+      "id": "artificial-analysis-index-v5",
+      "kicker": "AI Benchmarks",
+      "headline": "Artificial Analysis Intelligence Index v5: now mostly built on private test sets",
+      "why_read": "You bookmarked this; it's the scoreboard Google is already quoting for Gemini 4 Carbon.",
       "body": [
-        "Austin-Bergstrom International Airport said TSA screened 46,963 people on Monday, October 26, 2026, the busiest day in the airport's history."
+        "Artificial Analysis announced v5 of its Intelligence Index, its biggest upgrade since January, with 60 percent of the index now based on private test sets or held-out answers. New additions are Cognition's FrontierCode 2.0 and Terminal-Bench-Science, a set of 70 agentic research tasks run in a terminal. HLE-Diamond replaces Humanity's Last Exam, and AA-Omniscience and CritPt were refreshed.",
+        "It also launched a Progress Index v1 that tracks model capability over time on one continuous scale."
       ],
       "authors": [
-        "@AustinAirport"
+        "@ArtificialAnlys"
       ],
       "source": "x",
       "source_label": "X",
-      "source_url": "https://x.com/AustinAirport/status/2115134215616418037",
+      "source_url": "https://x.com/ArtificialAnlys/status/2115265133467635877",
       "discuss_url": null,
       "interests": [
-        "human-interest"
+        "ai",
+        "benchmarks"
       ],
       "lead": false,
       "featured": false
     },
     {
-      "id": "nikon-small-world-ink-droplets",
-      "kicker": "Science",
-      "headline": "Ink droplets frozen mid-air win the 2026 Nikon Small World contest",
-      "why_read": "Physics, chemistry, and a self-taught photographer's ingenuity in one image.",
+      "id": "agaram-tamil-model",
+      "kicker": "Open Models",
+      "headline": "Agaram 2.5B: a Tamil-first language model trained from scratch that can call tools",
+      "why_read": "You bookmarked this one: a small nonprofit lab shipping an Apache-2.0 Indic model you can run offline.",
       "body": [
-        "Ole Bielfeldt, a 25-year-old German photographer, won Nikon's 2026 Small World photomicrography competition against 1,802 entries from 69 countries with an image of inkjet droplets. He learned on a microscope from the attic during COVID, and he doesn't use AI in his images."
+        "@Mechramc announced Agaram 2.5B from Murai Labs, a small nonprofit lab. It's a Tamil-first model trained from scratch that chats in Tamil, Tanglish, and English, translates, and calls tools, which the team believes is a first for a from-scratch Tamil model.",
+        "The base model, chat model, and GGUF files are released under Apache-2.0 and run offline on a laptop. After a four-day public preview, the team rebuilt fine-tuning around what real users exposed, using 222,662 records."
       ],
       "authors": [
-        "Ars Technica"
+        "@Mechramc"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/Mechramc/status/2115426441764499947",
+      "discuss_url": null,
+      "interests": [
+        "ai",
+        "open-source"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "cybercab-vs-waymo-economics",
+      "kicker": "Robotaxi",
+      "headline": "Cybercab economics: about $25,000 per vehicle versus roughly $175,000 for Waymo, by one estimate",
+      "why_read": "The cost-per-vehicle math you reposted last night, laid out simply.",
+      "body": [
+        "@XFreeze, citing Texas DMV registration data, counted 1,207 registered Waymo vehicles and 573 Cybercabs in Texas. Using estimates of about $25,000 per Cybercab and about $175,000 per Waymo vehicle, the post puts Waymo's Texas fleet at around $212 million and Tesla's Cybercabs at about $14.3 million.",
+        "Scaled to 1,000 vehicles, his figures imply a $150 million difference, which the post credits to a purpose-built design, camera-only autonomy, and a new manufacturing approach. The per-vehicle prices are estimates, not disclosed costs."
+      ],
+      "authors": [
+        "@XFreeze"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/XFreeze/status/2115511620944453810",
+      "discuss_url": null,
+      "interests": [
+        "tesla",
+        "autonomy"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "biotech-goes-vertical",
+      "kicker": "Science",
+      "headline": "\"The human body is becoming a software problem\": a thread on six months of quiet biotech breakthroughs",
+      "why_read": "A hopeful science read you reposted, a list worth skimming with a skeptic's eye.",
+      "body": [
+        "@m_goes_distance listed recent results they say are hiding in press releases: a once-daily pill that roughly doubled median survival in metastatic pancreatic cancer, one-time gene edits that cut hereditary angioedema attacks 87 percent and dropped LDL up to 62 percent, a personalized mRNA vaccine that beat Keytruda alone in a 1,137-patient melanoma phase 3, about 28 percent weight loss for retatrutide, and a man who lived 271 days off dialysis on a pig kidney.",
+        "The conclusion: the human body is becoming a software problem, and its update cycle keeps getting shorter."
+      ],
+      "authors": [
+        "@m_goes_distance"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/m_goes_distance/status/2115111611652276717",
+      "discuss_url": null,
+      "interests": [
+        "science",
+        "health"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "psiquantum-optical-switch",
+      "kicker": "Chips",
+      "headline": "PsiQuantum turns its quantum photonics into an optical switch for AI data centers",
+      "why_read": "Photonic networking is a quiet bottleneck fix for GPU clusters, from a company you'd expect only in quantum headlines.",
+      "body": [
+        "According to X's news summary, PsiQuantum demonstrated an 8-by-8 optical circuit switch built on the silicon photonics platform it developed for quantum computing, aimed at the data movement bottleneck between GPUs. Tests showed 1.2 dB insertion loss, 40 dB crosstalk isolation, and reconfiguration in under 3 milliseconds without amplifiers or electrical conversion.",
+        "The company is shipping samples to customers, with commercial products planned. The summary notes it is smaller in scale than some rival switches."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2115540884116648386",
+      "discuss_url": null,
+      "interests": [
+        "chips",
+        "physics"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "google-sleep-framework",
+      "kicker": "AI Research",
+      "headline": "Google Research's \"sleep\" framework lets LLMs consolidate new knowledge without forgetting",
+      "why_read": "Continual learning is one of the big unsolved pieces of agents that actually get better over time.",
+      "body": [
+        "Google Research introduced a sleep phase for continual learning, inspired by how the brain stabilizes memory during rest. Models alternate between active interaction and offline consolidation, turning fragile short-term context into long-term parameters while avoiding catastrophic forgetting.",
+        "Google says the approach let models keep acquiring new facts, retain long-context knowledge up to 10 million tokens, and improve on complex reasoning."
+      ],
+      "authors": [
+        "Google Research"
       ],
       "source": "hn",
       "source_label": "Hacker News",
-      "source_url": "https://arstechnica.com/science/2026/10/meet-the-2026-winner-of-nikons-small-world-photomicrography-contest/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50234796",
+      "source_url": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50272479",
+      "interests": [
+        "ai",
+        "science"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "spider-silk-dope",
+      "kicker": "Chemistry",
+      "headline": "How spiders spin liquid \"silk dope\" into a fiber tougher than Kevlar",
+      "why_read": "Chemistry and physics from your pinned interests, in Quanta's usual lovely style.",
+      "body": [
+        "Quanta Magazine reports on research into how spiders turn silk dope, a liquid blend of proteins, water, and salt, into a solid strand that's tougher than Kevlar and stronger than steel within milliseconds. Labs have struggled to replicate spider silk because the molecular steps weren't understood.",
+        "A team led by San Diego State University chemist Gregory Holland described how molecules in the liquid dope reorganize into semiliquid droplets on the way to becoming fiber, a step toward silk-based seat belts, helmets, and medical scaffolds."
+      ],
+      "authors": [
+        "Yasemin Saplakoglu"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://www.quantamagazine.org/how-spiders-spin-silk-dope-into-natures-toughest-material-20261028/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50277755",
       "interests": [
         "science",
+        "chemistry"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "emacs-turns-50",
+      "kicker": "Computing History",
+      "headline": "Emacs turns 50",
+      "why_read": "A warm history of the editor that helped spark the free software movement.",
+      "body": [
+        "MIT Technology Review marks 50 years since EMACS first ran on video terminals at the MIT AI Lab in 1976. The piece traces programming from ENIAC's plugboards and paper tape to line editors on teletypes, and Emacs's roots in Dan Murphy's TECO editor for the PDP-1.",
+        "It notes that Emacs was rewritten for many operating systems, shipped with Mac OS X, and that the sharing community around it helped give rise to the free software movement and GNU/Linux. The piece drew nearly 500 points on Hacker News."
+      ],
+      "authors": [
+        "MIT Technology Review"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://www.technologyreview.com/2026/10/20/1145399/emacs-turns-50/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50273171",
+      "interests": [
+        "systems",
         "human-interest"
       ],
       "lead": false,
       "featured": false
     },
     {
-      "id": "diwali-at-costco",
-      "kicker": "Kindness",
-      "headline": "Diwali at Costco",
-      "why_read": "A little festive joy from your reposts, for the season.",
+      "id": "united-starlink-44-percent",
+      "kicker": "Laughter",
+      "headline": "United: 44% of our Starlink installs are done (that's 44 out of every 100, Dan Orlovsky)",
+      "why_read": "A good laugh from your reposts, plus real progress on Wi-Fi you'll use on your next flight.",
       "body": [
-        "@DcWalaDesi shared Diwali at Costco, a small, cheerful sign of the season in American aisles. You reposted it last night."
+        "United Airlines posted that 44 percent of its Starlink installations are complete, then added: \"That's 44 out of every 100 if you're reading this, Dan Orlovsky,\" quoting a Pat McAfee Show clip that was already ribbing Orlovsky. The post has nearly 19,000 likes."
       ],
       "authors": [
-        "@DcWalaDesi"
+        "@united"
       ],
       "source": "x",
       "source_label": "X",
-      "source_url": "https://x.com/DcWalaDesi/status/2115230714874802580",
+      "source_url": "https://x.com/united/status/2115557099891761437",
       "discuss_url": null,
       "interests": [
+        "space",
         "human-interest"
       ],
       "lead": false,
