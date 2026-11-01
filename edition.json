@@ -1,49 +1,48 @@
 {
-  "date": "2026-10-31",
-  "weekday": "Saturday",
+  "date": "2026-11-01",
+  "weekday": "Sunday",
   "title": "The Daily Diff",
   "stories": [
     {
-      "id": "suncatcher-tpu-haiku-from-orbit",
-      "kicker": "Top Story",
-      "headline": "Google's TPUs phoned home from orbit: Project Suncatcher ran Gemma in space and sent back a haiku",
-      "why_read": "You bookmarked Sundar's post and reposted Google's; this is the first real proof point for AI compute in space.",
+      "id": "colossus-2-1-2m-blackwells",
+      "kicker": "AI compute",
+      "headline": "Colossus 2 heads for about 1.2 million Blackwells by year-end",
+      "why_read": "The biggest single AI build you keep bookmarking now has names, GPU counts, and a power figure attached.",
       "body": [
-        "Google says its Project Suncatcher prototype, which carried four TPUs to orbit on October 1, has hit its first milestone. Engineers sent a command up, booted a TPU, ran a prompt, and got a complete response back on Earth. Sundar Pichai called it a \"hello world\" moment, and the response was a haiku.",
-        "According to X's news summary, the model was Gemma running on solar power, and as the satellite passed over Svalbard, Norway, it replied: \"Blue marble below / Data streams in silent grace / Starlight feeds my core.\" Power limits allow only 15 to 20 minutes of compute per run. Google says two more TPU-equipped satellites go up in 2027 to test the next step. It's a tiny workload, but it's the first time anyone has shown the full loop of space-based inference working end to end, which matters for every orbital data center pitch now circulating, SpaceX's included."
+        "Elon Musk laid out how the Memphis-area Colossus 2 campus is split up. Two buildings, Macroharder and Minihard, each have 220,000 GB300s configured for training, Gun Range is set to match them, and a fourth building, Spam, gets roughly 200,000 GB300s for inference with simpler networking. In a separate reply he said the site should have around 1.2 million Blackwells by the end of the year.",
+        "X's news summary puts the campus at about 946 MW, and the inference-versus-training split is the interesting design choice: training needs the fat, expensive interconnect, inference doesn't. Musk also said in another post you saved that orbital compute deployed per month probably passes terrestrial compute around the end of 2028, which tells you where he thinks the next build after this one goes."
       ],
       "authors": [
-        "Sundar Pichai",
-        "Google"
+        "Elon Musk"
       ],
       "source": "x",
       "source_label": "X",
-      "source_url": "https://x.com/sundarpichai/status/2116214866444943853",
-      "discuss_url": "https://x.com/NewsFromGoogle/status/2116219345215074538",
+      "source_url": "https://x.com/elonmusk/status/2116587474021691629",
+      "discuss_url": "https://x.com/i/trending/2116598310169415854",
       "interests": [
         "ai",
-        "space",
         "chips"
       ],
       "lead": true,
       "featured": false
     },
     {
-      "id": "tesla-robotaxi-1204-texas",
-      "kicker": "Robotaxi",
-      "headline": "Tesla's Texas Robotaxi fleet jumps to 1,204 vehicles after adding 124 Model Ys",
-      "why_read": "You reposted the fleet count twice last night; here's the growth curve and the argument it's feeding.",
+      "id": "robotaxi-2027-monte-carlo",
+      "kicker": "Tesla Robotaxi",
+      "headline": "A 20,000-run Monte Carlo puts 2027 Robotaxi revenue near $900M",
+      "why_read": "A rare attempt to put ranges, not vibes, on Robotaxi revenue, plus a Cybercab capacity thought experiment you bookmarked.",
       "body": [
-        "Tesla now has 1,204 robotaxis registered in Texas, according to official DMV numbers compiled by Nic Cruz Patane, after Texas AV Tracker spotted a batch of 124 Model Ys. The fleet was 42 vehicles on May 28, crossed 500 in late September, and stood at 1,080 on October 27. Cybercabs hold steady at 573, so the split is now about 52 percent Model Y and 48 percent Cybercab.",
-        "X's news summary puts Waymo's Texas count at 1,259, so Tesla is closing in. The growth is also sharpening the definitional fight: Forbes contributor Brad Templeton argues remote monitoring likely still provides near-constant oversight, while Tesla backers say no human in the car and no manual takeover means unsupervised. Either way, the curve is steep."
+        "Larry Goldberg (@TeslaLarry) ran a 20,000-run Monte Carlo on Tesla's driverless Robotaxi business. His base case is about $900M of 2027 revenue, with a low case near $350M and a high case around $2.5B. He puts the odds of topping $500M at nearly four in five and topping $1B at a little under half. In the base case, quarterly revenue climbs from about $18M this quarter to roughly $540M in Q4 2027, an exit run rate near $3B a year.",
+        "He's upfront that the fleet, mileage, fare, and cost inputs are his own assumptions, since Tesla doesn't disclose them, and that fleet growth and the pace of new city approvals move the result most. On the supply side, a post you saved from Genma_Jp compares the 2,400 Cybercabs a week in the earnings deck with what 30-second and 20-second takt times would produce: 16,000 and 24,000 a week at 80% uptime. He calls it a thought experiment, not a prediction."
       ],
       "authors": [
-        "@niccruzpatane"
+        "Larry Goldberg",
+        "Genma_Jp"
       ],
       "source": "x",
       "source_label": "X",
-      "source_url": "https://x.com/niccruzpatane/status/2116372747047534995",
-      "discuss_url": "https://x.com/texasavtracker/status/2116367989528248805",
+      "source_url": "https://x.com/TeslaLarry/status/2116573986704281869",
+      "discuss_url": "https://x.com/nymbusjp/status/2116585802574578052",
       "interests": [
         "tesla",
         "autonomy"
@@ -52,115 +51,67 @@
       "featured": false
     },
     {
-      "id": "grok-4-8-tease",
-      "kicker": "Grok",
-      "headline": "Musk says Grok 4.8 is a 2.5-trillion-parameter model on a new C++ stack, built for agents",
-      "why_read": "If you're running a fleet of Grok Bots, the next model is aimed squarely at that workload.",
-      "body": [
-        "Elon Musk shared that the Grok team is building Grok 4.8 as a 2.5-trillion-parameter model on a new C++ stack, promising clear gains over 4.7 on agentic tasks and bot workloads, plus a fast variant for everyday requests, according to X's news summary.",
-        "Reactions mix hope and caution after 4.7's mixed reviews. Users praised current Grok for coding and creative work, and the common thread in replies was that reliable task completion and speed matter more than benchmark charts."
-      ],
-      "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2116216131744624676",
-      "discuss_url": null,
-      "interests": [
-        "ai",
-        "agents"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "northflank-breach-ai-keys",
+      "id": "linux-tcp-uaf-cve-2026-98432",
       "kicker": "Security",
-      "headline": "Northflank breach: assume every environment variable was decrypted and rotate now",
-      "why_read": "A platform-level secrets breach where the first sign was stolen AI API keys being spent.",
+      "headline": "A CVSS 9.8 Linux TCP use-after-free, and Ubuntu and RHEL aren't patched yet",
+      "why_read": "Every Linux server that accepts IPv4 TCP runs this code path, and Go opens the risky listeners by default.",
       "body": [
-        "Northflank's status page lists an active security incident and a major networking outage. Users reported unauthorized use of AI API keys they had stored on the platform, and Northflank's guidance is blunt: assume all environment variables have been decrypted, then revoke and rotate every secret, including workload secrets, secret groups, and global secrets, and disable public access to add-ons.",
-        "The company has enabled audit logs for every customer, including free users, turned on secret rotation for Postgres and MongoDB, and deployed network policy patches. It says the reports may fit the broader pattern of attacks on AI credentials described in Wiz's \"Black October\" report, and that its investigation is ongoing. It was one of the top stories on Hacker News overnight."
+        "CVE-2026-98432 is a use-after-free in the IPv4 TCP handshake that a remote, unauthenticated peer can reach. The kernel's own CVE team scores it 9.8, and the bug goes back to Linux 4.4. Stable kernels got a four-line fix on October 11 and 15, but as of Saturday evening Atlas reported Ubuntu's tracker still said vulnerable on every release and Red Hat listed RHEL 8, 9, and 10 as affected with no fix. Red Hat raised its rating to Critical on October 30.",
+        "Anthropic's researcher reported it, and the company says Claude wrote a working exploit that runs commands as root on servers with a multipath TCP listener. The Go Security Team says Go programs open those listeners by default. Until a fixed kernel lands, the write-up suggests dropping TCP packets with IPv4 options, turning off multipath TCP if you don't use it, and patching multipath hosts first."
       ],
       "authors": [
-        "Northflank"
+        "Atlas"
       ],
       "source": "hn",
       "source_label": "Hacker News",
-      "source_url": "https://status.northflank.com",
-      "discuss_url": "https://news.ycombinator.com/item?id=50305025",
+      "source_url": "https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf",
+      "discuss_url": "https://news.ycombinator.com/item?id=50319143",
       "interests": [
         "security",
-        "systems",
-        "ai"
+        "systems"
       ],
       "lead": false,
       "featured": true
     },
     {
-      "id": "exponential-time-hypothesis-ai",
-      "kicker": "Math",
-      "headline": "AI models reportedly produce faster 3-SAT algorithms that would break the Exponential Time Hypothesis",
-      "why_read": "Math from your pinned interests, and a big claim worth watching as experts check it.",
+      "id": "chatgpt-share-account-takeover",
+      "kicker": "Security",
+      "headline": "One shared ChatGPT link was enough to take over the account that opened it",
+      "why_read": "A clean, readable exploit chain from two harmless-looking features, already fixed but worth understanding.",
       "body": [
-        "The Exponential Time Hypothesis, proposed in 1999, says problems like 3-SAT can't be solved in subexponential time as the number of variables grows. According to X's news summary, internal AI models at two labs produced faster algorithms with Lean formalizations, with the discoveries dated October 16 and announced October 26. The work is now under review by experts, including the hypothesis's creators.",
-        "Cryptographers stress that a theoretical result like this poses no immediate threat to encryption. The bigger conversation is about AI's growing role in open math problems, with some calling for academia to adapt and others urging limits on releasing the most capable models. Treat it as a claim under review until the referees weigh in."
+        "Parameter's Mukul Goyal describes how a public ChatGPT share could run attacker JavaScript inside the signed-in session of whoever opened it. The chain started with the HTML Preview feature, which runs code in a sandboxed frame on a different domain, and found a way across into the main chatgpt.com page. From there the payload could list the victim's conversations, read a private chat never shared with the attacker, and send it to an outside server.",
+        "The victim didn't have to install anything or paste code. Opening the link was the whole attack. OpenAI fixed it on October 26 and rated it P1. If you build agent UIs that render model-written HTML, this is a good case study in why a sandboxed frame isn't the same as isolation."
       ],
       "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2116233269377450277",
-      "discuss_url": null,
-      "interests": [
-        "ai",
-        "math"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "nasdaq-ai-spending-selloff",
-      "kicker": "Markets",
-      "headline": "Nasdaq falls 2.86% and Intel drops about 29% as AI spending doubts hit stocks",
-      "why_read": "The day the market started asking when all the AI capex pays off.",
-      "body": [
-        "On October 30 the Nasdaq dropped 2.86 percent, its biggest one-day fall since June, while the S&P 500 fell 1.82 percent and the Dow lost 572 points, according to X's news summary. Intel shares fell nearly 29 percent, its worst day in more than 50 years, after a weak revenue forecast. Amazon signaled $220 billion in spending, enough to turn its free cash flow negative.",
-        "Chamath Palihapitiya pointed to the $340 to $400 billion of debt AI companies have taken on as a risk to the broader economy, and Bernie Sanders separately warned Big Tech not to expect a taxpayer bailout if the bet goes bad. The mood shifted from hype to profitability timelines in a single session."
-      ],
-      "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2116174321240469948",
-      "discuss_url": "https://x.com/i/trending/2116306264288280972",
-      "interests": [
-        "markets",
-        "chips",
-        "ai"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "cisco-unlimited-ai-tokens",
-      "kicker": "Cisco",
-      "headline": "Cisco's Jeetu Patel gives a 27-year-old unlimited AI tokens to refactor 98% of Cisco's legacy code",
-      "why_read": "This one's about your own company, and it's a bold bet on AI-driven refactoring at scale.",
-      "body": [
-        "Fortune reports that Cisco president and chief product officer Jeetu Patel handed one of the company's biggest jobs to Padmanabhan \"Paddy\" Krishnamurthy, a 27-year-old who joined Cisco in 2025 when it acquired EzDubs, the real-time translation startup he cofounded. Krishnamurthy argued he could rewrite Cisco's legacy code with a two-person team. \"I've given him unlimited tokens because he's going to refactor code,\" Patel said. \"So I'm like, you can go, you can go nuts.\"",
-        "Per Fortune, he has four weeks to prove the approach, with a goal of refactoring 98 percent of Cisco's legacy code within 24 months. Patel used the story to argue for hiring early-career people who challenge the status quo, and said he deliberately creates tension over ideas, not personalities."
-      ],
-      "authors": [
-        "Orianna Rosa Royle"
+        "Mukul Goyal"
       ],
       "source": "hn",
       "source_label": "Hacker News",
-      "source_url": "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50304122",
+      "source_url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
+      "discuss_url": "https://news.ycombinator.com/item?id=50314699",
+      "interests": [
+        "security",
+        "ai"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "karpathy-hackertube",
+      "kicker": "AI coding",
+      "headline": "Karpathy had Opus 5.5 build a YouTube made only of videos HN recommended",
+      "why_read": "A two-hour weekend build that shows what talking-only engineering looks like now.",
+      "body": [
+        "Annoyed by YouTube's recommendations on a Friday night, Andrej Karpathy asked Opus 5.5 on Saturday to build a YouTube clone from videos recommended on Hacker News. It downloaded HN's comments, ran Sonnet over them in a Claude Code workflow to drop spam, and narrowed things to 40K comments that point at 6,454 videos across 150 topics from 2007 to 2026. The result, HackerTube, has its own recommendations stored in the browser, no accounts, and a data export you can hand to your own agent.",
+        "The process note is the bigger story. Karpathy says he no longer reads or writes code or runs terminal commands; his only manual steps were making a Google Cloud API key, booting a VPS, and buying the domain. He uses Opus 5.5 on medium effort by default. The post hit about 1,400 points on HN."
+      ],
+      "authors": [
+        "Andrej Karpathy"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://karpathy.bearblog.dev/hacker-tube/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50319510",
       "interests": [
         "ai",
         "coding"
@@ -169,91 +120,91 @@
       "featured": true
     },
     {
-      "id": "agents-continuous-code-streams",
-      "kicker": "AI Coding",
-      "headline": "Software engineering shifts from incremental changes to continuous streams of agent-written code",
-      "why_read": "You bookmarked Lauren Tan on why software keeps changing; this is the bigger conversation she's part of.",
+      "id": "openai-astra-robot-benchmarks",
+      "kicker": "Robotics",
+      "headline": "OpenAI's Astra tops robot benchmarks, and Freda Duan calls it robotics' GPT-3 moment",
+      "why_read": "A general model beating dedicated robotics models is the scaling story you track, now with arms and grippers.",
       "body": [
-        "Engineers including Lauren Tan describe a shift from incremental code updates to high-volume, agent-driven streams of changes, and argue teams should build systems where agents with limited context can still succeed, according to X's news summary. Examples cited include Anthropic's daily code changes climbing from 2,500 to more than 30,000, which pushed it toward a custom source-control system.",
-        "John Carmack stressed solid building blocks for efficiency, and others called for redesigning the development lifecycle around agent velocity with strong guardrails. Tan's own point, in the reply you saved, is the human one: software built for people is never finished, because people's tastes keep changing."
+        "X's news summary says OpenAI's Astra, part of the GPT-6 lineup, leads public robot intelligence indexes, including Playground's aggregation of 16 benchmarks, and beats dedicated robotics models in simulation and real-world tests. Investor Freda Duan called it robotics' GPT-3 moment, and OpenAI's Will Depue pointed to how surprising the results from scaling general AI have been.",
+        "Critics note it still struggles with fine dexterity and that latency and safety are real-world hurdles. The broader signal is talent moving toward general models at labs like OpenAI and Tesla, which matters for how fast Optimus-style robots pick up new tasks."
       ],
       "authors": [
         "X News"
       ],
       "source": "x",
       "source_label": "X",
-      "source_url": "https://x.com/i/trending/2116316820030579083",
-      "discuss_url": "https://x.com/poteto/status/2116217625554698569",
+      "source_url": "https://x.com/i/trending/2116805922211410376",
+      "discuss_url": "https://x.com/i/trending/2116805922211410376",
       "interests": [
         "ai",
-        "coding",
-        "agents"
+        "robotics"
       ],
       "lead": false,
       "featured": true
     },
     {
-      "id": "grok-bot-first-stable",
-      "kicker": "Grok Bot",
-      "headline": "The first stable Grok Bot release is out, with a Tasks hub and texting support in the works",
-      "why_read": "You reposted this; it's a preview of where the app you use every day is heading.",
+      "id": "navic-nvs-03-back-to-strength",
+      "kicker": "India in space",
+      "headline": "GSLV F18 launches NVS-03 to bring NavIC back to full strength",
+      "why_read": "Not \"India gets its own GPS\" but a better story: rebuilding a system that slipped below its minimum.",
       "body": [
-        "TestingCatalog reports that the first stable Grok Bot version is now available from SpaceXSI. Coming next, per the post: a dedicated Tasks tab showing every running session when Grok Bot is working on several things at once, and a new settings tab named \"texting\" that hints at iMessage and RCS support.",
-        "These are leaks from app builds rather than announced features, so timing and final shape may change."
+        "Balaji Thotadri's thread, which you retweeted and bookmarked, corrects the viral framing. India has had NavIC for years, but it needs at least four working satellites to work on its own. A few older satellites lost their atomic clocks and NVS-02 couldn't reach its slot last year, so the system slipped below that minimum. GSLV F18's launch of NVS-03 on Friday night puts it on track to get back to four.",
+        "The reason it matters is satellite timing: maps, shipping, fishermen's alerts, power grids, bank timestamps, and defence all depend on it, and India was denied GPS data during Kargil. NVS-03 also carries an Indian-made atomic clock, where not long ago every one was imported. NVS-04 and NVS-05 are lined up next."
       ],
       "authors": [
-        "@testingcatalog"
+        "Balaji Thotadri"
       ],
       "source": "x",
       "source_label": "X",
-      "source_url": "https://x.com/testingcatalog/status/2116312361086624003",
-      "discuss_url": null,
+      "source_url": "https://x.com/iam_balaji/status/2116352787391062263",
+      "discuss_url": "https://x.com/sougat18/status/2116456873033613544",
+      "interests": [
+        "space",
+        "india"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "ai-text-watermarks-claude-grok",
+      "kicker": "AI policy",
+      "headline": "Claude and Grok API outputs start carrying hidden watermarks this month",
+      "why_read": "If you pipe model output into email, resumes, or docs, it'll soon be statistically tagged by default.",
+      "body": [
+        "To meet the EU AI Act's machine-readable labeling rule, Anthropic expands watermarking to more Claude models worldwide from November 3, and SpaceXAI's Grok API will watermark outputs from seven models by default, including grok-4.7 and grok-4.20 variants, across all endpoints from November 7. The marks are subtle patterns in word choice that survive light editing, with limited opt-outs for teams.",
+        "The quality question is live on HN. Keyvan's post walks through the debate John Gruber started about whether watermarking degrades writing, and argues it probably does a little. Eric S. Raymond and others expect workarounds, like rephrasing through open-source models, to show up fast."
+      ],
+      "authors": [
+        "X News",
+        "Keyvan"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2116868416728670384",
+      "discuss_url": "https://news.ycombinator.com/item?id=50320599",
       "interests": [
         "ai",
-        "agents"
+        "policy"
       ],
       "lead": false,
-      "featured": false
+      "featured": true
     },
     {
-      "id": "azure-api-connections-cross-tenant",
-      "kicker": "Security",
-      "headline": "Azure's weakest link: five more full cross-tenant compromises through Logic Apps API Connections",
-      "why_read": "As an architect, this is the kind of shared-infrastructure flaw you want to understand before your next Azure design review.",
+      "id": "memdoor-qwen-team-solve",
+      "kicker": "Open models",
+      "headline": "Five Qwen3.8-27B agents match a published harness on LiveCodeBench Hard",
+      "why_read": "A careful small-model agent result that's honest about what it does and doesn't prove.",
       "body": [
-        "Binary Security researcher Haakon Wik Gulbrandsrud is back with more vulnerabilities in Azure API Connections, the plumbing behind Logic Apps connectors. His summary: the architecture let an attacker compromise any other connection worldwide, giving full access to the connected backend, including cross-tenant access to Key Vaults and Azure SQL databases and to external services like Jira or Salesforce.",
-        "He says the only thing standing in the way is layers of input validation bolted onto the various systems, and the post walks through how he found edge cases in each. The findings earned him $200,000 in bounties, and he presented them at Blue Hat Asia 2026. It resurfaced on Hacker News this week."
+        "The memdoor team-solve example has five small models solve a problem together: a planner, two ideators, a solver, and a manager, plus a repair worker. Each starts fresh and they talk only through files on disk, while a script, not a model, decides success. On the first ten LiveCodeBench Hard problems, five passes each, it averaged 9.8 out of 10 against 9.6 for the original authors' harness and 8.0 for a single Fable 5 call.",
+        "The README is refreshingly blunt: ten problems is a tiny sample, 9.8 and 9.6 are the same number, contamination can't be ruled out, and the model ran on OpenRouter rather than locally. A run took a median of 40 minutes and $0.39, and all 50 runs cost $35.79."
       ],
       "authors": [
-        "Haakon Wik Gulbrandsrud"
-      ],
-      "source": "hn",
-      "source_label": "Hacker News",
-      "source_url": "https://www.binarysecurity.no/posts/2026/10/one-root-case",
-      "discuss_url": "https://news.ycombinator.com/item?id=50301854",
-      "interests": [
-        "security",
-        "systems"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "nesformer-nes-in-qwen-weights",
-      "kicker": "Open Models",
-      "headline": "A working NES compiled into the weights of a stock Qwen3.5 model",
-      "why_read": "A wonderfully weird open-source hack about what transformer weights can actually hold.",
-      "body": [
-        "Nesformer runs the NES's 6502 CPU, its 2 KB of work RAM, and a cartridge's program ROM inside a standard Qwen3.5 checkpoint. Nobody trained the weights; a compiler computed every one. When you play, the model predicts the CPU's execution log one token at a time while a small host program draws the picture, reads the controller, and fires the vblank interrupt.",
-        "It builds on Divyansh Agrawal's Qwenputer, which compiled a CHIP-8 and then a 32-bit RISC-V CPU into Qwen3.5-4B, using the model's Gated DeltaNet state as the machine's memory. For the bundled test games, every frame matches a conventional 6502 emulator exactly."
-      ],
-      "authors": [
-        "dbreunig"
+        "guregodevo"
       ],
       "source": "github",
       "source_label": "GitHub",
-      "source_url": "https://github.com/dbreunig/nesformer",
-      "discuss_url": "https://news.ycombinator.com/item?id=50306442",
+      "source_url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
+      "discuss_url": "https://news.ycombinator.com/item?id=50320995",
       "interests": [
         "ai",
         "open-source"
@@ -262,90 +213,21 @@
       "featured": false
     },
     {
-      "id": "cybercab-beats-uber-in-the-rain",
-      "kicker": "Robotaxi",
-      "headline": "On a rainy night in Austin, Cybercab finally beat Uber on price",
-      "why_read": "You reposted a run of rider reports last night; this is the one with a price comparison.",
+      "id": "anthropic-blocks-training-research",
+      "kicker": "AI labs",
+      "headline": "A researcher says Anthropic blocks him for anything touching model training",
+      "why_read": "The anti-distillation fight is landing on paying users doing ordinary research automation.",
       "body": [
-        "WorldlyReviewer reports that on a rainy day, when rideshare prices were higher, Cybercab came in cheaper than Uber, and the rain didn't hurt service times. In another post they note that Cybercab's \"2 minutes away\" estimates are usually accurate.",
-        "Tesla's Robotaxi account, meanwhile, is pitching a Halloween weekend message to Austin riders: make good decisions and take a Robotaxi home, as service now runs from 6 a.m. to 2 a.m."
+        "HKUST PhD student Jiahao Shao says he never distilled Claude: his rollouts came from an open-source model, and Claude only submitted jobs and ran analysis. He says he was still tagged for training a competitor, and now anything touching RFT, SFT, or training larger models gets him blocked, downgraded from Opus 5.5 to Opus 5, or has the session killed.",
+        "His post passed 228K views and drew a long HN thread. It's one person's account, but it's a useful warning if your own agent workflows touch fine-tuning pipelines on a closed model."
       ],
       "authors": [
-        "@WorldlyReviewer"
+        "Jiahao Shao"
       ],
       "source": "x",
       "source_label": "X",
-      "source_url": "https://x.com/WorldlyReviewer/status/2116377714982789421",
-      "discuss_url": "https://x.com/robotaxi/status/2116324698355318830",
-      "interests": [
-        "tesla",
-        "autonomy"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "robotaxi-50m-arr-math",
-      "kicker": "Robotaxi",
-      "headline": "Freda Duan's math: Tesla Robotaxi could be at a $50 million run rate, about a tenth of Waymo's bookings",
-      "why_read": "You bookmarked and reposted this napkin math; here are the assumptions behind it.",
-      "body": [
-        "Freda Duan starts from Tesla's disclosed 437,000 miles per week in Austin, assumes about 3.5 paid miles per trip at $10 to $15 a trip, and gets to more than $50 million in annualized revenue on a weekly run-rate basis. She notes the figure moves fast because Tesla has scaled more than tenfold in three months.",
-        "For Waymo she assumes 500,000 to 600,000 trips a week, or about 4,000 cars on the road, and about $16 a trip, for a gross bookings run rate of roughly $500 to $600 million. Her conclusion: Tesla may already be at about a tenth of Waymo. These are her estimates from public figures, not company numbers."
-      ],
-      "authors": [
-        "Freda Duan"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/FredaDuan/status/2116310665459909033",
-      "discuss_url": null,
-      "interests": [
-        "tesla",
-        "markets"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "neocloud-gpu-deals",
-      "kicker": "AI Compute",
-      "headline": "Meta and SpaceX are winning GPU deals from frontier labs that neoclouds can't easily match",
-      "why_read": "The compute market is reshuffling, and SpaceX is now one of the landlords.",
-      "body": [
-        "An expert quoted by P Equity Research argues that Meta and SpaceX are pulling deals directly from frontier labs because they have ready-to-deploy GPU fleets that neoclouds like Nebius, CoreWeave, and IREN can't match, according to X's news summary. The summary cites SpaceX's Anthropic deal for its Colossus cluster, a $30 billion Google deal for 110,000 Nvidia GPUs through 2029, and $40 billion of financing for Vera Rubin chips starting in 2027. Meta hasn't publicly confirmed similar rentals.",
-        "The neoclouds aren't standing still: IREN signed a multi-year deal to put Nvidia Blackwell Ultra GPUs behind Perplexity Computer, even as its shares sat near 52-week lows."
-      ],
-      "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2116274740125946186",
-      "discuss_url": "https://x.com/i/trending/2116303603749265628",
-      "interests": [
-        "chips",
-        "ai"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "openai-multi-account-law-model",
-      "kicker": "OpenAI",
-      "headline": "ChatGPT adds two-account switching on mobile, and a legal model shows up on OpenAI's pricing page",
-      "why_read": "Small quality-of-life news, plus a hint that vertical models are coming.",
-      "body": [
-        "OpenAI rolled out switching between up to two ChatGPT accounts in its mobile app, keeping conversations, billing, and settings separate, with desktop support to follow, according to X's news summary. It's part of a 28-day sprint of daily updates.",
-        "Separately, a \"gpt-6-astra-law\" model appeared on the API pricing page at $10 per million input tokens and $50 per million output tokens, aimed at legal work."
-      ],
-      "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2116460042333335601",
-      "discuss_url": null,
+      "source_url": "https://x.com/jiahaoshao1/status/2116475922190922088",
+      "discuss_url": "https://news.ycombinator.com/item?id=50319358",
       "interests": [
         "ai"
       ],
@@ -353,44 +235,91 @@
       "featured": false
     },
     {
-      "id": "reddit-ai-mode-no-traffic",
-      "kicker": "The Web",
-      "headline": "Reddit's CEO: AI mode doesn't drive traffic, for Reddit or anyone else",
-      "why_read": "You bookmarked this; it's a clear statement of how AI answers are rewiring the open web's economics.",
+      "id": "spacex-record-q3",
+      "kicker": "SpaceX",
+      "headline": "SpaceX posts a record Q3 as AI revenue jumps 830%",
+      "why_read": "The Super Intelligence line is now bigger than Starlink connectivity, which says a lot about where Colossus fits.",
       "body": [
-        "On Reddit's earnings call, the CEO said: \"AI mode does not drive traffic. Not for us and not to anybody as far as I know. It used to be a traffic driver. Now it's not.\" The Kobeissi Letter framed it as the end of the decades-old bargain where search engines send users to websites and websites monetize that traffic.",
-        "If AI answers keep absorbing the click, publishers and communities will need new ways to get paid, which is exactly the fight playing out over licensing and scraping."
+        "Per X's news summary, SpaceX's adjusted EBITDA for the quarter ended September 30 rose 306% to $8.8 billion. Super Intelligence revenue was $7.6 billion, up 830% from cloud deals and compute capacity, while connectivity brought in $5.25 billion and launches $1.77 billion.",
+        "Musk is targeting $500 billion to $1 trillion of annualized recurring revenue by the end of 2027, backed by compute ramping to 20 gigawatts. nextbigfuture, which you retweeted, argues the Minihard builds moving up a month add about $3 billion of revenue in October and $5 billion in November; treat that as his estimate."
       ],
       "authors": [
-        "The Kobeissi Letter"
+        "X News"
       ],
       "source": "x",
       "source_label": "X",
-      "source_url": "https://x.com/KobeissiLetter/status/2116139805516210579",
-      "discuss_url": null,
+      "source_url": "https://x.com/i/trending/2116601290163654941",
+      "discuss_url": "https://x.com/nextbigfuture/status/2116632152364421540",
+      "interests": [
+        "space",
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "neuralink-r1-blindsight",
+      "kicker": "Neurotech",
+      "headline": "Neuralink's R1 robot places 1,024 electrodes, and Blindsight is engineering-ready",
+      "why_read": "Surgical robotics plus a vision implant that skips the eye entirely.",
+      "body": [
+        "Neuralink's new R1 surgical robot inserts 1,024 electrodes, using cameras and sensors to steer around blood vessels while a neurosurgeon oversees it. Musk also said the Blindsight implant, which signals the visual cortex directly to bypass damaged eyes, is engineering-ready. It has held FDA Breakthrough Device status since 2024.",
+        "Reaction on X mixes hope from people with neurological conditions with privacy and ethics worries, while clinical tests for motor function continue."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2116766481245733054",
+      "discuss_url": "https://x.com/i/trending/2116766481245733054",
+      "interests": [
+        "science",
+        "health"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "nvidia-agents-allen-telescope",
+      "kicker": "Science",
+      "headline": "AI agents now run the Allen Telescope Array from plain-English prompts",
+      "why_read": "Agentic AI doing real instrument work at 2.4 terabits a second, physics and Blackwells in one story.",
+      "body": [
+        "At Hat Creek Radio Observatory, the Allen Telescope Array uses Nvidia's Holoscan platform to let AI agents point antennas, calibrate instruments, fix data errors, and analyze live radio streams from simple English instructions. It processes up to 2.4 terabits per second on RTX PRO 6000 Blackwell GPUs.",
+        "As a proof of concept it detected a pulsar in the Crab Nebula in real time. No alien signals yet, and scientists still check candidates by hand, but the setup is meant to catch unusual technosignatures that older methods might miss."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2116710780255060426",
+      "discuss_url": "https://x.com/i/trending/2116710780255060426",
       "interests": [
         "ai",
-        "markets"
+        "science"
       ],
       "lead": false,
       "featured": false
     },
     {
-      "id": "enterprise-ai-context-gap",
-      "kicker": "Enterprise AI",
-      "headline": "Enterprise AI is stalling on missing company context, not model smarts",
-      "why_read": "This is the architecture problem you'd actually be asked to solve at work.",
+      "id": "grok-bot-600k-dau",
+      "kicker": "Agents",
+      "headline": "Grok Bot passes 600,000 daily users as people share bot-team playbooks",
+      "why_read": "You're living this one; the numbers and the playbooks people are trading are worth a look.",
       "body": [
-        "Databricks' Ali Ghodsi argues frontier models are already capable enough, but enterprises hold proprietary context the models never see, and fusing it in could unlock automation without any smarter tech, according to X's news summary. Box CEO Aaron Levie points to a widening gap between AI frontrunners and everyone else.",
-        "Builders like Kasey Klimes add that even when data lives in Slack and Notion, it's unstructured and stale, which leads to unreliable answers. The fix they describe is structured extraction of tribal knowledge, and systems like Databricks' Genie that ground agents in company data."
+        "X's news summary says Grok Bot, launched in beta on August 11, has passed 600,000 daily active users, with Musk calling it the fastest growth he's seen for any product. Users build persistent bots for real work like updating CRMs, clearing tickets, and spotting wasted spending, which it says saved SpaceX over $100,000 on unused software. It costs $30 a month.",
+        "One playbook you retweeted from Kacper Rutkiewicz: install Dr. Eggbot, give it Matt Pocock's grill-me skill, let it grill you about what you want, then build the bot. Setup and clear rules still matter, which matches what people describe for specialized bot roles."
       ],
       "authors": [
-        "X News"
+        "X News",
+        "Kacper Rutkiewicz"
       ],
       "source": "x",
       "source_label": "X",
-      "source_url": "https://x.com/i/trending/2116375030061805897",
-      "discuss_url": null,
+      "source_url": "https://x.com/i/trending/2116048467378180323",
+      "discuss_url": "https://x.com/KacperRutk/status/2116696735988761085",
       "interests": [
         "ai",
         "agents"
@@ -399,225 +328,322 @@
       "featured": false
     },
     {
-      "id": "tangled-federated-forge",
-      "kicker": "Dev Tools",
-      "headline": "Tangled pitches the first truly federated code forge, built on the AT Protocol",
-      "why_read": "An open-protocol answer to centralized GitHub, designed to be hacked on by agents.",
+      "id": "opencode-claude-subscription",
+      "kicker": "AI coding",
+      "headline": "OpenCode now takes your Claude subscription, and Theo drops his effort setting",
+      "why_read": "Two small changes that affect what your coding agent costs and how you run it.",
       "body": [
-        "Tangled argues the centralized code forge is crumbling and that email has outlasted it as the open way to collaborate on Git, at the cost of user experience. Its pitch is both: host code on your own servers, or just the parts you want, like Git hosting or CI runners, and still collaborate with everyone else.",
-        "Because it's built on the AT Protocol, you can write extensions, subscribe to the firehose, or build custom components, like a knot that runs on Cloudflare Workers or Mitchell Hashimoto's custom spindle. The team says agents make that kind of hyper-personal software easy."
+        "OpenCode announced you can now use a Claude subscription inside it, so the open-source coding agent no longer needs separate API billing to run Claude.",
+        "Separately, Theo says he moved from extra-high to high effort on Opus 5.5 and finds it better almost all of the time. Karpathy, in the HackerTube post, says he uses medium. More effort isn't always better, and it's often slower and pricier."
       ],
       "authors": [
-        "Tangled"
+        "OpenCode",
+        "Theo"
       ],
-      "source": "hn",
-      "source_label": "Hacker News",
-      "source_url": "https://tangled.org/blog/forge/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50305573",
-      "interests": [
-        "open-source",
-        "coding"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "sanstun-wireguard-rust",
-      "kicker": "Networking",
-      "headline": "Firezone releases sanstun, a sans-IO, parallel-friendly WireGuard implementation in Rust",
-      "why_read": "A clean systems-design lesson: separate the state machine from the side effects.",
-      "body": [
-        "Firezone announced sanstun, a Rust implementation of the WireGuard state machine built around sans-IO, the idea that IO and side effects, including time and randomness, are kept cleanly apart from the protocol logic. That makes the pieces easy to compose and test and lets you simulate an entire system accurately.",
-        "Firezone started on boringtun but kept patching its fork with bug fixes and new APIs until keeping upstream compatibility became too hard. Sanstun is the result of starting over with the API it actually needed."
-      ],
-      "authors": [
-        "Firezone"
-      ],
-      "source": "hn",
-      "source_label": "Hacker News",
-      "source_url": "https://www.firezone.dev/blog/introducing-sanstun",
-      "discuss_url": "https://news.ycombinator.com/item?id=50310398",
-      "interests": [
-        "systems",
-        "security"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "lean-formal-verification-de-moura",
-      "kicker": "Formal Methods",
-      "headline": "Lean creator Leo de Moura on AI, proofs, and a verified software stack",
-      "why_read": "Pairs with today's 3-SAT news: when generation is easy, verification becomes the job.",
-      "body": [
-        "On The Data Exchange, Ben Lorica talks with Leo de Moura, creator of Lean and a VP and Distinguished Scientist at AWS, about how AI is making formal verification more accessible. The framing is that generation has become easy, so the hard part is trusting what gets generated.",
-        "They cover why specifications and machine-checked proofs matter more now, what it means to trust AI-written code and autonomous agents, the vision of a verified software stack, and how all this is reshaping mathematics and engineering careers."
-      ],
-      "authors": [
-        "Ben Lorica"
-      ],
-      "source": "hn",
-      "source_label": "Hacker News",
-      "source_url": "https://thedataexchange.media/leo-de-moura-lean-aws/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50290652",
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/opencode/status/2116198602523513081",
+      "discuss_url": "https://x.com/theo/status/2116420089411145913",
       "interests": [
         "ai",
-        "math"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "gcc-switch-lowering",
-      "kicker": "Compilers",
-      "headline": "How GCC lowers a switch statement, from jump tables to bitsets",
-      "why_read": "A satisfying deep dive into what the compiler really does with your switch.",
-      "body": [
-        "This post walks through how GCC turns switch statements into machine code at -O3. A compact range of cases becomes a jump table, and the compiler notices when case values are offset by a constant and subtracts it first.",
-        "From there it covers the other strategies, including bitset lowering, which the author notes is the one optimization here that Clang doesn't share. Assembly listings sit next to each example."
-      ],
-      "authors": [
-        "xoranth"
-      ],
-      "source": "hn",
-      "source_label": "Hacker News",
-      "source_url": "https://xoranth.net/gcc-switch/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50314085",
-      "interests": [
-        "systems",
         "coding"
       ],
       "lead": false,
       "featured": false
     },
     {
-      "id": "scribd-breach-notice",
-      "kicker": "Security",
-      "headline": "Scribd notifies users of a breach touching Slideshare, Everand, and Fable accounts",
-      "why_read": "If you've ever used Slideshare, expect phishing that looks like it.",
+      "id": "system-1-decision-models",
+      "kicker": "AI architecture",
+      "headline": "Not every decision should go to the LLM",
+      "why_read": "A crisp systems argument for classifiers and reward models as the fast path in agent stacks.",
       "body": [
-        "A Hacker News user posted a breach notice from Scribd, Inc., parent of Scribd, Slideshare, Everand, and Fable, sent through its notification partner Epiq. It says an unauthorized party may have accessed email addresses, the last four digits of credit cards, card issuer and expiry date, country, and payment history.",
-        "The notice says there's no evidence of misuse and warns users to watch for phishing that impersonates any of the four brands. The poster said they hadn't seen it reported anywhere else."
+        "Arpit Bhayani argues for System 1 decision models alongside LLMs. Classifiers, reward models, and extraction models handle routing, gating, and scoring, so the LLM isn't the decision engine for everything.",
+        "For an architect, it's the familiar move of putting cheap, predictable components in front of the expensive general one, applied to agent systems where latency and cost add up fast."
       ],
       "authors": [
-        "Hacker News"
-      ],
-      "source": "hn",
-      "source_label": "Hacker News",
-      "source_url": "https://news.ycombinator.com/item?id=50312756",
-      "discuss_url": "https://news.ycombinator.com/item?id=50312756",
-      "interests": [
-        "security"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "weak-hurricane-season",
-      "kicker": "Climate",
-      "headline": "Chart of the day: 2026 was one of the weakest U.S. hurricane seasons in recent history",
-      "why_read": "You reposted this; good news for the Gulf Coast and for energy markets.",
-      "body": [
-        "Javier Blas notes that as the U.S. hurricane season enters its final weeks, it's clear it was one of the weakest in recent history. His chart uses Colorado State University's Accumulated Cyclone Energy for 2026 as a share of the 1991 to 2020 average.",
-        "Accumulated Cyclone Energy adds up the strength and duration of every storm, so it's a better gauge than simply counting named storms."
-      ],
-      "authors": [
-        "Javier Blas"
+        "Arpit Bhayani"
       ],
       "source": "x",
       "source_label": "X",
-      "source_url": "https://x.com/JavierBlas/status/2116262334117359705",
-      "discuss_url": null,
+      "source_url": "https://x.com/arpit_bhayani/status/2116537431264825718",
+      "discuss_url": "https://x.com/arpit_bhayani/status/2116537431264825718",
       "interests": [
-        "science",
-        "energy"
+        "ai",
+        "systems"
       ],
       "lead": false,
       "featured": false
     },
     {
-      "id": "coal-mine-ev-trucks",
+      "id": "aws-161b-revenue",
+      "kicker": "Cloud",
+      "headline": "AWS's trailing revenue tops 476 of the S&P 500's companies",
+      "why_read": "A one-line chart that puts the size of the cloud business in perspective.",
+      "body": [
+        "Charlie Bilello points out that AWS's trailing-12-month revenue of $161 billion is larger than the revenue of 476 companies in the S&P 500.",
+        "Set it next to SpaceX's AI compute revenue and Colossus 2's GPU counts, and the infrastructure layer is where the money is pooling."
+      ],
+      "authors": [
+        "Charlie Bilello"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/charliebilello/status/2116601170055549390",
+      "discuss_url": "https://x.com/charliebilello/status/2116601170055549390",
+      "interests": [
+        "markets",
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "india-solar-curtailment-8twh",
       "kicker": "Energy",
-      "headline": "A coal mine switches to electric trucks to save on diesel",
-      "why_read": "You bookmarked it; a perfect small example of how messy the energy transition is.",
+      "headline": "India curtailed 8 TWh of solar in three months",
+      "why_read": "The bottleneck is wires and storage, not panels, a pattern that shows up everywhere solar scales fast.",
       "body": [
-        "Javier Blas flagged a story he says is becoming one of his favorites for explaining how messy the energy transition is proving: a coal mine shifting to EV trucks to save on diesel.",
-        "The economics of electrification can win even inside the fossil fuel business, and diesel savings are a more persuasive argument on a mine site than any climate pledge."
+        "Prafull Billore, in a post you retweeted, says India curtailed 8 TWh of solar power between April and June, leaving 11.5% of capacity unused.",
+        "The author's point is that India's bottleneck is the grid and storage, not production. The same issue is behind every argument for big batteries and transmission build-outs."
       ],
       "authors": [
-        "Javier Blas"
+        "Prafull Billore"
       ],
       "source": "x",
       "source_label": "X",
-      "source_url": "https://x.com/JavierBlas/status/2116188397064819019",
-      "discuss_url": null,
+      "source_url": "https://x.com/pbillore141/status/2116432323524845906",
+      "discuss_url": "https://x.com/pbillore141/status/2116432323524845906",
       "interests": [
-        "energy"
+        "energy",
+        "india"
       ],
       "lead": false,
       "featured": false
     },
     {
-      "id": "starlink-dynamic-pricing",
-      "kicker": "Starlink",
-      "headline": "Starlink rolls out dynamic pricing, with some residential bills rising to $156",
-      "why_read": "If you or family rely on Starlink, your bill may start moving with local demand.",
+      "id": "india-northern-corridor-bullet-train",
+      "kicker": "India",
+      "headline": "India approves a Delhi-to-Guwahati bullet train corridor",
+      "why_read": "Delhi to Varanasi in about three and a half hours would reshape travel across the Gangetic plain.",
       "body": [
-        "SpaceX's Starlink has introduced dynamic pricing for residential customers, with monthly rates that move with local network capacity and demand and get reviewed about every quarter, according to X's news summary. Some customers in Missouri saw Residential Max rise from $130 to $156 starting November 30, while Kansas City prices fell to $117.",
-        "Customers vented about the change, and some threatened to cancel. Starlink points to easy month-to-month plan changes and more capacity coming from new satellites."
+        "ANI reports the Northern Corridor bullet train has been approved, running Delhi, Agra, Kanpur, Lucknow, Ayodhya, Varanasi, Patna, and Guwahati.",
+        "Projected times include Delhi to Agra in 59 minutes, Delhi to Lucknow in 2 hours 12 minutes, and Delhi to Varanasi in 3 hours 33 minutes."
       ],
       "authors": [
-        "X News"
+        "ANI"
       ],
       "source": "x",
       "source_label": "X",
-      "source_url": "https://x.com/i/trending/2116020881642430901",
-      "discuss_url": null,
+      "source_url": "https://x.com/ANI/status/2116476186750828874",
+      "discuss_url": "https://x.com/ANI/status/2116476186750828874",
       "interests": [
-        "space"
+        "india",
+        "infrastructure"
       ],
       "lead": false,
       "featured": false
     },
     {
-      "id": "shotwell-spacex-shares-gift",
-      "kicker": "Kindness",
-      "headline": "Gwynne Shotwell and her husband give more than 2 million SpaceX shares to children's Trump accounts",
-      "why_read": "You reposted this; a big, concrete act of generosity aimed at kids in lower-income areas, including in Texas.",
+      "id": "lead-the-agents-fit-brain",
+      "kicker": "Craft",
+      "headline": "Lead the agents, and keep your brain fit",
+      "why_read": "Two posts you saved land on the same advice for engineers in the agent era.",
       "body": [
-        "SpaceX president Gwynne Shotwell says she and her husband Robert are giving more than 2 million SpaceX shares to children's Trump accounts, distributed in December. The first gift goes to 11- to 17-year-olds in zip codes with a median family income of $57,000 or less, and families should get a notice by Monday.",
-        "A second gift in a few weeks will cover eligible children in military families serving overseas, children in foster care, and more kids in Texas counties near their home where the median family income is $90,000 or less."
+        "Gergely Orosz notes Steve Yegge is usually proven right six to twelve months later, and quotes Yegge: \"Having a fit brain will be a key differentiator in the new era. Just do more of [writing], every day.\"",
+        "Uncle Bob Martin shared a line from Proton's CTO: \"Your job is not to use agents to help you write code. Your job is to lead the agents.\" Put together, the job is direction and judgment, and you keep that sharp by thinking on paper."
       ],
       "authors": [
-        "Gwynne Shotwell"
+        "Gergely Orosz",
+        "Uncle Bob Martin"
       ],
       "source": "x",
       "source_label": "X",
-      "source_url": "https://x.com/Gwynne_Shotwell/status/2116266502533902586",
-      "discuss_url": null,
+      "source_url": "https://x.com/GergelyOrosz/status/2116600523269005659",
+      "discuss_url": "https://x.com/unclebobmartin/status/2116512351491084344",
       "interests": [
-        "space",
+        "coding",
         "human-interest"
       ],
       "lead": false,
       "featured": false
     },
     {
-      "id": "oldest-ice-stone-age",
-      "kicker": "Archaeology",
-      "headline": "As Norway's oldest ice melts, Stone Age arrows are emerging",
-      "why_read": "Science with a sting: a 6,000-year-old archive is surfacing because the ice is disappearing.",
+      "id": "model-y-l-fsd-anxiety",
+      "kicker": "Tesla",
+      "headline": "FSD eases a driver's anxiety, and an owner calls the Model Y L his best product ever",
+      "why_read": "The human side of Tesla's weekend, plus spooky Robotaxi riders in Austin.",
       "body": [
-        "For 20 years, the Secrets of the Ice team in Innlandet, eastern Norway, has recovered artifacts from melting mountain ice, most of them up to 2,000 years old and many from the Viking Age. Now Viking finds are getting scarce, and the oldest ice is giving up arrow shafts and arrowheads from the Bronze and Stone Ages.",
-        "Among this year's finds are a slate arrowhead about 5,000 years old found with parts of its shaft, a bone arrowhead of similar age, and a Bronze Age arrowhead made from a freshwater mussel shell, about 3,600 years old. The archaeologists write that they are witnesses to a rapidly changing landscape, since once the oldest ice is gone, so is the archive."
+        "A clip you retweeted from Yair tells the story of April Lockhart, whose driving anxiety eased with FSD, which even parallel parks for her. Separately, tyler hogge says the new, longer Model Y is the best product he's ever used.",
+        "Tesla's Robotaxi account also showed off Halloween \"spooky riders\" in Austin, and a Cybercab dressed up with Mr. Skeleton made the rounds."
       ],
       "authors": [
-        "Ida Irene Bergstrøm"
+        "Yair",
+        "tyler hogge"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/finebutwhy/status/2116533430804701430",
+      "discuss_url": "https://x.com/robotaxi/status/2116689579730436367",
+      "interests": [
+        "tesla",
+        "human-interest"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "semiconductor-planetary-superorganism",
+      "kicker": "Chips",
+      "headline": "Tim O'Reilly: the chip supply chain is a planetary superorganism",
+      "why_read": "A big-picture read on why no single country makes a modern chip alone.",
+      "body": [
+        "Tim O'Reilly recommends a New Yorker story that looks at today's interconnected world through semiconductor manufacturing. He quotes it: \"The semiconductor supply chain is a planetary superorganism with its own ecology.\"",
+        "The piece argues the chip supply chain shows a non-zero-sum version of globalization, one that united its participants in something that couldn't be achieved without cooperation across continents."
+      ],
+      "authors": [
+        "Tim O'Reilly"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/timoreilly/status/2116257800703844530",
+      "discuss_url": "https://x.com/timoreilly/status/2116257800703844530",
+      "interests": [
+        "chips"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "jepsen-particledb",
+      "kicker": "Databases",
+      "headline": "Jepsen finds 96 issues in ParticleDB, an AI-focused database",
+      "why_read": "A reminder to test any \"Full ACID\" claim before you put agent state in it.",
+      "body": [
+        "Jepsen tested ParticleDB, a multi-model database aimed at AI agents and apps that combines transactional SQL, key-value storage, vector search, and live analytics. It found 96 issues, from crashes, deadlocks, and data loss to rows that couldn't be deleted and dropped tables reappearing in distorted forms.",
+        "It kept losing committed writes in normal operation in its default mode and allowed lost updates even at serializable. Jepsen's verdict is that its \"Full ACID\" claim was somewhat premature, and the maker has since shipped fixes."
+      ],
+      "authors": [
+        "Jepsen"
       ],
       "source": "hn",
       "source_label": "Hacker News",
-      "source_url": "https://www.sciencenorway.no/archaeology-climate-culture/the-oldest-ice-is-disappearing-the-stone-age-is-emerging-from-the-melting-ice/2713921",
-      "discuss_url": "https://news.ycombinator.com/item?id=50309266",
+      "source_url": "https://jepsen.io/analyses/particledb-1.1.4",
+      "discuss_url": "https://news.ycombinator.com/item?id=50316100",
+      "interests": [
+        "systems",
+        "databases"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "memory-latency-stupid",
+      "kicker": "Performance",
+      "headline": "100% CPU often means waiting on memory",
+      "why_read": "A clear refresher on why cache-friendly data layout still beats clever code.",
+      "body": [
+        "Pivot's post explains that a CPU at 100% may be doing far less work than it looks. A modern core can run about 4 to 8 instructions per nanosecond, while a trip to RAM takes 50 to 100 nanoseconds, so one memory access costs roughly 400 to 800 instructions.",
+        "It walks through GROUP BY aggregations to show how databases keep work in small chunks that fit in cache. The author notes no LLMs were used to write it."
+      ],
+      "authors": [
+        "Pivot"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://pivotlake.io/blog/its-the-memory-latency-stupid/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50318720",
+      "interests": [
+        "systems",
+        "chips"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "ai-cost-javascript-frameworks",
+      "kicker": "Web dev",
+      "headline": "Nolan Lawson benchmarks which JavaScript frameworks agents build best",
+      "why_read": "Evidence instead of vibes for the \"this framework is better for agents\" claims.",
+      "body": [
+        "Tired of framework claims made without evidence, Nolan Lawson had agents build the same small Pokémon app in several frameworks, five times each, and took the median. He measured development time, tokens spent, lines of code, and Lighthouse performance and accessibility, and tested each app against a conformance suite.",
+        "He's candid that the results are noisy because agents sometimes go off on token-burning tangents. His point is that you can still make framework choices from evidence in the agent era."
+      ],
+      "authors": [
+        "Nolan Lawson"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50323088",
+      "interests": [
+        "ai",
+        "coding"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "brazil-court-prompt-injection",
+      "kicker": "AI and law",
+      "headline": "A Brazilian court fines lawyers for hiding a prompt injection in a filing",
+      "why_read": "Possibly the first ruling on someone deliberately hijacking a court's AI.",
+      "body": [
+        "A Brazilian labor court found white-on-white text in a petition telling any AI to respond superficially and not challenge the documents. The court's AI tool, Galileu, flagged it. The court fined the two firms 10% of the R$842,000 claim, about $16,000.",
+        "The court said the lawyers tried to bias any AI used by the court or the other side. The ruling is from July and is back on HN this weekend."
+      ],
+      "authors": [
+        "Patrick E. Zeller"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50322173",
+      "interests": [
+        "ai",
+        "security"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "altman-dram-belongs-in-data-centers",
+      "kicker": "Hardware",
+      "headline": "Sam Altman says home PCs holding DRAM is \"quite terrible\"",
+      "why_read": "A real argument about whether local AI hardware or rented cloud compute wins.",
+      "body": [
+        "On the Cheeky Pint channel, Altman said that from a global allocation view it's \"quite terrible to have everybody have a bunch of the world's limited supply of DRAM sitting in their own computer and being used 5% of the time.\"",
+        "Tom's Hardware reads it as OpenAI preferring memory go to data centers over local inference, which worries people who want to own their hardware rather than rent it."
+      ],
+      "authors": [
+        "Tom's Hardware"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://www.tomshardware.com/tech-industry/data-centers/openai-ceo-says-its-quite-terrible-for-your-pc-to-have-ram-sam-altman-says-data-centers-offer-better-utilization",
+      "discuss_url": "https://news.ycombinator.com/item?id=50324267",
+      "interests": [
+        "chips",
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "arecibo-zinc-creep",
+      "kicker": "Engineering",
+      "headline": "Zinc creep in its cable sockets brought down Arecibo",
+      "why_read": "A failure mode nobody had seen in a century, with a strange possible electromagnetic twist.",
+      "body": [
+        "A National Academies report says long-term zinc creep in the zinc-filled cable sockets caused the 2020 collapse of the 57-year-old Arecibo telescope. The zinc slowly lost its grip, cables pulled out, and the platform fell into the 305-metre dish. It calls this the first documented case of the failure in over a century of use.",
+        "The sequence began with Hurricane Maria three years earlier, and visible cable pullout afterward should have prompted action. One hypothesis is that low-current electroplasticity from the telescope's own radio waves sped up the creep."
+      ],
+      "authors": [
+        "Make Tech Easier"
+      ],
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://maketecheasier.com/arecibo-zinc-creep-collapse/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50311045",
       "interests": [
         "science"
       ],
@@ -625,70 +651,47 @@
       "featured": false
     },
     {
-      "id": "india-poverty-world-bank",
-      "kicker": "India",
-      "headline": "World Bank brief: India cut poverty from 57.7% to 16.1% between 2011 and 2023",
-      "why_read": "You bookmarked this; the numbers behind one of the fastest poverty declines in the world.",
+      "id": "william-nordhaus-dies",
+      "kicker": "Economics",
+      "headline": "William Nordhaus, who put climate into economics, dies at 85",
+      "why_read": "The person behind the DICE model and the carbon-tax argument that shaped energy policy.",
       "body": [
-        "Finance Minister Nirmala Sitharaman highlighted the World Bank's October 2026 Poverty and Equity Brief: 49.6 crore people moved above the $4.20-a-day poverty line between 2011 and 2023, taking the rate from 57.7 percent to 16.1 percent. Extreme poverty at $3 a day fell from 27.1 percent to 2.6 percent.",
-        "Employment grew by 13.4 crore people between 2017 and 2023, nearly twice the growth in the working-age population, with rural women driving much of the gain. The report credits consumption growth, rising employment, and expanded social transfers such as food subsidies."
+        "Yale reports that William Nordhaus died on October 30 after a battle with glioblastoma. He was 85. He won the 2018 Nobel Prize for integrating climate change into long-run macroeconomic analysis.",
+        "His DICE model weighs the economic costs of climate damage against the cost of cutting emissions, and he used it to argue for a carbon tax. He spent more than 50 years at Yale, including as provost."
       ],
       "authors": [
-        "Nirmala Sitharaman"
+        "Yale News"
       ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/nsitharaman/status/2116132720023920819",
-      "discuss_url": null,
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://news.yale.edu/2026/10/31/william-nordhaus-nobel-laureate-who-integrated-economics-and-climate-change-devoted-yale",
+      "discuss_url": "https://news.ycombinator.com/item?id=50318376",
       "interests": [
-        "india",
-        "economics"
+        "economics",
+        "energy"
       ],
       "lead": false,
       "featured": false
     },
     {
-      "id": "where-indians-live-us",
-      "kicker": "People",
-      "headline": "Where rich Indians live in the U.S., versus where most Indians live",
-      "why_read": "You bookmarked and reposted this; Texas makes one list and not the other.",
+      "id": "italian-farmer-attic-wheat",
+      "kicker": "Science",
+      "headline": "A farmer planted mystery seeds from his attic and grew a seven-eared wheat",
+      "why_read": "A lovely Sunday story about forgotten seeds, genetics, and luck.",
       "body": [
-        "M Mohan shared a simple contrast: rich Indians in the U.S. are in San Francisco, Seattle, New York City, and New Jersey, while the places with the most Indians are San Francisco, Texas, New Jersey, and Los Angeles.",
-        "It struck a nerve, drawing more than 300 bookmarks, which says a lot about how many people recognized themselves in one of the two lists."
+        "In the early 1990s, Parma farmer Claudio Grossi found an old sack of seeds his great-grandfather likely left, tossed them on a manure pile, and forgot them. They sprouted several wheats, one six feet tall with seven ears per stalk instead of one.",
+        "Its kernels were bigger than usual and came in yellow, black, red, white, and even green, sometimes on one stem. Smithsonian follows how he turned that oddity into a crop."
       ],
       "authors": [
-        "M Mohan"
+        "Smithsonian"
       ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/mukund/status/2116274018840166443",
-      "discuss_url": null,
+      "source": "hn",
+      "source_label": "Hacker News",
+      "source_url": "https://www.smithsonianmag.com/science-nature/italian-farmer-found-unknown-seeds-attic-with-nothing-lose-planted-them-result-biblical-180989644/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50320963",
       "interests": [
-        "india",
+        "science",
         "human-interest"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "physical-side-quest",
-      "kicker": "Life",
-      "headline": "Sahil Bloom: the fastest way to improve your life is a physical side quest",
-      "why_read": "You bookmarked it; a good nudge for the weekend.",
-      "body": [
-        "Sahil Bloom argues the quickest way to improve your whole life is to sign up for a physical challenge, whether a race, a competition, or an adventure. Training gives your day structure, you sleep deeper because you're tired, you eat cleaner, and you feel better.",
-        "His line: \"It's a psychological process disguised as a physical one.\""
-      ],
-      "authors": [
-        "Sahil Bloom"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/SahilBloom/status/2115877663567155305",
-      "discuss_url": null,
-      "interests": [
-        "human-interest",
-        "health"
       ],
       "lead": false,
       "featured": false
