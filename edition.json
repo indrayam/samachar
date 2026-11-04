@@ -1,705 +1,703 @@
 {
-  "date": "2026-11-03",
-  "weekday": "Tuesday",
-  "title": "The Daily Diff",
-  "stories": [
-    {
-      "id": "astra-weight-space-programming",
-      "kicker": "AI research",
-      "headline": "MIT researchers say GPT-6 Astra can read and edit neural network weights directly",
-      "why_read": "The biggest thing on Hacker News today: a frontier model fixing a smaller model by reasoning about its raw weights, with no gradient descent involved.",
-      "body": [
-        "In 'Sparks of Weight-Space Programming,' Rikiya Takehi, Jayden Teoh, Alex Zhang and Omar Khattab of MIT CSAIL report that frontier LLMs are surprisingly good at reading and writing network weights. Given the 17,253 raw weights of a small policy network and no tools, GPT-6 Astra named the game it was trained on (Breakout, 99% confident). It also wrote small game-playing networks from scratch that beat networks trained with PPO for 100 million steps.",
-        "The headline result is on a real language model. Asked to make Qwen3.5-0.8B better at math without training, Astra found a weight-level cause of the reasoning loops Qwen's own model card warns about, then edited 0.016% of the weights. MATH-500 went from 7.9% to 48.1% at the same sampling settings, and IFEval roughly tripled. The authors call these early results, but if they hold up, optimizers like Adam start to look like one option among several. Interpretability gets a new tool too."
-      ],
-      "authors": [
-        "Rikiya Takehi",
-        "Jayden Teoh",
-        "Alex Zhang",
-        "Omar Khattab"
-      ],
-      "source": "hn",
-      "source_label": "Hacker News",
-      "source_url": "https://rikiyat.github.io/blog/weight-space-programming/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50341174",
-      "interests": [
-        "ai",
-        "research"
-      ],
-      "lead": true,
-      "featured": false
-    },
-    {
-      "id": "tsmc-sherman-texas-fabs",
-      "kicker": "Chips in Texas",
-      "headline": "TSMC is reportedly in site talks with Sherman, Texas, for a fab complex of up to $120 billion",
-      "why_read": "If it happens, a leading-edge fab cluster would sit north of Dallas, with thousands of jobs and a large new power load on the Texas grid.",
-      "body": [
-        "Citing local outlets including the Dallas Business Journal, @jukan05 reports that Sherman, in Grayson County north of Dallas, has entered site-selection talks with TSMC. The plan described starts with about $45 billion for two fabs and could grow to six fabs and $120 billion over the medium to long term.",
-        "The reported timeline has about 5,000 hires over six years and volume production starting in late 2029. These are site-selection talks, not an announcement, so treat the numbers as a proposal. Together with Samsung in Taylor and Texas Instruments already in Sherman, it would make North and Central Texas a serious semiconductor corridor."
-      ],
-      "authors": [
-        "Jukan"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/jukan05/status/2117196534752362955",
-      "discuss_url": "https://x.com/jukan05/status/2117196534752362955",
-      "interests": [
-        "chips",
-        "texas"
-      ],
-      "lead": true,
-      "featured": false
-    },
-    {
-      "id": "ubuntu-cve-2026-98432-unpatched",
-      "kicker": "Security",
-      "headline": "Debian patched a CVSS 9.8 Linux TCP bug on October 16. Ubuntu still hasn't",
-      "why_read": "If your fleet runs Ubuntu LTS, check today. A root exploit for this bug is out, and Canonical hasn't shipped fixed kernels.",
-      "body": [
-        "CVE-2026-98432 is a critical bug in the Linux kernel's TCP code. According to a widely shared post on chalmovsky.com, it dates back to 2016, can be triggered remotely, and Anthropic says it built a working root exploit for it. Debian shipped a fix on October 16. As of November 2 at 14:48 UTC, the author says Ubuntu still listed every supported release, LTS included, as 'Vulnerable.' Volunteer-run distros like Arch and Alpine have also patched.",
-        "A separate freenode write-up confirms that no fixed kernels exist yet for 22.04, 24.04 or 26.04 and that Canonical hasn't given an ETA. The author took their Ubuntu servers offline and is migrating them off. Whatever you decide about Ubuntu long term, the practical step is the same: list your exposed Ubuntu hosts, and consider a patched mainline kernel, a mitigation, or moving the workload until packages arrive. The post got more than 1,500 points on HN."
-      ],
-      "authors": [
-        "chalmovsky"
-      ],
-      "source": "hn",
-      "source_label": "Hacker News",
-      "source_url": "https://chalmovsky.com/posts/wtf-ubuntu",
-      "discuss_url": "https://news.ycombinator.com/item?id=50337608",
-      "interests": [
-        "security",
-        "systems"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "revolut-self-hosted-glm",
-      "kicker": "Open-weight AI",
-      "headline": "Revolut moved 2,000 engineers from Claude and Codex to self-hosted GLM",
-      "why_read": "A concrete enterprise case for open weights: about a tenth of the cost, and the company says its engineers got faster, not slower.",
-      "body": [
-        "X's news summary of the story says Revolut switched its roughly 2,000 engineers from paid APIs like Claude and Codex to GLM, an open-weight model it self-hosts on 56 Nvidia GPUs. The change happened in April. Costs fell to about 30 cents per million tokens, roughly a tenth of what Revolut paid before, and the company reports a 60% boost in coding productivity and 70% shorter lead times.",
-        "Frontier models are now kept for the exceptions, and engineers use the in-house model for routine work like Jira updates. The productivity figures are self-reported, and HN commenters are arguing about them. Still, for anyone pricing agents for an IT org, this is the clearest public 'own the inference' playbook yet."
-      ],
-      "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2117361077180854435",
-      "discuss_url": "https://news.ycombinator.com/item?id=50350004",
-      "interests": [
-        "ai",
-        "open-source"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "orbital-compute-suncatcher",
-      "kicker": "Compute in orbit",
-      "headline": "Training on 'compute islands' and a Gemma haiku from orbit: the case for space data centers gets real",
-      "why_read": "Musk says superintelligence compute will 'round up to 100%' in space. This week also brought the first evidence that the engineering can work.",
-      "body": [
-        "X's news summary pulls together two threads. Rohan Anil describes algorithms that keep training a model across 'compute islands,' clusters with patchy links between them, and demonstrated a run across sites 9,000 miles apart. Separately, Google's Project Suncatcher launched a prototype satellite on October 1, and on October 30 it produced the first AI output from orbit: a haiku from a Gemma 4 model.",
-        "Elon Musk, in a post Anand bookmarked, went much further: future superintelligence compute will be 'overwhelmingly in space,' and by overwhelmingly he means it 'will round up to 100%.' A haiku is a long way from a gigawatt cluster. But training that tolerates flaky links is exactly what a Starlink-style compute constellation would need."
-      ],
-      "authors": [
-        "X News",
-        "Elon Musk"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2117351173028032861",
-      "discuss_url": "https://x.com/elonmusk/status/2117272748112154651",
-      "interests": [
-        "space",
-        "ai"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "verification-loops-over-reviews",
-      "kicker": "AI coding",
-      "headline": "Verification loops beat adversarial reviews: two engineers on what agent-era coding work is now",
-      "why_read": "Two posts Anand reposted make the same point from different directions: put your tokens and your effort into proving that code works.",
-      "body": [
-        "Cindy Sridharan argues that designing good verification loops is now 'most of the job.' She just landed a refactor she started in January, and she says it was good she waited because the January version was 'buggy af.' Her post walks through the verification process she uses for refactors and notes that she uses different ones for performance work.",
-        "Lauren (@poteto) offers a hot take that has passed 6,000 likes: adversarial code reviews by agents are 'mostly a waste of tokens.' She says agents tend to get lost in nitpicks and YAGNIs, so she has updated her pstack setup to use its interrogate skill less and now prefers empirical checks combined with formal verification. If you're building review bots, it's a useful counterweight."
-      ],
-      "authors": [
-        "Cindy Sridharan",
-        "lauren"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/copyconstruct/status/2117431618415784120",
-      "discuss_url": "https://x.com/poteto/status/2117437607940681849",
-      "interests": [
-        "ai",
-        "coding"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "altermagnetism-proof-slac",
-      "kicker": "Physics",
-      "headline": "SLAC finds direct proof of altermagnetism, a third kind of magnetism",
-      "why_read": "For about 90 years, physics recognized two kinds of magnetic order in materials. Now there's solid evidence for a third, with possible uses in memory and data centers.",
-      "body": [
-        "Ferromagnets line all their spins up. Antiferromagnets, discovered in 1933, alternate spins so they cancel out. In 2022, theorists proposed 'altermagnets,' which have the zero net magnetization of an antiferromagnet but can still carry the spin currents of a ferromagnet. In a paper in Science, a team led by SLAC's Daniel Jost reports direct experimental evidence of chirality, a screw-like asymmetry, in the spins of manganese telluride (MnTe).",
-        "The team says that signal is impossible to explain without altermagnetism, which makes this the strongest confirmation yet. Why it matters beyond the lab: a magnet with no stray field that can still steer spin currents is the kind of material you'd want for denser, faster memory and spintronics. SLAC names quantum technologies, memory devices and data centers as possible uses."
-      ],
-      "authors": [
-        "Erin Woodward"
-      ],
-      "source": "hn",
-      "source_label": "Hacker News",
-      "source_url": "https://www6.slac.stanford.edu/news/2026-10-29-slac-researchers-find-proof-altermagnetism-new-magnetic-phase",
-      "discuss_url": "https://news.ycombinator.com/item?id=50344224",
-      "interests": [
-        "physics",
-        "science"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "spacex-mobile-network-carriers",
-      "kicker": "SpaceX",
-      "headline": "Washington Post: the prospect of SpaceX running its own mobile network has rattled the big carriers",
-      "why_read": "Starlink's direct-to-cell service could grow from a backup feature for carriers into a competitor. Telecom insiders are taking that seriously.",
-      "body": [
-        "In an exclusive Anand reposted, the Washington Post reports that the possibility of SpaceX securing an agreement to operate a mobile network has worried major carriers. The Post based this on interviews with nearly a dozen people in the telecom industry, who fear Elon Musk could threaten their business.",
-        "So far, Starlink's direct-to-cell service has been something carriers partner with to fill dead zones. Running a network itself would put SpaceX on the other side of the table, with spectrum, satellites and an existing customer base. The post is light on terms, so watch for which spectrum and which partner come up next."
-      ],
-      "authors": [
-        "The Washington Post"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/washingtonpost/status/2117391341898322401",
-      "discuss_url": "https://x.com/washingtonpost/status/2117391341898322401",
-      "interests": [
-        "space",
-        "telecom"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "tesla-megapack-foreign-trade-zone",
-      "kicker": "Tesla Energy",
-      "headline": "Tesla's Texas Megapack factory gets Foreign-Trade Zone approval",
-      "why_read": "A quiet Federal Register notice that could help Megapack costs for a factory that depends on imported components.",
-      "body": [
-        "Sawyer Merritt points to a Federal Register notice: the Foreign-Trade Zones Board has authorized Tesla's proposed production activity at its Texas Megapack factory on a limited basis for 14 months.",
-        "In a foreign-trade zone, a manufacturer can work with imported components before they formally enter the U.S. customs market. It defers duties until finished products enter the country, and anything exported directly from the zone skips U.S. duties entirely. For a product built around imported cells, that's real money, and with AI data centers buying grid batteries, it lands at a good time."
-      ],
-      "authors": [
-        "Sawyer Merritt"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/SawyerMerritt/status/2117473268772864268",
-      "discuss_url": "https://x.com/SawyerMerritt/status/2117473268772864268",
-      "interests": [
-        "tesla",
-        "energy"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "fsd-dodges-crash-behind",
-      "kicker": "FSD",
-      "headline": "Video: FSD sees a crash happening behind the car and moves out of the way",
-      "why_read": "A short clip that shows the 360-degree awareness a human driver checking the rearview mirror can't match.",
-      "body": [
-        "@WaitWhat shared a clip in which a Tesla on FSD reacts to an accident unfolding behind it and pulls out of the way. 'It's always watching all around the car,' the post says.",
-        "It's one video, not data. But it's a clean example of the kind of event robotaxi skeptics say is hard: reacting to something outside the driver's line of sight, in time for it to matter. Anand reposted it along with a Montreal influencer's Tesla review."
-      ],
-      "authors": [
-        "WaitWhat"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/WaitWhat/status/2117268322551214178",
-      "discuss_url": "https://x.com/WaitWhat/status/2117268322551214178",
-      "interests": [
-        "tesla",
-        "autonomy"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "spacex-tesla-merger-case",
-      "kicker": "Musk companies",
-      "headline": "The bull case for merging Tesla and SpaceX, in two lists",
-      "why_read": "A clear way to frame a debate that keeps coming up: SpaceX needs seven things from Tesla, and Tesla needs one thing from SpaceX.",
-      "body": [
-        "@CuriousPejjy lists what SpaceX needs from Tesla: Optimus robots, Megapacks, solar, batteries, real-world AI data, autonomous cars and chip design. Tesla, in this framing, mainly needs one thing from SpaceX: lots of AI compute. Renting that compute would eat into Tesla's profits.",
-        "The conclusion is to merge sooner rather than later, before the two valuations drift further apart, and to own more of the combined company. It's an investor's argument, not reporting, but it pairs well with today's SpaceX compute-in-orbit and mobile-network stories."
-      ],
-      "authors": [
-        "CuriousPejjy"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/CuriousPejjy/status/2117339998647164932",
-      "discuss_url": "https://x.com/CuriousPejjy/status/2117339998647164932",
-      "interests": [
-        "tesla",
-        "space",
-        "markets"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "nvidia-auto-ontology",
-      "kicker": "Open source",
-      "headline": "Nvidia open-sources Auto Ontology, a semantic layer that grounds agents in what your data means",
-      "why_read": "For anyone wiring agents to enterprise data: this targets the 'right SQL, wrong metric' problem, and it speaks MCP.",
-      "body": [
-        "Nvidia's pitch: agents can already query databases, but 'a revenue metric answered faster is worth nothing if the number is wrong.' Auto Ontology builds a context layer from enterprise metadata. It reconciles metric definitions across systems, checks generated queries against certified definitions and lineage, and returns provenance with every answer. It serves that context to any agent harness through MCP, a CLI and an API.",
-        "The stack is a Next.js front end, a FastAPI and LangChain backend, and Postgres with pgvector, with inference through NVIDIA NIM. It deploys with Helm on Kubernetes or with Docker Compose. It's Apache-2.0 and had about 1.7k stars at fetch time, though Nvidia isn't accepting outside contributions yet."
-      ],
-      "authors": [
-        "NVIDIA"
-      ],
-      "source": "github",
-      "source_label": "GitHub",
-      "source_url": "https://github.com/NVIDIA/auto-ontology",
-      "discuss_url": "https://news.ycombinator.com/item?id=50348962",
-      "interests": [
-        "open-source",
-        "agents"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "deepseek-superagent-prototype",
-      "kicker": "Agents",
-      "headline": "DeepSeek's open super-agent prototype cut its slowest completion times nearly in half",
-      "why_read": "An MIT-licensed reference design for multi-agent setups: a router, isolated workers and a watchdog. It's very close to how a bot fleet works.",
-      "body": [
-        "According to X's news summary, DeepSeek's dsh-superagent runs on DeepSeek Harness with two layers. A Router filters incoming conversations and hands work to isolated Worker sessions, while a Watchdog monitors progress. In tests with noisy input streams and 20 requests, the slowest completion times dropped from 29.5 to 15.7 minutes compared with a single-session setup.",
-        "It's released as research code under the MIT license, and the summary flags unsolved security issues such as credential handling. Still, if you run several specialized bots, the router-plus-watchdog pattern is worth studying."
-      ],
-      "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2116731970004591075",
-      "discuss_url": "https://x.com/i/trending/2116731970004591075",
-      "interests": [
-        "open-source",
-        "agents"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "longcat-2-5-meituan",
-      "kicker": "Open models",
-      "headline": "Meituan's LongCat-2.5: 1.6 trillion parameters, 48 billion active, built for long agent tasks",
-      "why_read": "Another very large Chinese model at aggressive prices. The Terminal Bench number is the one to verify.",
-      "body": [
-        "X's news summary says LongCat-2.5 has 1.6 trillion total parameters with 48 billion active per token, and it processes images and text through a shared token backbone. It's available through the API at longcat.ai, with 10 million free tokens for new users and about $0.30 per million uncached input tokens.",
-        "Meituan's own benchmarks claim 88.4 on Terminal Bench and 55.4 on 3DCodeBench, which would put it near the top models. Independent verification is still pending. Developers are pointing to its focus on long-horizon agent work and its optimizations for Chinese hardware."
-      ],
-      "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2117291066898444528",
-      "discuss_url": "https://x.com/i/trending/2117291066898444528",
-      "interests": [
-        "ai",
-        "open-source"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "hydrogen-1-open-science-model",
-      "kicker": "Open science",
-      "headline": "Hydrogen-1.0: a 753B open-weight model trained on real lab records for scientific discovery",
-      "why_read": "A different approach to open models: instead of more web text, it's fine-tuned on full experiment cycles, from design to outcome.",
-      "body": [
-        "Hangzhou-based Deep Principle released Hydrogen-1.0 on November 2, according to X's news summary. It's a 753-billion-parameter model built from Z.ai's GLM-5.3 and fine-tuned on complete lab records: experiment designs, procedures, observations and outcomes.",
-        "The company reports 38.3% on FrontierScience-Research multi-step problems and 93.0% on GPQA-Diamond, often edging out GPT-6 Astra. Those are vendor numbers. It's on Hugging Face under an MIT license, with lab-simulation interfaces, so researchers can check the claims themselves."
-      ],
-      "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2117280628781768999",
-      "discuss_url": "https://x.com/i/trending/2117280628781768999",
-      "interests": [
-        "ai",
-        "science"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "gemini-4-carbon-tops-index",
-      "kicker": "Model watch",
-      "headline": "Gemini 4 Carbon edges Claude Opus 5.5 for the top spot on the Artificial Analysis index",
-      "why_read": "The frontier is now separated by single points: 59, 58, 57 and 55. Price and reliability matter more than rank.",
-      "body": [
-        "X's news summary reports Gemini 4 Carbon at 59 on the Artificial Analysis Intelligence Index v5.0, ahead of Claude Opus 5.5 at 58, GPT-6 Astra at 57 and GPT-6.1 Sol at 55. It does especially well on cybersecurity, long-context reasoning and math.",
-        "Google launched it in late October and is rolling it out first to select cyber defenders through its Fairwind Program before wider access. With the top four this close, the practical question for your coding and bot defaults is cost and consistency, not leaderboard position."
-      ],
-      "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2117583275786977399",
-      "discuss_url": "https://x.com/i/trending/2117583275786977399",
-      "interests": [
-        "ai"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "altman-next-gpt-navier-stokes",
-      "kicker": "OpenAI",
-      "headline": "Altman says OpenAI's next GPT is coming 'very soon,' and a 'Le GPT Fat' tease points at GPT-6.2 Astra",
-      "why_read": "Two signals from the same 24 hours suggest the next OpenAI release is close. Plan your evals.",
-      "body": [
-        "Speaking at ADIPEC in Abu Dhabi on November 2, Sam Altman said OpenAI's next model, which he described as able to coordinate agents without a hierarchy, will release very soon. The announcement followed work on the Navier-Stokes challenge, and he called it one of AI's most incredible moments. It came alongside deals with ADNOC, G42, Mubadala and Inception42, according to X's news summary.",
-        "Separately, an OpenAI insider's playful 'Le GPT Fat' post set off speculation about GPT-6.2 Astra, a larger, more compute-hungry internal model that Codex analytics reportedly show by name. OpenAI hasn't confirmed it, so treat the size rumors as rumors."
-      ],
-      "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2117332420252877265",
-      "discuss_url": "https://x.com/i/trending/2117506794239176758",
-      "interests": [
-        "ai"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "grok-bot-posts-on-x",
-      "kicker": "Grok Bot",
-      "headline": "Grok Bot can now post on X, and SpaceXSI's internal Data Bot shows what that looks like at work",
-      "why_read": "Directly relevant to your fleet: a new posting capability, plus a real-world account of a Grok Bot doing 70 hours of data work in a week.",
-      "body": [
-        "Alex Michael, in a post Anand reposted, announced that Grok Bot can now post on X on your behalf. For a bot fleet, that means approval rules for posting matter even more.",
-        "X's news summary describes SpaceXSI's Data Bot, powered by Grok Bot, which gives every employee data-science help over DMs or Slack: metrics tracking, experiment analysis and quick queries. Data scientist Sally Xu says it handled 70 hours of routine work in one week, freeing the data team for strategic projects. People still handle the complex work."
-      ],
-      "authors": [
-        "Alex Michael",
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/alexmichael/status/2117428436566233379",
-      "discuss_url": "https://x.com/i/trending/2117489383188131859",
-      "interests": [
-        "ai",
-        "agents"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "coinbase-ai-agent-trading",
-      "kicker": "Agents and money",
-      "headline": "Coinbase opens a sign-up page for AI agents to trade through MCP",
-      "why_read": "Agents with trading permissions are now a product. The boundaries you set are the whole story.",
-      "body": [
-        "Coinbase launched a page on November 2 that lets agents like Grok and Claude connect to user accounts through the Model Context Protocol, according to X's news summary. Agents can review portfolios, check markets and execute trades in crypto, stocks and derivatives, within limits the user sets.",
-        "A global agent trading competition with up to $2 million in prizes starts November 4. Supporters see a lead in agent-driven finance. Critics want clearer transparency and liability rules. Anyone thinking about money-moving agents should read both sides."
-      ],
-      "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2117432038894498065",
-      "discuss_url": "https://x.com/i/trending/2117432038894498065",
-      "interests": [
-        "agents",
-        "markets"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "ai-watermarks-eu-act",
-      "kicker": "Policy",
-      "headline": "Claude and Grok API outputs get invisible watermarks to meet the EU AI Act",
-      "why_read": "Starting this week, text from major models will carry statistical marks, so expect questions about AI-written work reports.",
-      "body": [
-        "Per X's news summary, Anthropic begins watermarking outputs from Claude models including Mythos 5 and Opus 4.7 on November 3. The marks are subtle statistical patterns in word choice that survive copying and light edits without changing meaning. SpaceXSI turns watermarking on by default for Grok API outputs from November 7 across seven models.",
-        "Both are responses to the EU AI Act's requirement that synthetic content be detectable. Commenters are asking whether paraphrasing or local models can strip the marks. Open-weight models you host yourself aren't covered by these vendor changes."
-      ],
-      "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2117227338731511923",
-      "discuss_url": "https://x.com/i/trending/2117227338731511923",
-      "interests": [
-        "ai",
-        "policy"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "resisting-cognitive-surrender",
-      "kicker": "Craft",
-      "headline": "Resisting cognitive surrender: how to keep thinking while agents write the code",
-      "why_read": "An honest essay about the pull to accept whatever the agent says, and practical ways to stay in the loop.",
-      "body": [
-        "Kunal (knlb.dev) defines cognitive surrender as uncritically accepting agent output without exploring alternatives. It's fast, it isn't tiring, and it's seductive. He describes peer pressure, agents' RLHF-trained confidence, and a kind of Gell-Mann amnesia: when you know the domain, you see how much the output can be simplified, and when you don't, the agents seem brilliant.",
-        "His fixes include choosing a 'vibe limit,' watching for automation bias, forcing yourself into the loop, insisting on comprehensible output, and delegating deliberately. X's news summary shows Addy Osmani making the same argument today, citing Anthropic's finding that oversight requires sharp coding judgment."
-      ],
-      "authors": [
-        "Kunal"
-      ],
-      "source": "hn",
-      "source_label": "Hacker News",
-      "source_url": "https://knlb.dev/essays/surrender",
-      "discuss_url": "https://news.ycombinator.com/item?id=50323123",
-      "interests": [
-        "ai",
-        "coding"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "cloudflare-dns-targeted-builds",
-      "kicker": "Systems",
-      "headline": "Cloudflare halved its DNS propagation delay and cut peak memory 85%",
-      "why_read": "A careful systems write-up on doing the smallest safe amount of work, and on proving it's safe.",
-      "body": [
-        "Alex Fattouche explains that Cloudflare's Zone Builder now handles about 700 DNS record changes per second, up from 250 in 2022, plus about 100 other events. Some zones hold more than 20 million records. Record changes were already built incrementally, but zone-setting changes, such as Universal SSL changing CAA records at the zone apex, still triggered full rebuilds of very large zones.",
-        "The fix was a targeted build planner that chooses the smallest build it can prove is safe, plus a scheduler that batches work for the same zone. Peak memory fell 85%, and the extra headroom let them shorten resilience waits, halving the time from a DNS change to its write into Quicksilver."
-      ],
-      "authors": [
-        "Alex Fattouche"
-      ],
-      "source": "hn",
-      "source_label": "Hacker News",
-      "source_url": "https://blog.cloudflare.com/dns-targeted-zone-builds/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50337558",
-      "interests": [
-        "systems",
-        "devops"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "egoless-mathematics-ai",
-      "kicker": "Math",
-      "headline": "Egoless mathematics in the AI era: on Tao's blog, a case for valuing understanding over credit",
-      "why_read": "Yesterday's Calegari post was about practice. This one asks what mathematical work is for, once machines can produce proofs.",
-      "body": [
-        "In a guest post on Terence Tao's blog, Karthik C. S., Amit Sahai and Jie Xue argue that AI forces mathematicians to ask what gives their work its worth. If the answer has become producing results and showing individual ability, they suggest, the current anxiety exposes a problem with that view of the work. Tao notes that the post itself was converted from another file format using AI.",
-        "They lean on a Platonic view: the primes were infinite before anyone proved it, so a mathematician's intelligence is a way to understand an order that exists independently. In that view, taste means recognizing which definitions and theorems reveal real structure, not a personal preference. The message for engineers is the same: don't measure yourself by output."
-      ],
-      "authors": [
-        "Karthik C. S.",
-        "Amit Sahai",
-        "Jie Xue"
-      ],
-      "source": "hn",
-      "source_label": "Hacker News",
-      "source_url": "https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50341736",
-      "interests": [
-        "math",
-        "ai"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "pentium-stockfish-kasparov",
-      "kicker": "Computing history",
-      "headline": "A 1995 Pentium Pro running modern Stockfish plays at about 3300 Elo. Deep Blue wasn't needed",
-      "why_read": "Nicholas Carlini shows that most of chess engines' progress since 1996 came from better algorithms, not faster hardware. You can play the machine live.",
-      "body": [
-        "Deep Blue used 30 P2SC processors and 480 custom chess chips to search about 200 million positions per second. Carlini has a 200 MHz Pentium Pro with 64MB of RAM, released November 1, 1995, running a custom Stockfish port that plays at an estimated 3300 ± 87 Elo at classical time controls. Kasparov was rated just under 2800. The machine is online through a Realtek Ethernet card, so you can play it.",
-        "He also adds modern techniques one at a time to Crafty, a 1996 engine, including LMR, correction history, better quiescence search and NNUE evaluation. By his accounting, better programming explains about 720 of the 1,335 Elo points gained since then. It's a satisfying counterpoint to 'just add compute.'"
-      ],
-      "authors": [
-        "Nicholas Carlini"
-      ],
-      "source": "hn",
-      "source_label": "Hacker News",
-      "source_url": "https://nicholas.carlini.com/writing/2026/algorithmic-improvements-chess.html",
-      "discuss_url": "https://news.ycombinator.com/item?id=50349276",
-      "interests": [
-        "ai",
-        "history"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "anthropic-ipo-scrutiny",
-      "kicker": "Markets",
-      "headline": "Anthropic's IPO filing: 1,127% revenue growth, $107K a month per employee, and $895B in commitments",
-      "why_read": "The biggest IPO of the AI era is close, and the filing supports both the bull and bear cases.",
-      "body": [
-        "Charlie Bilello's chart has Anthropic's Q3 revenue up 1,127% year over year, far ahead of SpaceX at 161% and Tesla at 0%. TechSpot, citing the amended S-1, reports $1.7 billion in Q3 personnel costs for about 5,300 people, roughly $107,300 per employee per month, $1.1 billion of it stock-based. Personnel was about 15% of the $33.2 billion in revenue for the first nine months of 2026.",
-        "On TechPolicy.Press, Matt Scherer argues the SEC should block the IPO. He cites about $895 billion in contractual commitments, including at least $582 billion that can't be canceled, owed to Amazon, AMD, Broadcom, Google and Microsoft, against $96 billion in cash. He also notes that the 2026 results are unaudited and argues that growth slowed over the summer. HN is split on whether he's right."
-      ],
-      "authors": [
-        "Matt Scherer"
-      ],
-      "source": "hn",
-      "source_label": "Hacker News",
-      "source_url": "https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50344919",
-      "interests": [
-        "markets",
-        "ai"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "mortgage-lock-in-97-percent",
-      "kicker": "Economics",
-      "headline": "97% of U.S. mortgage holders now pay less than today's rate, up from 54% in 2022",
-      "why_read": "One statistic that explains why the housing market is frozen.",
-      "body": [
-        "Citing the Economist, @unusual_whales reports that 97% of U.S. homeowners with a mortgage now have a rate below the current market rate. In 2022, the figure was 54%.",
-        "That's the lock-in effect: almost nobody wants to give up a cheap mortgage for one above 7%, so inventory stays thin and prices stay high. It's a useful frame for any 'should we move' conversation in Austin."
-      ],
-      "authors": [
-        "unusual_whales"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/unusual_whales/status/2117229485829353951",
-      "discuss_url": "https://x.com/unusual_whales/status/2117229485829353951",
-      "interests": [
-        "economics",
-        "housing"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "indian-american-voters-shift",
-      "kicker": "Election Day",
-      "headline": "On Election Day, new data shows the Republican gains among Indian Americans from 2024 have disappeared",
-      "why_read": "A sharp swing in the Indian American vote, especially among men 40 and older, in data released just ahead of today's midterms.",
-      "body": [
-        "New survey data shared by @kharibiskut finds that Republican gains among Indian Americans in 2024 'seem to have disappeared,' and Republican support is the lowest the survey has recorded.",
-        "Milan Vaishnav's thread on the same data shows the sharpest shift among men 40 and older. Between January and October 2026, their Democratic support rose from 53% to 68%, while Republican support fell from 32% to 16%. Among Indian Americans overall, only Black Americans are more supportive of the Democratic Party."
-      ],
-      "authors": [
-        "kharibiskut",
-        "Milan Vaishnav"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/kharibiskut/status/2117348433493454937",
-      "discuss_url": "https://x.com/MilanV/status/2117325730694525326",
-      "interests": [
-        "india",
-        "politics"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "isaacman-lear-60-crash-empathy",
-      "kicker": "Aviation",
-      "headline": "Jared Isaacman defends the Lear 60 copilot whose last radio calls went viral",
-      "why_read": "A pilot with 8,000 hours asks people to stop speculating and show some decency to a crew who did their jobs until the end.",
-      "body": [
-        "Writing in a personal capacity, Jared Isaacman, who has flown this class of aircraft for more than 20 years and logged over 8,000 hours, responds to commentary about the Lear 60 crash, from missile theories to DEI to critiques of the second-in-command's final radio calls. He says that last part troubles him most. She was doing her job, talking to ATC to the end in a terrifying situation, and likely knew she was going to die.",
-        "He points out that nobody outside the investigation knows the maintenance history, whether there was a structural failure, or whether turbulence, overspeed or overcontrol played a part. He also notes that charter operators routinely pair early-career commercial pilots with ATP captains. It has passed 100,000 likes."
-      ],
-      "authors": [
-        "Jared Isaacman"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/rookisaacman/status/2117292922693431496",
-      "discuss_url": "https://x.com/rookisaacman/status/2117292922693431496",
-      "interests": [
-        "human-interest",
-        "aviation"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "zebras-stripes-kindness",
-      "kicker": "Kindness",
-      "headline": "The world's problems began when the zebras with white stripes started disliking the zebras with black stripes",
-      "why_read": "A one-line reminder for Election Day that most divisions are about stripes on the same animal.",
-      "body": [
-        "Prasanth Nair shared the line with a simple 'Have a lovely Monday,' and Anand bookmarked it.",
-        "It's a cartoon-sized joke about how arbitrary most of our tribal lines are. On a day when every feed will be loud, it's worth keeping in mind."
-      ],
-      "authors": [
-        "Prasanth Nair"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/DPrasanthNair/status/2117093042486440199",
-      "discuss_url": "https://x.com/DPrasanthNair/status/2117093042486440199",
-      "interests": [
-        "human-interest",
-        "kindness"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "back-up-websites-you-love",
-      "kicker": "Web",
-      "headline": "If you love a website, back it up",
-      "why_read": "A web archivist explains how easy it is to save your favorite corner of the web before it disappears.",
-      "body": [
-        "The author works in web archiving and still lost a favorite site. Teapuppies.com, an Ochaken fan site online since 2004 and barely changed since 2005, disappeared, and its domain now serves online gambling ads. The point is that you don't have to wait for the Internet Archive. Saving a site is something you can do yourself.",
-        "The easiest option is the ArchiveWeb.page Chrome extension, which can save a single page, a whole site or a social profile in the standard WARC format. You can then replay it anywhere, even embedded in a blog post. The author discloses working for the company that makes the tools, and most of them are free."
-      ],
-      "authors": [
-        "Misty"
-      ],
-      "source": "hn",
-      "source_label": "Hacker News",
-      "source_url": "https://blog.mistys-internet.website/post/2026/10/29/if-you-love-a-website-back-it-up/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50336518",
-      "interests": [
-        "web",
-        "history"
-      ],
-      "lead": false,
-      "featured": false
-    }
-  ]
+ "date": "2026-11-04",
+ "weekday": "Wednesday",
+ "title": "The Daily Diff",
+ "stories": [
+  {
+   "id": "democrats-sweep-texas-flips",
+   "kicker": "Election night",
+   "headline": "Democrats take the House and Senate, and Texas elects Gina Hinojosa governor and James Talarico to the Senate",
+   "why_read": "The story your whole timeline was about last night: a wave election that ran straight through Austin, with Texas electing its first Democratic governor in more than 30 years.",
+   "body": [
+    "X's election roundups report that Democrats won control of both the House and the Senate in Tuesday's midterms, setting up a divided government for the rest of President Trump's term. In Texas, state Rep. Gina Hinojosa defeated three-term Gov. Greg Abbott to become the state's first Latina governor, and state Rep. James Talarico beat Attorney General Ken Paxton for the open U.S. Senate seat, the first Democratic Senate win in Texas since 1988. The summaries say Democrats also took lieutenant governor, attorney general and other statewide offices.",
+    "Beyond Texas, the roundups list Senate flips in Kansas, South Carolina and Iowa, including Kansas's first Democratic senator since 1932, Deb Haaland as New Mexico's first Native American woman governor, and Xavier Becerra as governor of California. The roundups credit strong Latino, Black and younger turnout, with voters focused on education and household costs, and Talarico's 'We just took back Texas' post from a Whataburger became the image of the night. Counts were still being finalized as of this morning, so expect some margins and calls to keep moving."
+   ],
+   "authors": [
+    "X News"
+   ],
+   "source": "x",
+   "source_label": "X",
+   "source_url": "https://x.com/i/trending/2117931534078693605",
+   "discuss_url": "https://x.com/i/trending/2117944712057307616",
+   "interests": [
+    "politics",
+    "texas"
+   ],
+   "lead": true,
+   "featured": false
+  },
+  {
+   "id": "astra-weights-misleading",
+   "kicker": "AI research",
+   "headline": "Matthew Honnibal says the 'Astra edits Qwen's weights' result is not what the headline suggests",
+   "why_read": "Yesterday's lead story got its most-upvoted rebuttal: the Qwen math jump came from Python code and practice runs, not from a model just staring at raw weights.",
+   "body": [
+    "Matthew Honnibal, the creator of spaCy, went through every experiment in MIT's 'Sparks of Weight-Space Programming' post and tabulated which ones actually read raw weights, which wrote weights, which used Python and which ran the network. His finding: the pure 'just by looking at the raw weights' setting, with raw floats in context and no tools, only appears in three experiments on networks of 17K to 172K weights. Every experiment on a real language model used Python, and the headline Qwen3.5-0.8B result, MATH-500 going from 7.9% to 48.1%, also got to run the model on up to 50 batches of practice problems.",
+    "He compares the write-up to a magician doing the same trick three different ways, so each version seems to rule out the obvious explanation. Honnibal still credits GPT-6 Astra with doing the work a human ML engineer would do, which models from a year or two ago couldn't. His point is that those results don't belong in the same claim as the raw-weight reading. The post hit nearly 1,000 points on Hacker News, more than the original paper."
+   ],
+   "authors": [
+    "Matthew Honnibal"
+   ],
+   "source": "web",
+   "source_label": "Web",
+   "source_url": "https://honnibal.dev/blog/astra-read-write-misleading",
+   "discuss_url": "https://news.ycombinator.com/item?id=50351111",
+   "interests": [
+    "ai",
+    "research"
+   ],
+   "lead": true,
+   "featured": false
+  },
+  {
+   "id": "postman-auto-installs-ai-plugins",
+   "kicker": "Supply chain",
+   "headline": "Postman's desktop app quietly installed plugins into Codex and Claude Code",
+   "why_read": "The top story on Hacker News: an API client reaching into your coding agents without asking is exactly the trust-boundary failure every dev team should check for today.",
+   "body": [
+    "A GitHub issue filed against Postman's desktop app, marked SEVERE, documents what happened on one Mac after opening Postman 12.33.4. The user found a user-wide Postman plugin for Codex, a startup instruction hook, a remote MCP connection, a Claude Code plugin and a separately installed Postman CLI. Codex then started routing API work through Postman's skills and throwing recurring MCP authentication warnings. The reporter also says the installer tried to mark its own startup hook as trusted.",
+    "The reporter's argument is simple: opening an API client shouldn't make it the default workflow inside unrelated tools. The thread hit more than 1,300 points on Hacker News, and a separate 'Tell HN: Don't use Postman' post climbed alongside it. If your team runs coding agents, it's worth checking their plugin and hook directories for anything you didn't install."
+   ],
+   "authors": [
+    "indicava"
+   ],
+   "source": "github",
+   "source_label": "GitHub",
+   "source_url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+   "discuss_url": "https://news.ycombinator.com/item?id=50354960",
+   "interests": [
+    "security",
+    "coding",
+    "ai"
+   ],
+   "lead": false,
+   "featured": true
+  },
+  {
+   "id": "tesla-robotaxi-fort-worth",
+   "kicker": "Robotaxi",
+   "headline": "Tesla starts fully driverless Robotaxi rides in Fort Worth",
+   "why_read": "Another Texas city goes unsupervised: Fort Worth is now Tesla's third-largest no-safety-driver market after Austin and Houston.",
+   "body": [
+    "According to X's summary of rider posts, Tesla began unsupervised Robotaxi rides in Fort Worth on November 2, with no safety drivers on board starting at 6 a.m. The service area covers about 143 square miles around downtown and reaches suburbs like Saginaw and White Settlement.",
+    "That makes Fort Worth the seventh U.S. city for the service, alongside Austin, Houston, Dallas, Miami, Orlando and Tampa. Early riders posted smooth trips, though some raised safety concerns."
+   ],
+   "authors": [
+    "X News"
+   ],
+   "source": "x",
+   "source_label": "X",
+   "source_url": "https://x.com/i/trending/2117664878924009522",
+   "discuss_url": "https://x.com/i/trending/2117664878924009522",
+   "interests": [
+    "tesla",
+    "autonomy",
+    "texas"
+   ],
+   "lead": false,
+   "featured": true
+  },
+  {
+   "id": "spacex-13gw-ai-cloud",
+   "kicker": "AI compute",
+   "headline": "SemiAnalysis says SpaceX is on track to become the world's biggest AI cloud, with 13GW in 18 months",
+   "why_read": "You bookmarked it: the analysis behind the claim that SpaceX may soon own a big slice of the world's AI compute, as Musk argues power is now the real bottleneck.",
+   "body": [
+    "SemiAnalysis published 'Elon Is Doing It Again: SpaceX Will Be The World's Biggest AI Cloud,' arguing SpaceX can bring 13 gigawatts of AI data center capacity online in about a year and a half. Michel de Guilhermier, in another post you bookmarked, put it more bluntly: SpaceX may own 16% of the world's AI compute by the end of 2027.",
+    "It lines up with Musk's recent argument on the Dwarkesh Patel podcast that chip production will outrun electricity generation, leaving chips sitting idle without power. He has also said superintelligence compute will eventually move to orbit, but the ground buildout is the part happening now. X's summary of the debate notes turbines are already sold out."
+   ],
+   "authors": [
+    "SemiAnalysis"
+   ],
+   "source": "x",
+   "source_label": "X",
+   "source_url": "https://x.com/SemiAnalysis_/status/2117720668145852429",
+   "discuss_url": "https://x.com/i/trending/2117851606050111717",
+   "interests": [
+    "space",
+    "ai",
+    "energy"
+   ],
+   "lead": false,
+   "featured": true
+  },
+  {
+   "id": "rtx-spark-linux-throttle",
+   "kicker": "Chips",
+   "headline": "On Linux, Nvidia's RTX Spark laptop runs inference at about a fifth of its Windows speed",
+   "why_read": "If you were eyeing an RTX Spark laptop as a local LLM box running Linux, read this first: an encrypted power table caps the GPU at around 780 MHz.",
+   "body": [
+    "MindStudio dual-booted Linux on an MSI Prestige RTX Spark laptop and found most things work, including GPU acceleration through Nvidia's open kernel driver, 4K at 120Hz, audio and the touchpad. The catch shows up on wall power. The GPU gets locked to roughly 780 MHz on Linux, versus about 2.2 GHz on Windows, and throughput on a 120-billion-parameter model drops from around 65 tokens per second to about 14.",
+    "The root cause is a Windows-only component, Nvidia's Platform Controllers and Framework, which manages power sharing between CPU and GPU. Its firmware power table is encrypted, so Linux can't read it. For now the write-up says WSL is the better route on this hardware."
+   ],
+   "authors": [
+    "Luis Chavez-Mattos"
+   ],
+   "source": "web",
+   "source_label": "Web",
+   "source_url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
+   "discuss_url": "https://news.ycombinator.com/item?id=50362905",
+   "interests": [
+    "chips",
+    "systems"
+   ],
+   "lead": false,
+   "featured": true
+  },
+  {
+   "id": "openai-pando-git-backend",
+   "kicker": "DevOps",
+   "headline": "OpenAI built Pando, a new Git backend for a monorepo flooded with Codex pushes",
+   "why_read": "A real look at what AI coding agents do to infrastructure: OpenAI says Pando cut median push latency by nearly 80% and now serves nearly a petabyte of Git data a day.",
+   "body": [
+    "In 'Scaling Git at OpenAI,' the company explains that Codex drove so much concurrent work in its monorepo that it had to rebuild source control without changing how anyone uses Git. Pando stores each pushed packfile as an immutable blob and records branch tips in a horizontally scalable metadata store. Unrelated branches update independently, pushes to the same ref stay serialized, and fetches reuse cached packs instead of building a fresh pack for every client.",
+    "Per The New Stack, Pando was written in Rust in 10 weeks, with one engineer designing the core and teams of Codex agents implementing it, and it went into production in April. OpenAI also describes a Git conformance suite and deterministic simulation testing to catch race conditions. If your repos are starting to feel agent traffic, this is the first big public account of where Git breaks."
+   ],
+   "authors": [
+    "OpenAI"
+   ],
+   "source": "web",
+   "source_label": "Web",
+   "source_url": "https://openai.com/index/scaling-git-at-openai/",
+   "discuss_url": "https://x.com/i/trending/2117416317305131207",
+   "interests": [
+    "devops",
+    "ai",
+    "coding"
+   ],
+   "lead": false,
+   "featured": true
+  },
+  {
+   "id": "deepseek-v5-huawei-ascend",
+   "kicker": "Open-weight AI",
+   "headline": "DeepSeek reportedly plans to pre-train V5 mainly on Huawei Ascend chips",
+   "why_read": "If it works, it's the first frontier-scale open model trained mostly without Nvidia, a real test of whether export controls can hold.",
+   "body": [
+    "According to reports summarized on X, DeepSeek will pre-train its next major model, DeepSeek V5, mainly on Huawei's Ascend 950 chips, starting as early as late 2026 and ramping in 2027. DeepSeek has so far used Ascend mostly for inference. The plan reportedly involves Huawei engineers working closely with the lab and a data center in Inner Mongolia planned for 160,000 chips.",
+    "The move is driven by U.S. export limits on Nvidia hardware. Earlier attempts to train on domestic chips had mixed results, and performance gaps remain. If V5 ships with open weights and competitive scores, it will be the strongest evidence yet that China can train frontier models on its own silicon."
+   ],
+   "authors": [
+    "X News"
+   ],
+   "source": "x",
+   "source_label": "X",
+   "source_url": "https://x.com/i/trending/2117588556210119068",
+   "discuss_url": "https://x.com/i/trending/2117588556210119068",
+   "interests": [
+    "ai",
+    "chips",
+    "open-source"
+   ],
+   "lead": false,
+   "featured": true
+  },
+  {
+   "id": "qwen-laptop-weights",
+   "kicker": "Local LLMs",
+   "headline": "Simon Willison got Qwen 3.8 27B on his laptop to interpret model weights too",
+   "why_read": "The fun counterpoint to the Astra debate: a model you can run locally manages one of the paper's weight-reading tricks.",
+   "body": [
+    "Simon Willison took one of the examples from MIT's 'Sparks of Weight-Space Programming' post, where a model is handed a text dump of a small network's floating-point weights and asked what it does. He ran it against Qwen 3.8 27B on his own laptop and reports that it could interpret the weights as well.",
+    "It's a small experiment, not a replication of the full paper, but it suggests the raw-weight reading part isn't limited to frontier models. Read it next to Honnibal's critique for the full picture of what was and wasn't shown."
+   ],
+   "authors": [
+    "Simon Willison"
+   ],
+   "source": "web",
+   "source_label": "Web",
+   "source_url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+   "discuss_url": "https://news.ycombinator.com/item?id=50355251",
+   "interests": [
+    "ai",
+    "open-source"
+   ],
+   "lead": false,
+   "featured": false
+  },
+  {
+   "id": "codex-training-reenabled",
+   "kicker": "AI privacy",
+   "headline": "Developers say OpenAI quietly switched model training back on for their Codex chats",
+   "why_read": "If your company opted out of training on Codex, check the setting today: several engineers found it re-enabled without opting back in.",
+   "body": [
+    "A Hacker News post that reached about 490 points says a team that had carefully disabled data sharing across Codex, Claude Code and similar tools found the 'Improve the model for everyone' setting turned back on in Codex. None of them had knowingly opted back in. The poster linked an earlier thread reporting the same thing.",
+    "The setting lives in ChatGPT's data controls, and commenters pointed to OpenAI's privacy portal as a second place to opt out. There's no official explanation in the thread. A separate post the same day says Gemini personal subscribers can't opt out of training without turning off chat history."
+   ],
+   "authors": [
+    "Hacker News"
+   ],
+   "source": "hn",
+   "source_label": "Hacker News",
+   "source_url": "https://news.ycombinator.com/item?id=50352757",
+   "discuss_url": "https://news.ycombinator.com/item?id=50352757",
+   "interests": [
+    "ai",
+    "privacy"
+   ],
+   "lead": false,
+   "featured": false
+  },
+  {
+   "id": "gemini-trains-chat-history",
+   "kicker": "AI privacy",
+   "headline": "Paying Gemini subscribers can't stop chat training without giving up chat history",
+   "why_read": "A good reminder that a paid personal plan doesn't mean your chats stay out of training; Google's own help pages say so.",
+   "body": [
+    "A Tell HN post quotes Google's Gemini help pages: with Keep Activity on, saved Gemini chats are used to improve Google services, including training generative AI models. A subset of chats is read by human reviewers, and reviewed chats are kept for up to three years even if you delete your activity.",
+    "The only way out is turning off Keep Activity, which means chats disappear after 72 hours. Google warns users not to enter confidential information. For work data, the takeaway is to use enterprise accounts with contractual terms rather than personal subscriptions."
+   ],
+   "authors": [
+    "jameslk"
+   ],
+   "source": "hn",
+   "source_label": "Hacker News",
+   "source_url": "https://news.ycombinator.com/item?id=50363461",
+   "discuss_url": "https://news.ycombinator.com/item?id=50363461",
+   "interests": [
+    "ai",
+    "privacy"
+   ],
+   "lead": false,
+   "featured": false
+  },
+  {
+   "id": "gitbook-breach-ai-agents",
+   "kicker": "Security",
+   "headline": "GitBook says an attacker using AI agents got into its infrastructure credentials",
+   "why_read": "If your docs sync through GitBook, rotate your Git Sync secrets and API tokens; the company's own notice says they may have been accessed.",
+   "body": [
+    "A customer posted GitBook's support reply to Hacker News. It says GitBook was hit by 'a sophisticated, highly targeted attack using AI agents' starting at 19:00 CET on November 2, when the attacker got some infrastructure credentials. GitBook took the app and authenticated docs offline, replaced every credential and secret, and invalidated every customer's API tokens.",
+    "The notice says the attacker may have accessed Git Sync secrets, GitBook API tokens, third-party API tokens and questions visitors asked GitBook Assistant, with no evidence so far that content was modified. The poster said they hadn't seen a public breach notification yet."
+   ],
+   "authors": [
+    "punchmesan"
+   ],
+   "source": "hn",
+   "source_label": "Hacker News",
+   "source_url": "https://news.ycombinator.com/item?id=50354336",
+   "discuss_url": "https://news.ycombinator.com/item?id=50354336",
+   "interests": [
+    "security",
+    "devops"
+   ],
+   "lead": false,
+   "featured": false
+  },
+  {
+   "id": "github-outage-nov-4",
+   "kicker": "Incident",
+   "headline": "GitHub had a morning outage hitting pull requests, Git operations, Issues and Actions",
+   "why_read": "If your pushes or CI failed early this morning, this was why; GitHub marked it resolved at 5:50 a.m. Central.",
+   "body": [
+    "GitHub's status page reported elevated errors and intermittent failures across Pull Requests, Git Operations, Issues and API requests this morning. Updates posted between 11:17 and 11:30 UTC said the API, Git and PR degradation had been mitigated, and Actions was mitigated at 11:43 UTC.",
+    "The incident was marked resolved at 11:50 UTC (5:50 a.m. Central), with a root cause analysis promised later. Worth a glance if you saw odd CI failures before work."
+   ],
+   "authors": [
+    "GitHub"
+   ],
+   "source": "web",
+   "source_label": "Web",
+   "source_url": "https://www.githubstatus.com/incidents/smtdswd1h2w4",
+   "discuss_url": "https://news.ycombinator.com/item?id=50363378",
+   "interests": [
+    "devops",
+    "systems"
+   ],
+   "lead": false,
+   "featured": false
+  },
+  {
+   "id": "php2shell-technical-debt",
+   "kicker": "Security",
+   "headline": "IEEE Spectrum: PHP2Shell shows AI is forcing us to pay off 40 years of technical debt",
+   "why_read": "A clear explainer of the PHP bug that put WordPress and Drupal sites at risk, and why AI bug-hunting will keep surfacing old code like it.",
+   "body": [
+    "Dina Genkina writes that PHP2Shell was the biggest of a run of late-October security disclosures. It put sites like NASA's, Wikipedia and the White House, plus everything else running WordPress or Drupal, at risk of exploits that could read data and run code on the server. Researchers reported it to the PHP Foundation and a patch shipped before attackers had the exploit.",
+    "'All the legacy software that was written by humans over the last 40 years is being exposed,' Tolmo's Matt Suiche told Spectrum. 'Now it is time for the technical debt to be paid off.' The piece argues AI tools make old memory bugs much cheaper to find, for defenders and attackers alike."
+   ],
+   "authors": [
+    "Dina Genkina"
+   ],
+   "source": "web",
+   "source_label": "Web",
+   "source_url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
+   "discuss_url": "https://news.ycombinator.com/item?id=50364336",
+   "interests": [
+    "security",
+    "ai"
+   ],
+   "lead": false,
+   "featured": false
+  },
+  {
+   "id": "fujifilm-tape-5x",
+   "kicker": "Storage",
+   "headline": "Fujifilm is quintupling magnetic tape production because AI is generating so much data",
+   "why_read": "A nice reminder that the AI boom runs on boring infrastructure too: LTO tape is having its biggest moment in decades.",
+   "body": [
+    "Ars Technica reports Fujifilm will invest about 10 billion yen (roughly $63 million) to raise its tape capacity fivefold compared with fiscal 2025 levels. The money goes to its Odawara site in Kanagawa from fiscal 2026 through 2028, mostly to make LTO Ultrium10 tape. Fujifilm calls it its largest investment yet in dedicated LTO facilities.",
+    "The company points to 'exponential growth' in data needs driven by generative AI. Tape stays attractive for cloud-scale backup because it's cheap per terabyte and sits offline, which protects it from ransomware."
+   ],
+   "authors": [
+    "Nick Indge"
+   ],
+   "source": "web",
+   "source_label": "Web",
+   "source_url": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/",
+   "discuss_url": "https://news.ycombinator.com/item?id=50336918",
+   "interests": [
+    "storage",
+    "ai"
+   ],
+   "lead": false,
+   "featured": false
+  },
+  {
+   "id": "stringman-cable-robot",
+   "kicker": "Robotics",
+   "headline": "Stringman is an $795 open-source robot that hangs a gripper from your ceiling corners",
+   "why_read": "A clever answer to robot cost: four motors and four cables reach an entire room, including floors too cluttered for wheels or legs.",
+   "body": [
+    "Neufangled Robotics' Stringman suspends a gripper from lines anchored in the four ceiling corners. Because all four motors share the load, it lifts up to 2.2 kg near the floor and about 1.9 kg on average across a 7 by 7 by 3 meter room. The company compares that to about 0.32 kg for a typical seven-actuator arm using the same motors. It moves at about 0.4 meters per second and uses two anchor cameras.",
+    "It's open source and can run air-gapped, which helps it stand out from cloud-tethered home robots. It reached about 640 points on Hacker News."
+   ],
+   "authors": [
+    "Neufangled Robotics"
+   ],
+   "source": "web",
+   "source_label": "Web",
+   "source_url": "https://neufangled.com/",
+   "discuss_url": "https://news.ycombinator.com/item?id=50354358",
+   "interests": [
+    "robotics",
+    "open-source"
+   ],
+   "lead": false,
+   "featured": false
+  },
+  {
+   "id": "herculaneum-pherc-306b",
+   "kicker": "Archaeology",
+   "headline": "The Vesuvius Challenge reads writing in another Herculaneum scroll for the first time in 2,000 years",
+   "why_read": "Machine learning plus CT scans keep pulling text out of scrolls carbonized in AD 79, and PHerc. 306B just joined the list.",
+   "body": [
+    "PHerc. 306 was buried by the eruption of Mount Vesuvius, excavated in the 1750s and micro-CT scanned last year, but nobody had read it. After reviewing 25 community submissions, the Vesuvius Challenge awarded a $50,000 First Letters Prize to Liam Warner and Nicola Bodill for revealing ink and recovering readable text from PHerc. 306B.",
+    "The ink also settled which half of the broken scroll is which: 306B is the upper part, which makes the smaller 306A piece even more worth scanning and virtually unrolling. It's one of the best ongoing examples of open collaboration and AI tools doing real science."
+   ],
+   "authors": [
+    "Paul Henderson",
+    "Federica Nicolardi"
+   ],
+   "source": "web",
+   "source_label": "Web",
+   "source_url": "https://scrollprize.substack.com/p/writing-seen-in-pherc-306b-for-the",
+   "discuss_url": "https://news.ycombinator.com/item?id=50342119",
+   "interests": [
+    "science",
+    "history"
+   ],
+   "lead": false,
+   "featured": false
+  },
+  {
+   "id": "young-colorectal-cancer",
+   "kicker": "Health science",
+   "headline": "The largest study of its kind finds young-onset colorectal cancer looks different at the cellular level",
+   "why_read": "Colorectal cancer is now the leading cause of cancer death for Americans under 50, and this Nature Medicine paper starts to explain why it's more aggressive in younger patients.",
+   "body": [
+    "Researchers from Dana-Farber, Mass General Brigham and the Broad Institute report age-related differences in tumor makeup and gene activity in colorectal cancer, published in Nature Medicine. They describe it as the largest study of its kind and a foundation for understanding why the disease can be more aggressive in younger adults.",
+    "U.S. diagnosis rates for people under 50 rose 2.9% a year from 2013 through 2022, according to the American Cancer Society, and younger patients are more often diagnosed at advanced stages. Worth sharing with anyone who's been putting off a screening."
+   ],
+   "authors": [
+    "Dana-Farber Cancer Institute"
+   ],
+   "source": "web",
+   "source_label": "Web",
+   "source_url": "https://www.dana-farber.org/newsroom/news-releases/2026/study-reveals-distinct-cellular-and-genetic-differences-in-colorectal-cancer-in-younger-patients",
+   "discuss_url": "https://news.ycombinator.com/item?id=50361154",
+   "interests": [
+    "science",
+    "health"
+   ],
+   "lead": false,
+   "featured": false
+  },
+  {
+   "id": "hinton-better-off-without-ai",
+   "kicker": "AI policy",
+   "headline": "Geoffrey Hinton says humanity might have been better off never developing AI",
+   "why_read": "The Nobel laureate whose research underpins neural networks warns of a possible large-scale incident, like a temporary financial or power blackout, as soon as this year or next.",
+   "body": [
+    "In a Guardian interview, Hinton, 78, said he is not a 'doomer' and that AI could lead to a 'wonderful future,' but that 'it might be that we would have been better off never developing it.' He warned that a large-scale incident, such as a temporary blackout of financial or power systems, could happen this year or next.",
+    "He said that within a decade, and possibly sooner, we'll know whether humanity can manage the risks and reach what he calls 'radical abundance,' or ends up with a huge gap between rich and poor and mass unemployment."
+   ],
+   "authors": [
+    "The Guardian"
+   ],
+   "source": "web",
+   "source_label": "Web",
+   "source_url": "https://www.theguardian.com/uk-news/2026/nov/03/ai-godfather-geoffrey-hinton-better-off-without-ai",
+   "discuss_url": "https://news.ycombinator.com/item?id=50363554",
+   "interests": [
+    "ai",
+    "policy"
+   ],
+   "lead": false,
+   "featured": false
+  },
+  {
+   "id": "spacex-starfall-capsule",
+   "kicker": "Space",
+   "headline": "SpaceX unveils Starfall, a reusable capsule for drug research in microgravity",
+   "why_read": "SpaceX is turning orbital manufacturing into a product: weeks of microgravity, Starlink on board, and a parachute ride home.",
+   "body": [
+    "Per X's summary, Starfall is a 10-foot-wide reusable capsule that rides on Falcon 9 and offers up to 1,000 kg of payload, 1 kW of power, Starlink connectivity and weeks in microgravity. It returns by parachute to the Pacific.",
+    "The pitch builds on work like space-grown crystals of the cancer drug Keytruda. Commercial customers have signed on, including Redwire, whose pharmaceutical labs are slated for 2028 missions."
+   ],
+   "authors": [
+    "X News"
+   ],
+   "source": "x",
+   "source_label": "X",
+   "source_url": "https://x.com/i/trending/2117361070050558157",
+   "discuss_url": "https://x.com/i/trending/2117361070050558157",
+   "interests": [
+    "space",
+    "science"
+   ],
+   "lead": false,
+   "featured": false
+  },
+  {
+   "id": "menlo-enterprise-ai-177b",
+   "kicker": "AI business",
+   "headline": "Menlo Ventures: enterprise AI spending hit about $177 billion this year, up 5.4x",
+   "why_read": "Useful numbers for any architecture conversation: agents now drive most token usage, and coding tools are the biggest app category.",
+   "body": [
+    "Menlo Ventures' annual report, as summarized on X, puts 2026 enterprise AI spending at $176.8 billion, up from $33 billion in 2025. It says autonomous agents now generate 80% of tokens on platforms like OpenRouter, and frontier labs Anthropic and OpenAI captured 86% of LLM API spend.",
+    "Anthropic's share of API spend reportedly rose to 55% while Google's fell to 9%. Coding tools led applications at $34 billion out of a $77 billion app market."
+   ],
+   "authors": [
+    "X News"
+   ],
+   "source": "x",
+   "source_label": "X",
+   "source_url": "https://x.com/i/trending/2117714665514115439",
+   "discuss_url": "https://x.com/i/trending/2117714665514115439",
+   "interests": [
+    "ai",
+    "markets"
+   ],
+   "lead": false,
+   "featured": false
+  },
+  {
+   "id": "anthropic-s1-numbers",
+   "kicker": "AI markets",
+   "headline": "Anthropic's S-1 shows $33 billion in nine-month revenue and a $104 billion net loss",
+   "why_read": "The IPO filing numbers are out, and Polymarket odds on the listing dropped as traders digested the losses and compute commitments.",
+   "body": [
+    "According to X's summary, Anthropic reported $33.24 billion in revenue for the first nine months of 2026 and a $104 billion net loss, mostly from non-cash adjustments on convertible notes. Revenue growth slowed to 47% in Q3 as compute costs rose, and the filing lists $895 billion in long-term infrastructure commitments.",
+    "Polymarket odds on the IPO dropped on the news, though the summary also highlights Anthropic's 15-person chip team using Claude to speed custom silicon design ahead of a listing expected later this month. Charlie Bilello, in a post you bookmarked, had Anthropic's Q3 revenue up 1,127% year over year, so the growth story and the loss story are both real."
+   ],
+   "authors": [
+    "X News"
+   ],
+   "source": "x",
+   "source_label": "X",
+   "source_url": "https://x.com/i/trending/2117640070589002034",
+   "discuss_url": "https://x.com/charliebilello/status/2117390048622412063",
+   "interests": [
+    "ai",
+    "markets"
+   ],
+   "lead": false,
+   "featured": false
+  },
+  {
+   "id": "musk-election-spending",
+   "kicker": "Election night",
+   "headline": "Critics say Musk spent nearly half a billion dollars on losing candidates",
+   "why_read": "One of the night's most-shared threads in your timeline: Musk's political spending, and his own joke that his 'election-interfering space lasers' didn't work.",
+   "body": [
+    "Ron Filipkowski posted that Musk 'just incinerated $475 million backing losers,' and another post you reposted called it a bad night for Musk, who it said 'wasted half a billion' and now faces a Congress hostile to him. These are critics' figures, not audited totals.",
+    "Musk replied with a joke about his 'election-interfering space lasers' not working, according to X's roundup. The cd_hooks post you reposted added that he'll now face a hostile Congress and a Texas state government that 'loathes him,' which is worth watching for SpaceX and Tesla, both based in Texas."
+   ],
+   "authors": [
+    "Ron Filipkowski"
+   ],
+   "source": "x",
+   "source_label": "X",
+   "source_url": "https://x.com/RonFilipkowski/status/2117798988426690719",
+   "discuss_url": "https://x.com/i/trending/2117954848096145795",
+   "interests": [
+    "politics",
+    "markets"
+   ],
+   "lead": false,
+   "featured": false
+  },
+  {
+   "id": "texas-down-ballot-flips",
+   "kicker": "Texas",
+   "headline": "Tarrant County and Texas's 23rd District flip too",
+   "why_read": "The Texas wave went deep: the largest Republican-run county in the country and a border district that includes Uvalde both went Democratic.",
+   "body": [
+    "County commissioner Alisa Simmons beat incumbent Tarrant County Judge Tim O'Hare with 57.7% of the vote. She'll be the first Democrat in the job since 1986 and the first Black woman to hold it. Per X's summary, O'Hare conceded, and Democrats also lead the commissioner races that could give them control of the full court.",
+    "In the 23rd Congressional District, stretching from San Antonio to El Paso, Katy Padilla Stout beat Republican Brandon Herrera, the gun maker and YouTuber known as The AK Guy, leading 52% to 44%. She becomes the district's first Latina representative, and Herrera conceded."
+   ],
+   "authors": [
+    "X News"
+   ],
+   "source": "x",
+   "source_label": "X",
+   "source_url": "https://x.com/i/trending/2117829321843003494",
+   "discuss_url": "https://x.com/i/trending/2117795191784407272",
+   "interests": [
+    "texas",
+    "politics"
+   ],
+   "lead": false,
+   "featured": false
+  },
+  {
+   "id": "india-upi-tops-visa",
+   "kicker": "India",
+   "headline": "India's UPI now handles more transactions per day than Visa",
+   "why_read": "You bookmarked it: a public, open payments rail out-processing the world's biggest card network is a systems story as much as a finance one.",
+   "body": [
+    "Rishi Bagree's post puts UPI at about 822 million transactions a day versus Visa's 650 million, which would make India's Unified Payments Interface the world leader by daily volume. These are the post's figures, and they compare count, not dollar value.",
+    "UPI is run by the National Payments Corporation of India and lets any bank app or wallet send money instantly by phone number or QR code. It's become the model other countries study for open, interoperable real-time payments."
+   ],
+   "authors": [
+    "Rishi Bagree"
+   ],
+   "source": "x",
+   "source_label": "X",
+   "source_url": "https://x.com/rishibagree/status/2117627357976555951",
+   "discuss_url": "https://x.com/rishibagree/status/2117627357976555951",
+   "interests": [
+    "india",
+    "fintech"
+   ],
+   "lead": false,
+   "featured": false
+  },
+  {
+   "id": "renault-nav-jailbreak",
+   "kicker": "Hacking",
+   "headline": "He jailbroke his Renault's navigation unit just to change the clock",
+   "why_read": "A classic hacker story, about 860 points on Hacker News: a car that refuses to let you set the time unless you have the navigation map SD card.",
+   "body": [
+    "The author drives a 2014 Renault Latitude. When Estonia switched from summer to winter time, he found the 'Set time' option missing from the head unit's menus. The previous owner had warned him the car needed its navigation map SD card just to change the clock, and that card had long since been thrown away.",
+    "What follows is a patient reverse-engineering of the head unit to get the clock option back. It's a great read about how much everyday hardware hides behind arbitrary software gates."
+   ],
+   "authors": [
+    "nns.ee"
+   ],
+   "source": "web",
+   "source_label": "Web",
+   "source_url": "https://blog.nns.ee/2026/11/02/renault-hack/",
+   "discuss_url": "https://news.ycombinator.com/item?id=50339288",
+   "interests": [
+    "security",
+    "cars"
+   ],
+   "lead": false,
+   "featured": false
+  },
+  {
+   "id": "namespace-mac-racks",
+   "kicker": "Infrastructure",
+   "headline": "Why Namespace racks hundreds of MacBook Pros in a data center",
+   "why_read": "Coding agents need Macs to build iOS apps, and Apple left few options; this is the engineering behind a viral unboxing video.",
+   "body": [
+    "Namespace's Kirill Nikolaev explains the company's custom Mac racks, built from hundreds of MacBook Pros. Its customers build and test iOS apps, which requires a Mac, the iOS Simulator only runs on macOS, and App Store releases need a recent Xcode.",
+    "The post covers how they start macOS instances from scratch in seconds and ship new Xcode versions hours after Apple releases them. It's a good look at what CI for agent-written mobile code really takes."
+   ],
+   "authors": [
+    "Kirill Nikolaev"
+   ],
+   "source": "web",
+   "source_label": "Web",
+   "source_url": "https://namespace.so/blog/mac-at-any-scale",
+   "discuss_url": "https://news.ycombinator.com/item?id=50352758",
+   "interests": [
+    "devops",
+    "systems"
+   ],
+   "lead": false,
+   "featured": false
+  },
+  {
+   "id": "posttraining-data-commons",
+   "kicker": "Open-source AI",
+   "headline": "There's no posttraining data commons, and that's a problem for open models",
+   "why_read": "A sharp explainer on why open LLMs could fall behind: pretraining had the web, but agentic posttraining needs tasks nobody has published.",
+   "body": [
+    "Open Athena's David Hall notes that pretraining got lucky. Wikipedia, open-source code, Stack Exchange, arXiv, Project Gutenberg and Common Crawl's roughly 10 petabytes made a ready-made commons. GPT-3 was about 60% Common Crawl-derived data, and open models like Nemotron still rely on it.",
+    "Posttraining, especially for agents, is different: 'Pretraining consumes documents, while posttraining consumes tasks.' Those tasks, with environments and feedback, aren't lying around in public. Hall argues that without a shared commons for them, truly open frontier models will struggle to keep up."
+   ],
+   "authors": [
+    "David Hall"
+   ],
+   "source": "web",
+   "source_label": "Web",
+   "source_url": "https://openathena.ai/blog/there-is-no-posttraining-data-commons/",
+   "discuss_url": "https://news.ycombinator.com/item?id=50352641",
+   "interests": [
+    "ai",
+    "open-source"
+   ],
+   "lead": false,
+   "featured": false
+  },
+  {
+   "id": "linux-kernel-pyramids",
+   "kicker": "Laughter",
+   "headline": "Mikko Hypponen: future programmers will look at the Linux kernel like we look at the pyramids",
+   "why_read": "A one-liner for the AI coding era that's funny because it might be true.",
+   "body": [
+    "Security researcher Mikko Hypponen posted that future programmers will look at the Linux kernel the way we look at the pyramids of Egypt, wondering 'How the hell did they build like that with the tools they had?'",
+    "It lands on a day when Hacker News is full of AI writing code, AI finding old bugs and arguments about who still knows how to program."
+   ],
+   "authors": [
+    "Mikko Hypponen"
+   ],
+   "source": "x",
+   "source_label": "X",
+   "source_url": "https://x.com/mikko/status/2117682194051129552",
+   "discuss_url": "https://x.com/mikko/status/2117682194051129552",
+   "interests": [
+    "systems",
+    "laughter"
+   ],
+   "lead": false,
+   "featured": false
+  },
+  {
+   "id": "jeremy-brett-sherlock",
+   "kicker": "Remembering",
+   "headline": "Remembering Jeremy Brett, the Sherlock Holmes of Sunday Doordarshan",
+   "why_read": "A warm one from your feed: Jeremy Brett was born on November 3, 1933, and for a generation in India his Holmes was a Sunday ritual.",
+   "body": [
+    "You reposted a tribute to Jeremy Brett (3 November 1933 to 12 September 1995) on what would have been his 93rd birthday. Brett played Holmes in Granada Television's long-running series, and many still consider his the definitive version.",
+    "Yansan's thread, which you bookmarked, remembers the mid-80s, when Doordarshan was almost the only TV window in India and 'The Adventures of Sherlock Holmes' aired every Sunday for thousands of fans. A small, kind corner of a very loud news night."
+   ],
+   "authors": [
+    "Yansan"
+   ],
+   "source": "x",
+   "source_label": "X",
+   "source_url": "https://x.com/yansan/status/2117640984607838554",
+   "discuss_url": "https://x.com/Classicbritcom/status/2117715193576968441",
+   "interests": [
+    "human-interest",
+    "india"
+   ],
+   "lead": false,
+   "featured": false
+  }
+ ]
 }
