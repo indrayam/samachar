@@ -1,192 +1,80 @@
 {
-  "date": "2026-11-05",
-  "weekday": "Thursday",
+  "date": "2026-11-06",
+  "weekday": "Friday",
   "title": "The Daily Diff",
   "stories": [
     {
-      "id": "kimi-k3-1-pro-open-weights",
-      "kicker": "Open-weight AI",
-      "headline": "Moonshot releases Kimi K3.1 Pro weights: a 2.8-trillion-parameter agentic MoE that trades blows with Claude Opus 5.5",
-      "why_read": "The strongest open-weight agentic model to land this fall, and its coding scores sit within a point of the closed frontier.",
+      "id": "revolut-self-hosts-glm-b200",
+      "kicker": "AI coding ops",
+      "headline": "Revolut puts ~2,000 engineers on self-hosted GLM-5.3 across 56 Nvidia B200s, cutting AI coding costs ~90%",
+      "why_read": "A regulated fintech shows what unlimited cheap tokens look like in production: less Claude spend, more Jira debugging, and a router that still peels vision work to closed models.",
       "body": [
-        "Moonshot AI has published Kimi K3.1 Pro on Hugging Face as an open-weight, natively multimodal mixture-of-experts model built for agentic work. The model card lists 2.8 trillion total parameters with 104 billion active per token, 896 experts with 16 selected per token, a 1M-token context window and weights shipped in MXFP4. Architecturally, the card says Gated DSA attention replaces Gated MLA.",
-        "The benchmark table is the reason it hit 555 points on Hacker News. Kimi K3.1 Pro posts 65.7 on Terminal-Bench 4.0 against 66.4 for Claude Opus 5.5, scores 51.7 on SWE Marathon (the best number in Moonshot's comparison), 92.1 on BrowseComp and 70.0 on Humanity's Last Exam with tools. It ships under a custom Kimi K3.1 Pro License rather than a standard open-source license, so read the terms before planning a deployment, and at this size self-hosting is a serious cluster job, not a weekend project."
+        "At AI Engineer NYC, Revolut AI ops lead David Abitbol said the company made self-hosted open-weight GLM models the default coding stack for roughly 2,000 engineers. Revolut started on GLM-5.1 in April 2026 and later moved to GLM-5.3, serving it from 56 Nvidia B200 GPUs. The Register's write-up of the talk puts blended cost near $0.30 per million tokens — about a tenth of prior Anthropic and OpenAI spend — and cites a ~60% improvement in coding time and ~70% in lead time after the AI rollout (with the usual caveat that the charts do not isolate the model change alone).",
+        "The interesting part is the serving recipe, not the GPU count. Abitbol described NVFP4 quantization, disaggregated prefill/decode, and a practical 256K context sweet spot (he called million-token windows a scam for their workload), landing sub-3-second time-to-first-token and ~200 tokens/s interactive generation. GLM stays text-only, so a router still sends vision work to Gemini or GPT Luna, and Claude/Codex remain for exceptions. For anyone running coding agents at company scale, this is the clearest public data point yet on self-hosted economics."
       ],
       "authors": [
-        "Moonshot AI"
+        "The Register",
+        "David Abitbol"
       ],
       "source": "web",
       "source_label": "Web",
-      "source_url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
-      "discuss_url": "https://news.ycombinator.com/item?id=50366999",
+      "source_url": "https://www.theregister.com/ai-and-ml/2026/11/03/british-fintech-revolut-slashes-ai-coding-costs-10x-by-cutting-out-claude-and-going-self-hosted/5307345",
+      "discuss_url": "https://x.com/i/trending/2118340646520123759",
       "interests": [
         "ai",
-        "open-source"
-      ],
-      "lead": true,
-      "featured": false
-    },
-    {
-      "id": "data-centers-lose-ballots",
-      "kicker": "Energy and AI",
-      "headline": "Voters reject data centers in 46 of 47 local ballot measures",
-      "why_read": "The midterms delivered a clear verdict on the physical side of the AI boom, and Texas is next in line for the same fight.",
-      "body": [
-        "X's news summary of Tuesday's results says voters approved limits or outright bans on data centers in 46 of 47 local ballot measures, in states including Ohio, California and Florida. The concerns cited were power and water demand, rising electricity bills and quality-of-life impacts on nearby neighborhoods. Tech advocates pushed back by pointing to medical uses of AI such as mapping tumors and finding drug synergies, while surveys cited in the roundup show broad, cross-party support for more government oversight of AI and data centers.",
-        "Texas has its own version of the debate. Senator-elect James Talarico said in a clip posted Wednesday that data center companies must pay for their own energy so they don't drive up utility bills, recycle their own water and get the consent of the communities they build in. The investor @Jason replied that this is 'completely reasonable and exactly what the data center industry is doing,' and urged towns that land a data center to extract as much as they can for local schools and playgrounds. For anyone planning capacity, the takeaway is that power and community consent are now as much of a gating factor as GPUs."
-      ],
-      "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2118298102448677157",
-      "discuss_url": "https://x.com/Jason/status/2118114633969991826",
-      "interests": [
-        "energy",
-        "politics",
-        "texas",
-        "ai"
-      ],
-      "lead": true,
-      "featured": false
-    },
-    {
-      "id": "openai-948-linux-root-exploits",
-      "kicker": "AI security",
-      "headline": "OpenAI's cyber pipeline found 948 working Linux kernel root exploits for about $1,279 each",
-      "why_read": "An AI pipeline producing kernel privilege escalations at industrial scale changes the threat model for every shared Linux host you run.",
-      "body": [
-        "In 'A thousand fewer paths to root,' OpenAI describes an autonomous pipeline built on an upcoming cyber model and pointed at the Linux kernel. Scouts identified 5,034 targets covering about 2.8 million lines of code, roughly 7% of the kernel. From 2,308 candidate bugs the system reproduced 1,724 and produced 948 unique local privilege escalation exploits plus 291 info-leak proofs of concept, at a total cost of $1,213,430, or about $1,279 per LPE. OpenAI says the run surfaced at least ten novel exploitation techniques. For comparison, GPT-5.6 Sol found 166 LPEs for $513,690 in July.",
-        "The fixes are moving through the kernel: within ten days, 61 had been patched upstream and 43 more were in staging, as part of OpenAI's Patch the Planet and Daybreak efforts. The post's blunt operational advice is to treat a low-privileged account on an unpatched OS as root-equivalent, and to isolate untrusted workloads with microVMs or sandboxes such as Firecracker or gVisor rather than relying on container boundaries alone."
-      ],
-      "authors": [
-        "OpenAI"
-      ],
-      "source": "web",
-      "source_label": "Web",
-      "source_url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50372929",
-      "interests": [
-        "security",
-        "ai",
+        "coding",
+        "chips",
         "systems"
       ],
-      "lead": false,
-      "featured": true
+      "lead": true,
+      "featured": false
     },
     {
-      "id": "ripple-65b-dense-open-model",
-      "kicker": "Open-weight AI",
-      "headline": "Ricursive's Ripple-65B Preview claims a U.S. open-weight best on TerminalBench with a $32M dense model",
-      "why_read": "A small lab claims to have beaten 500B-to-975B models on agentic terminal work at a tenth of the usual cost, and it can run on a DGX Spark.",
+      "id": "anthropic-895b-compute-s1",
+      "kicker": "AI infrastructure",
+      "headline": "Anthropic's amended S-1 puts ~$895B of compute and data-center commitments on the table",
+      "why_read": "The IPO filing turns AI's power bill into hard numbers — and puts Broadcom, Google, SpaceX's AI unit and Amazon at the front of the queue.",
       "body": [
-        "Ricursive has released Ripple-65B Preview, a dense 65-billion-parameter model trained from scratch on 12 trillion tokens with a 1M-token context. On TerminalBench 2.1 the company reports 80.52, which it calls a U.S. open-weight state of the art, ahead of Reflection Beam (501B) at 80.1, Meta Muse Spark Open (816B) at 76.4, Thinking Machines Inkling (975B) at 63.8 and NVIDIA Nemotron 3 Ultra (550B) at 56.4. Ricursive puts the full R&D cost at $32 million, about one-tenth of the prior state of the art, and says training used 1.4 million rollouts, roughly 70 times fewer than Reflection Beam, at 40% model FLOPs utilization.",
-        "The model uses a 5,120-wide, 80-layer architecture and Ricursive says its small footprint lets it run efficiently on local devices such as NVIDIA DGX Spark. Weights are on Hugging Face, with hosted access through Together AI, GMI Cloud and OpenRouter. These are the vendor's own numbers on a preview release, so expect independent evals to sharpen or soften the claims over the next week."
+        "Anthropic's amended IPO filing lists about $895 billion of purchase commitments and lease agreements, substantially all for compute and infrastructure, according to Yahoo Finance's read of the S-1 update and matching SEC language. Roughly $70 billion comes due within a year, and nearly $450 billion by the end of 2030. The cash and short-term investments on hand at the end of September were about $132 billion, so the commitment stack is nearly seven times the liquid balance sheet.",
+        "On the supplier side, Broadcom leads with about $161 billion in equipment leases, Google about $121 billion, SpaceX's AI unit up to $120.5 billion, and Amazon $110 billion. Separate plans for another $125–150 billion of Google chips and more than $20 billion with AMD are not counted in the $895 billion because they lack fixed dollar commitments. Third-quarter revenue jumped to about $17 billion, but Anthropic swung back to a $567 million operating loss after one profitable quarter — a reminder that the rent still runs ahead of the rent check."
       ],
       "authors": [
-        "Ricursive"
+        "Yahoo Finance",
+        "Anthropic"
       ],
       "source": "web",
       "source_label": "Web",
-      "source_url": "https://www.ricursive.com/ripple",
-      "discuss_url": "https://news.ycombinator.com/item?id=50369925",
+      "source_url": "https://finance.yahoo.com/markets/article/anthropics-new-ipo-filing-puts-its-computing-bill-near-900-billion-151830444.html",
+      "discuss_url": "https://x.com/i/trending/2118441520319680789",
       "interests": [
         "ai",
-        "open-source"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "openssh-10-6p2-musl-fix",
-      "kicker": "Patch now",
-      "headline": "OpenSSH 10.6p2 rushes out a workaround for a critical bug on musl systems without PAM, such as Alpine",
-      "why_read": "If any of your containers or edge boxes run Alpine with password auth on, this is the one to act on before lunch.",
-      "body": [
-        "OpenSSH maintainer Damien Miller announced OpenSSH 10.6p2 with a workaround for a critical vulnerability. His instruction is unusually direct: if you run a Linux system that uses musl libc without PAM, Alpine Linux being one example, set PasswordAuthentication=no or disable SSH immediately. The bug does not exist on non-Linux systems, on glibc-based Linux or on Linux systems that use PAM for password authentication. In a follow-up reply, Miller confirmed it also applies to builds compiled with PAM support but run with 'UsePAM no'.",
-        "Miller said the team considers the root cause to lie outside OpenSSH but shipped a mitigation quickly, having learned of it only the day before. He was explicit about why: the team has recently seen multiple cases of rapid bug rediscovery by AI agents, sometimes within hours, and now considers long embargoes a dangerous practice that mostly benefits attackers. Commenters in the thread said Dropbear is not affected. The issue was reported by Özgün Kültekin of Wakefield, and Alpine shipped an updated package quickly."
-      ],
-      "authors": [
-        "Damien Miller"
-      ],
-      "source": "web",
-      "source_label": "Web",
-      "source_url": "https://hachyderm.io/@damienmiller/117563026759098135",
-      "discuss_url": "https://news.ycombinator.com/item?id=50377221",
-      "interests": [
-        "security",
-        "systems",
-        "devops"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "amd-outsells-intel-q4",
-      "kicker": "Chips",
-      "headline": "AMD guides to about $17 billion in Q4 revenue, enough to outsell Intel for the first time ever",
-      "why_read": "A historic crossover driven almost entirely by data center CPUs and AI accelerators, which is exactly the hardware you buy.",
-      "body": [
-        "AMD reported record third-quarter revenue of $13.377 billion, up from $9.25 billion a year earlier and $11.54 billion the previous quarter, with a 54% gross margin and net income up 95% to $2.43 billion, according to Tom's Hardware. The Data Center segment reached a record $8.55 billion, up 97% year over year, with operating margin expanding from 25% to 34%. Data center now makes up 64% of AMD's revenue, on the strength of Epyc processors and Instinct accelerators.",
-        "The headline is the outlook. AMD expects fourth-quarter revenue of approximately $17 billion, plus or minus 3%, while Intel guided to $15 billion to $16 billion amid weak PC demand and manufacturing constraints. If both companies land near their midpoints, AMD's quarterly sales would top Intel's by about $1.5 billion for the first time in history. The caveat in the report is that AMD's client and gaming businesses face double-digit declines going into 2027, as high memory prices weigh on PCs."
-      ],
-      "authors": [
-        "Anton Shilov"
-      ],
-      "source": "web",
-      "source_label": "Web",
-      "source_url": "https://www.tomshardware.com/pc-components/cpus/amd-expects-to-outsell-intel-in-q4-for-the-first-time-in-history-usd17b-guidance-would-exceed-intels-projections",
-      "discuss_url": "https://news.ycombinator.com/item?id=50367125",
-      "interests": [
+        "markets",
         "chips",
+        "space"
+      ],
+      "lead": true,
+      "featured": false
+    },
+    {
+      "id": "claude-code-email-user-agent",
+      "kicker": "Agent privacy",
+      "headline": "Claude Code was putting users' email addresses into User-Agent headers on web requests",
+      "why_read": "A 1,200-point HN thread that turns agent reliability into a privacy incident — and a live case study in why harness invariants beat vibe-coded guardrails.",
+      "body": [
+        "GitHub issue #107757 reports that Claude Code 2.1.318 on macOS sent the signed-in account email in User-Agent headers while doing web searches and curl-style calls. An Anthropic engineer said the email was added to model context so Claude would stop hallucinating @author tags, then sometimes reused it as a contact address when sites ask agents to identify themselves. A built-in cc-plugin-privacy mod shipped in 2.1.317+ to block some of those cases, and a follow-up on HN says the account email will be removed from model context in a release early next week.",
+        "Users on 2.1.318 still reported gaps — scripts written by the agent, echo tests that should have been denied, and spam inboxes that suddenly woke up. The thread is as much about harness design as the leak itself: reliability arguments meet subagent failure modes when the agent invents its own network identity. If you run Claude Code in a fleet, patch promptly and treat email-in-context as hostile until the next release lands."
+      ],
+      "authors": [
+        "taylor-edwards",
+        "Anthropic"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://github.com/anthropics/claude-code/issues/107757",
+      "discuss_url": "https://news.ycombinator.com/item?id=50385272",
+      "interests": [
         "ai",
-        "markets"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "giga-texas-cybercab-drone",
-      "kicker": "Robotaxi",
-      "headline": "Drone views over Giga Texas show Cybercabs running traffic drills as a chip fab and Optimus factory rise",
-      "why_read": "Your Austin neighbor in aerial form: Cybercab testing, new fab steel and a move to round-the-clock shifts, all visible from the sky.",
-      "body": [
-        "Fresh drone footage over Giga Texas, highlighted by longtime site watchers Joe Tegtmeyer and Herbert Ong, shows groups of Cybercabs practicing traffic scenarios on the test track, stopping at lights and reacting to one another in coordinated runs alongside Model Y test vehicles. The same flyovers capture steel going up for a chip fab, growth at the Optimus factory and a new cooling plant on the campus.",
-        "X's summary also reports that the factory is shifting to 24-hour operations with two 12-hour shifts to push output through year-end, with minimal holiday downtime. None of this is an official Tesla announcement, so treat timelines with care. Still, it's a rare chance to watch robotaxi, robotics and silicon work happening in parallel on one site a short drive from home."
-      ],
-      "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2118103907692171535",
-      "discuss_url": "https://x.com/i/trending/2118103907692171535",
-      "interests": [
-        "tesla",
-        "autonomy",
-        "texas"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "white-house-residential-proxies",
-      "kicker": "Security",
-      "headline": "Researchers saw residential proxy traffic exit through the White House network 236 times in a month",
-      "why_read": "A vivid reminder that proxy SDKs hidden in consumer apps can turn any network, even the most sensitive one, into somebody else's exit node.",
-      "body": [
-        "Layer3 Intel says its new Residential Proxy Observatory spotted proxy exit activity on AS2650, the network registered to the Executive Office of the President. Between October 5 and November 3, its enumeration pipeline exited through that network 236 separate times, from 6 addresses, on 26 of the 30 days, with 28 different residential proxy services able to use it. The team cross-checked the addresses against other detection services, including Spur and Synthient, and says it did not target the network. Anyone paying a few dollars for rotating proxy access could have landed there.",
-        "The timing is what worries the researchers: about half the activity falls between 5 p.m. and midnight Eastern, with almost none in the early morning. That points to a person's infected device rather than guest Wi-Fi. They note that poorly secured proxy SDKs have enabled lateral movement before, citing Synthient's research on the Kimwolf botnet, which reached at least 2 million devices. The same post found proxies at McMurdo Station in Antarctica and on Saint Helena, where it recorded 413 addresses."
-      ],
-      "authors": [
-        "Layer3 Intel"
-      ],
-      "source": "web",
-      "source_label": "Web",
-      "source_url": "https://layer3intel.com/blog/residential-proxies-white-house-network",
-      "discuss_url": "https://news.ycombinator.com/item?id=50371246",
-      "interests": [
+        "coding",
         "security",
         "privacy"
       ],
@@ -194,45 +82,142 @@
       "featured": true
     },
     {
-      "id": "anthropic-provable-inference",
-      "kicker": "AI research",
-      "headline": "Anthropic shows zkSNARK proofs that a response really came from the model you were promised",
-      "why_read": "If you've ever wondered whether a router quietly swapped in a cheaper model, this is the cryptographic answer, built largely by Claude.",
+      "id": "metr-anthropic-rd-acceleration",
+      "kicker": "AI safety evals",
+      "headline": "METR: Anthropic's model capabilities are improving ~1.9× faster than before, likely mostly from AI-assisted R&D",
+      "why_read": "The first high-access outside look at whether AI is actually speeding up AI research — with redactions, caveats, and a 1.9× AECI slope change since October 2025.",
       "body": [
-        "Anthropic researchers, working with collaborators from EPFL, StarkWare, MIT and Succinct, describe FlashProve, a zkSNARK system for provable inference. A provider commits to a model and then proves that each response was produced by that model, without revealing the weights. On Llama 4 Maverick, a 400B-parameter mixture of experts with 4-bit weights, a single H100 generates proofs at around 110 tokens per second, with a proof of about 19 MB per 1,024-token request. That is roughly 70 to 95 times the GPU time of serving the model on vLLM, which the team says is orders of magnitude faster than prior open-source systems.",
-        "The twist is that Claude did much of the optimization work. Because its design choices can be hard to audit, the team pinned the top-level security claims in Lean formal statements. They released the blog post, a technical report, a Claude-written protocol specification, and code that includes a prover, a fast C++ verifier and a provably correct verifier. The pitch spans consumer trust, internal security and compliance checks on AI pacing rules."
+        "METR spent August 12 to October 29 inside Anthropic assessing AI R&D acceleration and published its public conclusions on November 5. On Anthropic's AECI capability index, benchmark scores have grown at an estimated 1.9× the pre-October 2025 rate (95% CI 1.5–2.8×), implying roughly two years of historical progress in the last year. Most METR staff on the project now believe Anthropic is improving capabilities on well-specified tasks at around twice the March 2024–October 2025 rate, with a wide personal uncertainty band from about 1.3× to 3×.",
+        "METR is confident the speedup is not from faster training-compute scaling, and guesses a majority of today's acceleration is from extensive AI use in R&D — while noting Anthropic redacted a majority of the most informative evidence. Staff Slack polls of self-reported uplift reached about 12× for the most capable internal model in October 2026, though METR treats those as loose evidence. No clear bottlenecks on algorithms, compute, or data showed up for the next 12 months, which is exactly the compounding-risk scenario safety teams worry about."
+      ],
+      "authors": [
+        "METR"
+      ],
+      "source": "web",
+      "source_label": "Web",
+      "source_url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
+      "discuss_url": "https://x.com/i/trending/2118427442922901851",
+      "interests": [
+        "ai",
+        "research",
+        "safety"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "hyperstition-hyperkernel",
+      "kicker": "Inference systems",
+      "headline": "Hyperstition open-sources Hyperkernel megakernels it says beat NVIDIA's published DeepSeek V4.1 Flash vLLM numbers",
+      "why_read": "An MIT-licensed alpha that fuses whole model forwards into one GPU launch — vendor benchmarks, B300-only for now, generator still forthcoming.",
+      "body": [
+        "Hyperstition published generated megakernels under MIT at github.com/Hyperstitioncc/Hyperkernel. The alpha Hyperserve binary targets NVIDIA B300s (four GPUs for LLMs), needs Rust and driver R580+, and serves DeepSeek V4.1 Flash behind an OpenAI-compatible API. The company's own thread claims 36.7% higher per-user generation speed at concurrency 1 and 90.6% at concurrency 4 versus NVIDIA's published vLLM results on the same model, plus robotics and genomics kernels (π₀-FAST, ACT, Evo 2, ESMFold) produced in under an hour for some domains.",
+        "Treat the speedups as vendor claims until independent runs land. The full Hyperkernel generator and promised Kimi/GLM serving stacks are still weeks out, and the released builds are B300-specific even though the company says generation extends to B200, AMD and TPUs. For inference teams, the useful signal is the megakernel bet itself: one persistent launch instead of a graph of ops, aimed at batch-one latency where launch overhead dominates."
+      ],
+      "authors": [
+        "Hyperstition"
+      ],
+      "source": "web",
+      "source_label": "Web",
+      "source_url": "https://github.com/Hyperstitioncc/Hyperkernel",
+      "discuss_url": "https://x.com/i/trending/2118504950720340462",
+      "interests": [
+        "ai",
+        "systems",
+        "chips",
+        "open-source"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "inkling-2-small",
+      "kicker": "Open-weight AI",
+      "headline": "Thinking Machines ships Inkling 2 Small: a 594B MoE (17B active) headed for Apache 2.0 weights",
+      "why_read": "A multimodal coding-and-vision model that posts an Artificial Analysis Intelligence Index of 31 and promises open weights after a week of safety testing.",
+      "body": [
+        "Thinking Machines Lab introduced Inkling 2 Small on November 5: a mixture-of-experts model with 594 billion total parameters, 17 billion active, image inputs, variable effort, and up to a 1M-token context. It scores 31 on the Artificial Analysis Intelligence Index and is initially available closed-weights on Tinker for inference and fine-tuning, with full Apache 2.0 weights planned after external safety testing and red-teaming next week.",
+        "The post leans hard on agentic coding and autoresearch — RL over hundreds of thousands of long-horizon tasks, a from-scratch city simulator and a Python PC emulator in the demos, and a time-series forecasting run that more than doubled a Qwen3.5-4B baseline after 4.5 hours and $426 of Tinker spend. Pretraining used NVFP4 on GB300 NVL72 racks; the main RL run burned over 4×10²³ FLOPs across 2,048 GPUs and 17M+ rollouts. Until the weights drop, treat the open-weight crown as pending."
+      ],
+      "authors": [
+        "Thinking Machines Lab"
+      ],
+      "source": "web",
+      "source_label": "Web",
+      "source_url": "https://thinkingmachines.ai/news/inkling-2-small/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50386338",
+      "interests": [
+        "ai",
+        "open-source",
+        "coding"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "agility-robotics-nasdaq-aglt",
+      "kicker": "Humanoids",
+      "headline": "Agility Robotics begins Nasdaq trading as AGLT, the first U.S. pure-play listed humanoid company with live deployments",
+      "why_read": "Digit already works in warehouses; the public listing puts a price on commercial humanoids just as Tesla Optimus and the rest of the field race for scale.",
+      "body": [
+        "Agility Robotics started trading on Nasdaq on November 5 under AGLT (warrants AGLTW) after completing its SPAC combination with Churchill Capital Corp XI. The company calls itself the first U.S. publicly listed pure-play humanoid robotics firm with proven commercial deployments. The deal and related financings raised about $465 million in gross capital before expenses.",
+        "Digit has logged more than 65,000 hours at customers including GXO, Schaeffler and Toyota Motor Manufacturing Canada, and Agility cites more than $300 million in committed multi-year orders for Digit 5 (subject to contractual milestones and specs), with early access targeted for the first half of 2027. Digit 5 is designed to lift up to 50 pounds, swap end effectors, and recharge in about nine minutes for more than 20 hours of work in a day. For autonomy watchers who already track Cybercab drills in Texas, this is the public-markets twin."
+      ],
+      "authors": [
+        "Agility Robotics"
+      ],
+      "source": "web",
+      "source_label": "Web",
+      "source_url": "https://www.agilityrobotics.com/content/agility-becomes-first-u-s-publicly-listed-pure-play-humanoid-robotics-company-begins-trading-today-on-nasdaq-as-aglt",
+      "discuss_url": "https://x.com/i/trending/2118330564843286871",
+      "interests": [
+        "robotics",
+        "ai",
+        "markets"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "claude-vault-particle-3d",
+      "kicker": "AI for science",
+      "headline": "Anthropic's biology lab uses Claude to map the first 3D prokaryotic vault particle",
+      "why_read": "A concrete Claude-in-the-loop structural biology win: 96-copy phage vault, 34-hour first model, and a purification that collapsed from days to ~90 minutes.",
+      "body": [
+        "Anthropic's science team reports the first 3D structure of a vault particle from a prokaryotic system — specifically a bacteriophage protein they call L05. Cryo-EM shows a ~9.5-megadalton shell of 96 protein copies (48 per half), about 54 by 45 nanometers, shorter and wider than mammalian vaults and enclosing roughly 25% more volume. Vaults have been known in eukaryotes since 1986 with no settled function; related genes had been spotted in bacteria and phages, but assembly into actual vaults had not been shown.",
+        "Claude helped search ~15 billion predicted proteins, design DNA constructs, optimize size-exclusion isolation, and drive RELION processing. Isolation that normally takes about three days landed in ~90 minutes; a first full model was ready in 34 hours. The team also engineered a longer vault by duplicating wall repeats (~20% more volume) and found an unidentified pocket ligand that resembles coenzyme A. Function is still open — Leonard Rome, who discovered vaults, is advising — but the methods post is a clear template for agentic wet-lab acceleration."
       ],
       "authors": [
         "Anthropic"
       ],
       "source": "web",
       "source_label": "Web",
-      "source_url": "https://www.anthropic.com/research/provable-inference",
-      "discuss_url": "https://news.ycombinator.com/item?id=50368626",
+      "source_url": "https://www.anthropic.com/research/investigating-vault-particles-with-claude",
+      "discuss_url": "https://x.com/i/trending/2118083605356236883",
       "interests": [
         "ai",
-        "security",
-        "research"
+        "science",
+        "biology"
       ],
       "lead": false,
-      "featured": false
+      "featured": true
     },
     {
-      "id": "openai-acquires-pierre",
-      "kicker": "Dev tools",
-      "headline": "OpenAI agrees to acquire Pierre, the team behind the diff and tree libraries inside the Codex app",
-      "why_read": "The diff view in your coding agent is becoming strategic infrastructure, and OpenAI just bought the people who build it.",
+      "id": "cursor-build-live-apps",
+      "kicker": "AI coding tools",
+      "headline": "Cursor can now build and publish live web apps from a cloud agent — database, auth and hosting included",
+      "why_read": "The localhost-to-link gap just closed for anyone already living in Cursor Cloud Agents, which matches the deploy muscle Anand has been RTing.",
       "body": [
-        "OpenAI announced an agreement to acquire Pierre, maker of Code Storage and of the Trees and Diffs libraries already used in the Codex app, plus the Highlights syntax highlighter. OpenAI says Pierre's open-source projects will stay open, and the deal is subject to regulatory approval.",
-        "It's a small deal with a clear logic. As more code is written by agents, the reviewing surface becomes the place where engineers actually spend their time: file trees, diffs and highlighting at agent speed. Owning that layer, plus Pierre's Code Storage, gives Codex tighter control over the review loop, and puts OpenAI further into territory that GitHub and the IDE makers consider theirs."
+        "Cursor's November 5 changelog says you can tell a cloud agent to build an app and it will scaffold the web app, provision Postgres if needed, put auth behind Cursor SSO, and host it. Publish picks a unique domain, runs deterministic and agentic security checks (secrets in files, credential files, .env, source maps), and only goes live after you explicitly confirm. Paid plans with cloud agents get it; team admins can audit every app and secret.",
+        "Apps can start from a new Cursor Origin repo or an existing GitHub repo. Sharing is invite-only, team-wide, or public on individual plans, and API keys let scripts or Grok Bot hit private apps without a browser login. It is the natural complement to one-click deploy muscle in Anand's timeline: describe the tool, get a shareable URL, keep the secrets out of the prompt."
       ],
       "authors": [
-        "OpenAI"
+        "Cursor"
       ],
       "source": "web",
       "source_label": "Web",
-      "source_url": "https://openai.com/index/openai-to-acquire-pierre/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50366863",
+      "source_url": "https://cursor.com/changelog/build-live-apps",
+      "discuss_url": null,
       "interests": [
         "coding",
         "ai",
@@ -242,163 +227,336 @@
       "featured": false
     },
     {
-      "id": "conductor-joins-meta",
-      "kicker": "AI coding",
-      "headline": "Conductor, the app for running teams of coding agents, is joining Meta and shutting down its cloud",
-      "why_read": "If your team adopted Conductor, there are hard dates to export data, and the move says a lot about where agent tooling talent is going.",
+      "id": "cantrill-rust-llm-age",
+      "kicker": "Systems talk",
+      "headline": "Bryan Cantrill's Rust NYC talk: 'Code Matters: Reflections on Rust in the LLM Age'",
+      "why_read": "A systems elder makes the case that Rust's compile-time honesty matters more, not less, when agents are writing the diffs.",
       "body": [
-        "Conductor, which launched in July 2025 as an app for orchestrating multiple coding agents, announced it is joining Meta. As of Wednesday, November 4, there are no new sign-ups and existing users get pro features for free. Conductor Cloud workspaces go read-only on Friday, November 13, with refunds for active subscribers, and the cloud shuts down on Friday, November 20, when user data deletion begins.",
-        "Local Conductor keeps getting new models and critical bug fixes until early 2027, and the team promises 'something new' next year. To migrate, right-click a cloud workspace and choose Transfer to local, or export everything from Settings, Account, Export data. The founders say they have never sold or trained on user data and will delete it all when the app shuts down. The Hacker News thread drew 201 comments."
+        "Bryan Cantrill's Rust NYC talk 'Code Matters: Reflections on Rust in the LLM Age' is circulating again in engineer timelines (Anand among them). The Speaker Deck deck argues that Rust's strict, compile-time-checked design is especially valuable when LLMs generate code, while warning that models often prefer complex solutions over simple abstractions a human can still hold in their head.",
+        "It pairs cleanly with the reliability chatter on the same timeline — arguments that agent-written code should be more reliable, and that subagents are a top failure mode. If your shop is letting Claude Code or Codex own larger PRs, Cantrill's framing is a useful brake: prefer languages and APIs that make the machine prove its work before merge."
       ],
       "authors": [
-        "Conductor"
+        "Bryan Cantrill"
       ],
       "source": "web",
       "source_label": "Web",
-      "source_url": "https://www.conductor.build/announcement",
-      "discuss_url": "https://news.ycombinator.com/item?id=50369503",
+      "source_url": "https://speakerdeck.com/bcantrill/code-matters",
+      "discuss_url": null,
       "interests": [
+        "systems",
         "coding",
-        "ai",
-        "devops"
+        "ai"
       ],
       "lead": false,
       "featured": false
     },
     {
-      "id": "ernie-5-5-flash-base",
-      "kicker": "Open-weight AI",
-      "headline": "Baidu releases ERNIE 5.5 Flash Base, a 280B-A14B MoE checkpoint taken straight from pre-training",
-      "why_read": "A clean, raw base model with a 1M context for anyone who wants to do their own post-training instead of inheriting someone else's.",
+      "id": "sciences-last-exam-frontierphysics",
+      "kicker": "AI benchmarks",
+      "headline": "Science's Last Exam launches with 113 research tasks; FrontierPhysics shows top agents still below 30% pass",
+      "why_read": "Two serious attempts to grade whether agents can do real science — not quiz questions — land in the same news cycle.",
       "body": [
-        "Baidu has published ERNIE-5.5-Flash-Base, a sparse mixture-of-experts model with 280 billion total parameters and 14 billion activated per token. It was pre-trained from scratch on 33.5 trillion tokens with up to 128K training context and supports a 1M-token context for fine-tuning and inference. The release is the checkpoint at the end of pre-training, before any mid- or post-training, positioned as a common baseline for domain adaptation, instruction tuning and RL research.",
-        "Baidu says efficiency drove every component, using hybrid sparse attention and 43 Transformer layers and weighing activated compute, KV cache and long-context cost together. The corpus emphasizes things that are hard to add later, such as repository-scale code and long-context understanding. Weights are on Hugging Face under Baidu's own ERNIE 5.5 Flash Base Model License Agreement, so check the terms before building on it."
+        "Science's Last Exam (SLE), led by the AItonomy Foundation with researchers from 34 institutions, launches November 6 with 113 public tasks across nine disciplines. Agents get a research goal and tools, not a worked example, and are graded on sealed deterministic checks plus capability diagnostics (hypothesis discovery, protocol planning, scientific computing, and more). Wet-lab execution is still in construction.",
+        "Alongside it, FrontierPhysics posts 56 end-to-end physics tasks built by 42 physicists from their own research. Across 22 models in 26 configurations, no setup passed more than 46 of 168 rollouts; Claude Opus 5.5 led at 27.4% Pass@1. Manual review of GPT-6 Astra trajectories blamed weak rigorous reasoning and missing expert intuition more than missing textbook knowledge. If you have been waiting for benchmarks that feel like PI assignments instead of multiple choice, these are the ones."
       ],
       "authors": [
-        "Baidu ERNIE"
+        "AItonomy Foundation",
+        "FrontierPhysics authors"
       ],
       "source": "web",
       "source_label": "Web",
-      "source_url": "https://ernie.baidu.com/release/ernie-5-5-flash-base/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50377078",
+      "source_url": "https://sciences-last-exam.org/blog",
+      "discuss_url": "https://arxiv.org/abs/2611.06910",
       "interests": [
         "ai",
-        "open-source"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "openai-images-2-6",
-      "kicker": "Generative AI",
-      "headline": "OpenAI's Images 2.6 is 50% faster and adds GIFs, SVG export and image markup in the API",
-      "why_read": "SVG export and markup editing make image generation useful for diagrams and UI work, not just pretty pictures.",
-      "body": [
-        "OpenAI introduced Images 2.6, which it says is 50% faster, along with two new models: GPT-Image-2.6 Flare, which can return results in as little as six seconds at low quality, and GPT-Image-2.6 Sunburst. The update adds GIF output, SVG export, image markup in the API and a complexity parameter for trading detail against speed.",
-        "OpenAI says users now create 4 billion images per week. For architects and engineers, SVG output is the most practical addition: diagrams and icons come back as editable vector files instead of raster images that must be redrawn. The launch drew 325 points and nearly 200 comments on Hacker News."
-      ],
-      "authors": [
-        "OpenAI"
-      ],
-      "source": "web",
-      "source_label": "Web",
-      "source_url": "https://openai.com/index/introducing-images-2-6/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50372945",
-      "interests": [
-        "ai",
-        "design"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "grok-bot-phone-calls",
-      "kicker": "Agents",
-      "headline": "Grok Bot can now place phone calls for you, navigating menus and summarizing what happened",
-      "why_read": "The hold-music problem, solved by an agent that dials, talks to a rep and hands you a recap, with you approving each call.",
-      "body": [
-        "Grok Bot can now make phone calls on behalf of U.S. users: navigating phone menus, answering a representative's questions and summarizing the outcome. X's roundup describes one user who resolved an insurance rate hike without handling the call. Users approve each call in the app, can watch a live transcript and get a recap afterward. Elon Musk called it 'like hiring an amazing assistant.'",
-        "Early adopters say they use it for chores like booking appointments and checking orders. For now, availability is limited to certain U.S. states. It's one of the first mainstream agent features that acts in the real world over a channel built for humans, so watch how businesses respond when more of their inbound calls are bots."
-      ],
-      "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2118100747938038130",
-      "discuss_url": "https://x.com/i/trending/2118100747938038130",
-      "interests": [
-        "ai",
-        "grok"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "openai-hires-claude-code-lead",
-      "kicker": "AI industry",
-      "headline": "OpenAI hires Cat Wu, who led product for Anthropic's Claude Code, to run Core Products PM",
-      "why_read": "The coding-agent talent war is now about product leaders, and a leader of Claude Code just moved to the Codex side of the fence.",
-      "body": [
-        "Cat Wu, who led product for Anthropic's Claude Code, is now heading product management for OpenAI's Core Products, where she says she's excited to build user-controlled agents with Tibo Sottiaux. Austin Lau, an early growth builder at Anthropic, also joined OpenAI and called his time there a 'fever dream' of top talent.",
-        "X's summary says the hires come as OpenAI reports most of its revenue now comes from enterprise customers, and as President Greg Brockman eyes a 2027 public debut after a tough first half. With Codex and Claude Code competing seat by seat inside engineering orgs, a product leader switching sides is a signal worth tracking."
-      ],
-      "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2118301603270905952",
-      "discuss_url": "https://x.com/i/trending/2118301603270905952",
-      "interests": [
-        "ai",
-        "coding"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "garry-tan-200k-tokens",
-      "kicker": "AI agents",
-      "headline": "Garry Tan says he spends $100,000 to $200,000 a year on AI tokens",
-      "why_read": "A concrete price tag for what full-time agent use costs a power user, plus a peek at how Y Combinator runs its own internal agent.",
-      "body": [
-        "On Walter Isaacson's podcast The Builders, Y Combinator CEO Garry Tan said, 'I spend about maybe $100[,000] to $200,000 a year on tokens,' TechCrunch's Julie Bort reports. He uses agents for research, coding and running his life, and said his agent has read all of his email, his Dropbox and his Apple Notes, 'even my therapy notes going back 20 years.' He has shared his set of 23 Claude Code skills, called gstack, on GitHub.",
-        "Tan, an early OpenClaw adopter, argues against treating agents like traditional software. In his view, obsessing over repeatability and safety trades away what makes them useful. YC also runs an internal agent named Stray Light that has a personality and a 'company brain.' The security-minded reading is the opposite takeaway: the more context you give an agent, the larger the blast radius when something goes wrong."
-      ],
-      "authors": [
-        "Julie Bort"
-      ],
-      "source": "web",
-      "source_label": "Web",
-      "source_url": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50366971",
-      "interests": [
-        "ai",
-        "coding"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "time-per-task-benchmarks",
-      "kicker": "Benchmarks",
-      "headline": "Artificial Analysis shifts benchmarks to time per task: GPT-6 Astra finishes max-effort jobs in 17 minutes",
-      "why_read": "Tokens per second never told you when the job would be done; this metric does, and it changes which model looks fastest.",
-      "body": [
-        "Artificial Analysis has updated its daily benchmarks to measure full request time, from start to final token, across 1,000 serverless endpoints and including agentic tasks like multi-turn coding. On that measure OpenAI's GPT-6 Astra leads, finishing max-effort tasks in 17 minutes against 26 for Claude Opus 5.5 and 29 for Gemini 4 Carbon, largely because it emits fewer output tokens.",
-        "Two practical findings stand out. Default medium-effort settings cut times by 3 to 5 times and costs by 2 to 4 times, with only small drops in intelligence. And Gemini 4 Carbon does best on long, expensive work, costing about half as much as rivals on hour-long sessions that average 332 tool calls. If you're choosing a default for an agent fleet, effort level may matter more than which model you pick."
-      ],
-      "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2118090650281214216",
-      "discuss_url": "https://x.com/i/trending/2118090650281214216",
-      "interests": [
-        "ai",
+        "science",
         "benchmarks"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "notion-lore-agent-memory",
+      "kicker": "Agent memory",
+      "headline": "Notion open-sources Lore, a shared persistent memory vault for AI agents",
+      "why_read": "Tribal knowledge that used to die in a single agent session can now live in Notion databases both humans and MCP agents can read.",
+      "body": [
+        "Notion's engineering blog describes Lore, an MIT-licensed shared memory system backed by Notion pages and databases (Projects, Topics, Memories, Entities, Facts). Agents reach it through lore-* MCP tools; humans use the same pages in Notion or a CLI. The pitch is multiplayer: agents on one desk learn from agents on another, capturing experiential knowledge, follow-ups, decision records and rare procedures that skills files never quite absorb.",
+        "Facts expire unless reinforced, and relations like supersedes / conflicts_with keep the vault from becoming a junk drawer. On SkillRet retrieval, Lore hit 84% success on 500 sampled queries; on hard paired coding tasks, seeded memory lifted pass rates with a McNemar p of 0.0008 and recovered about 46% of no-memory failures. An internal pilot still found plenty of duplicates and inferable fluff — memory quality remains the product."
+      ],
+      "authors": [
+        "Notion"
+      ],
+      "source": "web",
+      "source_label": "Web",
+      "source_url": "https://www.notion.com/blog/building-shared-memory-for-ai-agents-in-notion",
+      "discuss_url": "https://github.com/makenotion/lore",
+      "interests": [
+        "ai",
+        "coding",
+        "devops"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "ai-stocks-plunge-nov5",
+      "kicker": "Markets",
+      "headline": "AI-linked stocks sold off hard on November 5 as midterm and spending worries hit the Nasdaq",
+      "why_read": "A single session that priced in both political risk to data centers and fatigue with AI capex — useful context beside Anthropic's $895B commitment stack.",
+      "body": [
+        "U.S. tech shares tumbled on November 5 as investors fretted that Democratic midterm gains could slow data-center buildouts and tighten AI regulation, while also reassessing the return on massive AI infrastructure spend. Contemporary wire coverage put the Nasdaq down about 5.5% into correction territory and the S&P 500 down about 4.4%, with chips, memory and AI-infrastructure names leading the drop.",
+        "The tape sits next to this week's Anthropic S-1 compute commitments and the still-fresh local ballot fights over data centers. Bubble-fear headlines travel faster than balance-sheet nuance, but for anyone allocating GPUs or power, the signal is that equity markets are no longer giving AI buildout a free pass."
+      ],
+      "authors": [
+        "Reuters"
+      ],
+      "source": "web",
+      "source_label": "Web",
+      "source_url": "https://www.reuters.com/markets/us/nasdaq-set-correction-investors-reassess-ai-spending-boom-2026-11-05/",
+      "discuss_url": "https://x.com/i/trending/2118484469627920778",
+      "interests": [
+        "markets",
+        "ai",
+        "energy"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "nvidia-kubernetes-engine-nvke",
+      "kicker": "GPU ops",
+      "headline": "Nvidia Kubernetes Engine (NVKE) shows up on HN as another bid to make GPU clusters feel like normal K8s",
+      "why_read": "If you already herd B200s for coding agents, a thinner path from YAML to scheduled GPUs is worth a look.",
+      "body": [
+        "An open project branded Nvidia Kubernetes Engine (NVKE) hit the Hacker News front page from github.com/dsx-ai-factory/nvke. The repo positions itself as tooling to run and schedule NVIDIA GPU workloads on Kubernetes with less bespoke glue — the perennial pain point once you move past a single DGX and into multi-node inference or RL farms.",
+        "Details and maturity vary by commit, so read the README before you bet a cluster on it. Still, between Revolut's 56-B200 coding fleet and Anthropic's commitment stack, the ops layer around GPUs is suddenly as newsy as the models themselves."
+      ],
+      "authors": [
+        "dsx-ai-factory"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://github.com/dsx-ai-factory/nvke",
+      "discuss_url": "https://news.ycombinator.com/item?id=50387738",
+      "interests": [
+        "systems",
+        "devops",
+        "chips",
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "ms-paint-rce-cve-2026-83844",
+      "kicker": "Security",
+      "headline": "MS Paint picks up a remote code execution CVE: CVE-2026-83844",
+      "why_read": "A reminder that even the oldest Windows inbox apps still sit on the exploit path.",
+      "body": [
+        "CVE-2026-83844, listed on cve.org and climbing Hacker News, covers a remote code execution vulnerability in Microsoft Paint. Paint has been a punchline for decades; an RCE against it is a reminder that inbox Windows binaries remain high-value targets precisely because users still open random images without thinking.",
+        "Patch calendars and enterprise image pipelines should treat this like any other Office-adjacent client bug: confirm the KB, stage it, and do not assume 'we disabled Paint' is a real control. Full technical detail belongs on the CVE record and Microsoft's advisory once mirrored."
+      ],
+      "authors": [
+        "CVE Program"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://www.cve.org/CVERecord?id=CVE-2026-83844",
+      "discuss_url": "https://news.ycombinator.com/item?id=50384233",
+      "interests": [
+        "security",
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "blender-ui-faster-gpui",
+      "kicker": "UI systems",
+      "headline": "Blender's UI and runtime are being held up as much faster than GPUI",
+      "why_read": "A sharp HN thread for anyone building native UI stacks and wondering whether the new Rust UI kits are actually winning on speed.",
+      "body": [
+        "A GitHub project comparing Blender's UI/runtime path to GPUI landed near the top of Hacker News with the blunt claim that Blender's approach is much faster. The post is less a product launch than a performance provocation aimed at the wave of GPU-accelerated UI frameworks.",
+        "If you are choosing a desktop shell for an agent IDE or internal tool, the useful takeaway is to benchmark realistic editor workloads — text, panels, continuous redraw — rather than trusting framework marketing. Blender's decades of viewport work are a high bar."
+      ],
+      "authors": [
+        "ppmpreetham"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://github.com/ppmpreetham/BUI",
+      "discuss_url": "https://news.ycombinator.com/item?id=50389333",
+      "interests": [
+        "systems",
+        "coding"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "dutch-asn-blocks-grapheneos",
+      "kicker": "Mobile privacy",
+      "headline": "Dutch bank ASN blocks non-Google Android devices, including GrapheneOS",
+      "why_read": "A concrete clash between hardened Android and banking apps that demand Google's attestation stack.",
+      "body": [
+        "A PrivSec banking-apps compatibility report issue documents Dutch 'idealist' bank ASN blocking non-Google Android builds, GrapheneOS included. The pattern is familiar: apps that lean on Google Play Integrity / SafetyNet-style signals quietly lock out de-Googled phones even when the device is more locked down than stock.",
+        "For privacy-minded Android users it is another data point that the hard part of leaving Google is not the ROM — it is the banks, rideshare apps and government portals that outsource trust to Play Services. Track the issue thread for workarounds and which other EU banks follow."
+      ],
+      "authors": [
+        "PrivSec-dev"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://github.com/PrivSec-dev/banking-apps-compat-report/issues/105",
+      "discuss_url": "https://news.ycombinator.com/item?id=50390124",
+      "interests": [
+        "privacy",
+        "security",
+        "android"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "naman-pushp-airbound-carbon-fiber",
+      "kicker": "Hard tech",
+      "headline": "Ashlee Vance profiles 21-year-old Naman Pushp, building carbon-fiber cargo aircraft at Airbound in Bengaluru",
+      "why_read": "A Core Memory visit to India's hard-tech bench: YouTube-taught composites, VTOL cargo birds, and a bet that aviation underuses carbon fiber.",
+      "body": [
+        "Ashlee Vance's Core Memory episode and write-up introduce Naman Pushp, 21-year-old founder of Airbound in Bengaluru. Pushp taught himself carbon-fiber aircraft construction from YouTube, skipped Carnegie Mellon to keep building, and now flies VTOL cargo aircraft designed around composites rather than treating carbon fiber as a metal substitute.",
+        "Vance watched dozens of the quiet, hovering machines at Airbound's test sites and frames Pushp as part of a generation of Indian founders choosing domestic hard tech over copycat SaaS. The company still has a long way to go from package delivery to anything passenger-shaped, but the materials thesis is the hook."
+      ],
+      "authors": [
+        "Ashlee Vance"
+      ],
+      "source": "web",
+      "source_label": "Web",
+      "source_url": "https://www.corememory.com/p/the-boy-wonder-of-india-naman-pushp-airbound-aircraft-carbon-fiber",
+      "discuss_url": "https://x.com/ashleevance/status/2118027172086710633",
+      "interests": [
+        "science",
+        "hardware",
+        "india"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "sshole",
+      "kicker": "Security theater",
+      "headline": "sshole: the mischievous SSH honeypot that made HN's front page",
+      "why_read": "A 2,700-point distraction that still teaches something about who is knocking on port 22.",
+      "body": [
+        "sshole.com rocketed up Hacker News with a playful take on SSH honeypots — bait for the endless credential-stuffing noise that hits any public port 22. High score aside, it is a useful reminder to keep real SSH behind keys, fail2ban or a VPN, and to treat internet-wide scans as background radiation.",
+        "Use it as comic relief between CVE write-ups, not as your production detection stack."
+      ],
+      "authors": [
+        "sshole"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://sshhole.com",
+      "discuss_url": "https://news.ycombinator.com/item?id=50378228",
+      "interests": [
+        "security",
+        "laughter"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "hackintosh-reborn-ai",
+      "kicker": "Hardware hacking",
+      "headline": "The Hackintosh reborn — with AI along for the ride",
+      "why_read": "A nostalgic hardware essay for anyone who ever fought kexts, now rewritten for the agent era.",
+      "body": [
+        "A naut.ca post titled 'The Hackintosh Reborn' walks through building a modern Hackintosh with AI assistance in the loop. It is part memoir, part how-to, and it landed solidly on HN for readers who miss OpenCore late nights.",
+        "Apple Silicon closed the classic Hackintosh chapter for many; this piece is about why people still bother on Intel boards and how coding agents change the debugging grind. Read for the vibe as much as the parts list."
+      ],
+      "authors": [
+        "naut.ca"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://www.naut.ca/blog/2026/11/05/the-hackintosh-reborn-with-ai/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50383057",
+      "interests": [
+        "hardware",
+        "ai",
+        "laughter"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "firenook-firebase-rust",
+      "kicker": "DevTools",
+      "headline": "Show HN: Firenook — Firebase emulators in Rust claiming 40× faster writes and 10× less RAM",
+      "why_read": "If your integration tests still wait on the official Firebase emulator, a Rust rewrite promising order-of-magnitude speedups is worth a weekend spike.",
+      "body": [
+        "Firenook.dev hit Show HN pitching Firebase emulators rewritten in Rust, with claimed 40× faster writes and 10× less RAM than the stock emulator stack. Local emulator pain is a perennial tax on mobile and serverless teams; a drop-in that is actually fast would change CI shape.",
+        "As with any Show HN systems claim, verify against your own workload before rewriting pipelines. The project page and HN thread are the place to start."
+      ],
+      "authors": [
+        "Firenook"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://firenook.dev/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50378643",
+      "interests": [
+        "systems",
+        "devops",
+        "coding"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "servo-september-2026",
+      "kicker": "Open source",
+      "headline": "September in Servo: progress bars, rounded rectangles, and more engine polish",
+      "why_read": "A quiet monthly reminder that an independent Rust browser engine is still shipping tangible UI primitives.",
+      "body": [
+        "Servo's September 2026 update covers new support for HTML progress elements, rounded rectangles, and assorted rendering and layout polish. The project remains the most serious open Rust browser engine effort outside the Chromium/WebKit duopoly.",
+        "None of it is a headline browser launch, but the cadence matters: embedding and research users need boring monthly progress more than splashy demos. Read the post if you track alternative engine health."
+      ],
+      "authors": [
+        "Servo Project"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://servo.org/blog/2026/11/05/september-in-servo/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50379576",
+      "interests": [
+        "open-source",
+        "systems",
+        "coding"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "motorola-signature-27-grapheneos",
+      "kicker": "Mobile",
+      "headline": "Motorola Signature 27 ships with GrapheneOS support",
+      "why_read": "A mainstream OEM nodding at the hardened Android niche — rare enough to note beside ASN's GrapheneOS block.",
+      "body": [
+        "Motorola News reports the Signature 27 with GrapheneOS support, a contrast to the same day's HN thread about ASN Bank locking GrapheneOS users out. OEM-blessed unlockable devices remain the scarce ingredient for private Android.",
+        "Availability, bootloader policy and which radios stay locked will decide whether this is real progress or marketing. Still, pairing an OEM announcement with a bank block makes the privacy-phone story of the day."
+      ],
+      "authors": [
+        "Motorola News"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://motorolanews.com/motorola-signature-27-2/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50380810",
+      "interests": [
+        "privacy",
+        "android",
+        "hardware"
       ],
       "lead": false,
       "featured": false
@@ -428,279 +586,145 @@
       "featured": false
     },
     {
-      "id": "stanford-joules-to-gdp",
-      "kicker": "Energy Tech",
-      "headline": "Stanford's Joules-to-GDP metric asks how much economic value AI delivers per unit of energy",
-      "why_read": "Where energy tech meets AI economics: a way to choose models and hardware by the value they deliver per joule, not by leaderboard rank.",
+      "id": "openai-948-linux-root-exploits",
+      "kicker": "AI security",
+      "headline": "OpenAI's cyber pipeline found 948 working Linux kernel root exploits for about $1,279 each",
+      "why_read": "An AI pipeline producing kernel privilege escalations at industrial scale changes the threat model for every shared Linux host you run.",
       "body": [
-        "Stanford's HazyResearch group introduced Joules-to-GDP, or J2G, a framework that estimates the net dollar value and time saved per joule of energy an AI system consumes. Tested on 220 real-world tasks from fields like finance and engineering, it turned up surprises: website-building tasks deliver more value per joule than CAD design, smaller models often beat giants on efficiency, and adding more hardware yields diminishing returns.",
-        "Among the hardware tested, NVIDIA's B200 came out ahead, and the expanded GDPWorks dataset behind the study now covers 80 occupations. With power becoming the binding constraint for data centers, as Tuesday's ballot results showed, a metric that ties energy use to economic output is the kind of number capacity planners will want in their models."
+        "In 'A thousand fewer paths to root,' OpenAI describes an autonomous pipeline built on an upcoming cyber model and pointed at the Linux kernel. Scouts identified 5,034 targets covering about 2.8 million lines of code, roughly 7% of the kernel. From 2,308 candidate bugs the system reproduced 1,724 and produced 948 unique local privilege escalation exploits plus 291 info-leak proofs of concept, at a total cost of $1,213,430, or about $1,279 per LPE. OpenAI says the run surfaced at least ten novel exploitation techniques. For comparison, GPT-5.6 Sol found 166 LPEs for $513,690 in July.",
+        "The fixes are moving through the kernel: within ten days, 61 had been patched upstream and 43 more were in staging, as part of OpenAI's Patch the Planet and Daybreak efforts. The post's blunt operational advice is to treat a low-privileged account on an unpatched OS as root-equivalent, and to isolate untrusted workloads with microVMs or sandboxes such as Firecracker or gVisor rather than relying on container boundaries alone."
       ],
       "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2118093948145291349",
-      "discuss_url": "https://x.com/i/trending/2118093948145291349",
-      "interests": [
-        "energy",
-        "ai",
-        "research"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "binance-heist-fake-interview",
-      "kicker": "Security",
-      "headline": "A fake job interview gave North Korean hackers the foothold for the $6.3 billion Binance heist",
-      "why_read": "A step-by-step account of how social engineering, a poisoned Homebrew install and compromised internal AI tooling added up to a record theft.",
-      "body": [
-        "Binance's incident report, covered by The Register's Jessica Lyons, says the October 29 breach was a multi-stage campaign rather than a single phishing hit. It combined fake job interviews, malware downloads, compromised internal AI tooling, endpoint takeover and what Binance calls an 'advanced transaction-authorization method.' The FBI has attributed the $6.3 billion theft to TraderTraitor, a North Korean operation linked to the Lazarus Group.",
-        "The prep began in June, when an engineer downloaded a malicious Homebrew installation. The security team caught it, replaced the device and rotated credentials, but the attackers had already learned about the wallet infrastructure team. In September, another engineer was approached on a legitimate job-hunting platform by a fake project director, who arranged interviews, including a 'CEO' call on a chat app, built to win trust before delivering malware. The lesson for any enterprise is that developer laptops are now the front door."
-      ],
-      "authors": [
-        "Jessica Lyons"
+        "OpenAI"
       ],
       "source": "web",
       "source_label": "Web",
-      "source_url": "https://www.theregister.com/security/2026/11/03/north-korean-fake-job-interview-led-to-63b-binance-heist/5307398",
-      "discuss_url": "https://news.ycombinator.com/item?id=50365755",
+      "source_url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50372929",
       "interests": [
         "security",
-        "fintech"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "go-json-v2-stable",
-      "kicker": "Go",
-      "headline": "encoding/json/v2 is stable and generally available in Go 1.27",
-      "why_read": "The long-awaited fix for Go's JSON quirks is now in the standard library, with safer defaults that can catch real bugs.",
-      "body": [
-        "The Go team announced that the new encoding/json/v2 and encoding/json/jsontext packages are stable and generally available in Go 1.27, after a year as an experiment. The post walks through the long-standing problems with encoding/json. It accepts invalid UTF-8 even though RFC 8259 requires valid UTF-8. It accepts duplicate object member names, a known attack vector cited with CVE-2017-12635. It marshals nil slices and maps as null, and it matches field names case-insensitively.",
-        "Version 2 flips those defaults toward correctness and safety: it rejects invalid UTF-8 and duplicate names and marshals empty collections as arrays or objects. It also splits low-level token handling into jsontext. For teams with Go services exchanging JSON across language boundaries, it's worth planning a migration; check the post's compatibility notes before switching your hot paths."
-      ],
-      "authors": [
-        "The Go Team"
-      ],
-      "source": "web",
-      "source_label": "Web",
-      "source_url": "https://go.dev/blog/jsonv2",
-      "discuss_url": "https://news.ycombinator.com/item?id=50369106",
-      "interests": [
-        "coding",
+        "ai",
         "systems"
       ],
       "lead": false,
       "featured": false
     },
     {
-      "id": "mbed-tls-maintenance",
-      "kicker": "Open source",
-      "headline": "Mbed TLS maintainers will step away from the TLS and X.509 libraries in April 2027 unless new stewards arrive",
-      "why_read": "A widely embedded TLS stack could stop getting security fixes in about five months, so check your firmware and IoT dependencies.",
+      "id": "anthropic-provable-inference",
+      "kicker": "AI research",
+      "headline": "Anthropic shows zkSNARK proofs that a response really came from the model you were promised",
+      "why_read": "If you've ever wondered whether a router quietly swapped in a cheaper model, this is the cryptographic answer, built largely by Claude.",
       "body": [
-        "In a notice to the Mbed TLS announce list, the project team says the current maintainers will stop developing and maintaining the TLS and X.509 libraries in the Mbed TLS project from April 2027, while continuing to maintain TF-PSA-Crypto. Unless new maintainers join and ramp up by then, security incident response, security fixes and releases for those libraries will cease.",
-        "The team is asking organisations and individuals to help with engineering resources, funding or other support, and says the current maintainers will help newcomers ramp up. Mbed TLS ships in a huge range of embedded devices and firmware, so it's worth inventorying where it sits in your stack now rather than discovering an unmaintained TLS library during an audit."
+        "Anthropic researchers, working with collaborators from EPFL, StarkWare, MIT and Succinct, describe FlashProve, a zkSNARK system for provable inference. A provider commits to a model and then proves that each response was produced by that model, without revealing the weights. On Llama 4 Maverick, a 400B-parameter mixture of experts with 4-bit weights, a single H100 generates proofs at around 110 tokens per second, with a proof of about 19 MB per 1,024-token request. That is roughly 70 to 95 times the GPU time of serving the model on vLLM, which the team says is orders of magnitude faster than prior open-source systems.",
+        "The twist is that Claude did much of the optimization work. Because its design choices can be hard to audit, the team pinned the top-level security claims in Lean formal statements. They released the blog post, a technical report, a Claude-written protocol specification, and code that includes a prover, a fast C++ verifier and a provably correct verifier. The pitch spans consumer trust, internal security and compliance checks on AI pacing rules."
       ],
       "authors": [
-        "Janos Follath"
+        "Anthropic"
       ],
       "source": "web",
       "source_label": "Web",
-      "source_url": "https://lists.trustedfirmware.org/archives/list/mbed-tls@lists.trustedfirmware.org/thread/YPIGCB7WN6GCHOGEGKOJXUYAP7OK527W/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50349165",
+      "source_url": "https://www.anthropic.com/research/provable-inference",
+      "discuss_url": "https://news.ycombinator.com/item?id=50368626",
       "interests": [
-        "open-source",
-        "security"
+        "ai",
+        "security",
+        "research"
       ],
       "lead": false,
       "featured": false
     },
     {
-      "id": "awesome-lists-ai-slop",
-      "kicker": "Open source",
-      "headline": "'Awesome' GitHub lists are no longer awesome, thanks to stale links and floods of AI-generated pull requests",
-      "why_read": "A sharp look at how vibe-coded spam is wearing down the community-curated lists developers used to trust.",
+      "id": "amd-outsells-intel-q4",
+      "kicker": "Chips",
+      "headline": "AMD guides to about $17 billion in Q4 revenue, enough to outsell Intel for the first time ever",
+      "why_read": "A historic crossover driven almost entirely by data center CPUs and AI accelerators, which is exactly the hardware you buy.",
       "body": [
-        "Erik Gahner argues that most 'awesome' repositories have become irrelevant for two AI-related reasons. Many are unmaintained and stale; awesome-R was last updated more than a year ago and still links an overview of top packages from 2016, so asking a decent model is often more useful. Meanwhile, the lists that remain are being flooded with low-effort submissions. One small list with 13 stars had 91 open pull requests, most pitching generic vibe-coded tools.",
-        "Gahner traced one contributor who built at least six vibe-coded sites and filed more than 100 pull requests to awesome lists to promote them, some of which were merged. His suggestion is that these lists may survive mainly as resources for agents to check, rather than for people. Any maintainer with a public repo will recognize the pattern."
+        "AMD reported record third-quarter revenue of $13.377 billion, up from $9.25 billion a year earlier and $11.54 billion the previous quarter, with a 54% gross margin and net income up 95% to $2.43 billion, according to Tom's Hardware. The Data Center segment reached a record $8.55 billion, up 97% year over year, with operating margin expanding from 25% to 34%. Data center now makes up 64% of AMD's revenue, on the strength of Epyc processors and Instinct accelerators.",
+        "The headline is the outlook. AMD expects fourth-quarter revenue of approximately $17 billion, plus or minus 3%, while Intel guided to $15 billion to $16 billion amid weak PC demand and manufacturing constraints. If both companies land near their midpoints, AMD's quarterly sales would top Intel's by about $1.5 billion for the first time in history. The caveat in the report is that AMD's client and gaming businesses face double-digit declines going into 2027, as high memory prices weigh on PCs."
       ],
       "authors": [
-        "Erik Gahner"
+        "Anton Shilov"
       ],
       "source": "web",
       "source_label": "Web",
-      "source_url": "https://erikgahner.github.io/posts/2026/awesome-repositories-are-no-longer-awesome/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50377821",
+      "source_url": "https://www.tomshardware.com/pc-components/cpus/amd-expects-to-outsell-intel-in-q4-for-the-first-time-in-history-usd17b-guidance-would-exceed-intels-projections",
+      "discuss_url": "https://news.ycombinator.com/item?id=50367125",
       "interests": [
-        "open-source",
+        "chips",
+        "ai",
+        "markets"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "giga-texas-cybercab-drone",
+      "kicker": "Robotaxi",
+      "headline": "Drone views over Giga Texas show Cybercabs running traffic drills as a chip fab and Optimus factory rise",
+      "why_read": "Your Austin neighbor in aerial form: Cybercab testing, new fab steel and a move to round-the-clock shifts, all visible from the sky.",
+      "body": [
+        "Fresh drone footage over Giga Texas, highlighted by longtime site watchers Joe Tegtmeyer and Herbert Ong, shows groups of Cybercabs practicing traffic scenarios on the test track, stopping at lights and reacting to one another in coordinated runs alongside Model Y test vehicles. The same flyovers capture steel going up for a chip fab, growth at the Optimus factory and a new cooling plant on the campus.",
+        "X's summary also reports that the factory is shifting to 24-hour operations with two 12-hour shifts to push output through year-end, with minimal holiday downtime. None of this is an official Tesla announcement, so treat timelines with care. Still, it's a rare chance to watch robotaxi, robotics and silicon work happening in parallel on one site a short drive from home."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2118103907692171535",
+      "discuss_url": "https://x.com/i/trending/2118103907692171535",
+      "interests": [
+        "tesla",
+        "autonomy",
+        "texas"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "data-centers-lose-ballots",
+      "kicker": "Energy and AI",
+      "headline": "Voters reject data centers in 46 of 47 local ballot measures",
+      "why_read": "The midterms delivered a clear verdict on the physical side of the AI boom, and Texas is next in line for the same fight.",
+      "body": [
+        "X's news summary of Tuesday's results says voters approved limits or outright bans on data centers in 46 of 47 local ballot measures, in states including Ohio, California and Florida. The concerns cited were power and water demand, rising electricity bills and quality-of-life impacts on nearby neighborhoods. Tech advocates pushed back by pointing to medical uses of AI such as mapping tumors and finding drug synergies, while surveys cited in the roundup show broad, cross-party support for more government oversight of AI and data centers.",
+        "Texas has its own version of the debate. Senator-elect James Talarico said in a clip posted Wednesday that data center companies must pay for their own energy so they don't drive up utility bills, recycle their own water and get the consent of the communities they build in. The investor @Jason replied that this is 'completely reasonable and exactly what the data center industry is doing,' and urged towns that land a data center to extract as much as they can for local schools and playgrounds. For anyone planning capacity, the takeaway is that power and community consent are now as much of a gating factor as GPUs."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2118298102448677157",
+      "discuss_url": "https://x.com/Jason/status/2118114633969991826",
+      "interests": [
+        "energy",
+        "politics",
+        "texas",
         "ai"
       ],
       "lead": false,
       "featured": false
     },
     {
-      "id": "insects-skip-led-lights",
-      "kicker": "Science",
-      "headline": "Why insects no longer swarm your porch light: LEDs don't emit the UV they mistake for moonlight",
-      "why_read": "A lovely small physics-meets-biology explainer, and a reason the geckos vanished from one family's patio.",
+      "id": "kimi-k3-1-pro-open-weights",
+      "kicker": "Open-weight AI",
+      "headline": "Moonshot releases Kimi K3.1 Pro weights: a 2.8-trillion-parameter agentic MoE that trades blows with Claude Opus 5.5",
+      "why_read": "The strongest open-weight agentic model to land this fall, and its coding scores sit within a point of the closed frontier.",
       "body": [
-        "Birds Outside My Window tells the story of a tour guide whose family's well-lit outdoor dining space used to draw geckos hunting insects at the lights, until they switched to LEDs and the geckos stopped coming. The geckos hadn't gone anywhere; far fewer insects were showing up for them to eat. The explanation draws on BBC reporting: flying insects keep upright by orienting their backs to moonlight, which is reflected sunlight containing ultraviolet and infrared.",
-        "Incandescent bulbs emit UV, so insects treat them like the moon, circling and even flipping upside down under lights that point upward. LEDs emit essentially no UV, so they are far less attractive. The post cites a 2016 University of Bristol field experiment that compared tungsten incandescent, compact fluorescent, and cool-white and warm-white LEDs on flying insects, especially flies. Good news for patios, and a quiet change for the ecosystems around streetlights."
+        "Moonshot AI has published Kimi K3.1 Pro on Hugging Face as an open-weight, natively multimodal mixture-of-experts model built for agentic work. The model card lists 2.8 trillion total parameters with 104 billion active per token, 896 experts with 16 selected per token, a 1M-token context window and weights shipped in MXFP4. Architecturally, the card says Gated DSA attention replaces Gated MLA.",
+        "The benchmark table is the reason it hit 555 points on Hacker News. Kimi K3.1 Pro posts 65.7 on Terminal-Bench 4.0 against 66.4 for Claude Opus 5.5, scores 51.7 on SWE Marathon (the best number in Moonshot's comparison), 92.1 on BrowseComp and 70.0 on Humanity's Last Exam with tools. It ships under a custom Kimi K3.1 Pro License rather than a standard open-source license, so read the terms before planning a deployment, and at this size self-hosting is a serious cluster job, not a weekend project."
       ],
       "authors": [
-        "Birds Outside My Window"
+        "Moonshot AI"
       ],
       "source": "web",
       "source_label": "Web",
-      "source_url": "https://www.birdsoutsidemywindow.org/2026/11/03/insects-dont-swarm-at-led-lights/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50370610",
+      "source_url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+      "discuss_url": "https://news.ycombinator.com/item?id=50366999",
       "interests": [
-        "science",
-        "physics"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "plastic-free-coffee-pods",
-      "kicker": "Science and life",
-      "headline": "Plastic-free coffee machines and compostable pods are becoming kitchen status symbols",
-      "why_read": "Microplastics worries are reshaping a daily ritual, from Keurig's compostable tablets to all-glass brew paths.",
-      "body": [
-        "CNN's Jordan Valinsky reports a wave of plastic-free coffee pods and machines. Keurig's Alta, released in October, and Lavazza's new system replace plastic cups with compostable coffee tablets; Lavazza's Tablì launched in the US in June as a $129 machine. Caraway's new stainless-steel-and-glass machine uses ordinary grounds but keeps plastic out of the brew path.",
-        "The driver is concern about microplastics. A 2025 poll by the environmental group 5 Gyres found nine in 10 Americans worried about their effects, and studies have shown that pods shed microplastics, though more research is needed on actual harm. The Specialty Coffee Association's Peter Giuliano adds a less scientific factor: the feeling that metal and glass are more 'luxury' than plastic."
-      ],
-      "authors": [
-        "Jordan Valinsky"
-      ],
-      "source": "web",
-      "source_label": "Web",
-      "source_url": "https://www.cnn.com/2026/11/02/food/coffee-machine-plastic-free",
-      "discuss_url": "https://news.ycombinator.com/item?id=50366853",
-      "interests": [
-        "science",
-        "health"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "feynman-fall-in-love-activity",
-      "kicker": "Love and wisdom",
-      "headline": "Feynman's advice: 'Fall in love with some activity, and do it!'",
-      "why_read": "A paragraph you reposted that's worth rereading slowly, especially in a week full of noise.",
-      "body": [
-        "Reads with Ravi shared a passage from Richard Feynman: 'Fall in love with some activity, and do it! Nobody ever figures out what life is all about, and it doesn't matter. Explore the world. Nearly everything is really interesting if you go into it deeply enough.' Feynman goes on: 'Work as hard and as much as you want to on the things you like to do the best. Don't think about what you want to be, but what you want to do.'",
-        "The closing line is the pragmatic part: 'Keep up some kind of a minimum with other things so that society doesn't stop you from doing anything at all.' It's a physicist's case for curiosity as a way of life, and a good counterweight to a timeline dominated by elections and model launches."
-      ],
-      "authors": [
-        "Reads with Ravi"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/readswithravi/status/2117835226940633262",
-      "discuss_url": "https://x.com/readswithravi/status/2117835226940633262",
-      "interests": [
-        "physics",
-        "kindness"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "josh-turek-harkin-seat",
-      "kicker": "Kindness",
-      "headline": "Paralympian Josh Turek wins the U.S. Senate seat from Iowa once held by ADA author Tom Harkin",
-      "why_read": "The most human story of the election: a wheelchair athlete taking the seat of the senator who wrote the Americans with Disabilities Act.",
-      "body": [
-        "Iowa Democrat Josh Turek, a Paralympian, will now sit in the former seat of Sen. Tom Harkin, who authored the Americans with Disabilities Act and, as HQNewsNow put it, made life more accessible for millions of Americans. It's a story with a satisfying symmetry: the law that reshaped access for disabled Americans, and now a disabled athlete in the seat of the man who wrote it.",
-        "Mike Nellis shared a video of Turek pulling his wheelchair up a set of stairs to talk with a neighbor, writing, 'How do you not root for a guy like that?' After a long night of results, it's a reminder that behind the maps are people who simply showed up, one doorstep at a time."
-      ],
-      "authors": [
-        "HQNewsNow"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/HQNewsNow/status/2117992016168521792",
-      "discuss_url": "https://x.com/MikeNellis/status/2117844383298929094",
-      "interests": [
-        "kindness",
-        "politics"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "senate-turnover-doctors-elected",
-      "kicker": "Election",
-      "headline": "Biggest Senate turnover since 1980, plus a wave of doctors and nurses headed to office",
-      "why_read": "Two of the most-bookmarked election takes: a generational reset in the Senate and a new bloc of health professionals.",
-      "body": [
-        "Ted Alcorn noted that in races already called, 17 senators are being replaced, the biggest turnover in the chamber since 1980. The departing senators' average age is 70 and their replacements' is 55, and the number of senators under 50 nearly doubles, from 8 to 15. Grace Panetta added another milestone: for the first time, 100 women Democrats are expected to serve in the House at the same time.",
-        "Dr. Jerome Adams listed the doctors and nurses who won. In the Senate, pediatrician Dr. Annie Andrews won in South Carolina and epidemiologist Dr. Abdul El-Sayed in Michigan; Dr. Amy Acton, Ohio's former health director, won the governorship. House winners include Dr. Richard Pan (California), Dr. Adam Hamawy (New Jersey), Dr. John Cowan (Georgia), ER nurse Mitchell Berman (Wisconsin) and nurse practitioner Kristina Knickerbocker (Ohio). 'Health care professionals just got a much louder voice in our country,' Adams wrote."
-      ],
-      "authors": [
-        "Ted Alcorn",
-        "Jerome Adams"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/TedAlcorn/status/2117978218456039558",
-      "discuss_url": "https://x.com/JeromeAdamsMD/status/2118087121835626998",
-      "interests": [
-        "politics",
-        "health"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "wing-commander-together",
-      "kicker": "Laughter and play",
-      "headline": "Two brothers finally made Wing Commander co-op, a childhood dream hacked out of 640K of DOS memory",
-      "why_read": "A charming, nerdy piece of reverse engineering that turns a classic DOS space shooter into a two-player wingman game you can play in a browser.",
-      "body": [
-        "The author, danielrh, writes that as kids, he and his brother Patrick flew Wing Commander as a 'two-headed hydra,' one on the controls and the other on lasers and afterburners, always wishing they could fly as wingmates. In October 2015, playing the game in DOSBox, he realized the whole game state probably fit in 640K, so if he could find the bytes holding the X, Y and Z coordinates for the player and the wingman, network packets could steer the wingman.",
-        "The write-up walks through the detective work: snapshotting memory while stopped to filter out background churn, burning a mission so the wingman Paladin was gone, and flying into empty space to isolate a single changing axis. The result, Wing Commander Together, is playable in the browser, and it shows how much joy is still hiding in old systems."
-      ],
-      "authors": [
-        "danielrh"
-      ],
-      "source": "web",
-      "source_label": "Web",
-      "source_url": "https://fireflyk64.github.io/wcmulti/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50369895",
-      "interests": [
-        "laughter",
-        "history"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "walker-playground-lemmings",
-      "kicker": "Laughter",
-      "headline": "A Lemmings-style CSS playground lets little walkers roam, fall and get flung around the page layout",
-      "why_read": "Pure web delight: drag, throw and resize to watch tiny walkers ride your reflowing layout like a level.",
-      "body": [
-        "MarkBlah's Walker Playground turns a web page into a Lemmings level. Click a button or call __walker.add() to drop in walkers, then drag them to carry them or flick to throw them. Borders, buttons, images and form fields are solid. Each line of text is a floor walkers can land on but walk through, and resizing the window makes them ride the surface they're on, so a fast resize launches them.",
-        "The demo includes stairs too tall to climb, floating platforms, a pit, a cage and reflowing text columns that are perfect for resize launches, with one long floor at the bottom to catch anything that falls. It reached 239 points on Hacker News, a small reminder that the DOM can still be a toy."
-      ],
-      "authors": [
-        "MarkBlah"
-      ],
-      "source": "web",
-      "source_label": "Web",
-      "source_url": "https://markblah.github.io/lemmings/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50375354",
-      "interests": [
-        "laughter",
-        "coding"
+        "ai",
+        "open-source"
       ],
       "lead": false,
       "featured": false
