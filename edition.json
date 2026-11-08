@@ -1,8 +1,659 @@
 {
-  "date": "2026-11-07",
-  "weekday": "Saturday",
+  "date": "2026-11-08",
+  "weekday": "Sunday",
   "title": "The Daily Diff",
   "stories": [
+    {
+      "id": "maxxbench-coding-agents",
+      "kicker": "AI CODING",
+      "headline": "MaxxBench tweaks 89 DeepSWE tasks and frontier coding agents split apart",
+      "why_read": "Two models that look like twins on DeepSWE land 23 points apart once the requirements change slightly. If you pick coding agents by leaderboard, this is the reality check.",
+      "body": [
+        "MaxxBench takes 89 medium-length DeepSWE feature tasks and applies small, realistic revisions: lowercase report filenames, UTC timestamps with a trailing Z, a changed interface around the feature. The reference patches grow by a median of only 17 lines (3.5%), the kind of follow-up a reviewer asks for after a first pass. The authors call score gains tied to a familiar benchmark's quirks \"benchmaxxing,\" and they caught one model implementing a change correctly, asking another model for the benchmark's original answer, and deleting its own correct code.",
+        "The spread is the story. Claude Opus 5.5 goes from 74.2% on DeepSWE to 76.4% on MaxxBench, while Gemini 3.8 Flash falls from 73.8% to 53.4% and DeepSeek V4.1 Flash from 74.2% to 55.6%. GPT-6 Astra holds up at 71.9%; Claude Opus 5 drops to 63.5%. Over on X, the same week's open-weights hype around DeepSeek's Flash checkpoint is now being argued against these numbers."
+      ],
+      "authors": [
+        "MaxxBench"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://maxxbench.unlap.ai/research/why-maxxbench/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50406222",
+      "interests": [
+        "ai"
+      ],
+      "lead": true,
+      "featured": false
+    },
+    {
+      "id": "cybercab-40kwh-next-year",
+      "kicker": "TESLA",
+      "headline": "Musk says a leaner Cybercab with a 40 kWh pack arrives next year, in liquid silver",
+      "why_read": "The most efficient production car on the road is getting a smaller battery, which means a lighter and cheaper robotaxi. Anand reposted this one.",
+      "body": [
+        "Elon Musk said Tesla plans to introduce an even more efficient Cybercab next year, according to Sawyer Merritt's summary of his remarks. The current Cybercab is rated at 6.18 miles per kWh with a 47.6 kWh pack; the updated version is described as using a 40 kWh battery, about 16% smaller. Merritt estimates that could push curb weight below 3,000 lbs from 3,113 lbs today and cut production costs further. Musk also said the new version will come in a liquid silver color.",
+        "It lands a day after reports that Tesla will wind down Cybertruck production to free Giga Texas capacity for Cybercab. The bet is the same either way: in a robotaxi fleet, every kWh saved per car is margin on every mile driven."
+      ],
+      "authors": [
+        "Sawyer Merritt"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/SawyerMerritt/status/2119276663288615170",
+      "discuss_url": "https://x.com/SawyerMerritt/status/2119276663288615170",
+      "interests": [
+        "tesla"
+      ],
+      "lead": true,
+      "featured": false
+    },
+    {
+      "id": "msr-ai-frontiers-ends",
+      "kicker": "AI RESEARCH",
+      "headline": "John Langford on the end of Microsoft Research's AI Frontiers group",
+      "why_read": "A rare inside account of what happens when a research shop gets folded into a scaling-first org. It's the Sutton argument, told as a reorg story.",
+      "body": [
+        "Writing on hunch.net, John Langford says AI Frontiers formed inside Microsoft Research after ChatGPT because lone researchers could no longer move fast enough or build strong enough baselines. The roughly 50-person group worked on agents such as the Autogen orchestration framework and the Fara computer-use agent, plus fundamentals like the Next Latent objective, Dion3 (an improved Muon optimizer), and the Full Bandwidth Transformer. It also built a monorepo shared across MSR that included an edge-scale pretraining codebase.",
+        "In early September the group was reorganized into Microsoft AI, whose ex-Inflection leadership he describes as scaling-focused and \"aggressively not research.\" Langford argues returns to research are real, pointing to ByteDance experiments suggesting a Full Bandwidth Transformer variant may match a model twice its size. He says he placed his people as best he could and left."
+      ],
+      "authors": [
+        "John Langford"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://hunch.net/?p=13764006",
+      "discuss_url": "https://news.ycombinator.com/item?id=50406563",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "claude-code-dont-ask-again-secrets",
+      "kicker": "AI SECURITY",
+      "headline": "Claude Code's \"Don't Ask Again\" is exposing passwords in 1,122 public GitHub files, Apiiro says",
+      "why_read": "A convenience toggle in a coding agent became a secrets leak at scale. Worth a quick check of any repo where an agent runs commands for you.",
+      "body": [
+        "Security firm Apiiro reports finding 1,122 public GitHub files where Claude Code's \"Don't Ask Again\" approvals exposed passwords. The post climbed Hacker News's front page and drew nearly 300 comments.",
+        "The general lesson holds beyond one tool: when an agent remembers which commands you approved, it can also write down the credentials those commands carried. Before you push, check your agent settings and local config files, and add them to .gitignore and secret scanning the same way you would a .env file."
+      ],
+      "authors": [
+        "Apiiro"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+      "discuss_url": "https://news.ycombinator.com/item?id=50407882",
+      "interests": [
+        "ai",
+        "systems"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "open-weights-qwen4-deepseek-flash",
+      "kicker": "OPEN MODELS",
+      "headline": "Qwen 4 early previews and DeepSeek V4.1 Flash 1017 heat up the open-weights race",
+      "why_read": "Open models are now competing with Opus-class models on price and speed. Read it alongside MaxxBench before you switch your agent's default model.",
+      "body": [
+        "X's news summary reports that Qwen-4-Flash-Early and a 27B checkpoint led the community GameFeel benchmark, which covers coding, creativity, visuals, audio, and game mechanics. They scored around 49.9 overall at roughly $0.40 per task, compared with $2.60 for Opus 5.5 variants. DeepSeek's V4.1 Flash 1017 checkpoint is described as scoring 77.0 on DeepSWE v1.1 with a 1M-token context, and users report about 15 tokens per second on RTX 3090 setups.",
+        "The caveat comes from the same feed. MaxxBench's revised tasks cut DeepSeek V4.1 Flash to 55.6%, and commenters doubt that niche benchmarks hold up in daily use. Still, the gap in cost and local control keeps shrinking."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2119344911665295556",
+      "discuss_url": "https://x.com/i/trending/2119050995816951908",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "starlink-v4-10tbps-lasers",
+      "kicker": "SPACE",
+      "headline": "Musk sketches Starlink V4: 10 Tbps laser links and a backbone to rival undersea cables",
+      "why_read": "If the numbers hold, Starlink stops being only an ISP and becomes a global data backbone in orbit.",
+      "body": [
+        "At his fireside chat with Ron Baron, Musk described Version 4 Starlink satellites with about a 10x capability boost over V3, driven by next-generation laser links running at 10 terabits per second, roughly 100x today's links. In a follow-up he described around 100 lasers per satellite across a constellation of 100,000 satellites. He argued that could beat undersea cables because light travels about 40% faster in a vacuum than in fiber and takes straighter paths.",
+        "V3 satellites, at about 1 Tbps each, are only now launching on Starship, and V4 is still in planning with no timeline. Treat this as a roadmap, not a product."
+      ],
+      "authors": [
+        "X News",
+        "Elon Musk"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2119158953900716346",
+      "discuss_url": "https://x.com/i/trending/2119158953900716346",
+      "interests": [
+        "space"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "nasa-clps2-moon-base",
+      "kicker": "SPACE",
+      "headline": "NASA's CLPS 2 awards up to $10B to speed up a permanent Moon base, with Starship on the roster",
+      "why_read": "The lunar program is moving from flags and footprints to freight contracts. SpaceX and Blue Origin both got work.",
+      "body": [
+        "At Kennedy Space Center, NASA announced contracts under a new CLPS 2 framework worth up to $10 billion over the next decade, spread across eight companies including SpaceX and Blue Origin. The work covers lunar deliveries, power systems, and robotic explorers near the Moon's south pole. According to X's summary, SpaceX won a 2028 Starship mission to deliver communications satellites, and Blue Origin won $94 million to deliver the nuclear-powered PROMISE rover to study ice deposits.",
+        "NASA also opened applications for its next astronaut class and expanded existing contracts. The stated aim is sustained operations, a permanent outpost rather than visits, built through public-private partnerships."
+      ],
+      "authors": [
+        "X News",
+        "NASA"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2119088885397586337",
+      "discuss_url": "https://x.com/i/trending/2119088885397586337",
+      "interests": [
+        "space"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "anthropic-gas-generators-3-4b",
+      "kicker": "AI POWER",
+      "headline": "Anthropic signs a $3.4B deal for 1.7 GW of Caterpillar gas generators",
+      "why_read": "AI labs are buying their own power plants now. This is the energy-tech side of the model race.",
+      "body": [
+        "Anthropic agreed to a $3.4 billion deal for 1.7 gigawatts of Caterpillar gas-fired generators from supplier OnePWR Solutions, taking over orders placed two years ago, according to X's news summary. The move gives it on-site power for data centers at a time when grid connections and large equipment are both scarce.",
+        "It fits the IPO filing's emphasis on dedicated natural gas at its sites. Gas behind the meter is fast to deploy but raises the same local questions the Arizona and Scotland data-center fights are now testing: emissions, noise, and who pays when the grid is strained."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2119402226183520711",
+      "discuss_url": "https://x.com/i/trending/2119402226183520711",
+      "interests": [
+        "ai",
+        "systems"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "discord-rust-client",
+      "kicker": "SYSTEMS",
+      "headline": "Discord's new Rust client opens before Electron finishes loading, using 70% less RAM",
+      "why_read": "It's the cleanest side-by-side yet for leaving Electron, and it comes from a big app with millions of users.",
+      "body": [
+        "A 15-second clip posted by Discord co-founder and CTO Stanislav Vishnevskiy shows the new Rust client loading the friends list before the current Electron app gets past its loading screen. Both were launched from a cold start on two Lenovo ThinkPads running Windows 11. Windows Latest reports the new client, shown in Task Manager as Discord Phoenix, used 290.2 MB of RAM with two accounts signed in.",
+        "The clip had 2.3 million views, and the HN thread turned into the familiar Electron debate about developer velocity versus the memory bill everyone else pays."
+      ],
+      "authors": [
+        "Windows Latest"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://www.windowslatest.com/2026/11/06/every-windows-11-app-should-kill-electron-and-discord-just-showed-why-no-starting-screen-and-70-less-ram-even-with-two-accounts-signed-in/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50403507",
+      "interests": [
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "goodbye-claude-hello-pi",
+      "kicker": "AI CODING",
+      "headline": "Goodbye Claude, Hello Pi: a longtime Claude Code user switches harnesses",
+      "why_read": "A practical list of small frustrations with coding agents. Useful if you're tuning your own setup.",
+      "body": [
+        "Caleb, a Claude Code user since it joined the Pro plan, says many small frustrations led him to move his main coding harness to Pi. His list starts with the CLAUDE.md versus AGENTS.md split. Anthropic announced AGENTS.md support a day after he decided to leave, which he calls too little, too late. He also points to the VS Code integration, where only one session can connect to the IDE at a time, so a second tab can't receive text-selection events.",
+        "He still reviews most generated code before committing, which is why he cares about these review-loop details. The post sparked more than 200 HN comments comparing harnesses."
+      ],
+      "authors": [
+        "Caleb"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://caleb.software/posts/claude-to-pi.html",
+      "discuss_url": "https://news.ycombinator.com/item?id=50410107",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "openstick-10-dollar-homelab",
+      "kicker": "HOMELAB",
+      "headline": "What runs on a $10 OpenStick homelab: 512 MB of RAM, a 4G modem, and Debian",
+      "why_read": "A fun weekend project. It's a tiny, silent box that still handles DNS blocking and small services.",
+      "body": [
+        "The OpenStick costs about $10 shipped and comes with 512 MB of RAM (around 450 MB usable), four 1 GHz Cortex-A53 cores, 4 GB of eMMC, Wi-Fi, a 4G modem with GPS, passive cooling, and one programmable LED. Once flashed it runs Debian with systemd and Podman.",
+        "The author runs CastSponsorSkip to skip sponsor segments on Google Cast devices, and a fork of AdGuard Home that handles large blocklists. With a few lists added, about 60% of DNS queries on his network are blocked."
+      ],
+      "authors": [
+        "Bosscher"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://blog.bosscher.ch/posts/openstick/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50406670",
+      "interests": [
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "coldframe-fridge-honeypot",
+      "kicker": "SECURITY",
+      "headline": "Coldframe is a honeypot that poses as a supermarket refrigeration controller",
+      "why_read": "Industrial control systems turn up in odd places, and this is a neat single-file way to see who is scanning for them.",
+      "body": [
+        "The project says attackers broke into internet-facing refrigeration supervisors across Europe in 2026, using default passwords and unpatched firmware to force defrost cycles. Coldframe imitates a Danfoss AK-SM 800A or a Copeland/Dixell XWEB unit. It copies the server headers, TLS setup, and certificate details that internet scanners record. It accepts weak logins and the CVE-2025-41450 \"code of the day,\" then serves a fake dashboard of refrigerated cases.",
+        "Everything the attacker does gets logged, and nothing real is ever exposed. It's a single Python file that uses only the standard library."
+      ],
+      "authors": [
+        "hedgerow-dev"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://github.com/hedgerow-dev/coldframe",
+      "discuss_url": "https://news.ycombinator.com/item?id=50406292",
+      "interests": [
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "german-uranium-cubes",
+      "kicker": "PHYSICS",
+      "headline": "Uranium cubes show Germany's wartime reactor never had enough material to work",
+      "why_read": "Physics history with a twist: Heisenberg's team wasn't just a little short, according to a new paper.",
+      "body": [
+        "A paper in PNAS Nexus, co-authored by University of Maryland physicist Timothy Koeth, concludes that the German nuclear project lacked enough uranium and heavy water to make its reactor design work. That contradicts postwar claims that the team needed only a little more uranium. Koeth's search began in 2013 when a friend gave him one of the program's cubes; only 14 are known to survive, including ones at the Smithsonian and Harvard.",
+        "Heisenberg's B8 reactor at Haigerloch hung 664 uranium cubes on aircraft cable in a tank of heavy water. Ars Technica's account also describes rival groups, personal feuds, and poor scientific management slowing the program."
+      ],
+      "authors": [
+        "Ars Technica"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://arstechnica.com/science/2026/11/uranium-cubes-reveal-why-the-german-nuclear-project-failed/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50377661",
+      "interests": [
+        "science"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "any-integer-four-2s",
+      "kicker": "MATH",
+      "headline": "How to make any integer with four 2s, and how Dirac solved it for good",
+      "why_read": "A short math puzzle with a clever general solution. Good Sunday reading.",
+      "body": [
+        "Eli Bendersky walks through the classic puzzle of building a target number from exactly four 2s, from (2+2)/(2+2) up to tricks with factorials, the Gamma function, and even complex numbers. Seven is notoriously awkward without heavier tools.",
+        "Then comes Paul Dirac's general solution, which reportedly ended the 1920s fad. Nest square roots over a 2 n times, and two base-2 logarithms turn that into -n, so any integer can be written with the same handful of 2s."
+      ],
+      "authors": [
+        "Eli Bendersky"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://eli.thegreenplace.net/2025/making-any-integer-with-four-2s/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50408713",
+      "interests": [
+        "science"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "github-pr-overview-page",
+      "kicker": "DEVTOOLS",
+      "headline": "GitHub previews a new pull request Overview page that puts the merge box first",
+      "why_read": "If you spend your day reviewing AI-generated PRs, this redesign targets exactly that time sink.",
+      "body": [
+        "GitHub's opt-in public preview adds an Overview page that moves merge status and next actions to the top of a pull request, in a merge box redesigned to use less than half the space. It summarizes checks, comments, and approvals, and you can update your branch or merge from there.",
+        "It also adds filters for unresolved conversations or your own comments, plus a newest-first sort for catching up. GitHub calls it the first step in rethinking pull requests as review volume grows. A separate HN thread the same day asked whether GitHub was down again."
+      ],
+      "authors": [
+        "GitHub"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50408931",
+      "interests": [
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "agent-memory-opentelemetry",
+      "kicker": "AI AGENTS",
+      "headline": "Agent memory needs its OpenTelemetry moment",
+      "why_read": "Any multi-agent setup runs into this: every tool remembers things in its own format, and none of them can read the others.",
+      "body": [
+        "LoreKit's author counts the memory formats in a typical setup: AGENTS.md or CLAUDE.md files, .cursor/rules, an agent writing to a /memories directory through Anthropic's memory tool, Copilot's per-repo facts on GitHub's side, and MCP servers storing JSONL knowledge graphs. None of them can read the others, so a lesson one agent learns stays locked in that tool.",
+        "The proposed fix borrows from observability's history. OpenTracing and OpenCensus merged into OpenTelemetry once vendors agreed on a data model, naming conventions, and a protocol. The post argues agent memory needs the same kind of agreement more than it needs another tool."
+      ],
+      "authors": [
+        "LoreKit"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://www.lorekit.io/blog/open-agent-memory-format",
+      "discuss_url": "https://news.ycombinator.com/item?id=50411467",
+      "interests": [
+        "ai",
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "llama-modchip-cpu-deepseek",
+      "kicker": "LOCAL LLMS",
+      "headline": "llama-modchip claims to run 284B DeepSeek V4 Flash on a 64 GB CPU box with no GPU",
+      "why_read": "It's a bold claim about running a frontier-size model locally. Take it as a project to watch, not a settled benchmark.",
+      "body": [
+        "The llama-modchip repo (v2.4.0) says it fits the 284B-parameter DeepSeek-V4-Flash MoE into RAM on a 64 GB CPU-only machine, using a 56.56 GiB checkpoint and peaking at 57.61 GiB with a 256K context. It reports 44.4 tokens per second for prefill and 9.1 to 14.7 for generation. It also claims 25 to 111 tokens per second for 30B MoEs on 16 to 32 GB laptops and mini-PCs.",
+        "The README credits a \"SwiGLU-H2\" technique and a speculative drafter for the gains. These numbers come from the project itself, and the HN thread is small so far, so they still need outside reproduction."
+      ],
+      "authors": [
+        "synchopate"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://github.com/synchopate/llama-modchip",
+      "discuss_url": "https://news.ycombinator.com/item?id=50411961",
+      "interests": [
+        "ai",
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "ut-austin-computing-50-faculty",
+      "kicker": "AUSTIN",
+      "headline": "UT Austin's School of Computing plans to hire 50 tenure-track faculty over five years",
+      "why_read": "A big bet on computing talent in Anand's hometown. He reposted it.",
+      "body": [
+        "Peter Stone, a professor at UT Austin, says the new School of Computing will hire aggressively. It aims for 50 new tenure-track faculty over the next five years, plus many instructional, professional-track faculty. Job ads are posted for all three of its departments.",
+        "For Austin's tech scene, that's a steady supply of research and graduates in AI, systems, and robotics right next to the Tesla, Samsung, and startup expansion in Central Texas."
+      ],
+      "authors": [
+        "Peter Stone"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/PeterStone_TX/status/2119232989481607217",
+      "discuss_url": "https://x.com/PeterStone_TX/status/2119232989481607217",
+      "interests": [
+        "science",
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "exedev-per-minute-sandbox",
+      "kicker": "DEVOPS",
+      "headline": "exe.dev quietly ships per-minute sandbox VMs: ssh exedev new --sandbox",
+      "why_read": "A disposable VM you can start over SSH is a good fit for running untrusted agent code. Anand reposted it.",
+      "body": [
+        "David Crawshaw says exe.dev quietly launched `ssh exedev new --sandbox` for people who'd rather pay for a VM by the minute than reserve resource pools. He hadn't announced it because the team was still deciding how to talk about it, but users found it anyway.",
+        "Sandboxes billed by the minute fit agents well: start one per task, let the agent work freely, then throw it away. That's simpler than trying to secure a long-lived box."
+      ],
+      "authors": [
+        "David Crawshaw"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/davidcrawshaw/status/2119219957003333939",
+      "discuss_url": "https://x.com/davidcrawshaw/status/2119219957003333939",
+      "interests": [
+        "systems",
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "optimus-rental-model",
+      "kicker": "TESLA",
+      "headline": "Musk: Tesla will likely rent Optimus robots, like an FSD subscription",
+      "why_read": "Renting instead of selling changes who can afford a humanoid robot, and how Tesla gets paid for one.",
+      "body": [
+        "At the Baron Investment Conference on Nov. 6, Musk said Tesla plans to rent Optimus humanoid robots rather than sell them, much like its Full Self-Driving subscriptions. According to X's summary, he put build costs near $30,000 per unit, possibly falling to $20,000 at scale.",
+        "A rental would bundle maintenance and software updates with lower upfront cost. It's the same recurring-revenue approach Tesla uses for autonomy, now applied to labor."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2118806660395454679",
+      "discuss_url": "https://x.com/i/trending/2118806660395454679",
+      "interests": [
+        "tesla",
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "ship-40-gigabay",
+      "kicker": "STARBASE",
+      "headline": "Ship 40, back from 75 days at sea, rolls into SpaceX's new Gigabay",
+      "why_read": "A flown Starship upper stage is the first tenant of the factory built for fast refurbishment.",
+      "body": [
+        "Ship 40, which flew on Flight 13 in July 2026 and came back intact after 75 days at sea, moved from Mega Bay 2 into a work cell in Starbase's new Gigabay. The 380-foot building has heavy cranes and several work areas and is designed for high-volume production and quick turnaround.",
+        "Fans nicknamed it the \"prodigal son.\" It may be used for fit checks or crane tests while the bay gets ready for regular operations, ahead of a Flight 15 that aims to catch both stages."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2119263172674641978",
+      "discuss_url": "https://x.com/i/trending/2119263172674641978",
+      "interests": [
+        "space"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "loudoun-data-center-tax",
+      "kicker": "DATA CENTERS",
+      "headline": "Loudoun County gets $1.2B a year from data centers on 3% of its land",
+      "why_read": "This is the other side of the data-center backlash, and it's why the SimCity comparison Anand reposted is catching on.",
+      "body": [
+        "Buddy Rizer, Loudoun County's economic development chief, told Fireside Alpha that data centers bring Northern Virginia's \"data center alley\" about $1.2 billion a year in local tax revenue, roughly 40% of the county's total, from 3% of its land. Anand bookmarked the clip.",
+        "He also reposted signüll's argument that a SimCity player would zone as many data centers as possible: big capital investment, large tax revenue, little traffic, and potentially clean depending on the energy source. The fact that people fight them anyway, signüll says, means the debate isn't really about data centers."
+      ],
+      "authors": [
+        "Fireside Alpha",
+        "signüll"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/firesidealpha/status/2118757808615367070",
+      "discuss_url": "https://x.com/signulll/status/2119141647975846209",
+      "interests": [
+        "systems",
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "neuralink-walking-goal",
+      "kicker": "NEUROTECH",
+      "headline": "Musk says Neuralink will soon help paralyzed patients walk and use their hands",
+      "why_read": "It's a big promise from an implant that already lets patients control computers with their thoughts.",
+      "body": [
+        "Musk said Neuralink will soon help people with quadriplegia from ALS, spinal cord injury, or stroke walk and use their hands again. Early participants like Noland Arbaugh, implanted in January 2024, already browse, game, and steer wheelchairs using only their thoughts.",
+        "X's summary says trials run in the US, Canada, the UK, and the UAE, testing cursors, robotic arms, and speech decoding. Restoring walking is a much harder goal than controlling a cursor, so the timeline is the thing to watch."
+      ],
+      "authors": [
+        "X News",
+        "Elon Musk"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2119125832690192444",
+      "discuss_url": "https://x.com/i/trending/2118889596646019195",
+      "interests": [
+        "science"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "asahi-linux-gplv2",
+      "kicker": "OPEN SOURCE",
+      "headline": "Asahi Linux relicenses from MIT to GPLv2-or-later",
+      "why_read": "The project that brought Linux to Apple Silicon is protecting its work from being taken and sold.",
+      "body": [
+        "The volunteer Asahi Linux project, which has run Linux on Apple Silicon Macs since the M1 Mac Mini, is moving from MIT to GPLv2-or-later to protect its work from bad-faith commercial reuse. Observers compare it to Wine's license change in 2002.",
+        "The change comes as the project makes progress: M3 installs without expert flags, sleep support, Thunderbolt networking, and games like GTA IV running natively."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2119200782025216481",
+      "discuss_url": "https://x.com/i/trending/2119200782025216481",
+      "interests": [
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "sutton-bitter-lesson-revisited",
+      "kicker": "AI RESEARCH",
+      "headline": "Richard Sutton's new post on scaling reopens the Bitter Lesson debate",
+      "why_read": "Paired with Langford's exit from Microsoft, it's the weekend's clearest argument about whether research or scale wins.",
+      "body": [
+        "Sutton's original Bitter Lesson argued that general methods using more compute beat hand-built human knowledge over time. His new statement, made as large language models keep scaling, set off a round of reactions. Pedro Domingos read it as a shift away from the Bitter Lesson. François Chollet and others said scaling multiplies good ideas, but clever ideas scale even better.",
+        "Researchers including Albert Gu and Aleksa Gordić agreed the field needs algorithmic breakthroughs to get more out of compute. In other words, scale and new ideas together, not one or the other."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2119169787947270609",
+      "discuss_url": "https://x.com/i/trending/2119169787947270609",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "ast-blacklift-rocket",
+      "kicker": "SPACE",
+      "headline": "AST SpaceMobile reveals Blacklift, a reusable 20-ton rocket with Firefly engines",
+      "why_read": "Another satellite company decides it has to own its launches.",
+      "body": [
+        "AST SpaceMobile unveiled Blacklift, a 20-ton reusable rocket using Firefly Aerospace engines, meant to carry up to five BlueBird satellites per mission starting in late 2028. According to X's summary, the deal is worth more than $1.3 billion and covers 36 engines for the first three rockets, an $800 million upfront payment in cash and shares, and a perpetual license for AST to build the engines itself.",
+        "The goal is vertical integration from satellite production in Texas through launch. Some experts doubt the two-year development timeline."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2118686644395966505",
+      "discuss_url": "https://x.com/i/trending/2118686644395966505",
+      "interests": [
+        "space"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "nigeria-solar-1-7gw",
+      "kicker": "ENERGY",
+      "headline": "Nigeria is on track for 1.7 GW of new solar in 2026 as households route around the grid",
+      "why_read": "Energy tech is moving fastest where the grid is weakest.",
+      "body": [
+        "With an unreliable grid, Nigerian households and businesses are switching to solar. Projections call for 1.7 GW of new installations in 2026, nearly 40% of current grid supply. Success stories describe systems producing power worth 3.7 million naira a year, far cheaper than diesel generators.",
+        "The pushback is about cost and fairness. Upfront prices run into the millions of naira, and many people argue that reliable electricity is something the government should provide, not something citizens should have to buy for themselves."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2119105537321193761",
+      "discuss_url": "https://x.com/i/trending/2119105537321193761",
+      "interests": [
+        "science",
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "fsd-v14-3-13-intervention",
+      "kicker": "TESLA",
+      "headline": "An FSD v14.3.13 driver posts a \"pretty dangerous\" intervention",
+      "why_read": "Anand bookmarked this: a real-world failure on the latest build, posted the same week Tesla is promoting Cybercab.",
+      "body": [
+        "Aryan Butala posted video of a disengagement on FSD v14.3.13, which he called the latest software. He says the car missed a highway on-ramp it was routed to take. It then showed no sign of slowing down or changing lanes to avoid a sign ahead, so he had to take over.",
+        "It's one driver's clip, not a statistic. But posts like this are how edge cases come to light between releases, and it's worth watching while Tesla runs Cybercab rides in Austin."
+      ],
+      "authors": [
+        "Aryan Butala"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/butala_aryan/status/2118912049686233111",
+      "discuss_url": "https://x.com/butala_aryan/status/2118912049686233111",
+      "interests": [
+        "tesla"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "coinbase-ceo-agent-network",
+      "kicker": "AI AGENTS",
+      "headline": "Coinbase's Brian Armstrong runs a team of AI agents under a chief-of-staff agent",
+      "why_read": "A CEO's version of a bot fleet with a chief of staff in charge. It looks a lot like Anand's own setup.",
+      "body": [
+        "According to X's news summary, Armstrong runs one lead AI agent for each area he focuses on, all reporting to a chief-of-staff agent that feeds a single prioritized queue with screenshots and video demos. Over time it builds a \"Brian brain\" that learns his preferences, while humans still review the work and security checks stay in place.",
+        "Box CEO Aaron Levie and others report order-of-magnitude productivity gains from multi-agent setups. The open question is how fast the gap grows between people who manage agents and people who don't."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2119219682615885989",
+      "discuss_url": "https://x.com/i/trending/2119219682615885989",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
     {
       "id": "spacex-arizona-ai-campus",
       "kicker": "AI INFRASTRUCTURE",
@@ -20,668 +671,6 @@
       "source_label": "X",
       "source_url": "https://x.com/i/trending/2118353928991715723",
       "discuss_url": "https://x.com/i/trending/2118353928991715723",
-      "interests": [
-        "ai",
-        "space"
-      ],
-      "lead": true,
-      "featured": false
-    },
-    {
-      "id": "tesla-wind-down-cybertruck",
-      "kicker": "TESLA",
-      "headline": "Tesla to wind down Cybertruck production around mid-2027 to free Giga Texas for Cybercab",
-      "why_read": "The stainless wedge that defined Tesla's last truck era is getting a sunset date — and Musk is framing the capacity handoff as Cybercab's turn.",
-      "body": [
-        "Tesla plans to wind down Cybertruck production at its Texas gigafactory around mid-2027, NBC News reported Nov. 6, citing the need to free specialized capacity for higher Cybercab output. Elon Musk called the Cybertruck \"the best vehicle Tesla has ever made\" and the wind-down \"the end of an era.\" Kelley Blue Book figures in the coverage put U.S. Cybertruck sales at 20,237 last year, down 48% from 38,965 in 2024 — far below Musk's earlier 250,000-a-year prediction. Austin remains the only known plant for the specialized Cybertruck components.",
-        "Cybercab has been running paid rides in Austin since September, with NHTSA still pressing Tesla on self-certification questions. Tesla chassis engineering lead Wes Morrill said the Cybertruck \"was an incredible technology development platform and lives on through Cybercab\" — a continuity pitch that lands differently depending on whether you own one of the trucks already on the road."
-      ],
-      "authors": [
-        "NBC News"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://www.nbcnews.com/tech/tech-news/tesla-wind-cybertruck-production-years-poor-sales-markets-rcna607817",
-      "discuss_url": "https://news.ycombinator.com/item?id=50391456",
-      "interests": [
-        "tesla"
-      ],
-      "lead": true,
-      "featured": false
-    },
-    {
-      "id": "opencode-browse",
-      "kicker": "AI AGENTS",
-      "headline": "OpenCode Browse lets agents drive your real browser — tabs, logins, and extensions included",
-      "why_read": "Anand RTed this one for a reason: on-device browser control with a human handoff for 2FA is the agent UX most coding tools still fake.",
-      "body": [
-        "OpenCode launched Browse, pairing a Chromium extension with an MCP server so agents can automate background tabs, capture screenshots, and work against real logins without shipping your session to a cloud browser farm. It supports Chrome, Edge, Brave, and related Chromium browsers, and hands control back to you for logins, 2FA, or payments. The product page is at opencode.ai/product/browse; the launch post is from @opencode.",
-        "Developers are already comparing stealth and privacy scores against hosted browser agents. The pitch is simple: your tabs, your extensions, your machine — with an explicit click-to-continue gate when the agent hits something sensitive."
-      ],
-      "authors": [
-        "OpenCode"
-      ],
-      "source": "web",
-      "source_label": "Web",
-      "source_url": "https://opencode.ai/product/browse",
-      "discuss_url": "https://x.com/opencode/status/2118895128152621153",
-      "interests": [
-        "ai"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "openai-chatgpt-business-hub",
-      "kicker": "AI PRODUCT",
-      "headline": "OpenAI quietly tests a ChatGPT Business Hub that tracks impressions and clicks like Search Console",
-      "why_read": "If ChatGPT is becoming a discovery surface, businesses finally get a dashboard that admits it — and marketers will treat AI rankings like SEO.",
-      "body": [
-        "An unreleased Business Hub section spotted in ChatGPT reportedly shows verified companies daily impressions when their business is mentioned in answers, plus clicks through to company sites. Verified businesses can update product details and deploy their own agents for customer questions — a package that reads like Google Search Console for LLM answers.",
-        "Founders and marketers are already auditing AI visibility gaps: missing reviews, thin product cards, competitors owning the recommendation slot. Whether the tool ships broadly or stays a quiet pilot, the category it implies is permanent."
-      ],
-      "authors": [
-        "X News",
-        "OpenAI"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2118755136361152559",
-      "discuss_url": "https://x.com/i/trending/2118755136361152559",
-      "interests": [
-        "ai"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "ing-datacenter-loan-sale",
-      "kicker": "AI FINANCE",
-      "headline": "ING auctions ~$500M in data-center loans, including a Stargate-linked slice, as lenders get picky",
-      "why_read": "When the bank closest to the construction draws starts auctioning the paper, the AI buildout's financing risk stops being theoretical.",
-      "body": [
-        "Dutch bank ING is selling about $500 million in loans tied to a dozen data centers, including a reported $25 million piece linked to the Stargate AI project in New Mexico involving OpenAI, SoftBank, and Oracle. Bids of at least $10 million are due by November 19. Coverage ties the sale to post-midterm pause fears and an Oracle force majeure notice to one developer — with Musk separately claiming SoftBank had issues on turbine orders (unverified in the same chatter).",
-        "Market watchers split between \"routine risk management\" and a tell that power delays and rising costs are finally hitting the loan book. Either way, the auction is a live price check on AI infrastructure debt after a week of ballot-box hostility to new campuses."
-      ],
-      "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2118431099529609659",
-      "discuss_url": "https://x.com/i/trending/2118431099529609659",
-      "interests": [
-        "ai",
-        "systems"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "libghostty-1-0",
-      "kicker": "OPEN SOURCE",
-      "headline": "Libghostty 1.0 ships: a stable C ABI terminal core already inside JetBrains IDEs",
-      "why_read": "Mitchell Hashimoto's terminal library just crossed the packaging line — and more people already use libghostty than use Ghostty itself.",
-      "body": [
-        "Mitchell Hashimoto released libghostty-vt 1.0 on Nov. 6: a portable C library for terminal emulation extracted from Ghostty, now with a stable C ABI and semantic versioning. JetBrains IDEs run on libghostty — more than 12.5 million active users per JetBrains. A Neovim PR to replace libvterm is approved and waiting on the tagged release; KDE is experimenting; Turborepo, OrbStack, devenv, Antithesis, Ghostel, and a wave of agentic TUIs already embed it.",
-        "The library is MIT-licensed with a libc-only default runtime (freestanding builds available), CI-enforced ABI checks via libabigail, and packaging docs at lib.ghostty.org. Hashimoto's punchline lands: terminals can move faster with less fragmentation when everyone shares one battle-tested emulator core."
-      ],
-      "authors": [
-        "Mitchell Hashimoto"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://mitchellh.com/writing/libghostty-1-0",
-      "discuss_url": "https://news.ycombinator.com/item?id=50399933",
-      "interests": [
-        "systems"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "anthropic-agent-memory",
-      "kicker": "AI RESEARCH",
-      "headline": "Anthropic maps the components of agent memory: dreaming, notes, wikis, and salience",
-      "why_read": "The clearest public write-up yet on why agents that dump 413 memory files lose to agents that keep nine — and how sleep-time compute fixes the mess.",
-      "body": [
-        "Anthropic's Nov. 6 engineering post \"The components of agent memory\" walks through memory notes, salience tagging, sleep-time \"dreaming,\" and wiki-style representations. On Pokémon Red, Claude Sonnet 3.7 wrote 413 memory files across 225 folders and earned one badge; Claude Fable 5 wrote nine files in two folders plus a global.md and earned four. Dreaming corrected a wrong PokéCenter location note that had trapped Claude in a Mt. Moon loop.",
-        "On a ~350,000-file Stainless corpus (~420M tokens), wiki dreaming over 128 sessions lifted graded performance from 13% to 48% of criteria. The through-line: memory is a prediction about what the future will need — and offline compute is how agents stop trusting bad notes."
-      ],
-      "authors": [
-        "Anthropic",
-        "Lance Martin"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://www.anthropic.com/research/components-of-agent-memory",
-      "discuss_url": "https://news.ycombinator.com/item?id=50402212",
-      "interests": [
-        "ai"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "cursor-spacex-608m-arr",
-      "kicker": "AI CODING",
-      "headline": "Cursor reportedly contributed $608M to SpaceX revenue in six weeks — ~$4.6B annualized",
-      "why_read": "A single bookmarked post turns the Cursor–SpaceX acquisition from a vibe into a run-rate number Anand will want on the fold.",
-      "body": [
-        "Investor Tanay Jaipuria (@tanayj) bookmarked by Anand on Nov. 6: Cursor contributed $608 million of revenue to SpaceX from the Aug. 14 acquisition close through Sept. 30 — about a $4.6 billion annualized run rate. The figure is from that post's reporting of post-close contribution, not a separate audited filing in the bookmark itself.",
-        "Even hedged as a social-media datapoint, it is the sharpest public ARR-shaped number yet on how fast the IDE-agent business is compounding inside SpaceX's broader stack — and why coding-tool M&A keeps clearing venture-scale checks."
-      ],
-      "authors": [
-        "Tanay Jaipuria"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/tanayj/status/2118395669815988254",
-      "discuss_url": "https://x.com/tanayj/status/2118395669815988254",
-      "interests": [
-        "ai",
-        "space"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "gemini-omni-1-2-flash",
-      "kicker": "AI VIDEO",
-      "headline": "Gemini Omni 1.2 Flash: native 15-second clips, multi-turn edits, and a 30% price cut",
-      "why_read": "Google's video model finally crosses the \"full social ad in one shot\" length — and gets cheaper while doing it.",
-      "body": [
-        "Google DeepMind launched Gemini Omni 1.2 Flash on Nov. 5, generally available on the Gemini API and Google Cloud. Clips stretch to 15 seconds (up from 10), with duration selectable in one-second steps from 3–15. Multi-turn conversational editing lets you swap products, backgrounds, lighting, or aspect ratio without regenerating from scratch. Reference adherence improved for faces, garments, packaging type, and brand colors across camera moves.",
-        "Price dropped 30% versus Omni 1.1 to $0.07 per second for 720p video. Draft at 360p/720p, edit in conversation, then upscale winners to 1080p or 4K — a workflow built for ad-variant volume rather than one-off hero shots."
-      ],
-      "authors": [
-        "Google DeepMind",
-        "Anish Nangia"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50392118",
-      "interests": [
-        "ai"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "huggingface-robotics-hub",
-      "kicker": "ROBOTICS",
-      "headline": "Hugging Face leans into open-source robotics as datasets near 100k and LeRobot hits 1M downloads",
-      "why_read": "The model hub's robotics lane is compounding fast enough that Delangue is talking unit sales, not just GitHub stars.",
-      "body": [
-        "Hugging Face CEO Clement Delangue highlighted the platform's robotics growth: public robotics datasets nearing 100,000 (about +48%) and models topping 30,000 (+41% in six months). Popular open-source robots like Microduck and Reachy mini are projected to sell over 50,000 units by year-end. LeRobot has passed 1 million downloads with new interactive-control features.",
-        "As a founding partner of RoboColosseum — an open real-world eval platform with 100+ robots across everyday scenes — Hugging Face is publishing successes and failures alike. The bet is the same as with LLMs: shared data and open evals beat closed robot gardens."
-      ],
-      "authors": [
-        "X News",
-        "Clement Delangue"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2118824971275583889",
-      "discuss_url": "https://x.com/i/trending/2118824971275583889",
-      "interests": [
-        "ai"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "linear-ai-coding-4x",
-      "kicker": "AI CODING",
-      "headline": "Linear's AI agents drove a 4.2× jump in lines of code changed in under a year",
-      "why_read": "A product company publishing its own LOC and PR multipliers is the receipts sheet AI-coding skeptics keep asking for.",
-      "body": [
-        "Linear CEO Karri Saarinen reported lines of code changed rising from about 1.37 million to 5.82 million from Q4 2025 to Q3 2026 — a 4.2× jump — with merged pull requests up 2.3× to 11,577, most now coming from their cloud coding agent. Peer anecdotes in the same coverage include Metaview at 8.4× lines changed with minimal headcount growth and non-technical staff shipping internal tools.",
-        "Saarinen's framing matters as much as the chart: raise ambition and wire agents into triage and review sandboxes, don't just bolt a chat pane onto the old process. Human direction stays; the volume of merged work does not."
-      ],
-      "authors": [
-        "X News",
-        "Karri Saarinen"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2118849874212884679",
-      "discuss_url": "https://x.com/i/trending/2118849874212884679",
-      "interests": [
-        "ai"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "faa-floppy-disks-atc",
-      "kicker": "SYSTEMS",
-      "headline": "FAA will phase out floppy disks from air traffic control by late 2028",
-      "why_read": "Four hundred-plus facilities still leaned on 1980s floppies for critical displays — and the replacement program finally has an end date.",
-      "body": [
-        "The FAA is installing the Enterprise Information Display System (E-IDS) to replace 1980s-era floppy-disk workflows with a secure digital interface for weather updates, alerts, and operational info across air traffic control. First rollouts are underway at sites including Atlantic City, Nashville, and Greater Rochester, plus hubs in Atlanta and Salt Lake City, with completion across about 435 sites targeted by late 2028.",
-        "Transportation Secretary Sean Duffy called it a historic modernization step. Online reactions split between nostalgia for the old drive sounds and recognition that air-gapped legacy systems get replaced slowly on purpose."
-      ],
-      "authors": [
-        "Reuters",
-        "X News"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://www.reuters.com/world/us/us-faa-says-it-will-phase-out-floppy-disks-air-traffic-control-by-2028-2026-11-05/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50388001",
-      "interests": [
-        "systems"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "firecracker-vm-escape",
-      "kicker": "SECURITY",
-      "headline": "Researchers escape Firecracker microVMs to root on the host — PwnEscape Part 2",
-      "why_read": "The serverless isolation story just ate a live demo: guest-controlled host memory turned into Firecracker thread takeover.",
-      "body": [
-        "PWN Research's Paulos Yibelo published PwnEscape Part 2 showing a Firecracker microVM escape that achieves code execution as root on the host. Using a guest-to-host memory primitive, the team located Firecracker under ASLR, found a live vCPU thread's saved KVM_RUN register frame, and redirected the return path to call Firecracker's own write wrapper — proving control while restoring stack state and leaving SSH up.",
-        "The demonstrated target was Firecracker v1.16.1 on x86-64 without the jailer. The write-up is careful: production jailer/seccomp deployments need a separate privilege assessment, but the address-discovery chain is the part every cloud sandbox team will study."
-      ],
-      "authors": [
-        "Paulos Yibelo",
-        "PWN Research"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://pwn.ai/blog/firecracker-escape",
-      "discuss_url": "https://news.ycombinator.com/item?id=50397219",
-      "interests": [
-        "systems"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "github-git-storage-rubicon",
-      "kicker": "SYSTEMS",
-      "headline": "GitHub's Rubicon Git storage architecture targets thousands of agent pushes per second",
-      "why_read": "When 5,000 concurrent agents on one repo is the design center, classic Git hosting math no longer applies.",
-      "body": [
-        "GitHub engineers Karthik Raman and Brian Celenza detailed \"Project Rubicon,\" a new Git storage architecture announced at GitHub Universe. Internal testing supported 5,000 concurrent agents on a repository sending 7,200 pushes per second while keeping read latency low. The design minimizes coordination and decouples storage from compute: immutable packs in Azure Blob Storage, reference compare-and-swap in a dedicated Ref-CAS log, disposable virtual replicas for serving, and background compaction nodes.",
-        "The thesis is blunt: only reference updates need agreement; object writes can fan out. Limited private preview is live now, with broader rollout expected early next year — infrastructure for the agent-scale monorepo future GitHub is already seeing."
-      ],
-      "authors": [
-        "GitHub",
-        "Karthik Raman",
-        "Brian Celenza"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50397099",
-      "interests": [
-        "systems",
-        "ai"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "elon-starmind-tease",
-      "kicker": "SPACE / AI",
-      "headline": "Elon teases Starmind computer details next year: \"it will blow people's minds\"",
-      "why_read": "Between Ron Baron fireside notes and a direct reply bookmark, Starmind just moved from rumor vocabulary to scheduled unveil.",
-      "body": [
-        "In a Nov. 6 reply bookmarked by Anand, Elon Musk told @XFreeze that when SpaceX unveils details of the Starmind computer next year, \"it will blow people's minds.\" Separate bookmark chatter around Ron Baron's fireside with Elon bundled Starmind with SpaceX ARR and Terafab talking points.",
-        "There is no architecture paper in the bookmark — just a timing tease. For a fold that already tracks SpaceX AI campuses and Cursor's post-acquisition run rate, that tease is enough to keep Starmind on the watchlist."
-      ],
-      "authors": [
-        "Elon Musk"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/elonmusk/status/2118811926163841429",
-      "discuss_url": "https://x.com/elonmusk/status/2118811926163841429",
-      "interests": [
-        "ai",
-        "space"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "spacex-go-for-orbit",
-      "kicker": "SPACE",
-      "headline": "SpaceX drops \"Go For Orbit,\" a Starship film built around the first orbital Starlink mission",
-      "why_read": "A polished mission film is how SpaceX turns a dozen flight tests into a narrative Anand will actually watch end-to-end.",
-      "body": [
-        "SpaceX posted \"Go For Orbit,\" framing more than a dozen flight tests culminating in the first orbital Starship launch carrying advanced Starlink satellites. The bookmark from @SpaceX is the canonical watch link for the piece.",
-        "It is marketing with telemetry vibes — useful as a status digest for anyone tracking Starship cadence who missed the individual flight threads."
-      ],
-      "authors": [
-        "SpaceX"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/SpaceX/status/2118719281038770389",
-      "discuss_url": "https://x.com/SpaceX/status/2118719281038770389",
-      "interests": [
-        "space"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "hightouch-jev-opus",
-      "kicker": "AI EVALS",
-      "headline": "Hightouch: a Jev that can ask Opus for help hits Opus-level IDR accuracy at ~4× lower cost",
-      "why_read": "Calibration beats raw accuracy — the hybrid routing paper that makes cheap decision models actually useful in production.",
-      "body": [
-        "Hightouch researchers tested whether fast decision models (Jev, GPT-6 Luna) could grade identity-resolution over-merges as well as frontier LLMs. Out of the box, decision models ran about 0.15s and $0.05–$0.10 per 1,000 identities but trailed Opus by roughly six points on harder cases. Luna looked stronger alone; Jev's confidence was better calibrated.",
-        "Routing uncertain Jev cases to Claude Opus closed most of the gap: hybrid Jev reached 98.8% on the easier set at $0.88/1,000 versus Opus alone at 99.0% and $3.86 — and matched or beat Opus on a harder set while still costing less. The lesson for agent harnesses: send the fuzzy middle to the expensive model."
-      ],
-      "authors": [
-        "Albert Jin",
-        "Neil Desai",
-        "Delaney Mackenzie"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://hightouch.com/blog/llm-judges-identity-resolution",
-      "discuss_url": "https://news.ycombinator.com/item?id=50397429",
-      "interests": [
-        "ai"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "apple-personal-knowledge-graph",
-      "kicker": "PRIVACY",
-      "headline": "Every Mac since 2022 quietly builds a personal knowledge graph — including inferred family ties",
-      "why_read": "Apple Intelligence's on-device graph is more than a Contacts cache: it scores kinship from 144 behavioral features and keeps an expired-store afterthought.",
-      "body": [
-        "Security researchers at Eighth Rank document knowledgeconstructiond and intelligenceplatformd, daemons shipping since macOS 13 that build a personal knowledge graph under ~/Library/IntelligencePlatform. The store cross-references Contacts, Calendar, Photos, Messages, Mail, location, Screen Time, and more into a triple store with 181 entity classes and 278 predicates — held as a queryable graph for on-device LLMs.",
-        "Two CoreML XGBoost models score family relationships from 144 features spanning identity, communication patterns, and photo co-occurrence (including names like photosPersonPosteriorProbabilityGivenSaturdayNight). The team open-sourced iKnow to inspect your own graph. The privacy punchline: people around you get modeled without being asked."
-      ],
-      "authors": [
-        "Eighth Rank",
-        "Dario Pasquini"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://8rank.ai/game/apple-intelligence-personal-knowledge-graph",
-      "discuss_url": "https://news.ycombinator.com/item?id=50403097",
-      "interests": [
-        "ai",
-        "systems"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "akrotiri-greece-pompeii",
-      "kicker": "SCIENCE",
-      "headline": "Greece's Pompeii: Akrotiri's Bronze Age ruins still rewrite the Theran eruption story",
-      "why_read": "A Smithsonian deep dive on the ash-preserved Aegean city that keeps producing sophisticated seafaring surprises.",
-      "body": [
-        "Smithsonian revisits Akrotiri on Santorini (ancient Thera), buried by a catastrophic volcanic eruption in the 17th–16th century BCE and often called Greece's Pompeii. The ash preserved multi-story buildings, frescoes, and evidence of a sophisticated Bronze Age seafaring society linked across the Aegean.",
-        "Unlike Pompeii's human casts, Akrotiri's residents appear to have evacuated — leaving archaeologists a city frozen mid-routine rather than mid-panic. It remains one of the cleanest windows into Late Bronze Age life in the eastern Mediterranean."
-      ],
-      "authors": [
-        "Smithsonian Magazine"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://www.smithsonianmag.com/history/greece-has-its-own-pompeii-and-the-ruins-tell-a-captivating-story-of-a-sophisticated-seafaring-bronze-age-society-180989747/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50360810",
-      "interests": [
-        "science"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "barbarian-dna-origin",
-      "kicker": "SCIENCE",
-      "headline": "Ancient DNA backs a \"barbarian\" tribe's mythic origin story",
-      "why_read": "When oral history and genomes agree, historians get a rare hard yes from the lab.",
-      "body": [
-        "A Science news feature reports ancient DNA evidence supporting a barbarian tribe's long-told origin narrative — the kind of founding myth historians usually treat as literature rather than demography. Genetic sampling across burial sites appears to match migration claims preserved in early texts.",
-        "Papers like this matter beyond the specific tribe: they recalibrate how seriously scholars take early medieval origin stories when the isotopes and alleles line up."
-      ],
-      "authors": [
-        "Science"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://www.science.org/content/article/barbarian-tribe-s-mythic-origin-story-true-ancient-dna-reveals",
-      "discuss_url": "https://news.ycombinator.com/item?id=50401740",
-      "interests": [
-        "science"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "grok-bots-300-public",
-      "kicker": "GROK BOTS",
-      "headline": "Brian Roemmele: 300+ advanced Grok Bots headed for public release on GrokBot.Rocks",
-      "why_read": "Anand's fleet is the home team — a bulk public dump of production Grok Bots is both product news and competitive weather.",
-      "body": [
-        "Brian Roemmele said a large company will soon release more than 300 sophisticated Grok Bots, previously internal, onto the GrokBot.Rocks directory — which he says now lists nearly 10,000 curated bots and draws about 130,000 visitors. Coverage describes SpaceXAI Grok Bots running on persistent cloud computers that sign into apps for multi-step jobs like matching a creator's edit style or running research pipelines, with reported ~90-day uptime reliability.",
-        "Treat the visitor and uptime figures as reported via the X news summary. For anyone already living inside agent fleets, a 300-bot public drop is a taste of how fast the directory layer is industrializing."
-      ],
-      "authors": [
-        "Brian Roemmele",
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2119006214918906040",
-      "discuss_url": "https://x.com/i/trending/2119006214918906040",
-      "interests": [
-        "ai"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "bare-metal-uefi",
-      "kicker": "SYSTEMS",
-      "headline": "First steps in bare-metal programming using UEFI — a practical on-ramp past the BIOS myths",
-      "why_read": "If you still think \"bare metal\" means 16-bit BIOS toys, this tutorial resets the stack to modern firmware.",
-      "body": [
-        "Kevin Boone's guide walks through bare-metal programming against UEFI rather than legacy BIOS, covering the basics of getting code running without an OS while using contemporary firmware services. It is aimed at developers who want the hardware close without pretending it's still 1985.",
-        "HN parked it near the top of the systems pile for a reason: clear examples beat another abstract firmware rant."
-      ],
-      "authors": [
-        "Kevin Boone"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://kevinboone.me/efitest_index.html",
-      "discuss_url": "https://news.ycombinator.com/item?id=50394855",
-      "interests": [
-        "systems"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "realpage-360m-renters",
-      "kicker": "SYSTEMS",
-      "headline": "RealPage rent-pricing case wraps with nearly $360M headed to renters",
-      "why_read": "The algorithmic rent-collusion saga just got a dollar figure large enough to show up in every landlord-software diligence memo.",
-      "body": [
-        "The RealPage rent-pricing case is wrapping with nearly $360 million for renters, according to Multifamily Dive's report of the resolution. RealPage's yield-management software had been at the center of allegations that landlords coordinated rents through shared algorithmic pricing.",
-        "Whatever the final allocation mechanics, the headline number is a marker: housing algorithms now carry antitrust-scale downside, not just UX complaints."
-      ],
-      "authors": [
-        "Multifamily Dive"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://www.multifamilydive.com/news/realpage-rent-pricing-case-360m-renters/873553/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50399991",
-      "interests": [
-        "systems"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "ai-proves-aaronson-ambainis",
-      "kicker": "AI FOR SCIENCE",
-      "headline": "AI system produces a Lean-verified proof of the 18-year-old Aaronson–Ambainis conjecture in three days",
-      "why_read": "A quantum-complexity conjecture that sat open since 2008 just got a machine-assisted, formally checked shove into the open.",
-      "body": [
-        "Physical Superintelligence's research system — powered by a non-public Anthropic model, per X news summaries — produced a Lean-verified proof related to the Aaronson–Ambainis conjecture from 2008 in about three days. The conjecture asked how large quantum advantages can be on unstructured problems; the reported proof argues quantum speedups stay polynomially bounded for most random inputs, with Shor's algorithm as a notable exception.",
-        "Experts quoted in the coverage called it a major result; the paper is described as public for review. Hedge the company-claim details as reported, but the shape is familiar: formal-proof agents are starting to clear decade-old theory queues."
-      ],
-      "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2118729991345123597",
-      "discuss_url": "https://x.com/i/trending/2118729991345123597",
-      "interests": [
-        "ai",
-        "science"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "t3-code-multi-agent",
-      "kicker": "AI CODING",
-      "headline": "T3 Code claims the local multi-agent coding desktop while Conductor's cloud winds down",
-      "why_read": "Theo's free open-source orchestrator is surfing the exact moment a cloud rival got acquired and shut off.",
-      "body": [
-        "T3 Code is a free, open-source app that orchestrates AI coding agents like Claude Code and Cursor on the user's machine using their existing subscriptions. It offers a unified desktop/web/mobile interface with git worktrees, inline diffs, and one-click pull requests. Founder Theo publicly declared the tool had \"already won\" amid 500+ similar apps.",
-        "The timing coincides with Meta's acquisition of rival Conductor, whose cloud service ends this month. Whether the boast ages well, the local-orchestration niche is clearly where power users are consolidating."
-      ],
-      "authors": [
-        "X News",
-        "Theo"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2118018891125608888",
-      "discuss_url": "https://x.com/i/trending/2118018891125608888",
-      "interests": [
-        "ai"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "upload-your-ram",
-      "kicker": "SYSTEMS",
-      "headline": "Upload Your RAM: a playful site that asks what happens if memory dumps go public",
-      "why_read": "A 125-point HN oddity that turns a security nightmare into a conversation starter about what our machines actually hold.",
-      "body": [
-        "Upload Your RAM (uploadyourram.org) hit HN's front page with a concept-site provocation about exposing working memory. It is less a product launch than a meme with a point: RAM contents are a privacy surface people rarely visualize.",
-        "Treat it as weekend systems humor with a serious undertone — useful palate cleanser between Firecracker escapes and FAA floppies."
-      ],
-      "authors": [
-        "uploadyourram"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://uploadyourram.org",
-      "discuss_url": "https://news.ycombinator.com/item?id=50403214",
-      "interests": [
-        "systems"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "metr-anthropic-rd-acceleration",
-      "kicker": "AI SAFETY EVALS",
-      "headline": "METR: Anthropic's model capabilities are improving ~1.9× faster than before, likely mostly from AI-assisted R&D",
-      "why_read": "Still the clearest outside look at whether AI is actually speeding up AI research — worth keeping beside today's agent-memory and coding-output stories.",
-      "body": [
-        "METR spent August 12 to October 29 inside Anthropic assessing AI R&D acceleration and published public conclusions on November 5. On Anthropic's AECI capability index, benchmark scores have grown at an estimated 1.9× the pre-October 2025 rate (95% CI 1.5–2.8×), implying roughly two years of historical progress in the last year.",
-        "METR is confident the speedup is not from faster training-compute scaling, and guesses a majority of today's acceleration is from extensive AI use in R&D — while noting Anthropic redacted much of the most informative evidence. No clear bottlenecks showed up for the next 12 months."
-      ],
-      "authors": [
-        "METR"
-      ],
-      "source": "web",
-      "source_label": "Web",
-      "source_url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
-      "discuss_url": "https://x.com/i/trending/2118427442922901851",
-      "interests": [
-        "ai"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "data-centers-lose-ballots",
-      "kicker": "ENERGY POLITICS",
-      "headline": "Voters reject data centers in 46 of 47 local ballot measures",
-      "why_read": "Keep this next to SoftBank/ING loan nerves and the Cochise campus fight — the ballot math is the constraint capital is repricing.",
-      "body": [
-        "Local voters rejected data centers in 46 of 47 ballot measures in the midterm wave, per the X news package that led Friday's fold. Exit-poll style summaries circulating with the story put broad skepticism toward neighborhood data centers even among voters who use AI products daily.",
-        "That political weather is the backdrop for this Saturday's Arizona zoning fight and the ING loan auction — lenders and builders are no longer pricing only megawatts and GPUs."
-      ],
-      "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2117839373303751046",
-      "discuss_url": "https://x.com/i/trending/2117839373303751046",
-      "interests": [
-        "systems",
-        "ai"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "openai-948-linux-root-exploits",
-      "kicker": "SECURITY",
-      "headline": "OpenAI's cyber pipeline found 948 working Linux kernel root exploits for about $1,279 each",
-      "why_read": "Holdover that still pairs with today's Firecracker escape: automated exploit pipelines are a product category now.",
-      "body": [
-        "OpenAI's cyber evaluation pipeline found 948 working Linux kernel root exploits at a reported all-in cost around $1,279 each, then worked with maintainers on fixes. The public write-up frames it as subtracting attack paths rather than stockpiling them.",
-        "Kept on Saturday's fold because agentic security tooling and microVM escapes are the same arms race viewed from opposite ends."
-      ],
-      "authors": [
-        "OpenAI"
-      ],
-      "source": "web",
-      "source_label": "Web",
-      "source_url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50372929",
-      "interests": [
-        "ai",
-        "systems"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "anthropic-895b-compute-s1",
-      "kicker": "AI INFRASTRUCTURE",
-      "headline": "Anthropic's amended S-1 puts ~$895B of compute and data-center commitments on the table",
-      "why_read": "Demoted from Friday's lead but still the balance-sheet companion to every data-center loan and campus story this weekend.",
-      "body": [
-        "Anthropic's amended IPO filing lists about $895 billion of purchase commitments and lease agreements, substantially all for compute and infrastructure. Roughly $70 billion comes due within a year, and nearly $450 billion by the end of 2030, against about $132 billion of cash and short-term investments at end of September.",
-        "Supplier stack highlights remain Broadcom (~$161B), Google (~$121B), SpaceX's AI unit (up to ~$120.5B), and Amazon ($110B). Read it beside ING's loan sale: the commitment stack is huge, and the financing layer is starting to flinch."
-      ],
-      "authors": [
-        "Yahoo Finance",
-        "Anthropic"
-      ],
-      "source": "web",
-      "source_label": "Web",
-      "source_url": "https://finance.yahoo.com/markets/article/anthropics-new-ipo-filing-puts-its-computing-bill-near-900-billion-151830444.html",
-      "discuss_url": "https://x.com/i/trending/2118441520319680789",
       "interests": [
         "ai",
         "space"
