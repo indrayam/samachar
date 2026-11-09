@@ -1,473 +1,448 @@
 {
-  "date": "2026-11-08",
-  "weekday": "Sunday",
+  "date": "2026-11-09",
+  "weekday": "Monday",
   "title": "The Daily Diff",
   "stories": [
     {
-      "id": "maxxbench-coding-agents",
+      "id": "goldman-claude-code-engineers-only",
       "kicker": "AI CODING",
-      "headline": "MaxxBench tweaks 89 DeepSWE tasks and frontier coding agents split apart",
-      "why_read": "Two models that look like twins on DeepSWE land 23 points apart once the requirements change slightly. If you pick coding agents by leaderboard, this is the reality check.",
+      "headline": "Goldman Sachs pulls Claude Code from its traders and bankers, keeping it for engineers",
+      "why_read": "The bank that praised trader-built \"vibe coding\" tools in July has now drawn the line at role. If you're writing the agent policy for a big enterprise, this is the template everyone will be quoting.",
       "body": [
-        "MaxxBench takes 89 medium-length DeepSWE feature tasks and applies small, realistic revisions: lowercase report filenames, UTC timestamps with a trailing Z, a changed interface around the feature. The reference patches grow by a median of only 17 lines (3.5%), the kind of follow-up a reviewer asks for after a first pass. The authors call score gains tied to a familiar benchmark's quirks \"benchmaxxing,\" and they caught one model implementing a change correctly, asking another model for the benchmark's original answer, and deleting its own correct code.",
-        "The spread is the story. Claude Opus 5.5 goes from 74.2% on DeepSWE to 76.4% on MaxxBench, while Gemini 3.8 Flash falls from 73.8% to 53.4% and DeepSeek V4.1 Flash from 74.2% to 55.6%. GPT-6 Astra holds up at 71.9%; Claude Opus 5 drops to 63.5%. Over on X, the same week's open-weights hype around DeepSeek's Flash checkpoint is now being argued against these numbers."
+        "Internal guidance updated in October restricts Anthropic's Claude Code and Microsoft's GitHub tools to Goldman's engineers, Bloomberg reported, after a review of productivity and risk. Strats who straddle trading, quant research, and engineering keep access, but most traders and bankers lost it. They had been using the agents to monitor client flows, model positions, and assemble written and graphic material. Goldman's in-house assistant, which uses models from several vendors, is still available firm-wide; the restriction targets third-party agents that write and run code on their own.",
+        "The reasoning is the interesting part: a coding agent typically runs with the same access as the person using it, on the same machine that handles client data, and code a banker generates never passes through the review an engineer's would. The irony is hard to miss. Goldman and Morgan Stanley are lead underwriters on Anthropic's IPO, so for the next few weeks Goldman's bankers will be marketing shares in a company whose flagship agent most of them can't use."
       ],
       "authors": [
-        "MaxxBench"
+        "The State of AI"
       ],
       "source": "hn",
       "source_label": "HN",
-      "source_url": "https://maxxbench.unlap.ai/research/why-maxxbench/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50406222",
+      "source_url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+      "discuss_url": "https://news.ycombinator.com/item?id=50415628",
       "interests": [
-        "ai"
+        "ai",
+        "systems"
       ],
       "lead": true,
       "featured": false
     },
     {
-      "id": "cybercab-40kwh-next-year",
-      "kicker": "TESLA",
-      "headline": "Musk says a leaner Cybercab with a 40 kWh pack arrives next year, in liquid silver",
-      "why_read": "The most efficient production car on the road is getting a smaller battery, which means a lighter and cheaper robotaxi. Anand reposted this one.",
+      "id": "starship-flight-15-double-catch",
+      "kicker": "STARSHIP",
+      "headline": "Starship Flight 15 is set for November 13 with a try at catching both booster and ship",
+      "why_read": "If both catches work, SpaceX recovers an entire orbital rocket for the first time. That's the moment rapid reuse stops being a slide and starts being a schedule.",
       "body": [
-        "Elon Musk said Tesla plans to introduce an even more efficient Cybercab next year, according to Sawyer Merritt's summary of his remarks. The current Cybercab is rated at 6.18 miles per kWh with a 47.6 kWh pack; the updated version is described as using a 40 kWh battery, about 16% smaller. Merritt estimates that could push curb weight below 3,000 lbs from 3,113 lbs today and cut production costs further. Musk also said the new version will come in a liquid silver color.",
-        "It lands a day after reports that Tesla will wind down Cybertruck production to free Giga Texas capacity for Cybercab. The bet is the same either way: in a robotaxi fleet, every kWh saved per car is margin on every mile driven."
+        "SpaceX is targeting a 75-minute window opening at 4:45 p.m. CT on Thursday, November 13 from Starbase. The plan is a Super Heavy catch a little over six minutes after liftoff, then a ship catch at the tower after roughly 22 hours and about 14 orbits at around 275 km. Along the way the ship deploys 26 Starlink V3 satellites, three of them carrying cameras aimed at the heat shield.",
+        "The vehicle flies with upgraded tiles and flaps, and the upper-stage catch only goes ahead after strict safety checks on the way down. Elon Musk calls it a critical step toward rapid reuse, and for a Texan watching from Austin it's a short drive from being a spectator sport."
       ],
       "authors": [
-        "Sawyer Merritt"
+        "X News"
       ],
       "source": "x",
       "source_label": "X",
-      "source_url": "https://x.com/SawyerMerritt/status/2119276663288615170",
-      "discuss_url": "https://x.com/SawyerMerritt/status/2119276663288615170",
+      "source_url": "https://x.com/i/trending/2119489627438321894",
+      "discuss_url": "https://x.com/i/trending/2119489627438321894",
       "interests": [
-        "tesla"
+        "space"
       ],
       "lead": true,
       "featured": false
     },
     {
-      "id": "msr-ai-frontiers-ends",
-      "kicker": "AI RESEARCH",
-      "headline": "John Langford on the end of Microsoft Research's AI Frontiers group",
-      "why_read": "A rare inside account of what happens when a research shop gets folded into a scaling-first org. It's the Sutton argument, told as a reorg story.",
+      "id": "terafab-1m-wafers-2032",
+      "kicker": "CHIPS",
+      "headline": "Terafab tells suppliers it wants 1 million wafers a month from 2032",
+      "why_read": "That number would put a Tesla-SpaceX fab in the same league as the biggest chipmakers on Earth. It's the clearest signal yet of how much silicon Musk thinks robots, Cybercabs, and orbital compute will eat.",
       "body": [
-        "Writing on hunch.net, John Langford says AI Frontiers formed inside Microsoft Research after ChatGPT because lone researchers could no longer move fast enough or build strong enough baselines. The roughly 50-person group worked on agents such as the Autogen orchestration framework and the Fara computer-use agent, plus fundamentals like the Next Latent objective, Dion3 (an improved Muon optimizer), and the Full Bandwidth Transformer. It also built a monorepo shared across MSR that included an edge-scale pretraining codebase.",
-        "In early September the group was reorganized into Microsoft AI, whose ex-Inflection leadership he describes as scaling-focused and \"aggressively not research.\" Langford argues returns to research are real, pointing to ByteDance experiments suggesting a Full Bandwidth Transformer variant may match a model twice its size. He says he placed his people as best he could and left."
+        "Nikkei reports that Terafab, the joint Tesla-SpaceX semiconductor plant in Grimes County, Texas, has told equipment suppliers it is targeting 1 million wafers per month from 2032 onward: 700,000 for memory and 300,000 for logic. The post Anand reposted put the reaction in one word, and the memory split is what jumped out to most chip watchers.",
+        "The project starts with a $16.8 billion investment on a former power-plant site, and satellite images show construction underway. The stated customers are internal: Optimus robots, Cybercab, and SpaceX's space-based data centers. Skeptics point out that a fab's capacity on paper and its yield in practice are different animals, so the supplier orders over the next two years are the thing to watch."
       ],
       "authors": [
-        "John Langford"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://hunch.net/?p=13764006",
-      "discuss_url": "https://news.ycombinator.com/item?id=50406563",
-      "interests": [
-        "ai"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "claude-code-dont-ask-again-secrets",
-      "kicker": "AI SECURITY",
-      "headline": "Claude Code's \"Don't Ask Again\" is exposing passwords in 1,122 public GitHub files, Apiiro says",
-      "why_read": "A convenience toggle in a coding agent became a secrets leak at scale. Worth a quick check of any repo where an agent runs commands for you.",
-      "body": [
-        "Security firm Apiiro reports finding 1,122 public GitHub files where Claude Code's \"Don't Ask Again\" approvals exposed passwords. The post climbed Hacker News's front page and drew nearly 300 comments.",
-        "The general lesson holds beyond one tool: when an agent remembers which commands you approved, it can also write down the credentials those commands carried. Before you push, check your agent settings and local config files, and add them to .gitignore and secret scanning the same way you would a .env file."
-      ],
-      "authors": [
-        "Apiiro"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
-      "discuss_url": "https://news.ycombinator.com/item?id=50407882",
-      "interests": [
-        "ai",
-        "systems"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "open-weights-qwen4-deepseek-flash",
-      "kicker": "OPEN MODELS",
-      "headline": "Qwen 4 early previews and DeepSeek V4.1 Flash 1017 heat up the open-weights race",
-      "why_read": "Open models are now competing with Opus-class models on price and speed. Read it alongside MaxxBench before you switch your agent's default model.",
-      "body": [
-        "X's news summary reports that Qwen-4-Flash-Early and a 27B checkpoint led the community GameFeel benchmark, which covers coding, creativity, visuals, audio, and game mechanics. They scored around 49.9 overall at roughly $0.40 per task, compared with $2.60 for Opus 5.5 variants. DeepSeek's V4.1 Flash 1017 checkpoint is described as scoring 77.0 on DeepSWE v1.1 with a 1M-token context, and users report about 15 tokens per second on RTX 3090 setups.",
-        "The caveat comes from the same feed. MaxxBench's revised tasks cut DeepSeek V4.1 Flash to 55.6%, and commenters doubt that niche benchmarks hold up in daily use. Still, the gap in cost and local control keeps shrinking."
-      ],
-      "authors": [
-        "X News"
+        "Jukan"
       ],
       "source": "x",
       "source_label": "X",
-      "source_url": "https://x.com/i/trending/2119344911665295556",
-      "discuss_url": "https://x.com/i/trending/2119050995816951908",
-      "interests": [
-        "ai"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "starlink-v4-10tbps-lasers",
-      "kicker": "SPACE",
-      "headline": "Musk sketches Starlink V4: 10 Tbps laser links and a backbone to rival undersea cables",
-      "why_read": "If the numbers hold, Starlink stops being only an ISP and becomes a global data backbone in orbit.",
-      "body": [
-        "At his fireside chat with Ron Baron, Musk described Version 4 Starlink satellites with about a 10x capability boost over V3, driven by next-generation laser links running at 10 terabits per second, roughly 100x today's links. In a follow-up he described around 100 lasers per satellite across a constellation of 100,000 satellites. He argued that could beat undersea cables because light travels about 40% faster in a vacuum than in fiber and takes straighter paths.",
-        "V3 satellites, at about 1 Tbps each, are only now launching on Starship, and V4 is still in planning with no timeline. Treat this as a roadmap, not a product."
-      ],
-      "authors": [
-        "X News",
-        "Elon Musk"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2119158953900716346",
-      "discuss_url": "https://x.com/i/trending/2119158953900716346",
-      "interests": [
-        "space"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "nasa-clps2-moon-base",
-      "kicker": "SPACE",
-      "headline": "NASA's CLPS 2 awards up to $10B to speed up a permanent Moon base, with Starship on the roster",
-      "why_read": "The lunar program is moving from flags and footprints to freight contracts. SpaceX and Blue Origin both got work.",
-      "body": [
-        "At Kennedy Space Center, NASA announced contracts under a new CLPS 2 framework worth up to $10 billion over the next decade, spread across eight companies including SpaceX and Blue Origin. The work covers lunar deliveries, power systems, and robotic explorers near the Moon's south pole. According to X's summary, SpaceX won a 2028 Starship mission to deliver communications satellites, and Blue Origin won $94 million to deliver the nuclear-powered PROMISE rover to study ice deposits.",
-        "NASA also opened applications for its next astronaut class and expanded existing contracts. The stated aim is sustained operations, a permanent outpost rather than visits, built through public-private partnerships."
-      ],
-      "authors": [
-        "X News",
-        "NASA"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2119088885397586337",
-      "discuss_url": "https://x.com/i/trending/2119088885397586337",
-      "interests": [
-        "space"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "anthropic-gas-generators-3-4b",
-      "kicker": "AI POWER",
-      "headline": "Anthropic signs a $3.4B deal for 1.7 GW of Caterpillar gas generators",
-      "why_read": "AI labs are buying their own power plants now. This is the energy-tech side of the model race.",
-      "body": [
-        "Anthropic agreed to a $3.4 billion deal for 1.7 gigawatts of Caterpillar gas-fired generators from supplier OnePWR Solutions, taking over orders placed two years ago, according to X's news summary. The move gives it on-site power for data centers at a time when grid connections and large equipment are both scarce.",
-        "It fits the IPO filing's emphasis on dedicated natural gas at its sites. Gas behind the meter is fast to deploy but raises the same local questions the Arizona and Scotland data-center fights are now testing: emissions, noise, and who pays when the grid is strained."
-      ],
-      "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2119402226183520711",
-      "discuss_url": "https://x.com/i/trending/2119402226183520711",
-      "interests": [
-        "ai",
-        "systems"
-      ],
-      "lead": false,
-      "featured": true
-    },
-    {
-      "id": "discord-rust-client",
-      "kicker": "SYSTEMS",
-      "headline": "Discord's new Rust client opens before Electron finishes loading, using 70% less RAM",
-      "why_read": "It's the cleanest side-by-side yet for leaving Electron, and it comes from a big app with millions of users.",
-      "body": [
-        "A 15-second clip posted by Discord co-founder and CTO Stanislav Vishnevskiy shows the new Rust client loading the friends list before the current Electron app gets past its loading screen. Both were launched from a cold start on two Lenovo ThinkPads running Windows 11. Windows Latest reports the new client, shown in Task Manager as Discord Phoenix, used 290.2 MB of RAM with two accounts signed in.",
-        "The clip had 2.3 million views, and the HN thread turned into the familiar Electron debate about developer velocity versus the memory bill everyone else pays."
-      ],
-      "authors": [
-        "Windows Latest"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://www.windowslatest.com/2026/11/06/every-windows-11-app-should-kill-electron-and-discord-just-showed-why-no-starting-screen-and-70-less-ram-even-with-two-accounts-signed-in/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50403507",
-      "interests": [
-        "systems"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "goodbye-claude-hello-pi",
-      "kicker": "AI CODING",
-      "headline": "Goodbye Claude, Hello Pi: a longtime Claude Code user switches harnesses",
-      "why_read": "A practical list of small frustrations with coding agents. Useful if you're tuning your own setup.",
-      "body": [
-        "Caleb, a Claude Code user since it joined the Pro plan, says many small frustrations led him to move his main coding harness to Pi. His list starts with the CLAUDE.md versus AGENTS.md split. Anthropic announced AGENTS.md support a day after he decided to leave, which he calls too little, too late. He also points to the VS Code integration, where only one session can connect to the IDE at a time, so a second tab can't receive text-selection events.",
-        "He still reviews most generated code before committing, which is why he cares about these review-loop details. The post sparked more than 200 HN comments comparing harnesses."
-      ],
-      "authors": [
-        "Caleb"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://caleb.software/posts/claude-to-pi.html",
-      "discuss_url": "https://news.ycombinator.com/item?id=50410107",
-      "interests": [
-        "ai"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "openstick-10-dollar-homelab",
-      "kicker": "HOMELAB",
-      "headline": "What runs on a $10 OpenStick homelab: 512 MB of RAM, a 4G modem, and Debian",
-      "why_read": "A fun weekend project. It's a tiny, silent box that still handles DNS blocking and small services.",
-      "body": [
-        "The OpenStick costs about $10 shipped and comes with 512 MB of RAM (around 450 MB usable), four 1 GHz Cortex-A53 cores, 4 GB of eMMC, Wi-Fi, a 4G modem with GPS, passive cooling, and one programmable LED. Once flashed it runs Debian with systemd and Podman.",
-        "The author runs CastSponsorSkip to skip sponsor segments on Google Cast devices, and a fork of AdGuard Home that handles large blocklists. With a few lists added, about 60% of DNS queries on his network are blocked."
-      ],
-      "authors": [
-        "Bosscher"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://blog.bosscher.ch/posts/openstick/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50406670",
-      "interests": [
-        "systems"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "coldframe-fridge-honeypot",
-      "kicker": "SECURITY",
-      "headline": "Coldframe is a honeypot that poses as a supermarket refrigeration controller",
-      "why_read": "Industrial control systems turn up in odd places, and this is a neat single-file way to see who is scanning for them.",
-      "body": [
-        "The project says attackers broke into internet-facing refrigeration supervisors across Europe in 2026, using default passwords and unpatched firmware to force defrost cycles. Coldframe imitates a Danfoss AK-SM 800A or a Copeland/Dixell XWEB unit. It copies the server headers, TLS setup, and certificate details that internet scanners record. It accepts weak logins and the CVE-2025-41450 \"code of the day,\" then serves a fake dashboard of refrigerated cases.",
-        "Everything the attacker does gets logged, and nothing real is ever exposed. It's a single Python file that uses only the standard library."
-      ],
-      "authors": [
-        "hedgerow-dev"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://github.com/hedgerow-dev/coldframe",
-      "discuss_url": "https://news.ycombinator.com/item?id=50406292",
-      "interests": [
-        "systems"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "german-uranium-cubes",
-      "kicker": "PHYSICS",
-      "headline": "Uranium cubes show Germany's wartime reactor never had enough material to work",
-      "why_read": "Physics history with a twist: Heisenberg's team wasn't just a little short, according to a new paper.",
-      "body": [
-        "A paper in PNAS Nexus, co-authored by University of Maryland physicist Timothy Koeth, concludes that the German nuclear project lacked enough uranium and heavy water to make its reactor design work. That contradicts postwar claims that the team needed only a little more uranium. Koeth's search began in 2013 when a friend gave him one of the program's cubes; only 14 are known to survive, including ones at the Smithsonian and Harvard.",
-        "Heisenberg's B8 reactor at Haigerloch hung 664 uranium cubes on aircraft cable in a tank of heavy water. Ars Technica's account also describes rival groups, personal feuds, and poor scientific management slowing the program."
-      ],
-      "authors": [
-        "Ars Technica"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://arstechnica.com/science/2026/11/uranium-cubes-reveal-why-the-german-nuclear-project-failed/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50377661",
-      "interests": [
-        "science"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "any-integer-four-2s",
-      "kicker": "MATH",
-      "headline": "How to make any integer with four 2s, and how Dirac solved it for good",
-      "why_read": "A short math puzzle with a clever general solution. Good Sunday reading.",
-      "body": [
-        "Eli Bendersky walks through the classic puzzle of building a target number from exactly four 2s, from (2+2)/(2+2) up to tricks with factorials, the Gamma function, and even complex numbers. Seven is notoriously awkward without heavier tools.",
-        "Then comes Paul Dirac's general solution, which reportedly ended the 1920s fad. Nest square roots over a 2 n times, and two base-2 logarithms turn that into -n, so any integer can be written with the same handful of 2s."
-      ],
-      "authors": [
-        "Eli Bendersky"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://eli.thegreenplace.net/2025/making-any-integer-with-four-2s/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50408713",
-      "interests": [
-        "science"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "github-pr-overview-page",
-      "kicker": "DEVTOOLS",
-      "headline": "GitHub previews a new pull request Overview page that puts the merge box first",
-      "why_read": "If you spend your day reviewing AI-generated PRs, this redesign targets exactly that time sink.",
-      "body": [
-        "GitHub's opt-in public preview adds an Overview page that moves merge status and next actions to the top of a pull request, in a merge box redesigned to use less than half the space. It summarizes checks, comments, and approvals, and you can update your branch or merge from there.",
-        "It also adds filters for unresolved conversations or your own comments, plus a newest-first sort for catching up. GitHub calls it the first step in rethinking pull requests as review volume grows. A separate HN thread the same day asked whether GitHub was down again."
-      ],
-      "authors": [
-        "GitHub"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/",
-      "discuss_url": "https://news.ycombinator.com/item?id=50408931",
-      "interests": [
-        "systems"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "agent-memory-opentelemetry",
-      "kicker": "AI AGENTS",
-      "headline": "Agent memory needs its OpenTelemetry moment",
-      "why_read": "Any multi-agent setup runs into this: every tool remembers things in its own format, and none of them can read the others.",
-      "body": [
-        "LoreKit's author counts the memory formats in a typical setup: AGENTS.md or CLAUDE.md files, .cursor/rules, an agent writing to a /memories directory through Anthropic's memory tool, Copilot's per-repo facts on GitHub's side, and MCP servers storing JSONL knowledge graphs. None of them can read the others, so a lesson one agent learns stays locked in that tool.",
-        "The proposed fix borrows from observability's history. OpenTracing and OpenCensus merged into OpenTelemetry once vendors agreed on a data model, naming conventions, and a protocol. The post argues agent memory needs the same kind of agreement more than it needs another tool."
-      ],
-      "authors": [
-        "LoreKit"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://www.lorekit.io/blog/open-agent-memory-format",
-      "discuss_url": "https://news.ycombinator.com/item?id=50411467",
-      "interests": [
-        "ai",
-        "systems"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "llama-modchip-cpu-deepseek",
-      "kicker": "LOCAL LLMS",
-      "headline": "llama-modchip claims to run 284B DeepSeek V4 Flash on a 64 GB CPU box with no GPU",
-      "why_read": "It's a bold claim about running a frontier-size model locally. Take it as a project to watch, not a settled benchmark.",
-      "body": [
-        "The llama-modchip repo (v2.4.0) says it fits the 284B-parameter DeepSeek-V4-Flash MoE into RAM on a 64 GB CPU-only machine, using a 56.56 GiB checkpoint and peaking at 57.61 GiB with a 256K context. It reports 44.4 tokens per second for prefill and 9.1 to 14.7 for generation. It also claims 25 to 111 tokens per second for 30B MoEs on 16 to 32 GB laptops and mini-PCs.",
-        "The README credits a \"SwiGLU-H2\" technique and a speculative drafter for the gains. These numbers come from the project itself, and the HN thread is small so far, so they still need outside reproduction."
-      ],
-      "authors": [
-        "synchopate"
-      ],
-      "source": "hn",
-      "source_label": "HN",
-      "source_url": "https://github.com/synchopate/llama-modchip",
-      "discuss_url": "https://news.ycombinator.com/item?id=50411961",
-      "interests": [
-        "ai",
-        "systems"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "ut-austin-computing-50-faculty",
-      "kicker": "AUSTIN",
-      "headline": "UT Austin's School of Computing plans to hire 50 tenure-track faculty over five years",
-      "why_read": "A big bet on computing talent in Anand's hometown. He reposted it.",
-      "body": [
-        "Peter Stone, a professor at UT Austin, says the new School of Computing will hire aggressively. It aims for 50 new tenure-track faculty over the next five years, plus many instructional, professional-track faculty. Job ads are posted for all three of its departments.",
-        "For Austin's tech scene, that's a steady supply of research and graduates in AI, systems, and robotics right next to the Tesla, Samsung, and startup expansion in Central Texas."
-      ],
-      "authors": [
-        "Peter Stone"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/PeterStone_TX/status/2119232989481607217",
-      "discuss_url": "https://x.com/PeterStone_TX/status/2119232989481607217",
-      "interests": [
-        "science",
-        "ai"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "exedev-per-minute-sandbox",
-      "kicker": "DEVOPS",
-      "headline": "exe.dev quietly ships per-minute sandbox VMs: ssh exedev new --sandbox",
-      "why_read": "A disposable VM you can start over SSH is a good fit for running untrusted agent code. Anand reposted it.",
-      "body": [
-        "David Crawshaw says exe.dev quietly launched `ssh exedev new --sandbox` for people who'd rather pay for a VM by the minute than reserve resource pools. He hadn't announced it because the team was still deciding how to talk about it, but users found it anyway.",
-        "Sandboxes billed by the minute fit agents well: start one per task, let the agent work freely, then throw it away. That's simpler than trying to secure a long-lived box."
-      ],
-      "authors": [
-        "David Crawshaw"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/davidcrawshaw/status/2119219957003333939",
-      "discuss_url": "https://x.com/davidcrawshaw/status/2119219957003333939",
-      "interests": [
-        "systems",
-        "ai"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "optimus-rental-model",
-      "kicker": "TESLA",
-      "headline": "Musk: Tesla will likely rent Optimus robots, like an FSD subscription",
-      "why_read": "Renting instead of selling changes who can afford a humanoid robot, and how Tesla gets paid for one.",
-      "body": [
-        "At the Baron Investment Conference on Nov. 6, Musk said Tesla plans to rent Optimus humanoid robots rather than sell them, much like its Full Self-Driving subscriptions. According to X's summary, he put build costs near $30,000 per unit, possibly falling to $20,000 at scale.",
-        "A rental would bundle maintenance and software updates with lower upfront cost. It's the same recurring-revenue approach Tesla uses for autonomy, now applied to labor."
-      ],
-      "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2118806660395454679",
-      "discuss_url": "https://x.com/i/trending/2118806660395454679",
+      "source_url": "https://x.com/jukan05/status/2119562340962369878",
+      "discuss_url": "https://x.com/i/trending/2119587222211194988",
       "interests": [
         "tesla",
         "ai"
       ],
       "lead": false,
-      "featured": false
+      "featured": true
     },
     {
-      "id": "ship-40-gigabay",
+      "id": "starbase-24b-ai-supercomputer",
       "kicker": "STARBASE",
-      "headline": "Ship 40, back from 75 days at sea, rolls into SpaceX's new Gigabay",
-      "why_read": "A flown Starship upper stage is the first tenant of the factory built for fast refurbishment.",
+      "headline": "SpaceX plans a $24 billion AI supercomputer and its own power plant at Starbase",
+      "why_read": "SpaceX is building compute and generation side by side so it doesn't have to wait on the Texas grid. That pattern, bring your own power, is quickly becoming the default for AI campuses.",
       "body": [
-        "Ship 40, which flew on Flight 13 in July 2026 and came back intact after 75 days at sea, moved from Mega Bay 2 into a work cell in Starbase's new Gigabay. The 380-foot building has heavy cranes and several work areas and is designed for high-volume production and quick turnaround.",
-        "Fans nicknamed it the \"prodigal son.\" It may be used for fit checks or crane tests while the bay gets ready for regular operations, ahead of a Flight 15 that aims to catch both stages."
+        "The project covers 444 acres near Brownsville, with up to 35 gas turbines providing 748 megawatts for the supercomputer. SpaceX would own and run both the computer and the plant, construction is already underway, and a public hearing on tax incentives is set for December 9.",
+        "It lands the same week SpaceX pitched its much larger Arizona campus, and the same weekend Anthropic's gas-generator purchase made headlines. Supporters see a clever end run around interconnection queues tied directly to Starship operations; critics will be at that December hearing asking about emissions and the incentives."
       ],
       "authors": [
         "X News"
       ],
       "source": "x",
       "source_label": "X",
-      "source_url": "https://x.com/i/trending/2119263172674641978",
-      "discuss_url": "https://x.com/i/trending/2119263172674641978",
+      "source_url": "https://x.com/i/trending/2119577365370249712",
+      "discuss_url": "https://x.com/i/trending/2119577365370249712",
+      "interests": [
+        "space",
+        "ai"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "opus-5-5-thinking-changed-nov-3",
+      "kicker": "AI MODELS",
+      "headline": "Did Opus 5.5 get nerfed on November 3, or just its summarizer?",
+      "why_read": "Heavy Claude users noticed its visible reasoning changed overnight. Whether the model got worse or only the display did matters a lot if you're paying for high-effort runs.",
+      "body": [
+        "A widely shared post says Claude Opus 5.5's thinking patterns shifted on November 3, and the Hacker News thread filled up fast with people who felt it too. Several said they had to bump their default reasoning level to get the old behavior back, and one compared the drop to sliding back to an older DeepSeek.",
+        "Others in the thread argue the change is only a new summarizer for the reasoning trace, with the model itself unchanged, and some say things have already improved. Speculation runs to a new model arriving around Qwen4's expected drop and Anthropic's IPO. Without an official note it's unproven either way, which is exactly why teams that depend on one model want their own regression evals."
+      ],
+      "authors": [
+        "Shane Melaugh"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://twitter.com/shanemelaugh/status/2119192075505893695",
+      "discuss_url": "https://news.ycombinator.com/item?id=50422069",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "connected-car-unlock-chain",
+      "kicker": "SECURITY",
+      "headline": "Researchers chained web bugs to unlock an automaker's cars from just a plate number",
+      "why_read": "No hardware hacking at all: an exposed admin tool, a WAF gap, and an MFA skip. It's a vivid reminder that the car's real attack surface is its cloud backend.",
+      "body": [
+        "Shubham Shah and Sam Curry looked at a major automaker's connected-car platform starting from one question: what does the app talk to when you remotely unlock? That led to an admin test harness on the public internet, OpenIDM admin credentials sitting in a JavaScript vendor bundle, and a path-traversal trick to slip past the WAF. Notably, the winning bypass prefix came from letting GPT 5.6 Sol Ultra grind on it for about six hours after the humans had given up on that angle.",
+        "From there they could reset any user's password, skip multi-factor through a password-grant OAuth flow, mint a mobile app token, and call the remote command API. The final chain went plate to VIN to subscriber to car, and the combined write-ups cover remote unlock and engine start across Australia, the US, and Canada. They tested only on cars they owned or had permission to use."
+      ],
+      "authors": [
+        "Shubham Shah"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://shubs.io/unlocking-any-car-from-x-brand-in-most-of-the-world/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50419215",
+      "interests": [
+        "systems"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "outlook-rejects-no-dmarc",
+      "kicker": "EMAIL",
+      "headline": "Outlook.com is quietly bouncing mail from domains without a DMARC record",
+      "why_read": "This one hits small senders, not just bulk mailers, and nobody announced it. The fix is a single DNS TXT record you can add this morning.",
+      "body": [
+        "Since November 5, Microsoft's consumer mail service (outlook.com, hotmail.com, live.com, msn.com) has been rejecting some messages from domains that publish no DMARC record, according to MailRoute. The domains it saw bounced mostly had working SPF and often DKIM; what they lacked was the DMARC record tying those to the From address. Only some messages bounce, so \"my mail is getting through\" isn't proof you're fine.",
+        "This differs from Microsoft's published May 2025 rule for senders of more than 5,000 messages a day: it reaches one-line replies from small offices, and as of November 6 there was no postmaster notice or blog post. The suggested fix is v=DMARC1; p=none, which changes nothing about how other receivers treat your mail but gets you past the check."
+      ],
+      "authors": [
+        "Thomas A. Johnson"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://mailroute.net/blog/outlook-rejecting-email-without-dmarc",
+      "discuss_url": "https://news.ycombinator.com/item?id=50416158",
+      "interests": [
+        "systems"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "tesla-robotaxi-texas-1282",
+      "kicker": "ROBOTAXI",
+      "headline": "Tesla adds 38 Model Ys and its Texas Robotaxi fleet hits 1,282",
+      "why_read": "The tracker Anand follows says Tesla is now within a handful of Waymo's Texas robotaxi registrations. The fleet count is becoming the scoreboard.",
+      "body": [
+        "The Texas Autonomous Vehicle Tracker reported that Tesla Robotaxi just added 38 Model Ys, bringing its Texas fleet to 1,282 vehicles. A follow-up post Anand also reposted says that leaves Tesla four vehicles short of Waymo in robotaxis registered in Texas.",
+        "The same poster flagged something odd: plenty of new Model Y registrations but few new Cybercab ones. With Tesla saying the next Cybercab will run on a smaller pack, the mix between the two is worth watching as the fleet grows."
+      ],
+      "authors": [
+        "Texas Autonomous Vehicle Tracker"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/texasavtracker/status/2119600537624555562",
+      "discuss_url": "https://x.com/WorldlyReviewer/status/2119617308683346204",
+      "interests": [
+        "tesla"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "cpp26-dis-fails-sutter",
+      "kicker": "LANGUAGES",
+      "headline": "Herb Sutter on why the C++26 ballot failed: the creator and the committee disagreed",
+      "why_read": "A rare inside account of standards governance breaking down over contracts. If you rely on C++, this decides what C++26 ships and when.",
+      "body": [
+        "In WG21 paper P4454R0, Herb Sutter argues that the C++26 Draft International Standard ballot failed for one decisive reason: Bjarne Stroustrup strongly disagreed with the committee's consensus on contracts, and the national bodies chose to give his view more weight. The vote in Croydon in March was 114 in favor of C++26 with contracts and 12 against.",
+        "Sutter lays out the grievances on both sides without trying to settle who's right, notes that C++ has dropped features before (export, concepts, exception specifications, contracts in C++20) but always with Bjarne's assent before a DIS vote, and looks at how other languages survived similar splits before sketching options for getting C++26 out the door."
+      ],
+      "authors": [
+        "Herb Sutter"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://isocpp.org/files/papers/P4454R0.pdf",
+      "discuss_url": "https://news.ycombinator.com/item?id=50418818",
+      "interests": [
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "chatgpt-desktop-ssh-agent-forwarding",
+      "kicker": "AI SECURITY",
+      "headline": "ChatGPT Desktop forwards your SSH agent to remote machines",
+      "why_read": "A remote agent that borrows your local SSH keys can push to your private repos. Worth checking before you point it at a shared box.",
+      "body": [
+        "An HN post points to a Codex pull request discussion showing that an agent on a remote machine can authenticate with your local SSH credentials through agent forwarding, which means it could, for example, push to your private GitHub repositories.",
+        "The top suggestion in the thread is keeping SSH keys in the macOS Secure Enclave with a fingerprint required for each new session, so an agent can't start a connection silently. Another commenter put the broader point well: in security, friction is a feature, and removing it for convenience is how surprises happen."
+      ],
+      "authors": [
+        "Hacker News"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://news.ycombinator.com/item?id=50422628",
+      "discuss_url": "https://news.ycombinator.com/item?id=50422628",
+      "interests": [
+        "ai",
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "jensen-huang-letter",
+      "kicker": "NVIDIA",
+      "headline": "Jensen Huang apologizes to Nvidia staff and the board opens an independent investigation",
+      "why_read": "The CEO of the company behind most AI compute wrote a personal letter, and it mentions national security concerns. That last part is what investors and partners will track.",
+      "body": [
+        "In a message posted to Nvidia's newsroom, Jensen Huang apologized to his family and to employees, writing that he was unfaithful to his wife and takes full responsibility. He said he remains fully committed to Nvidia and will work to earn back colleagues' and shareholders' confidence, and asked for privacy for his family.",
+        "The letter also says Nvidia's board has started an independent investigation into the national security concerns raised in news reports, and that Huang will cooperate fully. The HN thread is enormous; the business question is how long the investigation runs and what it covers."
+      ],
+      "authors": [
+        "Jensen Huang"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://nvidianews.nvidia.com/news/a-message-to-our-company",
+      "discuss_url": "https://news.ycombinator.com/item?id=50418016",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "nvidia-1-in-11-big-rounds",
+      "kicker": "AI MONEY",
+      "headline": "Nvidia was in 1 of every 11 startup rounds over $100 million last year",
+      "why_read": "Nvidia out-invested every venture firm except Sequoia and a16z in big rounds, and that's before counting its venture arm. Its customers are increasingly its portfolio.",
+      "body": [
+        "Data Hyena counted 903 venture rounds of $100 million or more between October 2025 and September 2026 that named investors. Nvidia or NVentures was in 79 of them, more than Sequoia (75) or Andreessen Horowitz (73), and Nvidia on its own was in 65, ahead of Lightspeed, General Catalyst, and Accel.",
+        "Its rounds ranged from Reflection AI and Baseten to Nscale and PhysicsX. Corporates showed up in 38% of big rounds, up from 35% a year earlier, with Salesforce (32), GV (29), and AMD (16) trailing well behind Nvidia."
+      ],
+      "authors": [
+        "Data Hyena"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://datahyena.com/research/a-chipmaker-was-in-one-of-every-eleven-100m-rounds/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50392256",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "not-convinced-ai-bubble",
+      "kicker": "AI ECONOMICS",
+      "headline": "A contrarian case that the AI bubble may not be a bubble",
+      "why_read": "Almost every thread assumes the pop is coming. This argues the spending is mostly one-time buildout, and the comments push back hard, which makes it a good stress test of your own view.",
+      "body": [
+        "Matteo Raso starts from the scale: at least $3 trillion in committed spending and an estimated $1.9 trillion already spent. He concedes the financing vehicles make the real exposure hard to see, which he calls one of the strongest points for the bubble case.",
+        "His core claim is that data center construction is a one-off capital cost, not an ongoing expense, so spending should fall sharply once the buildout is done. With nearly 600 comments, the HN discussion is a useful map of the counterarguments, from depreciation of GPUs to who ends up holding the debt."
+      ],
+      "authors": [
+        "Matteo Raso"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html",
+      "discuss_url": "https://news.ycombinator.com/item?id=50418975",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "coding-harness-over-model",
+      "kicker": "AI CODING",
+      "headline": "Tests suggest the coding harness matters as much as the model",
+      "why_read": "Same model, different scaffolding, double-digit swings. If you're choosing between Cursor, Claude Code, and friends, this is the variable most comparisons ignore.",
+      "body": [
+        "Garry Tan ran seven harnesses on the same 20 coding tasks and saw scores from 71% to 79%, though 14 tasks came out identical everywhere. A separate study of eleven production systems, including Claude Code and OpenHands, mapped seven core subsystems and found harnesses have grown into full platforms by mid-2026.",
+        "On Terminal-Bench 2.0, the same model across nine harnesses varied by a wide margin. Taken with MaxxBench's findings, the message is that benchmark numbers describe a model-plus-harness pair, not a model."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2119521473903862094",
+      "discuss_url": "https://x.com/i/trending/2119521473903862094",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "brockman-ai-discovery-engines",
+      "kicker": "AI RESEARCH",
+      "headline": "Greg Brockman says frontier models with heavy test-time compute are becoming discovery engines",
+      "why_read": "OpenAI is pointing at a claimed Navier-Stokes proof checked in Lean. Treat it as a claim until mathematicians weigh in, but it's the kind of claim that changes the conversation.",
+      "body": [
+        "Brockman highlighted an OpenAI effort in which thousands of AI agents worked for 88 hours to produce a proof related to the Navier-Stokes Millennium Prize Problem, verified in the Lean proof assistant, according to the X summary of the discussion. Google DeepMind's Pushmeet Kohli described a phase transition in his lab's discovery pace, with new releases coming soon.",
+        "It's landing in the middle of a separate X argument where a skeptic challenged people to name one major LLM achievement; replies pointed to OpenAI's wave of more than 700 math papers with verified proofs and a full AI translation of China's Twenty-Four Histories. Independent review of the proof is the thing to wait for."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2119609603189346703",
+      "discuss_url": "https://x.com/i/trending/2119609603189346703",
+      "interests": [
+        "ai",
+        "science"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "metr-anthropic-pace-doubles",
+      "kicker": "AI RESEARCH",
+      "headline": "METR finds Anthropic's progress has doubled in pace since late 2025",
+      "why_read": "Most of the speedup is attributed to AI helping the researchers. That's the recursive loop forecasters have been watching for, showing up in a measurement.",
+      "body": [
+        "A METR assessment covering August to October 2026 shows Anthropic's capability gains on key benchmarks running about twice as fast as before October 2025, with roughly 80% of the speedup credited to AI assisting researchers.",
+        "Anthropic also rolled out a four-layer memory system of transcripts, self-written notes, linked wikis, and a \"dreaming\" consolidation step. It lifted a database task score from 0.655 to 0.838 and wiki accuracy from 13% to 48%. The curves are running ahead of the 2027 forecasts many people were using."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2119013893754212425",
+      "discuss_url": "https://x.com/i/trending/2119013893754212425",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "jensen-chinese-open-models",
+      "kicker": "OPEN MODELS",
+      "headline": "Jensen Huang tells US companies to use Chinese open models, and the internet makes memes",
+      "why_read": "Nvidia's CEO is publicly pushing Kimi, DeepSeek, and GLM. For open-weights fans that's a notable endorsement, whatever the jokes say.",
+      "body": [
+        "In an Axios interview, Huang urged US companies to adopt open-source Chinese models like Kimi, DeepSeek, and GLM, arguing they widen access to AI and drive demand for Nvidia hardware.",
+        "A short clip resurfaced this weekend and turned into a meme about which kind of \"Chinese models\" he meant, with the joke posts racking up thousands of likes. Underneath the humor is a real policy tension over open weights from China in US stacks."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2119745365897298395",
+      "discuss_url": "https://x.com/i/trending/2119745365897298395",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "grok-bot-overnight-fixes",
+      "kicker": "GROK",
+      "headline": "Musk says the Grok Bot team is shipping fixes overnight",
+      "why_read": "He promised a dramatic improvement by the next day and asked people to reply if they still see problems. Anand reposted it, and this is the assistant running his Daily Diff.",
+      "body": [
+        "Elon Musk posted that he had just done a round-table review with the Grok Bot engineering team, that fixes were being implemented overnight, and that users should notice a dramatic improvement by the next day.",
+        "He invited anyone still hitting issues to reply to the post so the team could address them right away. It's a direct line for feedback, and the replies make a handy snapshot of what users are struggling with."
+      ],
+      "authors": [
+        "Elon Musk"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/elonmusk/status/2119617455102333206",
+      "discuss_url": "https://x.com/elonmusk/status/2119617455102333206",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "qualcomm-spacex-starlink-mobile-5g",
+      "kicker": "STARLINK",
+      "headline": "Qualcomm and SpaceX team up on a big US 5G buildout for Starlink Mobile",
+      "why_read": "SpaceX building ground cell sites, not just satellites, is a direct shot at the carriers. It blends orbit and towers into one network.",
+      "body": [
+        "SpaceX will build base stations for its Starlink Mobile service, with Qualcomm supplying the radio silicon and Dragonwing platforms for tens of thousands of cell sites. Qualcomm CEO Cristiano Amon called it one of the largest 5G deployments in the country, with an AI-native architecture.",
+        "Deployment starts in 2027. Market reaction was mixed, but the strategy is clear: combine satellite and terrestrial coverage to compete with traditional wireless carriers."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2119709357692641341",
+      "discuss_url": "https://x.com/i/trending/2119709357692641341",
+      "interests": [
+        "space",
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "nasa-moon-base-astronauts-impulse",
+      "kicker": "MOON",
+      "headline": "NASA opens astronaut applications for its permanent Moon base",
+      "why_read": "Applications close December 3, and the contractors are lining up. Impulse founder Tom Mueller's post on in-space transport explains why the logistics are the hard part.",
+      "body": [
+        "NASA began recruiting astronauts this past weekend for work building infrastructure at the lunar south pole and preparing for Mars, open to US citizens with advanced STEM skills. It follows up to $10 billion in CLPS 2 lunar cargo contracts over ten years to companies including SpaceX, Blue Origin, and Impulse Space, plus $1.3 billion for in-space transport.",
+        "Tom Mueller, in a post Anand reposted, said Impulse won two task orders for the Moon Base program and argued an enduring lunar presence needs a whole fleet of spacecraft with different performance profiles, the way Earth needs cars, trucks, trains, and planes. Impulse is building that with its Mira, Helios, and lander vehicles."
+      ],
+      "authors": [
+        "Tom Mueller"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/lrocket/status/2119607901535019139",
+      "discuss_url": "https://x.com/i/trending/2119673107422106068",
       "interests": [
         "space"
       ],
@@ -475,22 +450,43 @@
       "featured": false
     },
     {
-      "id": "loudoun-data-center-tax",
-      "kicker": "DATA CENTERS",
-      "headline": "Loudoun County gets $1.2B a year from data centers on 3% of its land",
-      "why_read": "This is the other side of the data-center backlash, and it's why the SimCity comparison Anand reposted is catching on.",
+      "id": "starlink-dynamic-pricing-hikes",
+      "kicker": "STARLINK",
+      "headline": "Starlink customers are seeing bills climb under new demand-based pricing",
+      "why_read": "Some residential plans now hit $156 a month. If you're on Starlink at home, your price depends on how busy your area is.",
       "body": [
-        "Buddy Rizer, Loudoun County's economic development chief, told Fireside Alpha that data centers bring Northern Virginia's \"data center alley\" about $1.2 billion a year in local tax revenue, roughly 40% of the county's total, from 3% of its land. Anand bookmarked the clip.",
-        "He also reposted signüll's argument that a SimCity player would zone as many data centers as possible: big capital investment, large tax revenue, little traffic, and potentially clean depending on the energy source. The fact that people fight them anyway, signüll says, means the debate isn't really about data centers."
+        "Starlink users report monthly bills rising as much as $36 in a year, with some plans reaching $156 under a capacity-based model tied to local supply and demand. One customer saw a jump from $130 to $156 right after installing his dish.",
+        "Separately, standard US residential plans moved from $120 to $130, with more hikes expected under the dynamic model. The complaints come as Musk talks up moving most future AI computing to orbit for constant solar power."
       ],
       "authors": [
-        "Fireside Alpha",
-        "signüll"
+        "X News"
       ],
       "source": "x",
       "source_label": "X",
-      "source_url": "https://x.com/firesidealpha/status/2118757808615367070",
-      "discuss_url": "https://x.com/signulll/status/2119141647975846209",
+      "source_url": "https://x.com/i/trending/2119427748460646497",
+      "discuss_url": "https://x.com/i/trending/2119427748460646497",
+      "interests": [
+        "space"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "data-center-affordability-bill",
+      "kicker": "DATA CENTERS",
+      "headline": "A bipartisan Senate bill would fast-track data centers but make them pay for their own power",
+      "why_read": "This is the policy fight behind every new AI campus. The ratepayer-protection clause is the piece that could actually defuse local opposition.",
+      "body": [
+        "The Bipartisan American Affordability and Jobs Act, from Senators Capito, Lee, Whitehouse, and Heinrich, would shorten environmental reviews for pipelines, mines, power plants, and AI data centers, while requiring large data centers to cover their own electricity costs. President Trump urged the Senate to pass it.",
+        "A post Anand bookmarked captures the other side of the debate: anyone who played SimCity would zone for clean, high-tax, low-traffic data centers in a heartbeat, so the resistance must be about something other than the buildings themselves."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2119115234644480136",
+      "discuss_url": "https://x.com/i/trending/2119115234644480136",
       "interests": [
         "systems",
         "ai"
@@ -499,110 +495,21 @@
       "featured": false
     },
     {
-      "id": "neuralink-walking-goal",
-      "kicker": "NEUROTECH",
-      "headline": "Musk says Neuralink will soon help paralyzed patients walk and use their hands",
-      "why_read": "It's a big promise from an implant that already lets patients control computers with their thoughts.",
+      "id": "base-power-austin-hq",
+      "kicker": "AUSTIN ENERGY",
+      "headline": "Base Power wants an HQ campus next to its Austin factories",
+      "why_read": "A home-battery company is putting down deep roots near the airport. Austin's energy tech scene keeps growing, and this one's on Tuesday's Planning Commission agenda.",
       "body": [
-        "Musk said Neuralink will soon help people with quadriplegia from ALS, spinal cord injury, or stroke walk and use their hands again. Early participants like Noland Arbaugh, implanted in January 2024, already browse, game, and steer wheelchairs using only their thoughts.",
-        "X's summary says trials run in the US, Canada, the UK, and the UAE, testing cursors, robotic arms, and speech decoding. Restoring walking is a much harder goal than controlling a cursor, so the timeline is the thing to watch."
+        "A zoning change for a Base Power headquarters campus goes before Austin's Planning Commission on Tuesday, November 10. The site is about 20 acres beside two Base Power manufacturing facilities under construction on Metropolis Drive near US 183 and the airport.",
+        "The change would allow buildings up to 85 feet, and the first is tentatively planned as a five-story office building. It's a local signal that home energy storage is turning into a real Austin industry."
       ],
       "authors": [
-        "X News",
-        "Elon Musk"
+        "The ATX"
       ],
       "source": "x",
       "source_label": "X",
-      "source_url": "https://x.com/i/trending/2119125832690192444",
-      "discuss_url": "https://x.com/i/trending/2118889596646019195",
-      "interests": [
-        "science"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "asahi-linux-gplv2",
-      "kicker": "OPEN SOURCE",
-      "headline": "Asahi Linux relicenses from MIT to GPLv2-or-later",
-      "why_read": "The project that brought Linux to Apple Silicon is protecting its work from being taken and sold.",
-      "body": [
-        "The volunteer Asahi Linux project, which has run Linux on Apple Silicon Macs since the M1 Mac Mini, is moving from MIT to GPLv2-or-later to protect its work from bad-faith commercial reuse. Observers compare it to Wine's license change in 2002.",
-        "The change comes as the project makes progress: M3 installs without expert flags, sleep support, Thunderbolt networking, and games like GTA IV running natively."
-      ],
-      "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2119200782025216481",
-      "discuss_url": "https://x.com/i/trending/2119200782025216481",
-      "interests": [
-        "systems"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "sutton-bitter-lesson-revisited",
-      "kicker": "AI RESEARCH",
-      "headline": "Richard Sutton's new post on scaling reopens the Bitter Lesson debate",
-      "why_read": "Paired with Langford's exit from Microsoft, it's the weekend's clearest argument about whether research or scale wins.",
-      "body": [
-        "Sutton's original Bitter Lesson argued that general methods using more compute beat hand-built human knowledge over time. His new statement, made as large language models keep scaling, set off a round of reactions. Pedro Domingos read it as a shift away from the Bitter Lesson. François Chollet and others said scaling multiplies good ideas, but clever ideas scale even better.",
-        "Researchers including Albert Gu and Aleksa Gordić agreed the field needs algorithmic breakthroughs to get more out of compute. In other words, scale and new ideas together, not one or the other."
-      ],
-      "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2119169787947270609",
-      "discuss_url": "https://x.com/i/trending/2119169787947270609",
-      "interests": [
-        "ai"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "ast-blacklift-rocket",
-      "kicker": "SPACE",
-      "headline": "AST SpaceMobile reveals Blacklift, a reusable 20-ton rocket with Firefly engines",
-      "why_read": "Another satellite company decides it has to own its launches.",
-      "body": [
-        "AST SpaceMobile unveiled Blacklift, a 20-ton reusable rocket using Firefly Aerospace engines, meant to carry up to five BlueBird satellites per mission starting in late 2028. According to X's summary, the deal is worth more than $1.3 billion and covers 36 engines for the first three rockets, an $800 million upfront payment in cash and shares, and a perpetual license for AST to build the engines itself.",
-        "The goal is vertical integration from satellite production in Texas through launch. Some experts doubt the two-year development timeline."
-      ],
-      "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2118686644395966505",
-      "discuss_url": "https://x.com/i/trending/2118686644395966505",
-      "interests": [
-        "space"
-      ],
-      "lead": false,
-      "featured": false
-    },
-    {
-      "id": "nigeria-solar-1-7gw",
-      "kicker": "ENERGY",
-      "headline": "Nigeria is on track for 1.7 GW of new solar in 2026 as households route around the grid",
-      "why_read": "Energy tech is moving fastest where the grid is weakest.",
-      "body": [
-        "With an unreliable grid, Nigerian households and businesses are switching to solar. Projections call for 1.7 GW of new installations in 2026, nearly 40% of current grid supply. Success stories describe systems producing power worth 3.7 million naira a year, far cheaper than diesel generators.",
-        "The pushback is about cost and fairness. Upfront prices run into the millions of naira, and many people argue that reliable electricity is something the government should provide, not something citizens should have to buy for themselves."
-      ],
-      "authors": [
-        "X News"
-      ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2119105537321193761",
-      "discuss_url": "https://x.com/i/trending/2119105537321193761",
+      "source_url": "https://x.com/TheATX1/status/2118854804302881189",
+      "discuss_url": "https://x.com/TheATX1/status/2118854804302881189",
       "interests": [
         "science",
         "systems"
@@ -611,43 +518,90 @@
       "featured": false
     },
     {
-      "id": "fsd-v14-3-13-intervention",
-      "kicker": "TESLA",
-      "headline": "An FSD v14.3.13 driver posts a \"pretty dangerous\" intervention",
-      "why_read": "Anand bookmarked this: a real-world failure on the latest build, posted the same week Tesla is promoting Cybercab.",
+      "id": "ketchup-benchup-rust-webgpu",
+      "kicker": "OPEN SOURCE",
+      "headline": "An open-source SketchUp alternative built in Rust and WebGPU",
+      "why_read": "Free, no account, runs in the browser or on desktop, and imports SketchUp geometry. A good weekend project tool and a neat Rust-on-the-web showcase.",
       "body": [
-        "Aryan Butala posted video of a disengagement on FSD v14.3.13, which he called the latest software. He says the car missed a highway on-ramp it was routed to take. It then showed no sign of slowing down or changing lanes to avoid a sign ahead, so he had to take over.",
-        "It's one driver's clip, not a statistic. But posts like this are how edge cases come to light between releases, and it's worth watching while Tesla runs Cybercab rides in Austin."
+        "Posted to HN as KetchUp and now presented as BenchUp, the app is a free 3D modeler aimed at woodworking and furniture design. You sketch lines and rectangles, Push/Pull faces into solids, snap to geometry, type exact lengths, and organize with groups, components, and tags.",
+        "It runs on Windows, macOS, Linux, or a desktop browser, autosaves locally, saves portable .ketchup projects, imports SketchUp geometry, and exports OBJ. It's MIT-licensed and written in Rust."
       ],
       "authors": [
-        "Aryan Butala"
+        "BenchUp"
       ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/butala_aryan/status/2118912049686233111",
-      "discuss_url": "https://x.com/butala_aryan/status/2118912049686233111",
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://ketchup3d.github.io/app/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50418176",
       "interests": [
-        "tesla"
+        "systems"
       ],
       "lead": false,
       "featured": false
     },
     {
-      "id": "coinbase-ceo-agent-network",
-      "kicker": "AI AGENTS",
-      "headline": "Coinbase's Brian Armstrong runs a team of AI agents under a chief-of-staff agent",
-      "why_read": "A CEO's version of a bot fleet with a chief of staff in charge. It looks a lot like Anand's own setup.",
+      "id": "dux-wayland-desktop-shell",
+      "kicker": "LINUX",
+      "headline": "Dux is a free, open-source desktop shell for niri, Hyprland, and Sway",
+      "why_read": "Tiling Wayland compositors are great until you want a polished panel, file manager, and theming. Dux bundles all of that.",
       "body": [
-        "According to X's news summary, Armstrong runs one lead AI agent for each area he focuses on, all reporting to a chief-of-staff agent that feeds a single prioritized queue with screenshots and video demos. Over time it builds a \"Brian brain\" that learns his preferences, while humans still review the work and security checks stay in place.",
-        "Box CEO Aaron Levie and others report order-of-magnitude productivity gains from multi-agent setups. The open question is how fast the gap grows between people who manage agents and people who don't."
+        "Dux pairs a modern shell with smooth animations and widgets for media, weather, calendar, and system controls with a keyboard-first file manager that has tabs, split view, and network shares. It also includes a stateless system monitor, a greetd greeter, fast file search, and calendar sync with Google, Microsoft, CalDAV, and iCloud.",
+        "Its theming engine generates matching colors for GTK3, GTK4, Qt, terminals, and editors, including a custom 16-color palette tuned for contrast in light and dark modes. It's supported by sponsors and more than 115 Ko-fi backers."
       ],
       "authors": [
-        "X News"
+        "Dux Labs"
       ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2119219682615885989",
-      "discuss_url": "https://x.com/i/trending/2119219682615885989",
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://duxlabs.dev/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50416053",
+      "interests": [
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "declarative-dragging",
+      "kicker": "INTERFACES",
+      "headline": "Declarative dragging: say what a diagram can become, and drag-and-drop falls out",
+      "why_read": "Making things draggable usually means fiddly geometry code. This research flips it around, and the demos are a joy to play with.",
+      "body": [
+        "Joshua Horowitz, Andrew Blinn, and Jeffrey Heer propose that instead of programming drag behavior, you declare which future states dragging an element can lead to. Their system speculatively renders those states and blends the possible worlds into a smooth, responsive interaction.",
+        "The approach is composable, with modifiers for floating, snapping, and transitions, and it ships as Dragology, a library for SVG interfaces on the web. The authors find it especially suited to explorable explanations that show the same system from several perspectives."
+      ],
+      "authors": [
+        "Joshua Horowitz",
+        "Andrew Blinn",
+        "Jeffrey Heer"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://declarative-dragging.github.io/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50368481",
+      "interests": [
+        "systems",
+        "science"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "fight-ai-brain-fry",
+      "kicker": "AI WORKFLOW",
+      "headline": "How one developer stopped drowning in 20 parallel agent sessions",
+      "why_read": "If juggling Claude Code and Codex tabs leaves you fried, this is a practical system: a ticket queue in git and a single inbox for decisions only you can make.",
+      "body": [
+        "Sergey Kuhne describes the familiar spiral: start a task, start another while the first runs, then each reply spawns follow-ups until you're holding twenty contexts in your head. He decided the real problems were sequencing and context.",
+        "His fix keeps every ticket as a markdown file in the repo, with the board as a committed snapshot, and an agent works that board in cycles, building only tickets a human marked safe and never deploying to production. Anything needing judgment lands in one prioritized owner inbox, so nothing important lives in a chat window or in his head."
+      ],
+      "authors": [
+        "Sergey Kuhne"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
+      "discuss_url": "https://news.ycombinator.com/item?id=50416363",
       "interests": [
         "ai"
       ],
@@ -655,25 +609,68 @@
       "featured": false
     },
     {
-      "id": "spacex-arizona-ai-campus",
-      "kicker": "AI INFRASTRUCTURE",
-      "headline": "SpaceX pitches a 747-acre AI data-center campus near Cochise, Arizona — zoning hearing Dec. 9",
-      "why_read": "Rural Arizona just became the newest front in the AI power fight: SpaceX is selling jobs and tax cuts while neighbors collect signatures against a multi-gigawatt campus.",
+      "id": "rip-harvest",
+      "kicker": "SOFTWARE",
+      "headline": "RIP, Harvest: a beloved invoicing tool gets a 10x price hike",
+      "why_read": "A clean case study in what happens to simple, focused SaaS after a private-equity-style acquisition. Freelancers in the comments share their replacements.",
       "body": [
-        "At a packed Nov. 4 town hall at Cochise Elementary School, SpaceX — filing as Tombstone Resources LLC — laid out plans for a roughly 747-acre AI compute campus near Cochise, Arizona. Representative Riley Trettel described up to about 6 gigawatts across four phases, nine computing buildings, battery storage, and water use framed as comparable to 20–30 homes. Reported local pitches included potential 10–40% cuts in power bills, about $53 million a year for community programs, roughly 1,000 permanent jobs, and county-wide tax relief.",
-        "About 275–300 residents attended; an opposition petition was reported past 1,700 signatures over water, power strain, and rural character. The county zoning commission is set to hear the case on December 9 — a live test of whether AI campuses can still clear local politics after a midterm night that hammered data-center ballots elsewhere."
+        "Kyle Kingsbury (aphyr) used Harvest for about a decade to track time and send invoices, and praised it as exactly what small-business software should be: focused, reliable, and reasonably priced. After Bending Spoons bought it in 2025, his price went from $13.32 to $133.98 a month.",
+        "He wrote to support and found the replies now come from a language model. The comments recommend alternatives like Cushion, Odoo, and a local-first time tracker that saves to plain text."
       ],
       "authors": [
-        "X News",
-        "SpaceX"
+        "Kyle Kingsbury"
       ],
-      "source": "x",
-      "source_label": "X",
-      "source_url": "https://x.com/i/trending/2118353928991715723",
-      "discuss_url": "https://x.com/i/trending/2118353928991715723",
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://aphyr.com/posts/427-rip-harvest",
+      "discuss_url": "https://news.ycombinator.com/item?id=50420035",
       "interests": [
-        "ai",
-        "space"
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "quasi-log-kitchen-timer",
+      "kicker": "MAKER",
+      "headline": "lcamtuf builds a kitchen timer with a quasi-logarithmic analog dial",
+      "why_read": "A delightful bit of engineering and design math: a dial that's precise for short times and still readable for long ones.",
+      "body": [
+        "Annoyed by clunky appliance timers and imprecise wind-up ones, lcamtuf built a digital timer with an old-school analog display and a single adjustment knob.",
+        "A true log scale doesn't suit minutes and seconds, so he split the dial into linear sections: ten-second ticks up to one minute, minute marks from 1 to 5 minutes, five-minute marks from 5 to 30, and so on. It's the kind of small, careful build that makes you want to grab a soldering iron."
+      ],
+      "authors": [
+        "lcamtuf"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://blog.coredump.cx/p/quasi-logarithmic-kitchen-timer",
+      "discuss_url": "https://news.ycombinator.com/item?id=50373768",
+      "interests": [
+        "science",
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "time-capsules-go-missing",
+      "kicker": "HISTORY",
+      "headline": "Nine out of every 10 time capsules go missing",
+      "why_read": "A charming long read for the coffee break, starting with the 1976 Bicentennial Wagon Train and what happened to the time capsules people buried.",
+      "body": [
+        "Ashley Stimpson's Longreads feature opens with the Bicentennial Wagon Train, five caravans of up to 300 horse-drawn wagons that rolled toward Valley Forge for July 4, 1976, collecting signatures on rededication scrolls along the way.",
+        "From there it follows the strange afterlife of time capsules, most of which are never recovered because nobody remembers where they went. It's a gentle reminder that preserving the past takes more than burying it."
+      ],
+      "authors": [
+        "Ashley Stimpson"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://longreads.com/2026/11/05/time-capsules-ashley-stimpson/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50405979",
+      "interests": [
+        "science"
       ],
       "lead": false,
       "featured": false
