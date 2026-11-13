@@ -1,679 +1,678 @@
 {
- "date": "2026-11-12",
- "weekday": "Thursday",
- "title": "The Daily Diff",
- "stories": [
-  {
-   "id": "robotaxi-24-7-every-city",
-   "kicker": "ROBOTAXI",
-   "headline": "Tesla Robotaxi now runs 24/7 in every city it serves",
-   "why_read": "Round-the-clock service is the clearest sign yet that Tesla trusts its driving software at night and at scale, and it lands the same week San Antonio became the eighth Robotaxi city.",
-   "body": [
-    "Tesla's Robotaxi account posted a two-line update: the service now runs 24/7 in every city where it is available. The post drew thousands of reposts within hours, and fans read it as a signal that FSD performance has cleared another bar, since overnight hours bring darker roads and fewer remote-support staff.",
-    "It follows the expansion of unsupervised service to San Antonio, a 274-square-mile area and Tesla's eighth Robotaxi city, which helped push the stock up more than 3.5% toward $395 on November 11. The open questions are when Cybercab additions to the fleet resume and when Robotaxi starts taking freeways, which would open up airport and cross-town trips."
-   ],
-   "authors": [
-    "Tesla Robotaxi"
-   ],
-   "source": "x",
-   "source_label": "X",
-   "source_url": "https://x.com/robotaxi/status/2120736143566344324",
-   "discuss_url": "https://x.com/robotaxi/status/2120736143566344324",
-   "interests": [
-    "tesla"
-   ],
-   "lead": true,
-   "featured": false
-  },
-  {
-   "id": "nvidia-board-oust-huang",
-   "kicker": "AI CHIPS",
-   "headline": "Nvidia is reportedly preparing to oust CEO Jensen Huang",
-   "why_read": "The company that sells the shovels for the whole AI boom may change leaders for the first time in its history. That affects GPU roadmaps, China export politics and every lab's compute plans.",
-   "body": [
-    "The Wall Street Journal reports that Nvidia is preparing to remove Jensen Huang, who co-founded the company and has run it for more than three decades. The story follows Huang's apology to staff over a personal relationship and a board review of an associate's alleged links to Chinese intelligence; some reports say that review found no security breach.",
-    "The Hacker News thread passed 1,000 points and 1,400 comments within hours, and X is full of memes and theories, including claims that rivals are fueling the coverage. Watch for an official board statement, an interim CEO name, and how customers like the big labs and hyperscalers react."
-   ],
-   "authors": [
-    "The Wall Street Journal"
-   ],
-   "source": "hn",
-   "source_label": "HN",
-   "source_url": "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad",
-   "discuss_url": "https://news.ycombinator.com/item?id=50459703",
-   "interests": [
-    "ai",
-    "systems"
-   ],
-   "lead": true,
-   "featured": false
-  },
-  {
-   "id": "anthropic-broker-call-trillion",
-   "kicker": "AI MARKETS",
-   "headline": "On a pre-IPO broker call, Anthropic pitched $1 trillion in yearly revenue by 2028",
-   "why_read": "The leaked call shows how the company is selling its Nasdaq debut: winner-take-all AI, a giant compute bill, and investor returns as an afterthought.",
-   "body": [
-    "Anthropic's shares are set to start trading on Nasdaq under the ticker ANT around November 19. A summary of a broker call that leaked online has executives describing AI as a winner-take-all market and aiming for $1 trillion in annual revenue by late 2028, up from a reported $81 billion run rate at the end of October.",
-    "The pitch leans on more than $1 trillion of committed infrastructure spending and openly targets hyperscalers, rival labs and chipmakers. Analysts were also told that Anthropic's compute contract with SpaceX won't run past the middle of next year. Reactions range from '$ANT' hype to skeptics pointing out how much the company still depends on the cloud giants it says it will disrupt."
-   ],
-   "authors": [
-    "X News"
-   ],
-   "source": "x",
-   "source_label": "X",
-   "source_url": "https://x.com/i/trending/2120685331737637201",
-   "discuss_url": "https://x.com/i/trending/2120685331737637201",
-   "interests": [
-    "ai"
-   ],
-   "lead": false,
-   "featured": true
-  },
-  {
-   "id": "grok-4-8-pretraining-c-rewrite",
-   "kicker": "GROK",
-   "headline": "Grok 4.8 finishes pre-training after SpaceXAI rewrote its stack in C and C++",
-   "why_read": "Dropping JAX and SGLang for hand-written C/C++ is an unusual systems bet for a frontier lab, and a soft rollout to Bot users is expected this week.",
-   "body": [
-    "Elon Musk says Grok 4.8 has finished pre-training after SpaceXAI rebuilt its reinforcement learning and inference stack from scratch in C and C++, replacing JAX and SGLang. The rewrite cost time, but Musk says the model will be very different from Grok 4.7, with evals climbing ahead of a soft launch to Bot users.",
-    "SpaceX VP Kiko Dontchev shared an early industrial win: Grok spots debris in aerospace parts with 99.9% accuracy, compared with 94% for human inspectors, and cuts the task from hours to seconds. Musk's summary of the approach: 'Real men manage their own memory.'"
-   ],
-   "authors": [
-    "X News"
-   ],
-   "source": "x",
-   "source_label": "X",
-   "source_url": "https://x.com/i/trending/2119896713062469871",
-   "discuss_url": "https://x.com/i/trending/2119896713062469871",
-   "interests": [
-    "ai",
-    "systems"
-   ],
-   "lead": false,
-   "featured": true
-  },
-  {
-   "id": "apache-httpd-http2-rce",
-   "kicker": "SECURITY",
-   "headline": "Critical remote code execution bug in Apache HTTP Server's HTTP/2 module",
-   "why_read": "Wiz says 64% of cloud environments have vulnerable resources and about half expose them publicly, so check your httpd versions today.",
-   "body": [
-    "CVE-2026-119618 is a race condition in mod_http2's assign_headers() function. An unauthenticated remote attacker can use it to corrupt heap memory and run code with the web server's privileges. Anthropic and Google Cloud's vulnerability research team found it independently, and there is no public exploit or known exploitation yet.",
-    "Apache HTTP Server 2.4.55 through 2.4.70 is affected, and 2.4.71 fixes it. Standalone mod_h2 builds also need upgrading. If you can't patch right away, the stopgap is to turn off HTTP/2 by setting 'Protocols http/1.1' in httpd.conf."
-   ],
-   "authors": [
-    "Wiz Research"
-   ],
-   "source": "hn",
-   "source_label": "HN",
-   "source_url": "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability",
-   "discuss_url": "https://news.ycombinator.com/item?id=50462177",
-   "interests": [
-    "systems"
-   ],
-   "lead": false,
-   "featured": true
-  },
-  {
-   "id": "aws-emulator-open-source",
-   "kicker": "DEVTOOLS",
-   "headline": "AWS releases an official local emulator for its APIs",
-   "why_read": "You can now test AWS code on a laptop or in CI without an account or a bill, using a first-party tool instead of third-party mocks. It's one of the top Hacker News posts of the day.",
-   "body": [
-    "AWS Emulator is a local program that serves AWS API endpoints, so you can point the AWS CLI or any SDK at it and run your code unchanged. It needs no AWS account and has no service fee. In server mode it runs as a Linux package or a container. An embedded mode for Rust tests runs an isolated instance inside each test with nothing to configure.",
-    "AWS publishes fidelity scores for each service with every release and tracks known gaps right in the repo. There's even an aws-emulator skill so coding agents can set it up for you. AWS says it's for building and testing only, not production or security testing."
-   ],
-   "authors": [
-    "AWS"
-   ],
-   "source": "hn",
-   "source_label": "HN",
-   "source_url": "https://github.com/aws/aws-emulator",
-   "discuss_url": "https://news.ycombinator.com/item?id=50456631",
-   "interests": [
-    "systems",
-    "ai"
-   ],
-   "lead": false,
-   "featured": true
-  },
-  {
-   "id": "tim-peters-dies",
-   "kicker": "IN MEMORIAM",
-   "headline": "Tim Peters, author of the Zen of Python and inventor of Timsort, has died",
-   "why_read": "Anyone who has typed 'import this' or sorted a list in Python, Java or Android has used his work. Guido van Rossum's tribute is worth reading in full.",
-   "body": [
-    "Guido van Rossum announced that Tim Peters died on July 15. Peters found Python soon after its first release, and his first contribution was convincing Guido that ints and floats should mix in arithmetic. On the mailing lists he became 'Timbot', known for careful, patient answers marked with his trademark <wink>.",
-    "He wrote PEP 20, the Zen of Python. In 2002 he designed Timsort for Python lists, and Java and Android later adopted it. Guido credits him with setting the tone of early core development: never dismissing people, and always explaining why something would or wouldn't work."
-   ],
-   "authors": [
-    "Guido van Rossum"
-   ],
-   "source": "hn",
-   "source_label": "HN",
-   "source_url": "https://discuss.python.org/t/in-memoriam-tim-peters-1952-2026/110028",
-   "discuss_url": "https://news.ycombinator.com/item?id=50450488",
-   "interests": [
-    "systems"
-   ],
-   "lead": false,
-   "featured": true
-  },
-  {
-   "id": "deepseek-v5-huawei-ascend",
-   "kicker": "OPEN MODELS",
-   "headline": "DeepSeek is reportedly training its 2-trillion-parameter V5 on Huawei Ascend chips",
-   "why_read": "If it's true, a frontier-scale open model trained without Nvidia would be the strongest test yet of whether US export controls are working.",
-   "body": [
-    "Reports say DeepSeek is pretraining V5, a 2-trillion-parameter model, on Huawei's Ascend 950 and 950DT accelerators, with Huawei engineers on site and a large data center planned in Inner Mongolia by late 2026.",
-    "Some observers say export controls have backfired by speeding up China's chip industry. Skeptics point out that earlier 'homegrown' claims still involved Nvidia hardware. Meanwhile, Chinese labs face another obstacle as Anthropic has cut off large-scale distillation of its models."
-   ],
-   "authors": [
-    "X News"
-   ],
-   "source": "x",
-   "source_label": "X",
-   "source_url": "https://x.com/i/trending/2120707674517963219",
-   "discuss_url": "https://x.com/i/trending/2120707674517963219",
-   "interests": [
-    "ai"
-   ],
-   "lead": false,
-   "featured": true
-  },
-  {
-   "id": "gemini-decisions-api",
-   "kicker": "AI PLATFORMS",
-   "headline": "Google's Gemini Decisions API answers up to 1,000 yes/no questions in one pass",
-   "why_read": "Model routing, tool selection and policy checks are the glue in every agent stack. Google now offers a model built for those quick choices that returns calibrated confidence scores instead of generated text.",
-   "body": [
-    "The new endpoint runs on a model called gemini-decision-1. You send one multimodal input of up to 256K tokens of text, images, audio, video or PDFs, plus up to 1,000 independent yes/no, multiple-choice or rubric questions. Instead of writing answers token by token, it returns a probability for every question in a single pass.",
-    "Google pitches it for tool selection, policy checks, model routing and context grading, the bounded decisions agents make constantly. It's available now in Google AI Studio with Python, JavaScript and REST guides."
-   ],
-   "authors": [
-    "Google DeepMind"
-   ],
-   "source": "hn",
-   "source_label": "HN",
-   "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
-   "discuss_url": "https://news.ycombinator.com/item?id=50456791",
-   "interests": [
-    "ai"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "gemini-4-hydrogen-spotted",
-   "kicker": "AI MODELS",
-   "headline": "Gemini 4 Hydrogen shows up in Google Cloud's billing catalog",
-   "why_read": "A cheap, fast Flash-tier Gemini 4 would put pressure on every mid-priced model, and the listing suggests a launch is close.",
-   "body": [
-    "Community researchers found Gemini 4 Hydrogen in Google Cloud's public billing catalog on November 12, with prices for text, image, audio and video input. It's described as a Flash-tier model about five times faster than earlier versions, priced at $1.50 per million input tokens and roughly 60% cheaper than Gemini 4 Carbon in some comparisons.",
-    "It would follow the recent Carbon and Argon releases, which shows how quickly Google is shipping Gemini 4 models."
-   ],
-   "authors": [
-    "X News"
-   ],
-   "source": "x",
-   "source_label": "X",
-   "source_url": "https://x.com/i/trending/2120764094307344695",
-   "discuss_url": "https://x.com/i/trending/2120764094307344695",
-   "interests": [
-    "ai"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "gpt-6-2-astra-sol-hint",
-   "kicker": "AI MODELS",
-   "headline": "OpenAI's Codex lead hints at a 'codexy' Thursday, and watchers expect GPT-6.2",
-   "why_read": "If GPT-6.2 Astra and Sol ship with a usage reset, Codex users will want to compare them against Claude Fable 5.2 right away.",
-   "body": [
-    "Tibo Sottiaux, who works on Codex and ChatGPT, posted cryptic hints about a 'banked reset' and a 'codexy' Thursday. Community watchers take that to mean GPT-6.2 Astra and Sol could launch around November 13, along with a reset of Codex usage limits.",
-    "The timing follows Anthropic's Claude Fable 5.2 launch, which currently leads agent benchmarks, and a leaked benchmark showing an unreleased OpenAI model at the top. OpenAI hasn't confirmed anything yet."
-   ],
-   "authors": [
-    "X News"
-   ],
-   "source": "x",
-   "source_label": "X",
-   "source_url": "https://x.com/i/trending/2120427196842135608",
-   "discuss_url": "https://x.com/i/trending/2120427196842135608",
-   "interests": [
-    "ai"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "qwen4-max-preview",
-   "kicker": "OPEN MODELS",
-   "headline": "Alibaba previews Qwen4-Max with a 1M-token context and OpenAI- and Anthropic-compatible APIs",
-   "why_read": "Qwen is the Chinese model family most often run in local and self-hosted setups, so its next flagship matters for open-model users.",
-   "body": [
-    "Alibaba's Qwen team released a preview of Qwen4-Max, its next flagship, aimed at complex coding, knowledge work and professional tasks. It accepts text, images and video, has a 1 million token context window and tool calling, and works with both OpenAI-style and Anthropic-style APIs. The preview is available through November 25.",
-    "Early testers have built restaurant sites, story platforms and virtual showrooms with it, but they also report slowdowns, hallucinations and uneven results while official benchmarks are still pending."
-   ],
-   "authors": [
-    "X News"
-   ],
-   "source": "x",
-   "source_label": "X",
-   "source_url": "https://x.com/i/trending/2120340656795042196",
-   "discuss_url": "https://x.com/i/trending/2120340656795042196",
-   "interests": [
-    "ai"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "runway-praxis-1-robots",
-   "kicker": "ROBOTICS",
-   "headline": "Runway's open Praxis-1 learns robot actions from ordinary video",
-   "why_read": "A 27B open robotics model that adapts to real hardware in minutes points to video prediction as a path to physical AI.",
-   "body": [
-    "Praxis-1 is a 27-billion-parameter model trained on video data. It tops Nvidia's RoboLab-120 leaderboard with a 46.2% success rate and reaches 80% on benchmarks after quick fine-tuning for robots such as Google's RT-1.",
-    "Co-founder Anastasis Germanidis argues that learning to predict pixels teaches a model how to act. Weights and tooling are on Hugging Face and GitHub, with LeRobot support for people building arms and humanoids."
-   ],
-   "authors": [
-    "X News"
-   ],
-   "source": "x",
-   "source_label": "X",
-   "source_url": "https://x.com/i/trending/2120542571680436564",
-   "discuss_url": "https://x.com/i/trending/2120542571680436564",
-   "interests": [
-    "ai"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "pan-2-physics-world-model",
-   "kicker": "WORLD MODELS",
-   "headline": "PAN 2 is an open world model that predicts up to 20 seconds of physically plausible video",
-   "why_read": "Physics-grounded simulation is how robots and agents test actions before trying them for real, and this one is fully Apache 2.0.",
-   "body": [
-    "MBZUAI's Institute of Foundation Models released PAN 2, a 29-billion-parameter model that takes a scene and a description of an action and predicts the resulting video for up to 20 seconds, keeping time, space and physics consistent.",
-    "Demos include a strawberry splashing into milk, a cat leaving paw prints after a puddle, and a hammer and feather falling together on the Moon. Weights and code are open under Apache 2.0, and the team says it leads open-weight leaderboards for robotics and agent-planning use."
-   ],
-   "authors": [
-    "X News"
-   ],
-   "source": "x",
-   "source_label": "X",
-   "source_url": "https://x.com/i/trending/2120209108053721283",
-   "discuss_url": "https://x.com/i/trending/2120209108053721283",
-   "interests": [
-    "ai",
-    "science"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "claude-jeep-smog-fix",
-   "kicker": "HUMAN INTEREST",
-   "headline": "A tinkerer used Claude and a $3 Arduino to get his 1994 Jeep through smog",
-   "why_read": "A practical example of an AI model decoding an obscure pre-OBD-II protocol so a hobbyist could fix a real car for about $15.",
-   "body": [
-    "Muhammad Zulali connected three wires and a cheap Arduino to his 1994 Jeep Cherokee's engine computer. Claude helped him decode the old SCI protocol, log sensor data while driving, and find a California-specific fuel table that was causing high NOx readings on his smog test.",
-    "He sent a corrected program over the same wires, passed the test, and published the project as xj-scanner on GitHub, with wiring diagrams and AI instructions for other 1991–95 Jeep and Chrysler owners."
-   ],
-   "authors": [
-    "X News"
-   ],
-   "source": "x",
-   "source_label": "X",
-   "source_url": "https://x.com/i/trending/2120269286375858574",
-   "discuss_url": "https://x.com/i/trending/2120269286375858574",
-   "interests": [
-    "ai"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "united-bans-ai-agents",
-   "kicker": "AGENTS",
-   "headline": "United Airlines bans personal AI agents from booking flights",
-   "why_read": "This is one of the first big consumer brands to block agentic commerce outright. Expect other airlines and retailers to make the same choice.",
-   "body": [
-    "United says it will restrict unauthorized third-party AI agents on its own platforms and through travel agencies and aggregators. It argues that sharing credentials with an assistant can expose personal data and lead to unintended purchases, account changes or MileagePlus spending.",
-    "It also cites federal rules, such as travelers confirming in person that their bags hold no banned items. Analyst Henry Harteveldt reads it as United wanting to keep control of booking rather than add another powerful middleman. The Hacker News thread has nearly 600 comments."
-   ],
-   "authors": [
-    "CBS News"
-   ],
-   "source": "hn",
-   "source_label": "HN",
-   "source_url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
-   "discuss_url": "https://news.ycombinator.com/item?id=50458900",
-   "interests": [
-    "ai"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "lock-github-actions",
-   "kicker": "DEVOPS",
-   "headline": "GitHub Actions now supports workflow lockfiles",
-   "why_read": "You get supply-chain safety without unreadable SHA pins: workflows go back to version tags while a lockfile pins the exact commits.",
-   "body": [
-    "The old advice was to pin every action to a full commit SHA, because tags can be moved to malicious code. With lockfiles, you install the github/gh-actions-lock extension for the gh CLI and run 'gh actions-lock' in your repo.",
-    "Hugo van Kemenade walks through how this rewrites workflows back to readable tags like actions/checkout@v7.0.1 and generates a lockfile that records what each tag resolved to. That gives you the same protection with much nicer diffs."
-   ],
-   "authors": [
-    "Hugo van Kemenade"
-   ],
-   "source": "hn",
-   "source_label": "HN",
-   "source_url": "https://hugovk.dev/blog/2026/lock-github-actions/",
-   "discuss_url": "https://news.ycombinator.com/item?id=50459485",
-   "interests": [
-    "systems"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "jane-street-smoke-alarm-datacenter",
-   "kicker": "WAR STORIES",
-   "headline": "How a false smoke alarm nearly flooded Jane Street's only NYC datacenter",
-   "why_read": "A great incident story for anyone who has run on-prem infrastructure: no cooling, sprinklers coming, and a team racing to pull power cords.",
-   "body": [
-    "Former Jane Street systems engineer Michael Bacarella describes the firm's machine room inside 1 New York Plaza. It was kept next to the trading floor so runaway trading systems could always be shut down by pulling plugs, a habit that came from a partner who had served on a nuclear submarine.",
-    "Then a false smoke alarm shut off cooling and set the sprinklers on a countdown, and the team sprinted to pull every power cord before the water came. It reads like a lesson in risk culture, physical kill switches and plain luck."
-   ],
-   "authors": [
-    "Michael Bacarella"
-   ],
-   "source": "hn",
-   "source_label": "HN",
-   "source_url": "https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/",
-   "discuss_url": "https://news.ycombinator.com/item?id=50455394",
-   "interests": [
-    "systems"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "jane-street-socratic-tutor-skill",
-   "kicker": "AGENT SKILLS",
-   "headline": "Jane Street open-sources a Socratic tutor skill for coding agents",
-   "why_read": "It's a well-designed skill file for turning an agent into a teacher that quizzes you, and you could drop it into your own setup today.",
-   "body": [
-    "The skill in janestreet/agent_skills breaks a topic into 4 to 10 subskills, runs a 3- to 5-question diagnostic before teaching anything, and tracks each subskill on a 0–5 scale from 'unaware' to 'can teach it'. From there it teaches mainly by asking questions that make you predict and explain.",
-    "It also has a guard: one-off 'explain X' questions get a normal answer, and when your intent is unclear it asks one short question before starting a tutoring session. The post reached 320 points on Hacker News."
-   ],
-   "authors": [
-    "Jane Street"
-   ],
-   "source": "hn",
-   "source_label": "HN",
-   "source_url": "https://github.com/janestreet/agent_skills/blob/master/socratic-tutor/SKILL.md",
-   "discuss_url": "https://news.ycombinator.com/item?id=50438261",
-   "interests": [
-    "ai"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "ai-agents-maya-site-lidar",
-   "kicker": "SCIENCE",
-   "headline": "AI agents combed NASA lidar and found a Maya site in 72 hours, though it had already been mapped",
-   "why_read": "A fun, honest account of agentic research: fast, impressive, and still able to miss a 2025 paper in the literature review.",
-   "body": [
-    "Pietro Miotti, who says he isn't an archaeologist, set AI agents loose on NASA lidar data of Mexico. In under 72 hours he went from an idea he had while traveling to an official reply from the Mexican government about a hilltop site missing from INAH's national register.",
-    "In an update he notes that Estrada-Belli et al. had already mapped the site in 2025, so the agents rediscovered it. He says the rest of the story still holds, and the post passed 1,000 points on Hacker News."
-   ],
-   "authors": [
-    "Pietro Miotti"
-   ],
-   "source": "hn",
-   "source_label": "HN",
-   "source_url": "https://pietromiotti.com/latest/maya-site",
-   "discuss_url": "https://news.ycombinator.com/item?id=50452455",
-   "interests": [
-    "ai",
-    "science"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "torus-500m-modular-datacenters",
-   "kicker": "ENERGY TECH",
-   "headline": "Torus raises $500 million to bring AI compute to spare grid power",
-   "why_read": "Instead of waiting years for grid interconnects, it ships container-sized GPU pods to sites that already have power, which is energy tech and AI infrastructure at once.",
-   "body": [
-    "The Salt Lake City startup closed a $500 million Series C led by Magnetar. Its Foundry units pack compute, storage, cooling and networking into shipping-container pods of 1 to 20 megawatts that can be deployed in 12 to 16 weeks at factories or businesses with unused grid capacity.",
-    "Early customers like Hydra Host already have thousands of GPUs online, and more than 47,000 are planned by 2027. The pods use waterless cooling."
-   ],
-   "authors": [
-    "X News"
-   ],
-   "source": "x",
-   "source_label": "X",
-   "source_url": "https://x.com/i/trending/2120601810305941832",
-   "discuss_url": "https://x.com/i/trending/2120601810305941832",
-   "interests": [
-    "ai",
-    "systems",
-    "science"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "ramp-ai-index-october",
-   "kicker": "AI SPEND",
-   "headline": "Business AI spending barely grew in October even as token use kept rising",
-   "why_read": "Ramp's card data suggests falling prices are absorbing usage growth, a useful counterpoint to the trillion-dollar IPO pitches.",
-   "body": [
-    "Ramp's AI Index, built from US business transaction data, shows total AI token spend up just 2% month over month to a new high. OpenAI grew 2% and Anthropic 0.5% to 1%, after earlier double-digit jumps. Engineering teams accounted for 72% of spend.",
-    "Token volumes grew faster than spending because prices fell more than 20% with more efficient models. Critics note that Ramp mostly sees API payments, not subscriptions, and that a small group of top spenders drives much of the total."
-   ],
-   "authors": [
-    "X News"
-   ],
-   "source": "x",
-   "source_label": "X",
-   "source_url": "https://x.com/i/trending/2120627642575597935",
-   "discuss_url": "https://x.com/i/trending/2120627642575597935",
-   "interests": [
-    "ai"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "cursor-projects-multiplayer",
-   "kicker": "AI CODING",
-   "headline": "Cursor rebuilds Projects for multiplayer, so teammates' agents can coordinate",
-   "why_read": "Shared agent workspaces are where team AI coding is headed, and you've been asking for clear HOWTOs on combining this with Grok Bot and pStack.",
-   "body": [
-    "Cursor says your agents can now coordinate with your teammates' agents. Projects has been rebuilt so every teammate and their agents work together in one shared workspace.",
-    "The open question for enterprises is how the pieces fit together. In replies, you asked Cursor's team for detailed HOWTOs, webinars and recorded videos showing Grok Bot, multiplayer Projects and pStack working together."
-   ],
-   "authors": [
-    "Cursor"
-   ],
-   "source": "x",
-   "source_label": "X",
-   "source_url": "https://x.com/cursor_ai/status/2120295553309565139",
-   "discuss_url": "https://x.com/cursor_ai/status/2120295553309565139",
-   "interests": [
-    "ai",
-    "systems"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "grok-bot-1-0",
-   "kicker": "GROK",
-   "headline": "Grok Bot 1.0 is out of beta, with teammates you can share across your team",
-   "why_read": "These are the bots that build this page, and 1.0 makes them team members you can use in Slack, Teams and meetings.",
-   "body": [
-    "The launch post introduces Grok Bot 1.0 as 'AI teammates that work alongside your whole team.' You can share Bots, collaborate with them in Slack and Teams, invite them to meetings, and watch them learn and become more helpful over time.",
-    "Early users have been showing always-on agents for trading dashboards, content and support, and recent updates added iMessage, phone calls, team bots and Tailscale networking."
-   ],
-   "authors": [
-    "Grok Bot"
-   ],
-   "source": "x",
-   "source_label": "X",
-   "source_url": "https://x.com/bot/status/2120582957782200586",
-   "discuss_url": "https://x.com/bot/status/2120582957782200586",
-   "interests": [
-    "ai"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "poteto-trustworthy-coding-agents",
-   "kicker": "AI CODING",
-   "headline": "poteto's talk on turning agent slop into code you can trust",
-   "why_read": "From someone who shipped about 3,000 PRs in a month: concrete steps for making coding agents reliable, plus how to think about verification in a 'software factory'.",
-   "body": [
-    "The Turing Post summarized poteto's talk as 'how to turn slop into gold,' a set of concrete steps for making coding agents trustworthy, starting with cleaning up the codebase. @altryne introduced the talk by quoting poteto's claim of shipping 3,000 PRs last month and predicted it will take off.",
-    "Zach Lloyd recommended it to anyone starting to think about verification and risk assessment in their software factory, which matters more as agent output grows faster than humans can review it."
-   ],
-   "authors": [
-    "The Turing Post"
-   ],
-   "source": "x",
-   "source_label": "X",
-   "source_url": "https://x.com/TheTuringPost/status/2120607968408531110",
-   "discuss_url": "https://x.com/TheTuringPost/status/2120607968408531110",
-   "interests": [
-    "ai",
-    "systems"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "rauchg-agents-new-languages",
-   "kicker": "LANGUAGES",
-   "headline": "Guillermo Rauch: with coding agents, new languages will blossom",
-   "why_read": "A short take on language choice once agents write most of the code, and it fits the wider C vs. Rust argument on X this week.",
-   "body": [
-    "Vercel's CEO calls Rust a superb language and ecosystem 'especially given it was invented pre agentic coding.' He predicts that with agents, new languages will appear, including purpose-built ones, and that people will reach for C or even LLVM IR and assembly when it makes sense.",
-    "It came the same week Congressman Thomas Massie described his C and C++ hardware projects and Elon Musk replied that C gives the best bare-metal performance, with Rust fans quick to defend memory safety."
-   ],
-   "authors": [
-    "Guillermo Rauch"
-   ],
-   "source": "x",
-   "source_label": "X",
-   "source_url": "https://x.com/rauchg/status/2120337388178379178",
-   "discuss_url": "https://x.com/rauchg/status/2120337388178379178",
-   "interests": [
-    "ai",
-    "systems"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "musk-space-solar-8x",
-   "kicker": "SPACE ENERGY",
-   "headline": "Musk: 100 GW of solar in space is worth about 800 GW on Earth",
-   "why_read": "This is the energy math behind SpaceX's orbital data center plans. Read it as the bull case, not settled physics.",
-   "body": [
-    "Replying to critics, Elon Musk argued that 100 GW of solar in space is roughly equal to 800 GW on the ground. His reasoning is that solar on Earth has to be paired with large batteries to keep compute running at night and backed up with combustion or nuclear power in winter.",
-    "The claim supports SpaceX's push to build solar-powered AI data centers in orbit, the reason it is now buying solar cell manufacturing lines for its Bastrop factory."
-   ],
-   "authors": [
-    "Elon Musk"
-   ],
-   "source": "x",
-   "source_label": "X",
-   "source_url": "https://x.com/elonmusk/status/2120613240707420280",
-   "discuss_url": "https://x.com/elonmusk/status/2120613240707420280",
-   "interests": [
-    "space",
-    "science"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "stela-apple-silicon-on-x86",
-   "kicker": "SYSTEMS",
-   "headline": "Stela tries to boot macOS 27 on ordinary x86 PCs by emulating Apple Silicon",
-   "why_read": "An ambitious low-level project: a UEFI boot program, an arm64-to-x86 translator, and a Metal driver for Nvidia GPUs.",
-   "body": [
-    "Stela is a UEFI program that presents itself as an M2 Mac mini and runs macOS 27. Its ahead-of-time and just-in-time translator covers more than 3,000 AArch64 instruction encodings, maps guest registers to host registers, and caches translated code.",
-    "Its Metal driver compiles Apple's AIR shader IR directly to Mesa's NIR for Nvidia GPUs. The author warns it's slow and may not boot yet, so treat it as an impressive work in progress."
-   ],
-   "authors": [
-    "tylertms"
-   ],
-   "source": "hn",
-   "source_label": "HN",
-   "source_url": "https://github.com/tylertms/Stela",
-   "discuss_url": "https://news.ycombinator.com/item?id=50460154",
-   "interests": [
-    "systems"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "apple-query-aware-retrieval",
-   "kicker": "RAG",
-   "headline": "Apple Research: faster vector search by learning what your queries look like",
-   "why_read": "Most vector indexes ignore the queries they will actually get. Apple's work uses that signal to make RAG retrieval cheaper.",
-   "body": [
-    "Maximum inner product search is at the core of recommendation, search and RAG, and it gets expensive with millions of keys and thousands of dimensions. Apple points out that standard approximate methods mostly look at the keys, even though RAG queries are short user questions and the keys are long, curated passages.",
-    "Because production systems usually serve a stable, well-understood query distribution, Apple's researchers build methods tuned for the queries they expect rather than every possible input."
-   ],
-   "authors": [
-    "Apple Machine Learning Research"
-   ],
-   "source": "hn",
-   "source_label": "HN",
-   "source_url": "https://machinelearning.apple.com/research/faster-retrieval",
-   "discuss_url": "https://news.ycombinator.com/item?id=50455633",
-   "interests": [
-    "ai",
-    "systems"
-   ],
-   "lead": false,
-   "featured": false
-  },
-  {
-   "id": "rna-world-origin-of-life",
-   "kicker": "SCIENCE",
-   "headline": "Quanta asks whether life really began in an RNA world",
-   "why_read": "A clear explainer on one of science's biggest chicken-and-egg problems, and the catalytic RNA discovery that seemed to solve it.",
-   "body": [
-    "In modern cells, proteins are needed to copy DNA, and DNA is needed to make proteins. The discovery in the late 1980s of ribozymes, RNA molecules that can catalyze reactions, suggested RNA could once have done both jobs.",
-    "That idea, championed by Walter Gilbert, became the 'RNA world' hypothesis. Quanta looks at how well it holds up as researchers try to show how nucleotides could have formed and joined on the early Earth."
-   ],
-   "authors": [
-    "Quanta Magazine"
-   ],
-   "source": "hn",
-   "source_label": "HN",
-   "source_url": "https://www.quantamagazine.org/did-life-begin-in-an-rna-world-20261109/",
-   "discuss_url": "https://news.ycombinator.com/item?id=50428619",
-   "interests": [
-    "science"
-   ],
-   "lead": false,
-   "featured": false
-  }
- ]
+  "date": "2026-11-13",
+  "weekday": "Friday",
+  "title": "The Daily Diff",
+  "stories": [
+    {
+      "id": "jensen-huang-resigns",
+      "kicker": "AI CHIPS",
+      "headline": "Jensen Huang resigns as Nvidia CEO; Colette Kress steps in as interim chief",
+      "why_read": "Yesterday's edition flagged the board moving against him; now it has happened, and the company that sells the picks and shovels of the AI boom is without its founder for the first time since 1993.",
+      "body": [
+        "Nvidia's board accepted Jensen Huang's resignation as CEO, president and director on Thursday after an inquiry into his personal conduct, according to AP and posts summarized on X. CFO Colette Kress is serving as interim chief while the board searches for a successor, and investor Harvey Jones is now board chair. Reports tie one of the relationships at issue to a woman alleged to have links to Chinese intelligence, and Reuters reports Huang also had a relationship with a second employee. Shares fell sharply on the news.",
+        "Inside the company the mood is mixed. WIRED reviewed an internal suggestion-box post urging the board to weigh employee sentiment that has drawn more than 1,600 comments, many asking for Huang's return. For anyone building on CUDA, the near-term question is less about the roadmap, which runs years ahead, than about who negotiates Nvidia's huge supply and financing commitments from here."
+      ],
+      "authors": [
+        "Associated Press"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://apnews.com/article/nvidia-megaspeed-china-singapore-huang-5403f152a601cf82ce939f1d24fffa0f",
+      "discuss_url": "https://news.ycombinator.com/item?id=50467087",
+      "interests": [
+        "ai",
+        "systems"
+      ],
+      "lead": true,
+      "featured": false
+    },
+    {
+      "id": "gemini-4-hydrogen-launch",
+      "kicker": "MODELS",
+      "headline": "Google ships Gemini 4 Hydrogen, a fast agentic model that edges out its own frontier tier",
+      "why_read": "You retweeted Cursor's launch post: Hydrogen is already in Cursor, and Google pitches it as the fast executor that pairs with Carbon and Argon for the hard thinking.",
+      "body": [
+        "Google DeepMind introduced Gemini 4 Hydrogen on November 12 as its model for rapid execution across coding and agentic workflows, available across AI Studio, the Gemini API, the Gemini app, Search, and Antigravity for paid tiers. Google says it scores 51 on the Artificial Analysis Intelligence Index at its default high thinking level, ahead of Argon's 50, and 54 at its xhigh setting. Pricing is flat across the 1 million-token window: $1.50 per million input tokens and $7.50 per million output.",
+        "Cursor says Hydrogen scores 54.3% on CursorBench at default effort, up from 39.6% for Gemini 3.8 Flash. In Antigravity, Google also added an Orchestrator option that moves work back and forth between Hydrogen and Carbon as a task evolves, rather than routing the whole job once from the first prompt."
+      ],
+      "authors": [
+        "Koray Kavukcuoglu"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50471431",
+      "interests": [
+        "ai"
+      ],
+      "lead": true,
+      "featured": false
+    },
+    {
+      "id": "anthropic-ipo-next-wednesday",
+      "kicker": "AI MARKETS",
+      "headline": "Anthropic's IPO site goes live, with the listing confirmed for next Wednesday",
+      "why_read": "The prospectus numbers are now public, and you retweeted Theo calling them insane; this is the first frontier lab to open its books to public investors.",
+      "body": [
+        "Anthropic posted its IPO roadshow site with a founders' letter, a roadshow video and Q3 2026 financial highlights, and its own post on X points investors to the S-1 on EDGAR. Theo of t3.gg reports the IPO is confirmed for Wednesday next week. Its Q3 highlights note that net loss includes a $21.9 billion non-cash charge tied to the change in fair value of convertible notes, derivatives and SAFEs as its valuation rose.",
+        "The roadshow leans on enterprise customers such as Bristol Myers Squibb, Accenture and AIG, and on a section about its approach to compute. Expect a week of analysts picking apart margins and compute spend, which will set the bar for how public markets price every other AI lab."
+      ],
+      "authors": [
+        "Anthropic"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://ipo.anthropic.com/us/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50465829",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "spacex-tesla-merger-talks",
+      "kicker": "TESLA x SPACEX",
+      "headline": "Bloomberg: SpaceX and Tesla in advanced merger talks for a roughly $3.4 trillion company",
+      "why_read": "If it happens, your two favorite Musk companies, from Robotaxi to Starship, end up under one ticker, with Terafab as the shared glue.",
+      "body": [
+        "Bloomberg reports, per a summary of posts on X, that SpaceX and Tesla boards are finalizing terms after forming special committees last month, discussing price, governance and share swaps in an all-stock deal that could wrap up by December. The combined company would be valued around $3.4 trillion and span EVs, robotics, rockets, satellites and AI infrastructure.",
+        "The hurdles are real: regulatory and shareholder approvals, plus separating Tesla's China operations from SpaceX's U.S. defense contracts. Neither company has confirmed the talks, so treat this as reported, not done."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2120976983177716110",
+      "discuss_url": "https://x.com/i/trending/2120976983177716110",
+      "interests": [
+        "tesla",
+        "space"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "ship-42-to-pad",
+      "kicker": "STARSHIP",
+      "headline": "Starship Ship 42 rolls to the Starbase pad ahead of launch",
+      "why_read": "You retweeted the rollout photos: the next flight vehicle is on the pad, which usually means a launch window is weeks, not months, away.",
+      "body": [
+        "SpaceX posted four photos of Ship 42 moving to the Starbase pad ahead of launch. The post does not give a date, so the next markers to watch are static fire and a license update.",
+        "For the why behind the flight profile, you also retweeted Farzad's short explainer, \"Why Starship Circles Earth 14 Times Before Coming Home,\" which pairs well with the rollout."
+      ],
+      "authors": [
+        "SpaceX"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/SpaceX/status/2121044579470233638",
+      "discuss_url": "https://x.com/SpaceX/status/2121044579470233638",
+      "interests": [
+        "space"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "edge0-145b-on-device",
+      "kicker": "OPEN MODELS",
+      "headline": "Edge0 open-sources a 145B-parameter model that runs on a laptop",
+      "why_read": "Open weights plus the full inference stack, aimed squarely at frontier-class coding and agent work without a cloud bill.",
+      "body": [
+        "Edge0 released Edge0-145B and Edge0-120B along with its unified inference framework and deployment tools, calling 145B the first open-source on-device model at that size. Its laptop comparison reports more than 80 tokens per second at 28GB peak memory. The earlier Edge0-35B phone model reportedly runs at 37+ tokens per second on an iPhone 18 Pro Max using about 2.5GB.",
+        "The team says it is shipping the full stack so others can reproduce results, fine-tune, and integrate the models. The claims are the vendor's own, so independent benchmarks on real laptops will matter more than the launch charts."
+      ],
+      "authors": [
+        "Edge0"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+      "discuss_url": "https://news.ycombinator.com/item?id=50475713",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "chinese-models-blackwell-fingerprint",
+      "kicker": "AI CHIPS",
+      "headline": "Forensics on published weights suggest Chinese labs trained on export-controlled Blackwell GPUs",
+      "why_read": "A clever technique: the evidence comes from the models' own weights, not leaks, and it lands in the same week as Nvidia's leadership crisis.",
+      "body": [
+        "Unemployment Labs says six models released since April 2026 by DeepSeek, Moonshot AI, MiniMax and Ant Group carry numerical patterns that match Nvidia Blackwell hardware, while earlier models from the same companies match Hopper. The analysts recover traces of the models' initial values and search for hardware configurations that reproduce them; for DeepSeek-V4-Flash and Kimi K3 they confirmed the match on physical Blackwell chips.",
+        "They are careful about the limits: the fingerprint shows how the weights were created and supports, but does not prove, that Blackwell also did the training. Specially configured AMD hardware is the only alternative they found, which they rule out for DeepSeek-V4-Flash."
+      ],
+      "authors": [
+        "Will DePue"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://unemploymentlabs.com/checkpoint-forensics",
+      "discuss_url": "https://news.ycombinator.com/item?id=50474883",
+      "interests": [
+        "ai",
+        "systems"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "microsoft-365-global-outage",
+      "kicker": "OUTAGE",
+      "headline": "Microsoft 365 outage knocks out Outlook and Teams for millions across dozens of countries",
+      "why_read": "Hours-long, global, and hitting banks, courts and the NHS: a good case study in what a single SaaS dependency can take down.",
+      "body": [
+        "Microsoft said it is making additional progress toward recovery after an outage that left millions without Outlook email, Teams and other Microsoft 365 services. Downdetector said reports reached 74 countries and territories in about an hour, and Microsoft said the outage was not caused by a cybersecurity breach. The U.S. House said its engineers were working with Microsoft, and an NHS email disruption in the UK was expected to delay some prescriptions.",
+        "By Friday morning Eastern time Microsoft reported email delivery improving across a growing share of affected tenants. A separate Hacker News thread noted Outlook was still down after 12 hours, so expect a post-incident report worth reading."
+      ],
+      "authors": [
+        "CNN"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://www.cnn.com/2026/11/12/business/live-news/microsoft-global-outage-intl-hnk",
+      "discuss_url": "https://news.ycombinator.com/item?id=50479098",
+      "interests": [
+        "systems"
+      ],
+      "lead": false,
+      "featured": true
+    },
+    {
+      "id": "nvidia-financing-guarantees",
+      "kicker": "AI CHIPS",
+      "headline": "WSJ: Nvidia's chip-financing guarantees ballooned to $530 billion before Huang's exit",
+      "why_read": "The quieter story under the scandal: Nvidia has been investor, lender, supplier and backup buyer to its own customers.",
+      "body": [
+        "Per a summary of posts on X citing the Wall Street Journal, Nvidia's commitments to cash-strapped AI firms buying its chips reached $530 billion in the quarter ended July 26, including a $105 billion OpenAI-linked project. Interim CEO Colette Kress had reportedly questioned the deals and clashed with Huang over them.",
+        "Some initiatives are now reported paused. If that holds, the circular financing that helped fuel GPU demand could slow just as more customers build their own chips."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2121191997604298888",
+      "discuss_url": "https://x.com/i/trending/2121191997604298888",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "nvidia-employees-petition-huang",
+      "kicker": "CULTURE",
+      "headline": "Nvidia employees petition the board to bring Jensen Huang back",
+      "why_read": "A rare inside look at how a founder-led company reacts when the founder is pushed out.",
+      "body": [
+        "WIRED reviewed internal correspondence showing a suggestion-box post, written before Huang resigned, that asked the board to consider employee sentiment. It has since drawn more than 1,600 comments, many asking for his return, and one employee sent a companywide email demanding transparency about his exit.",
+        "Huang, 63, had led Nvidia since its founding in 1993. Nvidia and its new board chair, Harvey Jones, did not immediately respond to WIRED."
+      ],
+      "authors": [
+        "WIRED"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50477231",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "rust-1-100-never-type",
+      "kicker": "LANGUAGES",
+      "headline": "Rust 1.100 finally stabilizes the never type after ten years",
+      "why_read": "Five failed stabilization attempts later, `!` is real, and it cleans up a surprising amount of error-handling and match code.",
+      "body": [
+        "The Rust team shipped 1.100.0, and the headline is the never type, spelled `!`, the canonical type for computations that never return a value, such as return, break and std::process::exit. Because a value of type `!` cannot exist, Rust allows it to coerce to any other type, which makes diverging branches in match and if expressions type-check cleanly.",
+        "The post notes this took 10 years and five failed stabilization attempts, and it completes a project goal. Update with rustup update stable."
+      ],
+      "authors": [
+        "The Rust Release Team"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50472038",
+      "interests": [
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "postgres-22-year-type-confusion-rce",
+      "kicker": "SECURITY",
+      "headline": "A 22-year-old PostgreSQL type-confusion bug becomes a reliable RCE (CVE-2026-6460)",
+      "why_read": "If you run managed Postgres, read this: a new class of core bugs, found with an AI agent as tutor.",
+      "body": [
+        "Mehmet Ince describes giving PostgreSQL a value inside a composite type, changing the type of one of its fields, and asking it to read the value back; the resulting type confusion led to what he calls one of the most reliable memory-corruption exploits he has seen. It is part 3 of his series on systemic risks in the managed PostgreSQL industry.",
+        "He started by exploiting pg_clickhouse and used an AI agent to work through Postgres internals one question at a time before the pieces connected. Check your provider's patch status for CVE-2026-6460."
+      ],
+      "authors": [
+        "Mehmet Ince"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://mehmetince.net/part-3-6-how-i-ended-up-turning-a-22-year-old-postgresql-type-confusion-primitive-into-rce-cve-2026-6460/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50471761",
+      "interests": [
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "sglang-v1-consortium",
+      "kicker": "INFERENCE",
+      "headline": "SGLang hits v1.0 and launches an industry consortium backed by Nvidia, AMD and Google",
+      "why_read": "Open-source inference serving just got a governance home, with both big GPU vendors at the table.",
+      "body": [
+        "At the first SGLang Summit in San Francisco on November 12, the project announced v1.0 with zero-overhead scheduling, Rust rewrites and support for 217 models used across 330 organizations, according to a summary of posts on X. LMSYS Org also launched the SGLang Consortium with NVIDIA, AMD, Google, Meta, Intel, Cloudflare, Modal and RadixArk.",
+        "Banghua Zhu also presented Miles v0.2. The summit runs through November 13."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2120995054437417277",
+      "discuss_url": "https://x.com/i/trending/2120995054437417277",
+      "interests": [
+        "ai",
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "home-repo-pattern",
+      "kicker": "AGENTS",
+      "headline": "Matt Pocock's \"Home Repo\" pattern for agents that span many repos",
+      "why_read": "You retweeted this: a simple answer to where skills, steering files and tooling live when your agent work crosses repositories.",
+      "body": [
+        "Matt Pocock says working with agents across multiple repos is a pain because there is no obvious home for skills, steering files and tooling. His answer, which he has used for months and almost thought too obvious to post, is a dedicated Home Repo, explained in a nine-minute video.",
+        "It maps well to a fleet-of-bots setup: one place for shared conventions, with each working repo staying lean."
+      ],
+      "authors": [
+        "Matt Pocock"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/mattpocockuk/status/2120847219788308872",
+      "discuss_url": "https://x.com/mattpocockuk/status/2120847219788308872",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "trim-claude-code-setup",
+      "kicker": "AGENTS",
+      "headline": "Your Claude Code setup may be tuned for a model you no longer use",
+      "why_read": "You retweeted this AIE CODE talk: what to cut from CLAUDE.md, what permissions should enforce, and where tests and CI should take over.",
+      "body": [
+        "Anthropic's Lydia Hallie argues at AIE CODE that many agent setups carry instructions written for older, weaker models. Her talk covers what to trim from CLAUDE.md, what permissions should enforce instead of prose, and where tests and CI should do the checking.",
+        "The general lesson holds for any agent harness: re-audit steering files whenever you change models."
+      ],
+      "authors": [
+        "AI.Engineer"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/aiDotEngineer/status/2120969882905022677",
+      "discuss_url": "https://x.com/aiDotEngineer/status/2120969882905022677",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "github-agentic-engineering-guide",
+      "kicker": "DEVOPS",
+      "headline": "GitHub: 1.2 billion commits in one week, and reviews are the new bottleneck",
+      "why_read": "You retweeted GitHub's guide; the numbers explain why plan, verify and observe matter more than generation now.",
+      "body": [
+        "GitHub's Nick Liffen and Philip Holleran write that in October GitHub saw more than 1.2 billion commits in one week, more than in all of 2025. They cite a Faros AI study finding pull requests spent 441% longer in review when teams moved from low to high AI adoption.",
+        "The guide walks through Plan, Build, Verify and Observe with Copilot features such as stacked pull requests, Agent Merge, AI Scan, Copilot Dreaming for memory upkeep, and Copilot Fusion for picking models and reasoning depth."
+      ],
+      "authors": [
+        "Nick Liffen",
+        "Philip Holleran"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/github/status/2120957757004354002",
+      "discuss_url": "https://x.com/github/status/2120957757004354002",
+      "interests": [
+        "ai",
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "grok-bot-mac-apps",
+      "kicker": "GROK",
+      "headline": "Grok Bot on Mac can now use Messages, Mail, Notes, Reminders, Calendar, Location and Contacts",
+      "why_read": "You bookmarked this: your bots can now reach the Mac's built-in apps directly.",
+      "body": [
+        "The Grok Bot account announced that Grok Bot on Mac now works with Messages, Mail, Notes, Reminders, Calendar, Location and Contacts.",
+        "Separately, a post you retweeted from Alex says Grok Bot is quietly getting better at browsing the web without tripping bot detection, thanks to many behind-the-scenes changes."
+      ],
+      "authors": [
+        "Grok Bot"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/bot/status/2120946968403095906",
+      "discuss_url": "https://x.com/bot/status/2120946968403095906",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "cybercab-capacity-charging-gap",
+      "kicker": "CYBERCAB",
+      "headline": "The Cybercab math: a million cars a year needs about 20,000 dedicated charging stalls",
+      "why_read": "You bookmarked this thread: a first-principles look at whether Tesla's Cybercab ramp and its charging build-out add up.",
+      "body": [
+        "Genma_Jp argues Tesla's stated 125,000-unit Cybercab capacity is conservative: a Model Y line at roughly 30-second takt time gives about 1 million vehicles a year, and Tesla's Cybercab target is 10 seconds. Ending Cybertruck around mid-2027 for more Cybercab lines points the same way.",
+        "The catch: if Tesla owns most of the fleet and one Supercharger stall supports about 50 Cybercabs, 1 million cars need about 20,000 dedicated stalls, versus roughly 6,000 U.S. stalls added per year today. Either big charging hubs start by early 2027 or the line runs slower. Those are the author's estimates, not Tesla's."
+      ],
+      "authors": [
+        "Genma_Jp"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/nymbusjp/status/2120630813892993330",
+      "discuss_url": "https://x.com/nymbusjp/status/2120630813892993330",
+      "interests": [
+        "tesla"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "spacex-100gw-solar-line",
+      "kicker": "ENERGY",
+      "headline": "SpaceX orders a 100 GW-a-year solar cell line for orbital data centers",
+      "why_read": "Energy tech meets space: SpaceX is going vertical on heterojunction solar to power its Starmind compute satellites.",
+      "body": [
+        "Per a summary of posts on X, SpaceX signed with Germany's Singulus Technologies for a turnkey line able to make 100 gigawatts of heterojunction solar cells per year, with first delivery planned for early 2027 at its Bastrop, Texas satellite factory.",
+        "The cells are for Starmind satellites, orbital AI data centers with large solar wings and Nvidia hardware in sun-synchronous orbits. Musk called it the start of the project."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2120236302037897620",
+      "discuss_url": "https://x.com/i/trending/2120236302037897620",
+      "interests": [
+        "space",
+        "energy"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "graphql-over-http-spec",
+      "kicker": "STANDARDS",
+      "headline": "The first GraphQL over HTTP spec is out",
+      "why_read": "You retweeted this: an official spec for how GraphQL travels over HTTP, which should end years of per-server quirks.",
+      "body": [
+        "The GraphQL Foundation announced the first released version of the GraphQL over HTTP specification.",
+        "For architects, it gives client, gateway and server vendors one shared reference to conform to, which simplifies interoperability testing across stacks."
+      ],
+      "authors": [
+        "GraphQL"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/GraphQL/status/2120961685641117844",
+      "discuss_url": "https://x.com/GraphQL/status/2120961685641117844",
+      "interests": [
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "jane-street-interviews-change",
+      "kicker": "ENGINEERING",
+      "headline": "Jane Street is changing its software engineering interviews for the agent era",
+      "why_read": "When code is cheap, taste and verification matter more; here is how one demanding employer is testing for that.",
+      "body": [
+        "Jane Street says most of its engineers now use LLMs daily for writing, reading, debugging and reviewing code, but its interviews had not changed. This summer it began trialing new onsite interviews for campus candidates that involve less code-writing and more software design and verification of the quality, structure and intent of code.",
+        "The firm says the goals stay the same: see how candidates solve problems, structure work, communicate and collaborate."
+      ],
+      "authors": [
+        "Jane Street"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://blog.janestreet.com/software-engineering-interviews-are-changing-a-little/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50467297",
+      "interests": [
+        "ai",
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "brave-search-x402",
+      "kicker": "AGENTS",
+      "headline": "Brave Search API now takes per-request agent payments over x402",
+      "why_read": "No API keys or plans: an agent with a USDC wallet can pay for each search on the spot, an early working example of agentic payments.",
+      "body": [
+        "Brave added support for the open x402 payment protocol to its Search API. A request without payment gets an HTTP 402 Payment Required response with the price; the agent signs a USDC payment and retries, and Brave runs its own facilitator on the Base network.",
+        "Brave says other networks and stablecoins are coming. It covers both LLM Context grounding and general web search."
+      ],
+      "authors": [
+        "Brave"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://brave.com/blog/search-api-agentic-payments/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50477649",
+      "interests": [
+        "ai",
+        "systems"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "apple-foundation-models-any-llm",
+      "kicker": "PLATFORMS",
+      "headline": "Apple's Foundation Models framework now works with any LLM",
+      "why_read": "A native Swift API that spans on-device models, Private Cloud Compute and third-party LLMs could become the default way iOS apps add AI.",
+      "body": [
+        "Apple describes the Foundation Models framework as a native Swift API for integrating any large language model into an app, including direct access to Apple's on-device and Private Cloud Compute models. Built-in features include guided generation, tool calling, image understanding and Dynamic Profiles.",
+        "Multimodal prompts let apps pass images with text, and the Vision framework adds on-device OCR and barcode tools the model can call."
+      ],
+      "authors": [
+        "Apple"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://developer.apple.com/foundation-models-framework/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50474361",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "europe-ev-sales-jump",
+      "kicker": "ENERGY",
+      "headline": "Europe's EV sales jump 49% as global sales rise 8% in October",
+      "why_read": "A data check on the EV transition: Germany's EV share topped 45% of new car sales.",
+      "body": [
+        "Benchmark Mineral Intelligence data reported by Electrek show 2.09 million EVs sold worldwide in October, up 8%, bringing the year to 17.5 million. Europe sold 510,000 EVs, with battery-electric sales up 49% and plug-in hybrids up 7%.",
+        "Germany's EV share topped 45% of new car sales, and North America posted its first year-over-year increase of 2026, though Electrek says that rebound comes with a catch."
+      ],
+      "authors": [
+        "Electrek"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://electrek.co/2026/11/11/europes-electric-car-sales-jump-49-as-global-ev-sales-grow/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50482045",
+      "interests": [
+        "energy"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "dwarf-planet-2026-ed138",
+      "kicker": "ASTRONOMY",
+      "headline": "Rubin Observatory finds a likely dwarf planet on a tilted orbit beyond Pluto",
+      "why_read": "Early proof of what the Vera Rubin survey can do: a large new object in the outer solar system.",
+      "body": [
+        "Smithsonian astrophysicist Matthew Holman and colleague Kevin Napier, sifting Vera C. Rubin Observatory data with a custom program, spotted 2026 ED138, a dwarf planet candidate whose orbit is tilted nearly 25 degrees relative to the main planets, a hint that Neptune disturbed it. The Hacker News post puts its orbit at roughly 280 years.",
+        "They had already flagged more than 2,000 new small distant objects, and they confirmed this one in archival images from the past decade."
+      ],
+      "authors": [
+        "Smithsonian Magazine"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://www.smithsonianmag.com/smart-news/astronomers-found-a-mysterious-object-orbiting-far-beyond-pluto-it-could-be-a-new-dwarf-planet-hidden-in-our-solar-system-180989857/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50472490",
+      "interests": [
+        "science",
+        "space"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "white-dwarf-8-minute-radio",
+      "kicker": "PHYSICS",
+      "headline": "A dead star spinning every eight minutes is sending radio pulses from orbit around a Sun-like star",
+      "why_read": "A first for long-period radio transients, and clean enough data to see which star is doing the pulsing.",
+      "body": [
+        "Curtin University researchers at ICRAR linked radio pulses to GPM J071507-114153, a white dwarf that spins every eight minutes paired with a G-type star like the Sun. It is the first time such pulses have been seen from a white dwarf orbiting a Sun-like star rather than a cooler red dwarf.",
+        "Around a dozen long-period transients have been found since 2021. Lead author Sam McSweeney says the pulses are clear enough to track the white dwarf's orbit, placing the source at or near the white dwarf."
+      ],
+      "authors": [
+        "Curtin University"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://www.curtin.edu.au/news/media-release/researchers-discover-rare-star-system-that-emits-radio-signals-every-eight-minutes/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50465453",
+      "interests": [
+        "science"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "euclid-dr1-900m-galaxies",
+      "kicker": "ASTRONOMY",
+      "headline": "Euclid's first major data release maps 900 million galaxies",
+      "why_read": "1.7 petabytes of free data aimed at dark matter and dark energy, and only 14% of the planned survey.",
+      "body": [
+        "Per a summary of posts on X, ESA's Euclid DR1-Foundation dataset covers 1,900 square degrees from 13 months of observation, including galaxy cluster Abell 3128 and about 15,000 strong gravitational lensing candidates, the largest such catalog yet.",
+        "The release is free via ESA's Euclid Data Space, with deeper analysis expected in 2027."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2120905868283617316",
+      "discuss_url": "https://x.com/i/trending/2120905868283617316",
+      "interests": [
+        "science",
+        "space"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "lake-travis-full",
+      "kicker": "AUSTIN",
+      "headline": "Lake Travis is 101% full",
+      "why_read": "You retweeted this one: a happy hometown headline after years of drought worries.",
+      "body": [
+        "Austin meteorologist Tommy House posted an evening photo of Lake Travis at 101% full.",
+        "It is a welcome sight for Central Texas water supply, and a good excuse for a weekend drive to the lake."
+      ],
+      "authors": [
+        "Tommy House"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/tommyhousewx/status/2121008069991637462",
+      "discuss_url": "https://x.com/tommyhousewx/status/2121008069991637462",
+      "interests": [
+        "life"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "smolmaxxing-llms-old-devices",
+      "kicker": "LOCAL AI",
+      "headline": "smolmaxxing runs the biggest LLM it can on TV boxes, a 2013 iPad and old phones",
+      "why_read": "Hacker energy at its best: custom kernels and flash-streamed weights to get real tokens out of e-waste.",
+      "body": [
+        "The smolmaxxing project finds the largest model idle hardware can really run, then pushes further with custom kernels, careful memory use and weights streamed from flash. Every number is measured on the device.",
+        "Examples include a Xiaomi TV Box S with about 1GB of usable RAM running Qwen3.5-2B at 7.7 tokens per second, plus a jailbroken 2013 iPad Air and a OnePlus Nord CE 2."
+      ],
+      "authors": [
+        "hyperionaidev"
+      ],
+      "source": "hn",
+      "source_label": "HN",
+      "source_url": "https://github.com/hyperionaidev/smolmaxxing/",
+      "discuss_url": "https://news.ycombinator.com/item?id=50468888",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    },
+    {
+      "id": "ai-revenue-us-vs-china",
+      "kicker": "AI MARKETS",
+      "headline": "OpenAI and Anthropic out-earn China's top six AI firms nearly 10 to 1",
+      "why_read": "Context for the IPO week: Epoch AI estimates put U.S. lab revenue in a different league.",
+      "body": [
+        "Per a summary of posts on X citing Epoch AI estimates, OpenAI and Anthropic reached a combined $105 billion annualized revenue run rate by late September, versus $11 billion for six top Chinese firms. ByteDance led China at $4 billion, and DeepSeek hit $1 billion after doubling in September.",
+        "Quarter over quarter, Anthropic grew 47% and OpenAI 50%, while Chinese labs compete on low prices and open weights."
+      ],
+      "authors": [
+        "X News"
+      ],
+      "source": "x",
+      "source_label": "X",
+      "source_url": "https://x.com/i/trending/2121064648892170538",
+      "discuss_url": "https://x.com/i/trending/2121064648892170538",
+      "interests": [
+        "ai"
+      ],
+      "lead": false,
+      "featured": false
+    }
+  ]
 }
